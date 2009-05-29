@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  type: MyString
+  author: MyString
+  description: MyString
+  asin: MyString
+  detailpageurl: MyString
+  smallimageurl: MyString
+  mediumimageurl: MyString
+  publicationdate: 2009-05-28
+
+two:
+  title: MyString
+  type: MyString
+  author: MyString
+  description: MyString
+  asin: MyString
+  detailpageurl: MyString
+  smallimageurl: MyString
+  mediumimageurl: MyString
+  publicationdate: 2009-05-28

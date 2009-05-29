@@ -1,0 +1,48 @@
+<p>
+  <b>Title:</b>
+  <%=h @item.title %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @item.type %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%=h @item.author %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @item.description %>
+</p>
+
+<p>
+  <b>Asin:</b>
+  <%=h @item.asin %>
+</p>
+
+<p>
+  <b>Detailpageurl:</b>
+  <%=h @item.detailpageurl %>
+</p>
+
+<p>
+  <b>Smallimageurl:</b>
+  <%=h @item.smallimageurl %>
+</p>
+
+<p>
+  <b>Mediumimageurl:</b>
+  <%=h @item.mediumimageurl %>
+</p>
+
+<p>
+  <b>Publicationdate:</b>
+  <%=h @item.publicationdate %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

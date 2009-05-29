@@ -1,0 +1,48 @@
+<h1>Editing item</h1>
+
+<% form_for(@item) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :asin %><br />
+    <%= f.text_field :asin %>
+  </p>
+  <p>
+    <%= f.label :detailpageurl %><br />
+    <%= f.text_field :detailpageurl %>
+  </p>
+  <p>
+    <%= f.label :smallimageurl %><br />
+    <%= f.text_field :smallimageurl %>
+  </p>
+  <p>
+    <%= f.label :mediumimageurl %><br />
+    <%= f.text_field :mediumimageurl %>
+  </p>
+  <p>
+    <%= f.label :publicationdate %><br />
+    <%= f.date_select :publicationdate %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @item %> |
+<%= link_to 'Back', items_path %>

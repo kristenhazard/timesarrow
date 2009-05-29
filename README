@@ -1,3 +1,6 @@
 == timesarrow
 
 initial commit, not worth a look at this point
+
+required plugins:
+amazon-ecs

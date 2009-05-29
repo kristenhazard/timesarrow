@@ -1,0 +1,1060 @@
+
+
+Processing ItemsController#index (for 0.0.0.0 at 2009-05-28 15:16:37) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/items]
+
+
+Processing ItemsController#show (for 0.0.0.0 at 2009-05-28 15:16:37) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37]
+
+
+Processing ItemsController#new (for 0.0.0.0 at 2009-05-28 15:16:37) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/new]
+
+
+Processing ItemsController#edit (for 0.0.0.0 at 2009-05-28 15:16:37) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37/edit]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:16:37) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Redirected to http://test.host/items/1005
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:16:37) [POST]
+  Parameters: {"item"=>{}}
+Redirected to http://test.host/items/1006
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:16:37) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:16:37) [POST]
+  Parameters: {"item"=>{}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:16:37) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:16:37) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1010
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:16:37) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1011
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:16:37) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:16:37) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:16:37) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-28 15:16:37) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/items
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/37]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-28 15:16:37) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-28 15:18:51) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/items
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/37]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-28 15:18:51) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:18:51) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:18:51) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:18:51) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:18:51) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:18:51) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1008
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:18:51) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1009
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:18:51) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:18:51) [POST]
+  Parameters: {"item"=>{}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:18:51) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Redirected to http://test.host/items/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:18:51) [POST]
+  Parameters: {"item"=>{}}
+Redirected to http://test.host/items/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?]
+
+
+Processing ItemsController#edit (for 0.0.0.0 at 2009-05-28 15:18:51) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37/edit]
+
+
+Processing ItemsController#new (for 0.0.0.0 at 2009-05-28 15:18:51) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/new]
+
+
+Processing ItemsController#show (for 0.0.0.0 at 2009-05-28 15:18:51) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37]
+
+
+Processing ItemsController#index (for 0.0.0.0 at 2009-05-28 15:18:51) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items]
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-28 22:19:50', 'value for title', 'value for mediumimageurl', NULL, 'value for author', 'value for detailpageurl', '2009-05-28', 'value for asin', 'value for description', 'value for smallimageurl', '2009-05-28 22:19:50')[0m
+Rendering items/new.html.erb
+Rendering items/index.html.erb
+Rendering items/show.html.erb
+Rendering items/edit.html.erb
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-28 22:19:52', 'value for title', 'value for mediumimageurl', NULL, 'value for author', 'value for detailpageurl', '2009-05-28', 'value for asin', 'value for description', 'value for smallimageurl', '2009-05-28 22:19:52')[0m
+Rendering items/new.html.erb
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-28 15:19:52) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/items
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/37]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-28 15:19:52) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:19:52) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:19:52) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:19:52) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:19:52) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:19:52) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1008
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:19:52) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1009
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:19:52) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:19:52) [POST]
+  Parameters: {"item"=>{}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:19:52) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Redirected to http://test.host/items/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:19:52) [POST]
+  Parameters: {"item"=>{}}
+Redirected to http://test.host/items/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?]
+
+
+Processing ItemsController#edit (for 0.0.0.0 at 2009-05-28 15:19:52) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37/edit]
+
+
+Processing ItemsController#new (for 0.0.0.0 at 2009-05-28 15:19:52) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/new]
+
+
+Processing ItemsController#show (for 0.0.0.0 at 2009-05-28 15:19:52) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37]
+
+
+Processing ItemsController#index (for 0.0.0.0 at 2009-05-28 15:19:52) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items]
+Rendering items/index.html.erb
+Rendering items/show.html.erb
+Rendering items/edit.html.erb
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-28 22:21:43', 'value for title', 'value for mediumimageurl', NULL, 'value for author', 'value for detailpageurl', '2009-05-28', 'value for asin', 'value for description', 'value for smallimageurl', '2009-05-28 22:21:43')[0m
+Rendering items/new.html.erb
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-28 15:21:43) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/items
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/37]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-28 15:21:43) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:21:43) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:21:43) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:21:43) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 42ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:21:43) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:21:43) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1008
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:21:43) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1009
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:21:43) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:21:43) [POST]
+  Parameters: {"item"=>{}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:21:43) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Redirected to http://test.host/items/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:21:43) [POST]
+  Parameters: {"item"=>{}}
+Redirected to http://test.host/items/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?]
+
+
+Processing ItemsController#edit (for 0.0.0.0 at 2009-05-28 15:21:43) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37/edit]
+
+
+Processing ItemsController#new (for 0.0.0.0 at 2009-05-28 15:21:43) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/new]
+
+
+Processing ItemsController#show (for 0.0.0.0 at 2009-05-28 15:21:43) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37]
+
+
+Processing ItemsController#index (for 0.0.0.0 at 2009-05-28 15:21:43) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items]
+Rendering items/index.html.erb
+Rendering items/show.html.erb
+Rendering items/edit.html.erb
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-28 22:28:13', 'value for title', 'value for mediumimageurl', NULL, 'value for author', 'value for detailpageurl', '2009-05-28', 'value for asin', 'value for description', 'value for smallimageurl', '2009-05-28 22:28:13')[0m
+Rendering items/new.html.erb
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-28 15:28:14) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/items
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/37]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-28 15:28:14) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:28:14) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:28:14) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:28:14) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 53ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:28:14) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:28:14) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1008
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-28 15:28:14) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1009
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:28:14) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:28:14) [POST]
+  Parameters: {"item"=>{}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:28:14) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Redirected to http://test.host/items/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-28 15:28:14) [POST]
+  Parameters: {"item"=>{}}
+Redirected to http://test.host/items/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?]
+
+
+Processing ItemsController#edit (for 0.0.0.0 at 2009-05-28 15:28:14) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37/edit]
+
+
+Processing ItemsController#new (for 0.0.0.0 at 2009-05-28 15:28:14) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/new]
+
+
+Processing ItemsController#show (for 0.0.0.0 at 2009-05-28 15:28:14) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37]
+
+
+Processing ItemsController#index (for 0.0.0.0 at 2009-05-28 15:28:14) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items]
+Rendering items/index.html.erb
+Rendering items/show.html.erb
+Rendering items/edit.html.erb
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-29 15:25:05', 'value for title', 'value for mediumimageurl', NULL, 'value for author', 'value for detailpageurl', '2009-05-29', 'value for asin', 'value for description', 'value for smallimageurl', '2009-05-29 15:25:05')[0m
+Rendering items/new.html.erb
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 08:25:06) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/items
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/37]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 08:25:06) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 08:25:06) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 08:25:06) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 08:25:06) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 08:25:06) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 08:25:06) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1008
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 08:25:06) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1009
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 08:25:06) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 08:25:06) [POST]
+  Parameters: {"item"=>{}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 08:25:06) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Redirected to http://test.host/items/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 08:25:06) [POST]
+  Parameters: {"item"=>{}}
+Redirected to http://test.host/items/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?]
+
+
+Processing ItemsController#edit (for 0.0.0.0 at 2009-05-29 08:25:06) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37/edit]
+
+
+Processing ItemsController#new (for 0.0.0.0 at 2009-05-29 08:25:06) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/new]
+
+
+Processing ItemsController#show (for 0.0.0.0 at 2009-05-29 08:25:06) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37]
+
+
+Processing ItemsController#index (for 0.0.0.0 at 2009-05-29 08:25:06) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items]
+Rendering items/index.html.erb
+Rendering items/show.html.erb
+Rendering items/edit.html.erb
+Rendering search/index
+Rendering search/index
+Rendering search/index
+Rendering search/index
+Rendering search/index
+Rendering search/index
+Rendering search/index
+Rendering search/index
+Rendering search/index
+Rendering search/index
+Rendering search/index
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-29 16:33:14', 'value for title', 'value for mediumimageurl', NULL, 'value for author', 'value for detailpageurl', '2009-05-29', 'value for asin', 'value for description', 'value for smallimageurl', '2009-05-29 16:33:14')[0m
+Rendering items/new.html.erb
+Rendering items/show.html.erb
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 09:33:14) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/items
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/37]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 09:33:14) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 09:33:14) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 09:33:14) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 09:33:14) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 09:33:14) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 09:33:14) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1009
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 09:33:14) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1010
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 09:33:14) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 09:33:14) [POST]
+  Parameters: {"item"=>{}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 09:33:14) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Redirected to http://test.host/items/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 09:33:14) [POST]
+  Parameters: {"item"=>{}}
+Redirected to http://test.host/items/1014
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?]
+
+
+Processing ItemsController#edit (for 0.0.0.0 at 2009-05-29 09:33:14) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37/edit]
+
+
+Processing ItemsController#new (for 0.0.0.0 at 2009-05-29 09:33:14) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/new]
+
+
+Processing ItemsController#show (for 0.0.0.0 at 2009-05-29 09:33:14) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37]
+
+
+Processing ItemsController#index (for 0.0.0.0 at 2009-05-29 09:33:14) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items]
+Rendering items/index.html.erb
+Rendering items/edit.html.erb
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 09:33:14) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+Rendering search/index
+Rendering search/index
+Rendering search/index
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-29 16:33:49', 'value for title', 'value for mediumimageurl', NULL, 'value for author', 'value for detailpageurl', '2009-05-29', 'value for asin', 'value for description', 'value for smallimageurl', '2009-05-29 16:33:49')[0m
+Rendering items/new.html.erb
+Rendering items/show.html.erb
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 09:33:49) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/items
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/37]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 09:33:49) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 09:33:49) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 09:33:49) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 09:33:49) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 09:33:49) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 09:33:49) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1009
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 09:33:49) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1010
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 09:33:49) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 09:33:49) [POST]
+  Parameters: {"item"=>{}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 09:33:49) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Redirected to http://test.host/items/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 09:33:49) [POST]
+  Parameters: {"item"=>{}}
+Redirected to http://test.host/items/1014
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?]
+
+
+Processing ItemsController#edit (for 0.0.0.0 at 2009-05-29 09:33:49) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37/edit]
+
+
+Processing ItemsController#new (for 0.0.0.0 at 2009-05-29 09:33:49) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/new]
+
+
+Processing ItemsController#show (for 0.0.0.0 at 2009-05-29 09:33:49) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37]
+
+
+Processing ItemsController#index (for 0.0.0.0 at 2009-05-29 09:33:49) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items]
+Rendering items/index.html.erb
+Rendering items/edit.html.erb
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 09:33:49) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+Rendering search/index
+Rendering search/index
+Rendering search/index
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 09:44:25) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+Rendering search/index
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 09:54:53) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+Rendering items/new.html.erb
+Rendering items/new.html.erb
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-29 17:10:08', 'value for title', 'value for mediumimageurl', NULL, 'value for author', 'value for detailpageurl', '2009-05-29', 'value for asin', 'value for description', 'value for smallimageurl', '2009-05-29 17:10:08')[0m
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-29 17:12:14', 'value for title', 'value for mediumimageurl', NULL, 'value for author', 'value for detailpageurl', '2009-05-29', 'value for asin', 'value for description', 'value for smallimageurl', '2009-05-29 17:12:14')[0m
+Rendering items/new.html.erb
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 10:58:20) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:00:42) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-29 18:00:45', 'value for title', 'value for mediumimageurl', NULL, 'value for author', 'value for detailpageurl', '2009-05-29', 'value for asin', 'value for description', 'value for smallimageurl', '2009-05-29 18:00:45')[0m
+Rendering items/new.html.erb
+Rendering items/show.html.erb
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 11:00:45) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/items
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/37]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 11:00:45) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:00:45) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:00:45) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:00:45) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:00:45) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:00:45) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1009
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:00:45) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1010
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:00:45) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:00:45) [POST]
+  Parameters: {"item"=>{}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:00:45) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Redirected to http://test.host/items/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:00:45) [POST]
+  Parameters: {"item"=>{}}
+Redirected to http://test.host/items/1014
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?]
+
+
+Processing ItemsController#edit (for 0.0.0.0 at 2009-05-29 11:00:45) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37/edit]
+
+
+Processing ItemsController#new (for 0.0.0.0 at 2009-05-29 11:00:45) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/new]
+
+
+Processing ItemsController#show (for 0.0.0.0 at 2009-05-29 11:00:45) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37]
+
+
+Processing ItemsController#index (for 0.0.0.0 at 2009-05-29 11:00:45) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items]
+Rendering items/index.html.erb
+Rendering items/edit.html.erb
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:00:45) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+Rendering search/index
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:02:06) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:02:11) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:03:29) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]

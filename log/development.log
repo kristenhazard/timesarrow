@@ -1,0 +1,482 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateItems (20090528201032)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "type" varchar(255), "author" varchar(255), "description" varchar(255), "asin" varchar(255), "detailpageurl" varchar(255), "smallimageurl" varchar(255), "mediumimageurl" varchar(255), "publicationdate" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090528201032')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("items")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "type" varchar(255), "author" varchar(255), "description" varchar(255), "asin" varchar(255), "detailpageurl" varchar(255), "smallimageurl" varchar(255), "mediumimageurl" varchar(255), "publicationdate" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (8.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090528201032')[0m
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-28 15:28:43) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 58ms (View: 53, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-28 15:28:48) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 99ms (View: 94, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-28 15:29:15) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-28 21:30:08) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 59ms (View: 55, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-29 09:36:33) [GET]
+
+ActionController::RoutingError (No route matches "/search" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SearchController#index (for ::1 at 2009-05-29 09:39:41) [GET]
+Rendering search/index
+Completed in 64ms (View: 63, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-29 09:41:17) [GET]
+
+ActionController::RoutingError (No route matches "/search" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 09:41:36) [GET]
+Rendering search/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 09:44:36) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 09:45:40) [GET]
+Rendering search/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 09:45:47) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NoMethodError (undefined method `get_item_search_response' for #<SearchController:0x607084>):
+  app/controllers/search_controller.rb:9:in `index'
+
+Rendered rescues/_trace (28.1ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 09:54:51) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+Rendering search/index
+Completed in 412ms (View: 15, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 09:57:39) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 101ms (View: 95, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-05-29 09:57:45) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-29 16:57:45', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2009-05-29 16:57:45')[0m
+Redirected to http://localhost:3000/items/1
+Completed in 47ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 09:57:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 1) [0m
+Rendering template within layouts/items
+Rendering items/show
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/items/1]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-05-29 09:58:13) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+  [4;36;1mItem Create (0.3ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-29 16:58:13', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2009-05-29 16:58:13')[0m
+Redirected to http://localhost:3000/items/2
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 09:58:13) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 09:58:24) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 10:12:44) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 20ms (View: 14, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 10:12:48) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:12:56) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NameError (uninitialized constant Amazon::Ecs):
+  lib/amazon/aaws.rb:16:in `ecs'
+  lib/amazon/aaws.rb:10:in `get_item_search_response'
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (27.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:13:43) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:14:26) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NameError (uninitialized constant Amazon::Ecs):
+  lib/amazon/aaws.rb:16:in `ecs'
+  lib/amazon/aaws.rb:10:in `get_item_search_response'
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (31.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:16:01) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:16:03) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>""}
+Rendering search/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:16:08) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NameError (uninitialized constant Amazon::Ecs):
+  lib/amazon/aaws.rb:16:in `ecs'
+  lib/amazon/aaws.rb:10:in `get_item_search_response'
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (28.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:16:55) [GET]
+Rendering search/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:17:02) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NameError (uninitialized constant Amazon::Ecs):
+  lib/amazon/aaws.rb:16:in `ecs'
+  lib/amazon/aaws.rb:10:in `get_item_search_response'
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (28.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:27:08) [GET]
+Rendering search/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:27:12) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NameError (uninitialized constant Amazon::Ecs):
+  lib/amazon/aaws.rb:16:in `ecs'
+  lib/amazon/aaws.rb:10:in `get_item_search_response'
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (28.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:31:47) [GET]
+Rendering search/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:31:52) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NameError (uninitialized constant Amazon::Ecs):
+  lib/amazon/aaws.rb:16:in `ecs'
+  lib/amazon/aaws.rb:10:in `get_item_search_response'
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (28.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:31:56) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NameError (uninitialized constant Amazon::Ecs):
+  lib/amazon/aaws.rb:16:in `ecs'
+  lib/amazon/aaws.rb:10:in `get_item_search_response'
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (31.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:34:26) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NameError (uninitialized constant Amazon::Ecs):
+  lib/amazon/aaws.rb:16:in `ecs'
+  lib/amazon/aaws.rb:10:in `get_item_search_response'
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (90.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:34:29) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:34:35) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NameError (uninitialized constant Amazon::Ecs):
+  lib/amazon/aaws.rb:16:in `ecs'
+  lib/amazon/aaws.rb:10:in `get_item_search_response'
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:37:27) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NameError (uninitialized constant Amazon::Ecs):
+  lib/amazon/aaws.rb:10:in `get_item_search_response'
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (30.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:37:47) [GET]
+Rendering search/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:37:53) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NameError (uninitialized constant Amazon::Ecs):
+  lib/amazon/aaws.rb:10:in `get_item_search_response'
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (29.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:39:29) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NameError (uninitialized constant Amazon::Ecs):
+  lib/amazon/aaws.rb:10:in `get_item_search_response'
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:42:49) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:42:54) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"middlesex"}
+
+NameError (uninitialized constant Amazon::Ecs):
+  lib/amazon/aaws.rb:10:in `get_item_search_response'
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (84.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:59:11) [GET]
+Rendering search/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 10:59:17) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"Middlesex"}
+
+NoMethodError (undefined method `get_item_search_response' for #<SearchController:0x17244fc>):
+  app/controllers/search_controller.rb:10:in `index'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-29 10:59:56) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"Middlesex"}
+
+LoadError (Expected /Users/kristenhazard/work/timesarrow/lib/amazonecs.rb to define Amazonecs):
+  app/controllers/search_controller.rb:2
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-29 11:00:14) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"Middlesex"}
+
+NameError (undefined local variable or method `amazonecs' for SearchController:Class):
+  app/controllers/search_controller.rb:2
+
+Rendered rescues/_trace (28.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 11:00:41) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"Middlesex"}
+Rendering search/index
+Completed in 397ms (View: 16, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 11:00:48) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"Middlesex"}
+Rendering search/index
+Completed in 908ms (View: 69, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 11:02:10) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"Middlesex"}
+Rendering search/index
+Completed in 419ms (View: 14, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 11:02:17) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"March"}
+Rendering search/index
+Completed in 943ms (View: 16, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 11:02:34) [GET]
+Rendering search/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 11:02:37) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+
+NoMethodError (undefined method `get_item_search_response' for #<SearchController:0x24aca20>):
+  app/controllers/search_controller.rb:12:in `index'
+
+Rendered rescues/_trace (27.4ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 11:03:38) [GET]
+Rendering search/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 11:03:41) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"March"}
+Rendering search/index
+Completed in 1293ms (View: 16, DB: 0) | 200 OK [http://localhost/search]
