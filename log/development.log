@@ -480,3 +480,2041 @@ Processing SearchController#index (for 127.0.0.1 at 2009-05-29 11:03:41) [POST]
   Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"March"}
 Rendering search/index
 Completed in 1293ms (View: 16, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:05:44) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 104ms (View: 98, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 11:05:50) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"March"}
+Rendering search/index
+Completed in 1201ms (View: 17, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:14:04) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 11:14:09) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1098ms (View: 17, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:14:33) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 22ms (View: 15, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:14:37) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:15:20) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 11:15:25) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1371ms (View: 17, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:18:55) [GET]
+Rendering template within layouts/items
+Rendering items/new
+ERROR: compiling _run_erb_app47views47items47new46html46erb RAISED compile error
+/Users/kristenhazard/work/timesarrow/app/views/items/new.html.erb:49: syntax error, unexpected ':', expecting kEND
+..._tag :controller => 'search' :action => 'search' do ; @outpu...
+                              ^
+/Users/kristenhazard/work/timesarrow/app/views/items/new.html.erb:49: syntax error, unexpected kDO, expecting kEND
+...search' :action => 'search' do ; @output_buffer.concat "\n"
+                              ^
+/Users/kristenhazard/work/timesarrow/app/views/items/new.html.erb:71: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47items47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>New item</h1>\n"
+@output_buffer.concat "\n"
+ form_for(@item) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :type ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :type ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :author ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :author ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :description ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :description ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :asin ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :asin ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :detailpageurl ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :detailpageurl ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :smallimageurl ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :smallimageurl ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :mediumimageurl ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :mediumimageurl ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :publicationdate ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.date_select :publicationdate ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'Back', items_path ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ form_tag :controller => 'search' :action => 'search' do ; @output_buffer.concat "\n"
+@output_buffer.concat "  <h3>Enter keywords:</h3>\n"
+@output_buffer.concat "  "; @output_buffer.concat(( text_field_tag(:keywords, params[:keywords]) ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( submit_tag "Search" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <h3 id=\"1\">Results amazon-ecs</h3>\n"
+@output_buffer.concat "  "; @output_buffer.concat(( flash[:error] ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <table border=\"0\" cellspacing=\"5\" cellpadding=\"5\">\n"
+@output_buffer.concat "  ";  if @itemarray ; @output_buffer.concat "\n"
+@output_buffer.concat "    ";  @itemarray.each { |item| ; @output_buffer.concat "\n"
+@output_buffer.concat "      <tr valign=\"top\">\n"
+@output_buffer.concat "        <td>\n"
+@output_buffer.concat "          ";  if item.get("smallimage/url") ; @output_buffer.concat " \n"
+@output_buffer.concat "            "; @output_buffer.concat(( image_tag item.get("smallimage/url") ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "          ";  end; @output_buffer.concat "\n"
+@output_buffer.concat "        </td>\n"
+@output_buffer.concat "        <td> "; @output_buffer.concat(( h item.get("title") ).to_s); @output_buffer.concat " <br>\n"
+@output_buffer.concat "             by "; @output_buffer.concat(( h item.get("author") ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "      </tr>\n"
+@output_buffer.concat "    ";  } ; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  </table>\n"
+ end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/kristenhazard/work/timesarrow/app/views/items/new.html.erb:71:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/kristenhazard/work/timesarrow/app/controllers/items_controller.rb:29:in `new'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/kristenhazard/work/timesarrow/app/views/items/new.html.erb:49: syntax error, unexpected ':', expecting kEND
+..._tag :controller => 'search' :action => 'search' do ; @outpu...
+                              ^
+/Users/kristenhazard/work/timesarrow/app/views/items/new.html.erb:49: syntax error, unexpected kDO, expecting kEND
+...search' :action => 'search' do ; @output_buffer.concat "\n"
+                              ^
+/Users/kristenhazard/work/timesarrow/app/views/items/new.html.erb:71: syntax error, unexpected kENSURE, expecting $end) on line #49 of app/views/items/new.html.erb:
+46: 
+47: <%= link_to 'Back', items_path %>
+48: 
+49: <% form_tag :controller => 'search' :action => 'search' do %>
+50:   <h3>Enter keywords:</h3>
+51:   <%= text_field_tag(:keywords, params[:keywords]) %>
+52:   <%= submit_tag "Search" %>
+
+    app/views/items/new.html.erb:71:in `compile!'
+    app/controllers/items_controller.rb:29:in `new'
+
+Rendered rescues/_trace (36.6ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:19:17) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 24ms (View: 16, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:20:02) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 77ms (View: 16, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:20:16) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+
+ActionView::MissingTemplate (Missing template search/search.erb in view path app/views):
+  app/controllers/search_controller.rb:39:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:24:31) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:24:36) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items/new
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/search_controller.rb:40:in `search'
+
+Rendered rescues/_trace (84.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:27:34) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items/new
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/search_controller.rb:40:in `search'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:27:50) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:27:57) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:28:03) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"test"}
+Redirected to http://localhost:3000/items/new
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/search_controller.rb:40:in `search'
+
+Rendered rescues/_trace (32.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:31:31) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"test"}
+Redirected to http://localhost:3000/items/new
+Completed in 1013ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:31:33) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 22ms (View: 15, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:31:40) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:31:47) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items/new
+Completed in 1109ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:31:48) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:36:36) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items
+Completed in 1190ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 11:36:37) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ApplicationController#search (for 127.0.0.1 at 2009-05-29 11:37:21) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+
+SyntaxError (/Users/kristenhazard/work/timesarrow/app/controllers/search_controller.rb:36: syntax error, unexpected ':', expecting kEND
+        redirect_to :items :action => "new"
+                            ^):
+  
+
+Rendered rescues/_trace (26.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:37:31) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items
+Completed in 1178ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 11:37:33) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:38:54) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items/new
+Completed in 1306ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:38:55) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:39:00) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:39:06) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items/new
+Completed in 1010ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:39:07) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 67ms (View: 61, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:47:11) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 22ms (View: 12, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:47:19) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items/new
+Completed in 1087ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:49:31) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 178ms (View: 171, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:49:36) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items/new
+Completed in 1401ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:50:23) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items/new
+Completed in 950ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 11:50:47) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items/new
+Completed in 1267ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 11:50:48) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 109ms (View: 103, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 12:00:23) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 12:00:28) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items/new
+Completed in 1469ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 12:00:30) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 12:01:04) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items/new
+Completed in 968ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 12:01:05) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 12:02:01) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 12:02:05) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items/new
+Completed in 1300ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 12:02:06) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 71ms (View: 65, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 12:02:24) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 12:02:28) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Redirected to http://localhost:3000/items/new
+Completed in 1295ms (DB: 0) | 302 Found [http://localhost/search/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 12:07:47) [GET]
+Rendering search/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/search/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 12:07:53) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"agile"}
+Rendering search/index
+Completed in 1294ms (View: 16, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 12:09:11) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"agile"}
+Rendering search/index
+Completed in 1431ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 12:09:14) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"agile"}
+Rendering search/index
+Completed in 1099ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 12:09:22) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"agile"}
+Rendering search/index
+Completed in 985ms (View: 17, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 12:12:37) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"agile"}
+Rendering search/index
+Completed in 1082ms (View: 26, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:23:19) [GET]
+Rendering search/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-05-29 14:23:29) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 183ms (View: 174, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 14:23:37) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering item
+
+ActionView::MissingTemplate (Missing template item.erb in view path app/views):
+  app/controllers/search_controller.rb:36:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 14:25:17) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering item/new
+
+ActionView::MissingTemplate (Missing template item/new.erb in view path app/views):
+  app/controllers/search_controller.rb:36:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 14:25:32) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering item/new.html
+
+ActionView::MissingTemplate (Missing template item/new.html in view path app/views):
+  app/controllers/search_controller.rb:36:in `search'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#search (for 127.0.0.1 at 2009-05-29 14:25:53) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering items/new.html.erb
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/items/new.html.erb:
+1: <h1>New item</h1>
+2: 
+3: <% form_for(@item) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/items/new.html.erb:3
+    app/controllers/search_controller.rb:36:in `search'
+
+Rendered rescues/_trace (91.3ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:27:27) [GET]
+Rendering search/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/search/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:28:12) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1339ms (View: 24, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:32:46) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering search/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.smallimageurl) on line #1 of app/views/search/index.html.erb:
+1: <%= image_tag @item.smallimageurl %>
+2: 
+3: <% form_tag(:action => :index) do %>
+4:   <h3>Enter keywords:</h3>
+
+    app/views/search/index.html.erb:1
+    app/controllers/search_controller.rb:18:in `index'
+
+Rendered rescues/_trace (88.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:33:28) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering search/index
+Completed in 984ms (View: 26, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:48:34) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering search/index
+
+ActionView::TemplateError (undefined local variable or method `action' for #<ActionView::Base:0x23f2148>) on line #27 of app/views/search/index.html.erb:
+24:         </td>
+25:       </tr>
+26:       <tr>
+27:         <td><%= button_to 'Select this one', action => 'select' %></td>
+28:       </tr>
+29:     <% } %>
+30:   <% end %>
+
+    app/views/search/index.html.erb:27
+    app/views/search/index.html.erb:13:in `each'
+    app/views/search/index.html.erb:13
+    app/views/search/index.html.erb:5
+    app/controllers/search_controller.rb:18:in `index'
+
+Rendered rescues/_trace (39.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:48:56) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1101ms (View: 28, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:48:59) [POST]
+  Parameters: {"authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1354ms (View: 24, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:49:15) [POST]
+  Parameters: {"authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1364ms (View: 24, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:49:30) [POST]
+  Parameters: {"authenticity_token"=>"1Gi3XBoFNgnYOqII4vW6zKmfnui1nm4o85Fn5z66l1E=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1572ms (View: 78, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:50:42) [GET]
+Rendering search/index
+Completed in 50ms (View: 47, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:50:46) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 3046ms (View: 24, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:52:42) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1408ms (View: 31, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:53:27) [POST]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1136ms (View: 27, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:54:54) [POST]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1160ms (View: 30, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:55:41) [POST]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1813ms (View: 32, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:56:07) [POST]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1243ms (View: 33, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:59:25) [POST]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+
+ActionView::TemplateError (undefined local variable or method `value' for #<ActionView::Base:0x23c7484>) on line #32 of app/views/search/index.html.erb:
+29:     </tr>
+30:     <tr>
+31:       <td>
+32:         <%= text_field_tag(:asin, params[:asin], value => item.get("asin")) %>
+33:       </td>
+34:     </tr>
+35:     <tr>
+
+    app/views/search/index.html.erb:32
+    app/views/search/index.html.erb:16
+    app/views/search/index.html.erb:15:in `each'
+    app/views/search/index.html.erb:15
+    app/controllers/search_controller.rb:18:in `index'
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 14:59:35) [POST]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1200ms (View: 88, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:00:48) [POST]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1582ms (View: 36, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:01:18) [POST]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 944ms (View: 36, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:01:21) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+
+ActionView::MissingTemplate (Missing template search/select.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:01:39) [POST]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+
+ActionView::MissingTemplate (Missing template search/select.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:02:11) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1416ms (View: 32, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:02:14) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+Redirected to http://localhost:3000/search
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/search/select]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:02:14) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:02:28) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search/select]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:02:39) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1161ms (View: 35, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:02:42) [POST]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search/select]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:03:19) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1104ms (View: 32, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:03:23) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+Redirected to http://localhost:3000/search
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/search/select]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:03:23) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:03:46) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1186ms (View: 33, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:04:15) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1078ms (View: 32, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:05:11) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1393ms (View: 86, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:05:14) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+
+ActionView::MissingTemplate (Missing template search/select.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-29 15:05:45) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+
+SyntaxError (/Users/kristenhazard/work/timesarrow/app/controllers/search_controller.rb:31: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (27.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:06:00) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1212ms (View: 33, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:06:03) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+
+ActionView::MissingTemplate (Missing template search/select.erb in view path app/views):
+  app/controllers/search_controller.rb:26:in `select'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:07:12) [GET]
+Rendering search/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:07:16) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1152ms (View: 33, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:07:18) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+
+ActionView::MissingTemplate (Missing template search/select.erb in view path app/views):
+  app/controllers/search_controller.rb:26:in `select'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:08:02) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+Rendering search/select
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/search/select]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:14:43) [GET]
+Rendering search/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/search/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:14:48) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1448ms (View: 33, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:19:05) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1233ms (View: 32, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:19:10) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+
+NoMethodError (undefined method `get_item_lookup' for #<SearchController:0x240f9b4>):
+  app/controllers/search_controller.rb:27:in `select'
+
+Rendered rescues/_trace (78.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:20:02) [GET]
+Rendering search/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/search/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:20:07) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1226ms (View: 33, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:20:11) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+
+NameError (undefined local variable or method `resl' for #<SearchController:0x23f9cb8>):
+  app/controllers/search_controller.rb:28:in `select'
+
+Rendered rescues/_trace (30.4ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:20:24) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-29 22:20:24', 'March', NULL, 'Book', 'Geraldine Brooks', 'http://www.amazon.com/March-Geraldine-Brooks/dp/0143036661%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0143036661', NULL, '0143036661', NULL, NULL, '2009-05-29 22:20:24')[0m
+Rendering search/select
+
+ActionView::TemplateError (can't convert nil into String) on line #2 of app/views/search/select.html.erb:
+1: <% if @item %>
+2:   <%= image_tag @item.smallimageurl %>
+3: <% end %>
+
+    app/views/search/select.html.erb:2
+    app/controllers/search_controller.rb:42:in `select'
+
+Rendered rescues/_trace (37.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:20:44) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: 'Book'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Item.inheritance_column to use another column for that information.):
+  app/controllers/items_controller.rb:5:in `index'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateItems (20090528201032)
+Migrating to RenameTypeColumn (20090529223028)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TEMPORARY TABLE "altered_items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "itemtype" varchar(255), "author" varchar(255), "description" varchar(255), "asin" varchar(255), "detailpageurl" varchar(255), "smallimageurl" varchar(255), "mediumimageurl" varchar(255), "publicationdate" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("items")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "items"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "itemtype" varchar(255), "author" varchar(255), "description" varchar(255), "asin" varchar(255), "detailpageurl" varchar(255), "smallimageurl" varchar(255), "mediumimageurl" varchar(255), "publicationdate" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_items")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_items"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090529223028')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("items")[0m
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:32:06) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 82ms (View: 76, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-05-29 15:33:02) [DELETE]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "id"=>"3"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+  [4;36;1mItem Destroy (0.3ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/items
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:33:02) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-05-29 15:33:05) [DELETE]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "id"=>"1"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 1) [0m
+  [4;35;1mItem Destroy (0.5ms)[0m   [0mDELETE FROM "items" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/items
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/items/1]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:33:05) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-05-29 15:33:08) [DELETE]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "id"=>"2"}
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+  [4;36;1mItem Destroy (0.3ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/items
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:33:08) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:33:18) [GET]
+Rendering search/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:33:24) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1437ms (View: 32, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:37:08) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1195ms (View: 32, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:37:12) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+  [4;36;1mItem Create (0.3ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-05-29 22:37:12', 'March', NULL, 'Geraldine Brooks', 'http://www.amazon.com/March-Geraldine-Brooks/dp/0143036661%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0143036661', NULL, '0143036661', 'Book', NULL, NULL, '2009-05-29 22:37:12')[0m
+Rendering search/select
+
+ActionView::TemplateError (can't convert nil into String) on line #2 of app/views/search/select.html.erb:
+1: <% if @item %>
+2:   <%= image_tag @item.smallimageurl %>
+3: <% end %>
+
+    app/views/search/select.html.erb:2
+    app/controllers/search_controller.rb:42:in `select'
+
+Rendered rescues/_trace (37.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:38:14) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 69ms (View: 64, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#edit (for 127.0.0.1 at 2009-05-29 15:38:43) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 4) [0m
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 133ms (View: 127, DB: 0) | 200 OK [http://localhost/items/4/edit]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:40:31) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-29 15:40:37) [GET]
+
+SyntaxError (/Users/kristenhazard/work/timesarrow/app/controllers/search_controller.rb:42: syntax error, unexpected ':', expecting kEND
+    redirect_to :controller => "items" :action => "index"
+                                        ^
+/Users/kristenhazard/work/timesarrow/app/controllers/search_controller.rb:47: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (59.6ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-29 15:40:51) [GET]
+
+SyntaxError (/Users/kristenhazard/work/timesarrow/app/controllers/search_controller.rb:47: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (25.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:41:00) [GET]
+Rendering search/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:41:03) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1342ms (View: 33, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:41:06) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-05-29 22:41:06', 'March', 'http://ecx.images-amazon.com/images/I/51K4CPKPJSL._SL160_.jpg', 'Geraldine Brooks', 'http://www.amazon.com/March-Geraldine-Brooks/dp/0143036661%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0143036661', '2006-01-31', '0143036661', 'Book', NULL, 'http://ecx.images-amazon.com/images/I/51K4CPKPJSL._SL75_.jpg', '2009-05-29 22:41:06')[0m
+Redirected to http://localhost:3000/items
+Completed in 248ms (DB: 0) | 302 Found [http://localhost/search/select]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:41:06) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-05-29 15:41:19) [DELETE]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "id"=>"4"}
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 4) [0m
+  [4;36;1mItem Destroy (0.6ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/items
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/items/4]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:41:19) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 61ms (View: 5, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:43:03) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:43:15) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:43:25) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:47:07) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:47:21) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:47:23) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:48:03) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #24 of app/views/items/index.html.erb:
+21:     <td><%=h item.author %></td>
+22:     <td><%=h item.description %></td>
+23:     <td><%=h item.asin %></td>
+24:     <td><%=h item.detailpageurl %><%= link_to(item.detailpageurl item.detailpageurl) %></td>
+25:     <td><%=h item.smallimageurl %></td>
+26:     <td><%=h item.mediumimageurl %></td>
+27:     <td><%=h item.publicationdate %></td>
+
+    app/views/items/index.html.erb:24:in `detailpageurl'
+    app/views/items/index.html.erb:24
+    app/views/items/index.html.erb:17:in `each'
+    app/views/items/index.html.erb:17
+    app/controllers/items_controller.rb:7:in `index'
+
+Rendered rescues/_trace (99.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:48:27) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+ERROR: compiling _run_erb_app47views47items47index46html46erb RAISED compile error
+/Users/kristenhazard/work/timesarrow/app/views/items/index.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+...k_to("item.detailpageurl" item.detailpageurl) ).to_s); @outp...
+                              ^
+/Users/kristenhazard/work/timesarrow/app/views/items/index.html.erb:24: syntax error, unexpected ')', expecting kEND
+...l" item.detailpageurl) ).to_s); @output_buffer.concat "</td>...
+                              ^
+Function body:           def _run_erb_app47views47items47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing items</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th></th>\n"
+@output_buffer.concat "    <th>Title</th>\n"
+@output_buffer.concat "    <th>Author</th>\n"
+@output_buffer.concat "    <th>Description</th>\n"
+@output_buffer.concat "    <th>Asin</th>\n"
+@output_buffer.concat "    <th>Detailpageurl</th>\n"
+@output_buffer.concat "    <th>Smallimageurl</th>\n"
+@output_buffer.concat "    <th>Mediumimageurl</th>\n"
+@output_buffer.concat "    <th>Publicationdate</th>\n"
+@output_buffer.concat "    <th>Type</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @items.each do |item| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr valign=\"top\">\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( image_tag item.smallimageurl ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.title ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.author ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.description ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.asin ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.detailpageurl ).to_s); @output_buffer.concat(( link_to("item.detailpageurl" item.detailpageurl) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.smallimageurl ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.mediumimageurl ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.publicationdate ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.itemtype ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Show', item ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Edit', edit_item_path(item) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New item', new_item_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/kristenhazard/work/timesarrow/app/views/items/index.html.erb:41:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/kristenhazard/work/timesarrow/app/controllers/items_controller.rb:7:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/kristenhazard/work/timesarrow/app/views/items/index.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+...k_to("item.detailpageurl" item.detailpageurl) ).to_s); @outp...
+                              ^
+/Users/kristenhazard/work/timesarrow/app/views/items/index.html.erb:24: syntax error, unexpected ')', expecting kEND
+...l" item.detailpageurl) ).to_s); @output_buffer.concat "</td>...
+                              ^) on line #24 of app/views/items/index.html.erb:
+21:     <td><%=h item.author %></td>
+22:     <td><%=h item.description %></td>
+23:     <td><%=h item.asin %></td>
+24:     <td><%=h item.detailpageurl %><%= link_to("item.detailpageurl" item.detailpageurl) %></td>
+25:     <td><%=h item.smallimageurl %></td>
+26:     <td><%=h item.mediumimageurl %></td>
+27:     <td><%=h item.publicationdate %></td>
+
+    app/views/items/index.html.erb:41:in `compile!'
+    app/controllers/items_controller.rb:7:in `index'
+
+Rendered rescues/_trace (35.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:48:44) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:50:42) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:50:51) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:57:56) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 68ms (View: 62, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:58:04) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 15:58:09) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"march"}
+Rendering search/index
+Completed in 1523ms (View: 32, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 15:58:14) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0143036661"}
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-05-29 22:58:14', 'March', 'http://ecx.images-amazon.com/images/I/51K4CPKPJSL._SL160_.jpg', 'Geraldine Brooks', 'http://www.amazon.com/March-Geraldine-Brooks/dp/0143036661%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0143036661', '2006-01-31', '0143036661', 'Book', ' From Louisa May Alcott’s beloved classic <I>Little Women</I>, Geraldine Brooks has animated the character of the absent father, March, and crafted a story "filled with the ache of love and marriage and with the power of war upon the mind and heart of one unforgettable man" (Sue Monk Kidd). With "pitch-perfect writing" (<I>USA Today</I>), Brooks follows March as he leaves behind his family to aid the Union cause in the Civil War. His experiences will utterly change his marriage and challenge his most ardently held beliefs. A lushly written, wholly original tale steeped in the details of another time, <I>March</I> secures Geraldine Brooks’s place as a renowned author of historical fiction.', 'http://ecx.images-amazon.com/images/I/51K4CPKPJSL._SL75_.jpg', '2009-05-29 22:58:14')[0m
+Redirected to http://localhost:3000/items
+Completed in 237ms (DB: 0) | 302 Found [http://localhost/search/select]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:58:14) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 15:59:18) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 16:01:59) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"middlesex"}
+Rendering search/index
+Completed in 708ms (View: 81, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 16:02:11) [POST]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0312427735"}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-05-29 23:02:11', 'Middlesex: A Novel (Oprah''s Book Club)', 'http://ecx.images-amazon.com/images/I/41byUgtworL._SL160_.jpg', 'Jeffrey Eugenides', 'http://www.amazon.com/Middlesex-Novel-Oprahs-Book-Club/dp/0312427735%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0312427735', '2002-06-05', '0312427735', 'Book', '<b>A dazzling triumph from the bestselling author of <i>The Virgin Suicides</i>--the astonishing tale of a gene that passes down through three generations of a Greek-American family and flowers in the body of a teenage girl.</b><br><br>In the spring of 1974, Calliope Stephanides, a student at a girls'' school in Grosse Pointe, finds herself drawn to a chain-smoking, strawberry blond clasmate with a gift for acting. The passion that furtively develops between them--along with Callie''s failure to develop--leads Callie to suspect that she is not like other girls. In fact, she is not really a girl at all.<br><br>The explanation for this shocking state of affairs takes us out of suburbia- back before the Detroit race riots of 1967, before the rise of the Motor City and Prohibition, to 1922, when the Turks sacked Smyrna and Callie''s grandparents fled for their lives. Back to a tiny village in Asia Minor where two lovers, and one rare genetic mutation, set in motion the metamorphosis that will turn Callie into a being both mythical and perfectly real: a hermaphrodite.<br><br>Spanning eight decades--and one unusually awkward adolescence- Jeffrey Eugenides''s long-awaited second novel is a grand, utterly original fable of crossed bloodlines, the intricacies of gender, and the deep, untidy promptings of desire. It marks the fulfillment of a huge talent, named one of America''s best young novelists by both <i>Granta </i>and <i>The New Yorker</i>.<br>', 'http://ecx.images-amazon.com/images/I/41byUgtworL._SL75_.jpg', '2009-05-29 23:02:11')[0m
+Redirected to http://localhost:3000/items
+Completed in 257ms (DB: 0) | 302 Found [http://localhost/search/select]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:02:11) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-05-29 16:02:25) [DELETE]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "id"=>"5"}
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 5) [0m
+  [4;36;1mItem Destroy (0.5ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 5[0m
+Redirected to http://localhost:3000/items
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/items/5]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:02:25) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 16:05:49) [GET]
+Rendering search/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 16:05:51) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 16:06:03) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"the brief and wondrous life"}
+Rendering search/index
+
+ActionView::TemplateError (undefined method `detailpageurl' for #<Amazon::Element:0x242bf38>) on line #26 of app/views/search/index.html.erb:
+23:       </td>
+24:       <td> <%= h item.get("title") %> <br>
+25:            by <%= h item.get("author") %><br>
+26:            <%= link_to("Amazon link", item.detailpageurl) %><br>
+27:       </td>
+28:     </tr>
+29:     <tr>
+
+    app/views/search/index.html.erb:26
+    app/views/search/index.html.erb:16
+    app/views/search/index.html.erb:15:in `each'
+    app/views/search/index.html.erb:15
+    app/controllers/search_controller.rb:18:in `index'
+
+Rendered rescues/_trace (94.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 16:06:30) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"the brief and wondrous life"}
+Rendering search/index
+Completed in 340ms (View: 27, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 16:07:06) [POST]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"1594483299"}
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-05-29 23:07:06', 'The Brief Wondrous Life of Oscar Wao', 'http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL160_.jpg', 'Junot Díaz', 'http://www.amazon.com/Brief-Wondrous-Life-Oscar-Wao/dp/1594483299%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1594483299', '2008-09-02', '1594483299', 'Book', '<B>The most talked about—and praised—first novel of 2007, and winner of the Pulitzer Prize.<B><BR><BR>Oscar is a sweet but disastrously overweight ghetto nerd who—from the New Jersey home he shares with his old world mother and rebellious sister— dreams of becoming the Dominican J.R.R. Tolkien and, most of all, finding love. But Oscar may never get what he wants. Blame the fukú—a curse that has haunted Oscar’s family for generations, following them on their epic journey from Santo Domingo to the USA. Encapsulating Dominican-American history, <I>The Brief Wondrous Life of Oscar Wao<./I> opens our eyes to an astonishing vision of the contemporary American experience and explores the endless human capacity to persevere—and risk it all—in the name of love.', 'http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL75_.jpg', '2009-05-29 23:07:06')[0m
+Redirected to http://localhost:3000/items
+Completed in 321ms (DB: 0) | 302 Found [http://localhost/search/select]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:07:06) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 16:07:22) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"1594483299"}
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-05-29 23:07:22', 'The Brief Wondrous Life of Oscar Wao', 'http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL160_.jpg', 'Junot Díaz', 'http://www.amazon.com/Brief-Wondrous-Life-Oscar-Wao/dp/1594483299%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1594483299', '2008-09-02', '1594483299', 'Book', '<B>The most talked about—and praised—first novel of 2007, and winner of the Pulitzer Prize.<B><BR><BR>Oscar is a sweet but disastrously overweight ghetto nerd who—from the New Jersey home he shares with his old world mother and rebellious sister— dreams of becoming the Dominican J.R.R. Tolkien and, most of all, finding love. But Oscar may never get what he wants. Blame the fukú—a curse that has haunted Oscar’s family for generations, following them on their epic journey from Santo Domingo to the USA. Encapsulating Dominican-American history, <I>The Brief Wondrous Life of Oscar Wao<./I> opens our eyes to an astonishing vision of the contemporary American experience and explores the endless human capacity to persevere—and risk it all—in the name of love.', 'http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL75_.jpg', '2009-05-29 23:07:22')[0m
+Redirected to http://localhost:3000/items
+Completed in 225ms (DB: 0) | 302 Found [http://localhost/search/select]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:07:22) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 16:07:34) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0739494287"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/search_controller.rb:35:in `select'
+
+Rendered rescues/_trace (26.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 16:07:51) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"the brief and wondrous life"}
+Rendering search/index
+Completed in 503ms (View: 22, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 16:07:54) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0739494287"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/search_controller.rb:35:in `select'
+
+Rendered rescues/_trace (26.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 16:08:55) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"1594483590"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/search_controller.rb:35:in `select'
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 16:08:58) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"1594483299"}
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-05-29 23:08:59', 'The Brief Wondrous Life of Oscar Wao', 'http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL160_.jpg', 'Junot Díaz', 'http://www.amazon.com/Brief-Wondrous-Life-Oscar-Wao/dp/1594483299%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1594483299', '2008-09-02', '1594483299', 'Book', '<B>The most talked about—and praised—first novel of 2007, and winner of the Pulitzer Prize.<B><BR><BR>Oscar is a sweet but disastrously overweight ghetto nerd who—from the New Jersey home he shares with his old world mother and rebellious sister— dreams of becoming the Dominican J.R.R. Tolkien and, most of all, finding love. But Oscar may never get what he wants. Blame the fukú—a curse that has haunted Oscar’s family for generations, following them on their epic journey from Santo Domingo to the USA. Encapsulating Dominican-American history, <I>The Brief Wondrous Life of Oscar Wao<./I> opens our eyes to an astonishing vision of the contemporary American experience and explores the endless human capacity to persevere—and risk it all—in the name of love.', 'http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL75_.jpg', '2009-05-29 23:08:59')[0m
+Redirected to http://localhost:3000/items
+Completed in 246ms (DB: 0) | 302 Found [http://localhost/search/select]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:08:59) [GET]
+  [4;35;1mItem Load (0.9ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-05-29 16:09:09) [DELETE]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "id"=>"9"}
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 9) [0m
+  [4;35;1mItem Destroy (0.4ms)[0m   [0mDELETE FROM "items" WHERE "id" = 9[0m
+Redirected to http://localhost:3000/items
+Completed in 36ms (DB: 1) | 302 Found [http://localhost/items/9]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:09:09) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:11:55) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:12:13) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-05-29 16:12:19) [DELETE]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "id"=>"10"}
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 10) [0m
+  [4;36;1mItem Destroy (0.5ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 10[0m
+Redirected to http://localhost:3000/items
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/items/10]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:12:19) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:12:45) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 16:19:36) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0739494287"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/search_controller.rb:35:in `select'
+
+Rendered rescues/_trace (26.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 16:20:07) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0739494287"}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-05-29 23:20:07', 'The Brief and Wondrous Life of Oscar Wao', 'http://ecx.images-amazon.com/images/I/21dgj6U0XIL._SL160_.jpg', 'Junot Diaz', 'http://www.amazon.com/Brief-Wondrous-Life-Oscar-Wao/dp/0739494287%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0739494287', '2007-01-01', '0739494287', 'Book', NULL, 'http://ecx.images-amazon.com/images/I/21dgj6U0XIL._SL75_.jpg', '2009-05-29 23:20:07')[0m
+Redirected to http://localhost:3000/items
+Completed in 212ms (DB: 0) | 302 Found [http://localhost/search/select]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:20:07) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.gsub) on line #22 of app/views/items/index.html.erb:
+19:     <td><%= image_tag item.smallimageurl %></td>
+20:     <td><%=h item.title %></td>
+21:     <td><%=h item.author %></td>
+22:     <td><%= truncate(item.description.gsub(/<.*?>/,''), :length => 80) %></td>
+23:     <td><%=h item.asin %></td>
+24:     <td><%= link_to("Amazon link", item.detailpageurl) %></td>
+25:     <td><%=h item.smallimageurl %></td>
+
+    app/views/items/index.html.erb:22
+    app/views/items/index.html.erb:17:in `each'
+    app/views/items/index.html.erb:17
+    app/controllers/items_controller.rb:7:in `index'
+
+Rendered rescues/_trace (93.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 16:20:40) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"0739494287"}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-05-29 23:20:40', 'The Brief and Wondrous Life of Oscar Wao', 'http://ecx.images-amazon.com/images/I/21dgj6U0XIL._SL160_.jpg', 'Junot Diaz', 'http://www.amazon.com/Brief-Wondrous-Life-Oscar-Wao/dp/0739494287%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0739494287', '2007-01-01', '0739494287', 'Book', '', 'http://ecx.images-amazon.com/images/I/21dgj6U0XIL._SL75_.jpg', '2009-05-29 23:20:40')[0m
+Redirected to http://localhost:3000/items
+Completed in 341ms (DB: 0) | 302 Found [http://localhost/search/select]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:20:40) [GET]
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.gsub) on line #22 of app/views/items/index.html.erb:
+19:     <td><%= image_tag item.smallimageurl %></td>
+20:     <td><%=h item.title %></td>
+21:     <td><%=h item.author %></td>
+22:     <td><%= truncate(item.description.gsub(/<.*?>/,''), :length => 80) %></td>
+23:     <td><%=h item.asin %></td>
+24:     <td><%= link_to("Amazon link", item.detailpageurl) %></td>
+25:     <td><%=h item.smallimageurl %></td>
+
+    app/views/items/index.html.erb:22
+    app/views/items/index.html.erb:17:in `each'
+    app/views/items/index.html.erb:17
+    app/controllers/items_controller.rb:7:in `index'
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 16:20:55) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-29 16:21:00) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "keywords"=>"brief wondrous"}
+Rendering search/index
+Completed in 410ms (View: 23, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#select (for 127.0.0.1 at 2009-05-29 16:21:03) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "asin"=>"1594483299"}
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-05-29 23:21:03', 'The Brief Wondrous Life of Oscar Wao', 'http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL160_.jpg', 'Junot Díaz', 'http://www.amazon.com/Brief-Wondrous-Life-Oscar-Wao/dp/1594483299%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1594483299', '2008-09-02', '1594483299', 'Book', '<B>The most talked about—and praised—first novel of 2007, and winner of the Pulitzer Prize.<B><BR><BR>Oscar is a sweet but disastrously overweight ghetto nerd who—from the New Jersey home he shares with his old world mother and rebellious sister— dreams of becoming the Dominican J.R.R. Tolkien and, most of all, finding love. But Oscar may never get what he wants. Blame the fukú—a curse that has haunted Oscar’s family for generations, following them on their epic journey from Santo Domingo to the USA. Encapsulating Dominican-American history, <I>The Brief Wondrous Life of Oscar Wao<./I> opens our eyes to an astonishing vision of the contemporary American experience and explores the endless human capacity to persevere—and risk it all—in the name of love.', 'http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL75_.jpg', '2009-05-29 23:21:03')[0m
+Redirected to http://localhost:3000/items
+Completed in 367ms (DB: 0) | 302 Found [http://localhost/search/select]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:21:03) [GET]
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.gsub) on line #22 of app/views/items/index.html.erb:
+19:     <td><%= image_tag item.smallimageurl %></td>
+20:     <td><%=h item.title %></td>
+21:     <td><%=h item.author %></td>
+22:     <td><%= truncate(item.description.gsub(/<.*?>/,''), :length => 80) %></td>
+23:     <td><%=h item.asin %></td>
+24:     <td><%= link_to("Amazon link", item.detailpageurl) %></td>
+25:     <td><%=h item.smallimageurl %></td>
+
+    app/views/items/index.html.erb:22
+    app/views/items/index.html.erb:17:in `each'
+    app/views/items/index.html.erb:17
+    app/controllers/items_controller.rb:7:in `index'
+
+Rendered rescues/_trace (37.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 16:21:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mItem Load (0.1ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Item with ID=1):
+  app/controllers/items_controller.rb:16:in `show'
+
+Rendered rescues/_trace (87.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 16:21:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Item with ID=2):
+  app/controllers/items_controller.rb:16:in `show'
+
+Rendered rescues/_trace (27.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 16:21:53) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mItem Load (0.1ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Item with ID=3):
+  app/controllers/items_controller.rb:16:in `show'
+
+Rendered rescues/_trace (28.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 16:21:57) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mItem Load (0.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 4) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Item with ID=4):
+  app/controllers/items_controller.rb:16:in `show'
+
+Rendered rescues/_trace (89.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 16:22:02) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mItem Load (0.1ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 5) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Item with ID=5):
+  app/controllers/items_controller.rb:16:in `show'
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 16:22:09) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+Rendering template within layouts/items
+Rendering items/show
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/items/6]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 16:22:14) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering items/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/items/7]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 16:22:19) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+Rendering template within layouts/items
+Rendering items/show
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/items/8]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 16:22:26) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mItem Load (0.1ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 9) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Item with ID=9):
+  app/controllers/items_controller.rb:16:in `show'
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 16:22:33) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mItem Load (0.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 10) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Item with ID=10):
+  app/controllers/items_controller.rb:16:in `show'
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 16:22:36) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 11) [0m
+Rendering template within layouts/items
+Rendering items/show
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/items/11]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-05-29 16:22:47) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 12) [0m
+Rendering template within layouts/items
+Rendering items/show
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/items/12]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:23:49) [GET]
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.gsub) on line #23 of app/views/items/index.html.erb:
+20:     <td><%=h item.title %></td>
+21:     <td><%=h item.author %></td>
+22:     <td><%=item.description %></td>
+23:     <!--><td><%= truncate(item.description.gsub(/<.*?>/,''), :length => 80) %></td>-->
+24:     <td><%=h item.asin %></td>
+25:     <td><%= link_to("Amazon link", item.detailpageurl) %></td>
+26:     <td><%=h item.smallimageurl %></td>
+
+    app/views/items/index.html.erb:23
+    app/views/items/index.html.erb:17:in `each'
+    app/views/items/index.html.erb:17
+    app/controllers/items_controller.rb:7:in `index'
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:24:02) [GET]
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 77ms (View: 71, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:25:42) [GET]
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:25:58) [GET]
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-05-29 16:26:06) [DELETE]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "id"=>"11"}
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 11) [0m
+  [4;36;1mItem Destroy (0.6ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 11[0m
+Redirected to http://localhost:3000/items
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/items/11]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:26:07) [GET]
+  [4;35;1mItem Load (0.9ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-05-29 16:26:11) [DELETE]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "id"=>"12"}
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 12) [0m
+  [4;35;1mItem Destroy (0.3ms)[0m   [0mDELETE FROM "items" WHERE "id" = 12[0m
+Redirected to http://localhost:3000/items
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/items/12]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:26:11) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-05-29 16:26:14) [DELETE]
+  Parameters: {"authenticity_token"=>"xPl8/WL/Kr7mkt5GcZObPN8KEjAXnPWgk7TLsYJ/+UI=", "id"=>"13"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 13) [0m
+  [4;36;1mItem Destroy (0.6ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 13[0m
+Redirected to http://localhost:3000/items
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/items/13]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-05-29 16:26:15) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/items]

@@ -2,8 +2,8 @@
 
 <table>
   <tr>
+    <th></th>
     <th>Title</th>
-    <th>Type</th>
     <th>Author</th>
     <th>Description</th>
     <th>Asin</th>
@@ -11,19 +11,21 @@
     <th>Smallimageurl</th>
     <th>Mediumimageurl</th>
     <th>Publicationdate</th>
+    <th>Type</th>
   </tr>
 
 <% @items.each do |item| %>
-  <tr>
+  <tr valign="top">
+    <td><%= image_tag item.smallimageurl %></td>
     <td><%=h item.title %></td>
-    <td><%=h item.type %></td>
     <td><%=h item.author %></td>
-    <td><%=h item.description %></td>
+    <td><% if item.description %><%= truncate(item.description.gsub(/<.*?>/,''), :length => 80) %><% end %></td>
     <td><%=h item.asin %></td>
-    <td><%=h item.detailpageurl %></td>
+    <td><%= link_to("Amazon link", item.detailpageurl) %></td>
     <td><%=h item.smallimageurl %></td>
     <td><%=h item.mediumimageurl %></td>
     <td><%=h item.publicationdate %></td>
+    <td><%=h item.itemtype %></td>
     <td><%= link_to 'Show', item %></td>
     <td><%= link_to 'Edit', edit_item_path(item) %></td>
     <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>

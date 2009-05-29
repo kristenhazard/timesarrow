@@ -1058,3 +1058,559 @@ Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
 Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:03:29) [GET]
 Rendering search/index
 Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+Rendering items/new.html.erb
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:09:19) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+Rendering items/new.html.erb
+Rendering items/new.html.erb
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:15:21) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+Rendering items/new.html.erb
+ERROR: compiling _run_erb_app47views47items47new46html46erb RAISED compile error
+/Users/kristenhazard/work/timesarrow/app/views/items/new.html.erb:49: syntax error, unexpected ':', expecting kEND
+..._tag :controller => 'search' :action => 'search' do ; @outpu...
+                              ^
+/Users/kristenhazard/work/timesarrow/app/views/items/new.html.erb:49: syntax error, unexpected kDO, expecting kEND
+...search' :action => 'search' do ; @output_buffer.concat "\n"
+                              ^
+/Users/kristenhazard/work/timesarrow/app/views/items/new.html.erb:71: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47items47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>New item</h1>\n"
+@output_buffer.concat "\n"
+ form_for(@item) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :type ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :type ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :author ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :author ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :description ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :description ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :asin ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :asin ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :detailpageurl ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :detailpageurl ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :smallimageurl ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :smallimageurl ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :mediumimageurl ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :mediumimageurl ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :publicationdate ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.date_select :publicationdate ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'Back', items_path ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ form_tag :controller => 'search' :action => 'search' do ; @output_buffer.concat "\n"
+@output_buffer.concat "  <h3>Enter keywords:</h3>\n"
+@output_buffer.concat "  "; @output_buffer.concat(( text_field_tag(:keywords, params[:keywords]) ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( submit_tag "Search" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <h3 id=\"1\">Results amazon-ecs</h3>\n"
+@output_buffer.concat "  "; @output_buffer.concat(( flash[:error] ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <table border=\"0\" cellspacing=\"5\" cellpadding=\"5\">\n"
+@output_buffer.concat "  ";  if @itemarray ; @output_buffer.concat "\n"
+@output_buffer.concat "    ";  @itemarray.each { |item| ; @output_buffer.concat "\n"
+@output_buffer.concat "      <tr valign=\"top\">\n"
+@output_buffer.concat "        <td>\n"
+@output_buffer.concat "          ";  if item.get("smallimage/url") ; @output_buffer.concat " \n"
+@output_buffer.concat "            "; @output_buffer.concat(( image_tag item.get("smallimage/url") ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "          ";  end; @output_buffer.concat "\n"
+@output_buffer.concat "        </td>\n"
+@output_buffer.concat "        <td> "; @output_buffer.concat(( h item.get("title") ).to_s); @output_buffer.concat " <br>\n"
+@output_buffer.concat "             by "; @output_buffer.concat(( h item.get("author") ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "      </tr>\n"
+@output_buffer.concat "    ";  } ; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  </table>\n"
+ end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/kristenhazard/work/timesarrow/app/views/items/new.html.erb:71:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render_without_template_tracking'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/test_case.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render_without_mock_proxy'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec-rails/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec-rails/lib/spec/rails/example/view_example_group.rb:170:in `__send__'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec-rails/lib/spec/rails/example/view_example_group.rb:170:in `render'
+./spec/views/items/new.html.erb_spec.rb:21
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec/lib/spec/example/example_methods.rb:40:in `instance_eval'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec/lib/spec/example/example_methods.rb:40:in `execute'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec/lib/spec/example/example_methods.rb:37:in `execute'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:207:in `run_examples'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:205:in `each'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:205:in `run_examples'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb:103:in `run'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:23:in `run'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `each'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb:22:in `run'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec/lib/spec/runner/options.rb:119:in `run_examples'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec/lib/spec/runner/command_line.rb:9:in `run'
+/Users/kristenhazard/work/timesarrow/vendor/plugins/rspec/bin/spec:4
+Rendering items/new.html.erb
+Rendering items/new.html.erb
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:23:31) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:24:08) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:24:23) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:27:33) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:31:30) [GET]
+Rendering search/index
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:36:33) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:37:32) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+Rendering items/new.html.erb
+WARNING: Can't mass-assign these protected attributes: type
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "type", "author", "detailpageurl", "publicationdate", "asin", "description", "smallimageurl", "created_at") VALUES('2009-05-29 18:37:35', 'value for title', 'value for mediumimageurl', NULL, 'value for author', 'value for detailpageurl', '2009-05-29', 'value for asin', 'value for description', 'value for smallimageurl', '2009-05-29 18:37:35')[0m
+Rendering items/index.html.erb
+Rendering items/edit.html.erb
+Rendering items/show.html.erb
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 11:37:35) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/items
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/37]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 11:37:35) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:37:35) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:37:36) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:37:36) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:37:36) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:37:36) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:37:36) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:37:36) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:37:36) [POST]
+  Parameters: {"item"=>{}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:37:36) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Redirected to http://test.host/items/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:37:36) [POST]
+  Parameters: {"item"=>{}}
+Redirected to http://test.host/items/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?]
+
+
+Processing ItemsController#edit (for 0.0.0.0 at 2009-05-29 11:37:36) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37/edit]
+
+
+Processing ItemsController#new (for 0.0.0.0 at 2009-05-29 11:37:36) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/new]
+
+
+Processing ItemsController#show (for 0.0.0.0 at 2009-05-29 11:37:36) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37]
+
+
+Processing ItemsController#index (for 0.0.0.0 at 2009-05-29 11:37:36) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:37:36) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+Rendering search/index
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:38:54) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:45:16) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 11:47:12) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/items
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/37]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 11:47:12) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:47:12) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:47:12) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:47:12) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:47:12) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:47:12) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1007
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:47:12) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1008
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:47:12) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:47:12) [POST]
+  Parameters: {"item"=>{}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:47:12) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Redirected to http://test.host/items/1011
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:47:12) [POST]
+  Parameters: {"item"=>{}}
+Redirected to http://test.host/items/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?]
+
+
+Processing ItemsController#edit (for 0.0.0.0 at 2009-05-29 11:47:12) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37/edit]
+
+
+Processing ItemsController#new (for 0.0.0.0 at 2009-05-29 11:47:12) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/new]
+
+
+Processing ItemsController#show (for 0.0.0.0 at 2009-05-29 11:47:12) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37]
+
+
+Processing ItemsController#index (for 0.0.0.0 at 2009-05-29 11:47:12) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 11:49:13) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/items
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/items/37]
+
+
+Processing ItemsController#destroy (for 0.0.0.0 at 2009-05-29 11:49:13) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:49:13) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:49:13) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:49:13) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:49:13) [PUT]
+  Parameters: {"id"=>"37", "item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37?item%5Bthese%5D=params]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:49:13) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1007
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#update (for 0.0.0.0 at 2009-05-29 11:49:13) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/items/1008
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items/1]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:49:13) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:49:13) [POST]
+  Parameters: {"item"=>{}}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items?]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:49:13) [POST]
+  Parameters: {"item"=>{"these"=>"params"}}
+Redirected to http://test.host/items/1011
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?item%5Bthese%5D=params]
+
+
+Processing ItemsController#create (for 0.0.0.0 at 2009-05-29 11:49:13) [POST]
+  Parameters: {"item"=>{}}
+Redirected to http://test.host/items/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/items?]
+
+
+Processing ItemsController#edit (for 0.0.0.0 at 2009-05-29 11:49:13) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37/edit]
+
+
+Processing ItemsController#new (for 0.0.0.0 at 2009-05-29 11:49:13) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/new]
+
+
+Processing ItemsController#show (for 0.0.0.0 at 2009-05-29 11:49:13) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/items
+Rendering items/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items/37]
+
+
+Processing ItemsController#index (for 0.0.0.0 at 2009-05-29 11:49:13) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/items]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:50:15) [GET]
+Rendering search/index
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 11:50:42) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 12:00:08) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 12:01:02) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 12:01:58) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 12:02:26) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 12:09:10) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 12:09:23) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+Rendering search/index
+Rendering search/index
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 12:51:54) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 12:53:00) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+
+
+Processing SearchController#index (for 0.0.0.0 at 2009-05-29 12:55:20) [GET]
+Rendering search/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/search]
+Rendering search/index
