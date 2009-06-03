@@ -1,0 +1,551 @@
+
+--- 
+items: 
+  columns: 
+  - id
+  - title
+  - itemtype
+  - author
+  - description
+  - asin
+  - detailpageurl
+  - smallimageurl
+  - mediumimageurl
+  - publicationdate
+  - created_at
+  - updated_at
+  records: 
+  - - "6"
+    - March
+    - Book
+    - Geraldine Brooks
+    - "  From Louisa May Alcott\xE2\x80\x99s beloved classic <I>Little Women</I>, Geraldine Brooks has animated the   character of the absent father, March, and crafted a story \"filled with the ache of love and marriage and   with the power of war upon the mind and heart of one unforgettable man\" (Sue Monk Kidd). With  \"pitch-perfect writing\" (<I>USA Today</I>), Brooks follows March as he leaves behind his family to aid   the Union cause in the Civil War. His experiences will utterly change his marriage and challenge his most   ardently held beliefs. A lushly written, wholly original tale steeped in the details of another time,   <I>March</I> secures Geraldine Brooks\xE2\x80\x99s place as a renowned author of historical fiction."
+    - "0143036661"
+    - http://www.amazon.com/March-Geraldine-Brooks/dp/0143036661%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0143036661
+    - http://ecx.images-amazon.com/images/I/51K4CPKPJSL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51K4CPKPJSL._SL160_.jpg
+    - "2006-01-31"
+    - 2009-05-29 22:58:14
+    - 2009-05-29 22:58:14
+  - - "7"
+    - "Middlesex: A Novel (Oprah's Book Club)"
+    - Book
+    - Jeffrey Eugenides
+    - "<b>A dazzling triumph from the bestselling author of <i>The Virgin Suicides</i>--the astonishing tale of a gene that passes down through three generations of a Greek-American family and flowers in the body of a teenage girl.</b><br><br>In the spring of 1974, Calliope Stephanides, a student at a girls' school in Grosse Pointe, finds herself drawn to a chain-smoking, strawberry blond clasmate with a gift for acting. The passion that furtively develops between them--along with Callie's failure to develop--leads Callie to suspect that she is not like other girls. In fact, she is not really a girl at all.<br><br>The explanation for this shocking state of affairs takes us out of suburbia- back before the Detroit race riots of 1967, before the rise of the Motor City and Prohibition, to 1922, when the Turks sacked Smyrna and Callie's grandparents fled for their lives. Back to a tiny village in Asia Minor where two lovers, and one rare genetic mutation, set in motion the metamorphosis that will turn Callie into a being both mythical and perfectly real: a hermaphrodite.<br><br>Spanning eight decades--and one unusually awkward adolescence- Jeffrey Eugenides's long-awaited second novel is a grand, utterly original fable of crossed bloodlines, the intricacies of gender, and the deep, untidy promptings of desire. It marks the fulfillment of a huge talent, named one of America's best young novelists by both <i>Granta </i>and <i>The New Yorker</i>.<br>"
+    - "0312427735"
+    - http://www.amazon.com/Middlesex-Novel-Oprahs-Book-Club/dp/0312427735%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0312427735
+    - http://ecx.images-amazon.com/images/I/41byUgtworL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41byUgtworL._SL160_.jpg
+    - "2002-06-05"
+    - 2009-05-29 23:02:11
+    - 2009-05-29 23:02:11
+  - - "8"
+    - The Brief Wondrous Life of Oscar Wao
+    - Book
+    - "Junot D\xC3\xADaz"
+    - "<B>The most talked about\xE2\x80\x94and praised\xE2\x80\x94first novel of 2007, and winner of the Pulitzer Prize.<B><BR><BR>Oscar is a sweet but disastrously overweight ghetto nerd who\xE2\x80\x94from the New Jersey home he shares with his old world mother and rebellious sister\xE2\x80\x94 dreams of becoming the Dominican J.R.R. Tolkien and, most of all, finding love. But Oscar may never get what he wants. Blame the fuk\xC3\xBA\xE2\x80\x94a curse that has haunted Oscar\xE2\x80\x99s family for generations, following them on their epic journey from Santo Domingo to the USA. Encapsulating Dominican-American history, <I>The Brief Wondrous Life of Oscar Wao<./I> opens our eyes to an astonishing vision of the contemporary American experience and explores the endless human capacity to persevere\xE2\x80\x94and risk it all\xE2\x80\x94in the name of love."
+    - "1594483299"
+    - http://www.amazon.com/Brief-Wondrous-Life-Oscar-Wao/dp/1594483299%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1594483299
+    - http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL160_.jpg
+    - "2008-09-02"
+    - 2009-05-29 23:07:06
+    - 2009-05-29 23:07:06
+  - - "15"
+    - The Road
+    - Book
+    - Cormac McCarthy
+    - |-
+      A searing, postapocalyptic novel destined to become Cormac McCarthys masterpiece.
+      
+      A father and his son walk alone through burned America. Nothing moves in the ravaged landscape save the ash on the wind. It is cold enough to crack stones, and when the snow falls it is gray. The sky is dark. Their destination is the coast, although they dont know what, if anything, awaits them there. They have nothing; just a pistol to defend themselves against the lawless bands that stalk the road, the clothes they are wearing, a cart of scavenged foodand each other.
+      
+      The Road is the profoundly moving story of a journey. It boldly imagines a future in which no hope remains, but in which the father and his son, each the others world entire, are sustained by love. Awesome in the totality of its vision, it is an unflinching meditation on the worst and the best that we are capable of: ultimate destructiveness, desperate tenacity, and the tenderness that keeps two people alive in the face of total devastation.
+    - B001GIVCZM
+    - http://www.amazon.com/Road-Cormac-McCarthy/dp/B001GIVCZM%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001GIVCZM
+    - http://ecx.images-amazon.com/images/I/01QzTqAJ8QL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/01QzTqAJ8QL._SL160_.jpg
+    - 
+    - 2009-05-29 23:35:47
+    - 2009-05-29 23:35:47
+  - - "16"
+    - The Known World
+    - Book
+    - Edward P. Jones
+    - <p> One of the most acclaimed novels in recent memory, <i>The Known World</i> is a daring and ambitious work by Pulitzer Prize winner Edward P. Jones. </p> <p> <i>The Known World</i> tells the story of Henry Townsend, a black farmer and former slave who falls under the tutelage of William Robbins, the most powerful man in Manchester County, Virginia. Making certain he never circumvents the law, Townsend runs his affairs with unusual discipline. But when death takes him unexpectedly, his widow, Caldonia, can't uphold the estate's order, and chaos ensues. Jones has woven a footnote of history into an epic that takes an unflinching look at slavery in all its moral complexities. </p>
+    - 0061159174
+    - http://www.amazon.com/Known-World-Edward-P-Jones/dp/0061159174%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0061159174
+    - http://ecx.images-amazon.com/images/I/21YAJQ25D4L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/21YAJQ25D4L._SL160_.jpg
+    - "2006-09-01"
+    - 2009-05-29 23:40:13
+    - 2009-05-29 23:40:13
+  - - "17"
+    - "Gilead: A Novel"
+    - Book
+    - Marilynne Robinson
+    - "<DIV><DIV><DIV>Twenty-four years after her first novel, <I>Housekeeping</I>, Marilynne Robinson returns with an intimate tale of three generations from the Civil War to the twentieth century: a story about fathers and sons and the spiritual battles that still rage at America's heart. Writing in the tradition of Emily Dickinson and Walt Whitman, Marilynne Robinson's beautiful, spare, and spiritual prose allows \"even the faithless reader to feel the possibility of transcendent order\" (<I>Slate</I>). In the luminous and unforgettable voice of Congregationalist minister John Ames, Gilead reveals the human condition and the often unbearable beauty of an ordinary life.</DIV>"
+    - 031242440X
+    - http://www.amazon.com/Gilead-Novel-Marilynne-Robinson/dp/031242440X%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D031242440X
+    - http://ecx.images-amazon.com/images/I/51AGS2CVVXL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51AGS2CVVXL._SL160_.jpg
+    - "2006-01-10"
+    - 2009-05-30 00:27:32
+    - 2009-05-30 00:27:32
+  - - "18"
+    - THE SHIPPING NEWS
+    - Book
+    - E. Annie Proulx
+    - ""
+    - B001IKGXWA
+    - http://www.amazon.com/SHIPPING-NEWS-E-Annie-Proulx/dp/B001IKGXWA%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001IKGXWA
+    - http://ecx.images-amazon.com/images/I/41e2yLR3PDL._SL75_.gif
+    - http://ecx.images-amazon.com/images/I/41e2yLR3PDL._SL160_.gif
+    - "1994-06-01"
+    - 2009-05-30 00:42:59
+    - 2009-05-30 00:42:59
+  - - "19"
+    - Empire Falls
+    - Book
+    - Richard Russo
+    - "With <b>Empire Falls</b><i> </i>Richard Russo cements his reputation as one of America\xE2\x80\x99s most compelling and compassionate storytellers.  <br><br>Miles Roby has been slinging burgers at the Empire Grill for 20 years, a job that cost him his college education and much of his self-respect. What keeps him there? It could be his bright, sensitive daughter Tick, who needs all his help surviving the local high school. Or maybe it\xE2\x80\x99s Janine, Miles\xE2\x80\x99 soon-to-be ex-wife, who\xE2\x80\x99s taken up with a noxiously vain health-club proprietor. Or perhaps it\xE2\x80\x99s the imperious Francine Whiting, who owns everything in town\xE2\x80\x93and seems to believe that \xE2\x80\x9Ceverything\xE2\x80\x9D includes Miles himself.  In <b>Empire Falls</b><i> </i>Richard Russo delves deep into the blue-collar heart of America in a work that overflows with hilarity, heartache, and grace."
+    - "0375726403"
+    - http://www.amazon.com/Empire-Falls-Richard-Russo/dp/0375726403%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0375726403
+    - http://ecx.images-amazon.com/images/I/51TANA1BM8L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51TANA1BM8L._SL160_.jpg
+    - "2002-04-12"
+    - 2009-05-30 20:17:55
+    - 2009-05-30 20:17:55
+  - - "20"
+    - "Olive Kitteridge: Fiction"
+    - Book
+    - Elizabeth Strout
+    - "At times stern, at other times patient, at times perceptive, at other times in sad denial, Olive Kitteridge, a retired schoolteacher, deplores the changes in her little town of Crosby, Maine, and in the world at large, but she doesn\xE2\x80\x99t always recognize the changes in those around her: a lounge musician haunted by a past romance; a former student who has lost the will to live; Olive\xE2\x80\x99s own adult child, who feels tyrannized by her irrational sensitivities; and her husband, Henry, who finds his loyalty to his marriage both a blessing and a curse. <br><br>As the townspeople grapple with their problems, mild and dire, Olive is brought to a deeper understanding of herself and her life\xE2\x80\x93sometimes painfully, but always with ruthless honesty. Olive Kitteridge offers profound insights into the human condition\xE2\x80\x93its conflicts, its tragedies and joys, and the endurance it requires.<br><br><br><b><u>Praise for <i>Olive Kitteridge</i></u></b>:<br><br>\xE2\x80\x9CPerceptive, deeply empathetic . . . Olive is the axis around which these thirteen complex, relentlessly human narratives spin themselves into Elizabeth Strout\xE2\x80\x99s unforgettable novel in stories.\xE2\x80\x9D<br><i>\xE2\x80\x93O: The Oprah Magazine </i><br><br>\xE2\x80\x9CFiction lovers, remember this name: <i>Olive Kitteridge</i>. . . . You\xE2\x80\x99ll never forget her. . . . [Elizabeth Strout] constructs her stories with rich irony and moments of genuine surprise and intense emotion. . . . Glorious, powerful stuff.\xE2\x80\x9D<br><i>\xE2\x80\x93USA Today</i><br><br>\xE2\x80\x9CFunny, wicked and remorseful, Mrs. Kitteridge is a compelling life force, a red-blooded original. When she\xE2\x80\x99s not onstage, we look forward to her return. The book is a page-turner because of her.\xE2\x80\x9D<br>\xE2\x80\x93<i>San Francisco Chronicle</i><br><br>\xE2\x80\x9C<i>Olive Kitteridge</i> still lingers in memory like a treasured photograph.\xE2\x80\x9D<br><i>\xE2\x80\x93Seattle Post-Intelligencer</i><br><br>\xE2\x80\x9CRarely does a story collection pack such a gutsy emotional punch.\xE2\x80\x9D<br><i>\xE2\x80\x93Entertainment Weekly</i><br><br>\xE2\x80\x9CStrout animates the ordinary with astonishing force. . . . [She] makes us experience not only the terrors of change but also the terrifying hope that change can bring: she plunges us into these churning waters and we come up gasping for air.\xE2\x80\x9D<br><i>\xE2\x80\x93The New Yorker</i>"
+    - 0812971833
+    - http://www.amazon.com/Olive-Kitteridge-Fiction-Elizabeth-Strout/dp/0812971833%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0812971833
+    - http://ecx.images-amazon.com/images/I/41vmAJkZWzL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41vmAJkZWzL._SL160_.jpg
+    - "2008-09-30"
+    - 2009-05-30 20:19:19
+    - 2009-05-30 20:19:19
+  - - "21"
+    - The Amazing Adventures of Kavalier &amp; Clay
+    - Book
+    - Michael Chabon
+    - Winner of the Bay Area Book Reviewers' Award, New York Library Book Award Finalist for the National Book Critics Circle Award, PEN/Faulkner Award, Los Angeles Times Book AwardJoe Kavalier, a young Jewish artist who has also been trained in the art of Houdiniesque escape, has just smuggled himself out of Nazi-invaded Prague and landed in New York City.His Brooklyn cousin Sammy Clay is looking for a partner to create heroes, stories, and art for the latest novelty to hit America - the comic book.Drawing on their own fears and dreams, Kavalier and Clay create the Escapist, the Monitor, and Luna Moth, inspired by the beautiful Rosa Saks, who will become linked by powerful ties to both men.With exhilarating style and grace, Michael Chabon tells an unforgettable story about American romance and possibility.
+    - 0312282990
+    - http://www.amazon.com/Amazing-Adventures-Kavalier-Clay/dp/0312282990%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0312282990
+    - http://ecx.images-amazon.com/images/I/51YC4MVXGXL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51YC4MVXGXL._SL160_.jpg
+    - "2001-08-25"
+    - 2009-05-30 20:19:53
+    - 2009-05-30 20:19:53
+  - - "22"
+    - Interpreter of Maladies
+    - Book
+    - Jhumpa Lahiri
+    - Navigating between the Indian traditions they've inherited and the baffling new world, the characters in Jhumpa Lahiri's elegant, touching stories seek love beyond the barriers of culture and generations. In "A Temporary Matter," published in The New Yorker, a young Indian-American couple faces the heartbreak of a stillborn birth while their Boston neighborhood copes with a nightly blackout. In the title story, an interpreter guides an American family through the India of their ancestors and hears an astonishing confession. Lahiri writes with deft cultural insight reminiscent of Anita Desai and a nuanced depth that recalls Mavis Gallant. She is an important and powerful new voice.
+    - 0618101365
+    - http://www.amazon.com/Interpreter-Maladies-Jhumpa-Lahiri/dp/0618101365%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0618101365
+    - http://ecx.images-amazon.com/images/I/41ZE1PY0N7L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41ZE1PY0N7L._SL160_.jpg
+    - "2000-05-22"
+    - 2009-05-30 20:20:20
+    - 2009-05-30 20:20:20
+  - - "23"
+    - "The Hours: A Novel"
+    - Book
+    - Michael Cunningham
+    - ""
+    - B000S9HVZU
+    - http://www.amazon.com/Hours-Novel-Michael-Cunningham/dp/B000S9HVZU%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000S9HVZU
+    - http://ecx.images-amazon.com/images/I/51GS4G-Hz0L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51GS4G-Hz0L._SL160_.jpg
+    - "2000-01-15"
+    - 2009-05-30 20:20:49
+    - 2009-05-30 20:20:49
+  - - "24"
+    - American Pastoral
+    - Book
+    - Philip Roth
+    - "As the American century draws to an uneasy close, Philip Roth gives us a novel of unqualified greatness that is an elegy for all our century's promises of prosperity, civic order,  and domestic bliss. Roth's protagonist is Swede Levov, a legendary athlete at his Newark high school, who grows up in the booming postwar years to marry a former Miss New Jersey, inherit his father's glove factory, and move into a stone house in the idyllic hamlet of Old Rimrock. And then one day in 1968, Swede's beautiful American luck deserts him.<br><br>For Swede's adored daughter, Merry, has grown from a loving, quick-witted girl into a sullen, fanatical teenager\xE2\x80\x94a teenager capable of an outlandishly savage act of political terrorism. And overnight Swede is wrenched out of the longer-for American pastoral and into the indigenous American berserk. Compulsively readable, propelled by sorrow, rage, and a deep compassion for its characters, this is Roth's masterpiece."
+    - "0375701427"
+    - http://www.amazon.com/American-Pastoral-Philip-Roth/dp/0375701427%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0375701427
+    - http://ecx.images-amazon.com/images/I/51M0GGM3TSL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51M0GGM3TSL._SL160_.jpg
+    - "1998-02-03"
+    - 2009-05-30 20:21:04
+    - 2009-05-30 20:21:04
+  - - "25"
+    - "Martin Dressler: The Tale of an American Dreamer"
+    - Book
+    - Steven Millhauser
+    - Young Martin Dressler begins his career as an industrious helper in his father's cigar store.  In the course of his restless young manhood, he makes a swift and eventful rise to the top, accompanied  by two sisters--one a dreamlike shadow, the other a worldly business partner. As the eponymous Martin's vision becomes bolder and bolder he walks a haunted line between fantasy and reality, madness and ambition, art and industry, a  sense of doom builds piece-by-hypnotic piece until this mesmerizing journey into the heart of an American dreamer reaches its bitter-sweet conclusion.
+    - 0679781277
+    - http://www.amazon.com/Martin-Dressler-Tale-American-Dreamer/dp/0679781277%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0679781277
+    - http://ecx.images-amazon.com/images/I/51ZBYD71TRL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51ZBYD71TRL._SL160_.jpg
+    - "1997-03-25"
+    - 2009-05-30 20:21:19
+    - 2009-05-30 20:21:19
+  - - "26"
+    - "The Story of Edgar Sawtelle: A Novel (Oprah Book Club #62)"
+    - Book
+    - David Wroblewski
+    - "<p> Born mute, speaking only in sign, Edgar Sawtelle leads an idyllic life with his parents on their farm in remote northern Wisconsin. For generations, the Sawtelles have raised and trained a fictional breed of dog whose thoughtful companionship is epitomized by Almondine, Edgar's lifelong friend and ally. But with the unexpected return of Claude, Edgar's paternal uncle, turmoil consumes the Sawtelles' once peaceful home. When Edgar's father dies suddenly, Claude insinuates himself into the life of the farm\xE2\x80\x94and into Edgar's mother's affections. </p> <p> Grief-stricken and bewildered, Edgar tries to prove Claude played a role in his father's death, but his plan backfires\xE2\x80\x94spectacularly. Forced to flee into the vast wilderness lying beyond the farm, Edgar comes of age in the wild, fighting for his survival and that of the three yearling dogs who follow him. But his need to face his father's murderer and his devotion to the Sawtelle dogs turn Edgar ever homeward. </p> <p> David Wroblewski is a master storyteller, and his breathtaking scenes\xE2\x80\x94the elemental north woods, the sweep of seasons, an iconic American barn, a fateful vision rendered in the falling rain\xE2\x80\x94create a riveting family saga, a brilliant exploration of the limits of language, and a compulsively readable modern classic. </p>"
+    - 0061768065
+    - http://www.amazon.com/Story-Edgar-Sawtelle-Novel-Oprah/dp/0061768065%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0061768065
+    - http://ecx.images-amazon.com/images/I/51rIDCykX8L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51rIDCykX8L._SL160_.jpg
+    - "2008-09-19"
+    - 2009-05-30 21:11:17
+    - 2009-05-30 21:11:17
+  - - "27"
+    - "A New Earth: Awakening to Your Life's Purpose (Oprah's Book Club, Selection 61)"
+    - Book
+    - Eckhart Tolle
+    - "The highly anticipated follow-up to the 2,000,000 copy bestselling inspirational book, <i>The Power of Now</i><br></br>     With his bestselling spiritual guide <i>The Power of Now</i>, Eckhart Tolle inspired millions of readers to discover the freedom and joy of a life lived \"in the now.\" In <i>A New Earth</i>, Tolle expands on these powerful ideas to show how transcending our ego-based state of consciousness is not only essential to personal happiness, but also the key to ending conflict and suffering throughout the world. Tolle describes how our attachment to the ego creates the dysfunction that leads to anger, jealousy, and unhappiness, and shows readers how to awaken to a new state of consciousness and follow the path to a truly fulfilling existence.<br></br>     <i>The Power of Now</i> was a question-and-answer handbook. <i>A New Earth</i> has been written as a traditional narrative, offering anecdotes and philosophies in a way that is accessible to all. Illuminating, enlightening, and uplifting, A New Earth is a profoundly spiritual manifesto for a better way of life\xE2\x80\x94and for building a better world.<br></br>     <b>About the Author</b><br></br>  ECKHART TOLLE is a contemporary spiritual teacher who is not aligned with any particular religion or tradition. In his writing and seminars, he conveys a simple yet profound message with the timeless and uncomplicated clarity of the ancient spiritual masters: There is a way out of suffering and into peace. Eckhart travels extensively, taking his teachings throughout the world."
+    - 0452289963
+    - http://www.amazon.com/New-Earth-Awakening-Purpose-Selection/dp/0452289963%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0452289963
+    - http://ecx.images-amazon.com/images/I/4157-kGvoLL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/4157-kGvoLL._SL160_.jpg
+    - "2008-01-30"
+    - 2009-05-30 21:11:28
+    - 2009-05-30 21:11:28
+  - - "28"
+    - The Pillars of the Earth (Deluxe Edition) (Oprah's Book Club)
+    - Book
+    - Ken Follett
+    - A spellbinding epic tale of ambition, anarchy, and absolute power set against the sprawling medieval canvas of twelfth-century England, this is Ken Follett's historical masterpiece.    <P>Abridged edition read by John Lee
+    - "0451225244"
+    - http://www.amazon.com/Pillars-Earth-Deluxe-Oprahs-Book/dp/0451225244%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0451225244
+    - http://ecx.images-amazon.com/images/I/51fcRfVPfhL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51fcRfVPfhL._SL160_.jpg
+    - "2007-11-14"
+    - 2009-05-30 21:11:44
+    - 2009-05-30 21:11:44
+  - - "29"
+    - Love in the Time of Cholera (Vintage International)
+    - Book
+    - Gabriel Garcia Marquez
+    - In their youth, Florentino Ariza and Fermina Daza fall passionately in love. When Fermina eventually chooses to marry a wealthy, well-born doctor, Florentino is devastated, but he is a romantic. As he rises in his business career he whiles away the years in 622 affairs--yet he reserves his heart for Fermina. Her husband dies at last, and Florentino purposefully attends the funeral. Fifty years, nine months, and four days after he first declared his love for Fermina, he will do so again.
+    - 0307387143
+    - http://www.amazon.com/Love-Time-Cholera-Vintage-International/dp/0307387143%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0307387143
+    - http://ecx.images-amazon.com/images/I/41A13jNOrEL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41A13jNOrEL._SL160_.jpg
+    - "2007-10-30"
+    - 2009-05-30 21:12:37
+    - 2009-05-30 21:12:37
+  - - "30"
+    - "The Measure of a Man: A Spiritual Autobiography (Oprah's Book Club)"
+    - Book
+    - Sidney Poitier
+    - "\"I have no wish to play the pontificating fool, pretending that I\xE2\x80\x99ve suddenly come up with the answers to all life\xE2\x80\x99s questions. Quite that contrary, I began this book as an exploration, an exercise in self-questing. In other words, I wanted to find out, as I looked back at a long and complicated life, with many twists and turns, how well I\xE2\x80\x99ve done at measuring up to the values I myself have set.\"  <BR>--Sidney Poitier    <P>In this luminous memoir, a true American icon looks back on his celebrated life and career. His body of work is arguably the most morally significant in cinematic history, and the power and influence of that work are indicative of the character of the man behind the many storied roles. Sidney Poitier here explores these elements of character and personal values to take his own measure -- as a man, as a husband and a father, and as an actor.    <P>Poitier credits his parents and his childhood on tiny Cat Island in the Bahamas for equipping him with the unflinching sense of right and wrong and of self-worth that he has never surrendered and that have dramatically shaped his world. \"In the kind of place where I grew up,\" recalls Poitier, \"what\xE2\x80\x99s coming at you is the sound of the sea and the smell of the wind and momma\xE2\x80\x99s voice and the voice of your dad and the craziness of your brothers and sisters \xE2\x80\xA6 and that\xE2\x80\x99s it.\" Without television, radio, and material distractions to obscure what matters most, he could enjoy the simple things, endure the long commitments, and find true meaning in his life.    <P>Poitier was uncompromising as he pursued a personal and public life that would honor his upbringing and the invaluable legacy of his parents. Just a few years after his introduction to indoor plumbing and the automobile, Poitier broke racial barrier after racial barrier to launch a pioneering acting career. Committed to the notion that what one does for a living articulates to who one is, Poitier played only forceful and affecting characters who said something positive, useful, and lasting about the human condition.    <P>Here is Poitier\xE2\x80\x99s own introspective look at what has informed his performances and his life. Poitier explores the nature of sacrifice and commitment, price and humility, rage and forgiveness, and paying the price for artistic integrity. What emerges is a picture of a man in the face of limits \xE2\x80\x93 his own and the world\xE2\x80\x99s. A triumph of the spirit, <I>The Measure of a Man</i> captures the essential Poitier."
+    - 0061357901
+    - http://www.amazon.com/Measure-Man-Spiritual-Autobiography-Oprahs/dp/0061357901%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0061357901
+    - http://ecx.images-amazon.com/images/I/41ZBOvMMpQL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41ZBOvMMpQL._SL160_.jpg
+    - "2007-02-01"
+    - 2009-05-30 21:12:55
+    - 2009-05-30 21:12:55
+  - - "31"
+    - A Million Little Pieces
+    - Book
+    - James Frey
+    - "\xE2\x80\x9CThe most lacerating tale of drug addiction since William S. Burroughs\xE2\x80\x99 <b>Junky</b>.\xE2\x80\x9D \xE2\x80\x94<i>The Boston Globe</i><br><br>\xE2\x80\x9CAgain and again, the book delivers recollections that leave the reader winded and unsteady. James Frey\xE2\x80\x99s staggering recovery memoir could well be seen as the final word on the topic.\xE2\x80\x9D\xE2\x80\x94<i>San Francisco Chronicle</i><br><br>\xE2\x80\x9CA brutal, beautifully written memoir.\xE2\x80\x9D\xE2\x80\x94<i>The Denver Post</i><br><br>\xE2\x80\x9CGripping . . . A great story . . . You can\xE2\x80\x99t help but cheer his victory.\xE2\x80\x9D \xE2\x80\x94<i>Los Angeles Times Book Review</i>"
+    - 0307276902
+    - http://www.amazon.com/Million-Little-Pieces-James-Frey/dp/0307276902%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0307276902
+    - http://ecx.images-amazon.com/images/I/419EKDXQ1KL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/419EKDXQ1KL._SL160_.jpg
+    - "2005-09-22"
+    - 2009-05-30 21:13:14
+    - 2009-05-30 21:13:14
+  - - "32"
+    - Light in August (The Corrected Text)
+    - Book
+    - William Faulkner
+    - Joe Christmas does not know whether he is black or white. Faulkner makes of Joe's tragedy a powerful indictment of racism; at the same time Joe's life is a study of the divided self and becomes a symbol of 20th century man.
+    - 0679732268
+    - http://www.amazon.com/Light-August-Corrected-William-Faulkner/dp/0679732268%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0679732268
+    - http://ecx.images-amazon.com/images/I/516GTKJ9K1L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/516GTKJ9K1L._SL160_.jpg
+    - "1990-10-01"
+    - 2009-05-30 21:13:28
+    - 2009-05-30 21:13:28
+  - - "33"
+    - The Sound and the Fury
+    - Book
+    - William Faulkner
+    - First published in 1929, Faulkner created his "heart's darling," the beautiful and tragic Caddy Compson, whose story Faulkner told through separate monologues by her three brothers--the idiot Benjy, the neurotic suicidal Quentin and the monstrous Jason.
+    - 0679732241
+    - http://www.amazon.com/Sound-Fury-William-Faulkner/dp/0679732241%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0679732241
+    - http://ecx.images-amazon.com/images/I/51545TM7AZL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51545TM7AZL._SL160_.jpg
+    - "1991-01-30"
+    - 2009-05-30 21:13:40
+    - 2009-05-30 21:13:40
+  - - "34"
+    - "A Summer of Faulkner: As I Lay Dying/The Sound and the Fury/Light in August (Oprah's Book Club)"
+    - Book
+    - William Faulkner
+    - "<b>The 2005 Summer Selection is  available in an exclusive three volume boxed edition that includes a  special reader's guide with an introduction by Oprah Winfrey.</b>    <P><b>Titles include:</b><br> <i><b>As I Lay Dying</b></i><br> This novel  is the harrowing account of the Bundren family's odyssey across the  Mississippi countryside to bury Addie, their wife and mother. Told in  turns by each of the family members-including Addie herself-the novel  ranges in mood from dark comedy to the deepest pathos. Originally  published in 1930.    <P><i><b>The Sound and the Fury</b></i><br> First published in 1929,  Faulkner created his \"heart's darling,\" the beautiful and tragic Caddy  Compson, whose story Faulkner told through separate monologues by her  three brothers-the idiot Benjy, the neurotic suicidal Quentin and the  monstrous Jason.    <P><i><b>Light in August</b></i><br> <i>Light in August</i>, a novel  about hopeful perseverance in the face of mortality, features some of  Faulkner's most memorable characters: guileless, dauntless Lena Grove,  in search of the father of her unborn child; Reverend Gail Hightower,  who is plagued by visions of Confederate horsemen; and Joe Christmas,  a desperate, mysterious drifter consumed by his mixed  ancestry. Originally published in 1932.    <P><b>Take a seat in Oprah's Classroom and sign up for Faulkner 101 on  oprah.com/bookclub.</b>"
+    - 0307275329
+    - http://www.amazon.com/Summer-Faulkner-Dying-August-Oprahs/dp/0307275329%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0307275329
+    - http://ecx.images-amazon.com/images/I/51AQQBP0ZDL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51AQQBP0ZDL._SL160_.jpg
+    - "2005-06-03"
+    - 2009-05-30 21:14:05
+    - 2009-05-30 21:14:05
+  - - "35"
+    - As I Lay Dying
+    - Book
+    - William Faulkner
+    - As I Lay Dying is the harrowing, darkly comic tale of the Bundren family's trek across Mississippi to bury Addie, their wife and mother, as told by each of the family members--including Addie herself.
+    - 067973225X
+    - http://www.amazon.com/As-Lay-Dying-William-Faulkner/dp/067973225X%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D067973225X
+    - http://ecx.images-amazon.com/images/I/514T3C5HJ9L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/514T3C5HJ9L._SL160_.jpg
+    - "1991-01-30"
+    - 2009-05-30 21:14:49
+    - 2009-05-30 21:14:49
+  - - "36"
+    - The Good Earth (Enriched Classics)
+    - Book
+    - Pearl S. Buck
+    - "<CENTER><B>ENDURING LITERATURE ILLUMINATED<P>BY PRACTICAL SCHOLARSHIP</B></CENTER><P>A poignant tale about the life and labors of a Chinese farmer during the sweeping reign of the country\xC2\xB9s last emperor.<P><B><CENTER>EACH ENRICHED CLASSIC EDITION INCLUDES:</CENTER></B><P>\xE2\x80\xA2 A concise introduction that gives readers important background information<P>\xE2\x80\xA2 A chronology of the author's life and work<P>\xE2\x80\xA2 A timeline of significant events that provides the book's historical context<P>\xE2\x80\xA2 An outline of key themes and plot points to help readers form their own interpretations<P>\xE2\x80\xA2 Detailed explanatory notes<P>\xE2\x80\xA2 Critical analysis, including contemporary and modern perspectives on the work<P>\xE2\x80\xA2 Discussion questions to promote lively classroom and book group interaction<P>\xE2\x80\xA2 A list of recommended related books and films to broaden the reader's experience<P><CENTER>Enriched Classics offer readers affordable editions of great works of literature enhanced by helpful notes and insightful commentary. The scholarship provided in Enriched Classics enables readers to appreciate, understand, and enjoy the world's finest books to their full potential.<P>SERIES EDITED BY CYNTHIA BRANTLEY JOHNSON</CENTER>"
+    - "1416500189"
+    - http://www.amazon.com/Good-Earth-Enriched-Classics/dp/1416500189%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1416500189
+    - http://ecx.images-amazon.com/images/I/21MCKR36SML._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/21MCKR36SML._SL160_.jpg
+    - "2005-03-29"
+    - 2009-05-30 21:15:20
+    - 2009-05-30 21:15:20
+  - - "37"
+    - Anna Karenina (Oprah's Book Club)
+    - Book
+    - Leo Tolstoy
+    - <I>Anna Karenina</I> tells of the doomed love affair between the  sensuous and rebellious Anna and the dashing officer, Count  Vronsky. Tragedy unfolds as Anna rejects her passionless marriage and  must endure the hypocrisies of society. Set against a vast and richly  textured canvas of nineteenth-century Russia, the novel's seven major  characters create a dynamic imbalance, playing out the contrasts of  city and country life and all the variations on love and family  happiness.  While previous versions have softened the robust, and  sometimes shocking, quality of Tolstoy's writing, Pevear and  Volokhonsky have produced a translation true to his powerful  voice. This award-winning team's authoritative edition also includes  an illuminating introduction and explanatory notes. Beautiful,  vigorous, and eminently readable, this <I>Anna Karenina</I> will be  the definitive text for generations to come.
+    - "0143035002"
+    - http://www.amazon.com/Anna-Karenina-Oprahs-Book-Club/dp/0143035002%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0143035002
+    - http://ecx.images-amazon.com/images/I/51VQGBSRWJL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51VQGBSRWJL._SL160_.jpg
+    - 
+    - 2009-05-30 21:15:37
+    - 2009-05-30 21:15:37
+  - - "38"
+    - The Heart Is a Lonely Hunter (Oprah's Book Club)
+    - Book
+    - Carson McCullers
+    - With the publication of her first novel, THE HEART IS A LONELY HUNTER,  Carson McCullers, all of twenty-three, became a literary  sensation. With its profound sense of moral isolation and its  compassionate glimpses into its characters' inner lives, the novel is  considered McCullers' finest work, an enduring masterpiece first  published by Houghton Mifflin in 1940. At its center is the deaf-mute  John Singer, who becomes the confidant for all various types of  misfits in a Georgia mill town during the 1930s. Each one yearns for  escape from small town life. When Singer's mute companion goes insane,  Singer moves into the Kelly house, where Mick Kelly, the book's  heroine (and loosely based on McCullers), finds solace in her  music. Wonderfully attune to the spiritual isolation that underlies  the human condition, and with a deft sense for racial tensions in the  South, McCullers spins a haunting, unforgettable story that gives  voice to the rejected, the forgotten, and the mistreated -- and,  through Mick Kelly, gives voice to the quiet, intensely personal  search for beauty.<BR> Richard Wright praised Carson McCullers for her  ability "to rise above the pressures of her environment and embrace  white and black humanity in one sweep of apprehension and tenderness."  She writes "with a sweep and certainty that are overwhelming," said  the NEW YORK TIMES. McCullers became an overnight literary sensation,  but her novel has endured, just as timely and powerful today as when  it was first published. THE HEART IS A LONELY HUNTER is Carson  McCullers at her most compassionate, endearing best.
+    - 0618526412
+    - http://www.amazon.com/Heart-Lonely-Hunter-Oprahs-Book/dp/0618526412%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0618526412
+    - http://ecx.images-amazon.com/images/I/21eGZpDz7OL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/21eGZpDz7OL._SL160_.jpg
+    - "2004-04-21"
+    - 2009-05-30 21:15:49
+    - 2009-05-30 21:15:49
+  - - "39"
+    - One Hundred Years of Solitude (Oprah's Book Club)
+    - Book
+    - Gabriel Garcia Marquez
+    - "<p>One of the 20th century's enduring works, <i>One Hundred Years of Solitude</i> is a widely beloved and acclaimed novel known throughout the world, and the ultimate achievement in a Nobel Prize\xE2\x80\x93winning career.</p> <p>The novel tells the story of the rise and fall of the mythical town of Macondo through the history of the Buend\xC3\xADa family. It is a rich and brilliant chronicle of life and death, and the tragicomedy of humankind. In the noble, ridiculous, beautiful, and tawdry story of the Buend\xC3\xADa family, one sees all of humanity, just as in the history, myths, growth, and decay of Macondo, one sees all of Latin America.</p> <p>Love and lust, war and revolution, riches and poverty, youth and senility -- the variety of life, the endlessness of death, the search for peace and truth -- these universal themes dominate the novel. Whether he is describing an affair of passion or the voracity of capitalism and the corruption of government, Gabriel Garc\xC3\xADa M\xC3\xA1rquez always writes with the simplicity, ease, and purity that are the mark of a master.</p> <p>Alternately reverential and comical, <i>One Hundred Years of Solitude</i> weaves the political, personal, and spiritual to bring a new consciousness to storytelling. Translated into dozens of languages, this stunning work is no less than an accounting of the history of the human race.</p>"
+    - B0006V4LLW
+    - http://www.amazon.com/Hundred-Years-Solitude-Oprahs-Book/dp/B0006V4LLW%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0006V4LLW
+    - http://ecx.images-amazon.com/images/I/41V0EWG4YXL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41V0EWG4YXL._SL160_.jpg
+    - "2004-01-20"
+    - 2009-05-30 21:16:11
+    - 2009-05-30 21:16:11
+  - - "40"
+    - Cry, the Beloved Country (Oprah's Book Club)
+    - Book
+    - Alan Paton
+    - <i>Cry, the Beloved Country</i> is a beautifully told and profoundly  compassionate story of the Zulu pastor Stephen Kumalo and his son  Absalom, set in the troubled and changing South Africa of the 1940s.    The book is written with such keen empathy and understanding that to  read it is to share fully in the gravity of the characters'  situations. It both touches your heart deeply and inspires a renewed  faith in the dignity of mankind. Cry, the Beloved Country is a classic  tale, passionately African, timeless and universal, and beyond all,  selfless.
+    - "0743262174"
+    - http://www.amazon.com/Beloved-Country-Oprahs-Book-Club/dp/0743262174%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0743262174
+    - http://ecx.images-amazon.com/images/I/51R443S64GL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51R443S64GL._SL160_.jpg
+    - 
+    - 2009-05-30 21:16:28
+    - 2009-05-30 21:16:28
+  - - "41"
+    - Night (Oprah's Book Club)
+    - Book
+    - Elie Wiesel
+    - <I>Night</I> is Elie Wiesel's masterpiece, a candid, horrific, and deeply  poignant autobiographical account of his survival as a teenager in the  Nazi death camps. This new translation by Marion Weisel, Elie's wife  and frequent translator, presents this seminal memoir in the language  and spirit truest to the author's original intent.  And in the  substantive new preface, Elie Wiesel reflects on the enduring  importance of <I>Night</I> and his lifelong, passionate dedication to  ensuring that the world never forgets man capacity for inhumanity to  man.    <P><I>Night</I> offers much more than a litany of the daily terrors, everyday  perversions, and rampant sadism at Auschwitz and Buchenwald; it also  eloquently addresses many of the philosophical as well as personal  questions implicit in any serious consideration of what the Holocaust  was, what it meant, and what its legacy is and will be.
+    - "0374500010"
+    - http://www.amazon.com/Night-Oprahs-Book-Club-Wiesel/dp/0374500010%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0374500010
+    - http://ecx.images-amazon.com/images/I/41HXDW0RZ1L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41HXDW0RZ1L._SL160_.jpg
+    - "2006-01-16"
+    - 2009-05-30 21:17:36
+    - 2009-05-30 21:17:36
+  - - "42"
+    - East of Eden (Oprah's Book Club)
+    - Book
+    - John Steinbeck
+    - This sprawling and often brutal novel, set in the rich farmlands of  California's Salinas Valley, follows the intertwined destinies of two  families--the Trasks and the Hamiltons--whose generations helplessly  reenact the fall of Adam and Eve and the poisonous rivalry of Cain and  Abel. "A strange and original work of art."--New York Times Book  Review. (Literature/Classics)
+    - 0670033049
+    - http://www.amazon.com/East-Eden-Oprahs-Book-Club/dp/0670033049%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0670033049
+    - http://ecx.images-amazon.com/images/I/51LNJ3eBxPL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51LNJ3eBxPL._SL160_.jpg
+    - 
+    - 2009-05-30 21:17:47
+    - 2009-05-30 21:17:47
+  - - "43"
+    - Love in the Time of Cholera (Oprah's Book Club)
+    - Book
+    - Gabriel Garcia Marquez
+    - In their youth, Florentino Ariza and Fermina Daza fall passionately in love. When Fermina eventually chooses to marry a wealthy, well-born doctor, Florentino is devastated, but he is a romantic. As he rises in his business career he whiles away the years in 622 affairs--yet he reserves his heart for Fermina. Her husband dies at last, and Florentino purposefully attends the funeral. Fifty years, nine months, and four days after he first declared his love for Fermina, he will do so again.
+    - 0307389731
+    - http://www.amazon.com/Love-Time-Cholera-Oprahs-Book/dp/0307389731%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0307389731
+    - http://ecx.images-amazon.com/images/I/51k41RCq%2B0L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51k41RCq%2B0L._SL160_.jpg
+    - "2007-10-05"
+    - 2009-05-30 21:54:06
+    - 2009-05-30 21:54:06
+  - - "44"
+    - Lonesome Dove   Part 1 Of 3
+    - Book
+    - Larry McMurtry
+    - Part One Of Three Parts    <P>A love story, an adventure, an American epic, LONESOME DOVE embraces all the West -- legend and fact, heroes and outlaws, whores and ladies, Indians and settlers -- in a novel that recreates the central American experience, the most enduring of our national myths.    <P>Set in the late 19th century, LONESOME DOVE is the story of a cattle drive from Texas to Montana -- and much more.  The drive is a risk, sure, but it's a part of the American Dream, a chance to carve a new life out of the last remaining wilderness.    <P>"Once again, McMurtry spins a yarn about the West -- and also about the nature of friendship, of folly, of responsibility, of moral codes and men and their destinies." (The Wall Street Journal)
+    - 0736605827
+    - http://www.amazon.com/Lonesome-Dove-Part-1-3/dp/0736605827%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0736605827
+    - http://ecx.images-amazon.com/images/I/51KG8G6G04L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51KG8G6G04L._SL160_.jpg
+    - "1986-05-01"
+    - 2009-05-31 02:54:31
+    - 2009-05-31 02:54:31
+
+--- 
+timelines: 
+  columns: 
+  - id
+  - name
+  - description
+  - imageurl
+  - created_at
+  - updated_at
+  - category
+  records: 
+  - - "1"
+    - Pulitzer Prize Winners
+    - Timeline of winners of Pultizer Prize Fiction category
+    - ""
+    - 2009-05-29 23:52:21
+    - 2009-05-30 19:06:57
+    - 
+  - - "2"
+    - Oprah's Book Club
+    - A timeline of all of Oprah's Book Club selections
+    - ""
+    - 2009-05-30 21:04:30
+    - 2009-05-30 21:04:30
+    - 
+
+--- 
+timeline_items: 
+  columns: 
+  - id
+  - timeline_id
+  - item_id
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - "1"
+    - "8"
+    - "2008"
+    - 2009-05-30 00:24:45
+    - 2009-05-30 00:24:45
+  - - "2"
+    - "1"
+    - "15"
+    - "2007"
+    - 2009-05-30 00:26:40
+    - 2009-05-30 00:26:40
+  - - "3"
+    - "1"
+    - "6"
+    - "2006"
+    - 2009-05-30 00:27:11
+    - 2009-05-30 00:27:11
+  - - "4"
+    - "1"
+    - "17"
+    - "2005"
+    - 2009-05-30 00:27:57
+    - 2009-05-30 00:27:57
+  - - "5"
+    - "1"
+    - "16"
+    - "2004"
+    - 2009-05-30 00:28:44
+    - 2009-05-30 00:28:44
+  - - "6"
+    - "1"
+    - "7"
+    - "2003"
+    - 2009-05-30 00:29:13
+    - 2009-05-30 00:29:13
+  - - "7"
+    - "1"
+    - "19"
+    - "2002"
+    - 2009-05-30 20:24:24
+    - 2009-05-30 20:24:24
+  - - "8"
+    - "2"
+    - "26"
+    - "2008"
+    - 2009-05-30 21:20:23
+    - 2009-05-30 21:20:23
+  - - "9"
+    - "2"
+    - "27"
+    - "2008"
+    - 2009-05-30 21:20:38
+    - 2009-05-30 21:20:38
+  - - "10"
+    - "2"
+    - "28"
+    - "2007"
+    - 2009-05-30 21:20:57
+    - 2009-05-30 21:20:57
+  - - "11"
+    - "2"
+    - "43"
+    - "2007"
+    - 2009-05-30 21:54:27
+    - 2009-05-30 21:54:27
+  - - "12"
+    - "2"
+    - "7"
+    - "2007"
+    - 2009-05-30 21:54:52
+    - 2009-05-30 21:54:52
+  - - "13"
+    - "2"
+    - "15"
+    - "2007"
+    - 2009-05-30 21:55:52
+    - 2009-05-30 21:55:52
+  - - "14"
+    - "2"
+    - "30"
+    - "2007"
+    - 2009-05-30 21:56:14
+    - 2009-05-30 21:56:14
+  - - "15"
+    - "2"
+    - "41"
+    - "2006"
+    - 2009-05-30 21:56:37
+    - 2009-05-30 21:56:37
+  - - "16"
+    - "1"
+    - "21"
+    - "2001"
+    - 2009-05-30 21:57:21
+    - 2009-05-30 21:57:21

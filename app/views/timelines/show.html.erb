@@ -1,0 +1,38 @@
+<p>
+  <%=h @timeline.name %>
+</p>
+
+<p>
+  <%=h @timeline.description %>
+</p>
+
+<table class="timeline">
+  <tr>
+    <% @timeline.timeline_items.each do |timelineitem| %>
+    <td width=50>
+      <table class="timeline">
+        <tr>
+          <td><%= image_tag timelineitem.item.mediumimageurl %></td>
+        </tr>
+        <tr>
+          <td><%=h timelineitem.position %></td>
+        </tr>
+      </table>
+    </td>
+    <td><img src="/images/small-arrow.png" alt="Beta Arrow"></td>
+    <% end %>
+  </tr>
+</table>
+<br>
+
+
+<p><%= link_to 'Home', timelines_path %></p>
+<p><%= link_to 'Edit Timeline Details', edit_timeline_path(@timeline) %></p>
+<p><%= link_to 'Make New Timeline', new_timeline_path %></p>
+<p><%= link_to 'Add Item to Timeline', :action => "add_item", :id => @timeline.id %> 
+  | 
+  <%= link_to 'Search', :controller => 'search' %></p>
+
+<% if @item %>
+  <%= render(:partial => "search_item", :object => @item) %>
+<% end %>

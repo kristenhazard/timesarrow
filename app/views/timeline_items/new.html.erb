@@ -1,0 +1,23 @@
+<h1>New timeline_item</h1>
+
+<% form_for(@timeline_item) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :timeline_id %><br />
+    <%= f.text_field :timeline_id %>
+  </p>
+  <p>
+    <%= f.label :item_id %><br />
+    <%= f.text_field :item_id %>
+  </p>
+  <p>
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', timeline_items_path %>

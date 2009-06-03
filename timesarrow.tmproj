@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>config/routes.rb</string>
+	<string>app/views/timelines/index.html.erb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,21 +21,49 @@
 	<integer>265</integer>
 	<key>metaData</key>
 	<dict>
-		<key>app/controllers/search_controller.rb</key>
+		<key>app/views/layouts/timelines.html.erb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>7</integer>
+				<integer>41</integer>
 				<key>line</key>
-				<integer>28</integer>
+				<integer>7</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>app/views/search/index.html.erb</key>
+		<key>app/views/timelines/index.html.erb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>49</integer>
+				<key>line</key>
+				<integer>15</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>app/views/timelines/show.html.erb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>37</integer>
+				<key>line</key>
+				<integer>21</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>public/stylesheets/scaffold.css</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -53,9 +81,9 @@
 			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>9</integer>
+				<integer>1</integer>
 				<key>line</key>
-				<integer>2</integer>
+				<integer>6</integer>
 			</dict>
 			<key>selectTo</key>
 			<dict>
@@ -65,41 +93,28 @@
 				<integer>0</integer>
 			</dict>
 		</dict>
-		<key>app/views/search/search.html.erb</key>
+		<key>public/stylesheets/timesarrow.css</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>9</integer>
+				<integer>27</integer>
 				<key>line</key>
-				<integer>2</integer>
+				<integer>40</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>config/routes.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>6</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>app/controllers/search_controller.rb</string>
-		<string>config/routes.rb</string>
-		<string>app/views/search/index.html.erb</string>
-		<string>app/views/search/search.html.erb</string>
+		<string>app/views/timelines/index.html.erb</string>
+		<string>app/views/timelines/show.html.erb</string>
+		<string>public/stylesheets/timesarrow.css</string>
+		<string>app/views/layouts/timelines.html.erb</string>
+		<string>public/stylesheets/scaffold.css</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>

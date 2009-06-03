@@ -1,0 +1,22 @@
+<p><%= image_tag @timeline_item.item.smallimageurl %></p>
+
+<p>
+  <b>Timeline:</b>
+  <%=h @timeline_item.timeline_id %>
+</p>
+
+
+
+<p>
+  <b>Item:</b>
+  <%=h @timeline_item.item_id %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%=h @timeline_item.position %>
+</p>
+
+
+<%= link_to 'Edit', edit_timeline_item_path(@timeline_item) %> |
+<%= link_to 'Back', timeline_items_path %>

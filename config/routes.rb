@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :timeline_items
+
+  map.resources :timelines
+
   map.resources :items
 
   # The priority is based upon order of creation: first created -> highest priority.

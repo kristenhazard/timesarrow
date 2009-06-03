@@ -1,0 +1,25 @@
+<h1>Listing timeline_items</h1>
+
+<table>
+  <tr>
+    <th>Timeline</th>
+    <th>Item</th>
+    <th>Position</th>
+  </tr>
+
+<% @timeline_items.each do |timeline_item| %>
+  <tr>
+    <td><%= image_tag timeline_item.item.smallimageurl %></td>
+    <td><%=h timeline_item.timeline_id %></td>
+    <td><%=h timeline_item.item_id %></td>
+    <td><%=h timeline_item.position %></td>
+    <td><%= link_to 'Show', timeline_item %></td>
+    <td><%= link_to 'Edit', edit_timeline_item_path(timeline_item) %></td>
+    <td><%= link_to 'Destroy', timeline_item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New timeline_item', new_timeline_item_path %>

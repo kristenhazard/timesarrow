@@ -1,0 +1,64 @@
+/* 
+
+sun light blue
+#9DCAFF
+
+sun medium blue
+#4E78A1
+
+sun base blue
+#38577A
+
+sun dark blue
+#202230
+
+sun yellow
+#F7C639
+
+*/
+
+.timeline
+{
+	background-color: #4E78A1;
+	border-collapse: collapse;
+	color: #fff;
+	border-width: 3px 3px 4px 9px;
+	border-style: solid;
+}
+
+.timeline td
+{
+	margin: 0;
+	border-color: #4E78A1;
+	padding: 4px;
+	
+	
+}
+
+table
+{
+	border: 0px solid #4E78A1;
+	border-collapse: collapse;
+}
+
+td { border: 0px solid #4E78A1; }
+
+th { border: 0px solid #4E78A1; }
+
+
+a 
+{ 
+	color: #4E78A1; 
+	border-bottom: none;
+  text-decoration: none;
+}
+a:visited { color: #4E78A1; }
+a:hover { color: #fff; background-color:#4E78A1; }
+
+body { background-color: #202230; color: #fff; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}

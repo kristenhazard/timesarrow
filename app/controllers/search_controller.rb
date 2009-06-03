@@ -15,10 +15,6 @@ class SearchController < ApplicationController
         
       end
       
-      respond_to do |format|
-          format.html
-          format.xml
-      end
     end
   end
   
@@ -48,7 +44,8 @@ class SearchController < ApplicationController
     @item.publicationdate = item.get("publicationdate")
     @item.save
     
-    redirect_to :controller => "items", :action => "index"
+    #redirect_to :controller => "items", :action => "index"
+    redirect_to :controller => "items", :action => "show", :id => @item.id
     
   end
 
