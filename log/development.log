@@ -12781,3 +12781,901 @@ Processing SearchController#index (for 127.0.0.1 at 2009-06-03 15:05:37) [POST]
   Parameters: {"commit"=>"Search", "authenticity_token"=>"ukThCZsMfqhsfWeI/8dIw/QnoAolqk+9D4187SzI6I8=", "keywords"=>"test"}
 Rendering search/index
 Completed in 1244ms (View: 37, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing TimelinesController#add_item (for 127.0.0.1 at 2009-06-03 15:34:10) [GET]
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/timelines/1
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/timelines/add_item/1]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-03 15:34:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 1) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.6ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+Rendered timelines/_search_item (0.5ms)
+Completed in 27ms (View: 14, DB: 4) | 200 OK [http://localhost/timelines/1]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-03 16:06:06) [GET]
+Rendering search/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-06-04 10:59:00) [GET]
+  [4;36;1mItem Load (23.3ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 230ms (View: 155, DB: 23) | 200 OK [http://localhost/items]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 10:59:03) [GET]
+Rendering search/index
+Completed in 288ms (View: 14, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 10:59:14) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"W4LVMAA62QP7eX0VvO2DTOhn7Grujq0sIEJTG9pBcB0=", "keywords"=>"test"}
+Rendering search/index
+Completed in 1081ms (View: 31, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 10:59:24) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"W4LVMAA62QP7eX0VvO2DTOhn7Grujq0sIEJTG9pBcB0=", "keywords"=>"test"}
+Rendering search/index
+Completed in 877ms (View: 30, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 11:00:34) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"W4LVMAA62QP7eX0VvO2DTOhn7Grujq0sIEJTG9pBcB0=", "keywords"=>"test"}
+Rendering search/index
+Completed in 1222ms (View: 35, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 11:00:39) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"W4LVMAA62QP7eX0VvO2DTOhn7Grujq0sIEJTG9pBcB0=", "method"=>"get", "keywords"=>"test"}
+Rendering search/index
+Completed in 1100ms (View: 31, DB: 0) | 200 OK [http://localhost/search?method=get]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 11:02:14) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"W4LVMAA62QP7eX0VvO2DTOhn7Grujq0sIEJTG9pBcB0=", "method"=>"get", "keywords"=>"test"}
+Rendering search/index
+Completed in 1158ms (View: 86, DB: 0) | 200 OK [http://localhost/search?method=get]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 11:03:09) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"W4LVMAA62QP7eX0VvO2DTOhn7Grujq0sIEJTG9pBcB0=", "method"=>"get", "keywords"=>"test"}
+Rendering search/index
+Completed in 1027ms (View: 34, DB: 0) | 200 OK [http://localhost/search?method=get]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 11:03:19) [GET]
+Rendering search/index
+Completed in 277ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:34:17) [GET]
+Rendering search/index
+
+ActionView::TemplateError (undefined local variable or method `search_path' for #<ActionView::Base:0x2367598>) on line #5 of app/views/search/index.html.erb:
+2:   <%= image_tag @item.smallimageurl %>
+3: <% end %>
+4: 
+5: <% form_tag search_path, :method => 'get' do %>
+6:   <h3>Enter keywords:</h3>
+7:   <%= text_field_tag(:keywords, params[:keywords]) %>
+8:   <%= submit_tag "Search" %>
+
+    app/views/search/index.html.erb:5
+
+Rendered rescues/_trace (406.4ms)
+Rendered rescues/_request_and_response (29.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:34:52) [GET]
+Rendering search/index
+Completed in 196ms (View: 4, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:34:53) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"W4LVMAA62QP7eX0VvO2DTOhn7Grujq0sIEJTG9pBcB0=", "method"=>"get", "keywords"=>""}
+Rendering search/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/search?method=get]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:36:13) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"W4LVMAA62QP7eX0VvO2DTOhn7Grujq0sIEJTG9pBcB0=", "method"=>"get", "keywords"=>""}
+Rendering search/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/search?method=get]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:36:19) [GET]
+Rendering search/index
+Completed in 270ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:41:09) [GET]
+Rendering search/index
+Completed in 273ms (View: 5, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:41:50) [GET]
+Rendering search/index
+Completed in 199ms (View: 5, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:42:24) [GET]
+Rendering search/index
+Completed in 275ms (View: 5, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:42:38) [GET]
+Rendering search/index
+Completed in 194ms (View: 5, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:45:28) [GET]
+Rendering search/index
+ERROR: compiling _run_erb_app47views47search47index46html46erb RAISED compile error
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:5: syntax error, unexpected tASSOC, expecting '}'
+ form_tag {:action=>'index'}, :method=>'get') do ;...
+                    ^
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:5: syntax error, unexpected ',', expecting kEND
+ form_tag {:action=>'index'}, :method=>'get') do ; @output_...
+                             ^
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:5: syntax error, unexpected ')', expecting kEND
+...ion=>'index'}, :method=>'get') do ; @output_buffer.concat "\...
+                              ^
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:43: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47search47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  if @item ; @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( image_tag @item.smallimageurl ).to_s); @output_buffer.concat "\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ form_tag {:action=>'index'}, :method=>'get') do ; @output_buffer.concat "\n"
+@output_buffer.concat "  <h3>Enter keywords:</h3>\n"
+@output_buffer.concat "  "; @output_buffer.concat(( text_field_tag(:keywords, params[:keywords]) ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( submit_tag "Search" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <h3 id=\"1\">Results</h3>\n"
+@output_buffer.concat "  "; @output_buffer.concat(( flash[:error] ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ if @itemarray ; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  @itemarray.each { |item| ; @output_buffer.concat "\n"
+@output_buffer.concat "    ";  form_tag(:action => :select) do ; @output_buffer.concat "\n"
+@output_buffer.concat "    <table border=\"0\" cellspacing=\"5\" cellpadding=\"5\">\n"
+@output_buffer.concat "    <tr valign=\"top\">\n"
+@output_buffer.concat "      <td>\n"
+@output_buffer.concat "        ";  if item.get("smallimage/url") ; @output_buffer.concat " \n"
+@output_buffer.concat "          "; @output_buffer.concat(( image_tag item.get("smallimage/url") ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "        ";  end; @output_buffer.concat "\n"
+@output_buffer.concat "      </td>\n"
+@output_buffer.concat "      <td> "; @output_buffer.concat(( h item.get("title") ).to_s); @output_buffer.concat " <br>\n"
+@output_buffer.concat "           by "; @output_buffer.concat(( h item.get("author") ).to_s); @output_buffer.concat "<br>\n"
+@output_buffer.concat "           "; @output_buffer.concat(( link_to("Amazon link", item.get("detailpageurl")) ).to_s); @output_buffer.concat "<br>\n"
+@output_buffer.concat "      </td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td>\n"
+@output_buffer.concat "        "; @output_buffer.concat(( text_field_tag(:asin, params[:asin], :value => item.get("asin")) ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "        "; @output_buffer.concat(( submit_tag "Select from form" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "      </td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td>"; @output_buffer.concat(( button_to 'Select button', { :action => 'select', :id => item.get("asin") } ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    </table>\n"
+@output_buffer.concat "    ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  } ; @output_buffer.concat "\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:43:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:5: syntax error, unexpected tASSOC, expecting '}'
+ form_tag {:action=>'index'}, :method=>'get') do ;...
+                    ^
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:5: syntax error, unexpected ',', expecting kEND
+ form_tag {:action=>'index'}, :method=>'get') do ; @output_...
+                             ^
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:5: syntax error, unexpected ')', expecting kEND
+...ion=>'index'}, :method=>'get') do ; @output_buffer.concat "\...
+                              ^
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:43: syntax error, unexpected kENSURE, expecting $end) on line #5 of app/views/search/index.html.erb:
+2:   <%= image_tag @item.smallimageurl %>
+3: <% end %>
+4: 
+5: <% form_tag {:action=>'index'}, :method=>'get') do %>
+6:   <h3>Enter keywords:</h3>
+7:   <%= text_field_tag(:keywords, params[:keywords]) %>
+8:   <%= submit_tag "Search" %>
+
+    app/views/search/index.html.erb:43:in `compile!'
+
+Rendered rescues/_trace (35.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:46:42) [GET]
+Rendering search/index
+ERROR: compiling _run_erb_app47views47search47index46html46erb RAISED compile error
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:5: syntax error, unexpected tASSOC, expecting '}'
+ form_tag {:action=>"index"}, :method=>:get) do ; ...
+                    ^
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:5: syntax error, unexpected ',', expecting kEND
+ form_tag {:action=>"index"}, :method=>:get) do ; @output_b...
+                             ^
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:43: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47search47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  if @item ; @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( image_tag @item.smallimageurl ).to_s); @output_buffer.concat "\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ form_tag {:action=>"index"}, :method=>:get) do ; @output_buffer.concat "\n"
+@output_buffer.concat "  <h3>Enter keywords:</h3>\n"
+@output_buffer.concat "  "; @output_buffer.concat(( text_field_tag(:keywords, params[:keywords]) ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( submit_tag "Search" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <h3 id=\"1\">Results</h3>\n"
+@output_buffer.concat "  "; @output_buffer.concat(( flash[:error] ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ if @itemarray ; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  @itemarray.each { |item| ; @output_buffer.concat "\n"
+@output_buffer.concat "    ";  form_tag(:action => :select) do ; @output_buffer.concat "\n"
+@output_buffer.concat "    <table border=\"0\" cellspacing=\"5\" cellpadding=\"5\">\n"
+@output_buffer.concat "    <tr valign=\"top\">\n"
+@output_buffer.concat "      <td>\n"
+@output_buffer.concat "        ";  if item.get("smallimage/url") ; @output_buffer.concat " \n"
+@output_buffer.concat "          "; @output_buffer.concat(( image_tag item.get("smallimage/url") ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "        ";  end; @output_buffer.concat "\n"
+@output_buffer.concat "      </td>\n"
+@output_buffer.concat "      <td> "; @output_buffer.concat(( h item.get("title") ).to_s); @output_buffer.concat " <br>\n"
+@output_buffer.concat "           by "; @output_buffer.concat(( h item.get("author") ).to_s); @output_buffer.concat "<br>\n"
+@output_buffer.concat "           "; @output_buffer.concat(( link_to("Amazon link", item.get("detailpageurl")) ).to_s); @output_buffer.concat "<br>\n"
+@output_buffer.concat "      </td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td>\n"
+@output_buffer.concat "        "; @output_buffer.concat(( text_field_tag(:asin, params[:asin], :value => item.get("asin")) ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "        "; @output_buffer.concat(( submit_tag "Select from form" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "      </td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    <tr>\n"
+@output_buffer.concat "      <td>"; @output_buffer.concat(( button_to 'Select button', { :action => 'select', :id => item.get("asin") } ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    </tr>\n"
+@output_buffer.concat "    </table>\n"
+@output_buffer.concat "    ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  } ; @output_buffer.concat "\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:43:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:5: syntax error, unexpected tASSOC, expecting '}'
+ form_tag {:action=>"index"}, :method=>:get) do ; ...
+                    ^
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:5: syntax error, unexpected ',', expecting kEND
+ form_tag {:action=>"index"}, :method=>:get) do ; @output_b...
+                             ^
+/Users/kristenhazard/work/timesarrow/app/views/search/index.html.erb:43: syntax error, unexpected kENSURE, expecting $end) on line #5 of app/views/search/index.html.erb:
+2:   <%= image_tag @item.smallimageurl %>
+3: <% end %>
+4: 
+5: <% form_tag {:action=>"index"}, :method=>:get) do %>
+6:   <h3>Enter keywords:</h3>
+7:   <%= text_field_tag(:keywords, params[:keywords]) %>
+8:   <%= submit_tag "Search" %>
+
+    app/views/search/index.html.erb:43:in `compile!'
+
+Rendered rescues/_trace (34.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:47:20) [GET]
+Rendering search/index
+Completed in 200ms (View: 5, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:47:30) [GET]
+  Parameters: {"commit"=>"Search", "keywords"=>""}
+Rendering search/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/search?keywords=&commit=Search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:48:01) [GET]
+  Parameters: {"commit"=>"Search", "keywords"=>""}
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search?keywords=&commit=Search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:48:05) [GET]
+  Parameters: {"commit"=>"Search", "keywords"=>"test"}
+Rendering search/index
+Completed in 1073ms (View: 52, DB: 0) | 200 OK [http://localhost/search?keywords=test&commit=Search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:49:30) [GET]
+  Parameters: {"commit"=>"Search", "keywords"=>"test"}
+Rendering search/index
+
+ActionView::TemplateError (undefined local variable or method `name' for #<ActionView::Base:0x2375a30>) on line #8 of app/views/search/index.html.erb:
+5: <% form_tag ({:action=>"index"}, :method=>:get) do %>
+6:   <h3>Enter keywords:</h3>
+7:   <%= text_field_tag(:keywords, params[:keywords]) %>
+8:   <%= submit_tag "Search", name => nil %>
+9:   <h3 id="1">Results</h3>
+10:   <%= flash[:error] %>
+11: 
+
+    app/views/search/index.html.erb:8
+    app/views/search/index.html.erb:5
+
+Rendered rescues/_trace (35.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:49:56) [GET]
+  Parameters: {"commit"=>"Search", "keywords"=>"test"}
+Rendering search/index
+Completed in 1112ms (View: 88, DB: 0) | 200 OK [http://localhost/search?keywords=test&commit=Search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:50:06) [GET]
+Rendering search/index
+Completed in 187ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:50:12) [GET]
+Rendering search/index
+Completed in 183ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:50:14) [GET]
+Rendering search/index
+Completed in 189ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:51:03) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:51:06) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:51:07) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:51:09) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:51:11) [GET]
+Rendering search/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:51:15) [GET]
+  Parameters: {"keywords"=>"ruby"}
+
+NoMethodError (undefined method `item' for #<Amazon::Ecs::Response:0x2283384>):
+  app/controllers/search_controller.rb:14:in `index'
+
+Rendered rescues/_trace (27.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:52:45) [GET]
+  Parameters: {"keywords"=>""}
+Rendering search/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/search?keywords=]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:52:50) [GET]
+  Parameters: {"keywords"=>"ruby"}
+
+NoMethodError (undefined method `item' for #<Amazon::Ecs::Response:0x2422244>):
+  app/controllers/search_controller.rb:14:in `index'
+
+Rendered rescues/_trace (26.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:53:03) [GET]
+  Parameters: {"keywords"=>"march"}
+
+NoMethodError (undefined method `item' for #<Amazon::Ecs::Response:0x257572c>):
+  app/controllers/search_controller.rb:14:in `index'
+
+Rendered rescues/_trace (26.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:53:27) [GET]
+  Parameters: {"keywords"=>"march"}
+Rendering search/index
+Completed in 965ms (View: 30, DB: 0) | 200 OK [http://localhost/search?keywords=march]
+
+
+Processing TimelinesController#index (for 127.0.0.1 at 2009-06-04 13:55:17) [GET]
+  [4;35;1mTimeline Load (17.3ms)[0m   [0mSELECT * FROM "timelines" [0m
+Rendering template within layouts/timelines
+Rendering timelines/index
+  [4;36;1mTimelineItem Load (1.3ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;35;1mTimelineItem Load (1.0ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 2) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 26) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 27) [0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 28) [0m
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 43) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 30) [0m
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 41) [0m
+Completed in 242ms (View: 194, DB: 26) | 200 OK [http://localhost/timelines]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-04 13:55:22) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 2) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (1.1ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 2) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 26) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 27) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 28) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 43) [0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 30) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 41) [0m
+Completed in 46ms (View: 35, DB: 4) | 200 OK [http://localhost/timelines/2]
+
+
+Processing TimelinesController#add_item (for 127.0.0.1 at 2009-06-04 13:55:24) [GET]
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/timelines/2
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/timelines/add_item/2]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-04 13:55:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 2) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (1.2ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 2) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 26) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 27) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 28) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 43) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 30) [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 41) [0m
+ERROR: compiling _run_erb_app47views47timelines47_search_item46html46erb_locals_object_search_item RAISED compile error
+/Users/kristenhazard/work/timesarrow/app/views/timelines/_search_item.html.erb:3: syntax error, unexpected ')', expecting kEND
+...ds, params[:keywords]) ).to_s); @output_buffer.concat "\n"
+                              ^
+Function body:           def _run_erb_app47views47timelines47_search_item46html46erb_locals_object_search_item(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];search_item = local_assigns[:search_item];;@output_buffer = '';  __in_erb_template=true ;  form_tag :controller => 'search', :method => 'get' do ; @output_buffer.concat "\n"
+@output_buffer.concat "  <h3>Enter keywords:</h3>\n"
+@output_buffer.concat "  "; @output_buffer.concat(( text_field_tag :keywords, params[:keywords]) ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( submit_tag "Search" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <h3 id=\"1\">Results amazon-ecs</h3>\n"
+@output_buffer.concat "  "; @output_buffer.concat(( flash[:error] ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <table border=\"0\" cellspacing=\"5\" cellpadding=\"5\">\n"
+@output_buffer.concat "  ";  if @itemarray ; @output_buffer.concat "\n"
+@output_buffer.concat "    ";  @itemarray.each { |item| ; @output_buffer.concat "\n"
+@output_buffer.concat "      <tr valign=\"top\">\n"
+@output_buffer.concat "        <td>\n"
+@output_buffer.concat "          ";  if item.get("smallimage/url") ; @output_buffer.concat " \n"
+@output_buffer.concat "            "; @output_buffer.concat(( image_tag item.get("smallimage/url") ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "          ";  end; @output_buffer.concat "\n"
+@output_buffer.concat "        </td>\n"
+@output_buffer.concat "        <td> "; @output_buffer.concat(( h item.get("title") ).to_s); @output_buffer.concat " <br>\n"
+@output_buffer.concat "             by "; @output_buffer.concat(( h item.get("author") ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "      </tr>\n"
+@output_buffer.concat "    ";  } ; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  </table>\n"
+ end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/kristenhazard/work/timesarrow/app/views/timelines/_search_item.html.erb:25:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:19:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:184:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:262:in `render'
+/Users/kristenhazard/work/timesarrow/app/views/timelines/show.html.erb:37:in `_run_erb_app47views47timelines47show46html46erb'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:301:in `with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:30:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/kristenhazard/work/timesarrow/app/controllers/timelines_controller.rb:22:in `show'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/kristenhazard/work/timesarrow/app/views/timelines/_search_item.html.erb:3: syntax error, unexpected ')', expecting kEND
+...ds, params[:keywords]) ).to_s); @output_buffer.concat "\n"
+                              ^) on line #3 of app/views/timelines/_search_item.html.erb:
+1: <% form_tag :controller => 'search', :method => 'get' do %>
+2:   <h3>Enter keywords:</h3>
+3:   <%= text_field_tag :keywords, params[:keywords]) %>
+4:   <%= submit_tag "Search" %>
+5:   <h3 id="1">Results amazon-ecs</h3>
+6:   <%= flash[:error] %>
+
+    app/views/timelines/_search_item.html.erb:25:in `compile!'
+    app/views/timelines/show.html.erb:37
+    app/controllers/timelines_controller.rb:22:in `show'
+
+Rendered rescues/_trace (104.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-04 13:56:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 2) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (1.1ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 2) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 26) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 27) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 28) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 43) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 30) [0m
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 41) [0m
+Completed in 26ms (View: 13, DB: 4) | 200 OK [http://localhost/timelines/2]
+
+
+Processing TimelinesController#add_item (for 127.0.0.1 at 2009-06-04 13:56:04) [GET]
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/timelines/2
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/timelines/add_item/2]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-04 13:56:04) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 2) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (1.2ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 2) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 26) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 27) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 28) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 43) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 30) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 41) [0m
+Rendered timelines/_search_item (1.6ms)
+Completed in 29ms (View: 17, DB: 4) | 200 OK [http://localhost/timelines/2]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-04 13:56:40) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 2) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (1.1ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 2) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 26) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 27) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 28) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 43) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 30) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 41) [0m
+Completed in 24ms (View: 13, DB: 3) | 200 OK [http://localhost/timelines/2]
+
+
+Processing TimelinesController#add_item (for 127.0.0.1 at 2009-06-04 13:56:42) [GET]
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/timelines/2
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/timelines/add_item/2]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-04 13:56:42) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 2) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (1.2ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 2) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 26) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 27) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 28) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 43) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 30) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 41) [0m
+Rendered timelines/_search_item (1.5ms)
+Completed in 30ms (View: 17, DB: 4) | 200 OK [http://localhost/timelines/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-06-04 13:57:15) [GET]
+  [4;36;1mItem Load (7.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 49ms (View: 35, DB: 8) | 200 OK [http://localhost/items]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:57:17) [GET]
+Rendering search/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-04 13:57:33) [GET]
+Rendering search/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/search]

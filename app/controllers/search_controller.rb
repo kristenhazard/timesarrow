@@ -3,7 +3,7 @@ class SearchController < ApplicationController
   
   def index
     keywords = params[:keywords]
-    if request.post?
+    if !keywords.nil?
       if keywords == ""
         flash[:error] = "Please enter keywords"
       else
@@ -12,10 +12,10 @@ class SearchController < ApplicationController
         @error = res.error
         flash[:error] = @error
         @itemarray = res.items
-        
       end
-      
     end
+      
+    
   end
   
   def select
@@ -46,6 +46,21 @@ class SearchController < ApplicationController
     
     #redirect_to :controller => "items", :action => "index"
     redirect_to :controller => "items", :action => "show", :id => @item.id
+    
+  end
+  
+  def search_amazon
+    
+    keywords = params[:keywords]
+    if keywords == ""
+      flash[:error] = "Please enter keywords"
+    else
+      # amazon-ecs
+      res = get_item_search_response(keywords)
+      @error = res.error
+      flash[:error] = @error
+      @itemarray = res.items
+    end
     
   end
 

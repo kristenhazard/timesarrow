@@ -1,6 +1,6 @@
-<% form_tag :controller => 'search' do %>
+<% form_tag({:controller => 'search'}, :method => :get) do %>
   <h3>Enter keywords:</h3>
-  <%= text_field_tag(:keywords, params[:keywords]) %>
+  <%= text_field_tag :keywords, params[:keywords] %>
   <%= submit_tag "Search" %>
   <h3 id="1">Results amazon-ecs</h3>
   <%= flash[:error] %>

@@ -2,10 +2,10 @@
   <%= image_tag @item.smallimageurl %>
 <% end %>
 
-<% form_tag(:action => :index) do %>
+<% form_tag ({:action=>"index"}, :method=>:get) do %>
   <h3>Enter keywords:</h3>
   <%= text_field_tag(:keywords, params[:keywords]) %>
-  <%= submit_tag "Search" %>
+  <%= submit_tag "Search", :name => nil %>
   <h3 id="1">Results</h3>
   <%= flash[:error] %>
 
