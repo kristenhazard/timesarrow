@@ -1,3 +1,7 @@
+<p><%= link_to 'Home', timelines_path %></p>
+<p><%= link_to 'Edit Timeline Details', edit_timeline_path(@timeline) %></p>
+<p><%= link_to 'Make New Timeline', new_timeline_path %></p>
+
 <p>
   <%=h @timeline.name %>
 </p>
@@ -23,16 +27,44 @@
     <% end %>
   </tr>
 </table>
-<br>
 
-
-<p><%= link_to 'Home', timelines_path %></p>
-<p><%= link_to 'Edit Timeline Details', edit_timeline_path(@timeline) %></p>
-<p><%= link_to 'Make New Timeline', new_timeline_path %></p>
 <p><%= link_to 'Add Item to Timeline', :action => "add_item", :id => @timeline.id %> 
-  | 
-  <%= link_to 'Search', :controller => 'search' %></p>
 
-<% if @item %>
-  <%= render(:partial => "search_item", :object => @item) %>
-<% end %>
+
+  <% form_tag ({:action=>"show"}, :method=>:get) do %>
+    <h3>Enter keywords:</h3>
+    <%= text_field_tag(:keywords, params[:keywords]) %>
+    <%= submit_tag "Search", :name => nil %>
+    <h3 id="1">Results</h3>
+    <%= flash[:error] %>
+
+  <% end %>
+
+  <% if @itemarray %>
+    <% @itemarray.each { |item| %>
+      <% form_tag(:action => :select_item) do %>
+      <table border="0" cellspacing="5" cellpadding="5">
+      <tr valign="top">
+        <td>
+          <% if item.get("smallimage/url") %> 
+            <%= image_tag item.get("smallimage/url") %>
+          <% end%>
+        </td>
+        <td> <%= h item.get("title") %> <br>
+             by <%= h item.get("author") %><br>
+             <%= link_to("Amazon link", item.get("detailpageurl")) %><br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= text_field_tag(:asin, params[:asin], :value => item.get("asin")) %>
+          <%= submit_tag "Select from form" %>
+        </td>
+      </tr>
+      <tr>
+        <td><%= button_to 'Select button', { :action => 'select', :id => item.get("asin") } %></td>
+      </tr>
+      </table>
+      <% end %>
+    <% } %>
+  <% end %>
