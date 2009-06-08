@@ -19,25 +19,24 @@ sun yellow
 
 .timeline
 {
-	background-color: #4E78A1;
+	background-color: #9DCAFF;
 	border-collapse: collapse;
 	color: #fff;
 	border-width: 3px 3px 4px 9px;
 	border-style: solid;
+	overflow: scroll;
 }
 
 .timeline td
 {
 	margin: 0;
-	border-color: #4E78A1;
+	border-color: #9DCAFF;
 	padding: 4px;
-	
-	
 }
 
 table
 {
-	border: 0px solid #4E78A1;
+	border: 0px solid #9DCAFF;
 	border-collapse: collapse;
 }
 
@@ -67,13 +66,20 @@ body, p, ol, ul, td {
 
 ul#dtimeline
 {
-  list-style-type: none;
+	list-style: none;
+	/*overflow: scroll;*/
 }
 
 ul#dtimeline li
 {
-  display: block;
-  float: left;
+	float: left;
+	padding: .5em;
+	background-color: #9DCAFF;
 	cursor: move;
-	background-color: #4E78A1;
+	white-space: nowrap;
+}
+
+div#divtimeline
+{
+	/*overflow: scroll;*/
 }

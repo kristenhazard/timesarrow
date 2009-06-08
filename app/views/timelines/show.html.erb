@@ -12,52 +12,70 @@
   <%=h @timeline.description %>
 </h3>
 
+<h3>table</h3>
 <table class="timeline">
   <tr id="ttimeline">
     <% @timeline.timeline_items.each do |timelineitem| %>
-    
-    <% content_tag_for :td, timelineitem do %>
-      <table class="timeline">
+      <% content_tag_for :td, timelineitem do %>
+      <table>
         <tr>
-          <td><%= image_tag timelineitem.item.mediumimageurl %></td>
+          <td>
+            <%= image_tag timelineitem.item.mediumimageurl %>
+          </td>
+          <td> --> </td>
         </tr>
         <tr>
-          <td><%=h timelineitem.position %></td>
+          <td>
+            <%= link_to timelineitem.position_desc, edit_timeline_item_path(timelineitem) %>
+          </td>
         </tr>
         <tr>
-          <td><%=link_to timelineitem.position, edit_timeline_item_path(timelineitem) %></td>
+          <td nowrap="true">add | info | rate</td>
         </tr>
       </table>
-    <% end %>
-    
-    <td><img src="/images/small-arrow.png" alt="Beta Arrow"></td>
+      <% end %>
     <% end %>
   </tr>
 </table>
-<ul id="dtimeline">
-  <% @timeline.timeline_items.each do |timelineitem| %>
-    <% content_tag_for :li, timelineitem do %>
-      <%= image_tag timelineitem.item.mediumimageurl %>
-      <img src="/images/small-arrow.png" alt="Beta Arrow">
-    <% end %>
-  <% end %>
-</ul>
-<%= sortable_element("dtimeline", :url => sort_timelines_path, :constraint => :horizontal )  %>
-<%= sortable_element("ttimeline", :url => sort_timelines_path, :constraint => :horizontal, :tag => :td )  %>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<%= sortable_element("ttimeline", :url => sort_timelines_path, :constraint => :horizontal, :tag => :td, :scroll => "'ttimeline'" )  %>
+<h3>ul</h3>
+<div id="horizontal_carousel">
+  <div class="previous_button"></div>  
+  <div class="container">
+    <ul id="dtimeline">
+    <% @timeline.timeline_items.each do |timelineitem| %>
+      <% content_tag_for :li, timelineitem do %>
+      <table>
+        <tr>
+          <td>
+            <%= image_tag timelineitem.item.mediumimageurl %>
+          </td>
+        </tr>
+        <tr>
+          <td><%= link_to timelineitem.position_desc, edit_timeline_item_path(timelineitem) %></td>
+        </tr>
+        <tr>
+          <td nowrap="true">add | info | rate</td>
+        </tr>
+      </table>
+      <% end %>
+      <% end %>
+    </ul>
+  </div>
+  <div class="next_button"></div>
+</div>
+<%= sortable_element("dtimeline", :url => sort_timelines_path, :constraint => :horizontal, :scroll => "'ttimeline'" )  %>
+<%= javascript_tag "Position.includeScrollOffsets = true" %>
+<script>
+new UI.Carousel("horizontal_carousel");
+</script>
+
 <!--
 <p><%= link_to 'Add Item to Timeline', :action => "add_item", :id => @timeline.id %></p> 
 -->
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+Add
   <% form_tag ({:action=>"show"}, :method=>:get) do %>
     <p>Enter keywords:</p>
     <%= text_field_tag(:keywords, params[:keywords]) %>

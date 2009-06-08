@@ -4,7 +4,7 @@
 
 <% @timelines.each do |timeline| %>
   <tr>
-    <th align="left" colspan=6><%= link_to timeline.name, timeline %></th>
+    <th align="left" colspan=6><%= link_to timeline.name, timeline %> - Follow</th>
   </tr>
    <tr>
     <% timeline.timeline_items.each do |timelineitem| %>
@@ -13,10 +13,10 @@
             <table class="timeline">
               <tr>
                 <td><%= link_to image_tag(timelineitem.item.smallimageurl), timelineitem.item.detailpageurl, :popup => true %></td>
-                <td><img src="/images/small-arrow.png" alt="Beta Arrow"></td>
+                <td> --> </td>
               </tr>
               <tr>
-                <td><%=h timelineitem.position %></td>
+                <td><%=h timelineitem.position_desc %></td>
               </tr>
             </table>
           </td>
