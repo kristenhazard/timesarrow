@@ -1,19 +1,22 @@
-<p><%= link_to 'Home', timelines_path %></p>
-<p><%= link_to 'Edit Timeline Details', edit_timeline_path(@timeline) %></p>
-<p><%= link_to 'Make New Timeline', new_timeline_path %></p>
-
 <p>
+  <%= link_to 'Home', timelines_path %> | 
+  <%= link_to 'Edit Timeline Details', edit_timeline_path(@timeline) %> | 
+  <%= link_to 'Make New Timeline', new_timeline_path %>
+</p>
+
+<h1>
   <%=h @timeline.name %>
-</p>
+</h1>
 
-<p>
+<h3>
   <%=h @timeline.description %>
-</p>
+</h3>
 
 <table class="timeline">
-  <tr>
+  <tr id="ttimeline">
     <% @timeline.timeline_items.each do |timelineitem| %>
-    <td width=50>
+    
+    <% content_tag_for :td, timelineitem do %>
       <table class="timeline">
         <tr>
           <td><%= image_tag timelineitem.item.mediumimageurl %></td>
@@ -21,23 +24,46 @@
         <tr>
           <td><%=h timelineitem.position %></td>
         </tr>
+        <tr>
+          <td><%=link_to timelineitem.position, edit_timeline_item_path(timelineitem) %></td>
+        </tr>
       </table>
-    </td>
+    <% end %>
+    
     <td><img src="/images/small-arrow.png" alt="Beta Arrow"></td>
     <% end %>
   </tr>
 </table>
-
-<p><%= link_to 'Add Item to Timeline', :action => "add_item", :id => @timeline.id %> 
+<ul id="dtimeline">
+  <% @timeline.timeline_items.each do |timelineitem| %>
+    <% content_tag_for :li, timelineitem do %>
+      <%= image_tag timelineitem.item.mediumimageurl %>
+      <img src="/images/small-arrow.png" alt="Beta Arrow">
+    <% end %>
+  <% end %>
+</ul>
+<%= sortable_element("dtimeline", :url => sort_timelines_path, :constraint => :horizontal )  %>
+<%= sortable_element("ttimeline", :url => sort_timelines_path, :constraint => :horizontal, :tag => :td )  %>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<!--
+<p><%= link_to 'Add Item to Timeline', :action => "add_item", :id => @timeline.id %></p> 
+-->
 
 
   <% form_tag ({:action=>"show"}, :method=>:get) do %>
-    <h3>Enter keywords:</h3>
+    <p>Enter keywords:</p>
     <%= text_field_tag(:keywords, params[:keywords]) %>
     <%= submit_tag "Search", :name => nil %>
-    <h3 id="1">Results</h3>
+    <p>Results</p>
     <%= flash[:error] %>
-
   <% end %>
 
   <% if @itemarray %>
@@ -53,16 +79,17 @@
         <td> <%= h item.get("title") %> <br>
              by <%= h item.get("author") %><br>
              <%= link_to("Amazon link", item.get("detailpageurl")) %><br>
+             <%= button_to 'Select button', { :action => 'select', :id => item.get("asin") } %>
         </td>
       </tr>
       <tr>
         <td>
-          <%= text_field_tag(:asin, params[:asin], :value => item.get("asin")) %>
-          <%= submit_tag "Select from form" %>
+          <%= hidden_field_tag(:asin, params[:asin], :value => item.get("asin")) %>
+          
         </td>
       </tr>
       <tr>
-        <td><%= button_to 'Select button', { :action => 'select', :id => item.get("asin") } %></td>
+        <td></td>
       </tr>
       </table>
       <% end %>

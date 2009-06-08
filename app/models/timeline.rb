@@ -1,5 +1,5 @@
 class Timeline < ActiveRecord::Base
-  has_many :timeline_items, :order => 'position DESC'
+  has_many :timeline_items, :order => 'position ASC'
   has_many :items, :through => :timeline_items
   
   validates_presence_of :name, :category

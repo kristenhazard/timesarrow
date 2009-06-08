@@ -16594,3 +16594,2493 @@ Rendering timelines/show
   [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
   [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
 Completed in 27ms (View: 14, DB: 4) | 200 OK [http://localhost/timelines/1]
+
+
+Processing TimelinesController#index (for 127.0.0.1 at 2009-06-08 08:15:43) [GET]
+  [4;36;1mTimeline Load (39.6ms)[0m   [0;1mSELECT * FROM "timelines" [0m
+Rendering template within layouts/timelines
+Rendering timelines/index
+  [4;35;1mTimelineItem Load (1.4ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;36;1mItem Load (46.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;35;1mItem Load (36.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;35;1mItem Load (25.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+  [4;36;1mTimelineItem Load (10.5ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 2) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 26) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 27) [0m
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 28) [0m
+  [4;36;1mItem Load (45.9ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 43) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;35;1mItem Load (25.8ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 30) [0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 41) [0m
+Completed in 949ms (View: 465, DB: 236) | 200 OK [http://localhost/timelines]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:15:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 1) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (179.6ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+Completed in 233ms (View: 40, DB: 183) | 200 OK [http://localhost/timelines/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("items")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sessions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("timeline_items")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("timelines")[0m
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:24:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTimeline Load (7.0ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 1) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.2ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (53.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (3.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+Completed in 655ms (View: 326, DB: 68) | 200 OK [http://localhost/timelines/1]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:25:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 1) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+Completed in 37ms (View: 21, DB: 5) | 200 OK [http://localhost/timelines/1]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:25:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 1) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.2ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+Completed in 34ms (View: 19, DB: 4) | 200 OK [http://localhost/timelines/1]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:25:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 1) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.3ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+Completed in 167ms (View: 79, DB: 5) | 200 OK [http://localhost/timelines/1]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:26:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTimeline Load (0.3ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 1) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (19.6ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+Completed in 186ms (View: 115, DB: 23) | 200 OK [http://localhost/timelines/1]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:26:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 1) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.5ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (25.9ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+Completed in 126ms (View: 38, DB: 31) | 200 OK [http://localhost/timelines/1]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:26:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 1) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.4ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+Completed in 46ms (View: 32, DB: 4) | 200 OK [http://localhost/timelines/1]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:26:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 1) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (19.3ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+Completed in 123ms (View: 41, DB: 24) | 200 OK [http://localhost/timelines/1]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:27:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTimeline Load (0.5ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 1) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (25.1ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;36;1mItem Load (35.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+Completed in 269ms (View: 121, DB: 64) | 200 OK [http://localhost/timelines/1]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:27:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 1) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (48.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;35;1mItem Load (1.1ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+Completed in 89ms (View: 26, DB: 53) | 200 OK [http://localhost/timelines/1]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:27:52) [GET]
+  Parameters: {"id"=>"1", "keywords"=>"march"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 1) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.3ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+Completed in 1428ms (View: 45, DB: 5) | 200 OK [http://localhost/timelines/1?keywords=march]
+
+
+Processing TimelinesController#new (for 127.0.0.1 at 2009-06-08 08:28:26) [GET]
+Rendering template within layouts/timelines
+Rendering timelines/new
+Completed in 90ms (View: 42, DB: 0) | 200 OK [http://localhost/timelines/new]
+
+
+Processing TimelinesController#create (for 127.0.0.1 at 2009-06-08 08:28:46) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "timeline"=>{"name"=>"Dune", "category"=>"books", "description"=>"Dune Series", "imageurl"=>""}}
+  [4;35;1mTimeline Create (15.4ms)[0m   [0mINSERT INTO "timelines" ("name", "updated_at", "category", "description", "imageurl", "created_at") VALUES('Dune', '2009-06-08 15:28:46', 'books', 'Dune Series', '', '2009-06-08 15:28:46')[0m
+Redirected to http://localhost:3000/timelines/3
+Completed in 30ms (DB: 15) | 302 Found [http://localhost/timelines]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:28:46) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (0.6ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+Completed in 91ms (View: 22, DB: 1) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:28:50) [GET]
+  Parameters: {"id"=>"3", "keywords"=>"dune"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (0.6ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+Completed in 1024ms (View: 37, DB: 1) | 200 OK [http://localhost/timelines/3?keywords=dune]
+
+
+Processing TimelinesController#select_item (for 127.0.0.1 at 2009-06-08 08:28:59) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "id"=>"3", "asin"=>"0441013597"}
+  [4;36;1mItem Create (16.5ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-06-08 15:28:59', 'Dune, 40th Anniversary Edition (Dune Chronicles, Book 1)', 'http://ecx.images-amazon.com/images/I/412Z9FE2E6L._SL160_.jpg', 'Frank Herbert', 'http://www.amazon.com/Dune-40th-Anniversary-Chronicles-Book/dp/0441013597%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0441013597', '2005-08-02', '0441013597', 'Book', 'The all-time science fiction masterpiece...now in a special hardcover edition.<br><br>"Unique...I know nothing comparable to it except <i>Lord of the Rings</i>."--Arthur C. Clarke<br><br>Here is the novel that will be forever considered a triumph of the imagination. Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, who would become the mysterious man known as Maud''dib. He would avenge the traitorous plot against his noble family--and would bring to fruition humankind''s most ancient and unattainable dream.<br><br>A stunning blend of adventure and mysticism, environmentalism and politics, <i>Dune</i> won the first Nebula Award, shared the Hugo Award, and formed the basis of what is undoubtedly the grandest epic in science fiction. Frank Herbert''s death in 1986 was a tragic loss, yet the astounding legacy of his visionary fiction will live forever.', 'http://ecx.images-amazon.com/images/I/412Z9FE2E6L._SL75_.jpg', '2009-06-08 15:28:59')[0m
+  [4;35;1mTimelineItem Load (1.5ms)[0m   [0mSELECT * FROM "timeline_items" WHERE (1 = 1) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mTimelineItem Create (0.2ms)[0m   [0;1mINSERT INTO "timeline_items" ("item_id", "updated_at", "timeline_id", "position", "created_at") VALUES(48, '2009-06-08 15:28:59', 3, 2010, '2009-06-08 15:28:59')[0m
+Redirected to http://localhost:3000/timelines/3
+Completed in 357ms (DB: 18) | 302 Found [http://localhost/timelines/3/select_item]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:28:59) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.7ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:29:05) [GET]
+  Parameters: {"id"=>"3", "keywords"=>"dune"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (0.6ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 982ms (View: 42, DB: 1) | 200 OK [http://localhost/timelines/3?keywords=dune]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:29:22) [GET]
+  Parameters: {"id"=>"3", "keywords"=>"  \t Dune Messiah"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.7ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 734ms (View: 116, DB: 1) | 200 OK [http://localhost/timelines/3?keywords=++%09+Dune+Messiah]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:29:43) [GET]
+  Parameters: {"id"=>"3", "keywords"=>"Dune Messiah"}
+  [4;36;1mTimeline Load (0.8ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (19.1ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;36;1mItem Load (15.9ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 655ms (View: 63, DB: 36) | 200 OK [http://localhost/timelines/3?keywords=Dune+Messiah]
+
+
+Processing TimelinesController#select_item (for 127.0.0.1 at 2009-06-08 08:29:48) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "id"=>"3", "asin"=>"0441015611"}
+  [4;35;1mItem Create (17.1ms)[0m   [0mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-06-08 15:29:49', 'Dune Messiah (Dune Chronicles (Econo-Clad Hardcover))', 'http://ecx.images-amazon.com/images/I/21YgLCh5kfL._SL160_.jpg', 'Frank Herbert', 'http://www.amazon.com/Dune-Messiah-Chronicles-Econo-Clad-Hardcover/dp/0441015611%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0441015611', '2008-02-05', '0441015611', 'Book', 'With millions of copies sold worldwide, Frank Herbert''s magnificent Dune novels stand among the major achievements of the human imagination as one of the most significant sagas in the history of literary science fiction. <br/><br/> <i>Dune Messiah</i> continues the story of Paul Atreides, better known-and feared-as the man christened Muad''Dib. As Emperor of the Known Universe, he possesses more power than a single man was ever meant to wield. Worshipped as a religious icon by the fanatical Fremens, Paul faces the enmity of the political houses he displaced when he assumed the throne-and a conspiracy conducted within his own sphere of influence. <br/><br/> And even as House Atreides begins to crumble around him from the machinations of his enemies, the true threat to Paul comes to his lover, Chani, and the unborn heir to his family''s dynasty.', 'http://ecx.images-amazon.com/images/I/21YgLCh5kfL._SL75_.jpg', '2009-06-08 15:29:49')[0m
+  [4;36;1mTimelineItem Load (63.4ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE (1 = 1) ORDER BY position DESC LIMIT 1[0m
+  [4;35;1mTimelineItem Create (0.3ms)[0m   [0mINSERT INTO "timeline_items" ("item_id", "updated_at", "timeline_id", "position", "created_at") VALUES(49, '2009-06-08 15:29:49', 3, 2011, '2009-06-08 15:29:49')[0m
+Redirected to http://localhost:3000/timelines/3
+Completed in 341ms (DB: 81) | 302 Found [http://localhost/timelines/3/select_item]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:29:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (17.3ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 40ms (View: 12, DB: 18) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:29:55) [GET]
+  Parameters: {"id"=>"3", "keywords"=>"dune"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (0.9ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 1123ms (View: 41, DB: 2) | 200 OK [http://localhost/timelines/3?keywords=dune]
+
+
+Processing TimelinesController#select_item (for 127.0.0.1 at 2009-06-08 08:30:05) [POST]
+  Parameters: {"commit"=>"Select from form", "authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "id"=>"3", "asin"=>"0441015905"}
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-06-08 15:30:06', 'Children of Dune (The Dune Chronicles)', 'http://ecx.images-amazon.com/images/I/41h43XkDBAL._SL160_.jpg', 'Frank Herbert', 'http://www.amazon.com/Children-Dune-Chronicles-Frank-Herbert/dp/0441015905%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0441015905', '2008-06-03', '0441015905', 'Book', '<B>The science fiction masterpiece continues in the “major event,”(<I> Los Angeles Times</I>) <I>Children of Dune</I>.</B><BR><BR>With millions of copies sold worldwide, Frank Herbert’s Dune novels stand among the major achievements of the human imagination and one of the most significant sagas in the history of literary science fiction.<BR><BR> The Children of Dune are twin siblings Leto and Ghanima Atreides, whose father, the Emperor Paul Muad’Dib, disappeared in the deserts of Arrakis. Like their father, they possess supernormal abilities—making them valuable to their aunt Alia, who rules the Empire. If Alia can obtain the secrets of the twins’ prophetic visions, her rule will be absolute. But the twins have their own plans for their destiny.', 'http://ecx.images-amazon.com/images/I/41h43XkDBAL._SL75_.jpg', '2009-06-08 15:30:06')[0m
+  [4;35;1mTimelineItem Load (0.7ms)[0m   [0mSELECT * FROM "timeline_items" WHERE (1 = 1) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mTimelineItem Create (0.3ms)[0m   [0;1mINSERT INTO "timeline_items" ("item_id", "updated_at", "timeline_id", "position", "created_at") VALUES(50, '2009-06-08 15:30:06', 3, 2012, '2009-06-08 15:30:06')[0m
+Redirected to http://localhost:3000/timelines/3
+Completed in 317ms (DB: 2) | 302 Found [http://localhost/timelines/3/select_item]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:30:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 25ms (View: 12, DB: 2) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:31:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.4ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (12.9ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (9.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 141ms (View: 45, DB: 23) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:31:09) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (17.6ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 43ms (View: 12, DB: 19) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:31:13) [GET]
+  Parameters: {"id"=>"3", "keywords"=>"dune"}
+  [4;36;1mTimeline Load (0.3ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (0.8ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 1172ms (View: 41, DB: 2) | 200 OK [http://localhost/timelines/3?keywords=dune]
+
+
+Processing TimelinesController#select_item (for 127.0.0.1 at 2009-06-08 08:31:28) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "id"=>"3"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.get):
+  app/controllers/timelines_controller.rb:118:in `select_item'
+
+Rendered rescues/_trace (84.1ms)
+Rendered rescues/_request_and_response (38.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:32:36) [GET]
+  Parameters: {"id"=>"3", "keywords"=>"dune"}
+  [4;35;1mTimeline Load (0.5ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (97.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (18.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 1382ms (View: 89, DB: 117) | 200 OK [http://localhost/timelines/3?keywords=dune]
+
+
+Processing TimelinesController#select_item (for 127.0.0.1 at 2009-06-08 08:32:43) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "id"=>"3", "asin"=>"0441016316"}
+  [4;36;1mItem Create (25.0ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-06-08 15:32:43', 'God Emperor of Dune (Dune Chronicles)', 'http://ecx.images-amazon.com/images/I/515dF6iCIpL._SL160_.jpg', 'Frank Herbert', 'http://www.amazon.com/God-Emperor-Dune-Chronicles/dp/0441016316%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0441016316', '2008-09-02', '0441016316', 'Book', '<B>A beautiful new package with a new introduction…</B><BR><BR> Millennia have passed on Arrakis, and the oncedesert planet is green with life. Leto Atreides, the son of the world’s savior, the Emperor Paul Muad’Dib, is still alive but far from human. To preserve humanity’s future, he sacrificed his own by merging with a sandworm, granting him nearimmortality as God Emperor of Dune for the past 3,500 years.<BR><BR> Leto’s rule is not a benevolent one. His transformation has not only made his appearance inhuman, but his morality. A rebellion has risen to oppose the despot’s rule, led by Siona, a member of the Atreides family. But Siona is unaware that Leto’s vision of a Golden Path for humanity requires her to fulfill a destiny she never wanted…or could possibly conceive…', 'http://ecx.images-amazon.com/images/I/515dF6iCIpL._SL75_.jpg', '2009-06-08 15:32:43')[0m
+  [4;35;1mTimelineItem Load (0.7ms)[0m   [0mSELECT * FROM "timeline_items" WHERE (1 = 1) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mTimelineItem Create (0.3ms)[0m   [0;1mINSERT INTO "timeline_items" ("item_id", "updated_at", "timeline_id", "position", "created_at") VALUES(51, '2009-06-08 15:32:43', 3, 2013, '2009-06-08 15:32:43')[0m
+Redirected to http://localhost:3000/timelines/3
+Completed in 289ms (DB: 26) | 302 Found [http://localhost/timelines/3/select_item]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:32:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (5.1ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 87ms (View: 70, DB: 7) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:32:54) [GET]
+  Parameters: {"id"=>"3", "keywords"=>"dune"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (42.7ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 1204ms (View: 42, DB: 44) | 200 OK [http://localhost/timelines/3?keywords=dune]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:34:23) [GET]
+  Parameters: {"id"=>"3", "keywords"=>"dune"}
+  [4;35;1mTimeline Load (0.7ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (46.4ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (2.7ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 1416ms (View: 133, DB: 51) | 200 OK [http://localhost/timelines/3?keywords=dune]
+
+
+Processing TimelinesController#select_item (for 127.0.0.1 at 2009-06-08 08:34:28) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "id"=>"3", "asin"=>"0441016774"}
+  [4;35;1mItem Create (22.3ms)[0m   [0mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-06-08 15:34:29', 'Heretics of Dune (Dune Chronicles)', 'http://ecx.images-amazon.com/images/I/41ozJjA8DPL._SL160_.jpg', 'Frank Herbert', 'http://www.amazon.com/Heretics-Dune-Chronicles-Frank-Herbert/dp/0441016774%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0441016774', '2009-02-03', '0441016774', 'Book', 'Leto Atreides, the God Emperor of Dune, is dead. In the fifteen hundred years since his passing, the Empire has fallen into ruin. The great Scattering saw millions abandon the crumbling civilization and spread out beyond the reaches of known space. The planet Arrakis—now called Rakis—has reverted to its desert climate, and its great sandworms are dying.<BR><BR> Now, the Lost Ones are returning home in pursuit of power. And as factions vie for control over the remnants of the Empire, a girl named Sheeana rises to prominence in the wastelands of Rakis, sending religious fervor throughout the galaxy. For she possesses the abilities of the Fremen sandriders—fulfilling a prophecy foretold by the late God Emperor…', 'http://ecx.images-amazon.com/images/I/41ozJjA8DPL._SL75_.jpg', '2009-06-08 15:34:29')[0m
+  [4;36;1mTimelineItem Load (32.6ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE (1 = 1) ORDER BY position DESC LIMIT 1[0m
+  [4;35;1mTimelineItem Create (0.2ms)[0m   [0mINSERT INTO "timeline_items" ("item_id", "updated_at", "timeline_id", "position", "created_at") VALUES(52, '2009-06-08 15:34:29', 3, 2014, '2009-06-08 15:34:29')[0m
+Redirected to http://localhost:3000/timelines/3
+Completed in 456ms (DB: 55) | 302 Found [http://localhost/timelines/3/select_item]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:34:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (0.9ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 93ms (View: 11, DB: 2) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:35:35) [GET]
+  Parameters: {"id"=>"3", "keywords"=>"chapterhouse dune"}
+  [4;35;1mTimeline Load (0.4ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (49.6ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (9.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 1124ms (View: 85, DB: 61) | 200 OK [http://localhost/timelines/3?keywords=chapterhouse+dune]
+
+
+Processing TimelinesController#select_item (for 127.0.0.1 at 2009-06-08 08:35:40) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "id"=>"3", "asin"=>"0441017215"}
+  [4;36;1mItem Create (252.5ms)[0m   [0;1mINSERT INTO "items" ("updated_at", "title", "mediumimageurl", "author", "detailpageurl", "publicationdate", "asin", "itemtype", "description", "smallimageurl", "created_at") VALUES('2009-06-08 15:35:40', 'Chapterhouse: Dune', 'http://ecx.images-amazon.com/images/I/51TaB4LsTOL._SL160_.jpg', 'Frank Herbert', 'http://www.amazon.com/Chapterhouse-Dune-Frank-Herbert/dp/0441017215%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0441017215', '2009-08-04', '0441017215', 'Book', '<B>A beautiful new hardcover package for the “exciting and gripping” (<I>Kirkus Reviews</I>) <I>New York Times</I> bestselling science fiction classic.</B><BR><BR> The desert planet Arrakis, called Dune, has been destroyed. The remnants of the Old Empire have been consumed by the violent matriarchal cult known as the Honored Matres. Only one faction remains a viable threat to their total conquest—the Bene Gesserit, heirs to Dune’s power.<BR><BR> Under the leadership of Mother Superior Darwi Odrade, the Bene Gesserit have colonized a green world on the planet Chapterhouse, and are turning it into a desert, mile by scorched mile. And once they’ve mastered breeding sandworms, the Sisterhood will control the production of the greatest commodity in the known galaxy—the spice Melange. But their true weapon remains a man who has lived countless lifetimes—a man who served under the God Emperor Paul Muad’Dib.', 'http://ecx.images-amazon.com/images/I/51TaB4LsTOL._SL75_.jpg', '2009-06-08 15:35:40')[0m
+  [4;35;1mTimelineItem Load (0.8ms)[0m   [0mSELECT * FROM "timeline_items" WHERE (1 = 1) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mTimelineItem Create (0.3ms)[0m   [0;1mINSERT INTO "timeline_items" ("item_id", "updated_at", "timeline_id", "position", "created_at") VALUES(53, '2009-06-08 15:35:40', 3, 2015, '2009-06-08 15:35:40')[0m
+Redirected to http://localhost:3000/timelines/3
+Completed in 590ms (DB: 254) | 302 Found [http://localhost/timelines/3/select_item]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:35:40) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.8ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 26ms (View: 13, DB: 4) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:38:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.8ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (38.4ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+
+ActionView::TemplateError (undefined method `edit_timeline_items_path' for #<ActionView::Base:0x2441950>) on line #27 of app/views/timelines/show.html.erb:
+24:           <td><%=h timelineitem.position %></td>
+25:         </tr>
+26:         <tr>
+27:           <td><%=link_to timelineitem.position, edit_timeline_items_path(timelineitem) %></td>
+28:         </tr>
+29:       </table>
+30:     </td>
+
+    app/views/timelines/show.html.erb:27
+    app/views/timelines/show.html.erb:17
+    app/controllers/timelines_controller.rb:34:in `show'
+
+Rendered rescues/_trace (48.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:38:34) [GET]
+  Parameters: {"id"=>"3", "keywords"=>"chapterhouse dune"}
+  [4;36;1mTimeline Load (0.5ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (13.0ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (8.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 734ms (View: 68, DB: 24) | 200 OK [http://localhost/timelines/3?keywords=chapterhouse+dune]
+
+
+Processing TimelineItemsController#edit (for 127.0.0.1 at 2009-06-08 08:38:40) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mTimelineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 24) [0m
+Rendering template within layouts/timeline_items
+Rendering timeline_items/edit
+Completed in 826ms (View: 820, DB: 0) | 200 OK [http://localhost/timeline_items/24/edit]
+
+
+Processing TimelineItemsController#update (for 127.0.0.1 at 2009-06-08 08:38:46) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "id"=>"24", "timeline_item"=>{"item_id"=>"53", "timeline_id"=>"3", "position"=>"5"}}
+  [4;35;1mTimelineItem Load (0.2ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 24) [0m
+  [4;36;1mTimelineItem Update (0.3ms)[0m   [0;1mUPDATE "timeline_items" SET "position" = 5, "updated_at" = '2009-06-08 15:38:46' WHERE "id" = 24[0m
+Redirected to http://localhost:3000/timeline_items/24
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/timeline_items/24]
+
+
+Processing TimelineItemsController#show (for 127.0.0.1 at 2009-06-08 08:38:46) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mTimelineItem Load (0.2ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 24) [0m
+Rendering template within layouts/timeline_items
+Rendering timeline_items/show
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 51ms (View: 45, DB: 1) | 200 OK [http://localhost/timeline_items/24]
+
+
+Processing TimelineItemsController#index (for 127.0.0.1 at 2009-06-08 08:38:49) [GET]
+  [4;35;1mTimelineItem Load (1.9ms)[0m   [0mSELECT * FROM "timeline_items" [0m
+Rendering template within layouts/timeline_items
+Rendering timeline_items/index
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;36;1mItem Load (25.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 26) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 27) [0m
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 28) [0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 43) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 30) [0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 41) [0m
+  [4;35;1mItem Load (11.0ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 407ms (View: 299, DB: 46) | 200 OK [http://localhost/timeline_items]
+
+
+Processing TimelinesController#index (for 127.0.0.1 at 2009-06-08 08:38:57) [GET]
+  [4;36;1mTimeline Load (0.6ms)[0m   [0;1mSELECT * FROM "timelines" [0m
+Rendering template within layouts/timelines
+Rendering timelines/index
+  [4;35;1mTimelineItem Load (1.3ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 1) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 20) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 8) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 21) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 47) [0m
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 2) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 26) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 27) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 28) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 43) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 15) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 30) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 41) [0m
+  [4;35;1mTimelineItem Load (0.8ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 42ms (View: 28, DB: 9) | 200 OK [http://localhost/timelines]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:38:59) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (0.9ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 25ms (View: 12, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelineItemsController#edit (for 127.0.0.1 at 2009-06-08 08:39:04) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mTimelineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 19) [0m
+Rendering template within layouts/timeline_items
+Rendering timeline_items/edit
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/timeline_items/19/edit]
+
+
+Processing TimelineItemsController#update (for 127.0.0.1 at 2009-06-08 08:39:08) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "id"=>"19", "timeline_item"=>{"item_id"=>"48", "timeline_id"=>"3", "position"=>"1"}}
+  [4;35;1mTimelineItem Load (0.2ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 19) [0m
+  [4;36;1mTimelineItem Update (0.6ms)[0m   [0;1mUPDATE "timeline_items" SET "position" = 1, "updated_at" = '2009-06-08 15:39:08' WHERE "id" = 19[0m
+Redirected to http://localhost:3000/timeline_items/19
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/timeline_items/19]
+
+
+Processing TimelineItemsController#show (for 127.0.0.1 at 2009-06-08 08:39:08) [GET]
+  Parameters: {"id"=>"19"}
+  [4;35;1mTimelineItem Load (0.2ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 19) [0m
+Rendering template within layouts/timeline_items
+Rendering timeline_items/show
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/timeline_items/19]
+
+
+Processing TimelineItemsController#edit (for 127.0.0.1 at 2009-06-08 08:39:20) [GET]
+  Parameters: {"id"=>"20"}
+  [4;35;1mTimelineItem Load (0.2ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 20) [0m
+Rendering template within layouts/timeline_items
+Rendering timeline_items/edit
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/timeline_items/20/edit]
+
+
+Processing TimelineItemsController#update (for 127.0.0.1 at 2009-06-08 08:39:23) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "id"=>"20", "timeline_item"=>{"item_id"=>"49", "timeline_id"=>"3", "position"=>"2"}}
+  [4;36;1mTimelineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 20) [0m
+  [4;35;1mTimelineItem Update (0.4ms)[0m   [0mUPDATE "timeline_items" SET "position" = 2, "updated_at" = '2009-06-08 15:39:23' WHERE "id" = 20[0m
+Redirected to http://localhost:3000/timeline_items/20
+Completed in 24ms (DB: 1) | 302 Found [http://localhost/timeline_items/20]
+
+
+Processing TimelineItemsController#show (for 127.0.0.1 at 2009-06-08 08:39:23) [GET]
+  Parameters: {"id"=>"20"}
+  [4;36;1mTimelineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 20) [0m
+Rendering template within layouts/timeline_items
+Rendering timeline_items/show
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/timeline_items/20]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:39:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (128.1ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 154ms (View: 14, DB: 130) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:39:31) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (1.0ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 25ms (View: 13, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelineItemsController#edit (for 127.0.0.1 at 2009-06-08 08:40:02) [GET]
+  Parameters: {"id"=>"21"}
+  [4;36;1mTimelineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 21) [0m
+Rendering template within layouts/timeline_items
+Rendering timeline_items/edit
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/timeline_items/21/edit]
+
+
+Processing TimelineItemsController#update (for 127.0.0.1 at 2009-06-08 08:40:05) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "id"=>"21", "timeline_item"=>{"item_id"=>"50", "timeline_id"=>"3", "position"=>"3"}}
+  [4;35;1mTimelineItem Load (0.2ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 21) [0m
+  [4;36;1mTimelineItem Update (0.3ms)[0m   [0;1mUPDATE "timeline_items" SET "position" = 3, "updated_at" = '2009-06-08 15:40:05' WHERE "id" = 21[0m
+Redirected to http://localhost:3000/timeline_items/21
+Completed in 34ms (DB: 1) | 302 Found [http://localhost/timeline_items/21]
+
+
+Processing TimelineItemsController#show (for 127.0.0.1 at 2009-06-08 08:40:05) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mTimelineItem Load (0.2ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 21) [0m
+Rendering template within layouts/timeline_items
+Rendering timeline_items/show
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://localhost/timeline_items/21]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:40:09) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (41.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 112ms (View: 13, DB: 44) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelineItemsController#edit (for 127.0.0.1 at 2009-06-08 08:40:15) [GET]
+  Parameters: {"id"=>"22"}
+  [4;35;1mTimelineItem Load (0.2ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 22) [0m
+Rendering template within layouts/timeline_items
+Rendering timeline_items/edit
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/timeline_items/22/edit]
+
+
+Processing TimelineItemsController#update (for 127.0.0.1 at 2009-06-08 08:40:18) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "id"=>"22", "timeline_item"=>{"item_id"=>"51", "timeline_id"=>"3", "position"=>"4"}}
+  [4;36;1mTimelineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 22) [0m
+  [4;35;1mTimelineItem Update (0.4ms)[0m   [0mUPDATE "timeline_items" SET "position" = 4, "updated_at" = '2009-06-08 15:40:18' WHERE "id" = 22[0m
+Redirected to http://localhost:3000/timeline_items/22
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/timeline_items/22]
+
+
+Processing TimelineItemsController#show (for 127.0.0.1 at 2009-06-08 08:40:18) [GET]
+  Parameters: {"id"=>"22"}
+  [4;36;1mTimelineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 22) [0m
+Rendering template within layouts/timeline_items
+Rendering timeline_items/show
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/timeline_items/22]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:40:27) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (13.9ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 38ms (View: 12, DB: 16) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelineItemsController#edit (for 127.0.0.1 at 2009-06-08 08:40:30) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mTimelineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 23) [0m
+Rendering template within layouts/timeline_items
+Rendering timeline_items/edit
+Completed in 70ms (View: 4, DB: 0) | 200 OK [http://localhost/timeline_items/23/edit]
+
+
+Processing TimelineItemsController#update (for 127.0.0.1 at 2009-06-08 08:40:33) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "id"=>"23", "timeline_item"=>{"item_id"=>"52", "timeline_id"=>"3", "position"=>"6"}}
+  [4;35;1mTimelineItem Load (0.2ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 23) [0m
+  [4;36;1mTimelineItem Update (0.3ms)[0m   [0;1mUPDATE "timeline_items" SET "position" = 6, "updated_at" = '2009-06-08 15:40:33' WHERE "id" = 23[0m
+Redirected to http://localhost:3000/timeline_items/23
+Completed in 25ms (DB: 1) | 302 Found [http://localhost/timeline_items/23]
+
+
+Processing TimelineItemsController#show (for 127.0.0.1 at 2009-06-08 08:40:33) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mTimelineItem Load (0.2ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items"."id" = 23) [0m
+Rendering template within layouts/timeline_items
+Rendering timeline_items/show
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/timeline_items/23]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 08:40:38) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.3ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.8ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 30ms (View: 16, DB: 4) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:23:31) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.5ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (12.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (8.9ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+
+ActionView::TemplateError (undefined local variable or method `sort_timeline_item_path' for #<ActionView::Base:0x23827e4>) on line #40 of app/views/timelines/show.html.erb:
+37:     <li><%= image_tag timelineitem.item.mediumimageurl %></li>
+38:   <% end %>
+39: </ul>
+40: <%= sortable_element("timeline_item", :url => sort_timeline_item_path, :handle => "handle") %>
+41: <br/>
+42: <br/>
+43: <br/>
+
+    app/views/timelines/show.html.erb:40
+    app/controllers/timelines_controller.rb:34:in `show'
+
+Rendered rescues/_trace (103.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:23:55) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+
+ActionView::TemplateError (undefined local variable or method `sort_timeline_item_path' for #<ActionView::Base:0x249eed4>) on line #40 of app/views/timelines/show.html.erb:
+37:     <li><%= image_tag timelineitem.item.mediumimageurl %></li>
+38:   <% end %>
+39: </ul>
+40: <!--<%= sortable_element("timeline_item", :url => sort_timeline_item_path, :handle => "handle") %>-->
+41: <br/>
+42: <br/>
+43: <br/>
+
+    app/views/timelines/show.html.erb:40
+    app/controllers/timelines_controller.rb:34:in `show'
+
+Rendered rescues/_trace (41.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:24:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+
+ActionView::TemplateError (undefined local variable or method `sort_timeline_item_path' for #<ActionView::Base:0x2297ec4>) on line #40 of app/views/timelines/show.html.erb:
+37:     <li><%= image_tag timelineitem.item.mediumimageurl %></li>
+38:   <% end %>
+39: </ul>
+40: <!--<%= sortable_element("timeline_item", :url => sort_timeline_item_path, :handle => "handle") %>-->
+41: <br/>
+42: <br/>
+43: <br/>
+
+    app/views/timelines/show.html.erb:40
+    app/controllers/timelines_controller.rb:34:in `show'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:24:20) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.3ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+
+ActionView::TemplateError (undefined local variable or method `sort_timeline_item_path' for #<ActionView::Base:0x2398198>) on line #41 of app/views/timelines/show.html.erb:
+38:   <% end %>
+39: </ul>
+40: <!--
+41: <%= sortable_element("timeline_item", :url => sort_timeline_item_path, :handle => "handle") %>
+42: -->
+43: <br/>
+44: <br/>
+
+    app/views/timelines/show.html.erb:41
+    app/controllers/timelines_controller.rb:34:in `show'
+
+Rendered rescues/_trace (105.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:24:37) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 52ms (View: 39, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:27:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 27ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:28:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 25ms (View: 13, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:28:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.2ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 27ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:29:14) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 26ms (View: 13, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:29:38) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 31ms (View: 18, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:32:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 86ms (View: 73, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:34:24) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 35ms (View: 21, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#TODO (for 127.0.0.1 at 2009-06-08 09:34:41) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["23", "24", "22", "20", "21", "19"]}
+
+ActionController::UnknownAction (No action responded to TODO. Actions: add_item, create, destroy, edit, index, new, select_item, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:35:28) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 26ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#TODO (for 127.0.0.1 at 2009-06-08 09:35:32) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["23", "24", "22", "21", "19", "20"]}
+
+ActionController::UnknownAction (No action responded to TODO. Actions: add_item, create, destroy, edit, index, new, select_item, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#TODO (for 127.0.0.1 at 2009-06-08 09:35:35) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["23", "24", "22", "21", "20", "19"]}
+
+ActionController::UnknownAction (No action responded to TODO. Actions: add_item, create, destroy, edit, index, new, select_item, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#TODO (for 127.0.0.1 at 2009-06-08 09:35:37) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["23", "24", "22", "20", "21", "19"]}
+
+ActionController::UnknownAction (No action responded to TODO. Actions: add_item, create, destroy, edit, index, new, select_item, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#TODO (for 127.0.0.1 at 2009-06-08 09:35:47) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["23", "22", "24", "20", "21", "19"]}
+
+ActionController::UnknownAction (No action responded to TODO. Actions: add_item, create, destroy, edit, index, new, select_item, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#TODO (for 127.0.0.1 at 2009-06-08 09:35:50) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["23", "22", "20", "24", "21", "19"]}
+
+ActionController::UnknownAction (No action responded to TODO. Actions: add_item, create, destroy, edit, index, new, select_item, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:36:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 27ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:36:24) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.3ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 27ms (View: 15, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#TODO (for 127.0.0.1 at 2009-06-08 09:36:34) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["23", "19", "24", "22", "21", "20"]}
+
+ActionController::UnknownAction (No action responded to TODO. Actions: add_item, create, destroy, edit, index, new, select_item, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:37:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.5ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 35ms (View: 21, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#TODO (for 127.0.0.1 at 2009-06-08 09:37:12) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["23", "22", "21", "24", "20", "19"]}
+
+ActionController::UnknownAction (No action responded to TODO. Actions: add_item, create, destroy, edit, index, new, select_item, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#TODO (for 127.0.0.1 at 2009-06-08 09:37:14) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["23", "22", "20", "21", "24", "19"]}
+
+ActionController::UnknownAction (No action responded to TODO. Actions: add_item, create, destroy, edit, index, new, select_item, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:37:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 32ms (View: 20, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#TODO (for 127.0.0.1 at 2009-06-08 09:37:36) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["23", "24", "21", "22", "20", "19"]}
+
+ActionController::UnknownAction (No action responded to TODO. Actions: add_item, create, destroy, edit, index, new, select_item, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:45:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (1.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+
+ActionView::TemplateError (undefined local variable or method `sort_timeline_path' for #<ActionView::Base:0x2475afc>) on line #43 of app/views/timelines/show.html.erb:
+40:     <% end %>
+41:   <% end %>
+42: </ul>
+43: <%= sortable_element("dtimeline", :url => sort_timeline_path)  %>
+44: <br/>
+45: <br/>
+46: <br/>
+
+    app/views/timelines/show.html.erb:43
+    app/controllers/timelines_controller.rb:34:in `show'
+
+Rendered rescues/_trace (38.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:46:59) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.6ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 92ms (View: 79, DB: 4) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 09:47:09) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["23", "24", "22", "21", "19", "20"]}
+  [4;35;1mTimelineItem Update (1.5ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='23') [0m
+  [4;36;1mTimelineItem Update (1.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='24') [0m
+  [4;35;1mTimelineItem Update (16.2ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='22') [0m
+  [4;36;1mTimelineItem Update (1.3ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='21') [0m
+  [4;35;1mTimelineItem Update (1.2ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='19') [0m
+  [4;36;1mTimelineItem Update (1.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='20') [0m
+Completed in 29ms (View: 1, DB: 23) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:47:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 29ms (View: 17, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 09:47:33) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["19", "21", "22", "24", "23", "20"]}
+  [4;35;1mTimelineItem Update (1.9ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='19') [0m
+  [4;36;1mTimelineItem Update (1.1ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='21') [0m
+  [4;35;1mTimelineItem Update (1.2ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='22') [0m
+  [4;36;1mTimelineItem Update (1.1ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='24') [0m
+  [4;35;1mTimelineItem Update (1.1ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='23') [0m
+  [4;36;1mTimelineItem Update (19.5ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='20') [0m
+Completed in 32ms (View: 1, DB: 26) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:47:37) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 26ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 09:48:00) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["23", "24", "22", "21", "20", "19"]}
+  [4;35;1mTimelineItem Update (1.6ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='23') [0m
+  [4;36;1mTimelineItem Update (2.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='24') [0m
+  [4;35;1mTimelineItem Update (1.2ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='22') [0m
+  [4;36;1mTimelineItem Update (9.4ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='21') [0m
+  [4;35;1mTimelineItem Update (1.1ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='20') [0m
+  [4;36;1mTimelineItem Update (1.1ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='19') [0m
+Completed in 82ms (View: 1, DB: 17) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:48:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position DESC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 28ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:49:01) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+Completed in 26ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 09:49:07) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["23", "19", "24", "22", "21", "20"]}
+  [4;35;1mTimelineItem Update (1.8ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='23') [0m
+  [4;36;1mTimelineItem Update (1.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='19') [0m
+  [4;35;1mTimelineItem Update (1.3ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='24') [0m
+  [4;36;1mTimelineItem Update (1.1ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='22') [0m
+  [4;35;1mTimelineItem Update (1.1ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='21') [0m
+  [4;36;1mTimelineItem Update (19.0ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='20') [0m
+Completed in 32ms (View: 1, DB: 25) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 09:49:08) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["19", "23", "24", "22", "21", "20"]}
+  [4;35;1mTimelineItem Update (2.2ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='19') [0m
+  [4;36;1mTimelineItem Update (7.3ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='23') [0m
+  [4;35;1mTimelineItem Update (1.6ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='24') [0m
+  [4;36;1mTimelineItem Update (1.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='22') [0m
+  [4;35;1mTimelineItem Update (4.9ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='21') [0m
+  [4;36;1mTimelineItem Update (1.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='20') [0m
+Completed in 25ms (View: 1, DB: 18) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:49:10) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+Completed in 27ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 09:49:14) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["19", "20", "23", "24", "22", "21"]}
+  [4;35;1mTimelineItem Update (1.8ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='19') [0m
+  [4;36;1mTimelineItem Update (1.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='20') [0m
+  [4;35;1mTimelineItem Update (2.8ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='23') [0m
+  [4;36;1mTimelineItem Update (3.9ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='24') [0m
+  [4;35;1mTimelineItem Update (7.3ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='22') [0m
+  [4;36;1mTimelineItem Update (1.1ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='21') [0m
+Completed in 25ms (View: 1, DB: 18) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:49:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+Completed in 27ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 09:49:23) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["19", "20", "21", "23", "24", "22"]}
+  [4;35;1mTimelineItem Update (1.9ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='19') [0m
+  [4;36;1mTimelineItem Update (1.0ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='20') [0m
+  [4;35;1mTimelineItem Update (1.2ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='21') [0m
+  [4;36;1mTimelineItem Update (1.0ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='23') [0m
+  [4;35;1mTimelineItem Update (1.1ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='24') [0m
+  [4;36;1mTimelineItem Update (1.0ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='22') [0m
+Completed in 14ms (View: 1, DB: 7) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 09:49:25) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["19", "20", "21", "22", "23", "24"]}
+  [4;35;1mTimelineItem Update (1.7ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='19') [0m
+  [4;36;1mTimelineItem Update (1.0ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='20') [0m
+  [4;35;1mTimelineItem Update (14.3ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='21') [0m
+  [4;36;1mTimelineItem Update (1.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='22') [0m
+  [4;35;1mTimelineItem Update (1.2ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='23') [0m
+  [4;36;1mTimelineItem Update (1.0ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='24') [0m
+Completed in 33ms (View: 1, DB: 21) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:49:32) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.2ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 27ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:51:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.3ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 34ms (View: 20, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:53:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 26ms (View: 13, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 09:53:08) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["20", "19", "21", "22", "23", "24"]}
+  [4;35;1mTimelineItem Update (1.7ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='20') [0m
+  [4;36;1mTimelineItem Update (1.6ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='19') [0m
+  [4;35;1mTimelineItem Update (22.4ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='21') [0m
+  [4;36;1mTimelineItem Update (1.3ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='22') [0m
+  [4;35;1mTimelineItem Update (1.1ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='23') [0m
+  [4;36;1mTimelineItem Update (1.1ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='24') [0m
+Completed in 36ms (View: 1, DB: 29) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:53:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 27ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 09:53:26) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["19", "20", "21", "22", "23", "24"]}
+  [4;35;1mTimelineItem Update (27.8ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='19') [0m
+  [4;36;1mTimelineItem Update (1.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='20') [0m
+  [4;35;1mTimelineItem Update (0.9ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='21') [0m
+  [4;36;1mTimelineItem Update (1.1ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='22') [0m
+  [4;35;1mTimelineItem Update (5.1ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='23') [0m
+  [4;36;1mTimelineItem Update (1.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='24') [0m
+Completed in 109ms (View: 1, DB: 37) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:53:27) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.3ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 28ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:53:45) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.1ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 32ms (View: 20, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 09:53:48) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["20", "19", "21", "22", "23", "24"]}
+  [4;35;1mTimelineItem Update (1.8ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='20') [0m
+  [4;36;1mTimelineItem Update (4.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='19') [0m
+  [4;35;1mTimelineItem Update (1.4ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='21') [0m
+  [4;36;1mTimelineItem Update (1.0ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='22') [0m
+  [4;35;1mTimelineItem Update (1.7ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='23') [0m
+  [4;36;1mTimelineItem Update (1.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='24') [0m
+Completed in 18ms (View: 1, DB: 11) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 09:53:49) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["19", "20", "21", "22", "23", "24"]}
+  [4;35;1mTimelineItem Update (1.8ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='19') [0m
+  [4;36;1mTimelineItem Update (1.3ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='20') [0m
+  [4;35;1mTimelineItem Update (1.0ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='21') [0m
+  [4;36;1mTimelineItem Update (1.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='22') [0m
+  [4;35;1mTimelineItem Update (8.7ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='23') [0m
+  [4;36;1mTimelineItem Update (1.4ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='24') [0m
+Completed in 22ms (View: 1, DB: 15) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:55:37) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 87ms (View: 75, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:59:39) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+ERROR: compiling _run_erb_app47views47timelines47show46html46erb RAISED compile error
+/Users/kristenhazard/work/timesarrow/app/views/timelines/show.html.erb:45: syntax error, unexpected ')'
+... :constraint => :horizontal, )  ).to_s); @output_buffer.conc...
+                              ^
+Function body:           def _run_erb_app47views47timelines47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<p>\n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to 'Home', timelines_path ).to_s); @output_buffer.concat " | \n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to 'Edit Timeline Details', edit_timeline_path(@timeline) ).to_s); @output_buffer.concat " | \n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to 'Make New Timeline', new_timeline_path ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<h1>\n"
+@output_buffer.concat "  "; @output_buffer.concat((h @timeline.name ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<h3>\n"
+@output_buffer.concat "  "; @output_buffer.concat((h @timeline.description ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</h3>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table class=\"timeline\">\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    ";  @timeline.timeline_items.each do |timelineitem| ; @output_buffer.concat "\n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "    ";  content_tag_for :td, timelineitem do ; @output_buffer.concat "\n"
+@output_buffer.concat "      <table class=\"timeline\">\n"
+@output_buffer.concat "        <tr>\n"
+@output_buffer.concat "          <td>"; @output_buffer.concat(( image_tag timelineitem.item.mediumimageurl ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "        </tr>\n"
+@output_buffer.concat "        <tr>\n"
+@output_buffer.concat "          <td>"; @output_buffer.concat((h timelineitem.position ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "        </tr>\n"
+@output_buffer.concat "        <tr>\n"
+@output_buffer.concat "          <td>"; @output_buffer.concat((link_to timelineitem.position, edit_timeline_item_path(timelineitem) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "        </tr>\n"
+@output_buffer.concat "      </table>\n"
+@output_buffer.concat "    ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "    <td><img src=\"/images/small-arrow.png\" alt=\"Beta Arrow\"></td>\n"
+@output_buffer.concat "    ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "<ul id=\"dtimeline\">\n"
+@output_buffer.concat "  ";  @timeline.timeline_items.each do |timelineitem| ; @output_buffer.concat "\n"
+@output_buffer.concat "    ";  content_tag_for :li, timelineitem do ; @output_buffer.concat "\n"
+@output_buffer.concat "      "; @output_buffer.concat(( image_tag timelineitem.item.mediumimageurl ).to_s); @output_buffer.concat "<br/>\n"
+@output_buffer.concat "      "; @output_buffer.concat((h timelineitem.position ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "</ul>\n"
+@output_buffer.concat(( sortable_element("dtimeline", :url => sort_timelines_path, :constraint => :horizontal, )  ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat(( sortable_element("timeline", :url => sort_timelines_path, :constraint => :horizontal, :tag => :td )  ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "<br/>\n"
+@output_buffer.concat "<br/>\n"
+@output_buffer.concat "<br/>\n"
+@output_buffer.concat "<br/>\n"
+@output_buffer.concat "<br/>\n"
+@output_buffer.concat "<br/>\n"
+@output_buffer.concat "<br/>\n"
+@output_buffer.concat "<br/>\n"
+@output_buffer.concat "<!--\n"
+@output_buffer.concat "<p>"; @output_buffer.concat(( link_to 'Add Item to Timeline', :action => "add_item", :id => @timeline.id ).to_s); @output_buffer.concat "</p> \n"
+@output_buffer.concat "-->\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  ";  form_tag ({:action=>"show"}, :method=>:get) do ; @output_buffer.concat "\n"
+@output_buffer.concat "    <p>Enter keywords:</p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( text_field_tag(:keywords, params[:keywords]) ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat(( submit_tag "Search", :name => nil ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    <p>Results</p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( flash[:error] ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  ";  if @itemarray ; @output_buffer.concat "\n"
+@output_buffer.concat "    ";  @itemarray.each { |item| ; @output_buffer.concat "\n"
+@output_buffer.concat "      ";  form_tag(:action => :select_item) do ; @output_buffer.concat "\n"
+@output_buffer.concat "      <table border=\"0\" cellspacing=\"5\" cellpadding=\"5\">\n"
+@output_buffer.concat "      <tr valign=\"top\">\n"
+@output_buffer.concat "        <td>\n"
+@output_buffer.concat "          ";  if item.get("smallimage/url") ; @output_buffer.concat " \n"
+@output_buffer.concat "            "; @output_buffer.concat(( image_tag item.get("smallimage/url") ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "          ";  end; @output_buffer.concat "\n"
+@output_buffer.concat "        </td>\n"
+@output_buffer.concat "        <td> "; @output_buffer.concat(( h item.get("title") ).to_s); @output_buffer.concat " <br>\n"
+@output_buffer.concat "             by "; @output_buffer.concat(( h item.get("author") ).to_s); @output_buffer.concat "<br>\n"
+@output_buffer.concat "             "; @output_buffer.concat(( link_to("Amazon link", item.get("detailpageurl")) ).to_s); @output_buffer.concat "<br>\n"
+@output_buffer.concat "             "; @output_buffer.concat(( button_to 'Select button', { :action => 'select', :id => item.get("asin") } ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "        </td>\n"
+@output_buffer.concat "      </tr>\n"
+@output_buffer.concat "      <tr>\n"
+@output_buffer.concat "        <td>\n"
+@output_buffer.concat "          "; @output_buffer.concat(( hidden_field_tag(:asin, params[:asin], :value => item.get("asin")) ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "          \n"
+@output_buffer.concat "        </td>\n"
+@output_buffer.concat "      </tr>\n"
+@output_buffer.concat "      <tr>\n"
+@output_buffer.concat "        <td></td>\n"
+@output_buffer.concat "      </tr>\n"
+@output_buffer.concat "      </table>\n"
+@output_buffer.concat "      ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "    ";  } ; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/kristenhazard/work/timesarrow/app/views/timelines/show.html.erb:100:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/kristenhazard/work/timesarrow/app/controllers/timelines_controller.rb:34:in `show'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/kristenhazard/work/timesarrow/app/views/timelines/show.html.erb:45: syntax error, unexpected ')'
+... :constraint => :horizontal, )  ).to_s); @output_buffer.conc...
+                              ^) on line #45 of app/views/timelines/show.html.erb:
+42:     <% end %>
+43:   <% end %>
+44: </ul>
+45: <%= sortable_element("dtimeline", :url => sort_timelines_path, :constraint => :horizontal, )  %>
+46: <%= sortable_element("timeline", :url => sort_timelines_path, :constraint => :horizontal, :tag => :td )  %>
+47: <br/>
+48: <br/>
+
+    app/views/timelines/show.html.erb:100:in `compile!'
+    app/controllers/timelines_controller.rb:34:in `show'
+
+Rendered rescues/_trace (36.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 09:59:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (1.0ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 33ms (View: 21, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:01:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (1.0ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 39ms (View: 25, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:02:26) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (1.0ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 35ms (View: 22, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:04:14) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (1.0ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 33ms (View: 20, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:08:34) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;35;1mTimelineItem Load (1.0ms)[0m   [0mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 87ms (View: 21, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:10:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTimeline Load (0.2ms)[0m   [0;1mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+
+ActionView::TemplateError (undefined local variable or method `timelineitem' for #<ActionView::Base:0x244b388>) on line #19 of app/views/timelines/show.html.erb:
+16:   <tr>
+17: 
+18:     
+19:     <% content_tag_for :td, timelineitem do %>
+20:       <table class="timeline">
+21:         <tr>
+22:           <td><%= image_tag timelineitem.item.mediumimageurl %></td>
+
+    app/views/timelines/show.html.erb:19
+    app/controllers/timelines_controller.rb:34:in `show'
+
+Rendered rescues/_trace (37.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:11:13) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.1ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.9ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 103ms (View: 90, DB: 4) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:12:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 32ms (View: 20, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:12:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 32ms (View: 20, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 10:12:33) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "ttimeline"=>["19", "20", "21", "22", "24", "23"]}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each_with_index):
+  app/controllers/timelines_controller.rb:147:in `sort'
+
+Rendered rescues/_trace (97.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 10:12:39) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "ttimeline"=>["19", "20", "21", "22", "23", "24"]}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each_with_index):
+  app/controllers/timelines_controller.rb:147:in `sort'
+
+Rendered rescues/_trace (30.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:12:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 27ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 10:12:45) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "ttimeline"=>["19", "20", "21", "23", "24", "22"]}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each_with_index):
+  app/controllers/timelines_controller.rb:147:in `sort'
+
+Rendered rescues/_trace (28.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:12:46) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 30ms (View: 17, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 10:12:54) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "ttimeline"=>["19", "20", "21", "22", "24", "23"]}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each_with_index):
+  app/controllers/timelines_controller.rb:147:in `sort'
+
+Rendered rescues/_trace (28.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:12:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 26ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 10:14:04) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "ttimeline"=>["19", "24", "20", "21", "22", "23"]}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each_with_index):
+  app/controllers/timelines_controller.rb:147:in `sort'
+
+Rendered rescues/_trace (92.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:14:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 28ms (View: 16, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:14:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+Completed in 25ms (View: 13, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 10:14:09) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["19", "20", "21", "22", "24", "23"]}
+  [4;35;1mTimelineItem Update (1.5ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='19') [0m
+  [4;36;1mTimelineItem Update (13.9ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='20') [0m
+  [4;35;1mTimelineItem Update (1.1ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='21') [0m
+  [4;36;1mTimelineItem Update (0.9ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='22') [0m
+  [4;35;1mTimelineItem Update (0.9ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='24') [0m
+  [4;36;1mTimelineItem Update (1.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='23') [0m
+Completed in 26ms (View: 1, DB: 20) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:14:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 82ms (View: 69, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:15:12) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.1ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 33ms (View: 20, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 10:15:15) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "ttimeline"=>["19", "", "21", "20", "", "", "22", "", "24", "", "23", ""]}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each_with_index):
+  app/controllers/timelines_controller.rb:147:in `sort'
+
+Rendered rescues/_trace (31.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:15:36) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (1.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 30ms (View: 17, DB: 4) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:16:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 35ms (View: 21, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 10:16:43) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["19", "21", "20", "22", "24", "23"]}
+  [4;35;1mTimelineItem Update (1.6ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='19') [0m
+  [4;36;1mTimelineItem Update (1.1ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='21') [0m
+  [4;35;1mTimelineItem Update (1.2ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='20') [0m
+  [4;36;1mTimelineItem Update (21.0ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='22') [0m
+  [4;35;1mTimelineItem Update (1.4ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='24') [0m
+  [4;36;1mTimelineItem Update (1.1ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='23') [0m
+Completed in 34ms (View: 1, DB: 27) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:16:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 28ms (View: 16, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 10:16:53) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "dtimeline"=>["19", "20", "21", "22", "24", "23"]}
+  [4;35;1mTimelineItem Update (2.6ms)[0m   [0mUPDATE "timeline_items" SET position=1 WHERE (id='19') [0m
+  [4;36;1mTimelineItem Update (1.1ms)[0m   [0;1mUPDATE "timeline_items" SET position=2 WHERE (id='20') [0m
+  [4;35;1mTimelineItem Update (1.1ms)[0m   [0mUPDATE "timeline_items" SET position=3 WHERE (id='21') [0m
+  [4;36;1mTimelineItem Update (1.3ms)[0m   [0;1mUPDATE "timeline_items" SET position=4 WHERE (id='22') [0m
+  [4;35;1mTimelineItem Update (1.1ms)[0m   [0mUPDATE "timeline_items" SET position=5 WHERE (id='24') [0m
+  [4;36;1mTimelineItem Update (1.2ms)[0m   [0;1mUPDATE "timeline_items" SET position=6 WHERE (id='23') [0m
+Completed in 17ms (View: 1, DB: 8) | 200 OK [http://localhost/timelines/sort]
+
+
+Processing TimelinesController#sort (for 127.0.0.1 at 2009-06-08 10:16:59) [POST]
+  Parameters: {"authenticity_token"=>"c2XFadTV+wEdyxatJDS+4M9uoyR/j5ICz5FWCXW5bpc=", "ttimeline"=>["19", "", "", "20", "21", "", "22", "", "24", "", "23", ""]}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each_with_index):
+  app/controllers/timelines_controller.rb:147:in `sort'
+
+Rendered rescues/_trace (95.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:17:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 32ms (View: 20, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:18:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 30ms (View: 18, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:18:12) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 27ms (View: 15, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:18:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 29ms (View: 15, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:18:46) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 27ms (View: 14, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:19:01) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 28ms (View: 15, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:19:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 80ms (View: 16, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:19:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 29ms (View: 16, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:19:53) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 27ms (View: 15, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:20:53) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (1.0ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 28ms (View: 15, DB: 3) | 200 OK [http://localhost/timelines/3]
+
+
+Processing TimelinesController#show (for 127.0.0.1 at 2009-06-08 10:21:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTimeline Load (0.2ms)[0m   [0mSELECT * FROM "timelines" WHERE ("timelines"."id" = 3) [0m
+Rendering template within layouts/timelines
+Rendering timelines/show
+  [4;36;1mTimelineItem Load (0.9ms)[0m   [0;1mSELECT * FROM "timeline_items" WHERE ("timeline_items".timeline_id = 3) ORDER BY position ASC[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 48) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 49) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 50) [0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 51) [0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 53) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 52) [0m
+Completed in 35ms (View: 21, DB: 3) | 200 OK [http://localhost/timelines/3]

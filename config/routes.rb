@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :timeline_items
 
-  map.resources :timelines, :member => { :select_item => :post }
+  map.resources :timelines, :member => { :select_item => :post }, :collection => { :sort => :post }
 
   map.resources :items
 

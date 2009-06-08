@@ -142,4 +142,11 @@ class TimelinesController < ApplicationController
     redirect_to :action => "show", :id => params[:id]
     
   end
+  
+  def sort
+    params[:dtimeline].each_with_index do |id, index|
+      TimelineItem.update_all(['position=?', index+1], ['id=?', id])
+    end
+    render :nothing => true
+  end
 end
