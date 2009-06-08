@@ -6,22 +6,33 @@
   <tr>
     <th align="left" colspan=6><%= link_to timeline.name, timeline %> - Follow</th>
   </tr>
-   <tr>
-    <% timeline.timeline_items.each do |timelineitem| %>
-   
-          <td>
-            <table class="timeline">
-              <tr>
-                <td><%= link_to image_tag(timelineitem.item.smallimageurl), timelineitem.item.detailpageurl, :popup => true %></td>
-                <td> --> </td>
-              </tr>
-              <tr>
-                <td><%=h timelineitem.position_desc %></td>
-              </tr>
-            </table>
-          </td>
-        
-    <% end %>
+  <tr>
+    <td>
+    <div id="horizontal_carousel_small">
+      <div class="previous_button"></div>  
+      <div class="container">
+        <ul id="dtimeline">
+        <% timeline.timeline_items.each do |timelineitem| %>
+          <% content_tag_for :li, timelineitem do %>
+          <table>
+            <tr>
+              <td>
+                <%= image_tag timelineitem.item.smallimageurl %>
+              </td>
+              <td>-->
+                </td>
+            </tr>
+            <tr>
+              <td><%= link_to timelineitem.position_desc, edit_timeline_item_path(timelineitem) %></td>
+            </tr>
+          </table>
+          <% end %>
+          <% end %>
+        </ul>
+      </div>
+      <div class="next_button"></div>
+    </div>
+    </td>
   </tr>
   <!--<tr>
     <td colspan=6>
@@ -33,7 +44,9 @@
   <tr><td height=50></td></tr>
 <% end %>
 </table>
-
+<script>
+new UI.Carousel("horizontal_carousel_small");
+</script>
 <br />
 
 <%= link_to 'Make One!', new_timeline_path %>

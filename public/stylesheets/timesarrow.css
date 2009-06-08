@@ -51,6 +51,7 @@ a
 	border-bottom: none;
   text-decoration: none;
 }
+
 a:visited { color: #4E78A1; }
 a:hover { color: #fff; background-color:#4E78A1; }
 
@@ -79,7 +80,14 @@ ul#dtimeline li
 	white-space: nowrap;
 }
 
-div#divtimeline
+div#search
 {
-	/*overflow: scroll;*/
+	position:absolute;
+	left:40px;
+	top:450px;
+	background-color: #9DCAFF;
+	margin: .5em;
+	padding: .5em;
+	width: 500px;
+	visibility: hidden;
 }
