@@ -91,3 +91,8 @@ div#search
 	width: 500px;
 	visibility: hidden;
 }
+
+div.container 
+{
+	background-color: #9DCAFF;
+}

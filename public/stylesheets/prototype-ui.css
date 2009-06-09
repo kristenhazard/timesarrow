@@ -25,7 +25,7 @@
 }                      
 
 #horizontal_carousel ul li {
-  width: 110px;
+  width: 130px;
   height: 210px;
   text-align: center; 
   list-style:none;   
@@ -72,14 +72,14 @@
 #horizontal_carousel_small {
   float: left;
   width: 930px;
-  height: 150px;
+  height: 110px;
   position: relative;
 }
 
 #horizontal_carousel_small .container {
   float: left;
   width: 750px;
-  height: 150px;
+  height: 110px;
   position: relative;    
   overflow: hidden;
 }
@@ -96,7 +96,7 @@
 
 #horizontal_carousel_small ul li {
   width: 70px;
-  height: 150px;
+  height: 110px;
   text-align: center; 
   list-style:none;   
   float:left;
@@ -105,7 +105,7 @@
 #horizontal_carousel_small .previous_button {
   float:left;  
   width: 32px;
-  height: 150px;
+  height: 110px;
   background: url(/images/prototype-ui/horizontal/left.png);
   z-index: 100;
   cursor: pointer;
@@ -123,7 +123,7 @@
 #horizontal_carousel_small .next_button {
   float:left;  
   width: 32px;
-  height: 150px;
+  height: 110px;
   background: url(/images/prototype-ui/horizontal/right.png);
   z-index: 100;
   cursor: pointer;

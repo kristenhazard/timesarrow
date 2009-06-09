@@ -11,7 +11,7 @@
 <h3>
   <%=h @timeline.description %>
 </h3>
-
+<%=h @timeline.timeline_items.count %>
 <div id="horizontal_carousel">
   <div class="previous_button"></div>  
   <div class="container">
@@ -23,6 +23,9 @@
           <td>
             <%= image_tag timelineitem.item.mediumimageurl %>
           </td>
+          <td>
+            <% unless timelineitem.position == @timeline.timeline_items.count %> --> <% end %>
+          </td>
         </tr>
         <tr>
           <td><%= link_to timelineitem.position_desc, edit_timeline_item_path(timelineitem) %></td>
@@ -30,9 +33,11 @@
         <tr>
           <td nowrap="true">add | info | rate</td>
         </tr>
+        <tr><td></td></tr>
       </table>
       <% end %>
-      <% end %>
+      
+    <% end %>
     </ul>
   </div>
   <div class="next_button"></div>
