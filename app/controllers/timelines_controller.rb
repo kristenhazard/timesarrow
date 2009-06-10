@@ -16,7 +16,6 @@ class TimelinesController < ApplicationController
   # GET /timelines/1.xml
   def show
     @timeline = Timeline.find(params[:id])
-    
     keywords = params[:keywords]
     if !keywords.nil?
       if keywords == ""
@@ -27,9 +26,10 @@ class TimelinesController < ApplicationController
         @error = res.error
         flash[:error] = @error
         @itemarray = res.items
+        @item = Item.new
+        flash[:item] = @item
       end
     end
-    @item = Item.new
 
     respond_to do |format|
       format.html # show.html.erb
@@ -104,7 +104,6 @@ class TimelinesController < ApplicationController
   def add_item
     flash[:notice] = "add new item"
     @item = Item.new
-    #render :partial => "search_item", :object => @item 
     flash[:item] = @item
     redirect_to :action => "show", :id => params[:id]
   end
@@ -138,6 +137,7 @@ class TimelinesController < ApplicationController
     @timeline_item.item_id = @item.id
     @timeline_item.timeline_id = params[:id]
     @timeline_item.save
+    @timeline_item.insert_at
     
     redirect_to :action => "show", :id => params[:id]
     

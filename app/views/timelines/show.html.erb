@@ -28,10 +28,19 @@
           </td>
         </tr>
         <tr>
-          <td><%= link_to timelineitem.position_desc, edit_timeline_item_path(timelineitem) %></td>
+          <td><%= link_to timelineitem.position_desc, edit_timeline_item_path(timelineitem) %>
+               | <%=h timelineitem.position%>
+          </td>
         </tr>
         <tr>
-          <td nowrap="true">add | info | rate</td>
+          <td>
+            <%= link_to 'add to timeline', add_item_timeline_path %>
+          </td>
+        </tr>
+        <tr>
+          <td nowrap="true">
+            <%= link_to 'buy', timelineitem.item.detailpageurl, :popup => true %>
+             | info | rate</td>
         </tr>
         <tr><td></td></tr>
       </table>
@@ -48,11 +57,9 @@
 new UI.Carousel("horizontal_carousel");
 </script>
 
-<!--
-<p><%= link_to 'Add Item to Timeline', :action => "add_item", :id => @timeline.id %></p> 
--->
+<% if flash[:item] %>
 <div id="search">
-Add
+Add Item by Searching
   <% form_tag ({:action=>"show"}, :method=>:get) do %>
     <p>Enter keywords:</p>
     <%= text_field_tag(:keywords, params[:keywords]) %>
@@ -62,24 +69,24 @@ Add
   <% end %>
 
   <% if @itemarray %>
-    <% @itemarray.each { |item| %>
+    <% @itemarray.each { |aitem| %>
       <% form_tag(:action => :select_item) do %>
       <table border="0" cellspacing="5" cellpadding="5">
       <tr valign="top">
         <td>
-          <% if item.get("smallimage/url") %> 
-            <%= image_tag item.get("smallimage/url") %>
+          <% if aitem.get("smallimage/url") %> 
+            <%= image_tag aitem.get("smallimage/url") %>
           <% end%>
         </td>
-        <td> <%= h item.get("title") %> <br>
-             by <%= h item.get("author") %><br>
-             <%= link_to("Amazon link", item.get("detailpageurl")) %><br>
-             <%= button_to 'Select button', { :action => 'select', :id => item.get("asin") } %>
+        <td> <%= h aitem.get("title") %> <br>
+             by <%= h aitem.get("author") %><br>
+             <%= link_to("Amazon link", aitem.get("detailpageurl")) %><br>
+             <%= button_to 'Select button', { :action => 'select_item', :id => aitem.get("asin") } %>
         </td>
       </tr>
       <tr>
         <td>
-          <%= hidden_field_tag(:asin, params[:asin], :value => item.get("asin")) %>
+          <%= hidden_field_tag(:asin, params[:asin], :value => aitem.get("asin")) %>
           
         </td>
       </tr>
@@ -90,4 +97,5 @@ Add
       <% end %>
     <% } %>
   <% end %>
-</divs>
+</div>
+<% end %>

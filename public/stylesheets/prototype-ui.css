@@ -2,14 +2,14 @@
 #horizontal_carousel {
   float: left;
   width: 930px;
-  height: 210px;
+  height: 235px;
   position: relative;
 }
 
 #horizontal_carousel .container {
   float: left;
   width: 860px;
-  height: 210px;
+  height: 235px;
   position: relative;    
   overflow: hidden;
 }
@@ -21,12 +21,12 @@
   position: relative;
   top: 0;
   left: 0;
-  height: 210px;
+  height: 235px;
 }                      
 
 #horizontal_carousel ul li {
   width: 130px;
-  height: 210px;
+  height: 235px;
   text-align: center; 
   list-style:none;   
   float:left;

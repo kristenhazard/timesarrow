@@ -8,7 +8,8 @@
   <%= stylesheet_link_tag 'scaffold' %>
 </head>
 <body>
-<%= link_to 'Search', :controller => 'search' %>
+
+<%= link_to 'Home', timelines_path %> | <%= link_to 'Search', :controller => 'search' %>
 <p style="color: green"><%= flash[:notice] %></p>
 
 <%= yield %>

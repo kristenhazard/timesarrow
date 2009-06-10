@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :timeline_items
 
-  map.resources :timelines, :member => { :select_item => :post }, :collection => { :sort => :post }
+  map.resources :timelines, :member => { :select_item => :post, :add_item => :get }, :collection => { :sort => :post }
 
   map.resources :items
 
@@ -37,7 +37,7 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  # map.root :controller => "welcome"
+  map.root :controller => "timelines"
 
   # See how all your routes lay out with "rake routes"
 
