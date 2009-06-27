@@ -81,7 +81,7 @@ Add Item by Searching
         <td> <%= h aitem.get("title") %> <br>
              by <%= h aitem.get("author") %><br>
              <%= link_to("Amazon link", aitem.get("detailpageurl")) %><br>
-             <%= button_to 'Select button', { :action => 'select_item', :id => aitem.get("asin") } %>
+             <%= button_to 'Add to timeline', { :action => 'select_item', :id => aitem.get("asin") } %>
         </td>
       </tr>
       <tr>

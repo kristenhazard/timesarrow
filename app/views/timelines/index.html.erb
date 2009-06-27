@@ -25,31 +25,26 @@
             </tr>
             <tr>
               <td>
-                <%=h timelineitem.position_desc%>
+                <%=h timelineitem.position_desc %>
               </td>
             </tr>
           </table>
           <% end %>
-          <% end %>
+        <% end %>
         </ul>
       </div>
       <div class="next_button"></div>
     </div>
     </td>
   </tr>
-  <!--<tr>
-    <td colspan=6>
-      <%= link_to 'Show', timeline %>
-      <%= link_to 'Edit', edit_timeline_path(timeline) %>
-      <%= link_to 'Destroy', timeline, :confirm => 'Are you sure?', :method => :delete %>
-    </td>
-  </tr>-->
-  <tr><td height=50></td></tr>
+  <tr><td height=30></td></tr>
 <% end %>
 </table>
+<% @timelines.each do |timeline| %>
 <script>
 new UI.Carousel("horizontal_carousel_small");
 </script>
+<% end %>
 <br />
 
 <%= link_to 'Make One!', new_timeline_path %>
