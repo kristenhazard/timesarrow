@@ -4,11 +4,17 @@
 
 <% @timelines.each do |timeline| %>
   <tr>
-    <th align="left" colspan=6><%= link_to timeline.name, timeline %> - Follow</th>
+    <th align="left" colspan=6>
+      <%=h timeline.name %>
+      <!--<%= link_to timeline.name, timeline %>-->
+    </th>
+  </tr>
+  <tr>
+    <td><%=h timeline.description %></td>
   </tr>
   <tr>
     <td>
-    <div id="horizontal_carousel_small">
+    <div id="horizontal_carousel_small_<%= timeline.id %>" class="horizontal_carousel_small">
       <div class="previous_button"></div>  
       <div class="container">
         <ul>
@@ -17,16 +23,19 @@
           <table>
             <tr>
               <td>
-                <%= link_to image_tag(timelineitem.item.smallimageurl), timelineitem.item.detailpageurl, :popup => true %>
+                <%= image_tag(timelineitem.item.smallimageurl) %>
               </td>
               <td>
-                <% unless timelineitem.position == timeline.timeline_items.count %> --> <% end %>
+                <% unless timelineitem.position == timeline.timeline_items.count %><% end %>
               </td>
             </tr>
             <tr>
               <td>
                 <%=h timelineitem.position_desc %>
               </td>
+            </tr>
+            <tr>
+              <td><%= link_to 'buy', timelineitem.item.detailpageurl, :popup => true %></td>
             </tr>
           </table>
           <% end %>
@@ -42,9 +51,10 @@
 </table>
 <% @timelines.each do |timeline| %>
 <script>
-new UI.Carousel("horizontal_carousel_small");
+new UI.Carousel("horizontal_carousel_small_"+ <%= timeline.id %>);
 </script>
 <% end %>
 <br />
-
+<!--
 <%= link_to 'Make One!', new_timeline_path %>
+-->

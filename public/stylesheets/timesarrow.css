@@ -84,7 +84,7 @@ ul#dtimeline li
 {
 	float: left;
 	padding: .5em;
-	background-color: #9DCAFF;
+	background-color: #202230;
 	cursor: move;
 	white-space: nowrap;
 }
@@ -93,7 +93,7 @@ li
 {
 	float: left;
 	padding: .5em;
-	background-color: #9DCAFF;
+	background-color: #202230;
 	white-space: nowrap;
 }
 
@@ -111,5 +111,5 @@ div#search
 
 div.container 
 {
-	background-color: #9DCAFF;
+	background-color: #202230;
 }
