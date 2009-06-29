@@ -20,28 +20,24 @@
     <% @timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
       <table>
-        <tr><td><%= link_to 'buy', timelineitem.item.detailpageurl, :popup => true %></td></tr>
         <tr>
           <td>
             <%= image_tag timelineitem.item.mediumimageurl %>
-          </td>
-          <td>
-            <% unless timelineitem.position == @timeline.timeline_items.count %><% end %>
           </td>
         </tr>
         <tr>
           <td><%= link_to timelineitem.position_desc, edit_timeline_item_path(timelineitem) %>
           </td>
         </tr>
+        <tr><td><%= link_to 'buy', timelineitem.item.detailpageurl, :popup => true %></td></tr>
         <tr>
           <td nowrap="true">
-            
-             | arrow down | </td>
+             | arrow down | 
+          </td>
         </tr>
         <tr><td></td></tr>
       </table>
       <% end %>
-      
     <% end %>
     </ul>
   </div>
@@ -81,9 +77,8 @@ Add Item by Searching amazon.com
             <%= image_tag aitem.get("smallimage/url") %>
           <% end%>
         </td>
-        <td> <%= h aitem.get("title") %> <br>
+        <td> <%= link_to(aitem.get("title"), aitem.get("detailpageurl")) %><br>
              by <%= h aitem.get("author") %><br>
-             <%= link_to(aitem.get("title"), aitem.get("detailpageurl")) %><br>
              <%= button_to 'Add to timeline', { :action => 'select_item', :id => aitem.get("asin") } %>
         </td>
       </tr>
