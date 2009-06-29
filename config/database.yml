@@ -14,12 +14,16 @@ test:
   database: db/test.sqlite3
   pool: 5
   timeout: 5000
-
+  
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: timesarrow_production
   pool: 5
-  timeout: 5000
+  username: root
+  password: t1m3s4rr0w
+  socket: /tmp/mysql.sock
   
     
   
