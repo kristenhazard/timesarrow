@@ -136,6 +136,7 @@ class TimelinesController < ApplicationController
     @timeline_item = TimelineItem.new
     @timeline_item.item_id = @item.id
     @timeline_item.timeline_id = params[:id]
+    @timeline_item.position_desc = 'set'
     @timeline_item.save
     @timeline_item.insert_at
     
