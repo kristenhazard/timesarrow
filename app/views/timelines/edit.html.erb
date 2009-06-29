@@ -21,4 +21,5 @@
 <% end %>
 
 <%= link_to 'Show', @timeline %> |
-<%= link_to 'Back', timelines_path %>
+<%= link_to 'Back', timelines_path %> |
+<%= link_to 'Destroy', @timeline, :confirm => 'Are you sure?', :method => :delete %>
