@@ -34,51 +34,51 @@
 
 #horizontal_carousel .previous_button {
   float:left;  
-  width: 32px;
+  width: 35px;
   height: 175px;
-  background: url(/images/prototype-ui/horizontal/left.png);
+  background: url(/images/left-big.png);
   z-index: 100;
   cursor: pointer;
 }
 
 #horizontal_carousel .previous_button_over {
-  background: url(/images/prototype-ui/horizontal/left_over.png);
+  background: url(/images/left-big-over.png);
 }
 
 #horizontal_carousel .previous_button_disabled {
-  background: url(/images/prototype-ui/horizontal/left_disabled.png);
+  background: url(/images/left-disabled.png);
   cursor: default;
 }
 
 #horizontal_carousel .next_button {
   float:left;  
-  width: 32px;
+  width: 35px;
   height: 175px;
-  background: url(/images/prototype-ui/horizontal/right.png);
+  background: url(/images/right-big.png);
   z-index: 100;
   cursor: pointer;
 }
 
 #horizontal_carousel .next_button_over {
-  background: url(/images/prototype-ui/horizontal/right_over.png);
+  background: url(/images/right-big-over.png);
 }
 
 #horizontal_carousel .next_button_disabled {
-  background: url(/images/prototype-ui/horizontal/right_disabled.png);
+  background: url(/images/right-disabled.png);
   cursor: default;
 }
 
 
 .horizontal_carousel_small {
   float: left;
-  width: 930px;
+  width: 950px;
   height: 125px;
   position: relative;
 }
 
 .horizontal_carousel_small .container {
   float: left;
-  width: 750px;
+  width: 758px;
   height: 125px;
   position: relative;    
   overflow: hidden;
@@ -105,7 +105,7 @@
 .horizontal_carousel_small .previous_button {
   float:left;  
   width: 25px;
-  height: 125px;
+  height: 90px;
   background: url(/images/left.png);
   z-index: 100;
   cursor: pointer;
@@ -123,7 +123,7 @@
 .horizontal_carousel_small .next_button {
   float:left;  
   width: 25px;
-  height: 125px;
+  height: 90px;
   background: url(/images/right.png);
   z-index: 100;
   cursor: pointer;

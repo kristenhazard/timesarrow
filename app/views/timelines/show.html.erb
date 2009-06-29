@@ -8,10 +8,11 @@
   <%=h @timeline.name %>
 </h1>
 
-<h3>
+<p>
   <%=h @timeline.description %>
-</h3>
-<%=h @timeline.timeline_items.count %>
+</p>
+<p><%= link_to @timeline.imageurl, @timeline.imageurl %></p>
+<p><%=h @timeline.timeline_items.count %></p>
 <div id="horizontal_carousel">
   <div class="previous_button"></div>  
   <div class="container">
@@ -19,28 +20,23 @@
     <% @timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
       <table>
+        <tr><td><%= link_to 'buy', timelineitem.item.detailpageurl, :popup => true %></td></tr>
         <tr>
           <td>
             <%= image_tag timelineitem.item.mediumimageurl %>
           </td>
           <td>
-            <% unless timelineitem.position == @timeline.timeline_items.count %> --> <% end %>
+            <% unless timelineitem.position == @timeline.timeline_items.count %><% end %>
           </td>
         </tr>
         <tr>
           <td><%= link_to timelineitem.position_desc, edit_timeline_item_path(timelineitem) %>
-               | <%=h timelineitem.position%>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <%= link_to 'add to timeline', add_item_timeline_path %>
           </td>
         </tr>
         <tr>
           <td nowrap="true">
-            <%= link_to 'buy', timelineitem.item.detailpageurl, :popup => true %>
-             | info | rate</td>
+            
+             | arrow down | </td>
         </tr>
         <tr><td></td></tr>
       </table>
@@ -57,9 +53,16 @@
 new UI.Carousel("horizontal_carousel");
 </script>
 
-<% if flash[:item] %>
+
+
 <div id="search">
-Add Item by Searching
+<p>
+  <%= link_to 'add to timeline', add_item_timeline_path %>
+</p>
+<% if flash[:item] %>
+<p>
+Add Item by Searching amazon.com
+</p>
   <% form_tag ({:action=>"show"}, :method=>:get) do %>
     <p>Enter keywords:</p>
     <%= text_field_tag(:keywords, params[:keywords]) %>
@@ -80,7 +83,7 @@ Add Item by Searching
         </td>
         <td> <%= h aitem.get("title") %> <br>
              by <%= h aitem.get("author") %><br>
-             <%= link_to("Amazon link", aitem.get("detailpageurl")) %><br>
+             <%= link_to(aitem.get("title"), aitem.get("detailpageurl")) %><br>
              <%= button_to 'Add to timeline', { :action => 'select_item', :id => aitem.get("asin") } %>
         </td>
       </tr>
@@ -97,5 +100,6 @@ Add Item by Searching
       <% end %>
     <% } %>
   <% end %>
-</div>
 <% end %>
+
+</div>

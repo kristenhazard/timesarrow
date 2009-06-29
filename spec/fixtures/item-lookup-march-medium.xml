@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2005-03-23">
+  <OperationRequest>
+    <HTTPHeaders>
+      <Header Name="UserAgent" Value="Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.18 (KHTML, like Gecko) Version/4.0.1 Safari/530.18"/>
+    </HTTPHeaders>
+    <RequestId>32d7e0e8-8f1b-42ab-9235-a35d70357443</RequestId>
+    <Arguments>
+      <Argument Name="Operation" Value="ItemLookup"/>
+      <Argument Name="Service" Value="AWSECommerceService"/>
+      <Argument Name="ItemId" Value="0143036661"/>
+      <Argument Name="IdType" Value="ASIN"/>
+      <Argument Name="ResponseGroup" Value="Medium"/>
+      <Argument Name="SubscriptionId" Value="1FZFQX4TKGCZNDQ44P02"/>
+      <Argument Name="AssociateTag" Value="timesarrow-20"/>
+      <Argument Name="Version" Value="2005-03-23"/>
+      <Argument Name="ContentType" Value="text/html"/>
+    </Arguments>
+    <RequestProcessingTime>0.0527950000000000</RequestProcessingTime>
+  </OperationRequest>
+  <Items>
+    <Request>
+      <IsValid>True</IsValid>
+      <ItemLookupRequest>
+        <Condition>New</Condition>
+        <DeliveryMethod>Ship</DeliveryMethod>
+        <IdType>ASIN</IdType>
+        <MerchantId>Amazon</MerchantId>
+        <OfferPage>1</OfferPage>
+        <ItemId>0143036661</ItemId>
+        <ResponseGroup>Medium</ResponseGroup>
+        <ReviewPage>1</ReviewPage>
+      </ItemLookupRequest>
+    </Request>
+    <Item>
+      <ASIN>0143036661</ASIN>
+      <DetailPageURL>http://www.amazon.com/March-Geraldine-Brooks/dp/0143036661%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0143036661</DetailPageURL>
+      <SalesRank>879</SalesRank>
+      <SmallImage>
+        <URL>http://ecx.images-amazon.com/images/I/51K4CPKPJSL._SL75_.jpg</URL>
+        <Height Units="pixels">75</Height>
+        <Width Units="pixels">49</Width>
+      </SmallImage>
+      <MediumImage>
+        <URL>http://ecx.images-amazon.com/images/I/51K4CPKPJSL._SL160_.jpg</URL>
+        <Height Units="pixels">160</Height>
+        <Width Units="pixels">105</Width>
+      </MediumImage>
+      <LargeImage>
+        <URL>http://ecx.images-amazon.com/images/I/51K4CPKPJSL.jpg</URL>
+        <Height Units="pixels">500</Height>
+        <Width Units="pixels">327</Width>
+      </LargeImage>
+      <ItemAttributes>
+        <Author>Geraldine Brooks</Author>
+        <Binding>Paperback</Binding>
+        <DeweyDecimalNumber>823.914</DeweyDecimalNumber>
+        <EAN>9780143036661</EAN>
+        <ISBN>0143036661</ISBN>
+        <Label>Penguin (Non-Classics)</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Published</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>1500</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$15.00</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Penguin (Non-Classics)</Manufacturer>
+        <NumberOfItems>1</NumberOfItems>
+        <NumberOfPages>304</NumberOfPages>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">60</Height>
+          <Length Units="hundredths-inches">770</Length>
+          <Weight Units="hundredths-pounds">35</Weight>
+          <Width Units="hundredths-inches">510</Width>
+        </PackageDimensions>
+        <ProductGroup>Book</ProductGroup>
+        <PublicationDate>2006-01-31</PublicationDate>
+        <Publisher>Penguin (Non-Classics)</Publisher>
+        <Studio>Penguin (Non-Classics)</Studio>
+        <Title>March</Title>
+      </ItemAttributes>
+      <OfferSummary>
+        <LowestNewPrice>
+          <Amount>517</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$5.17</FormattedPrice>
+        </LowestNewPrice>
+        <LowestUsedPrice>
+          <Amount>290</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$2.90</FormattedPrice>
+        </LowestUsedPrice>
+        <LowestCollectiblePrice>
+          <Amount>6385</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$63.85</FormattedPrice>
+        </LowestCollectiblePrice>
+        <TotalNew>58</TotalNew>
+        <TotalUsed>145</TotalUsed>
+        <TotalCollectible>3</TotalCollectible>
+        <TotalRefurbished>0</TotalRefurbished>
+      </OfferSummary>
+      <EditorialReviews>
+        <EditorialReview>
+          <Source>Product Description</Source>
+          <Content>  From Louisa May Alcott&#x2019;s beloved classic &lt;I&gt;Little Women&lt;/I&gt;, Geraldine Brooks has animated the   character of the absent father, March, and crafted a story "filled with the ache of love and marriage and   with the power of war upon the mind and heart of one unforgettable man" (Sue Monk Kidd). With  "pitch-perfect writing" (&lt;I&gt;USA Today&lt;/I&gt;), Brooks follows March as he leaves behind his family to aid   the Union cause in the Civil War. His experiences will utterly change his marriage and challenge his most   ardently held beliefs. A lushly written, wholly original tale steeped in the details of another time,   &lt;I&gt;March&lt;/I&gt; secures Geraldine Brooks&#x2019;s place as a renowned author of historical fiction.</Content>
+        </EditorialReview>
+      </EditorialReviews>
+    </Item>
+  </Items>
+</ItemLookupResponse>

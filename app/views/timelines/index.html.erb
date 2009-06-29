@@ -1,7 +1,6 @@
 
 
 <table>
-
 <% @timelines.each do |timeline| %>
   <tr>
     <th align="left" colspan=6>
@@ -10,7 +9,7 @@
     </th>
   </tr>
   <tr>
-    <td><%=h timeline.description %></td>
+    <td class="tldesc"><%=h timeline.description %></td>
   </tr>
   <tr>
     <td>
@@ -23,19 +22,16 @@
           <table>
             <tr>
               <td>
-                <%= image_tag(timelineitem.item.smallimageurl) %>
+                <%= link_to image_tag(timelineitem.item.smallimageurl), timelineitem.item.detailpageurl, :popup => true %>
               </td>
               <td>
                 <% unless timelineitem.position == timeline.timeline_items.count %><% end %>
               </td>
             </tr>
             <tr>
-              <td>
+              <td class="tlposdesc">
                 <%=h timelineitem.position_desc %>
               </td>
-            </tr>
-            <tr>
-              <td><%= link_to 'buy', timelineitem.item.detailpageurl, :popup => true %></td>
             </tr>
           </table>
           <% end %>
@@ -58,3 +54,12 @@ new UI.Carousel("horizontal_carousel_small_"+ <%= timeline.id %>);
 <!--
 <%= link_to 'Make One!', new_timeline_path %>
 -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9553779-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>

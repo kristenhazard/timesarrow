@@ -101,15 +101,25 @@ div#search
 {
 	position:absolute;
 	left:40px;
-	top:450px;
-	background-color: #9DCAFF;
+	top:550px;
 	margin: .5em;
 	padding: .5em;
-	width: 500px;
+	width: 800px;
 	/*visibility: hidden;*/
 }
 
 div.container 
 {
 	background-color: #202230;
+}
+
+.tldesc
+{
+	padding: 0em 2.5em 0em 2.5em;
+	color: #38577A; 
+}
+
+.tlposdesc
+{
+	color: #38577A; 
 }
