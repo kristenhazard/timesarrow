@@ -21,16 +21,13 @@
           <% content_tag_for :li, timelineitem do %>
           <table width="40px" align="center">
             <tr>
-              <td>
+              <td class="tdwrap">
                 <% unless timelineitem.item.smallimageurl.nil? %>
                   <%= link_to image_tag(timelineitem.item.smallimageurl), timelineitem.item.detailpageurl, :popup => true %>
                 <% end %>
                 <% if timelineitem.item.smallimageurl.nil? %>
-                  <%=h timelineitem.item.title %>
+                  <%=link_to timelineitem.item.title, timelineitem.item.detailpageurl, :popup => true %>
                 <% end %>
-              </td>
-              <td>
-                <% unless timelineitem.position == timeline.timeline_items.count %><% end %>
               </td>
             </tr>
             <tr>

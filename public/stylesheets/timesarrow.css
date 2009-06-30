@@ -102,6 +102,11 @@ div.container
 	background-color: #202230;
 }
 
+div.container a
+{
+	font-size:   10px;
+}
+
 .tldesc
 {
 	padding: 0em 2.5em 0em 2.5em;
@@ -116,4 +121,14 @@ div.container
 .sctd
 {
 	width: 100px;
+}
+
+.tdwrap a
+{
+	overflow: auto;
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
