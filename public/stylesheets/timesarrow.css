@@ -17,22 +17,7 @@ sun yellow
 
 */
 
-.timeline
-{
-	background-color: #9DCAFF;
-	border-collapse: collapse;
-	color: #fff;
-	border-width: 3px 3px 4px 9px;
-	border-style: solid;
-	overflow: scroll;
-}
 
-.timeline td
-{
-	margin: 0;
-	border-color: #9DCAFF;
-	padding: 4px;
-}
 
 table
 {
@@ -63,6 +48,11 @@ a:hover
 	background-color:#4E78A1; 
 }
 
+a img {
+  border-style: none;
+	border-width: 0px;
+}
+
 body 
 { 
 	background-color: #202230; 
@@ -83,7 +73,6 @@ ul#dtimeline
 ul#dtimeline li
 {
 	float: left;
-	padding: .5em;
 	background-color: #202230;
 	cursor: move;
 	white-space: nowrap;
@@ -92,7 +81,7 @@ ul#dtimeline li
 li 
 {
 	float: left;
-	padding: .5em;
+	padding: .25em;
 	background-color: #202230;
 	white-space: nowrap;
 }
@@ -122,4 +111,9 @@ div.container
 .tlposdesc
 {
 	color: #38577A; 
+}
+
+.sctd
+{
+	width: 100px;
 }

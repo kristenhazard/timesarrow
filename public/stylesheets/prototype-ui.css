@@ -68,17 +68,18 @@
   cursor: default;
 }
 
+/* small carousel begins here */
 
 .horizontal_carousel_small {
   float: left;
-  width: 950px;
+  width: 960px;
   height: 125px;
   position: relative;
 }
 
 .horizontal_carousel_small .container {
   float: left;
-  width: 760px;
+  width: 900px;
   height: 125px;
   position: relative;    
   overflow: hidden;
@@ -137,6 +138,8 @@
   background: url(/images/right-disabled.png);
   cursor: default;
 }
+
+
 
 
 /* vertical Carousel 

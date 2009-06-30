@@ -19,7 +19,7 @@
         <ul>
         <% timeline.timeline_items.each do |timelineitem| %>
           <% content_tag_for :li, timelineitem do %>
-          <table>
+          <table width="40px" align="center">
             <tr>
               <td>
                 <% unless timelineitem.item.smallimageurl.nil? %>
