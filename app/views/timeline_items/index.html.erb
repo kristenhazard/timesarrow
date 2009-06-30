@@ -14,7 +14,11 @@
   <tr>
     <td><%=h timeline_item.timeline_id %></td>
     <td><%=h timeline_item.timeline.name %></td>
-    <td><%= image_tag timeline_item.item.smallimageurl %></td>
+    <td>
+      <% unless timeline_item.item.smallimageurl.nil? %>
+          <%= image_tag timeline_item.item.smallimageurl %>
+        <% end %>
+      </td>
     <td><%=h timeline_item.position %></td>
     <td><%=h timeline_item.position_desc %></td>
     <td><%=h timeline_item.item_id %></td>
