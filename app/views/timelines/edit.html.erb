@@ -9,11 +9,18 @@
   </p>
   <p>
     <%= f.label :description %><br />
-    <%= f.text_field :description %>
+    <%= f.text_area :description %>
   </p>
   <p>
     <%= f.label :imageurl %><br />
     <%= f.text_field :imageurl %>
+  </p>
+  <p>
+    <%= f.label :category %><br />
+    <%= f.select  :category,
+                  Timeline::TIMELINE_CATEGORIES,
+                  :prompt => "Select type"
+    %>
   </p>
   <p>
     <%= f.submit 'Update' %>

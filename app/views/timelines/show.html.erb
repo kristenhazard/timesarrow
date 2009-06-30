@@ -20,9 +20,14 @@
     <% @timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
       <table>
-        <tr>
-          <td>
-            <%= image_tag timelineitem.item.mediumimageurl %>
+        <tr height="160px">
+          <td width="105px">
+            <% unless timelineitem.item.mediumimageurl.nil? %>
+              <%= image_tag timelineitem.item.mediumimageurl %>
+            <% end %>
+            <% if timelineitem.item.mediumimageurl.nil? %>
+              <%=h word_wrap(timelineitem.item.title, :line_width => 1) %>
+            <% end %>
           </td>
         </tr>
         <tr>
@@ -59,7 +64,7 @@ new UI.Carousel("horizontal_carousel");
 <p>
 Add Item by Searching amazon.com
 </p>
-  <% form_tag ({:action=>"show"}, :method=>:get) do %>
+  <% form_tag({:action=>"show"}, :method=>:get) do %>
     <p>Enter keywords:</p>
     <%= text_field_tag(:keywords, params[:keywords]) %>
     <%= submit_tag "Search", :name => nil %>

@@ -1,11 +1,24 @@
-<p><%= image_tag @timeline_item.item.smallimageurl %></p>
+<p>
+  <b>Title:</b>
+  <%=h @timeline_item.item.title %>
+</p>
+
+
+<p>
+  <% unless @timeline_item.item.mediumimageurl.nil? %>
+    <%= image_tag @timeline_item.item.mediumimageurl %>
+  <% end %>
+</p>
 
 <p>
   <b>Timeline:</b>
   <%=h @timeline_item.timeline_id %>
 </p>
 
-
+<p>
+  <b>Timeline:</b>
+  <%=h @timeline_item.timeline.name %>
+</p>
 
 <p>
   <b>Item:</b>
@@ -15,6 +28,11 @@
 <p>
   <b>Position:</b>
   <%=h @timeline_item.position %>
+</p>
+
+<p>
+  <b>Position Desc:</b>
+  <%=h @timeline_item.position_desc %>
 </p>
 
 

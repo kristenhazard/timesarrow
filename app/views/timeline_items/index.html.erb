@@ -12,11 +12,11 @@
 
 <% @timeline_items.each do |timeline_item| %>
   <tr>
+    <td><%=h timeline_item.timeline_id %></td>
     <td><%=h timeline_item.timeline.name %></td>
     <td><%= image_tag timeline_item.item.smallimageurl %></td>
     <td><%=h timeline_item.position %></td>
     <td><%=h timeline_item.position_desc %></td>
-    <td><%=h timeline_item.timeline_id %></td>
     <td><%=h timeline_item.item_id %></td>
     <td><%= link_to 'Show', timeline_item %></td>
     <td><%= link_to 'Edit', edit_timeline_item_path(timeline_item) %></td>

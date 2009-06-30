@@ -2,7 +2,7 @@ class TimelineItemsController < ApplicationController
   # GET /timeline_items
   # GET /timeline_items.xml
   def index
-    @timeline_items = TimelineItem.all
+    @timeline_items = TimelineItem.all(:order => 'timeline_id')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -42,7 +42,6 @@ class TimelineItemsController < ApplicationController
   # POST /timeline_items.xml
   def create
     @timeline_item = TimelineItem.new(params[:timeline_item])
-    @timeline_item.position_desc = 'set'
 
     respond_to do |format|
       if @timeline_item.save
