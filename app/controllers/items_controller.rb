@@ -84,5 +84,6 @@ class ItemsController < ApplicationController
   
   def popup
     @item = Item.find(params[:id])
+    render(:layout => "layouts/popup")
   end
 end
