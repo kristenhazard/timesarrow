@@ -81,4 +81,8 @@ class ItemsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def popup
+    @item = Item.find(params[:id])
+  end
 end

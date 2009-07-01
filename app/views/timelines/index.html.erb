@@ -22,11 +22,12 @@
           <table width="40px" align="center">
             <tr>
               <td class="tdwrap">
-                <% unless timelineitem.item.smallimageurl.nil? %>
-                  <%= link_to image_tag(timelineitem.item.smallimageurl), timelineitem.item.detailpageurl, :popup => true %>
-                <% end %>
                 <% if timelineitem.item.smallimageurl.nil? %>
-                  <%=link_to timelineitem.item.title, timelineitem.item.detailpageurl, :popup => true %>
+                  <%= link_to timelineitem.item.title, :controller => "items", :action => "popup", :id => timelineitem.item.id, :popup => true %>
+                <% else %>
+                  <%= link_to image_tag(timelineitem.item.smallimageurl), 
+                      {:controller => "items", :action => "popup", :id => timelineitem.item.id}, 
+                      :popup => ['height=600,width=350,resizable=1,scrollbars=1'] %>
                 <% end %>
               </td>
             </tr>
@@ -52,6 +53,7 @@
 new UI.Carousel("horizontal_carousel_small_"+ <%= timeline.id %>);
 </script>
 <% end %>
+
 <br />
 <!--
 <%= link_to 'Make One!', new_timeline_path %>
@@ -65,3 +67,4 @@ try {
 var pageTracker = _gat._getTracker("UA-9553779-1");
 pageTracker._trackPageview();
 } catch(err) {}</script>
+

@@ -132,3 +132,8 @@ div.container a
 	white-space: -o-pre-wrap; /* Opera 7 */
 	word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
+
+.popup td, p
+{
+	font-size:   11px;
+}

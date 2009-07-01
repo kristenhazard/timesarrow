@@ -1,4 +1,8 @@
 <p>
+  <%= image_tag @item.mediumimageurl %>
+</p>
+
+<p>
   <b>ID:</b>
   <%=h @item.id %>
 </p>
@@ -30,7 +34,7 @@
 
 <p>
   <b>Detailpageurl:</b>
-  <%=h @item.detailpageurl %>
+  <%= link_to 'buy', @item.detailpageurl, :popup => true %>
 </p>
 
 <p>
@@ -48,6 +52,9 @@
   <%=h @item.publicationdate %>
 </p>
 
+<p>
+  <%= image_tag @item.smallimageurl %>
+</p>
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>
