@@ -9,13 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090608182007) do
+ActiveRecord::Schema.define(:version => 20090701225235) do
 
   create_table "items", :force => true do |t|
     t.string   "title"
     t.string   "itemtype"
     t.string   "author"
-    t.string   "description"
+    t.text     "description",     :limit => 255
     t.string   "asin"
     t.string   "detailpageurl"
     t.string   "smallimageurl"

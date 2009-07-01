@@ -27,7 +27,7 @@
                 <% else %>
                   <%= link_to image_tag(timelineitem.item.smallimageurl), 
                       {:controller => "items", :action => "popup", :id => timelineitem.item.id}, 
-                      :popup => ['height=600,width=350,resizable=1,scrollbars=1'] %>
+                      :popup => ['height=300,width=350,resizable=1,scrollbars=1'] %>
                 <% end %>
               </td>
             </tr>
