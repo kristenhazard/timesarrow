@@ -1,20 +1,9 @@
-
-  <table width="300px" class="popup">
-    <tr>
-      <td rowspan=3>
-        <% unless @item.mediumimageurl.nil? %>
-          <%= image_tag @item.mediumimageurl %>
-        <% end %>
-      </td>
-      <td><b><%=h @item.title %></b></td>
-    </tr>
-    <tr>
-      <td>by <%=h @item.author %></td>
-    </tr>
-    <tr>
-      <td><%= link_to 'buy', @item.detailpageurl, :popup => true %></td>
-    </tr>
-    <tr>
-      <td colspan=2><%= @item.description %></td>
-    </tr>
-  </table>
+  <div id="item_popup">
+    <% unless @item.mediumimageurl.nil? %>
+      <%= link_to image_tag(@item.mediumimageurl), @item.detailpageurl %>
+    <% end %>
+    <p><%=h @item.title %></p>
+    <p>by <%=h @item.author %></p>
+    <p><%= @item.description %></p>
+    <p><%= link_to 'buy from amazon.com', @item.detailpageurl, :popup => true %></p>
+  </div>
