@@ -1,10 +1,12 @@
 <div id="item_popup_<%= item.id %>" class="popup popup_draghandle" style="display:none">
-  <% unless item.mediumimageurl.nil? %>
+    <% unless item.mediumimageurl.nil? %>
     <%= link_to image_tag(item.mediumimageurl), item.detailpageurl, :popup => true %>
-  <% end %>
+    <% end %>
   <p><%=h item.title %></p>
   <p>by <%=h item.author %></p>
-  <p><%= item.description %></p>
+  <p><%= truncate(item.description, :length => 500) %></p>
   <p><%= link_to 'buy from amazon.com', item.detailpageurl, :popup => true %></p>
 </div>
+
 <%= javascript_tag "new Popup('item_popup_#{item.id}','item_popup_link_#{item.id}')" %>
+

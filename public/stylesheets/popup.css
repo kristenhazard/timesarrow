@@ -2,16 +2,16 @@
  popup.js
 */
 div.popup {
-  max-width: 600px;
-  border: 1px solid red;
+  max-width: 300px;
+  border: 1px solid #4E78A1;
   padding: 5px;
-  background-color: white;
+  background-color: #9DCAFF;
   /* The following properties should not be changed */
   position: absolute;
 }
 
 #popup_overlay {
-  background-color: whitesmoke;
+  background-color: #9DCAFF;
   /* The following properties should not be changed */
   position: absolute;
   top: 0;

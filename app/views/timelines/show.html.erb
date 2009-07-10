@@ -13,15 +13,13 @@
 </p>
 <p><%= link_to @timeline.imageurl, @timeline.imageurl %></p>
 <p><%=h @timeline.timeline_items.count %></p>
+
 <div id="horizontal_carousel">
   <div class="previous_button"></div>  
   <div class="container">
     <ul id="dtimeline">
     <% @timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
-      <table>
-        <tr height="160px">
-          <td width="105px">
           <span id="item_popup_link_<%= timelineitem.item.id %>" class="popup_link">
             <% unless timelineitem.item.mediumimageurl.nil? %>
               <%= image_tag timelineitem.item.mediumimageurl %>
@@ -29,32 +27,23 @@
             <% if timelineitem.item.mediumimageurl.nil? %>
               <%=h word_wrap(timelineitem.item.title, :line_width => 1) %>
             <% end %>
-          </span>
-          <%= render :partial => 'item_popup', :locals => {:item => timelineitem.item} %>
-          </td>
-        </tr>
-        <tr>
-          <td><%= link_to timelineitem.position_desc, edit_timeline_item_path(timelineitem) %>
-          </td>
-        </tr>
-        <tr><td><%= link_to 'buy', timelineitem.item.detailpageurl, :popup => true %></td></tr>
-        <tr>
-          <td nowrap="true">
-             | arrow down | 
-          </td>
-        </tr>
-        <tr><td></td></tr>
-      </table>
-      <% end %>
-      
-    <% end %>
+          </span><br/>
+          <%= link_to timelineitem.position_desc, edit_timeline_item_path(timelineitem) %><br/>
+          <%= link_to 'buy', timelineitem.item.detailpageurl, :popup => true %>
+      <% end %> <!-- end </li> -->
+    <% end %> <!-- end timelineitem loop -->
     </ul>
   </div>
   <div class="next_button"></div>
 </div>
 
+<% @timeline.timeline_items.each do |timelineitem| %>
+  <%= render :partial => 'item_popup', :locals => {:item => timelineitem.item} %>
+<% end %>
+
 <!-- drag and drop -->
 <%= sortable_element("dtimeline", :url => sort_timelines_path, :constraint => :horizontal)  %>
+
 <!-- carousel -->
 <script>
 new UI.Carousel("horizontal_carousel");
