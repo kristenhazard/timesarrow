@@ -20,22 +20,15 @@
         <% timeline.timeline_items.each do |timelineitem| %>
           <% content_tag_for :li, timelineitem do %>
           <span id="item_popup_link_<%= timelineitem.item.id %>" class="popup_link">
-          <table width="40px" align="center">
-            <tr>
-              <td class="tdwrap">
+          
                 <% if timelineitem.item.smallimageurl.nil? %>
                   <%= word_wrap(timelineitem.item.title) %>
                 <% else %>
                   <%= image_tag timelineitem.item.smallimageurl %>
-                <% end %>
-              </td>
-            </tr>
-            <tr>
-              <td class="tlposdesc">
+                <% end %><br/>
+          
                 <%=h timelineitem.position_desc %>
-              </td>
-            </tr>
-          </table>
+           
           </span>
           <% end %>
         <% end %>
@@ -66,6 +59,8 @@ new UI.Carousel("horizontal_carousel_small_"+ <%= timeline.id %>);
 <!--
 <%= link_to 'Make One!', new_timeline_path %>
 -->
+
+<!-- google analytics javascript -->
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
