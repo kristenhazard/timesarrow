@@ -85,6 +85,8 @@ ul#dtimeline li
 	background-color: #202230;
 	cursor: move;
 	white-space: nowrap;
+	
+	
 }
 
 li 
@@ -140,15 +142,4 @@ div.container a
 	white-space: -pre-wrap; /* Opera 4-6 */
 	white-space: -o-pre-wrap; /* Opera 7 */
 	word-wrap: break-word; /* Internet Explorer 5.5+ */
-}
-
-#item_popup td, p
-{
-	font-size:   85%;
-}
-
-#item_popup img
-{
-	float: left;
-	padding: 0em 1em .25em 0em;
 }

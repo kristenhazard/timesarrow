@@ -22,9 +22,20 @@ div.popup {
 
 span.popup_link, a.popup_link {
   cursor: pointer;
-  border-bottom: 1px dotted;
+  border-bottom: 0px;
 }
 
 .popup_draghandle {
   cursor: move;
+}
+
+div.popup td, p
+{
+	font-size:   85%;
+}
+
+div.popup img
+{
+	float: left;
+	padding: 0em 1em .25em 0em;
 }

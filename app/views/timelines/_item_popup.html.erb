@@ -4,9 +4,9 @@
     <% end %>
   <p><%=h item.title %></p>
   <p>by <%=h item.author %></p>
-  <p><%= truncate(item.description, :length => 500) %></p>
+  <p><%= markdown(truncate(item.description, :length => 500)) %></p>
   <p><%= link_to 'buy from amazon.com', item.detailpageurl, :popup => true %></p>
 </div>
 
-<%= javascript_tag "new Popup('item_popup_#{item.id}','item_popup_link_#{item.id}')" %>
+<%= javascript_tag "new Popup('item_popup_#{item.id}','item_popup_link_#{item.id}',{position:'auto', cursor_margin:1})" %>
 
