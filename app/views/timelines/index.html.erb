@@ -1,5 +1,3 @@
-
-<br/>
 <table>
 <% @timelines.each do |timeline| %>
   <tr>
@@ -20,16 +18,13 @@
         <% timeline.timeline_items.each do |timelineitem| %>
           <% content_tag_for :li, timelineitem do %>
           <span id="item_popup_link_<%= timelineitem.item.id %>" class="popup_link">
-          
                 <% if timelineitem.item.smallimageurl.nil? %>
                   <%= word_wrap(timelineitem.item.title) %>
                 <% else %>
                   <%= image_tag timelineitem.item.smallimageurl %>
-                <% end %><br/>
-          
-                <%=h timelineitem.position_desc %>
-           
-          </span>
+                <% end %>
+          </span><br/>
+          <span class="posdesc"><%=h timelineitem.position_desc %></span>
           <% end %>
         <% end %>
         </ul>
@@ -38,7 +33,6 @@
     </div>
     </td>
   </tr>
-  <tr><td height=10></td></tr>
 <% end %>
 </table>
 <!-- hover popup -->

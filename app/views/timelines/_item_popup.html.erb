@@ -4,7 +4,7 @@
     <% end %>
   <p><%=h item.title %></p>
   <p>by <%=h item.author %></p>
-  <p><%= markdown(truncate(item.description, :length => 500)) %></p>
+  <p><%= markdown(truncate(item.description, :length => 750)) %></p>
   <p><%= link_to 'buy from amazon.com', item.detailpageurl, :popup => true %></p>
 </div>
 

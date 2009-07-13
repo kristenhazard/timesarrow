@@ -111,17 +111,25 @@ div#search
 div.container 
 {
 	background-color: #202230;
+	font-size: 75%;
 }
 
-div.container a
+div.container a, p
 {
 	font-size: 75%;
+}
+
+.posdesc
+{
+	font-size: 75%;
+	color: #9DCAFF;
 }
 
 .tldesc
 {
 	padding: 0em 2.5em 0em 2.5em;
-	color: #38577A; 
+	color: #9DCAFF; 
+	font-size: 75%;
 }
 
 .tlposdesc
