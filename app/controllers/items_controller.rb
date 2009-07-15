@@ -34,6 +34,19 @@ class ItemsController < ApplicationController
   # GET /items/1/edit
   def edit
     @item = Item.find(params[:id])
+    
+    keywords = params[:keywords]
+    if !keywords.nil?
+      if keywords == ""
+        flash[:error] = "Please enter keywords"
+      else
+        # amazon-ecs
+        res = get_item_search_response(keywords)
+        @error = res.error
+        flash[:error] = @error
+        @itemarray = res.items
+      end
+    end
   end
 
   # POST /items
@@ -82,8 +95,36 @@ class ItemsController < ApplicationController
     end
   end
   
-  def popup
+  # search
+  def select_item
+    asin = params[:asin]
+    # get response from amazon 
+    res = get_item_lookup(asin)
+    item = res.items[0]
+    
+    # set item attributes based on response from amazon
     @item = Item.find(params[:id])
-    render(:layout => "layouts/popup")
+    @item.title = item.get("title")
+    @item.itemtype = item.get("productgroup")
+    @item.author = item.get("author")
+    reviews = item/'editorialreview'
+    if (!reviews.nil?)
+      review = reviews[0]
+      Amazon::Element.get_hash(review) # [:source => ..., :content ==> ...]
+      @item.description = Amazon::Element.get_unescaped(review, 'content')
+    else
+      @item.description = ""
+    end
+    
+    # save item
+    @item.asin = item.get("asin")
+    @item.detailpageurl = item.get("detailpageurl")
+    @item.smallimageurl = item.get("smallimage/url")
+    @item.mediumimageurl = item.get("mediumimage/url")
+    @item.publicationdate = item.get("publicationdate")
+    @item.save
+    
+    redirect_to :action => "edit", :id => params[:id]
+    
   end
 end

@@ -1,25 +1,20 @@
 /* 
-
 sun light blue
 #9DCAFF
-
 sun medium blue
 #4E78A1
-
 sun base blue
 #38577A
-
 sun dark blue
 #202230
-
 sun yellow
 #F7C639
-
 */
+
 body 
 { 
 	background-color: #202230; 
-	color: #9DCAFF; 
+	color: #fff; 
 	
 }
 
@@ -64,13 +59,14 @@ a:visited
 a:hover 
 { 
 	color: #fff;
+	border-bottom: 1px solid #fff;
 }
 
-a img {
+a img 
+{
   border-style: none;
 	border-width: 0px;
 }
-
 
 
 ul#dtimeline
@@ -83,9 +79,7 @@ ul#dtimeline li
 	float: left;
 	background-color: #202230;
 	cursor: move;
-	white-space: nowrap;
-	
-	
+	white-space: nowrap;	
 }
 
 li 
@@ -100,7 +94,7 @@ div#search
 {
 	position:absolute;
 	left:40px;
-	top:550px;
+	top:750px;
 	margin: .5em;
 	padding: .5em;
 	width: 800px;
@@ -121,7 +115,6 @@ div.container a, p
 .posdesc
 {
 	font-size: 75%;
-	color: #9DCAFF;
 }
 
 .tldesc
@@ -152,7 +145,7 @@ div.container a, p
 	word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
-div#tlinfo
+div.tlinfo
 {
 	padding: 0em 0em 0.5em 3.75em;
 }

@@ -1,33 +1,30 @@
 <h1>Listing items</h1>
 
-<table>
+<table border=5>
   <tr>
-    <th></th>
-    <th>ID</th>
-    <th>Title</th>
-    <th>Author</th>
-    <th>Description</th>
-    <th>Asin</th>
-    <th>Detailpageurl</th>
-    <th>Smallimageurl</th>
-    <th>Mediumimageurl</th>
-    <th>Publicationdate</th>
-    <th>Type</th>
+    <td></td>
+    <td>id</td>
+    <td>title</td>
+    <td>item type</td>
+    <td>author</td>
+    <td>description</td>
+    <td>asin</td>
+    <td>publication date</td>
   </tr>
-
 <% @items.each do |item| %>
   <tr valign="top">
-
+    <td>
+      <% if !item.smallimageurl.nil? %>
+        <%= image_tag item.smallimageurl %>
+      <% end %>
+    </td>
     <td><%=h item.id %></td>
     <td><%=h item.title %></td>
-    <td><%=h item.author %></td>
     <td><%=h item.itemtype %></td>
+    <td><%=h item.author %></td>
+    <td><%= item.description %></td>
     <td><%=h item.asin %></td>
-    <td><%=h item.smallimageurl %></td>
-    <td><%=h item.mediumimageurl %></td>
     <td><%=h item.publicationdate %></td>
-    <td><%=h item.detailpageurl %></td>
-    <td><%= link_to("Amazon link", item.detailpageurl) %></td>
     <td><%= link_to 'Show', item %></td>
     <td><%= link_to 'Edit', edit_item_path(item) %></td>
     <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -1,9 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :timeline_items
 
-  map.resources :timelines, :member => { :select_item => :post, :add_item => :get }, :collection => { :sort => :post }
+  map.resources :timelines, 
+                :member => { :select_item => :post, :add_item => :get }, 
+                :collection => { :sort => :post }
 
-  map.resources :items
+  map.resources :items, 
+                :member => { :select_item => :post, :add_item => :get }
 
   # The priority is based upon order of creation: first created -> highest priority.
 

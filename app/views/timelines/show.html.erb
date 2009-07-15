@@ -1,13 +1,11 @@
 <%= link_to 'Home', timelines_path %>
-<div id="tlinfo">
+
+<div>
   <h1>
     <%=h @timeline.name %>
   </h1>
-  <p>
-    <%=h @timeline.description %>
-  </p>
-  <p>
-    <%= link_to 'Details', @timeline.imageurl %>
+  <p class="tlinfo">
+    <%= @timeline.description %>
   </p>
 </div>
 

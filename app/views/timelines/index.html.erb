@@ -7,9 +7,6 @@
     </td>
   </tr>
   <tr>
-    <td class="tldesc"><%=h timeline.description %></td>
-  </tr>
-  <tr>
     <td>
     <div id="horizontal_carousel_small_<%= timeline.id %>" class="horizontal_carousel_small">
       <div class="previous_button"></div>  
@@ -36,17 +33,16 @@
 <% end %>
 </table>
 <!-- hover popup -->
-<!-- hover pop up div -->
 <% @timelines.each do |timeline| %>
-<% timeline.timeline_items.each do |timelineitem| %>
-  <%= render :partial => 'item_popup', :locals => {:timelineitem => timelineitem} %>
-<% end %>
+  <% timeline.timeline_items.each do |timelineitem| %>
+    <%= render :partial => 'item_popup', :locals => {:timelineitem => timelineitem} %>
+  <% end %>
 <% end %>
 <!-- carousel -->
 <% @timelines.each do |timeline| %>
-<script>
-new UI.Carousel("horizontal_carousel_small_"+ <%= timeline.id %>);
-</script>
+  <script>
+    new UI.Carousel("horizontal_carousel_small_"+ <%= timeline.id %>);
+  </script>
 <% end %>
 
 <br />

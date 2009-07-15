@@ -105,7 +105,7 @@ class TimelinesController < ApplicationController
     flash[:notice] = "add new item"
     @item = Item.new
     flash[:item] = @item
-    redirect_to :action => "show", :id => params[:id]
+    redirect_to :action => "edit", :id => params[:id]
   end
   
   def select_item
@@ -144,7 +144,7 @@ class TimelinesController < ApplicationController
     @timeline_item.save
     @timeline_item.insert_at
     
-    redirect_to :action => "show", :id => params[:id]
+    redirect_to :action => "edit", :id => params[:id]
     
   end
   

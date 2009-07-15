@@ -9,7 +9,7 @@
   </p>
   <p>
     <%= f.label :description %><br />
-    <%= f.text_field :description %>
+    <%= f.text_area :description, :rows => 10 %>
   </p>
   <p>
     <%= f.label :imageurl %><br />
@@ -22,7 +22,20 @@
                   :prompt => "Select type"
     %>
   </p>
-  
+  <p>
+    <%= f.label :subcategory %><br />
+    <%= f.select  :subcategory,
+                  Timeline::TIMELINE_SUBCATEGORIES,
+                  :prompt => "Select type"
+    %>
+  </p>
+  <p>
+    <%= f.label :featured %><br />
+    <%= f.select  :featured,
+                  Timeline::TIMELINE_FEATURED,
+                  :prompt => "Select type"
+    %>
+  </p>
   <p>
     <%= f.submit 'Create' %>
   </p>
