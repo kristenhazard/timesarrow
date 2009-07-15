@@ -5,7 +5,8 @@ describe Timeline do
     @valid_attributes = {
       :name => "value for name",
       :description => "value for description",
-      :imageurl => "value for imageurl"
+      :imageurl => "value for imageurl",
+      :category => "book"
     }
   end
 

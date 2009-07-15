@@ -8,7 +8,8 @@ describe "/timelines/new.html.erb" do
       :new_record? => true,
       :name => "value for name",
       :description => "value for description",
-      :imageurl => "value for imageurl"
+      :imageurl => "value for imageurl",
+      :category => "Book"
     )
   end
 

@@ -6,7 +6,8 @@ describe "/timeline_items/show.html.erb" do
     assigns[:timeline_item] = @timeline_item = stub_model(TimelineItem,
       :timeline_id => 1,
       :item_id => 1,
-      :position => 1
+      :position => 1,
+      :position_desc => '1'
     )
   end
 

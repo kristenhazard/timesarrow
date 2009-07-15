@@ -51,20 +51,20 @@ th
 
 a 
 { 
-	color: #4E78A1; 
+	color: #fff; 
 	border-bottom: none;
   text-decoration: none;
 }
 
 a:visited 
 { 
-	color: #4E78A1; 
+	color: #fff; 
 }
 
 a:hover 
 { 
-	color: #fff; 
-	background-color:#4E78A1; 
+	color: #fff;
+	border-bottom: 1px solid #fff;
 }
 
 a img {
@@ -127,9 +127,10 @@ div.container a, p
 
 .tldesc
 {
-	padding: 0em 0em 0em 3em;
+	padding: 0em 0em 0.5em 2.5em;
 	color: #9DCAFF; 
-	font-size: 75%;
+	font-size: 90%;
+	width: 900px;
 }
 
 .tlposdesc

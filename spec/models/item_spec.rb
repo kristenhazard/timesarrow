@@ -4,7 +4,7 @@ describe Item do
   before(:each) do
     @valid_attributes = {
       :title => "value for title",
-      :type => "value for type",
+      :itemtype => "value for type",
       :author => "value for author",
       :description => "value for description",
       :asin => "value for asin",

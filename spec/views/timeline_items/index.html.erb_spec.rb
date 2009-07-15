@@ -12,8 +12,8 @@ describe "/timeline_items/index.html.erb" do
       ),
       stub_model(TimelineItem,
         :timeline_id => 1,
-        :item_id => 1,
-        :position => 1
+        :item_id => 2,
+        :position => 2
       )
     ]
   end

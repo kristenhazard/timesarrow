@@ -2,7 +2,7 @@ class TimelineItemsController < ApplicationController
   # GET /timeline_items
   # GET /timeline_items.xml
   def index
-    @timeline_items = TimelineItem.all(:order => 'timeline_id')
+    @timeline_items = TimelineItem.all #(:order => 'timeline_id')
 
     respond_to do |format|
       format.html # index.html.erb

@@ -1,10 +1,10 @@
 <table>
 <% @timelines.each do |timeline| %>
   <tr>
-    <th align="left" colspan=6>
-      <%=h timeline.name %>
-      <!--<%= link_to timeline.name, timeline %>-->
-    </th>
+    <td>
+      <!--<%=h timeline.name %>-->
+      <%= link_to timeline.name, timeline %>
+    </td>
   </tr>
   <tr>
     <td class="tldesc"><%=h timeline.description %></td>

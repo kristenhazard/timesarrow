@@ -7,7 +7,7 @@ describe "/items/edit.html.erb" do
     assigns[:item] = @item = stub_model(Item,
       :new_record? => false,
       :title => "value for title",
-      :type => "value for type",
+      :itemtype => "value for type",
       :author => "value for author",
       :description => "value for description",
       :asin => "value for asin",
@@ -22,9 +22,9 @@ describe "/items/edit.html.erb" do
     
     response.should have_tag("form[action=#{item_path(@item)}][method=post]") do
       with_tag('input#item_title[name=?]', "item[title]")
-      with_tag('input#item_type[name=?]', "item[type]")
+      with_tag('input#item_itemtype[name=?]', "item[itemtype]")
       with_tag('input#item_author[name=?]', "item[author]")
-      with_tag('input#item_description[name=?]', "item[description]")
+      with_tag('textarea#item_description[name=?]', "item[description]")
       with_tag('input#item_asin[name=?]', "item[asin]")
       with_tag('input#item_detailpageurl[name=?]', "item[detailpageurl]")
       with_tag('input#item_smallimageurl[name=?]', "item[smallimageurl]")

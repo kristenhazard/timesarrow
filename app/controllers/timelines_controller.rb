@@ -110,9 +110,11 @@ class TimelinesController < ApplicationController
   
   def select_item
     asin = params[:asin]
+    # get response from amazon 
     res = get_item_lookup(asin)
     item = res.items[0]
     
+    # set item attributes based on response from amazon
     @item = Item.new
     @item.title = item.get("title")
     @item.itemtype = item.get("productgroup")
@@ -126,6 +128,7 @@ class TimelinesController < ApplicationController
       @item.description = ""
     end
     
+    # save item
     @item.asin = item.get("asin")
     @item.detailpageurl = item.get("detailpageurl")
     @item.smallimageurl = item.get("smallimage/url")
@@ -133,6 +136,7 @@ class TimelinesController < ApplicationController
     @item.publicationdate = item.get("publicationdate")
     @item.save
     
+    # save timeline_item
     @timeline_item = TimelineItem.new
     @timeline_item.item_id = @item.id
     @timeline_item.timeline_id = params[:id]

@@ -1,7 +1,8 @@
 <p>
   <%= link_to 'Home', timelines_path %> | 
   <%= link_to 'Edit Timeline Details', edit_timeline_path(@timeline) %> | 
-  <%= link_to 'Make New Timeline', new_timeline_path %>
+  <%= link_to 'Make New Timeline', new_timeline_path %> |
+  <%= link_to 'Destroy', @timeline, :confirm => 'Are you sure?', :method => :delete %>
 </p>
 
 <h1>
@@ -73,13 +74,15 @@ Add Item by Searching amazon.com
       <table border="0" cellspacing="5" cellpadding="5">
       <tr valign="top">
         <td>
-          <% if aitem.get("smallimage/url") %> 
-            <%= image_tag aitem.get("smallimage/url") %>
+          <% if aitem.get("mediumimage/url") %> 
+            <%= image_tag aitem.get("mediumimage/url") %>
           <% end%>
         </td>
-        <td> <%= link_to(aitem.get("title"), aitem.get("detailpageurl")) %><br>
-             by <%= h aitem.get("author") %><br>
-             <%= button_to 'Add to timeline', { :action => 'select_item', :id => aitem.get("asin") } %>
+        <td> <%= link_to(aitem.get("title"), aitem.get("detailpageurl")) %><br/>
+             by <%=h aitem.get("author") %><br/>
+             <%= button_to 'Add to timeline', { :action => 'select_item', :id => aitem.get("asin") } %><br/>
+             <%= markdown(aitem.get_unescaped("editorialreviews/editorialreview/content")) %>
+             
         </td>
       </tr>
       <tr>

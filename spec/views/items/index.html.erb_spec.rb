@@ -7,7 +7,7 @@ describe "/items/index.html.erb" do
     assigns[:items] = [
       stub_model(Item,
         :title => "value for title",
-        :type => "value for type",
+        :itemtype => "book",
         :author => "value for author",
         :description => "value for description",
         :asin => "value for asin",
@@ -17,7 +17,7 @@ describe "/items/index.html.erb" do
       ),
       stub_model(Item,
         :title => "value for title",
-        :type => "value for type",
+        :itemtype => "music",
         :author => "value for author",
         :description => "value for description",
         :asin => "value for asin",
@@ -31,9 +31,9 @@ describe "/items/index.html.erb" do
   it "renders a list of items" do
     render
     response.should have_tag("tr>td", "value for title".to_s, 2)
-    response.should have_tag("tr>td", "value for type".to_s, 2)
+    #response.should have_tag("tr>td", "value for itemtype".to_s, 2)
     response.should have_tag("tr>td", "value for author".to_s, 2)
-    response.should have_tag("tr>td", "value for description".to_s, 2)
+    #response.should have_tag("tr>td", "value for description".to_s, 2)
     response.should have_tag("tr>td", "value for asin".to_s, 2)
     response.should have_tag("tr>td", "value for detailpageurl".to_s, 2)
     response.should have_tag("tr>td", "value for smallimageurl".to_s, 2)
