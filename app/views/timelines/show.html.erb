@@ -17,7 +17,7 @@
       <% content_tag_for :li, timelineitem do %>
           <span id="item_popup_link_<%= timelineitem.id %>" class="popup_link">
             <% unless timelineitem.item.mediumimageurl.nil? %>
-              <%= link_to image_tag(timelineitem.item.mediumimageurl), edit_item_path(timelineitem.item), :popup => true %>
+              <%= image_tag timelineitem.item.mediumimageurl %>
             <% end %>
             <% if timelineitem.item.mediumimageurl.nil? %>
               <%=h word_wrap(timelineitem.item.title, :line_width => 1) %>
