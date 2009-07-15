@@ -16,20 +16,6 @@ class TimelinesController < ApplicationController
   # GET /timelines/1.xml
   def show
     @timeline = Timeline.find(params[:id])
-    keywords = params[:keywords]
-    if !keywords.nil?
-      if keywords == ""
-        flash[:error] = "Please enter keywords"
-      else
-        # amazon-ecs
-        res = get_item_search_response(keywords)
-        @error = res.error
-        flash[:error] = @error
-        @itemarray = res.items
-        @item = Item.new
-        flash[:item] = @item
-      end
-    end
 
     respond_to do |format|
       format.html # show.html.erb
@@ -51,6 +37,20 @@ class TimelinesController < ApplicationController
   # GET /timelines/1/edit
   def edit
     @timeline = Timeline.find(params[:id])
+    keywords = params[:keywords]
+    if !keywords.nil?
+      if keywords == ""
+        flash[:error] = "Please enter keywords"
+      else
+        # amazon-ecs
+        res = get_item_search_response(keywords)
+        @error = res.error
+        flash[:error] = @error
+        @itemarray = res.items
+        @item = Item.new
+        flash[:item] = @item
+      end
+    end
   end
 
   # POST /timelines

@@ -28,5 +28,92 @@
 <% end %>
 
 <%= link_to 'Show', @timeline %> |
-<%= link_to 'Back', timelines_path %> |
+<%= link_to 'Home', timelines_path %> |
+<%= link_to 'Make New Timeline', new_timeline_path %> |
 <%= link_to 'Destroy', @timeline, :confirm => 'Are you sure?', :method => :delete %>
+
+<div id="horizontal_carousel">
+  <div class="previous_button"></div>  
+  <div class="container">
+    <ul id="dtimeline">
+    <% @timeline.timeline_items.each do |timelineitem| %>
+      <% content_tag_for :li, timelineitem do %>
+          <span id="item_popup_link_<%= timelineitem.id %>" class="popup_link">
+            <% unless timelineitem.item.mediumimageurl.nil? %>
+              <%= link_to image_tag(timelineitem.item.mediumimageurl), edit_item_path(timelineitem.item), :popup => true %>
+            <% end %>
+            <% if timelineitem.item.mediumimageurl.nil? %>
+              <%=h word_wrap(timelineitem.item.title, :line_width => 1) %>
+            <% end %>
+          </span><br/>
+          <%= link_to timelineitem.position_desc, edit_timeline_item_path(timelineitem) %><br/>
+          <%= link_to 'buy', timelineitem.item.detailpageurl, :popup => true %>
+      <% end %> <!-- end </li> -->
+    <% end %> <!-- end timelineitem loop -->
+    </ul>
+  </div>
+  <div class="next_button"></div>
+</div>
+
+<!-- hover pop up div -->
+<% @timeline.timeline_items.each do |timelineitem| %>
+  <%= render :partial => 'item_popup', :locals => {:timelineitem => timelineitem} %>
+<% end %>
+
+<!-- drag and drop -->
+<%= sortable_element("dtimeline", :url => sort_timelines_path, :constraint => :horizontal)  %>
+
+<!-- carousel -->
+<script>
+new UI.Carousel("horizontal_carousel");
+</script>
+
+<!-- search -->
+<div id="search">
+<p>
+  <%= link_to 'add to timeline', add_item_timeline_path %>
+</p>
+<% if flash[:item] %>
+<p>
+Add Item by Searching amazon.com
+</p>
+  <% form_tag({:action=>"show"}, :method=>:get) do %>
+    <p>Enter keywords:</p>
+    <%= text_field_tag(:keywords, params[:keywords]) %>
+    <%= submit_tag "Search", :name => nil %>
+    <p>Results</p>
+    <%= flash[:error] %>
+  <% end %>
+
+  <% if @itemarray %>
+    <% @itemarray.each { |aitem| %>
+      <% form_tag(:action => :select_item) do %>
+      <table border="0" cellspacing="5" cellpadding="5">
+      <tr valign="top">
+        <td>
+          <% if aitem.get("mediumimage/url") %> 
+            <%= image_tag aitem.get("mediumimage/url") %>
+          <% end%>
+        </td>
+        <td> <%= link_to(aitem.get("title"), aitem.get("detailpageurl")) %><br/>
+             by <%=h aitem.get("author") %><br/>
+             <%= button_to 'Add to timeline', { :action => 'select_item', :id => aitem.get("asin") } %><br/>
+             <%= markdown(aitem.get_unescaped("editorialreviews/editorialreview/content")) %>
+             
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= hidden_field_tag(:asin, params[:asin], :value => aitem.get("asin")) %>
+          
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      </table>
+      <% end %>
+    <% } %>
+  <% end %>
+<% end %>
+</div>

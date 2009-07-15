@@ -19,7 +19,7 @@ sun yellow
 body 
 { 
 	background-color: #202230; 
-	color: #fff; 
+	color: #9DCAFF; 
 	
 }
 
@@ -150,4 +150,9 @@ div.container a, p
 	white-space: -pre-wrap; /* Opera 4-6 */
 	white-space: -o-pre-wrap; /* Opera 7 */
 	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+div#tlinfo
+{
+	padding: 0em 0em 0.5em 3.75em;
 }
