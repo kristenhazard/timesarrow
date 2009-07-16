@@ -1,926 +1,5 @@
 
 --- 
-timelines: 
-  columns: 
-  - id
-  - name
-  - description
-  - imageurl
-  - created_at
-  - updated_at
-  - category
-  - subcategory
-  - featured
-  records: 
-  - - "1"
-    - Pulitzer Prize Winners Fiction
-    - "Timeline of <a href=\"http://www.pulitzer.org/bycat/Fiction\">Pulitzer Prize Winners fiction category</a>. "
-    - http://www.pulitzer.org/bycat/Fiction
-    - 2009-05-29 23:52:21
-    - 2009-07-15 21:09:54
-    - Book
-    - Awards
-    - "1"
-  - - "2"
-    - Oprah's Book Club
-    - Timeline of Oprah's Book Club selections
-    - http://www.oprah.com/article/oprahsbookclub/pastselections/20080701_orig_list
-    - 2009-05-30 21:04:30
-    - 2009-06-29 22:10:30
-    - books
-    - 
-    - 
-  - - "8"
-    - Bill Simmons' Twitter Book Club
-    - Bill Simmons, aka The Sports Guy, created a Twitter Book club. This is a timeline of those selections.
-    - ""
-    - 2009-07-15 21:24:27
-    - 2009-07-15 21:24:27
-    - Book
-    - Clubs
-    - "1"
-
---- 
-timeline_items: 
-  columns: 
-  - id
-  - timeline_id
-  - item_id
-  - position
-  - created_at
-  - updated_at
-  - position_desc
-  records: 
-  - - "1"
-    - "1"
-    - "8"
-    - "57"
-    - 2009-05-30 00:24:45
-    - 2009-06-08 20:51:53
-    - "2008"
-  - - "2"
-    - "1"
-    - "15"
-    - "56"
-    - 2009-05-30 00:26:40
-    - 2009-06-08 20:52:05
-    - "2007"
-  - - "3"
-    - "1"
-    - "6"
-    - "55"
-    - 2009-05-30 00:27:11
-    - 2009-06-08 20:55:26
-    - "2006"
-  - - "4"
-    - "1"
-    - "17"
-    - "54"
-    - 2009-05-30 00:27:57
-    - 2009-06-08 20:55:58
-    - "2005"
-  - - "5"
-    - "1"
-    - "16"
-    - "53"
-    - 2009-05-30 00:28:44
-    - 2009-06-08 20:55:45
-    - "2004"
-  - - "6"
-    - "1"
-    - "7"
-    - "52"
-    - 2009-05-30 00:29:13
-    - 2009-06-08 20:56:29
-    - "2003"
-  - - "7"
-    - "1"
-    - "19"
-    - "51"
-    - 2009-05-30 20:24:24
-    - 2009-06-08 20:56:38
-    - "2002"
-  - - "8"
-    - "2"
-    - "26"
-    - "105"
-    - 2009-05-30 21:20:23
-    - 2009-06-08 21:06:36
-    - "2008"
-  - - "9"
-    - "2"
-    - "27"
-    - "104"
-    - 2009-05-30 21:20:38
-    - 2009-06-08 21:06:48
-    - "2008"
-  - - "10"
-    - "2"
-    - "28"
-    - "103"
-    - 2009-05-30 21:20:57
-    - 2009-06-08 21:07:55
-    - "2007"
-  - - "11"
-    - "2"
-    - "43"
-    - "103"
-    - 2009-05-30 21:54:27
-    - 2009-06-08 21:07:42
-    - "2007"
-  - - "12"
-    - "2"
-    - "7"
-    - "103"
-    - 2009-05-30 21:54:52
-    - 2009-06-08 21:07:14
-    - "2007"
-  - - "13"
-    - "2"
-    - "15"
-    - "103"
-    - 2009-05-30 21:55:52
-    - 2009-06-08 21:07:28
-    - "2007"
-  - - "14"
-    - "2"
-    - "30"
-    - "103"
-    - 2009-05-30 21:56:14
-    - 2009-06-08 21:07:01
-    - "2007"
-  - - "15"
-    - "2"
-    - "41"
-    - "103"
-    - 2009-05-30 21:56:37
-    - 2009-06-08 21:08:05
-    - "2006"
-  - - "16"
-    - "1"
-    - "21"
-    - "50"
-    - 2009-05-30 21:57:21
-    - 2009-06-08 20:56:53
-    - "2001"
-  - - "17"
-    - "1"
-    - "20"
-    - "58"
-    - 2009-06-06 02:00:27
-    - 2009-06-08 20:55:01
-    - "2009"
-  - - "18"
-    - "1"
-    - "47"
-    - "49"
-    - 2009-06-06 02:02:38
-    - 2009-06-08 20:57:05
-    - "2000"
-  - - "25"
-    - "1"
-    - "54"
-    - "48"
-    - 2009-06-08 21:04:05
-    - 2009-06-08 21:04:27
-    - "1999"
-  - - "26"
-    - "2"
-    - "55"
-    - "103"
-    - 2009-06-08 21:09:36
-    - 2009-06-08 21:15:23
-    - "2005"
-  - - "27"
-    - "1"
-    - "56"
-    - "47"
-    - 2009-06-10 20:34:18
-    - 2009-06-10 20:36:08
-    - "1998"
-  - - "28"
-    - "1"
-    - "57"
-    - "46"
-    - 2009-06-10 20:47:07
-    - 2009-06-10 20:48:00
-    - "1997"
-  - - "29"
-    - "1"
-    - "58"
-    - "45"
-    - 2009-06-10 20:50:39
-    - 2009-06-10 20:50:53
-    - "1996"
-  - - "30"
-    - "1"
-    - "59"
-    - "44"
-    - 2009-06-10 20:52:59
-    - 2009-06-10 20:53:08
-    - "1995"
-  - - "31"
-    - "2"
-    - "60"
-    - "100"
-    - 2009-06-10 20:57:24
-    - 2009-06-10 20:58:29
-    - "2005"
-  - - "32"
-    - "2"
-    - "61"
-    - "99"
-    - 2009-06-10 20:57:40
-    - 2009-06-10 20:59:00
-    - "2005"
-  - - "33"
-    - "2"
-    - "62"
-    - "98"
-    - 2009-06-10 20:57:53
-    - 2009-06-10 20:59:08
-    - "2005"
-  - - "35"
-    - "2"
-    - "64"
-    - "97"
-    - 2009-06-10 21:02:29
-    - 2009-06-10 21:02:40
-    - "2004"
-  - - "38"
-    - "1"
-    - "67"
-    - "43"
-    - 2009-06-29 20:55:59
-    - 2009-06-29 21:00:01
-    - "1994"
-  - - "39"
-    - "1"
-    - "68"
-    - "42"
-    - 2009-06-29 21:04:43
-    - 2009-06-29 21:04:54
-    - "1993"
-  - - "40"
-    - "2"
-    - "69"
-    - "94"
-    - 2009-06-29 22:10:54
-    - 2009-06-29 22:11:06
-    - "2004"
-  - - "41"
-    - "2"
-    - "70"
-    - "93"
-    - 2009-06-29 22:11:43
-    - 2009-06-29 23:00:04
-    - "2004"
-  - - "42"
-    - "2"
-    - "71"
-    - "92"
-    - 2009-06-29 22:12:05
-    - 2009-06-29 22:59:55
-    - "2004"
-  - - "43"
-    - "2"
-    - "72"
-    - "91"
-    - 2009-06-29 22:12:23
-    - 2009-06-29 22:59:46
-    - "2003"
-  - - "44"
-    - "2"
-    - "73"
-    - "90"
-    - 2009-06-29 22:12:37
-    - 2009-06-29 22:59:34
-    - "2003"
-  - - "45"
-    - "2"
-    - "74"
-    - "89"
-    - 2009-06-29 22:12:53
-    - 2009-06-29 22:59:19
-    - "2002"
-  - - "46"
-    - "2"
-    - "75"
-    - "88"
-    - 2009-06-29 22:13:07
-    - 2009-06-29 22:59:11
-    - "2002"
-  - - "47"
-    - "2"
-    - "76"
-    - "87"
-    - 2009-06-29 22:13:18
-    - 2009-06-29 22:59:01
-    - "2001"
-  - - "48"
-    - "2"
-    - "77"
-    - "86"
-    - 2009-06-29 22:13:30
-    - 2009-06-29 22:58:46
-    - "2001"
-  - - "49"
-    - "2"
-    - "78"
-    - "85"
-    - 2009-06-29 22:13:43
-    - 2009-06-29 22:58:39
-    - "2001"
-  - - "50"
-    - "2"
-    - "79"
-    - "84"
-    - 2009-06-29 22:14:05
-    - 2009-06-29 22:58:29
-    - "2001"
-  - - "51"
-    - "2"
-    - "80"
-    - "83"
-    - 2009-06-29 22:14:20
-    - 2009-06-29 22:58:18
-    - "2001"
-  - - "52"
-    - "2"
-    - "81"
-    - "82"
-    - 2009-06-29 22:14:32
-    - 2009-06-29 22:58:09
-    - "2001"
-  - - "53"
-    - "2"
-    - "82"
-    - "81"
-    - 2009-06-29 22:14:46
-    - 2009-06-29 22:57:52
-    - "2000"
-  - - "54"
-    - "2"
-    - "83"
-    - "80"
-    - 2009-06-29 22:14:55
-    - 2009-06-29 22:57:42
-    - "2000"
-  - - "55"
-    - "2"
-    - "84"
-    - "79"
-    - 2009-06-29 22:15:17
-    - 2009-06-29 22:57:34
-    - "2000"
-  - - "56"
-    - "2"
-    - "85"
-    - "78"
-    - 2009-06-29 22:15:48
-    - 2009-06-29 22:57:26
-    - "2000"
-  - - "57"
-    - "2"
-    - "86"
-    - "77"
-    - 2009-06-29 22:16:00
-    - 2009-06-29 22:57:16
-    - "2000"
-  - - "58"
-    - "2"
-    - "87"
-    - "76"
-    - 2009-06-29 22:16:29
-    - 2009-06-29 22:57:08
-    - "2000"
-  - - "59"
-    - "2"
-    - "88"
-    - "75"
-    - 2009-06-29 22:16:58
-    - 2009-06-29 22:57:01
-    - "2000"
-  - - "60"
-    - "2"
-    - "89"
-    - "74"
-    - 2009-06-29 22:17:17
-    - 2009-06-29 22:56:53
-    - "2000"
-  - - "61"
-    - "2"
-    - "90"
-    - "73"
-    - 2009-06-29 22:17:31
-    - 2009-06-29 22:56:41
-    - "2000"
-  - - "62"
-    - "2"
-    - "91"
-    - "72"
-    - 2009-06-29 22:17:54
-    - 2009-06-29 22:56:15
-    - "1999"
-  - - "63"
-    - "2"
-    - "92"
-    - "71"
-    - 2009-06-29 22:18:13
-    - 2009-06-29 22:56:04
-    - "1999"
-  - - "64"
-    - "2"
-    - "93"
-    - "70"
-    - 2009-06-29 22:18:31
-    - 2009-06-29 22:55:54
-    - "1999"
-  - - "65"
-    - "2"
-    - "94"
-    - "69"
-    - 2009-06-29 22:18:50
-    - 2009-06-29 22:55:39
-    - "1999"
-  - - "66"
-    - "2"
-    - "95"
-    - "68"
-    - 2009-06-29 22:19:05
-    - 2009-06-29 22:55:26
-    - "1999"
-  - - "67"
-    - "2"
-    - "96"
-    - "67"
-    - 2009-06-29 22:19:28
-    - 2009-06-29 22:55:19
-    - "1999"
-  - - "68"
-    - "2"
-    - "97"
-    - "66"
-    - 2009-06-29 22:19:46
-    - 2009-06-29 22:55:08
-    - "1999"
-  - - "69"
-    - "2"
-    - "98"
-    - "65"
-    - 2009-06-29 22:20:02
-    - 2009-06-29 22:54:54
-    - "1999"
-  - - "70"
-    - "2"
-    - "99"
-    - "64"
-    - 2009-06-29 22:20:37
-    - 2009-06-29 22:54:40
-    - "1999"
-  - - "71"
-    - "2"
-    - "100"
-    - "63"
-    - 2009-06-29 22:20:52
-    - 2009-06-29 22:54:29
-    - "1998"
-  - - "72"
-    - "2"
-    - "101"
-    - "62"
-    - 2009-06-29 22:21:04
-    - 2009-06-29 22:54:20
-    - "1998"
-  - - "73"
-    - "2"
-    - "102"
-    - "61"
-    - 2009-06-29 22:21:29
-    - 2009-06-29 22:54:09
-    - "1998"
-  - - "74"
-    - "2"
-    - "103"
-    - "60"
-    - 2009-06-29 22:21:51
-    - 2009-06-29 22:53:58
-    - "1998"
-  - - "75"
-    - "2"
-    - "104"
-    - "59"
-    - 2009-06-29 22:22:05
-    - 2009-06-29 22:53:43
-    - "1998"
-  - - "76"
-    - "2"
-    - "105"
-    - "58"
-    - 2009-06-29 22:22:18
-    - 2009-06-29 22:53:29
-    - "1998"
-  - - "77"
-    - "2"
-    - "106"
-    - "57"
-    - 2009-06-29 22:22:28
-    - 2009-06-29 22:53:14
-    - "1998"
-  - - "78"
-    - "2"
-    - "107"
-    - "56"
-    - 2009-06-29 22:22:57
-    - 2009-06-29 22:52:50
-    - "1998"
-  - - "79"
-    - "2"
-    - "108"
-    - "55"
-    - 2009-06-29 22:23:23
-    - 2009-06-29 22:31:42
-    - "1997"
-  - - "80"
-    - "2"
-    - "109"
-    - "54"
-    - 2009-06-29 22:23:44
-    - 2009-06-29 22:31:27
-    - "1997"
-  - - "81"
-    - "2"
-    - "110"
-    - "53"
-    - 2009-06-29 22:23:54
-    - 2009-06-29 22:31:15
-    - "1997"
-  - - "82"
-    - "2"
-    - "111"
-    - "52"
-    - 2009-06-29 22:24:45
-    - 2009-06-29 22:31:05
-    - "1997"
-  - - "83"
-    - "2"
-    - "112"
-    - "51"
-    - 2009-06-29 22:25:01
-    - 2009-06-29 22:30:55
-    - "1997"
-  - - "84"
-    - "2"
-    - "113"
-    - "50"
-    - 2009-06-29 22:25:17
-    - 2009-06-29 22:30:35
-    - "1997"
-  - - "85"
-    - "2"
-    - "114"
-    - "49"
-    - 2009-06-29 22:25:32
-    - 2009-06-29 22:30:25
-    - "1997"
-  - - "86"
-    - "2"
-    - "115"
-    - "48"
-    - 2009-06-29 22:25:48
-    - 2009-06-29 22:30:16
-    - "1997"
-  - - "87"
-    - "2"
-    - "116"
-    - "47"
-    - 2009-06-29 22:26:06
-    - 2009-06-29 22:30:06
-    - "1997"
-  - - "88"
-    - "2"
-    - "117"
-    - "46"
-    - 2009-06-29 22:26:20
-    - 2009-06-29 22:29:50
-    - "1997"
-  - - "89"
-    - "2"
-    - "118"
-    - "45"
-    - 2009-06-29 22:26:31
-    - 2009-06-29 22:29:12
-    - "1997"
-  - - "90"
-    - "2"
-    - "119"
-    - "44"
-    - 2009-06-29 22:26:44
-    - 2009-06-29 22:29:00
-    - "1996"
-  - - "91"
-    - "2"
-    - "120"
-    - "43"
-    - 2009-06-29 22:27:07
-    - 2009-06-29 22:28:49
-    - "1996"
-  - - "92"
-    - "2"
-    - "121"
-    - "42"
-    - 2009-06-29 22:27:22
-    - 2009-06-29 22:28:17
-    - "1996"
-  - - "93"
-    - "1"
-    - "122"
-    - "41"
-    - 2009-06-29 23:09:26
-    - 2009-06-29 23:09:57
-    - "1992"
-  - - "94"
-    - "1"
-    - "123"
-    - "40"
-    - 2009-06-29 23:10:25
-    - 2009-06-29 23:48:14
-    - "1991"
-  - - "95"
-    - "1"
-    - "124"
-    - "39"
-    - 2009-06-29 23:10:46
-    - 2009-06-29 23:48:32
-    - "1990"
-  - - "96"
-    - "1"
-    - "125"
-    - "38"
-    - 2009-06-29 23:10:59
-    - 2009-06-29 23:48:42
-    - "1989"
-  - - "97"
-    - "1"
-    - "126"
-    - "37"
-    - 2009-06-29 23:11:08
-    - 2009-06-29 23:48:56
-    - "1988"
-  - - "98"
-    - "1"
-    - "127"
-    - "36"
-    - 2009-06-29 23:11:27
-    - 2009-06-29 23:52:40
-    - "1987"
-  - - "99"
-    - "1"
-    - "128"
-    - "35"
-    - 2009-06-29 23:12:56
-    - 2009-06-29 23:52:51
-    - "1986"
-  - - "100"
-    - "1"
-    - "129"
-    - "34"
-    - 2009-06-29 23:13:17
-    - 2009-06-29 23:53:06
-    - "1985"
-  - - "101"
-    - "1"
-    - "130"
-    - "33"
-    - 2009-06-29 23:13:25
-    - 2009-06-29 23:53:17
-    - "1984"
-  - - "102"
-    - "1"
-    - "131"
-    - "32"
-    - 2009-06-29 23:14:28
-    - 2009-06-29 23:53:28
-    - "1983"
-  - - "103"
-    - "1"
-    - "132"
-    - "31"
-    - 2009-06-29 23:14:38
-    - 2009-06-29 23:53:39
-    - "1982"
-  - - "104"
-    - "1"
-    - "133"
-    - "30"
-    - 2009-06-29 23:14:57
-    - 2009-06-29 23:53:51
-    - "1981"
-  - - "105"
-    - "1"
-    - "134"
-    - "28"
-    - 2009-06-29 23:15:09
-    - 2009-06-29 23:54:04
-    - "1980"
-  - - "106"
-    - "1"
-    - "135"
-    - "29"
-    - 2009-06-29 23:15:24
-    - 2009-06-29 23:54:22
-    - "1979"
-  - - "107"
-    - "1"
-    - "136"
-    - "27"
-    - 2009-06-29 23:16:33
-    - 2009-06-29 23:54:34
-    - "1978"
-  - - "108"
-    - "1"
-    - "137"
-    - "26"
-    - 2009-06-29 23:37:12
-    - 2009-06-29 23:54:51
-    - "1976"
-  - - "109"
-    - "1"
-    - "138"
-    - "25"
-    - 2009-06-29 23:37:43
-    - 2009-06-29 23:55:00
-    - "1975"
-  - - "110"
-    - "1"
-    - "139"
-    - "24"
-    - 2009-06-29 23:38:04
-    - 2009-06-29 23:55:11
-    - "1973"
-  - - "111"
-    - "1"
-    - "140"
-    - "23"
-    - 2009-06-29 23:38:14
-    - 2009-06-29 23:55:20
-    - "1972"
-  - - "112"
-    - "1"
-    - "141"
-    - "22"
-    - 2009-06-29 23:38:28
-    - 2009-06-29 23:55:31
-    - "1970"
-  - - "113"
-    - "1"
-    - "142"
-    - "21"
-    - 2009-06-29 23:38:40
-    - 2009-06-29 23:55:41
-    - "1969"
-  - - "114"
-    - "1"
-    - "143"
-    - "20"
-    - 2009-06-29 23:38:54
-    - 2009-06-29 23:55:59
-    - "1968"
-  - - "115"
-    - "1"
-    - "144"
-    - "19"
-    - 2009-06-29 23:39:08
-    - 2009-06-29 23:56:11
-    - "1967"
-  - - "116"
-    - "1"
-    - "145"
-    - "18"
-    - 2009-06-29 23:40:04
-    - 2009-06-29 23:56:22
-    - "1966"
-  - - "117"
-    - "1"
-    - "146"
-    - "17"
-    - 2009-06-29 23:40:28
-    - 2009-06-29 23:56:32
-    - "1695"
-  - - "118"
-    - "1"
-    - "147"
-    - "16"
-    - 2009-06-29 23:40:43
-    - 2009-06-29 23:56:45
-    - "1963"
-  - - "119"
-    - "1"
-    - "148"
-    - "15"
-    - 2009-06-29 23:41:02
-    - 2009-06-29 23:56:56
-    - "1962"
-  - - "120"
-    - "1"
-    - "149"
-    - "14"
-    - 2009-06-29 23:41:17
-    - 2009-06-29 23:57:07
-    - "1961"
-  - - "121"
-    - "1"
-    - "150"
-    - "13"
-    - 2009-06-29 23:41:45
-    - 2009-06-29 23:57:16
-    - "1960"
-  - - "122"
-    - "1"
-    - "151"
-    - "12"
-    - 2009-06-29 23:42:25
-    - 2009-06-29 23:57:29
-    - "1959"
-  - - "123"
-    - "1"
-    - "152"
-    - "11"
-    - 2009-06-29 23:42:39
-    - 2009-06-29 23:57:53
-    - "1958"
-  - - "124"
-    - "1"
-    - "153"
-    - "10"
-    - 2009-06-29 23:42:51
-    - 2009-06-29 23:58:07
-    - "1956"
-  - - "125"
-    - "1"
-    - "154"
-    - "9"
-    - 2009-06-29 23:45:04
-    - 2009-06-29 23:58:17
-    - "1955"
-  - - "126"
-    - "1"
-    - "155"
-    - "8"
-    - 2009-06-29 23:45:30
-    - 2009-06-29 23:58:31
-    - "1953"
-  - - "127"
-    - "1"
-    - "156"
-    - "7"
-    - 2009-06-29 23:45:48
-    - 2009-06-29 23:58:42
-    - "1952"
-  - - "128"
-    - "1"
-    - "157"
-    - "6"
-    - 2009-06-29 23:46:20
-    - 2009-06-29 23:58:52
-    - "1951"
-  - - "129"
-    - "1"
-    - "158"
-    - "5"
-    - 2009-06-29 23:46:32
-    - 2009-06-29 23:59:04
-    - "1950"
-  - - "130"
-    - "1"
-    - "159"
-    - "4"
-    - 2009-06-29 23:47:04
-    - 2009-06-29 23:59:14
-    - "1949"
-  - - "131"
-    - "1"
-    - "160"
-    - "3"
-    - 2009-06-29 23:47:16
-    - 2009-06-29 23:59:23
-    - "1948"
-  - - "139"
-    - "8"
-    - "168"
-    - "2"
-    - 2009-07-15 21:24:50
-    - 2009-07-15 21:24:51
-    - set
-  - - "140"
-    - "8"
-    - "169"
-    - "1"
-    - 2009-07-15 21:25:06
-    - 2009-07-15 21:25:06
-    - set
-
---- 
 items: 
   columns: 
   - id
@@ -964,31 +43,26 @@ items:
     - The Brief Wondrous Life of Oscar Wao
     - Book
     - "Junot D\xC3\xADaz"
-    - "<B>The most talked about\xE2\x80\x94and praised\xE2\x80\x94first novel of 2007, and winner of the Pulitzer Prize.<B><BR><BR>Oscar is a sweet but disastrously overweight ghetto nerd who\xE2\x80\x94from the New Jersey home he shares with his old world mother and rebellious sister\xE2\x80\x94 dreams of becoming the Dominican J.R.R. Tolkien and, most of all, finding love. But Oscar may never get what he wants. Blame the fuk\xC3\xBA\xE2\x80\x94a curse that has haunted Oscar\xE2\x80\x99s family for generations, following them on their epic journey from Santo Domingo to the USA. Encapsulating Dominican-American history, <I>The Brief Wondrous Life of Oscar Wao<./I> opens our eyes to an astonishing vision of the contemporary American experience and explores the endless human capacity to persevere\xE2\x80\x94and risk it all\xE2\x80\x94in the name of love."
+    - "The most talked about\xE2\x80\x94and praised\xE2\x80\x94first novel of 2007, and winner of the Pulitzer Prize.<BR><BR>Oscar is a sweet but disastrously overweight ghetto nerd who\xE2\x80\x94from the New Jersey home he shares with his old world mother and rebellious sister\xE2\x80\x94 dreams of becoming the Dominican J.R.R. Tolkien and, most of all, finding love. But Oscar may never get what he wants. Blame the fuk\xC3\xBA\xE2\x80\x94a curse that has haunted Oscar\xE2\x80\x99s family for generations, following them on their epic journey from Santo Domingo to the USA. Encapsulating Dominican-American history, <i>The Brief Wondrous Life of Oscar Wao</i> opens our eyes to an astonishing vision of the contemporary American experience and explores the endless human capacity to persevere\xE2\x80\x94and risk it all\xE2\x80\x94in the name of love."
     - "1594483299"
     - http://www.amazon.com/Brief-Wondrous-Life-Oscar-Wao/dp/1594483299%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1594483299
     - http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL75_.jpg
     - http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL160_.jpg
     - "2008-09-02"
     - 2009-05-29 23:07:06
-    - 2009-05-29 23:07:06
+    - 2009-07-15 23:42:59
   - - "15"
-    - The Road
+    - The Road (Movie Tie-in Edition 2008)
     - Book
     - Cormac McCarthy
-    - |-
-      A searing, postapocalyptic novel destined to become Cormac McCarthys masterpiece.
-      
-      A father and his son walk alone through burned America. Nothing moves in the ravaged landscape save the ash on the wind. It is cold enough to crack stones, and when the snow falls it is gray. The sky is dark. Their destination is the coast, although they dont know what, if anything, awaits them there. They have nothing; just a pistol to defend themselves against the lawless bands that stalk the road, the clothes they are wearing, a cart of scavenged foodand each other.
-      
-      The Road is the profoundly moving story of a journey. It boldly imagines a future in which no hope remains, but in which the father and his son, each the others world entire, are sustained by love. Awesome in the totality of its vision, it is an unflinching meditation on the worst and the best that we are capable of: ultimate destructiveness, desperate tenacity, and the tenderness that keeps two people alive in the face of total devastation.
-    - B001GIVCZM
-    - http://www.amazon.com/Road-Cormac-McCarthy/dp/B001GIVCZM%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001GIVCZM
-    - http://ecx.images-amazon.com/images/I/01QzTqAJ8QL._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/01QzTqAJ8QL._SL160_.jpg
-    - 
+    - "<b>NATIONAL BESTSELLER</b><br><br><b>PULITZER PRIZE WINNER</b><br><b>National Book Critic's Circle Award Finalist</b><br><br><b>A <i>New York Times</i> Notable Book</b><br><b>One of the Best Books of the Year</b><br><b><i>The Boston Globe</i>, <i>The Christian Science Monitor</i>, <i>The Denver Post</i>, <i>The Kansas City Star</i>, <i>Los Angeles Times</i>, <i>New York</i>, <i>People</i>, <i>Rocky Mountain News</i>, <i>Time</i>, <i>The Village Voice</i>, <i>The Washington Post</i></b><br><br>The searing, postapocalyptic novel destined to become Cormac McCarthy's masterpiece.<br><br>A father and his son walk alone through burned America. Nothing moves in the ravaged landscape save the ash on the wind. It is cold enough to crack stones, and when the snow falls it is gray. The sky is dark. Their destination is the coast, although they don't know what, if anything, awaits them there. They have nothing; just a pistol to defend themselves against the lawless bands that stalk the road, the clothes they are wearing, a cart of scavenged food\xE2\x80\x94and each other.<br><br><b>The Road</b> is the profoundly moving story of a journey. It boldly imagines a future in which no hope remains, but in which the father and his son, \"each the other's world entire,\" are sustained by love. Awesome in the totality of its vision, it is an unflinching meditation on the worst and the best that we are capable of: ultimate destructiveness, desperate tenacity, and the tenderness that keeps two people alive in the face of total devastation.<br><br><br><i>From the Trade Paperback edition.</i>"
+    - "0307472124"
+    - http://www.amazon.com/Road-Movie-Tie-2008/dp/0307472124%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0307472124
+    - http://ecx.images-amazon.com/images/I/51INCt-LQpL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51INCt-LQpL._SL160_.jpg
+    - "2008-11-18"
     - 2009-05-29 23:35:47
-    - 2009-05-29 23:35:47
+    - 2009-07-15 23:36:31
   - - "16"
     - The Known World
     - Book
@@ -1012,7 +86,7 @@ items:
     - http://ecx.images-amazon.com/images/I/51AGS2CVVXL._SL160_.jpg
     - "2006-01-10"
     - 2009-05-30 00:27:32
-    - 2009-07-15 19:41:50
+    - 2009-07-15 19:26:46
   - - "18"
     - THE SHIPPING NEWS
     - Book
@@ -1077,14 +151,14 @@ items:
     - "The Hours: A Novel"
     - Book
     - Michael Cunningham
-    - "<b>The Pulitzer Prize-winning novel becomes a motion picture starring Meryl Streep, Julianne Moore, and Nicole Kidman, directed by Stephen Daldry from a screenplay by David Hare</b><br><br><i>The Hours</i> tells the story of three women: Virginia Woolf, beginning to write Mrs. Dalloway as she recuperates in a London suburb with her husband in 1923; Clarissa Vaughan, beloved friend of an acclaimed poet dying from AIDS, who in modern-day New York is planning a party in his honor; and Laura Brown, in a 1949 Los Angeles suburb, who slowly begins to feel the constraints of a perfect family and home. By the end of the novel, these three stories intertwine in remarkable ways, and finally come together in an act of subtle and haunting grace."
-    - B001F0RA4S
-    - http://www.amazon.com/Hours-Novel-Michael-Cunningham/dp/B001F0RA4S%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001F0RA4S
-    - http://ecx.images-amazon.com/images/I/51ANDQPQQ4L._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/51ANDQPQQ4L._SL160_.jpg
-    - "2002-11-09"
+    - ""
+    - B000S9HVZU
+    - http://www.amazon.com/Hours-Novel-Michael-Cunningham/dp/B000S9HVZU%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000S9HVZU
+    - http://ecx.images-amazon.com/images/I/51GS4G-Hz0L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51GS4G-Hz0L._SL160_.jpg
+    - "2000-01-15"
     - 2009-05-30 20:20:49
-    - 2009-07-15 22:07:03
+    - 2009-05-30 20:20:49
   - - "24"
     - American Pastoral
     - Book
@@ -1377,14 +451,14 @@ items:
     - "The Hours: A Novel"
     - Book
     - Michael Cunningham
-    - "<b>The Pulitzer Prize-winning novel becomes a motion picture starring Meryl Streep, Julianne Moore, and Nicole Kidman, directed by Stephen Daldry from a screenplay by David Hare</b><br><br><i>The Hours</i> tells the story of three women: Virginia Woolf, beginning to write Mrs. Dalloway as she recuperates in a London suburb with her husband in 1923; Clarissa Vaughan, beloved friend of an acclaimed poet dying from AIDS, who in modern-day New York is planning a party in his honor; and Laura Brown, in a 1949 Los Angeles suburb, who slowly begins to feel the constraints of a perfect family and home. By the end of the novel, these three stories intertwine in remarkable ways, and finally come together in an act of subtle and haunting grace.<br>"
+    - "<b>The Pulitzer Prize-winning novel becomes a motion picture starring Meryl Streep, Julianne Moore, and Nicole Kidman, directed by Stephen Daldry from a screenplay by David Hare</b><br><br><i>The Hours</i> tells the story of three women: Virginia Woolf, beginning to write Mrs. Dalloway as she recuperates in a London suburb with her husband in 1923; Clarissa Vaughan, beloved friend of an acclaimed poet dying from AIDS, who in modern-day New York is planning a party in his honor; and Laura Brown, in a 1949 Los Angeles suburb, who slowly begins to feel the constraints of a perfect family and home. By the end of the novel, these three stories intertwine in remarkable ways, and finally come together in an act of subtle and haunting grace."
     - B001F0RA4S
     - http://www.amazon.com/Hours-Novel-Michael-Cunningham/dp/B001F0RA4S%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001F0RA4S
     - http://ecx.images-amazon.com/images/I/51ANDQPQQ4L._SL75_.jpg
     - http://ecx.images-amazon.com/images/I/51ANDQPQQ4L._SL160_.jpg
     - "2002-11-09"
     - 2009-06-08 21:04:05
-    - 2009-07-15 22:09:11
+    - 2009-07-15 23:38:48
   - - "55"
     - A Million Little Pieces
     - Book
@@ -1540,7 +614,7 @@ items:
     - http://ecx.images-amazon.com/images/I/41TTQVCYE6L._SL160_.jpg
     - "1999-05-10"
     - 2009-06-29 20:55:59
-    - 2009-07-15 22:10:10
+    - 2009-07-15 23:37:21
   - - "68"
     - "A Good Scent from a Strange Mountain: Stories"
     - Book
@@ -1677,14 +751,14 @@ items:
     - "Stolen Lives: Twenty Years in a Desert Jail (Oprah's Book Club)"
     - Book
     - Malika Oufkir
-    - ""
-    - B0015S96RE
-    - http://www.amazon.com/Stolen-Lives-Twenty-Desert-Oprahs/dp/B0015S96RE%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0015S96RE
-    - http://ecx.images-amazon.com/images/I/21WzjWfT2cL._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/21WzjWfT2cL._SL160_.jpg
-    - "2001-06-01"
+    - A gripping memoir that reads like a political thriller--the story of Malika Oufkir's turbulent and remarkable life. Born in 1953, Malika Oufkir was the eldest daughter of General Oufkir, the King of Morocco's closest aide. Adopted by the king at the age of five, Malika spent most of her childhood and adolescence in the seclusion of the court harem, one of the most eligible heiresses in the kingdom, surrounded by luxury and extraordinary privilege.    <P>Then, on August 16, 1972, her father was arrested and executed after an attempt to assassinate the king. Malika, her five younger brothers and sisters. and her mother were immediately imprisoned in a desert penal colony. After fifteen years, the last ten of which they spent locked up in solitary cells, the Oufkir children managed to dig a tunnel with their bare hands and make an audacious escape. Recaptured after five days, Malika was finally able to leave Morocco and begin a new life in exile in 1996.    <P>A heartrending account in the face of extreme deprivation and the courage with which one family faced its fate, Stolen Lives is an unforgettable story of one woman's journey to freedom.
+    - 0786886307
+    - http://www.amazon.com/Stolen-Lives-Twenty-Desert-Oprahs/dp/0786886307%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0786886307
+    - http://ecx.images-amazon.com/images/I/415D6FNAZHL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/415D6FNAZHL._SL160_.jpg
+    - "2002-05-01"
     - 2009-06-29 22:14:05
-    - 2009-06-29 22:14:05
+    - 2009-07-15 23:59:14
   - - "80"
     - Icy Sparks (Oprah's Book Club)
     - Book
@@ -1746,17 +820,17 @@ items:
     - 2009-06-29 22:15:17
     - 2009-06-29 22:15:17
   - - "85"
-    - The Poisonwood Bible
+    - "The Poisonwood Bible: A Novel (P.S.)"
     - Book
     - Barbara Kingsolver
-    - ""
-    - B000UTE1CE
-    - http://www.amazon.com/Poisonwood-Bible-Barbara-Kingsolver/dp/B000UTE1CE%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000UTE1CE
-    - http://ecx.images-amazon.com/images/I/41Q2QaDlq3L._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/41Q2QaDlq3L._SL160_.jpg
-    - 
+    - "<p> <i>The Poisonwood Bible</i> is a story told by the wife and four daughters of Nathan Price, a fierce, evangelical Baptist who takes his family and mission to the Belgian Congo in 1959. They carry with them everything they believe they will need from home, but soon find that all of it\xE2\x80\x94from garden seeds to Scripture\xE2\x80\x94is calamitously transformed on African soil. What follows is a suspenseful epic of one family's tragic undoing and remarkable reconstruction over the course of three decades in postcolonial Africa. </p>"
+    - "0061577073"
+    - http://www.amazon.com/Poisonwood-Bible-Novel-P-S/dp/0061577073%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0061577073
+    - http://ecx.images-amazon.com/images/I/51W4pHe-iRL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51W4pHe-iRL._SL160_.jpg
+    - "2008-06-01"
     - 2009-06-29 22:15:48
-    - 2009-06-29 22:15:48
+    - 2009-07-16 00:00:42
   - - "86"
     - While I Was Gone (Oprah's Book Club)
     - Book
@@ -1770,17 +844,17 @@ items:
     - 2009-06-29 22:16:00
     - 2009-06-29 22:16:00
   - - "87"
-    - The Bluest Eye
+    - The Bluest Eye (Oprah's Book Club)
     - Book
     - Toni Morrison
-    - ""
-    - B000M0FDNC
-    - http://www.amazon.com/Bluest-Eye-Toni-Morrison/dp/B000M0FDNC%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000M0FDNC
-    - http://ecx.images-amazon.com/images/I/21OiMgf3MyL._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/21OiMgf3MyL._SL160_.jpg
-    - 
+    - "<B>The Bluest Eye</B>, published in 1970, is the first novel written by Toni Morrison, winner of the 1993 Nobel Prize in Literature.<br><br>It is the story of eleven-year-old Pecola Breedlove -- a black girl in an America whose love for its blond, blue-eyed children can devastate all others -- who prays for her eyes to turn blue: so that she will be beautiful, so that people will look at her, so that her world will be different. This is the story of the nightmare at the heart of her yearning, and the tragedy of its fulfillment.<br>"
+    - B0026IBX9Q
+    - http://www.amazon.com/Bluest-Eye-Oprahs-Book-Club/dp/B0026IBX9Q%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0026IBX9Q
+    - http://ecx.images-amazon.com/images/I/41FF1WYFB1L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41FF1WYFB1L._SL160_.jpg
+    - "1993-12-28"
     - 2009-06-29 22:16:29
-    - 2009-06-29 22:16:29
+    - 2009-07-16 00:01:16
   - - "88"
     - Back Roads (Oprah's Book Club)
     - eBooks
@@ -1794,17 +868,17 @@ items:
     - 2009-06-29 22:16:58
     - 2009-06-29 22:16:58
   - - "89"
-    - Daughter of Fortune (Oprah's Book Club)
+    - "Daughter of Fortune: A Novel (P.S.)"
     - Book
     - Isabel Allende
-    - ""
-    - B000H2MOH8
-    - http://www.amazon.com/Daughter-Fortune-Oprahs-Book-Club/dp/B000H2MOH8%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000H2MOH8
-    - http://ecx.images-amazon.com/images/I/51MF1DRHDXL._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/51MF1DRHDXL._SL160_.jpg
-    - "1999-10-01"
+    - "<p>An orphan raised in Valpara\xC3\xADso, Chile, by a Victorian spinster and her rigid brother, young, vivacious Eliza Sommers follows her lover to California during the Gold Rush of 1849. She enters a rough-and-tumble world whose newly arrived inhabitants are driven mad by gold fever. With the help of her good friend and savior, the Chinese doctor Tao Chi'en, Eliza moves freely in a society of single men and prostitutes, creating an unconventional but independent life for herself. The young Chilean's search for her elusive lover gradually turns into another kind of journey, and by the time she finally hears news of him, Eliza must decide who her true love really is.</p>"
+    - "0061120251"
+    - http://www.amazon.com/Daughter-Fortune-Novel-Isabel-Allende/dp/0061120251%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0061120251
+    - http://ecx.images-amazon.com/images/I/516oLg7e03L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/516oLg7e03L._SL160_.jpg
+    - "2006-05-01"
     - 2009-06-29 22:17:17
-    - 2009-06-29 22:17:17
+    - 2009-07-16 00:01:43
   - - "90"
     - "Gap Creek : The Story Of A Marriage (Oprah's Book Club)"
     - Book
@@ -1854,17 +928,17 @@ items:
     - 2009-06-29 22:18:31
     - 2009-06-29 22:18:31
   - - "94"
-    - "Tara Road: Oprah Selection #26"
+    - Tara Road
     - Book
     - Maeve Binchy
-    - ""
-    - 274413547X
-    - http://www.amazon.com/Tara-Road-Oprah-Selection-26/dp/274413547X%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D274413547X
-    - http://ecx.images-amazon.com/images/I/31YphyZ%2BQ1L._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/31YphyZ%2BQ1L._SL160_.jpg
-    - "1999-09-01"
+    - "Ria lived on Tara Road in Dublin with her dashing husband, Danny, and their two children.  She fully believed she was happily married, right up until the day Danny told her he was leaving her to be with his young, pregnant girlfriend.  By a chance phone call, Ria meets Marilyn, a woman from New England unable to come to terms with her only son's death and now separated from her husband.  The two women exchange houses for the summer with extraordinary consequences, each learning that the other has a deep secret that can never be revealed.<br><br>Drawn into lifestyles vastly differing from their own, at first each resents the news of how well the other is getting on.  Ria seems to have become quite a hostess, entertaining half the neighborhood, which at first irritates the reserved and withdrawn Marilyn, a woman who has always guarded her privacy.  Marilyn seems to have become bosom friends with Ria's children, as well as with Colm, a handsome restaurateur, whom Ria has begun to miss terribly.  At the end of the summer, the women at last meet face-to-face.  Having learned a great deal, about themselves and about each other, they find that they have become, firmly and forever, good friends.<br><br>A moving story rendered with the deft touch of a master artisan, <b>Tara Road</b> is Maeve Binchy at her very best\xE2\x80\x94utterly beautiful, hauntingly unforgettable, entirely original, and wholly enjoyable.<br><br><br><i>From the Hardcover edition.</i>"
+    - 0385341814
+    - http://www.amazon.com/Tara-Road-Maeve-Binchy/dp/0385341814%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0385341814
+    - http://ecx.images-amazon.com/images/I/51D-AAsQmbL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51D-AAsQmbL._SL160_.jpg
+    - "2007-05-29"
     - 2009-06-29 22:18:50
-    - 2009-06-29 22:18:50
+    - 2009-07-16 00:02:18
   - - "95"
     - Mother of Pearl (Oprah's Book Club)
     - Book
@@ -1962,17 +1036,17 @@ items:
     - 2009-06-29 22:21:29
     - 2009-06-29 22:21:29
   - - "103"
-    - I Know This Much Is True (Oprah's Book Club)
-    - eBooks
+    - "I Know This Much Is True: A Novel (P.S.)"
+    - Book
     - Wally Lamb
-    - "E-book extra: \"Who Is Wally Lamb?\" The author recalls events surrounding the acclaimed publication of I Know This Much Is True. ( Not available in print editions of this work.)<BR><BR>Wally Lamb's masterful novel of transgression and redemption, now in e-book format.<BR><BR>A contemporary retelling of an ancient Hindu myth: a proud king must confront his demons to achieve salvation. Change yourself, the myth instructs, and you will inhabit a renovated world.... <BR><BR>Dominick Birdsey's entire life has been compromised and constricted by anger and fear, by the paranoid schizophrenic twin brother, Thomas, whom he both deeply loves and resents. <BR><BR>Born in the waning moments of 1949 and the opening minutes of 1950, the twins are physical mirror images who grow into separate yet connected entities: the seemingly strong and protective yet fearful Dominick, his mother's watchful \"monkey\"; and the seemingly weak and sweet yet noble Thomas, his mother's gentle \"bunny.\" From childhood, Dominick fights for both separation and wholeness -- and ultimately self-protection -- in a house of fear dominated by Ray, a bully who abuses his power over these stepsons whose biological father is a mystery. <BR><BR>Dominick's lifelong talent for survival comes at an enormous cost, including the breakup of his marriage to the warm, beautiful Dessa, whom he still loves. And it will be put to the ultimate test when Thomas, a Bible-spouting zealot, commits an unthinkable act that threatens the tenuous balance of both his and Dominick's lives. <BR><BR>To save himself, Dominick must confront not only the pain of his past but the dark secrets he has locked deep within himself, and the sins of his ancestors -- a quest that will lead him beyond the confines of his blue-collar New England town to the volcanic foothills of Sicily 's Mount Etna, where his ambitious and vengefully proud grandfather was born. <BR><BR>Here Dominick learns that power, wrongly used, defeats the oppressor as well as the oppressed, and now, picking through the humble shards of his deconstructed life, he will search for the courage and love to forgive, to expiate his and his ancestors' transgressions, and finally to rebuild himself beyond the haunted shadow of his twin. <BR><BR>Set against the vivid panoply of twentieth-century America and filled with richly drawn, memorable characters, this deeply moving and thoroughly satisfying novel brings to light humanity's deepest needs and fears, our aloneness, our desire for love and acceptance, our struggle to survive at all costs. Joyous, mystical, and exquisitely written, I Know This Much Is True is an extraordinary experience that will leave no reader untouched. "
-    - B000FC128M
-    - http://www.amazon.com/Know-This-Much-True-Oprahs/dp/B000FC128M%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000FC128M
-    - http://ecx.images-amazon.com/images/I/31h73fKEdcL._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/31h73fKEdcL._SL160_.jpg
-    - "2002-10-08"
+    - <p> On the afternoon of October 12, 1990, my twin brother, Thomas, entered the Three Rivers, Connecticut, public library, retreated to one of the rear study carrels, and prayed to God the sacrifice he was about to commit would be deemed acceptable. . . . </p><p> One of the most acclaimed novels of our time, Wally Lamb's <i>I Know This Much Is True</i> is a story of alienation and connection, devastation and renewal, at once joyous, heartbreaking, poignant, mystical, and powerfully, profoundly human. </p>
+    - 0061469084
+    - http://www.amazon.com/Know-This-Much-True-Novel/dp/0061469084%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0061469084
+    - http://ecx.images-amazon.com/images/I/41wjVVCZhrL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41wjVVCZhrL._SL160_.jpg
+    - "2008-04-01"
     - 2009-06-29 22:21:51
-    - 2009-06-29 22:21:51
+    - 2009-07-16 00:03:35
   - - "104"
     - Breath, Eyes, Memory (Oprah's Book Club)
     - Book
@@ -2082,17 +1156,17 @@ items:
     - 2009-06-29 22:25:01
     - 2009-06-29 22:25:01
   - - "113"
-    - A Lesson Before Dying
+    - A Lesson Before Dying (Five star)
     - Book
     - Ernest J. Gaines
-    - ""
-    - B001IDDM4E
-    - http://www.amazon.com/Lesson-Before-Dying-Ernest-Gaines/dp/B001IDDM4E%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001IDDM4E
-    - http://ecx.images-amazon.com/images/I/41xGyx-gC6L._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/41xGyx-gC6L._SL160_.jpg
-    - "1997-10-01"
+    - In a small Cajun community in the late 1940s, a young black man named Jefferson is an unwilling party to a liquor store shootout in which three men are killed. The only survivor, he is convicted of murder and sentenced to death.
+    - 185242723X
+    - http://www.amazon.com/Lesson-Before-Dying-Five-star/dp/185242723X%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D185242723X
+    - http://ecx.images-amazon.com/images/I/219CE7S1BKL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/219CE7S1BKL._SL160_.jpg
+    - "2001-02-23"
     - 2009-06-29 22:25:17
-    - 2009-06-29 22:25:17
+    - 2009-07-16 00:05:04
   - - "114"
     - Songs in Ordinary Time (Oprah's Book Club)
     - Book
@@ -2229,14 +1303,14 @@ items:
     - "Breathing Lessons: A Novel"
     - Book
     - Anne Tyler
-    - "Maggie and Ira Moran have been married for twenty-eight years\xE2\x80\x93and it shows: in their quarrels, in their routines, in their ability to tolerate with affection each other\xE2\x80\x99s eccentricities. Maggie, a kooky, lovable meddler and an irrepressible optimist, wants nothing more than to fix her son\xE2\x80\x99s broken marriage. Ira is infuriatingly practical, a man \xE2\x80\x9Cwho should have married Ann Landers.\xE2\x80\x9D And what begins as a day trip to a funeral becomes an adventure in the unexpected. As Maggie and Ira navigate the riotous twists and turns, they intersect with an assorted cast of eccentrics\xE2\x80\x93and rediscover the magic of the road called life and the joy of having somebody next to you to share the ride . . . bumps and all.<br><br><br><i>From the Trade Paperback edition.</i>"
+    - "Maggie and Ira Moran have been married for twenty-eight years\xE2\x80\x93and it shows: in their quarrels, in their routines, in their ability to tolerate with affection each other\xE2\x80\x99s eccentricities. Maggie, a kooky, lovable meddler and an irrepressible optimist, wants nothing more than to fix her son\xE2\x80\x99s broken marriage. Ira is infuriatingly practical, a man \xE2\x80\x9Cwho should have married Ann Landers.\xE2\x80\x9D And what begins as a day trip to a funeral becomes an adventure in the unexpected. As Maggie and Ira navigate the riotous twists and turns, they intersect with an assorted cast of eccentrics\xE2\x80\x93and rediscover the magic of the road called life and the joy of having somebody next to you to share the ride . . . bumps and all."
     - 0345485599
     - http://www.amazon.com/Breathing-Lessons-Novel-Anne-Tyler/dp/0345485599%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345485599
     - http://ecx.images-amazon.com/images/I/51T26C2EATL._SL75_.jpg
     - http://ecx.images-amazon.com/images/I/51T26C2EATL._SL160_.jpg
     - "2006-09-26"
     - 2009-06-29 23:10:59
-    - 2009-06-29 23:10:59
+    - 2009-07-15 23:44:15
   - - "126"
     - Beloved
     - Book
@@ -2301,14 +1375,14 @@ items:
     - The Color Purple (Musical Tie-in)
     - Book
     - Alice Walker
-    - Celie is a poor black woman whose letters tell the story of 20 years of her life, beginning at age 14 when she is being abused and raped by her father and attempting to protect her sister from the same fate, and continuing over the course of her marriage to "Mister," a brutal man who terrorizes her. Celie eventually learns that her abusive husband has been keeping her sister's letters from her and the rage she feels, combined with an example of love and independence provided by her close friend Shug, pushes her finally toward an awakening of her creative and loving self.
+    - Celie is a poor black woman whose letters tell the story of 20 years of her life, beginning at age 14 when she is being abused and raped by her father and attempting to protect her sister from the same fate, and continuing over the course of her marriage to "Mister," a brutal man who terrorizes her. Celie eventually learns that her abusive husband has been keeping her sister's letters from her and the rage she feels, combined with an example of love and independence provided by her close friend Shug, pushes her finally toward an awakening of her creative and loving self.<BR>
     - 0156031825
     - http://www.amazon.com/Color-Purple-Musical-Tie-/dp/0156031825%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0156031825
     - http://ecx.images-amazon.com/images/I/51lwiVE2oOL._SL75_.jpg
     - http://ecx.images-amazon.com/images/I/51lwiVE2oOL._SL160_.jpg
     - "2006-11-01"
     - 2009-06-29 23:14:28
-    - 2009-07-15 22:11:51
+    - 2009-07-15 23:46:23
   - - "132"
     - Rabbit Is Rich
     - Book
@@ -2358,17 +1432,17 @@ items:
     - 2009-06-29 23:15:24
     - 2009-06-29 23:15:24
   - - "136"
-    - "Elbow Room: Stories (Scribner Signature Edition)"
+    - Elbow Room
     - Book
     - James Alan McPherson
-    - A Pulitzer Prize-winning collection of eloquently told stories about black Americans--ministers, professors, convicts, businesswomen--all struggling to protect their individuality and integrity from the demands imposed by others.
-    - 0684188228
-    - http://www.amazon.com/Elbow-Room-Stories-Scribner-Signature/dp/0684188228%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0684188228
-    - 
-    - 
-    - 
+    - A beautiful collection of short stories that explores blacks and whites today, Elbow Room is alive with warmth and humor. Bold and very real, these twelve stories examine a world we all know but find difficult to define.<P>Whether a story dashes the bravado of young street toughs or pierces through the self-deception of a failed preacher, challenges the audacity of a killer or explodes the jealousy of two lovers, James Alan McPherson has created an array of haunting images and memorable characters in an unsurpassed collection of honest, masterful fiction.
+    - 0449213579
+    - http://www.amazon.com/Elbow-Room-James-Alan-McPherson/dp/0449213579%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0449213579
+    - http://ecx.images-amazon.com/images/I/51YFE4F942L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51YFE4F942L._SL160_.jpg
+    - "1986-10-12"
     - 2009-06-29 23:16:33
-    - 2009-06-29 23:16:33
+    - 2009-07-16 00:15:59
   - - "137"
     - Humboldt's Gift (Penguin Classics)
     - Book
@@ -2406,17 +1480,17 @@ items:
     - 2009-06-29 23:38:04
     - 2009-06-29 23:38:04
   - - "140"
-    - Angle of Repose
+    - Angle of Repose (Penguin Twentieth-Century Classics)
     - Book
     - Wallace Stegner
-    - ""
-    - B001OZ5NKC
-    - http://www.amazon.com/Angle-Repose-Wallace-Stegner/dp/B001OZ5NKC%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001OZ5NKC
-    - http://ecx.images-amazon.com/images/I/51y%2BJs0yw7L._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/51y%2BJs0yw7L._SL160_.jpg
-    - 
+    - Wallace Stegner's Pulitzer Prize-winning novel is a story of discovery--personal, historical, and geographical. Confined to a wheelchair, retired historian Lyman Ward sets out to write his grandparents' remarkable story, chronicling their days spent carving civilization into the surface of America's western frontier. But his research reveals even more about his own life than he's willing to admit. What emerges is an enthralling portrait of four generations in the life of an American family.<br><br>Like other great quests in literature, Lyman Ward's investigation leads him deep into the dark shadows of his own life. The result is a deeply moving novel that, through the prism of one family, illuminates the American present against the fascinating background of its past.
+    - 0141185473
+    - http://www.amazon.com/Angle-Repose-Penguin-Twentieth-Century-Classics/dp/0141185473%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0141185473
+    - http://ecx.images-amazon.com/images/I/51RB11K0CAL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51RB11K0CAL._SL160_.jpg
+    - "2000-12-01"
     - 2009-06-29 23:38:14
-    - 2009-06-29 23:38:14
+    - 2009-07-15 23:47:08
   - - "141"
     - The Collected Stories of Jean Stafford
     - Book
@@ -2505,38 +1579,38 @@ items:
     - The Edge of Sadness (The Loyola Classics Series)
     - Book
     - Edwin O'Connor
-    - ""
+    - "The Edge of Sadness became a best seller in the 1960s in part because of its scandalous elements. Edwin O\xE2\x80\x99Connor took direct aim at the popular stereotype of the Catholic priest in America: the super-competent and authoritarian but lovable leader, the wise counselor, gregarious extrovert, and heroic celibate (who could nevertheless flirt with the ladies)."
     - 0829421238
     - http://www.amazon.com/Edge-Sadness-Loyola-Classics/dp/0829421238%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0829421238
     - http://ecx.images-amazon.com/images/I/41GJV8FA0VL._SL75_.jpg
     - http://ecx.images-amazon.com/images/I/41GJV8FA0VL._SL160_.jpg
-    - 
+    - "2009-07-15"
     - 2009-06-29 23:41:02
-    - 2009-06-29 23:41:02
+    - 2009-07-15 23:48:54
   - - "149"
     - To Kill a Mockingbird (Harper Perennial Modern Classics)
     - Book
     - Harper Lee
-    - <blockquote><center> <p>Harper Lee's Pulitzer Prize-winning masterwork of honor and injustice in the deep South -- and the heroism of one man in the face of blind and violent hatred</p> </center></blockquote> <p>One of the best-loved stories of all time, <i>To Kill a Mockingbird</i> has been translated into more than forty languages, sold more than thirty million copies worldwide, served as the basis of an enormously popular motion picture, and was voted one of the best novels of the twentieth century by librarians across the country. A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice, it views a world of great beauty and savage inequities through the eyes of a young girl, as her father -- a crusading local lawyer -- risks everything to defend a black man unjustly accused of a terrible crime.</p>
+    - Harper Lee's Pulitzer Prize-winning masterwork of honor and injustice in the deep South -- and the heroism of one man in the face of blind and violent hatred <p>One of the best-loved stories of all time, <i>To Kill a Mockingbird</i> has been translated into more than forty languages, sold more than thirty million copies worldwide, served as the basis of an enormously popular motion picture, and was voted one of the best novels of the twentieth century by librarians across the country. A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice, it views a world of great beauty and savage inequities through the eyes of a young girl, as her father -- a crusading local lawyer -- risks everything to defend a black man unjustly accused of a terrible crime.</p>
     - 0061120081
     - http://www.amazon.com/Mockingbird-Harper-Perennial-Modern-Classics/dp/0061120081%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0061120081
     - http://ecx.images-amazon.com/images/I/51FyYABgXaL._SL75_.jpg
     - http://ecx.images-amazon.com/images/I/51FyYABgXaL._SL160_.jpg
     - "2006-06-01"
     - 2009-06-29 23:41:17
-    - 2009-06-29 23:41:17
+    - 2009-07-15 23:49:27
   - - "150"
     - Advise and Consent
     - Book
     - Allen Drury
-    - ""
+    - Advise and Consent is a 1959 political novel written by Allen Drury which explores the reactions of those in and around the United States Senate to the controversial nomination of Robert Leffingwell, a former Communist Party member, to be United States Secretary of State. The novel was awarded the Pulitzer Prize for Fiction in 1960. - Wikipedia
     - B000QCOC2O
     - http://www.amazon.com/Advise-Consent-Allen-Drury/dp/B000QCOC2O%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000QCOC2O
     - http://ecx.images-amazon.com/images/I/517NCx-uxKL._SL75_.jpg
     - http://ecx.images-amazon.com/images/I/517NCx-uxKL._SL160_.jpg
-    - 
+    - "2009-07-15"
     - 2009-06-29 23:41:45
-    - 2009-06-29 23:41:45
+    - 2009-07-15 23:51:58
   - - "151"
     - The Travels of Jaimie McPheeters (Arbor House Library of Contemporary Americana)
     - Book
@@ -2565,14 +1639,14 @@ items:
     - Andersonville (Plume)
     - Book
     - MacKinlay Kantor
-    - ""
+    - "Andersonville is a novel by MacKinlay Kantor concerning the Confederate prisoner of war camp, Andersonville prison, during the American Civil War (1861\xE2\x80\x931865). The novel was originally published in 1955 and won the Pulitzer Prize for Fiction the following year. - Wikipedia"
     - 0452269563
     - http://www.amazon.com/Andersonville-Plume-MacKinlay-Kantor/dp/0452269563%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0452269563
     - http://ecx.images-amazon.com/images/I/51P1J8WED8L._SL75_.jpg
     - http://ecx.images-amazon.com/images/I/51P1J8WED8L._SL160_.jpg
     - "1993-09-01"
     - 2009-06-29 23:42:51
-    - 2009-06-29 23:42:51
+    - 2009-07-15 23:55:12
   - - "154"
     - A Fable
     - Book
@@ -2598,17 +1672,17 @@ items:
     - 2009-06-29 23:45:30
     - 2009-06-29 23:45:30
   - - "156"
-    - The Caine Mutiny
+    - "The Caine Mutiny: A Novel"
     - Book
     - Herman Wouk
-    - ""
-    - 022460807X
-    - http://www.amazon.com/Caine-Mutiny-Herman-Wouk/dp/022460807X%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D022460807X
-    - http://ecx.images-amazon.com/images/I/510MO3qVlVL._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/510MO3qVlVL._SL160_.jpg
-    - "1951-01-01"
+    - Upon its original publication in 1951, this Pulitzer Prize-winning novel was immediately embraced as one of the first serious works of fiction to help readers grapple with the human consequences of World War II. In the intervening half-century, Herman Wouk's boldly dramatic, brilliantly entertaining story of life-and mutiny-on a Navy warship in the Pacific theater has achieved the status of a modern classic.
+    - 0316955108
+    - http://www.amazon.com/Caine-Mutiny-Novel-Herman-Wouk/dp/0316955108%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0316955108
+    - http://ecx.images-amazon.com/images/I/41-H5Jn0bgL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41-H5Jn0bgL._SL160_.jpg
+    - "1992-04-15"
     - 2009-06-29 23:45:48
-    - 2009-06-29 23:45:48
+    - 2009-07-15 23:55:45
   - - "157"
     - "The Town: Third Book In Awakening Land Trilogy"
     - Book
@@ -2644,7 +1718,7 @@ items:
     - http://ecx.images-amazon.com/images/I/517Q01M56KL._SL160_.jpg
     - "1964-10-07"
     - 2009-06-29 23:47:04
-    - 2009-07-15 19:42:47
+    - 2009-07-15 19:28:08
   - - "160"
     - Tales of the South Pacific
     - Book
@@ -2657,27 +1731,1879 @@ items:
     - "1984-09-12"
     - 2009-06-29 23:47:16
     - 2009-06-29 23:47:16
+  - - "161"
+    - "Slavery by Another Name: The Re-Enslavement of Black Americans from the Civil War to World War II"
+    - Book
+    - Douglas A. Blackmon
+    - "In this groundbreaking historical expose, Douglas A. Blackmon brings to light one of the most shameful chapters in American history\xE2\x80\x94an \xE2\x80\x9CAge of Neoslavery\xE2\x80\x9D that thrived from the aftermath of the Civil War through the dawn of World War II.<br><br>Using a vast record of original documents and personal narratives, Douglas A. Blackmon unearths the lost stories of slaves and their descendants who journeyed into freedom after the Emancipation Proclamation and then back into the shadow of involuntary servitude shortly thereafter. By turns moving, sobering, and shocking, this unprecedented account reveals the stories of those who fought unsuccessfully against the re-emergence of human labor trafficking, the companies that profited most from neoslavery, and the insidious legacy of racism that reverberates today."
+    - 0385722702
+    - http://www.amazon.com/Slavery-Another-Name-Re-Enslavement-Americans/dp/0385722702%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0385722702
+    - http://ecx.images-amazon.com/images/I/41NGJJp5L4L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41NGJJp5L4L._SL160_.jpg
+    - "2009-01-13"
+    - 2009-07-16 00:20:22
+    - 2009-07-16 00:20:22
+  - - "162"
+    - "The Years of Extermination: Nazi Germany and the Jews, 1939-1945"
+    - Book
+    - Saul Friedlander
+    - "<p> The enactment of the German extermination policies that resulted in the murder of six million European Jews depended upon many factors, including the cooperation of local authorities and police departments, and the passivity of the populations, primarily of their political and spiritual elites. Necessary also was the victims' willingness to submit, often with the hope of surviving long enough to escape the German vise. <i>The Years of Extermination</i>, the completion of Saul Friedl\xC3\xA4nder's major historical opus on Nazi Germany and the Jews, explores the convergence of the various aspects of this most systematic and sustained of modern genocides. In this unparalleled work\xE2\x80\x94based on a vast array of documents and an overwhelming choir of voices from diaries, letters, and memoirs\xE2\x80\x94the history of the Holocaust has found its definitive representation. </p>"
+    - 0060930489
+    - http://www.amazon.com/Years-Extermination-Nazi-Germany-1939-1945/dp/0060930489%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0060930489
+    - http://ecx.images-amazon.com/images/I/51BlvpFoJnL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51BlvpFoJnL._SL160_.jpg
+    - "2008-04-01"
+    - 2009-07-16 00:20:41
+    - 2009-07-16 00:20:41
+  - - "163"
+    - "The Looming Tower: Al Qaeda and the Road to 9/11 (Vintage)"
+    - Book
+    - Lawrence Wright
+    - "<b>National Book Award Finalist</b><br><br><b>A <i>Time</i>,<i> Newsweek</i>,<i> Washington Post</i>,<i> Chicago Tribune</i>,<i> </i>and <i>New York Times Book Review</i> Best Book of the Year</b><br><br>A gripping narrative that spans five decades,<i> </i><b>The Looming Tower</b> explains in unprecedented detail the growth of Islamic fundamentalism, the rise of al-Qaeda, and the intelligence failures that culminated in the attacks on the World Trade Center. Lawrence Wright re-creates firsthand the transformation of Osama bin Laden and Ayman al-Zawahiri from incompetent and idealistic soldiers in Afghanistan to leaders of the most successful terrorist group in history. He follows FBI counterterrorism chief John O\xE2\x80\x99Neill as he uncovers the emerging danger from al-Qaeda in the 1990s and struggles to track this new threat. Packed with new information and a deep historical perspective, <b>The Looming Tower</b> is the definitive history of the long road to September 11."
+    - "1400030846"
+    - http://www.amazon.com/Looming-Tower-Qaeda-Road-Vintage/dp/1400030846%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1400030846
+    - http://ecx.images-amazon.com/images/I/51vOjsXcHQL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51vOjsXcHQL._SL160_.jpg
+    - "2007-08-21"
+    - 2009-07-16 00:21:04
+    - 2009-07-16 00:21:04
+  - - "164"
+    - "Imperial Reckoning: The Untold Story of Britain's Gulag in Kenya"
+    - Book
+    - Caroline Elkins
+    - <b>A major work of history that for the first time reveals the violence and terror at the heart of Britain's civilizing mission in Kenya</b><br><br>As part of the Allied forces, thousands of Kenyans fought alongside the British in World War II. But just a few years after the defeat of Hitler, the British colonial government detained nearly the entire population of Kenya's largest ethnic minority, the Kikuyu-some one and a half million people.<br><br>The compelling story of the system of prisons and work camps where thousands met their deaths has remained largely untold-the victim of a determined effort by the British to destroy all official records of their attempts to stop the Mau Mau uprising, the Kikuyu people's ultimately successful bid for Kenyan independence. <br><br>Caroline Elkins, an assistant professor of history at Harvard University, spent a decade in London, Nairobi, and the Kenyan countryside interviewing hundreds of Kikuyu men and women who survived the British camps, as well as the British and African loyalists who detained them. <br><br>The result is an unforgettable account of the unraveling of the British colonial empire in Kenya-a pivotal moment in twentieth- century history with chilling parallels to America's own imperial project.<br>
+    - B0013JHHIK
+    - http://www.amazon.com/Imperial-Reckoning-Untold-Story-Britains/dp/B0013JHHIK%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0013JHHIK
+    - http://ecx.images-amazon.com/images/I/51io6OyG3rL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51io6OyG3rL._SL160_.jpg
+    - "2005-12-27"
+    - 2009-07-16 00:21:21
+    - 2009-07-16 00:21:21
+  - - "165"
+    - "Ghost Wars: The Secret History of the CIA, Afghanistan, and bin Laden, from the Soviet Invasion to September 10, 2001"
+    - Book
+    - Steve Coll
+    - "From the managing editor of the <i>Washington Post</i>, a news-breaking account of the CIA's involvement in the covert wars in Afghanistan that fueled Islamic militancy and gave rise to bin Laden's al Qaeda.  <br><br>  For nearly the past quarter century, while most Americans were unaware, Afghanistan has been the playing field for intense covert operations by U.S. and foreign intelligence agencies-invisible wars which sowed the seeds of the September 11 attacks and which provide its context. From the Soviet invasion in 1979 through the summer of 2001, the CIA, KGB, Pakistan's ISI, and Saudi Arabia's General Intelligence Department all operated directly and secretly in Afghanistan. They primed Afghan factions with cash and weapons, secretly trained guerrilla forces, funded propaganda, and manipulated politics. In the midst of these struggles bin Laden conceived and then built his global organization.  <br><br>  Comprehensively and for the first time, Pulitzer Prize-winning journalist Steve Coll tells the secret history of the CIA's role in Afghanistan, from its covert program against Soviet troops from 1979 to 1989, to the rise of the Taliban and the emergence of bin Laden, to the secret efforts by CIA officers and their agents to capture or kill bin Laden in Afghanistan after 1998. Based on extensive firsthand accounts, <i>Ghost Wars</i>ok  is the inside story that goes well beyond anything previously published on U.S. involvement in Afghanistan. It chronicles the roles of midlevel CIA officers, their Afghan allies, and top spy masters such as Bill Casey, Saudi Arabia's Prince Turki al Faisal, and George Tenet. And it describes heated debates within the American government and the often poisonous, mistrustful relations between the CIA and foreign intelligence agencies.  <br><br>  <i>Ghost Wars</i> answers the questions so many have asked since the horrors of September 11: To what extent did America's best intelligence analysts grasp the rising threat of Islamist radicalism? Who tried to stop bin Laden and why did they fail?"
+    - B001RNI20E
+    - http://www.amazon.com/Ghost-Wars-Afghanistan-Invasion-September/dp/B001RNI20E%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001RNI20E
+    - http://ecx.images-amazon.com/images/I/410C6BQGYAL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/410C6BQGYAL._SL160_.jpg
+    - "2004-02-23"
+    - 2009-07-16 00:21:39
+    - 2009-07-16 00:21:39
+  - - "166"
+    - "Gulag: A History"
+    - Book
+    - Anne Applebaum
+    - The Gulag--a vast array of Soviet concentration camps that held millions of political and criminal prisoners--was a system of repression and punishment that terrorized the entire society, embodying the worst tendencies of Soviet communism. In this magisterial and acclaimed history, Anne Applebaum offers the first fully documented portrait of the Gulag, from its origins in the Russian Revolution, through its expansion under Stalin, to its collapse in the era of glasnost. Applebaum intimately re-creates what life was like in the camps and links them to the larger history of the Soviet Union. Immediately recognized as a landmark and long-overdue work of scholarship, <b>Gulag</b> is an essential book for anyone who wishes to understand the history of the twentieth century.
+    - "1400034094"
+    - http://www.amazon.com/Gulag-History-Anne-Applebaum/dp/1400034094%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1400034094
+    - http://ecx.images-amazon.com/images/I/41VH0XHJGJL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41VH0XHJGJL._SL160_.jpg
+    - "2004-04-09"
+    - 2009-07-16 00:22:00
+    - 2009-07-16 00:22:00
+  - - "167"
+    - "A Problem from Hell: America and the Age of Genocide (P.S.)"
+    - Book
+    - Samantha Power
+    - "<p> In her award-winning interrogation of the last century of American history, Samantha Power\xE2\x80\x94a former Balkan war correspondent and founding executive director of Harvard's Carr Center for Human Rights Policy\xE2\x80\x94asks the haunting question: Why do American leaders who vow \"never again\" repeatedly fail to stop genocide? Drawing upon exclusive interviews with Washington's top policy makers, access to newly declassified documents, and her own reporting from the modern killing fields, Power provides the answer in <i>\"A Problem from Hell,\"</i> a groundbreaking work that tells the stories of the courageous Americans who risked their careers and lives in an effort to get the United States to act. </p>"
+    - "0061120146"
+    - http://www.amazon.com/Problem-Hell-America-Genocide-P-S/dp/0061120146%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0061120146
+    - http://ecx.images-amazon.com/images/I/41VzQyv0FqL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41VzQyv0FqL._SL160_.jpg
+    - "2007-09-01"
+    - 2009-07-16 00:22:20
+    - 2009-07-16 00:22:20
   - - "168"
-    - The Breaks of the Game
+    - "Carry Me Home : Birmingham, Alabama: The Climactic Battle of the Civil Rights Revolution"
     - Book
-    - David Halberstam
-    - <P> "One of the best books I've ever read about American sports!"  <br>--Christopher Lehmann-Haupt, <i>The New York Times</i></P>    <P>Available for the first time in years, David Halberstam's <i>The Breaks of the Game</i> focuses on one grim season (1979-80) in the life of the Portland Trail Blazers, a team that only three years before had been National Basketball Association champions. </p><P><P>As Halberstam follows this collection of men through the months, through the losing streaks and occasional victories, the endless trips and the brutal schedules, we come to know them and their world--the other players, coaches, and owners; the competition, drafts, trades, and traditions; the wives, the fans, the media connections--a world of grand dreams, impossible expectations, and bracing realities.  </p><P><P>The tactile authenticity of Halberstam's knowledge of the basketball world is unrivaled.  Yet he is writing here about far more than just basketball. This is a story about a place in our society where power, money, and talent collide and sometimes corrupt, a place where both national obsessions and naked greed are exposed. It's about the influence of big media, the fans and the hype they subsist on, the clash of ethics, the terrible physical demands of modern sports (from drugs to body size), the unreal salaries, the conflicts of race and class, and the consequences of sport converted into mass entertainment and athletes transformed into superstars--all presented in a way that puts the reader in the room and on the court, and <i>The Breaks of the Game</i> in a league of its own.</p>
-    - "1401309720"
-    - http://www.amazon.com/Breaks-Game-David-Halberstam/dp/1401309720%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1401309720
-    - http://ecx.images-amazon.com/images/I/51ghu276tsL._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/51ghu276tsL._SL160_.jpg
-    - "2009-02-17"
-    - 2009-07-15 21:24:50
-    - 2009-07-15 21:24:50
+    - Diane McWhorter
+    - <P> "The Year of Birmingham," 1963, was a cataclysmic turning point in America's long civil rights struggle. That spring, child demonstrators faced down police dogs and fire hoses in huge nonviolent marches for desegregation. A few months later, Ku Klux Klansmen retaliated by bombing the Sixteenth Street Baptist Church and killing four young black girls. Diane McWhorter, journalist and daughter of a prominent Birmingham family, weaves together police and FBI documents, interviews with black activists and former Klansmen, and personal memories into an extraordinary narrative of the city, the personalities, and the events that brought about America's second emancipation.
+    - "0743217721"
+    - http://www.amazon.com/Carry-Home-Birmingham-Climactic-Revolution/dp/0743217721%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0743217721
+    - http://ecx.images-amazon.com/images/I/51K69M3VWCL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51K69M3VWCL._SL160_.jpg
+    - "2002-02-05"
+    - 2009-07-16 00:22:56
+    - 2009-07-16 00:22:56
   - - "169"
-    - "Live From New York: An Uncensored History of Saturday Night Live, as Told By Its Stars, Writers and Guests"
+    - Hirohito and the Making of Modern Japan
     - Book
-    - James A. Miller
-    - "The New York Times bestselling oral history of Saturday Night Live that finally reveals what really went on backstage, on the set, in the writers' offices, and on the town, is now in paperback!    <P>In their own words, a galaxy of stars--including Mike Myers, Chris Rock, Bill Murray, Tom Hanks, Adam Sandler, Dan Aykroyd, Steve Martin, Dana Carvey, Tina Fey, Molly Shannon, Al Franken, and other members of Saturday Night Live's extended family--recall a quarter-century's worth of great backstage stories, behind-the-scenes gossip, feuds, foibles, drugs, sex, struggles, and calamities. The result: a page-turner that reveals how and why SNL has become the longest-running television comedy of all time."
-    - "0316735655"
-    - http://www.amazon.com/Live-New-York-Uncensored-Saturday/dp/0316735655%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0316735655
-    - http://ecx.images-amazon.com/images/I/51q3prT5F6L._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/51q3prT5F6L._SL160_.jpg
-    - "2003-10-01"
-    - 2009-07-15 21:25:06
-    - 2009-07-15 21:25:06
+    - Herbert P. Bix
+    - "Winner of the Pulitzer Prize<P>In this groundbreaking biography of the Japanese emperor Hirohito, Herbert P. Bix offers the first complete, unvarnished look at the enigmatic leader whose sixty-three-year reign ushered Japan into the modern world. Never before has the full life of this controversial figure been revealed with such clarity and vividness. Bix shows what it was like to be trained from birth for a lone position at the apex of the nation's political hierarchy and as a revered symbol of divine status. Influenced by an unusual combination of the Japanese imperial tradition and a modern scientific worldview, the young emperor gradually evolves into his preeminent role, aligning himself with the growing ultranationalist movement, perpetuating a cult of religious emperor worship, resisting attempts to curb his power, and all the while burnishing his image as a reluctant, passive monarch. Here we see Hirohito as he truly was: a man of strong will and real authority.</P><P>Supported by a vast array of previously untapped primary documents, <I>Hirohito and the Making of Modern Japan </I>is perhaps most illuminating in lifting the veil on the mythology surrounding the emperor's impact on the world stage. Focusing closely on Hirohito's interactions with his advisers and successive Japanese governments, Bix sheds new light on the causes of the China War in 1937 and the start of the Asia-Pacific War in 1941. And while conventional wisdom has had it that the nation's increasing foreign aggression was driven and maintained not by the emperor but by an elite group of Japanese militarists, the reality, as witnessed here, is quite different. Bix documents in detail the strong, decisive role Hirohito played in wartime operations, from the takeover of Manchuria in 1931 through the attack on Pearl Harbor and ultimately the fateful decision in 1945 to accede to an unconditional surrender. In fact, the emperor stubbornly prolonged the war effort and then used the horrifying bombings of Hiroshima and Nagasaki, together with the Soviet entrance into the war, as his exit strategy from a no-win situation. From the moment of capitulation, we see how American and Japanese leaders moved to justify the retention of Hirohito as emperor by whitewashing his wartime role and reshaping the historical consciousness of the Japanese people. The key to this strategy was Hirohito's alliance with General MacArthur, who helped him maintain his stature and shed his militaristic image, while MacArthur used the emperor as a figurehead to assist him in converting Japan into a peaceful nation. Their partnership ensured that the emperor's image would loom large over the postwar years and later decades, as Japan began to make its way in the modern age and struggled -- as it still does -- to come to terms with its past.</P><P>Until the very end of a career that embodied the conflicting aims of Japan's development as a nation, Hirohito remained preoccupied with politics and with his place in history. <I>Hirohito and the Making of Modern Japan</I> provides the definitive account of his rich life and legacy. Meticulously researched and utterly engaging, this book is proof that the history of twentieth-century Japan cannot be understood apart from the life of its most remarkable and enduring leader.</P>"
+    - 0060931302
+    - http://www.amazon.com/Hirohito-Making-Modern-Japan-Herbert/dp/0060931302%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0060931302
+    - http://ecx.images-amazon.com/images/I/5139EM9JRZL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/5139EM9JRZL._SL160_.jpg
+    - "2001-09-01"
+    - 2009-07-16 00:23:15
+    - 2009-07-16 00:23:15
+  - - "170"
+    - "Embracing Defeat: Japan in the Wake of World War II"
+    - Book
+    - John W. Dower
+    - <B>Winner of the 1999 National Book Award for Non-Fiction</B>, finalist for the Lionel Gelber Prize and the Kiriyama Pacific Rim Book Prize, <I>Embracing Defeat</I> is John W. Dower's brilliant examination of Japan in the immediate, shattering aftermath of World War II. Drawing on a vast range of Japanese sources and illustrated with dozens of astonishing documentary photographs, <I>Embracing Defeat</I> is the fullest and most important history of the more than six years of American occupation, which affected every level of Japanese society, often in ways neither side could anticipate. Dower, whom Stephen E. Ambrose has called "America's foremost historian of the Second World War in the Pacific," gives us the rich and turbulent interplay between West and East, the victor and the vanquished, in a way never before attempted, from top-level manipulations concerning the fate of Emperor Hirohito to the hopes and fears of men and women in every walk of life. Already regarded as the benchmark in its field, <I>Embracing Defeat</I> is a work of colossal scholarship and history of the very first order.
+    - 0393320278
+    - http://www.amazon.com/Embracing-Defeat-Japan-Wake-World/dp/0393320278%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0393320278
+    - http://ecx.images-amazon.com/images/I/5141SPCXE8L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/5141SPCXE8L._SL160_.jpg
+    - 
+    - 2009-07-16 00:23:28
+    - 2009-07-16 00:23:28
+  - - "171"
+    - Annals of the Former World
+    - Book
+    - John McPhee
+    - The Pulitzer Prize-winning view of the continent, across the fortieth parallel and down through 4.6 billion years<br><br>Twenty years ago, when John McPhee began his journeys back and forth across the United States, he planned to describe a cross section of North America at about the fortieth parallel and, in the process, come to an understanding not only of the science but of the style of the geologists he traveled with. The structure of the book never changed, but its breadth caused him to complete it in stages, under the overall title <i>Annals of the Former World</i>.<br><br>Like the terrain it covers, <i>Annals of the Former World</i> tells a multilayered tale, and the reader may choose one of many paths through it. As clearly and succinctly written as it is profoundly informed, this is our finest popular survey of geology and a masterpiece of modern nonfiction.<br>
+    - 0374518734
+    - http://www.amazon.com/Annals-Former-World-John-McPhee/dp/0374518734%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0374518734
+    - http://ecx.images-amazon.com/images/I/51342N469ML._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51342N469ML._SL160_.jpg
+    - "2000-06-15"
+    - 2009-07-16 00:23:42
+    - 2009-07-16 00:23:42
+  - - "172"
+    - "Guns, Germs, and Steel: The Fates of Human Societies"
+    - Book
+    - Jared Diamond
+    - "<B>With a new chapter. The phenomenal bestseller\xE2\x80\x94over 1.5 million copies sold\xE2\x80\x94is now a major PBS special.</B>    <P>Winner of the Pulitzer Prize, <I>Guns, Germs, and Steel</I> is a brilliant work answering the question of why the peoples of certain continents succeeded in invading other continents and conquering or displacing their peoples. This edition includes a new chapter on Japan and all-new illustrations drawn from the television series. 32 illustrations."
+    - 0393061310
+    - http://www.amazon.com/Guns-Germs-Steel-Fates-Societies/dp/0393061310%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0393061310
+    - http://ecx.images-amazon.com/images/I/516H1W1ASTL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/516H1W1ASTL._SL160_.jpg
+    - "2005-07-11"
+    - 2009-07-16 00:23:57
+    - 2009-07-16 00:23:57
+  - - "173"
+    - "Ashes to Ashes: America's Hundred-Year Cigarette War, the Public Health, and the Unabashed Triumph of Philip Morris (Hardcover)"
+    - Book
+    - Richard Kluger
+    - ""
+    - B002GTNPBO
+    - http://www.amazon.com/Ashes-Hundred-Year-Cigarette-Unabashed-Hardcover/dp/B002GTNPBO%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB002GTNPBO
+    - http://ecx.images-amazon.com/images/I/51Ot81sJT9L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51Ot81sJT9L._SL160_.jpg
+    - 
+    - 2009-07-16 00:25:09
+    - 2009-07-16 00:25:09
+  - - "174"
+    - "The Haunted Land: Facing Europe's Ghosts After Communism"
+    - Book
+    - Tina Rosenberg
+    - The Pulitzer Prize-winning look at the collapse of Communism in Eastern Europe
+    - 0679744991
+    - http://www.amazon.com/Haunted-Land-Facing-Europes-Communism/dp/0679744991%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0679744991
+    - http://ecx.images-amazon.com/images/I/51V5XA7XBDL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51V5XA7XBDL._SL160_.jpg
+    - "1996-03-19"
+    - 2009-07-16 00:25:25
+    - 2009-07-16 00:25:25
+  - - "175"
+    - "The Beak of the Finch: A Story of Evolution in Our Time"
+    - Book
+    - Jonathan Weiner
+    - Winner of the Pulitzer Prize
+    - 067973337X
+    - http://www.amazon.com/Beak-Finch-Story-Evolution-Time/dp/067973337X%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D067973337X
+    - http://ecx.images-amazon.com/images/I/410T0FYSE6L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/410T0FYSE6L._SL160_.jpg
+    - "1995-05-30"
+    - 2009-07-16 00:25:38
+    - 2009-07-16 00:25:38
+  - - "176"
+    - "Lenin's Tomb: The Last Days of the Soviet Empire"
+    - Book
+    - David Remnick
+    - In the tradition of John Reed's classic Ten Days That Shook the World, this bestselling account of the collapse of the Soviet Union combines the global vision of the best historical scholarship with the immediacy of eyewitness journalism. "A moving illumination . . . Remnick is the witness for us all."--Wall Street Journal.
+    - 0679751254
+    - http://www.amazon.com/Lenins-Tomb-Last-Soviet-Empire/dp/0679751254%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0679751254
+    - http://ecx.images-amazon.com/images/I/511574DKFAL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/511574DKFAL._SL160_.jpg
+    - "1994-04-26"
+    - 2009-07-16 00:25:51
+    - 2009-07-16 00:25:51
+  - - "177"
+    - "Lincoln at Gettysburg: The Words that Remade America (Simon &amp; Schuster Lincoln Library)"
+    - Book
+    - Garry Wills
+    - The power of words has rarely been given a more compelling demonstration than in the Gettysburg Address. Lincoln was asked to memorialize the gruesome battle. Instead he gave the whole nation "a new birth of freedom" in the space of a mere 272 words. His entire life and previous training and his deep political experience went into this, his revolutionary masterpiece.<P>By examining both the address and Lincoln in their historical moment and cultural frame, Wills breathes new life into words we thought we knew, and reveals much about a president so mythologized but often misunderstood. Wills shows how Lincoln came to change the world and to effect an intellectual revolution, how his words had to and did complete the work of the guns, and how Lincoln wove a spell that has not yet been broken.
+    - 0743299639
+    - http://www.amazon.com/Lincoln-Gettysburg-America-Schuster-Library/dp/0743299639%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0743299639
+    - http://ecx.images-amazon.com/images/I/51GJ9TNCWDL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51GJ9TNCWDL._SL160_.jpg
+    - "2006-11-14"
+    - 2009-07-16 00:26:03
+    - 2009-07-16 00:26:03
+  - - "178"
+    - "The Prize : The Epic Quest for Oil, Money &amp; Power"
+    - Book
+    - Daniel Yergin
+    - <P>  <B>Pulitzer Prize Winner -- and Now an Epic PBS Series</B>  <P>  <I>The Prize</I> recounts the panoramic history of oil -- and the struggle for wealth power that has always surrounded oil. This struggle has shaken the world economy, dictated the outcome of wars, and transformed the destiny of men and nations. <I>The Prize</I> is as much a history of the twentieth century as of the oil industry itself. The canvas of this history is enormous -- from the drilling of the first well in Pennsylvania through two great world wars to the Iraqi invasion of Kuwait and Operation Desert Storm.  <P>  The cast extends from wildcatters and rogues to oil tycoons, and from Winston Churchill and Ibn Saud to George Bush and Saddam Hussein. The definitive work on the subject of oil and a major contribution to understanding our century, <I>The Prize</I> is a book of extraordinary breadth, riveting excitement -- and great importance.
+    - B001OW5O2C
+    - http://www.amazon.com/Prize-Epic-Quest-Money-Power/dp/B001OW5O2C%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001OW5O2C
+    - http://ecx.images-amazon.com/images/I/51AF3JK9FSL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51AF3JK9FSL._SL160_.jpg
+    - "1993-01-01"
+    - 2009-07-16 00:26:16
+    - 2009-07-16 00:26:16
+  - - "179"
+    - The Ants
+    - Book
+    - "Bert H\xC3\xB6lldobler"
+    - "From the Arctic to South Africa - one finds them everywhere: Ants. Making up nearly 15% of the entire terrestrial animal biomass, ants are impressive not only in quantitative terms, they also fascinate by their highly organized and complex social system. Their caste system, the division of labor, the origin of altruistic behavior and the complex forms of chemical communication makes them the most interesting group of social organisms and the main subject for sociobiologists. Not least is their ecological importance: Ants are the premier soil turners, channelers of energy and dominatrices of the insect fauna."
+    - 0674040759
+    - http://www.amazon.com/Ants-Bert-H%C3%B6lldobler/dp/0674040759%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0674040759
+    - http://ecx.images-amazon.com/images/I/51JHVGR815L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51JHVGR815L._SL160_.jpg
+    - "1990-03-28"
+    - 2009-07-16 00:27:29
+    - 2009-07-16 00:27:29
+  - - "180"
+    - "And Their Children After Them: The Legacy of Let Us Now Praise Famous Men"
+    - Book
+    - Dale Maharidge
+    - <p>"A stunning sequel to the James AgeeWalker Evans' classic, <i>Let Us Now Praise Famous Men</i>. It is at times astonishing, at all times deeply moving."-Studs Terkel</p><p>"A book that reaches into this country's heart of darkness. . . . A tragically human story more telling than a thousand polls. The photographs by Mr. Williamson are eloquent."-Herbert Mitgang, <i>New York Times</i></p><p>"Mr. Williamson's photos are spellbinding and should become instant classics."-John Elvin, <i>Washington Times</i></p><p>In this paperback reissue, an author/photographer team returns to the land and families captured in James Agee and Walker Evans's inimitable masterwork <i>Let Us Now Praise Famous Men</i>, extending the project of conscience and chronicling the traumatic decline of King Cotton. In 1936, during a brief window of national attention to the topic, <i>Fortune</i> magazine commissioned from Agee and Evans a story on poverty among tenant farmers in Alabama. Agee was famously ambivalent in his role, calling himself a spy and ultimately delivering a book-length manuscript unpublishable in magazine form. With this continuation of Agee and Evans's work, Maharidge and Williamson not only uncover some surprising historical secrets relating to the families and to Agee himself, but also effectively lay to rest Agee's fear that his work, from lack of reverence or resilience, would be but another offense to the humanity of its subjects.</p><p>Williamson's 90-part photo essay includes updates alongside Evans' classic originals.</p><p><b>Dale Maharidge</b> (<i>Homeland, Journey to Nowhere</i>) has been a visiting professor of journalism at Columbia University and Stanford, and a Nieman Fellow at Harvard University in 1998.</p><p><b>Michael Williamson</b> is a photographer for the <i>Washington Post</i> who won a second Pulitzer for his coverage of the war in Kosovo.</p>
+    - "1583226575"
+    - http://www.amazon.com/Their-Children-After-Them-Legacy/dp/1583226575%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1583226575
+    - http://ecx.images-amazon.com/images/I/51UrldWJaaL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51UrldWJaaL._SL160_.jpg
+    - "2008-11-01"
+    - 2009-07-16 00:27:49
+    - 2009-07-16 00:27:49
+  - - "181"
+    - "A Bright Shining Lie: John Paul Vann and America in Vietnam"
+    - Book
+    - Neil Sheehan
+    - "In this magisterial book, a monument of history and biography that was awarded the National Book Award and the Pulitzer Prize for nonfiction, renowned journalist Neil Sheehan tells the story of Lieutenant Colonel John Paul Vann\xE2\x80\x93\xE2\x80\x9Cthe one irreplaceable American in Vietnam\xE2\x80\x9D\xE2\x80\x93and of the tragedy that destroyed that country and the lives of so many Americans.<br><br>Outspoken and fearless, John Paul Vann arrived in Vietnam in 1962, full of confidence in America\xE2\x80\x99s might and right to prevail. <i>A Bright Shining Lie</i> reveals the truth about the war in Vietnam as it unfolded before Vann\xE2\x80\x99s eyes: the arrogance and professional corruption of the U.S. military system of the 1960s, the incompetence and venality of the South Vietnamese army, the nightmare of death and destruction that began with the arrival of the American forces. Witnessing the arrogance and self-deception firsthand, Vann put his life and career on the line in an attempt to convince his superiors that the war should be fought another way. But by the time he died in 1972, Vann had embraced the follies he once decried. He went to his grave believing that the war had been won.<br><br>A haunting and critically acclaimed masterpiece, <i>A Bright Shining Lie</i> is a timeless account of the American experience in Vietnam\xE2\x80\x93a work that is epic in scope, piercing in detail, and told with the keen understanding of a journalist who was actually there.<b> </b>Neil Sheehan\xE2\x80\x99s classic serves as a stunning revelation for all who thought they understood the war."
+    - 0679643613
+    - http://www.amazon.com/Bright-Shining-Lie-America-Vietnam/dp/0679643613%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0679643613
+    - http://ecx.images-amazon.com/images/I/51zvuAgJdzL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51zvuAgJdzL._SL160_.jpg
+    - "2009-09-22"
+    - 2009-07-16 00:28:07
+    - 2009-07-16 00:28:07
+  - - "182"
+    - The Making of the Atomic Bomb
+    - Book
+    - Richard Rhodes
+    - <P>  Here for the first time, in rich, human, political, and scientific detail, is the complete story of how the bomb was developed, from the turn-of-the-century discovery of the vast energy locked inside the atom to the dropping of the first bombs on Japan.  <P>  Few great discoveries have evolved so swiftly -- or have been so misunderstood. From the theoretical discussions of nuclear energy to the bright glare of Trinity there was a span of hardly more than twenty-five years. What began as merely an interesting speculative problem in physics grew into the Manhattan Project, and then into the Bomb with frightening rapidity, while scientists known only to their peers -- Szilard, Teller, Oppenheimer, Bohr, Meitner, Fermi, Lawrence, and yon Neumann -- stepped from their ivory towers into the limelight.  <P>  Richard Rhodes takes us on that journey step by step, minute by minute, and gives us the definitive story of man's most awesome discovery and invention. <I>The Making of the Atomic Bomb</I> has been compared in its sweep and importance to William L. Shirer's <I>The Rise and Fall of the Third Reich.</I> It is at once a narrative tour de force and a document as powerful as its subject.
+    - 0684813785
+    - http://www.amazon.com/Making-Atomic-Bomb-Richard-Rhodes/dp/0684813785%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0684813785
+    - http://ecx.images-amazon.com/images/I/51Q21FYMMEL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51Q21FYMMEL._SL160_.jpg
+    - "1995-08-01"
+    - 2009-07-16 00:28:20
+    - 2009-07-16 00:28:20
+  - - "183"
+    - "Arab and Jew: Wounded Spirits in a Promised Land"
+    - Book
+    - David K. Shipler
+    - The Jew, according to the Arab stereotype, is a brutal, violent coward; the Arab, to the prejudiced Jew, is a primitive creature of animal vengeance and cruel desires. In this monumental work, revised and more relevant than ever, David Shipler delves into the origins of the prejudices that have been intensified by war, terrorism, nationalism, and the failure of the peace process.  <br><br>  "The best and most comprehensive work there is in the English language on this subject." (Walter Laqueur, <i>The New York Times</i>)  <br><br>  "A rich, penetrating, and moving portrayal of Arab-Jewish hostility, told in human terms." (<i>Newsday</i>)
+    - 0142002291
+    - http://www.amazon.com/Arab-Jew-Wounded-Spirits-Promised/dp/0142002291%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0142002291
+    - http://ecx.images-amazon.com/images/I/51A11971Q5L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51A11971Q5L._SL160_.jpg
+    - "2001-12-31"
+    - 2009-07-16 00:28:35
+    - 2009-07-16 00:28:35
+  - - "184"
+    - "Common Ground: A Turbulent Decade in the Lives of Three American Families"
+    - Book
+    - J. Anthony Lukas
+    - Winner of 3 different awards, this is a story of the busing crisis in Boston.
+    - 0394746163
+    - http://www.amazon.com/Common-Ground-Turbulent-American-Families/dp/0394746163%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0394746163
+    - http://ecx.images-amazon.com/images/I/71XT01G0WEL._SL75_.gif
+    - http://ecx.images-amazon.com/images/I/71XT01G0WEL._SL160_.gif
+    - "1986-08-12"
+    - 2009-07-16 00:29:05
+    - 2009-07-16 00:29:05
+  - - "185"
+    - "Move Your Shadow: South Africa, Black and White"
+    - Book
+    - Joseph Lelyveld
+    - ""
+    - B001TA20RG
+    - http://www.amazon.com/Move-Your-Shadow-South-Africa/dp/B001TA20RG%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001TA20RG
+    - 
+    - 
+    - 
+    - 2009-07-16 00:30:45
+    - 2009-07-16 00:30:45
+  - - "186"
+    - "The Good War\": An Oral History of World War Two"
+    - Book
+    - Studs Terkel
+    - "\"The Good War is Stud Terkel's most exciting, most popular, and most moving work, an account of the lives of ordinary Americans, at home and abroad, during World War Two. Terkel presents men and women recalling the time when they were all of eighteen and nineteen, thrown into the Far Pacific or confronting the Germans in the last, vicious battles of the European campaign...includes the memories of some of the famous: the admirals, the politicians, the intellectuals, ranging from Averell Harriman to John Kenneth Galbraith.\""
+    - B000HJ7RQO
+    - http://www.amazon.com/Good-War-Oral-History-World/dp/B000HJ7RQO%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000HJ7RQO
+    - http://ecx.images-amazon.com/images/I/51N5DJR9AHL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51N5DJR9AHL._SL160_.jpg
+    - "1984-01-01"
+    - 2009-07-16 00:31:00
+    - 2009-07-16 00:31:00
+  - - "187"
+    - "The Social Transformation of American Medicine: The rise of a sovereign profession and the making of a vast industry"
+    - Book
+    - Paul Starr
+    - "Winner of the 1983 Pulitzer Prize and the Bancroft Prize in American History, this is a landmark history of how the entire American health care system of doctors, hospitals, health plans, and government programs has evolved over the last two centuries.  "
+    - 0465079350
+    - http://www.amazon.com/Social-Transformation-American-Medicine-profession/dp/0465079350%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0465079350
+    - http://ecx.images-amazon.com/images/I/71BPC2B5QQL._SL75_.gif
+    - http://ecx.images-amazon.com/images/I/71BPC2B5QQL._SL160_.gif
+    - "1984-06-04"
+    - 2009-07-16 00:31:20
+    - 2009-07-16 00:31:20
+  - - "188"
+    - Is There No Place on Earth for Me?
+    - Book
+    - Susan Sheehan
+    - "\" A brilliantly documented chronicle of young woman's long struggle with schizophrenia.\"<P>-- Willard Gaylin, The New Republic<P>\"Sylvia Frumkin,\" highly intelligent young girl, became a schizophrenic in her late teens and spent most of the next seventeen years in anti out of mental institutions. Susan Sheehan, a talented reporter followed \"Sylvia\" for almost a year talking with and observing her listening to her monologues, sitting in on consultations with doctors, even for a period sleeping in the bed next to her in a mental hospital.<P>\"Susan Sheehan has committed an extraordinary act of journalism....She brings relentless intelligent attention to bear on a particular case, a journalistic practice that almost always results in new and disturbing insights into those mindless generalities and prejudice and certitudes we tend to carry around with us.\" -- Meg Greenfield, front page Washington Post Book World<P>\"Sheehan is tenacious, observant and unsentimental. The history of a single patient leads us into a maze of understaffed institutions, bureaucratic fumbling, trial-and-error treatment and familial incomprehension. Though Sheehan keeps herself invisible, her sympathy is palpable.\"<P>-- Walter Clemons, Newsweek<P>By the author of Lift for Me Ain't Been No Crystal Stair"
+    - 0394713788
+    - http://www.amazon.com/There-No-Place-Earth-Me/dp/0394713788%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0394713788
+    - http://ecx.images-amazon.com/images/I/51799X6NEGL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51799X6NEGL._SL160_.jpg
+    - "1983-05-12"
+    - 2009-07-16 00:31:33
+    - 2009-07-16 00:31:33
+  - - "189"
+    - The Soul of a New Machine
+    - Book
+    - Tracy Kidder
+    - Computers have changed since 1981, when Tracy Kidder memorably recorded the drama, comedy, and excitement of one companys efforts to bring a new microcomputer to market. What has not changed is the feverish pace of the high-tech industry, the go-for-broke approach to business that has caused so many computer companies to win big (or go belly up), and the cult of pursuing mind-bending technological innovations. The Soul of a New Machine is an essential chapter in the history of the machine that revolutionized the world in the twentieth century.
+    - B00008RWB6
+    - http://www.amazon.com/Soul-New-Machine-Tracy-Kidder/dp/B00008RWB6%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00008RWB6
+    - http://ecx.images-amazon.com/images/I/51HE0AG1V8L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51HE0AG1V8L._SL160_.jpg
+    - 
+    - 2009-07-16 00:31:49
+    - 2009-07-16 00:31:49
+  - - "190"
+    - "Fin-De-Siecle Vienna: Politics and Culture"
+    - Book
+    - Carl E. Schorske
+    - "A landmark book from one of the truly original scholars of our time: a magnificent revelation of turn-of-the-century Vienna where out of a crisis of political and social disintegration so much of modern art and thought was born.<P>\"Not only is it a splendid exploration of several aspects of early modernism in their political context; it is an indicator of how the discipline of intellectual history is currently practiced by its most able and ambitious craftsmen. It is also a moving vindication of historical study itself, in the face of modernism's defiant suggestion that history is obsolete.\"<P>-- David A. Hollinger, History Book Club Review<P>\"Each of [the seven separate studies] can be read separately....Yet they are so artfully designed and integrated that one who reads them in order is impressed by the book's wholeness and the momentum of its argument.\"<P>-- Gordon A. Craig, The New Republic<P>\"A profound work...on one of the most important chapters of modern intellectual history\" -- H.R. Trevor-Roper, front page, The New York Times Book Review<P>\"Invaluable to the social and political historian...as well as to those more concerned with the arts\" -- John Willett, The New York Review of Books<P>\"A work of original synthesis and scholarship. Engrossing.\"<P>-- Newsweek"
+    - 0394744780
+    - http://www.amazon.com/Fin-Siecle-Vienna-Politics-Culture/dp/0394744780%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0394744780
+    - http://ecx.images-amazon.com/images/I/414WAPQBPDL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/414WAPQBPDL._SL160_.jpg
+    - "1980-12-12"
+    - 2009-07-16 00:32:07
+    - 2009-07-16 00:32:07
+  - - "191"
+    - "Godel, Escher, Bach: An Eternal Golden Braid"
+    - Book
+    - Douglas R. Hofstadter
+    - This groundbreaking Pulitzer Prize-winning book sets the standard for interdisciplinary writing, exploring the patterns and symbols in the thinking of mathematician Kurt Godel, artist M.C. Escher, and composer Johann Sebastian Bach.
+    - "0465026567"
+    - http://www.amazon.com/Godel-Escher-Bach-Eternal-Golden/dp/0465026567%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0465026567
+    - http://ecx.images-amazon.com/images/I/41V5ZTF24CL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41V5ZTF24CL._SL160_.jpg
+    - "1999-02-04"
+    - 2009-07-16 00:32:29
+    - 2009-07-16 00:32:29
+  - - "192"
+    - "On Human Nature: Revised Edition"
+    - Book
+    - Edward O. Wilson
+    - "\"In his new preface E. O. Wilson reflects on how he came to write this book: how <i>The Insect Societies</i> led him to write <i>Sociobiology</i>, and how the political and religious uproar that engulfed that book persuaded him to write another book that would better explain the relevance of biology to the understanding of human behavior.\""
+    - 0674016386
+    - http://www.amazon.com/Human-Nature-Edward-O-Wilson/dp/0674016386%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0674016386
+    - http://ecx.images-amazon.com/images/I/5173QYV8DQL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/5173QYV8DQL._SL160_.jpg
+    - "2004-10-18"
+    - 2009-07-16 00:32:43
+    - 2009-07-16 00:32:43
+  - - "193"
+    - "The Dragons of Eden: Speculations on the Evolution of Human Intelligence"
+    - Book
+    - Carl Sagan
+    - Dr. Carl Sagan takes us on a great reading adventure, offering his vivid and startling insight into the brain of man and beast, the origin of human intelligence, the function of our most haunting legends--and their amazing links to recent discoveries.<br>"A history of the human brain from the big bang, fifteen billion years ago, to the day before yesterday...It's a delight."<br>THE NEW YORK TIMES<br>
+    - 0345346297
+    - http://www.amazon.com/Dragons-Eden-Speculations-Evolution-Intelligence/dp/0345346297%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345346297
+    - http://ecx.images-amazon.com/images/I/51J40B20B0L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51J40B20B0L._SL160_.jpg
+    - "1986-12-12"
+    - 2009-07-16 00:32:57
+    - 2009-07-16 00:32:57
+  - - "194"
+    - "Beautiful Swimmers: Watermen, Crabs and the Chesapeake Bay"
+    - Book
+    - William W. Warner
+    - ""
+    - 0316923354
+    - http://www.amazon.com/Beautiful-Swimmers-Watermen-Crabs-Chesapeake/dp/0316923354%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0316923354
+    - http://ecx.images-amazon.com/images/I/51PJMNZ07FL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51PJMNZ07FL._SL160_.jpg
+    - "1994-03-21"
+    - 2009-07-16 00:33:12
+    - 2009-07-16 00:33:12
+  - - "195"
+    - "Why Survive?: Being Old in America"
+    - Book
+    - Robert N. Butler MD
+    - The author questions the value of long life for its own sake, arguing that modern medicine has ironically created a group for whom survival is possible but satisfaction elusive. He proposed reforms to redefine and restructure the institutions responsible for the elderly in America.
+    - 0801874254
+    - http://www.amazon.com/Why-Survive-Being-Old-America/dp/0801874254%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0801874254
+    - http://ecx.images-amazon.com/images/I/41u-wBWhBYL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41u-wBWhBYL._SL160_.jpg
+    - "2002-11-26"
+    - 2009-07-16 00:33:28
+    - 2009-07-16 00:33:28
+  - - "196"
+    - Pilgrim at Tinker Creek (Harper Perrennial Modern Classics)
+    - Book
+    - Annie Dillard
+    - <p><i>Pilgrim at Tinker Creek</i> is the story of a dramatic year in Virginia's Blue Ridge valley. Annie Dillard sets out to see what she can see. What she sees are astonishing incidents of "mystery, death, beauty, violence."</p>
+    - "0061233323"
+    - http://www.amazon.com/Pilgrim-Tinker-Harper-Perrennial-Classics/dp/0061233323%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0061233323
+    - http://ecx.images-amazon.com/images/I/51mub5UxomL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51mub5UxomL._SL160_.jpg
+    - "2007-06-01"
+    - 2009-07-16 00:33:44
+    - 2009-07-16 00:33:44
+  - - "197"
+    - The Denial of Death
+    - Book
+    - Ernest Becker
+    - <P> Winner of the Pulitzer prize in 1974 and the culmination of a life's work, <I>The Denial of Death</I> is Ernest Becker's brilliant and impassioned answer to the "why" of human existence. In bold contrast to the predominant Freudian school of thought, Becker tackles the problem of the vital lie -- man's refusal to acknowledge his own mortality. In doing so, he sheds new light on the nature of humanity and issues a call to life and its living that still resonates more than twenty years after its writing.
+    - 0844669326
+    - http://www.amazon.com/Denial-Death-Ernest-Becker/dp/0844669326%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0844669326
+    - http://ecx.images-amazon.com/images/I/312826NCE0L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/312826NCE0L._SL160_.jpg
+    - 
+    - 2009-07-16 00:34:02
+    - 2009-07-16 00:34:02
+  - - "198"
+    - "Fire in the Lake: The Vietnamese and the Americans in Vietnam"
+    - Book
+    - Frances FitzGerald
+    - This landmark work, based on Frances FitzGerald's own research and travels, takes us inside Vietnam-into the traditional, ancestor-worshiping villages and the corrupt crowded cities, into the conflicts between Communists and anti-Communists, Catholics and Buddhists, generals and monks -and reveals the country as seen through Vietnamese eyes. With a clarity and authority unrivaled by any book before it or since, Fire in the Lake shows how America utterly and tragically misinterpreted the realities of Vietnam.
+    - 0316159190
+    - http://www.amazon.com/Fire-Lake-Vietnamese-Americans-Vietnam/dp/0316159190%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0316159190
+    - http://ecx.images-amazon.com/images/I/41QDT8iOrQL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41QDT8iOrQL._SL160_.jpg
+    - "2002-07-17"
+    - 2009-07-16 00:34:19
+    - 2009-07-16 00:34:19
+  - - "199"
+    - Children of Crisis, Vols. II and III
+    - Book
+    - Robert Coles
+    - "In the 1950s Robert Coles began studying, living among, and, above all, listening to American children. The results of his efforts--revealed in five volumes published between 1967 and 1977--constitute one of the most searching and vigorous social studies ever undertaken by one person in the United States. Here, heard often in their own voices, are America's \"children of crisis\": African American children caught in the throes of the South's racial integration; The children of impoverished migrant workers in Appalachia; Children whose families were transformed by the migration from South to North, from rural to urban communities; Latino, Native American, and Eskimo children in the poorest communities of the American West; The children of America's wealthiest families confronting the burden of their own privilege. This volume restores to print a masterwork of psychological and sociological inquiry--a book that, in its focus on how children learn and develop in the face of rapid change and social upheaval, speaks directly and pointedly to our own times. "
+    - "0316151025"
+    - http://www.amazon.com/Children-Crisis-Robert-Coles/dp/0316151025%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0316151025
+    - http://ecx.images-amazon.com/images/I/41-a1F36HgL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41-a1F36HgL._SL160_.jpg
+    - "2009-07-16"
+    - 2009-07-16 00:34:56
+    - 2009-07-16 00:44:25
+  - - "200"
+    - Stilwell and the American Experience in China, 1911-45
+    - Book
+    - Barbara W. Tuchman
+    - "Barbara W. Tuchman won the Pulitzer Prize for Stilwell and the American Experience in China, 1911-45 in 1972. She uses the life of Joseph Stilwell, the military attache to China in 1935-39 and commander of United States forces and allied chief of staff to Chiang Kai-shek in 1942-44, to explore the history of China from the revolution of 1911 to the turmoil of World War II, when China's Nationalist government faced attack from Japanese invaders and Communist insurgents. Her story is an account of both American relations with China and the experiences of one of our men on the ground. In the cantankerous but level-headed \"Vinegar Joe,\" Tuchman found a subject who allowed her to perform, in the words of The National Review, \"one of the historian's most envied magic acts: conjoining a fine biography of a man with a fascinating epic story.\""
+    - 0802138527
+    - http://www.amazon.com/Stilwell-American-Experience-China-1911-45/dp/0802138527%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0802138527
+    - http://ecx.images-amazon.com/images/I/51A9DV83YRL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51A9DV83YRL._SL160_.jpg
+    - "2001-10-07"
+    - 2009-07-16 00:35:35
+    - 2009-07-16 00:35:35
+  - - "201"
+    - "The Rising Sun: The Decline and Fall of the Japanese Empire, 1936-1945 (Modern Library War)"
+    - Book
+    - John Toland
+    - "This Pulitzer Prize\xE2\x80\x93winning history of World War II chronicles the dramatic rise and fall of the Japanese empire, from the invasion of Manchuria and China to the atomic bombing of Hiroshima and Nagasaki. Told from the Japanese perspective, <i>The Rising Sun</i> is, in the author\xE2\x80\x99s words, \xE2\x80\x9Ca factual saga of people caught up in the flood of the most overwhelming war of mankind, told as it happened\xE2\x80\x94muddled, ennobling, disgraceful, frustrating, full of paradox.\xE2\x80\x9D<br><br>In weaving together the historical facts and human drama leading up to and culminating in the war in the Pacific, Toland crafts a riveting and unbiased narrative history. In his Foreword, Toland says that if we are to draw any conclusion from <i>The Rising Sun</i>, it is \xE2\x80\x9Cthat there are no simple lessons in history, that it is human nature that repeats itself, not history.\xE2\x80\x9D"
+    - 0812968581
+    - http://www.amazon.com/Rising-Sun-Decline-Japanese-1936-1945/dp/0812968581%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0812968581
+    - http://ecx.images-amazon.com/images/I/518SWWGFP3L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/518SWWGFP3L._SL160_.jpg
+    - "2003-05-27"
+    - 2009-07-16 00:35:54
+    - 2009-07-16 00:35:54
+  - - "202"
+    - "Gandhi's Truth: On the Origins of Militant Nonviolence"
+    - Book
+    - Erik H. Erikson
+    - In this study of Mahatma Gandhi, psychoanalyst  Erik H. Erikson explores how Gandhi succeeded in mobilizing the Indian people both spiritually and politically as he became the revolutionary  innovator of militant non-violence and India  became the motherland of large-scale civil  disobedience.
+    - 0393310345
+    - http://www.amazon.com/Gandhis-Truth-Origins-Militant-Nonviolence/dp/0393310345%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0393310345
+    - http://ecx.images-amazon.com/images/I/41W1YT52JEL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41W1YT52JEL._SL160_.jpg
+    - "1993-04-17"
+    - 2009-07-16 00:40:38
+    - 2009-07-16 00:40:38
+  - - "203"
+    - "The Armies of the Night: History as a Novel, the Novel as History"
+    - Book
+    - Norman Mailer
+    - The novelists interpretes and dramatizes the October 1967 anti-war demonstration in Washington and the issues and politics involved.
+    - 0452272793
+    - http://www.amazon.com/Armies-Night-History-Novel/dp/0452272793%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0452272793
+    - http://ecx.images-amazon.com/images/I/51ZD4B051XL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51ZD4B051XL._SL160_.jpg
+    - "1995-01-01"
+    - 2009-07-16 00:44:58
+    - 2009-07-16 00:44:58
+  - - "204"
+    - "So Human an Animal: How We Are Shaped By  Surroundings and Events"
+    - Book
+    - "Ren\xC3\xA9 Dubos"
+    - Until cloning becomes the order of the day, the author contends that each human is unique. Every person faces the danger of losing this humanness to mechanized surroundings. Is the human species becoming dehumanized by the condition of his environment? This book attempts to address this concern.
+    - 0765804298
+    - http://www.amazon.com/So-Human-Animal-Shaped-Surroundings/dp/0765804298%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0765804298
+    - http://ecx.images-amazon.com/images/I/51RAZGVDSNL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51RAZGVDSNL._SL160_.jpg
+    - "1998-05-01"
+    - 2009-07-16 00:45:13
+    - 2009-07-16 00:45:13
+  - - "205"
+    - "Rousseau and Revolution: A History of Civilization in France, England, and Germany from 1756, and in the Remainder of Europe from 1715, to 1789 (Story of Civilization, 10)"
+    - Book
+    - Will Durant
+    - ""
+    - "1567310214"
+    - http://www.amazon.com/Rousseau-Revolution-History-Civilization-Remainder/dp/1567310214%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1567310214
+    - http://ecx.images-amazon.com/images/I/417TS7J17EL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/417TS7J17EL._SL160_.jpg
+    - 
+    - 2009-07-16 00:45:59
+    - 2009-07-16 00:45:59
+  - - "206"
+    - The Problem of Slavery in Western Culture (Oxford Paperbacks)
+    - Book
+    - David Brion Davis
+    - Winner of several national awards including the 1967 Pulitzer Prize, this classic study by David Brion Davis has given new direction to the historical and sociological research of society's attitude towards slavery.^L<P>Davis depicts the various ways different societies have responded to the intrinsic contradictions of slavery from antiquity to the early 1770's in order to establish the uniqueness of the abolitionists' response.  While slavery has always caused considerable social and p
+    - 0195056396
+    - http://www.amazon.com/Problem-Slavery-Western-Culture-Paperbacks/dp/0195056396%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0195056396
+    - http://ecx.images-amazon.com/images/I/51460P57PHL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51460P57PHL._SL160_.jpg
+    - "1988-10-20"
+    - 2009-07-16 00:46:13
+    - 2009-07-16 00:46:13
+  - - "207"
+    - "Wandering Through Winter: A Naturalist's Record of a 20,000-Mile Journey Through the North American Winter (American Seasons, 4th Season)"
+    - Book
+    - Edwin Way Teale
+    - In this final volume of his brilliant four-volume cycle, Edwin Way Teale follows winter diagonally across the country in a 20,000-mile journey from Southern California to Northern Maine. Illustrated.
+    - 0312044585
+    - http://www.amazon.com/Wandering-Through-Winter-Naturalists-000-Mile/dp/0312044585%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0312044585
+    - 
+    - 
+    - 
+    - 2009-07-16 00:47:24
+    - 2009-07-16 00:47:24
+  - - "208"
+    - O Strange New World
+    - Book
+    - Howard Mumford Jones
+    - ""
+    - 0670519553
+    - http://www.amazon.com/Strange-World-Howard-Mumford-Jones/dp/0670519553%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0670519553
+    - 
+    - 
+    - "1964-09-11"
+    - 2009-07-16 00:48:13
+    - 2009-07-16 00:48:13
+  - - "209"
+    - Anti-Intellectualism in American Life
+    - Book
+    - Richard Hofstadter
+    - ""
+    - 0394703170
+    - http://www.amazon.com/Anti-Intellectualism-American-Life-Richard-Hofstadter/dp/0394703170%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0394703170
+    - http://ecx.images-amazon.com/images/I/71MQZ5YE0TL._SL75_.gif
+    - http://ecx.images-amazon.com/images/I/71MQZ5YE0TL._SL160_.gif
+    - "1966-02-12"
+    - 2009-07-16 00:48:30
+    - 2009-07-16 00:48:30
+  - - "210"
+    - The Guns of August
+    - Book
+    - Barbara W. Tuchman
+    - "\"More dramtatic than fiction...THE GUNS OF AUGUST is a magnificent narrative--beautifully organized, elegantly phrased, skillfully paced and sustained....The product of painstaking and sophisticated research.\"<br>CHICAGO TRIBUNE<br>Historian and Pulitzer Prize-winning author Barbara Tuchman has brought to life again the people and events that led up to Worl War I. With attention to fascinating detail, and an intense knowledge of her subject and its characters, Ms. Tuchman reveals, for the first time, just how the war started, why, and why it could have been stopped but wasn't. A classic historical survey of a time and a people we all need to know more about, THE GUNS OF AUGUST will not be forgotten.<br>"
+    - 0345476093
+    - http://www.amazon.com/Guns-August-Barbara-W-Tuchman/dp/0345476093%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345476093
+    - http://ecx.images-amazon.com/images/I/416VN4K620L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/416VN4K620L._SL160_.jpg
+    - "2004-08-03"
+    - 2009-07-16 00:48:44
+    - 2009-07-16 00:48:44
+  - - "211"
+    - The Making of the President 1960
+    - Book
+    - Theodore H. White
+    - ""
+    - B000PC4MYI
+    - http://www.amazon.com/Making-President-1960-Theodore-White/dp/B000PC4MYI%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000PC4MYI
+    - 
+    - 
+    - 
+    - 2009-07-16 00:49:32
+    - 2009-07-16 00:49:32
+
+--- 
+timeline_items: 
+  columns: 
+  - id
+  - timeline_id
+  - item_id
+  - position
+  - created_at
+  - updated_at
+  - position_desc
+  records: 
+  - - "1"
+    - "1"
+    - "8"
+    - "106"
+    - 2009-05-30 00:24:45
+    - 2009-06-08 20:51:53
+    - "2008"
+  - - "2"
+    - "1"
+    - "15"
+    - "105"
+    - 2009-05-30 00:26:40
+    - 2009-06-08 20:52:05
+    - "2007"
+  - - "3"
+    - "1"
+    - "6"
+    - "104"
+    - 2009-05-30 00:27:11
+    - 2009-06-08 20:55:26
+    - "2006"
+  - - "4"
+    - "1"
+    - "17"
+    - "103"
+    - 2009-05-30 00:27:57
+    - 2009-06-08 20:55:58
+    - "2005"
+  - - "5"
+    - "1"
+    - "16"
+    - "102"
+    - 2009-05-30 00:28:44
+    - 2009-06-08 20:55:45
+    - "2004"
+  - - "6"
+    - "1"
+    - "7"
+    - "101"
+    - 2009-05-30 00:29:13
+    - 2009-06-08 20:56:29
+    - "2003"
+  - - "7"
+    - "1"
+    - "19"
+    - "100"
+    - 2009-05-30 20:24:24
+    - 2009-06-08 20:56:38
+    - "2002"
+  - - "8"
+    - "2"
+    - "26"
+    - "154"
+    - 2009-05-30 21:20:23
+    - 2009-06-08 21:06:36
+    - "2008"
+  - - "9"
+    - "2"
+    - "27"
+    - "153"
+    - 2009-05-30 21:20:38
+    - 2009-06-08 21:06:48
+    - "2008"
+  - - "10"
+    - "2"
+    - "28"
+    - "152"
+    - 2009-05-30 21:20:57
+    - 2009-06-08 21:07:55
+    - "2007"
+  - - "11"
+    - "2"
+    - "43"
+    - "152"
+    - 2009-05-30 21:54:27
+    - 2009-06-08 21:07:42
+    - "2007"
+  - - "12"
+    - "2"
+    - "7"
+    - "152"
+    - 2009-05-30 21:54:52
+    - 2009-06-08 21:07:14
+    - "2007"
+  - - "13"
+    - "2"
+    - "15"
+    - "152"
+    - 2009-05-30 21:55:52
+    - 2009-06-08 21:07:28
+    - "2007"
+  - - "14"
+    - "2"
+    - "30"
+    - "152"
+    - 2009-05-30 21:56:14
+    - 2009-06-08 21:07:01
+    - "2007"
+  - - "15"
+    - "2"
+    - "41"
+    - "152"
+    - 2009-05-30 21:56:37
+    - 2009-06-08 21:08:05
+    - "2006"
+  - - "16"
+    - "1"
+    - "21"
+    - "99"
+    - 2009-05-30 21:57:21
+    - 2009-06-08 20:56:53
+    - "2001"
+  - - "17"
+    - "1"
+    - "20"
+    - "107"
+    - 2009-06-06 02:00:27
+    - 2009-06-08 20:55:01
+    - "2009"
+  - - "18"
+    - "1"
+    - "47"
+    - "98"
+    - 2009-06-06 02:02:38
+    - 2009-06-08 20:57:05
+    - "2000"
+  - - "25"
+    - "1"
+    - "54"
+    - "97"
+    - 2009-06-08 21:04:05
+    - 2009-06-08 21:04:27
+    - "1999"
+  - - "26"
+    - "2"
+    - "55"
+    - "152"
+    - 2009-06-08 21:09:36
+    - 2009-06-08 21:15:23
+    - "2005"
+  - - "27"
+    - "1"
+    - "56"
+    - "96"
+    - 2009-06-10 20:34:18
+    - 2009-06-10 20:36:08
+    - "1998"
+  - - "28"
+    - "1"
+    - "57"
+    - "95"
+    - 2009-06-10 20:47:07
+    - 2009-06-10 20:48:00
+    - "1997"
+  - - "29"
+    - "1"
+    - "58"
+    - "94"
+    - 2009-06-10 20:50:39
+    - 2009-06-10 20:50:53
+    - "1996"
+  - - "30"
+    - "1"
+    - "59"
+    - "93"
+    - 2009-06-10 20:52:59
+    - 2009-06-10 20:53:08
+    - "1995"
+  - - "31"
+    - "2"
+    - "60"
+    - "149"
+    - 2009-06-10 20:57:24
+    - 2009-06-10 20:58:29
+    - "2005"
+  - - "32"
+    - "2"
+    - "61"
+    - "148"
+    - 2009-06-10 20:57:40
+    - 2009-06-10 20:59:00
+    - "2005"
+  - - "33"
+    - "2"
+    - "62"
+    - "147"
+    - 2009-06-10 20:57:53
+    - 2009-06-10 20:59:08
+    - "2005"
+  - - "35"
+    - "2"
+    - "64"
+    - "146"
+    - 2009-06-10 21:02:29
+    - 2009-06-10 21:02:40
+    - "2004"
+  - - "38"
+    - "1"
+    - "67"
+    - "92"
+    - 2009-06-29 20:55:59
+    - 2009-06-29 21:00:01
+    - "1994"
+  - - "39"
+    - "1"
+    - "68"
+    - "91"
+    - 2009-06-29 21:04:43
+    - 2009-06-29 21:04:54
+    - "1993"
+  - - "40"
+    - "2"
+    - "69"
+    - "143"
+    - 2009-06-29 22:10:54
+    - 2009-06-29 22:11:06
+    - "2004"
+  - - "41"
+    - "2"
+    - "70"
+    - "142"
+    - 2009-06-29 22:11:43
+    - 2009-06-29 23:00:04
+    - "2004"
+  - - "42"
+    - "2"
+    - "71"
+    - "141"
+    - 2009-06-29 22:12:05
+    - 2009-06-29 22:59:55
+    - "2004"
+  - - "43"
+    - "2"
+    - "72"
+    - "140"
+    - 2009-06-29 22:12:23
+    - 2009-06-29 22:59:46
+    - "2003"
+  - - "44"
+    - "2"
+    - "73"
+    - "139"
+    - 2009-06-29 22:12:37
+    - 2009-06-29 22:59:34
+    - "2003"
+  - - "45"
+    - "2"
+    - "74"
+    - "138"
+    - 2009-06-29 22:12:53
+    - 2009-06-29 22:59:19
+    - "2002"
+  - - "46"
+    - "2"
+    - "75"
+    - "137"
+    - 2009-06-29 22:13:07
+    - 2009-06-29 22:59:11
+    - "2002"
+  - - "47"
+    - "2"
+    - "76"
+    - "136"
+    - 2009-06-29 22:13:18
+    - 2009-06-29 22:59:01
+    - "2001"
+  - - "48"
+    - "2"
+    - "77"
+    - "135"
+    - 2009-06-29 22:13:30
+    - 2009-06-29 22:58:46
+    - "2001"
+  - - "49"
+    - "2"
+    - "78"
+    - "134"
+    - 2009-06-29 22:13:43
+    - 2009-06-29 22:58:39
+    - "2001"
+  - - "50"
+    - "2"
+    - "79"
+    - "133"
+    - 2009-06-29 22:14:05
+    - 2009-06-29 22:58:29
+    - "2001"
+  - - "51"
+    - "2"
+    - "80"
+    - "132"
+    - 2009-06-29 22:14:20
+    - 2009-06-29 22:58:18
+    - "2001"
+  - - "52"
+    - "2"
+    - "81"
+    - "131"
+    - 2009-06-29 22:14:32
+    - 2009-06-29 22:58:09
+    - "2001"
+  - - "53"
+    - "2"
+    - "82"
+    - "130"
+    - 2009-06-29 22:14:46
+    - 2009-06-29 22:57:52
+    - "2000"
+  - - "54"
+    - "2"
+    - "83"
+    - "129"
+    - 2009-06-29 22:14:55
+    - 2009-06-29 22:57:42
+    - "2000"
+  - - "55"
+    - "2"
+    - "84"
+    - "128"
+    - 2009-06-29 22:15:17
+    - 2009-06-29 22:57:34
+    - "2000"
+  - - "56"
+    - "2"
+    - "85"
+    - "127"
+    - 2009-06-29 22:15:48
+    - 2009-06-29 22:57:26
+    - "2000"
+  - - "57"
+    - "2"
+    - "86"
+    - "126"
+    - 2009-06-29 22:16:00
+    - 2009-06-29 22:57:16
+    - "2000"
+  - - "58"
+    - "2"
+    - "87"
+    - "125"
+    - 2009-06-29 22:16:29
+    - 2009-06-29 22:57:08
+    - "2000"
+  - - "59"
+    - "2"
+    - "88"
+    - "124"
+    - 2009-06-29 22:16:58
+    - 2009-06-29 22:57:01
+    - "2000"
+  - - "60"
+    - "2"
+    - "89"
+    - "123"
+    - 2009-06-29 22:17:17
+    - 2009-06-29 22:56:53
+    - "2000"
+  - - "61"
+    - "2"
+    - "90"
+    - "122"
+    - 2009-06-29 22:17:31
+    - 2009-06-29 22:56:41
+    - "2000"
+  - - "62"
+    - "2"
+    - "91"
+    - "121"
+    - 2009-06-29 22:17:54
+    - 2009-06-29 22:56:15
+    - "1999"
+  - - "63"
+    - "2"
+    - "92"
+    - "120"
+    - 2009-06-29 22:18:13
+    - 2009-06-29 22:56:04
+    - "1999"
+  - - "64"
+    - "2"
+    - "93"
+    - "119"
+    - 2009-06-29 22:18:31
+    - 2009-06-29 22:55:54
+    - "1999"
+  - - "65"
+    - "2"
+    - "94"
+    - "118"
+    - 2009-06-29 22:18:50
+    - 2009-06-29 22:55:39
+    - "1999"
+  - - "66"
+    - "2"
+    - "95"
+    - "117"
+    - 2009-06-29 22:19:05
+    - 2009-06-29 22:55:26
+    - "1999"
+  - - "67"
+    - "2"
+    - "96"
+    - "116"
+    - 2009-06-29 22:19:28
+    - 2009-06-29 22:55:19
+    - "1999"
+  - - "68"
+    - "2"
+    - "97"
+    - "115"
+    - 2009-06-29 22:19:46
+    - 2009-06-29 22:55:08
+    - "1999"
+  - - "69"
+    - "2"
+    - "98"
+    - "114"
+    - 2009-06-29 22:20:02
+    - 2009-06-29 22:54:54
+    - "1999"
+  - - "70"
+    - "2"
+    - "99"
+    - "113"
+    - 2009-06-29 22:20:37
+    - 2009-06-29 22:54:40
+    - "1999"
+  - - "71"
+    - "2"
+    - "100"
+    - "112"
+    - 2009-06-29 22:20:52
+    - 2009-06-29 22:54:29
+    - "1998"
+  - - "72"
+    - "2"
+    - "101"
+    - "111"
+    - 2009-06-29 22:21:04
+    - 2009-06-29 22:54:20
+    - "1998"
+  - - "73"
+    - "2"
+    - "102"
+    - "110"
+    - 2009-06-29 22:21:29
+    - 2009-06-29 22:54:09
+    - "1998"
+  - - "74"
+    - "2"
+    - "103"
+    - "109"
+    - 2009-06-29 22:21:51
+    - 2009-06-29 22:53:58
+    - "1998"
+  - - "75"
+    - "2"
+    - "104"
+    - "108"
+    - 2009-06-29 22:22:05
+    - 2009-06-29 22:53:43
+    - "1998"
+  - - "76"
+    - "2"
+    - "105"
+    - "107"
+    - 2009-06-29 22:22:18
+    - 2009-06-29 22:53:29
+    - "1998"
+  - - "77"
+    - "2"
+    - "106"
+    - "106"
+    - 2009-06-29 22:22:28
+    - 2009-06-29 22:53:14
+    - "1998"
+  - - "78"
+    - "2"
+    - "107"
+    - "105"
+    - 2009-06-29 22:22:57
+    - 2009-06-29 22:52:50
+    - "1998"
+  - - "79"
+    - "2"
+    - "108"
+    - "104"
+    - 2009-06-29 22:23:23
+    - 2009-06-29 22:31:42
+    - "1997"
+  - - "80"
+    - "2"
+    - "109"
+    - "103"
+    - 2009-06-29 22:23:44
+    - 2009-06-29 22:31:27
+    - "1997"
+  - - "81"
+    - "2"
+    - "110"
+    - "102"
+    - 2009-06-29 22:23:54
+    - 2009-06-29 22:31:15
+    - "1997"
+  - - "82"
+    - "2"
+    - "111"
+    - "101"
+    - 2009-06-29 22:24:45
+    - 2009-06-29 22:31:05
+    - "1997"
+  - - "83"
+    - "2"
+    - "112"
+    - "100"
+    - 2009-06-29 22:25:01
+    - 2009-06-29 22:30:55
+    - "1997"
+  - - "84"
+    - "2"
+    - "113"
+    - "99"
+    - 2009-06-29 22:25:17
+    - 2009-06-29 22:30:35
+    - "1997"
+  - - "85"
+    - "2"
+    - "114"
+    - "98"
+    - 2009-06-29 22:25:32
+    - 2009-06-29 22:30:25
+    - "1997"
+  - - "86"
+    - "2"
+    - "115"
+    - "97"
+    - 2009-06-29 22:25:48
+    - 2009-06-29 22:30:16
+    - "1997"
+  - - "87"
+    - "2"
+    - "116"
+    - "96"
+    - 2009-06-29 22:26:06
+    - 2009-06-29 22:30:06
+    - "1997"
+  - - "88"
+    - "2"
+    - "117"
+    - "95"
+    - 2009-06-29 22:26:20
+    - 2009-06-29 22:29:50
+    - "1997"
+  - - "89"
+    - "2"
+    - "118"
+    - "94"
+    - 2009-06-29 22:26:31
+    - 2009-06-29 22:29:12
+    - "1997"
+  - - "90"
+    - "2"
+    - "119"
+    - "93"
+    - 2009-06-29 22:26:44
+    - 2009-06-29 22:29:00
+    - "1996"
+  - - "91"
+    - "2"
+    - "120"
+    - "92"
+    - 2009-06-29 22:27:07
+    - 2009-06-29 22:28:49
+    - "1996"
+  - - "92"
+    - "2"
+    - "121"
+    - "91"
+    - 2009-06-29 22:27:22
+    - 2009-06-29 22:28:17
+    - "1996"
+  - - "93"
+    - "1"
+    - "122"
+    - "90"
+    - 2009-06-29 23:09:26
+    - 2009-06-29 23:09:57
+    - "1992"
+  - - "94"
+    - "1"
+    - "123"
+    - "89"
+    - 2009-06-29 23:10:25
+    - 2009-06-29 23:48:14
+    - "1991"
+  - - "95"
+    - "1"
+    - "124"
+    - "88"
+    - 2009-06-29 23:10:46
+    - 2009-06-29 23:48:32
+    - "1990"
+  - - "96"
+    - "1"
+    - "125"
+    - "87"
+    - 2009-06-29 23:10:59
+    - 2009-06-29 23:48:42
+    - "1989"
+  - - "97"
+    - "1"
+    - "126"
+    - "86"
+    - 2009-06-29 23:11:08
+    - 2009-06-29 23:48:56
+    - "1988"
+  - - "98"
+    - "1"
+    - "127"
+    - "85"
+    - 2009-06-29 23:11:27
+    - 2009-06-29 23:52:40
+    - "1987"
+  - - "99"
+    - "1"
+    - "128"
+    - "84"
+    - 2009-06-29 23:12:56
+    - 2009-06-29 23:52:51
+    - "1986"
+  - - "100"
+    - "1"
+    - "129"
+    - "83"
+    - 2009-06-29 23:13:17
+    - 2009-06-29 23:53:06
+    - "1985"
+  - - "101"
+    - "1"
+    - "130"
+    - "82"
+    - 2009-06-29 23:13:25
+    - 2009-06-29 23:53:17
+    - "1984"
+  - - "102"
+    - "1"
+    - "131"
+    - "81"
+    - 2009-06-29 23:14:28
+    - 2009-06-29 23:53:28
+    - "1983"
+  - - "103"
+    - "1"
+    - "132"
+    - "80"
+    - 2009-06-29 23:14:38
+    - 2009-06-29 23:53:39
+    - "1982"
+  - - "104"
+    - "1"
+    - "133"
+    - "79"
+    - 2009-06-29 23:14:57
+    - 2009-06-29 23:53:51
+    - "1981"
+  - - "105"
+    - "1"
+    - "134"
+    - "77"
+    - 2009-06-29 23:15:09
+    - 2009-06-29 23:54:04
+    - "1980"
+  - - "106"
+    - "1"
+    - "135"
+    - "78"
+    - 2009-06-29 23:15:24
+    - 2009-06-29 23:54:22
+    - "1979"
+  - - "107"
+    - "1"
+    - "136"
+    - "76"
+    - 2009-06-29 23:16:33
+    - 2009-06-29 23:54:34
+    - "1978"
+  - - "108"
+    - "1"
+    - "137"
+    - "75"
+    - 2009-06-29 23:37:12
+    - 2009-06-29 23:54:51
+    - "1976"
+  - - "109"
+    - "1"
+    - "138"
+    - "74"
+    - 2009-06-29 23:37:43
+    - 2009-06-29 23:55:00
+    - "1975"
+  - - "110"
+    - "1"
+    - "139"
+    - "73"
+    - 2009-06-29 23:38:04
+    - 2009-06-29 23:55:11
+    - "1973"
+  - - "111"
+    - "1"
+    - "140"
+    - "72"
+    - 2009-06-29 23:38:14
+    - 2009-06-29 23:55:20
+    - "1972"
+  - - "112"
+    - "1"
+    - "141"
+    - "71"
+    - 2009-06-29 23:38:28
+    - 2009-06-29 23:55:31
+    - "1970"
+  - - "113"
+    - "1"
+    - "142"
+    - "70"
+    - 2009-06-29 23:38:40
+    - 2009-06-29 23:55:41
+    - "1969"
+  - - "114"
+    - "1"
+    - "143"
+    - "69"
+    - 2009-06-29 23:38:54
+    - 2009-06-29 23:55:59
+    - "1968"
+  - - "115"
+    - "1"
+    - "144"
+    - "68"
+    - 2009-06-29 23:39:08
+    - 2009-06-29 23:56:11
+    - "1967"
+  - - "116"
+    - "1"
+    - "145"
+    - "67"
+    - 2009-06-29 23:40:04
+    - 2009-06-29 23:56:22
+    - "1966"
+  - - "117"
+    - "1"
+    - "146"
+    - "66"
+    - 2009-06-29 23:40:28
+    - 2009-06-29 23:56:32
+    - "1695"
+  - - "118"
+    - "1"
+    - "147"
+    - "65"
+    - 2009-06-29 23:40:43
+    - 2009-06-29 23:56:45
+    - "1963"
+  - - "119"
+    - "1"
+    - "148"
+    - "64"
+    - 2009-06-29 23:41:02
+    - 2009-06-29 23:56:56
+    - "1962"
+  - - "120"
+    - "1"
+    - "149"
+    - "63"
+    - 2009-06-29 23:41:17
+    - 2009-06-29 23:57:07
+    - "1961"
+  - - "121"
+    - "1"
+    - "150"
+    - "62"
+    - 2009-06-29 23:41:45
+    - 2009-06-29 23:57:16
+    - "1960"
+  - - "122"
+    - "1"
+    - "151"
+    - "61"
+    - 2009-06-29 23:42:25
+    - 2009-06-29 23:57:29
+    - "1959"
+  - - "123"
+    - "1"
+    - "152"
+    - "60"
+    - 2009-06-29 23:42:39
+    - 2009-06-29 23:57:53
+    - "1958"
+  - - "124"
+    - "1"
+    - "153"
+    - "59"
+    - 2009-06-29 23:42:51
+    - 2009-06-29 23:58:07
+    - "1956"
+  - - "125"
+    - "1"
+    - "154"
+    - "58"
+    - 2009-06-29 23:45:04
+    - 2009-06-29 23:58:17
+    - "1955"
+  - - "126"
+    - "1"
+    - "155"
+    - "57"
+    - 2009-06-29 23:45:30
+    - 2009-06-29 23:58:31
+    - "1953"
+  - - "127"
+    - "1"
+    - "156"
+    - "56"
+    - 2009-06-29 23:45:48
+    - 2009-06-29 23:58:42
+    - "1952"
+  - - "128"
+    - "1"
+    - "157"
+    - "55"
+    - 2009-06-29 23:46:20
+    - 2009-06-29 23:58:52
+    - "1951"
+  - - "129"
+    - "1"
+    - "158"
+    - "54"
+    - 2009-06-29 23:46:32
+    - 2009-06-29 23:59:04
+    - "1950"
+  - - "130"
+    - "1"
+    - "159"
+    - "53"
+    - 2009-06-29 23:47:04
+    - 2009-06-29 23:59:14
+    - "1949"
+  - - "131"
+    - "1"
+    - "160"
+    - "52"
+    - 2009-06-29 23:47:16
+    - 2009-06-29 23:59:23
+    - "1948"
+  - - "132"
+    - "3"
+    - "161"
+    - "51"
+    - 2009-07-16 00:20:22
+    - 2009-07-16 00:53:52
+    - "2009"
+  - - "133"
+    - "3"
+    - "162"
+    - "50"
+    - 2009-07-16 00:20:41
+    - 2009-07-16 00:54:04
+    - "2008"
+  - - "134"
+    - "3"
+    - "163"
+    - "49"
+    - 2009-07-16 00:21:04
+    - 2009-07-16 00:54:15
+    - "2007"
+  - - "135"
+    - "3"
+    - "164"
+    - "48"
+    - 2009-07-16 00:21:21
+    - 2009-07-16 16:06:36
+    - "2006"
+  - - "136"
+    - "3"
+    - "165"
+    - "47"
+    - 2009-07-16 00:21:39
+    - 2009-07-16 16:06:41
+    - "2005"
+  - - "137"
+    - "3"
+    - "166"
+    - "46"
+    - 2009-07-16 00:22:00
+    - 2009-07-16 16:07:18
+    - "2004"
+  - - "138"
+    - "3"
+    - "167"
+    - "45"
+    - 2009-07-16 00:22:20
+    - 2009-07-16 16:07:22
+    - "2003"
+  - - "139"
+    - "3"
+    - "168"
+    - "44"
+    - 2009-07-16 00:22:56
+    - 2009-07-16 16:07:28
+    - "2002"
+  - - "140"
+    - "3"
+    - "169"
+    - "43"
+    - 2009-07-16 00:23:15
+    - 2009-07-16 16:07:31
+    - "2001"
+  - - "141"
+    - "3"
+    - "170"
+    - "42"
+    - 2009-07-16 00:23:28
+    - 2009-07-16 16:07:35
+    - "2000"
+  - - "142"
+    - "3"
+    - "171"
+    - "41"
+    - 2009-07-16 00:23:42
+    - 2009-07-16 16:07:39
+    - "1999"
+  - - "143"
+    - "3"
+    - "172"
+    - "40"
+    - 2009-07-16 00:23:57
+    - 2009-07-16 16:07:48
+    - "1998"
+  - - "144"
+    - "3"
+    - "173"
+    - "39"
+    - 2009-07-16 00:25:09
+    - 2009-07-16 16:07:51
+    - "1997"
+  - - "145"
+    - "3"
+    - "174"
+    - "38"
+    - 2009-07-16 00:25:25
+    - 2009-07-16 16:07:58
+    - "1996"
+  - - "146"
+    - "3"
+    - "175"
+    - "37"
+    - 2009-07-16 00:25:38
+    - 2009-07-16 16:08:01
+    - "1995"
+  - - "147"
+    - "3"
+    - "176"
+    - "36"
+    - 2009-07-16 00:25:51
+    - 2009-07-16 16:08:04
+    - "1994"
+  - - "148"
+    - "3"
+    - "177"
+    - "35"
+    - 2009-07-16 00:26:03
+    - 2009-07-16 16:08:09
+    - "1993"
+  - - "149"
+    - "3"
+    - "178"
+    - "34"
+    - 2009-07-16 00:26:16
+    - 2009-07-16 16:08:13
+    - "1992"
+  - - "150"
+    - "3"
+    - "179"
+    - "33"
+    - 2009-07-16 00:27:29
+    - 2009-07-16 16:08:17
+    - "1991"
+  - - "151"
+    - "3"
+    - "180"
+    - "32"
+    - 2009-07-16 00:27:49
+    - 2009-07-16 16:08:30
+    - "1990"
+  - - "152"
+    - "3"
+    - "181"
+    - "31"
+    - 2009-07-16 00:28:07
+    - 2009-07-16 16:08:38
+    - "1989"
+  - - "153"
+    - "3"
+    - "182"
+    - "30"
+    - 2009-07-16 00:28:20
+    - 2009-07-16 16:08:48
+    - "1988"
+  - - "154"
+    - "3"
+    - "183"
+    - "29"
+    - 2009-07-16 00:28:35
+    - 2009-07-16 16:08:52
+    - "1987"
+  - - "155"
+    - "3"
+    - "184"
+    - "28"
+    - 2009-07-16 00:29:05
+    - 2009-07-16 16:08:57
+    - "1986"
+  - - "156"
+    - "3"
+    - "185"
+    - "27"
+    - 2009-07-16 00:30:45
+    - 2009-07-16 16:09:49
+    - "1986"
+  - - "157"
+    - "3"
+    - "186"
+    - "26"
+    - 2009-07-16 00:31:00
+    - 2009-07-16 16:09:53
+    - "1985"
+  - - "158"
+    - "3"
+    - "187"
+    - "25"
+    - 2009-07-16 00:31:20
+    - 2009-07-16 16:09:56
+    - "1984"
+  - - "159"
+    - "3"
+    - "188"
+    - "24"
+    - 2009-07-16 00:31:33
+    - 2009-07-16 16:09:59
+    - "1983"
+  - - "160"
+    - "3"
+    - "189"
+    - "23"
+    - 2009-07-16 00:31:49
+    - 2009-07-16 16:10:06
+    - "1982"
+  - - "161"
+    - "3"
+    - "190"
+    - "22"
+    - 2009-07-16 00:32:07
+    - 2009-07-16 16:10:09
+    - "1981"
+  - - "162"
+    - "3"
+    - "191"
+    - "21"
+    - 2009-07-16 00:32:29
+    - 2009-07-16 16:10:15
+    - "1980"
+  - - "163"
+    - "3"
+    - "192"
+    - "20"
+    - 2009-07-16 00:32:43
+    - 2009-07-16 16:10:20
+    - "1979"
+  - - "164"
+    - "3"
+    - "193"
+    - "19"
+    - 2009-07-16 00:32:57
+    - 2009-07-16 16:10:24
+    - "1978"
+  - - "165"
+    - "3"
+    - "194"
+    - "18"
+    - 2009-07-16 00:33:12
+    - 2009-07-16 16:10:28
+    - "1977"
+  - - "166"
+    - "3"
+    - "195"
+    - "17"
+    - 2009-07-16 00:33:28
+    - 2009-07-16 16:10:34
+    - "1976"
+  - - "167"
+    - "3"
+    - "196"
+    - "16"
+    - 2009-07-16 00:33:44
+    - 2009-07-16 16:10:38
+    - "1975"
+  - - "168"
+    - "3"
+    - "197"
+    - "15"
+    - 2009-07-16 00:34:02
+    - 2009-07-16 16:10:41
+    - "1974"
+  - - "169"
+    - "3"
+    - "198"
+    - "14"
+    - 2009-07-16 00:34:19
+    - 2009-07-16 16:10:47
+    - "1973"
+  - - "170"
+    - "3"
+    - "199"
+    - "13"
+    - 2009-07-16 00:34:56
+    - 2009-07-16 16:10:59
+    - "1973"
+  - - "171"
+    - "3"
+    - "200"
+    - "12"
+    - 2009-07-16 00:35:35
+    - 2009-07-16 16:11:04
+    - "1972"
+  - - "172"
+    - "3"
+    - "201"
+    - "11"
+    - 2009-07-16 00:35:54
+    - 2009-07-16 16:11:09
+    - "1971"
+  - - "173"
+    - "3"
+    - "202"
+    - "10"
+    - 2009-07-16 00:40:38
+    - 2009-07-16 16:11:13
+    - "1970"
+  - - "174"
+    - "3"
+    - "203"
+    - "9"
+    - 2009-07-16 00:44:58
+    - 2009-07-16 16:11:17
+    - "1969"
+  - - "175"
+    - "3"
+    - "204"
+    - "8"
+    - 2009-07-16 00:45:13
+    - 2009-07-16 16:11:25
+    - "1969"
+  - - "176"
+    - "3"
+    - "205"
+    - "7"
+    - 2009-07-16 00:45:59
+    - 2009-07-16 16:11:30
+    - "1968"
+  - - "177"
+    - "3"
+    - "206"
+    - "6"
+    - 2009-07-16 00:46:13
+    - 2009-07-16 16:11:33
+    - "1967"
+  - - "178"
+    - "3"
+    - "207"
+    - "5"
+    - 2009-07-16 00:47:24
+    - 2009-07-16 16:11:42
+    - "1966"
+  - - "179"
+    - "3"
+    - "208"
+    - "4"
+    - 2009-07-16 00:48:13
+    - 2009-07-16 16:11:46
+    - "1965"
+  - - "180"
+    - "3"
+    - "209"
+    - "3"
+    - 2009-07-16 00:48:30
+    - 2009-07-16 16:11:53
+    - "1964"
+  - - "181"
+    - "3"
+    - "210"
+    - "2"
+    - 2009-07-16 00:48:44
+    - 2009-07-16 00:48:44
+    - set
+  - - "182"
+    - "3"
+    - "211"
+    - "1"
+    - 2009-07-16 00:49:32
+    - 2009-07-16 00:49:32
+    - set
+
+--- 
+timelines: 
+  columns: 
+  - id
+  - name
+  - description
+  - imageurl
+  - created_at
+  - updated_at
+  - category
+  - subcategory
+  - featured
+  records: 
+  - - "1"
+    - Pulitzer Prize Winners - Fiction
+    - Timeline of Pulitzer Prize Winners, fiction category
+    - http://www.pulitzer.org/bycat/Fiction
+    - 2009-05-29 23:52:21
+    - 2009-07-16 00:50:51
+    - Book
+    - Awards
+    - "1"
+  - - "2"
+    - Oprah's Book Club
+    - Timeline of Oprah's Book Club selections
+    - http://www.oprah.com/article/oprahsbookclub/pastselections/20080701_orig_list
+    - 2009-05-30 21:04:30
+    - 2009-07-16 00:51:44
+    - Book
+    - Clubs
+    - "1"
+  - - "3"
+    - Pulitzer Prize Winners - General Nonfiction
+    - ""
+    - ""
+    - 2009-07-16 00:19:47
+    - 2009-07-16 00:19:47
+    - Book
+    - Awards
+    - "1"
