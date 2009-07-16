@@ -14,6 +14,12 @@
 </head>
 <body>
 <img src="/images/timesarrowlogo2.png" alt="time's arrow"> --> alpha --> book collections as timelines --> book lovers welcome
+
+<ul id="navbar">
+  <li><%= link_to_unless_current('ALL', timelines_path) %></li>
+  <li><%= link_to_unless_current('FEATURED', {:controller => 'timelines', :action => 'featured'}) %></li>
+</ul>
+
 <p style="color: green"><%= flash[:notice] %></p>
 
 <%= yield %>

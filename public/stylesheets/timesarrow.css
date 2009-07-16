@@ -58,8 +58,8 @@ a:visited
 
 a:hover 
 { 
-	color: #fff;
-	border-bottom: 1px solid #fff;
+	color: #F7C639;
+	border-bottom: none;
 }
 
 a img 
@@ -149,3 +149,24 @@ div.tlinfo
 {
 	padding: 0em 0em 0.5em 3.75em;
 }
+
+ul#navbar
+{
+	color: #4E78A1;
+	list-style: none;
+	position:absolute;
+	left: 800px;
+	top: 60px;
+}
+
+ul#navbar a
+{
+	color: #9DCAFF;
+}
+
+ul#navbar a:hover
+{
+	color: #F7C639;
+	border-bottom: none;
+}
+
