@@ -30,12 +30,18 @@
   <p>
     <%= f.label :smallimageurl %><br />
     <%= f.text_field :smallimageurl %>
-    <%= image_tag @item.smallimageurl %>
+    
+    <% if !@item.smallimageurl.nil? %>
+      <%= image_tag @item.smallimageurl %>
+    <% end %>
   </p>
   <p>
     <%= f.label :mediumimageurl %><br />
     <%= f.text_field :mediumimageurl %>
-    <%= image_tag @item.mediumimageurl %>
+    <% if !@item.mediumimageurl.nil? %>
+      <%= image_tag @item.mediumimageurl %>
+    <% end %>
+    
   </p>
   <p>
     <%= f.label :publicationdate %><br />

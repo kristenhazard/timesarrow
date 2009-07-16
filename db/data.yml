@@ -1,5 +1,926 @@
 
 --- 
+timelines: 
+  columns: 
+  - id
+  - name
+  - description
+  - imageurl
+  - created_at
+  - updated_at
+  - category
+  - subcategory
+  - featured
+  records: 
+  - - "1"
+    - Pulitzer Prize Winners Fiction
+    - "Timeline of <a href=\"http://www.pulitzer.org/bycat/Fiction\">Pulitzer Prize Winners fiction category</a>. "
+    - http://www.pulitzer.org/bycat/Fiction
+    - 2009-05-29 23:52:21
+    - 2009-07-15 21:09:54
+    - Book
+    - Awards
+    - "1"
+  - - "2"
+    - Oprah's Book Club
+    - Timeline of Oprah's Book Club selections
+    - http://www.oprah.com/article/oprahsbookclub/pastselections/20080701_orig_list
+    - 2009-05-30 21:04:30
+    - 2009-06-29 22:10:30
+    - books
+    - 
+    - 
+  - - "8"
+    - Bill Simmons' Twitter Book Club
+    - Bill Simmons, aka The Sports Guy, created a Twitter Book club. This is a timeline of those selections.
+    - ""
+    - 2009-07-15 21:24:27
+    - 2009-07-15 21:24:27
+    - Book
+    - Clubs
+    - "1"
+
+--- 
+timeline_items: 
+  columns: 
+  - id
+  - timeline_id
+  - item_id
+  - position
+  - created_at
+  - updated_at
+  - position_desc
+  records: 
+  - - "1"
+    - "1"
+    - "8"
+    - "57"
+    - 2009-05-30 00:24:45
+    - 2009-06-08 20:51:53
+    - "2008"
+  - - "2"
+    - "1"
+    - "15"
+    - "56"
+    - 2009-05-30 00:26:40
+    - 2009-06-08 20:52:05
+    - "2007"
+  - - "3"
+    - "1"
+    - "6"
+    - "55"
+    - 2009-05-30 00:27:11
+    - 2009-06-08 20:55:26
+    - "2006"
+  - - "4"
+    - "1"
+    - "17"
+    - "54"
+    - 2009-05-30 00:27:57
+    - 2009-06-08 20:55:58
+    - "2005"
+  - - "5"
+    - "1"
+    - "16"
+    - "53"
+    - 2009-05-30 00:28:44
+    - 2009-06-08 20:55:45
+    - "2004"
+  - - "6"
+    - "1"
+    - "7"
+    - "52"
+    - 2009-05-30 00:29:13
+    - 2009-06-08 20:56:29
+    - "2003"
+  - - "7"
+    - "1"
+    - "19"
+    - "51"
+    - 2009-05-30 20:24:24
+    - 2009-06-08 20:56:38
+    - "2002"
+  - - "8"
+    - "2"
+    - "26"
+    - "105"
+    - 2009-05-30 21:20:23
+    - 2009-06-08 21:06:36
+    - "2008"
+  - - "9"
+    - "2"
+    - "27"
+    - "104"
+    - 2009-05-30 21:20:38
+    - 2009-06-08 21:06:48
+    - "2008"
+  - - "10"
+    - "2"
+    - "28"
+    - "103"
+    - 2009-05-30 21:20:57
+    - 2009-06-08 21:07:55
+    - "2007"
+  - - "11"
+    - "2"
+    - "43"
+    - "103"
+    - 2009-05-30 21:54:27
+    - 2009-06-08 21:07:42
+    - "2007"
+  - - "12"
+    - "2"
+    - "7"
+    - "103"
+    - 2009-05-30 21:54:52
+    - 2009-06-08 21:07:14
+    - "2007"
+  - - "13"
+    - "2"
+    - "15"
+    - "103"
+    - 2009-05-30 21:55:52
+    - 2009-06-08 21:07:28
+    - "2007"
+  - - "14"
+    - "2"
+    - "30"
+    - "103"
+    - 2009-05-30 21:56:14
+    - 2009-06-08 21:07:01
+    - "2007"
+  - - "15"
+    - "2"
+    - "41"
+    - "103"
+    - 2009-05-30 21:56:37
+    - 2009-06-08 21:08:05
+    - "2006"
+  - - "16"
+    - "1"
+    - "21"
+    - "50"
+    - 2009-05-30 21:57:21
+    - 2009-06-08 20:56:53
+    - "2001"
+  - - "17"
+    - "1"
+    - "20"
+    - "58"
+    - 2009-06-06 02:00:27
+    - 2009-06-08 20:55:01
+    - "2009"
+  - - "18"
+    - "1"
+    - "47"
+    - "49"
+    - 2009-06-06 02:02:38
+    - 2009-06-08 20:57:05
+    - "2000"
+  - - "25"
+    - "1"
+    - "54"
+    - "48"
+    - 2009-06-08 21:04:05
+    - 2009-06-08 21:04:27
+    - "1999"
+  - - "26"
+    - "2"
+    - "55"
+    - "103"
+    - 2009-06-08 21:09:36
+    - 2009-06-08 21:15:23
+    - "2005"
+  - - "27"
+    - "1"
+    - "56"
+    - "47"
+    - 2009-06-10 20:34:18
+    - 2009-06-10 20:36:08
+    - "1998"
+  - - "28"
+    - "1"
+    - "57"
+    - "46"
+    - 2009-06-10 20:47:07
+    - 2009-06-10 20:48:00
+    - "1997"
+  - - "29"
+    - "1"
+    - "58"
+    - "45"
+    - 2009-06-10 20:50:39
+    - 2009-06-10 20:50:53
+    - "1996"
+  - - "30"
+    - "1"
+    - "59"
+    - "44"
+    - 2009-06-10 20:52:59
+    - 2009-06-10 20:53:08
+    - "1995"
+  - - "31"
+    - "2"
+    - "60"
+    - "100"
+    - 2009-06-10 20:57:24
+    - 2009-06-10 20:58:29
+    - "2005"
+  - - "32"
+    - "2"
+    - "61"
+    - "99"
+    - 2009-06-10 20:57:40
+    - 2009-06-10 20:59:00
+    - "2005"
+  - - "33"
+    - "2"
+    - "62"
+    - "98"
+    - 2009-06-10 20:57:53
+    - 2009-06-10 20:59:08
+    - "2005"
+  - - "35"
+    - "2"
+    - "64"
+    - "97"
+    - 2009-06-10 21:02:29
+    - 2009-06-10 21:02:40
+    - "2004"
+  - - "38"
+    - "1"
+    - "67"
+    - "43"
+    - 2009-06-29 20:55:59
+    - 2009-06-29 21:00:01
+    - "1994"
+  - - "39"
+    - "1"
+    - "68"
+    - "42"
+    - 2009-06-29 21:04:43
+    - 2009-06-29 21:04:54
+    - "1993"
+  - - "40"
+    - "2"
+    - "69"
+    - "94"
+    - 2009-06-29 22:10:54
+    - 2009-06-29 22:11:06
+    - "2004"
+  - - "41"
+    - "2"
+    - "70"
+    - "93"
+    - 2009-06-29 22:11:43
+    - 2009-06-29 23:00:04
+    - "2004"
+  - - "42"
+    - "2"
+    - "71"
+    - "92"
+    - 2009-06-29 22:12:05
+    - 2009-06-29 22:59:55
+    - "2004"
+  - - "43"
+    - "2"
+    - "72"
+    - "91"
+    - 2009-06-29 22:12:23
+    - 2009-06-29 22:59:46
+    - "2003"
+  - - "44"
+    - "2"
+    - "73"
+    - "90"
+    - 2009-06-29 22:12:37
+    - 2009-06-29 22:59:34
+    - "2003"
+  - - "45"
+    - "2"
+    - "74"
+    - "89"
+    - 2009-06-29 22:12:53
+    - 2009-06-29 22:59:19
+    - "2002"
+  - - "46"
+    - "2"
+    - "75"
+    - "88"
+    - 2009-06-29 22:13:07
+    - 2009-06-29 22:59:11
+    - "2002"
+  - - "47"
+    - "2"
+    - "76"
+    - "87"
+    - 2009-06-29 22:13:18
+    - 2009-06-29 22:59:01
+    - "2001"
+  - - "48"
+    - "2"
+    - "77"
+    - "86"
+    - 2009-06-29 22:13:30
+    - 2009-06-29 22:58:46
+    - "2001"
+  - - "49"
+    - "2"
+    - "78"
+    - "85"
+    - 2009-06-29 22:13:43
+    - 2009-06-29 22:58:39
+    - "2001"
+  - - "50"
+    - "2"
+    - "79"
+    - "84"
+    - 2009-06-29 22:14:05
+    - 2009-06-29 22:58:29
+    - "2001"
+  - - "51"
+    - "2"
+    - "80"
+    - "83"
+    - 2009-06-29 22:14:20
+    - 2009-06-29 22:58:18
+    - "2001"
+  - - "52"
+    - "2"
+    - "81"
+    - "82"
+    - 2009-06-29 22:14:32
+    - 2009-06-29 22:58:09
+    - "2001"
+  - - "53"
+    - "2"
+    - "82"
+    - "81"
+    - 2009-06-29 22:14:46
+    - 2009-06-29 22:57:52
+    - "2000"
+  - - "54"
+    - "2"
+    - "83"
+    - "80"
+    - 2009-06-29 22:14:55
+    - 2009-06-29 22:57:42
+    - "2000"
+  - - "55"
+    - "2"
+    - "84"
+    - "79"
+    - 2009-06-29 22:15:17
+    - 2009-06-29 22:57:34
+    - "2000"
+  - - "56"
+    - "2"
+    - "85"
+    - "78"
+    - 2009-06-29 22:15:48
+    - 2009-06-29 22:57:26
+    - "2000"
+  - - "57"
+    - "2"
+    - "86"
+    - "77"
+    - 2009-06-29 22:16:00
+    - 2009-06-29 22:57:16
+    - "2000"
+  - - "58"
+    - "2"
+    - "87"
+    - "76"
+    - 2009-06-29 22:16:29
+    - 2009-06-29 22:57:08
+    - "2000"
+  - - "59"
+    - "2"
+    - "88"
+    - "75"
+    - 2009-06-29 22:16:58
+    - 2009-06-29 22:57:01
+    - "2000"
+  - - "60"
+    - "2"
+    - "89"
+    - "74"
+    - 2009-06-29 22:17:17
+    - 2009-06-29 22:56:53
+    - "2000"
+  - - "61"
+    - "2"
+    - "90"
+    - "73"
+    - 2009-06-29 22:17:31
+    - 2009-06-29 22:56:41
+    - "2000"
+  - - "62"
+    - "2"
+    - "91"
+    - "72"
+    - 2009-06-29 22:17:54
+    - 2009-06-29 22:56:15
+    - "1999"
+  - - "63"
+    - "2"
+    - "92"
+    - "71"
+    - 2009-06-29 22:18:13
+    - 2009-06-29 22:56:04
+    - "1999"
+  - - "64"
+    - "2"
+    - "93"
+    - "70"
+    - 2009-06-29 22:18:31
+    - 2009-06-29 22:55:54
+    - "1999"
+  - - "65"
+    - "2"
+    - "94"
+    - "69"
+    - 2009-06-29 22:18:50
+    - 2009-06-29 22:55:39
+    - "1999"
+  - - "66"
+    - "2"
+    - "95"
+    - "68"
+    - 2009-06-29 22:19:05
+    - 2009-06-29 22:55:26
+    - "1999"
+  - - "67"
+    - "2"
+    - "96"
+    - "67"
+    - 2009-06-29 22:19:28
+    - 2009-06-29 22:55:19
+    - "1999"
+  - - "68"
+    - "2"
+    - "97"
+    - "66"
+    - 2009-06-29 22:19:46
+    - 2009-06-29 22:55:08
+    - "1999"
+  - - "69"
+    - "2"
+    - "98"
+    - "65"
+    - 2009-06-29 22:20:02
+    - 2009-06-29 22:54:54
+    - "1999"
+  - - "70"
+    - "2"
+    - "99"
+    - "64"
+    - 2009-06-29 22:20:37
+    - 2009-06-29 22:54:40
+    - "1999"
+  - - "71"
+    - "2"
+    - "100"
+    - "63"
+    - 2009-06-29 22:20:52
+    - 2009-06-29 22:54:29
+    - "1998"
+  - - "72"
+    - "2"
+    - "101"
+    - "62"
+    - 2009-06-29 22:21:04
+    - 2009-06-29 22:54:20
+    - "1998"
+  - - "73"
+    - "2"
+    - "102"
+    - "61"
+    - 2009-06-29 22:21:29
+    - 2009-06-29 22:54:09
+    - "1998"
+  - - "74"
+    - "2"
+    - "103"
+    - "60"
+    - 2009-06-29 22:21:51
+    - 2009-06-29 22:53:58
+    - "1998"
+  - - "75"
+    - "2"
+    - "104"
+    - "59"
+    - 2009-06-29 22:22:05
+    - 2009-06-29 22:53:43
+    - "1998"
+  - - "76"
+    - "2"
+    - "105"
+    - "58"
+    - 2009-06-29 22:22:18
+    - 2009-06-29 22:53:29
+    - "1998"
+  - - "77"
+    - "2"
+    - "106"
+    - "57"
+    - 2009-06-29 22:22:28
+    - 2009-06-29 22:53:14
+    - "1998"
+  - - "78"
+    - "2"
+    - "107"
+    - "56"
+    - 2009-06-29 22:22:57
+    - 2009-06-29 22:52:50
+    - "1998"
+  - - "79"
+    - "2"
+    - "108"
+    - "55"
+    - 2009-06-29 22:23:23
+    - 2009-06-29 22:31:42
+    - "1997"
+  - - "80"
+    - "2"
+    - "109"
+    - "54"
+    - 2009-06-29 22:23:44
+    - 2009-06-29 22:31:27
+    - "1997"
+  - - "81"
+    - "2"
+    - "110"
+    - "53"
+    - 2009-06-29 22:23:54
+    - 2009-06-29 22:31:15
+    - "1997"
+  - - "82"
+    - "2"
+    - "111"
+    - "52"
+    - 2009-06-29 22:24:45
+    - 2009-06-29 22:31:05
+    - "1997"
+  - - "83"
+    - "2"
+    - "112"
+    - "51"
+    - 2009-06-29 22:25:01
+    - 2009-06-29 22:30:55
+    - "1997"
+  - - "84"
+    - "2"
+    - "113"
+    - "50"
+    - 2009-06-29 22:25:17
+    - 2009-06-29 22:30:35
+    - "1997"
+  - - "85"
+    - "2"
+    - "114"
+    - "49"
+    - 2009-06-29 22:25:32
+    - 2009-06-29 22:30:25
+    - "1997"
+  - - "86"
+    - "2"
+    - "115"
+    - "48"
+    - 2009-06-29 22:25:48
+    - 2009-06-29 22:30:16
+    - "1997"
+  - - "87"
+    - "2"
+    - "116"
+    - "47"
+    - 2009-06-29 22:26:06
+    - 2009-06-29 22:30:06
+    - "1997"
+  - - "88"
+    - "2"
+    - "117"
+    - "46"
+    - 2009-06-29 22:26:20
+    - 2009-06-29 22:29:50
+    - "1997"
+  - - "89"
+    - "2"
+    - "118"
+    - "45"
+    - 2009-06-29 22:26:31
+    - 2009-06-29 22:29:12
+    - "1997"
+  - - "90"
+    - "2"
+    - "119"
+    - "44"
+    - 2009-06-29 22:26:44
+    - 2009-06-29 22:29:00
+    - "1996"
+  - - "91"
+    - "2"
+    - "120"
+    - "43"
+    - 2009-06-29 22:27:07
+    - 2009-06-29 22:28:49
+    - "1996"
+  - - "92"
+    - "2"
+    - "121"
+    - "42"
+    - 2009-06-29 22:27:22
+    - 2009-06-29 22:28:17
+    - "1996"
+  - - "93"
+    - "1"
+    - "122"
+    - "41"
+    - 2009-06-29 23:09:26
+    - 2009-06-29 23:09:57
+    - "1992"
+  - - "94"
+    - "1"
+    - "123"
+    - "40"
+    - 2009-06-29 23:10:25
+    - 2009-06-29 23:48:14
+    - "1991"
+  - - "95"
+    - "1"
+    - "124"
+    - "39"
+    - 2009-06-29 23:10:46
+    - 2009-06-29 23:48:32
+    - "1990"
+  - - "96"
+    - "1"
+    - "125"
+    - "38"
+    - 2009-06-29 23:10:59
+    - 2009-06-29 23:48:42
+    - "1989"
+  - - "97"
+    - "1"
+    - "126"
+    - "37"
+    - 2009-06-29 23:11:08
+    - 2009-06-29 23:48:56
+    - "1988"
+  - - "98"
+    - "1"
+    - "127"
+    - "36"
+    - 2009-06-29 23:11:27
+    - 2009-06-29 23:52:40
+    - "1987"
+  - - "99"
+    - "1"
+    - "128"
+    - "35"
+    - 2009-06-29 23:12:56
+    - 2009-06-29 23:52:51
+    - "1986"
+  - - "100"
+    - "1"
+    - "129"
+    - "34"
+    - 2009-06-29 23:13:17
+    - 2009-06-29 23:53:06
+    - "1985"
+  - - "101"
+    - "1"
+    - "130"
+    - "33"
+    - 2009-06-29 23:13:25
+    - 2009-06-29 23:53:17
+    - "1984"
+  - - "102"
+    - "1"
+    - "131"
+    - "32"
+    - 2009-06-29 23:14:28
+    - 2009-06-29 23:53:28
+    - "1983"
+  - - "103"
+    - "1"
+    - "132"
+    - "31"
+    - 2009-06-29 23:14:38
+    - 2009-06-29 23:53:39
+    - "1982"
+  - - "104"
+    - "1"
+    - "133"
+    - "30"
+    - 2009-06-29 23:14:57
+    - 2009-06-29 23:53:51
+    - "1981"
+  - - "105"
+    - "1"
+    - "134"
+    - "28"
+    - 2009-06-29 23:15:09
+    - 2009-06-29 23:54:04
+    - "1980"
+  - - "106"
+    - "1"
+    - "135"
+    - "29"
+    - 2009-06-29 23:15:24
+    - 2009-06-29 23:54:22
+    - "1979"
+  - - "107"
+    - "1"
+    - "136"
+    - "27"
+    - 2009-06-29 23:16:33
+    - 2009-06-29 23:54:34
+    - "1978"
+  - - "108"
+    - "1"
+    - "137"
+    - "26"
+    - 2009-06-29 23:37:12
+    - 2009-06-29 23:54:51
+    - "1976"
+  - - "109"
+    - "1"
+    - "138"
+    - "25"
+    - 2009-06-29 23:37:43
+    - 2009-06-29 23:55:00
+    - "1975"
+  - - "110"
+    - "1"
+    - "139"
+    - "24"
+    - 2009-06-29 23:38:04
+    - 2009-06-29 23:55:11
+    - "1973"
+  - - "111"
+    - "1"
+    - "140"
+    - "23"
+    - 2009-06-29 23:38:14
+    - 2009-06-29 23:55:20
+    - "1972"
+  - - "112"
+    - "1"
+    - "141"
+    - "22"
+    - 2009-06-29 23:38:28
+    - 2009-06-29 23:55:31
+    - "1970"
+  - - "113"
+    - "1"
+    - "142"
+    - "21"
+    - 2009-06-29 23:38:40
+    - 2009-06-29 23:55:41
+    - "1969"
+  - - "114"
+    - "1"
+    - "143"
+    - "20"
+    - 2009-06-29 23:38:54
+    - 2009-06-29 23:55:59
+    - "1968"
+  - - "115"
+    - "1"
+    - "144"
+    - "19"
+    - 2009-06-29 23:39:08
+    - 2009-06-29 23:56:11
+    - "1967"
+  - - "116"
+    - "1"
+    - "145"
+    - "18"
+    - 2009-06-29 23:40:04
+    - 2009-06-29 23:56:22
+    - "1966"
+  - - "117"
+    - "1"
+    - "146"
+    - "17"
+    - 2009-06-29 23:40:28
+    - 2009-06-29 23:56:32
+    - "1695"
+  - - "118"
+    - "1"
+    - "147"
+    - "16"
+    - 2009-06-29 23:40:43
+    - 2009-06-29 23:56:45
+    - "1963"
+  - - "119"
+    - "1"
+    - "148"
+    - "15"
+    - 2009-06-29 23:41:02
+    - 2009-06-29 23:56:56
+    - "1962"
+  - - "120"
+    - "1"
+    - "149"
+    - "14"
+    - 2009-06-29 23:41:17
+    - 2009-06-29 23:57:07
+    - "1961"
+  - - "121"
+    - "1"
+    - "150"
+    - "13"
+    - 2009-06-29 23:41:45
+    - 2009-06-29 23:57:16
+    - "1960"
+  - - "122"
+    - "1"
+    - "151"
+    - "12"
+    - 2009-06-29 23:42:25
+    - 2009-06-29 23:57:29
+    - "1959"
+  - - "123"
+    - "1"
+    - "152"
+    - "11"
+    - 2009-06-29 23:42:39
+    - 2009-06-29 23:57:53
+    - "1958"
+  - - "124"
+    - "1"
+    - "153"
+    - "10"
+    - 2009-06-29 23:42:51
+    - 2009-06-29 23:58:07
+    - "1956"
+  - - "125"
+    - "1"
+    - "154"
+    - "9"
+    - 2009-06-29 23:45:04
+    - 2009-06-29 23:58:17
+    - "1955"
+  - - "126"
+    - "1"
+    - "155"
+    - "8"
+    - 2009-06-29 23:45:30
+    - 2009-06-29 23:58:31
+    - "1953"
+  - - "127"
+    - "1"
+    - "156"
+    - "7"
+    - 2009-06-29 23:45:48
+    - 2009-06-29 23:58:42
+    - "1952"
+  - - "128"
+    - "1"
+    - "157"
+    - "6"
+    - 2009-06-29 23:46:20
+    - 2009-06-29 23:58:52
+    - "1951"
+  - - "129"
+    - "1"
+    - "158"
+    - "5"
+    - 2009-06-29 23:46:32
+    - 2009-06-29 23:59:04
+    - "1950"
+  - - "130"
+    - "1"
+    - "159"
+    - "4"
+    - 2009-06-29 23:47:04
+    - 2009-06-29 23:59:14
+    - "1949"
+  - - "131"
+    - "1"
+    - "160"
+    - "3"
+    - 2009-06-29 23:47:16
+    - 2009-06-29 23:59:23
+    - "1948"
+  - - "139"
+    - "8"
+    - "168"
+    - "2"
+    - 2009-07-15 21:24:50
+    - 2009-07-15 21:24:51
+    - set
+  - - "140"
+    - "8"
+    - "169"
+    - "1"
+    - 2009-07-15 21:25:06
+    - 2009-07-15 21:25:06
+    - set
+
+--- 
 items: 
   columns: 
   - id
@@ -84,14 +1005,14 @@ items:
     - "Gilead: A Novel"
     - Book
     - Marilynne Robinson
-    - "<DIV><DIV><DIV>Twenty-four years after her first novel, <I>Housekeeping</I>, Marilynne Robinson returns with an intimate tale of three generations from the Civil War to the twentieth century: a story about fathers and sons and the spiritual battles that still rage at America's heart. Writing in the tradition of Emily Dickinson and Walt Whitman, Marilynne Robinson's beautiful, spare, and spiritual prose allows \"even the faithless reader to feel the possibility of transcendent order\" (<I>Slate</I>). In the luminous and unforgettable voice of Congregationalist minister John Ames, Gilead reveals the human condition and the often unbearable beauty of an ordinary life.</DIV>"
+    - "Twenty-four years after her first novel, <I>Housekeeping</I>, Marilynne Robinson returns with an intimate tale of three generations from the Civil War to the twentieth century: a story about fathers and sons and the spiritual battles that still rage at America's heart. Writing in the tradition of Emily Dickinson and Walt Whitman, Marilynne Robinson's beautiful, spare, and spiritual prose allows \"even the faithless reader to feel the possibility of transcendent order\" (<I>Slate</I>). In the luminous and unforgettable voice of Congregationalist minister John Ames, Gilead reveals the human condition and the often unbearable beauty of an ordinary life."
     - 031242440X
     - http://www.amazon.com/Gilead-Novel-Marilynne-Robinson/dp/031242440X%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D031242440X
     - http://ecx.images-amazon.com/images/I/51AGS2CVVXL._SL75_.jpg
     - http://ecx.images-amazon.com/images/I/51AGS2CVVXL._SL160_.jpg
     - "2006-01-10"
     - 2009-05-30 00:27:32
-    - 2009-05-30 00:27:32
+    - 2009-07-15 19:41:50
   - - "18"
     - THE SHIPPING NEWS
     - Book
@@ -156,14 +1077,14 @@ items:
     - "The Hours: A Novel"
     - Book
     - Michael Cunningham
-    - ""
-    - B000S9HVZU
-    - http://www.amazon.com/Hours-Novel-Michael-Cunningham/dp/B000S9HVZU%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000S9HVZU
-    - http://ecx.images-amazon.com/images/I/51GS4G-Hz0L._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/51GS4G-Hz0L._SL160_.jpg
-    - "2000-01-15"
+    - "<b>The Pulitzer Prize-winning novel becomes a motion picture starring Meryl Streep, Julianne Moore, and Nicole Kidman, directed by Stephen Daldry from a screenplay by David Hare</b><br><br><i>The Hours</i> tells the story of three women: Virginia Woolf, beginning to write Mrs. Dalloway as she recuperates in a London suburb with her husband in 1923; Clarissa Vaughan, beloved friend of an acclaimed poet dying from AIDS, who in modern-day New York is planning a party in his honor; and Laura Brown, in a 1949 Los Angeles suburb, who slowly begins to feel the constraints of a perfect family and home. By the end of the novel, these three stories intertwine in remarkable ways, and finally come together in an act of subtle and haunting grace."
+    - B001F0RA4S
+    - http://www.amazon.com/Hours-Novel-Michael-Cunningham/dp/B001F0RA4S%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001F0RA4S
+    - http://ecx.images-amazon.com/images/I/51ANDQPQQ4L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51ANDQPQQ4L._SL160_.jpg
+    - "2002-11-09"
     - 2009-05-30 20:20:49
-    - 2009-05-30 20:20:49
+    - 2009-07-15 22:07:03
   - - "24"
     - American Pastoral
     - Book
@@ -456,14 +1377,14 @@ items:
     - "The Hours: A Novel"
     - Book
     - Michael Cunningham
-    - ""
-    - B000S9HVZU
-    - http://www.amazon.com/Hours-Novel-Michael-Cunningham/dp/B000S9HVZU%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000S9HVZU
-    - http://ecx.images-amazon.com/images/I/51GS4G-Hz0L._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/51GS4G-Hz0L._SL160_.jpg
-    - "2000-01-15"
+    - "<b>The Pulitzer Prize-winning novel becomes a motion picture starring Meryl Streep, Julianne Moore, and Nicole Kidman, directed by Stephen Daldry from a screenplay by David Hare</b><br><br><i>The Hours</i> tells the story of three women: Virginia Woolf, beginning to write Mrs. Dalloway as she recuperates in a London suburb with her husband in 1923; Clarissa Vaughan, beloved friend of an acclaimed poet dying from AIDS, who in modern-day New York is planning a party in his honor; and Laura Brown, in a 1949 Los Angeles suburb, who slowly begins to feel the constraints of a perfect family and home. By the end of the novel, these three stories intertwine in remarkable ways, and finally come together in an act of subtle and haunting grace.<br>"
+    - B001F0RA4S
+    - http://www.amazon.com/Hours-Novel-Michael-Cunningham/dp/B001F0RA4S%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001F0RA4S
+    - http://ecx.images-amazon.com/images/I/51ANDQPQQ4L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51ANDQPQQ4L._SL160_.jpg
+    - "2002-11-09"
     - 2009-06-08 21:04:05
-    - 2009-06-08 21:04:05
+    - 2009-07-15 22:09:11
   - - "55"
     - A Million Little Pieces
     - Book
@@ -609,17 +1530,17 @@ items:
     - 2009-06-29 19:16:51
     - 2009-06-29 19:16:51
   - - "67"
-    - THE SHIPPING NEWS
+    - "Shipping News: A Novel (Scribner Classics)"
     - Book
-    - E. Annie Proulx
-    - ""
-    - B001IKGXWA
-    - http://www.amazon.com/SHIPPING-NEWS-E-Annie-Proulx/dp/B001IKGXWA%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001IKGXWA
-    - http://ecx.images-amazon.com/images/I/41e2yLR3PDL._SL75_.gif
-    - http://ecx.images-amazon.com/images/I/41e2yLR3PDL._SL160_.gif
-    - "1994-06-01"
+    - Annie Proulx
+    - <P> Winner of the Pulitzer Prize and the National Book Award, <I>The Shipping News</I> is a celebration of Annie Proulx's genius for storytelling and her vigorous contribution to the art of the novel. <P> Quoyle, a third-rate newspaper hack, with a "head shaped like a crenshaw, no neck, reddish hair...features as bunched as kissed fingertips," is wrenched violently out of his workaday life when his two-timing wife meets her just deserts. An aunt convinces Quoyle and his two emotionally disturbed daughters to return with her to the starkly beautiful coastal landscape of their ancestral home in Newfoundland. Here, on desolate Quoyle's Point, in a house empty except for a few mementos of the family's unsavory past, the battered members of three generations try to cobble up new lives. <P> Newfoundland is a country of coast and cove where the mercury rarely rises above 70 degrees, the local culinary delicacy is cod cheeks, and it's easier to travel by boat and snowmobile than on anything with wheels. In this harsh place of cruel storms, a collapsing fishery, and chronic unemployment, the aunt sets up as a yacht upholsterer in nearby Killick-Claw, and Quoyle finds a job reporting the shipping news for the local weekly, the <I>Gammy Bird</I> (a paper that specializes in sexual-abuse stories and grisly photos of car accidents). <P> As the long winter closes its jaws of ice, each of the Quoyles confronts private demons, reels from catastrophe to minor triumph -- in the company of the obsequious Mavis Bangs; Diddy Shovel the strongman; drowned Herald Prowse; cane-twirling Beety; Nutbeem, who steals foreign news from the radio; a demented cousin the aunt refuses to recognize; the much-zippered Alvin Yark; silent Wavey; and old Billy Pretty, with his bag of secrets. By the time of the spring storms Quoyle has learned how to gut cod, to escape from a pickle jar, and to tie a true lover's knot.
+    - 068485791X
+    - http://www.amazon.com/Shipping-News-Novel-Scribner-Classics/dp/068485791X%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D068485791X
+    - http://ecx.images-amazon.com/images/I/41TTQVCYE6L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/41TTQVCYE6L._SL160_.jpg
+    - "1999-05-10"
     - 2009-06-29 20:55:59
-    - 2009-06-29 20:55:59
+    - 2009-07-15 22:10:10
   - - "68"
     - "A Good Scent from a Strange Mountain: Stories"
     - Book
@@ -1377,17 +2298,17 @@ items:
     - 2009-06-29 23:13:25
     - 2009-06-29 23:13:25
   - - "131"
-    - The Color Purple
+    - The Color Purple (Musical Tie-in)
     - Book
     - Alice Walker
-    - ""
-    - B001JEE3ZY
-    - http://www.amazon.com/Color-Purple-Alice-Walker/dp/B001JEE3ZY%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001JEE3ZY
-    - http://ecx.images-amazon.com/images/I/51d7T8RsJiL._SL75_.jpg
-    - http://ecx.images-amazon.com/images/I/51d7T8RsJiL._SL160_.jpg
-    - "2003-05-01"
+    - Celie is a poor black woman whose letters tell the story of 20 years of her life, beginning at age 14 when she is being abused and raped by her father and attempting to protect her sister from the same fate, and continuing over the course of her marriage to "Mister," a brutal man who terrorizes her. Celie eventually learns that her abusive husband has been keeping her sister's letters from her and the rage she feels, combined with an example of love and independence provided by her close friend Shug, pushes her finally toward an awakening of her creative and loving self.
+    - 0156031825
+    - http://www.amazon.com/Color-Purple-Musical-Tie-/dp/0156031825%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0156031825
+    - http://ecx.images-amazon.com/images/I/51lwiVE2oOL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51lwiVE2oOL._SL160_.jpg
+    - "2006-11-01"
     - 2009-06-29 23:14:28
-    - 2009-06-29 23:14:28
+    - 2009-07-15 22:11:51
   - - "132"
     - Rabbit Is Rich
     - Book
@@ -1716,14 +2637,14 @@ items:
     - Guard of Honor
     - Book
     - James Gould Cozzens
-    - "<div><i>Guard of Honor</i> is a neglected masterpiece that stands comparison with the greatest novels of the Second World War--essayist Noel Perrin deemed it \"probably the best war novel of the twentieth century.\"<br>\t<br>James Gould Cozzens's <i>Guard of Honor</i> won the Pulitzer Prize in 1949. The novel balances a vast cast of intricately enmeshed characters as they react over the course of three tense days in September 1943 to a racial incident on a U.S. Army airbase in Florida. The reader is acutely aware of the war raging abroad and the effect it has had, or will have, on the multitude of servicemen who populate Cozzens's immense canvas. As Noel Perrin commented in <i>The Washington Post Book World:</i> \"There is material for two or three hundred movies in <i>Guard of Honor</i>.\"<br>\t<br>\"No other American novelist of our time writes with such profound understanding of the wellsprings of human character and of the social pressures that help to form it,\" said Orville Prescott in <i>The New York Times</i>. As Brendan Gill observed in <i>The New Yorker</i>: \"Every page of <i>Guard of Honor</i> gives the impression of a writer at the very top of his powers setting out to accomplish nothing less than his masterwork.\"<br></div>"
+    - "<i>Guard of Honor</i> is a neglected masterpiece that stands comparison with the greatest novels of the Second World War--essayist Noel Perrin deemed it \"probably the best war novel of the twentieth century.\"<br>\t<br>James Gould Cozzens's <i>Guard of Honor</i> won the Pulitzer Prize in 1949. The novel balances a vast cast of intricately enmeshed characters as they react over the course of three tense days in September 1943 to a racial incident on a U.S. Army airbase in Florida. The reader is acutely aware of the war raging abroad and the effect it has had, or will have, on the multitude of servicemen who populate Cozzens's immense canvas. As Noel Perrin commented in <i>The Washington Post Book World:</i> \"There is material for two or three hundred movies in <i>Guard of Honor</i>.\"<br>\t<br>\"No other American novelist of our time writes with such profound understanding of the wellsprings of human character and of the social pressures that help to form it,\" said Orville Prescott in <i>The New York Times</i>. As Brendan Gill observed in <i>The New Yorker</i>: \"Every page of <i>Guard of Honor</i> gives the impression of a writer at the very top of his powers setting out to accomplish nothing less than his masterwork.\"<br>"
     - 0156376091
     - http://www.amazon.com/Guard-Honor-James-Gould-Cozzens/dp/0156376091%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0156376091
     - http://ecx.images-amazon.com/images/I/517Q01M56KL._SL75_.jpg
     - http://ecx.images-amazon.com/images/I/517Q01M56KL._SL160_.jpg
     - "1964-10-07"
     - 2009-06-29 23:47:04
-    - 2009-06-29 23:47:04
+    - 2009-07-15 19:42:47
   - - "160"
     - Tales of the South Pacific
     - Book
@@ -1736,895 +2657,27 @@ items:
     - "1984-09-12"
     - 2009-06-29 23:47:16
     - 2009-06-29 23:47:16
-
---- 
-timelines: 
-  columns: 
-  - id
-  - name
-  - description
-  - imageurl
-  - created_at
-  - updated_at
-  - category
-  records: 
-  - - "1"
-    - Pulitzer Prize Winners Fiction
-    - Timeline of Pulitzer Prize Winners, fiction category
-    - http://www.pulitzer.org/bycat/Fiction
-    - 2009-05-29 23:52:21
-    - 2009-06-29 22:09:08
-    - books
-  - - "2"
-    - Oprah's Book Club
-    - Timeline of Oprah's Book Club selections
-    - http://www.oprah.com/article/oprahsbookclub/pastselections/20080701_orig_list
-    - 2009-05-30 21:04:30
-    - 2009-06-29 22:10:30
-    - books
-
---- 
-timeline_items: 
-  columns: 
-  - id
-  - timeline_id
-  - item_id
-  - position
-  - created_at
-  - updated_at
-  - position_desc
-  records: 
-  - - "1"
-    - "1"
-    - "8"
-    - "55"
-    - 2009-05-30 00:24:45
-    - 2009-06-08 20:51:53
-    - "2008"
-  - - "2"
-    - "1"
-    - "15"
-    - "54"
-    - 2009-05-30 00:26:40
-    - 2009-06-08 20:52:05
-    - "2007"
-  - - "3"
-    - "1"
-    - "6"
-    - "53"
-    - 2009-05-30 00:27:11
-    - 2009-06-08 20:55:26
-    - "2006"
-  - - "4"
-    - "1"
-    - "17"
-    - "52"
-    - 2009-05-30 00:27:57
-    - 2009-06-08 20:55:58
-    - "2005"
-  - - "5"
-    - "1"
-    - "16"
-    - "51"
-    - 2009-05-30 00:28:44
-    - 2009-06-08 20:55:45
-    - "2004"
-  - - "6"
-    - "1"
-    - "7"
-    - "50"
-    - 2009-05-30 00:29:13
-    - 2009-06-08 20:56:29
-    - "2003"
-  - - "7"
-    - "1"
-    - "19"
-    - "49"
-    - 2009-05-30 20:24:24
-    - 2009-06-08 20:56:38
-    - "2002"
-  - - "8"
-    - "2"
-    - "26"
-    - "103"
-    - 2009-05-30 21:20:23
-    - 2009-06-08 21:06:36
-    - "2008"
-  - - "9"
-    - "2"
-    - "27"
-    - "102"
-    - 2009-05-30 21:20:38
-    - 2009-06-08 21:06:48
-    - "2008"
-  - - "10"
-    - "2"
-    - "28"
-    - "101"
-    - 2009-05-30 21:20:57
-    - 2009-06-08 21:07:55
-    - "2007"
-  - - "11"
-    - "2"
-    - "43"
-    - "101"
-    - 2009-05-30 21:54:27
-    - 2009-06-08 21:07:42
-    - "2007"
-  - - "12"
-    - "2"
-    - "7"
-    - "101"
-    - 2009-05-30 21:54:52
-    - 2009-06-08 21:07:14
-    - "2007"
-  - - "13"
-    - "2"
-    - "15"
-    - "101"
-    - 2009-05-30 21:55:52
-    - 2009-06-08 21:07:28
-    - "2007"
-  - - "14"
-    - "2"
-    - "30"
-    - "101"
-    - 2009-05-30 21:56:14
-    - 2009-06-08 21:07:01
-    - "2007"
-  - - "15"
-    - "2"
-    - "41"
-    - "101"
-    - 2009-05-30 21:56:37
-    - 2009-06-08 21:08:05
-    - "2006"
-  - - "16"
-    - "1"
-    - "21"
-    - "48"
-    - 2009-05-30 21:57:21
-    - 2009-06-08 20:56:53
-    - "2001"
-  - - "17"
-    - "1"
-    - "20"
-    - "56"
-    - 2009-06-06 02:00:27
-    - 2009-06-08 20:55:01
-    - "2009"
-  - - "18"
-    - "1"
-    - "47"
-    - "47"
-    - 2009-06-06 02:02:38
-    - 2009-06-08 20:57:05
-    - "2000"
-  - - "25"
-    - "1"
-    - "54"
-    - "46"
-    - 2009-06-08 21:04:05
-    - 2009-06-08 21:04:27
-    - "1999"
-  - - "26"
-    - "2"
-    - "55"
-    - "101"
-    - 2009-06-08 21:09:36
-    - 2009-06-08 21:15:23
-    - "2005"
-  - - "27"
-    - "1"
-    - "56"
-    - "45"
-    - 2009-06-10 20:34:18
-    - 2009-06-10 20:36:08
-    - "1998"
-  - - "28"
-    - "1"
-    - "57"
-    - "44"
-    - 2009-06-10 20:47:07
-    - 2009-06-10 20:48:00
-    - "1997"
-  - - "29"
-    - "1"
-    - "58"
-    - "43"
-    - 2009-06-10 20:50:39
-    - 2009-06-10 20:50:53
-    - "1996"
-  - - "30"
-    - "1"
-    - "59"
-    - "42"
-    - 2009-06-10 20:52:59
-    - 2009-06-10 20:53:08
-    - "1995"
-  - - "31"
-    - "2"
-    - "60"
-    - "98"
-    - 2009-06-10 20:57:24
-    - 2009-06-10 20:58:29
-    - "2005"
-  - - "32"
-    - "2"
-    - "61"
-    - "97"
-    - 2009-06-10 20:57:40
-    - 2009-06-10 20:59:00
-    - "2005"
-  - - "33"
-    - "2"
-    - "62"
-    - "96"
-    - 2009-06-10 20:57:53
-    - 2009-06-10 20:59:08
-    - "2005"
-  - - "35"
-    - "2"
-    - "64"
-    - "95"
-    - 2009-06-10 21:02:29
-    - 2009-06-10 21:02:40
-    - "2004"
-  - - "38"
-    - "1"
-    - "67"
-    - "41"
-    - 2009-06-29 20:55:59
-    - 2009-06-29 21:00:01
-    - "1994"
-  - - "39"
-    - "1"
-    - "68"
-    - "40"
-    - 2009-06-29 21:04:43
-    - 2009-06-29 21:04:54
-    - "1993"
-  - - "40"
-    - "2"
-    - "69"
-    - "92"
-    - 2009-06-29 22:10:54
-    - 2009-06-29 22:11:06
-    - "2004"
-  - - "41"
-    - "2"
-    - "70"
-    - "91"
-    - 2009-06-29 22:11:43
-    - 2009-06-29 23:00:04
-    - "2004"
-  - - "42"
-    - "2"
-    - "71"
-    - "90"
-    - 2009-06-29 22:12:05
-    - 2009-06-29 22:59:55
-    - "2004"
-  - - "43"
-    - "2"
-    - "72"
-    - "89"
-    - 2009-06-29 22:12:23
-    - 2009-06-29 22:59:46
-    - "2003"
-  - - "44"
-    - "2"
-    - "73"
-    - "88"
-    - 2009-06-29 22:12:37
-    - 2009-06-29 22:59:34
-    - "2003"
-  - - "45"
-    - "2"
-    - "74"
-    - "87"
-    - 2009-06-29 22:12:53
-    - 2009-06-29 22:59:19
-    - "2002"
-  - - "46"
-    - "2"
-    - "75"
-    - "86"
-    - 2009-06-29 22:13:07
-    - 2009-06-29 22:59:11
-    - "2002"
-  - - "47"
-    - "2"
-    - "76"
-    - "85"
-    - 2009-06-29 22:13:18
-    - 2009-06-29 22:59:01
-    - "2001"
-  - - "48"
-    - "2"
-    - "77"
-    - "84"
-    - 2009-06-29 22:13:30
-    - 2009-06-29 22:58:46
-    - "2001"
-  - - "49"
-    - "2"
-    - "78"
-    - "83"
-    - 2009-06-29 22:13:43
-    - 2009-06-29 22:58:39
-    - "2001"
-  - - "50"
-    - "2"
-    - "79"
-    - "82"
-    - 2009-06-29 22:14:05
-    - 2009-06-29 22:58:29
-    - "2001"
-  - - "51"
-    - "2"
-    - "80"
-    - "81"
-    - 2009-06-29 22:14:20
-    - 2009-06-29 22:58:18
-    - "2001"
-  - - "52"
-    - "2"
-    - "81"
-    - "80"
-    - 2009-06-29 22:14:32
-    - 2009-06-29 22:58:09
-    - "2001"
-  - - "53"
-    - "2"
-    - "82"
-    - "79"
-    - 2009-06-29 22:14:46
-    - 2009-06-29 22:57:52
-    - "2000"
-  - - "54"
-    - "2"
-    - "83"
-    - "78"
-    - 2009-06-29 22:14:55
-    - 2009-06-29 22:57:42
-    - "2000"
-  - - "55"
-    - "2"
-    - "84"
-    - "77"
-    - 2009-06-29 22:15:17
-    - 2009-06-29 22:57:34
-    - "2000"
-  - - "56"
-    - "2"
-    - "85"
-    - "76"
-    - 2009-06-29 22:15:48
-    - 2009-06-29 22:57:26
-    - "2000"
-  - - "57"
-    - "2"
-    - "86"
-    - "75"
-    - 2009-06-29 22:16:00
-    - 2009-06-29 22:57:16
-    - "2000"
-  - - "58"
-    - "2"
-    - "87"
-    - "74"
-    - 2009-06-29 22:16:29
-    - 2009-06-29 22:57:08
-    - "2000"
-  - - "59"
-    - "2"
-    - "88"
-    - "73"
-    - 2009-06-29 22:16:58
-    - 2009-06-29 22:57:01
-    - "2000"
-  - - "60"
-    - "2"
-    - "89"
-    - "72"
-    - 2009-06-29 22:17:17
-    - 2009-06-29 22:56:53
-    - "2000"
-  - - "61"
-    - "2"
-    - "90"
-    - "71"
-    - 2009-06-29 22:17:31
-    - 2009-06-29 22:56:41
-    - "2000"
-  - - "62"
-    - "2"
-    - "91"
-    - "70"
-    - 2009-06-29 22:17:54
-    - 2009-06-29 22:56:15
-    - "1999"
-  - - "63"
-    - "2"
-    - "92"
-    - "69"
-    - 2009-06-29 22:18:13
-    - 2009-06-29 22:56:04
-    - "1999"
-  - - "64"
-    - "2"
-    - "93"
-    - "68"
-    - 2009-06-29 22:18:31
-    - 2009-06-29 22:55:54
-    - "1999"
-  - - "65"
-    - "2"
-    - "94"
-    - "67"
-    - 2009-06-29 22:18:50
-    - 2009-06-29 22:55:39
-    - "1999"
-  - - "66"
-    - "2"
-    - "95"
-    - "66"
-    - 2009-06-29 22:19:05
-    - 2009-06-29 22:55:26
-    - "1999"
-  - - "67"
-    - "2"
-    - "96"
-    - "65"
-    - 2009-06-29 22:19:28
-    - 2009-06-29 22:55:19
-    - "1999"
-  - - "68"
-    - "2"
-    - "97"
-    - "64"
-    - 2009-06-29 22:19:46
-    - 2009-06-29 22:55:08
-    - "1999"
-  - - "69"
-    - "2"
-    - "98"
-    - "63"
-    - 2009-06-29 22:20:02
-    - 2009-06-29 22:54:54
-    - "1999"
-  - - "70"
-    - "2"
-    - "99"
-    - "62"
-    - 2009-06-29 22:20:37
-    - 2009-06-29 22:54:40
-    - "1999"
-  - - "71"
-    - "2"
-    - "100"
-    - "61"
-    - 2009-06-29 22:20:52
-    - 2009-06-29 22:54:29
-    - "1998"
-  - - "72"
-    - "2"
-    - "101"
-    - "60"
-    - 2009-06-29 22:21:04
-    - 2009-06-29 22:54:20
-    - "1998"
-  - - "73"
-    - "2"
-    - "102"
-    - "59"
-    - 2009-06-29 22:21:29
-    - 2009-06-29 22:54:09
-    - "1998"
-  - - "74"
-    - "2"
-    - "103"
-    - "58"
-    - 2009-06-29 22:21:51
-    - 2009-06-29 22:53:58
-    - "1998"
-  - - "75"
-    - "2"
-    - "104"
-    - "57"
-    - 2009-06-29 22:22:05
-    - 2009-06-29 22:53:43
-    - "1998"
-  - - "76"
-    - "2"
-    - "105"
-    - "56"
-    - 2009-06-29 22:22:18
-    - 2009-06-29 22:53:29
-    - "1998"
-  - - "77"
-    - "2"
-    - "106"
-    - "55"
-    - 2009-06-29 22:22:28
-    - 2009-06-29 22:53:14
-    - "1998"
-  - - "78"
-    - "2"
-    - "107"
-    - "54"
-    - 2009-06-29 22:22:57
-    - 2009-06-29 22:52:50
-    - "1998"
-  - - "79"
-    - "2"
-    - "108"
-    - "53"
-    - 2009-06-29 22:23:23
-    - 2009-06-29 22:31:42
-    - "1997"
-  - - "80"
-    - "2"
-    - "109"
-    - "52"
-    - 2009-06-29 22:23:44
-    - 2009-06-29 22:31:27
-    - "1997"
-  - - "81"
-    - "2"
-    - "110"
-    - "51"
-    - 2009-06-29 22:23:54
-    - 2009-06-29 22:31:15
-    - "1997"
-  - - "82"
-    - "2"
-    - "111"
-    - "50"
-    - 2009-06-29 22:24:45
-    - 2009-06-29 22:31:05
-    - "1997"
-  - - "83"
-    - "2"
-    - "112"
-    - "49"
-    - 2009-06-29 22:25:01
-    - 2009-06-29 22:30:55
-    - "1997"
-  - - "84"
-    - "2"
-    - "113"
-    - "48"
-    - 2009-06-29 22:25:17
-    - 2009-06-29 22:30:35
-    - "1997"
-  - - "85"
-    - "2"
-    - "114"
-    - "47"
-    - 2009-06-29 22:25:32
-    - 2009-06-29 22:30:25
-    - "1997"
-  - - "86"
-    - "2"
-    - "115"
-    - "46"
-    - 2009-06-29 22:25:48
-    - 2009-06-29 22:30:16
-    - "1997"
-  - - "87"
-    - "2"
-    - "116"
-    - "45"
-    - 2009-06-29 22:26:06
-    - 2009-06-29 22:30:06
-    - "1997"
-  - - "88"
-    - "2"
-    - "117"
-    - "44"
-    - 2009-06-29 22:26:20
-    - 2009-06-29 22:29:50
-    - "1997"
-  - - "89"
-    - "2"
-    - "118"
-    - "43"
-    - 2009-06-29 22:26:31
-    - 2009-06-29 22:29:12
-    - "1997"
-  - - "90"
-    - "2"
-    - "119"
-    - "42"
-    - 2009-06-29 22:26:44
-    - 2009-06-29 22:29:00
-    - "1996"
-  - - "91"
-    - "2"
-    - "120"
-    - "41"
-    - 2009-06-29 22:27:07
-    - 2009-06-29 22:28:49
-    - "1996"
-  - - "92"
-    - "2"
-    - "121"
-    - "40"
-    - 2009-06-29 22:27:22
-    - 2009-06-29 22:28:17
-    - "1996"
-  - - "93"
-    - "1"
-    - "122"
-    - "39"
-    - 2009-06-29 23:09:26
-    - 2009-06-29 23:09:57
-    - "1992"
-  - - "94"
-    - "1"
-    - "123"
-    - "38"
-    - 2009-06-29 23:10:25
-    - 2009-06-29 23:48:14
-    - "1991"
-  - - "95"
-    - "1"
-    - "124"
-    - "37"
-    - 2009-06-29 23:10:46
-    - 2009-06-29 23:48:32
-    - "1990"
-  - - "96"
-    - "1"
-    - "125"
-    - "36"
-    - 2009-06-29 23:10:59
-    - 2009-06-29 23:48:42
-    - "1989"
-  - - "97"
-    - "1"
-    - "126"
-    - "35"
-    - 2009-06-29 23:11:08
-    - 2009-06-29 23:48:56
-    - "1988"
-  - - "98"
-    - "1"
-    - "127"
-    - "34"
-    - 2009-06-29 23:11:27
-    - 2009-06-29 23:52:40
-    - "1987"
-  - - "99"
-    - "1"
-    - "128"
-    - "33"
-    - 2009-06-29 23:12:56
-    - 2009-06-29 23:52:51
-    - "1986"
-  - - "100"
-    - "1"
-    - "129"
-    - "32"
-    - 2009-06-29 23:13:17
-    - 2009-06-29 23:53:06
-    - "1985"
-  - - "101"
-    - "1"
-    - "130"
-    - "31"
-    - 2009-06-29 23:13:25
-    - 2009-06-29 23:53:17
-    - "1984"
-  - - "102"
-    - "1"
-    - "131"
-    - "30"
-    - 2009-06-29 23:14:28
-    - 2009-06-29 23:53:28
-    - "1983"
-  - - "103"
-    - "1"
-    - "132"
-    - "29"
-    - 2009-06-29 23:14:38
-    - 2009-06-29 23:53:39
-    - "1982"
-  - - "104"
-    - "1"
-    - "133"
-    - "28"
-    - 2009-06-29 23:14:57
-    - 2009-06-29 23:53:51
-    - "1981"
-  - - "105"
-    - "1"
-    - "134"
-    - "26"
-    - 2009-06-29 23:15:09
-    - 2009-06-29 23:54:04
-    - "1980"
-  - - "106"
-    - "1"
-    - "135"
-    - "27"
-    - 2009-06-29 23:15:24
-    - 2009-06-29 23:54:22
-    - "1979"
-  - - "107"
-    - "1"
-    - "136"
-    - "25"
-    - 2009-06-29 23:16:33
-    - 2009-06-29 23:54:34
-    - "1978"
-  - - "108"
-    - "1"
-    - "137"
-    - "24"
-    - 2009-06-29 23:37:12
-    - 2009-06-29 23:54:51
-    - "1976"
-  - - "109"
-    - "1"
-    - "138"
-    - "23"
-    - 2009-06-29 23:37:43
-    - 2009-06-29 23:55:00
-    - "1975"
-  - - "110"
-    - "1"
-    - "139"
-    - "22"
-    - 2009-06-29 23:38:04
-    - 2009-06-29 23:55:11
-    - "1973"
-  - - "111"
-    - "1"
-    - "140"
-    - "21"
-    - 2009-06-29 23:38:14
-    - 2009-06-29 23:55:20
-    - "1972"
-  - - "112"
-    - "1"
-    - "141"
-    - "20"
-    - 2009-06-29 23:38:28
-    - 2009-06-29 23:55:31
-    - "1970"
-  - - "113"
-    - "1"
-    - "142"
-    - "19"
-    - 2009-06-29 23:38:40
-    - 2009-06-29 23:55:41
-    - "1969"
-  - - "114"
-    - "1"
-    - "143"
-    - "18"
-    - 2009-06-29 23:38:54
-    - 2009-06-29 23:55:59
-    - "1968"
-  - - "115"
-    - "1"
-    - "144"
-    - "17"
-    - 2009-06-29 23:39:08
-    - 2009-06-29 23:56:11
-    - "1967"
-  - - "116"
-    - "1"
-    - "145"
-    - "16"
-    - 2009-06-29 23:40:04
-    - 2009-06-29 23:56:22
-    - "1966"
-  - - "117"
-    - "1"
-    - "146"
-    - "15"
-    - 2009-06-29 23:40:28
-    - 2009-06-29 23:56:32
-    - "1695"
-  - - "118"
-    - "1"
-    - "147"
-    - "14"
-    - 2009-06-29 23:40:43
-    - 2009-06-29 23:56:45
-    - "1963"
-  - - "119"
-    - "1"
-    - "148"
-    - "13"
-    - 2009-06-29 23:41:02
-    - 2009-06-29 23:56:56
-    - "1962"
-  - - "120"
-    - "1"
-    - "149"
-    - "12"
-    - 2009-06-29 23:41:17
-    - 2009-06-29 23:57:07
-    - "1961"
-  - - "121"
-    - "1"
-    - "150"
-    - "11"
-    - 2009-06-29 23:41:45
-    - 2009-06-29 23:57:16
-    - "1960"
-  - - "122"
-    - "1"
-    - "151"
-    - "10"
-    - 2009-06-29 23:42:25
-    - 2009-06-29 23:57:29
-    - "1959"
-  - - "123"
-    - "1"
-    - "152"
-    - "9"
-    - 2009-06-29 23:42:39
-    - 2009-06-29 23:57:53
-    - "1958"
-  - - "124"
-    - "1"
-    - "153"
-    - "8"
-    - 2009-06-29 23:42:51
-    - 2009-06-29 23:58:07
-    - "1956"
-  - - "125"
-    - "1"
-    - "154"
-    - "7"
-    - 2009-06-29 23:45:04
-    - 2009-06-29 23:58:17
-    - "1955"
-  - - "126"
-    - "1"
-    - "155"
-    - "6"
-    - 2009-06-29 23:45:30
-    - 2009-06-29 23:58:31
-    - "1953"
-  - - "127"
-    - "1"
-    - "156"
-    - "5"
-    - 2009-06-29 23:45:48
-    - 2009-06-29 23:58:42
-    - "1952"
-  - - "128"
-    - "1"
-    - "157"
-    - "4"
-    - 2009-06-29 23:46:20
-    - 2009-06-29 23:58:52
-    - "1951"
-  - - "129"
-    - "1"
-    - "158"
-    - "3"
-    - 2009-06-29 23:46:32
-    - 2009-06-29 23:59:04
-    - "1950"
-  - - "130"
-    - "1"
-    - "159"
-    - "2"
-    - 2009-06-29 23:47:04
-    - 2009-06-29 23:59:14
-    - "1949"
-  - - "131"
-    - "1"
-    - "160"
-    - "1"
-    - 2009-06-29 23:47:16
-    - 2009-06-29 23:59:23
-    - "1948"
+  - - "168"
+    - The Breaks of the Game
+    - Book
+    - David Halberstam
+    - <P> "One of the best books I've ever read about American sports!"  <br>--Christopher Lehmann-Haupt, <i>The New York Times</i></P>    <P>Available for the first time in years, David Halberstam's <i>The Breaks of the Game</i> focuses on one grim season (1979-80) in the life of the Portland Trail Blazers, a team that only three years before had been National Basketball Association champions. </p><P><P>As Halberstam follows this collection of men through the months, through the losing streaks and occasional victories, the endless trips and the brutal schedules, we come to know them and their world--the other players, coaches, and owners; the competition, drafts, trades, and traditions; the wives, the fans, the media connections--a world of grand dreams, impossible expectations, and bracing realities.  </p><P><P>The tactile authenticity of Halberstam's knowledge of the basketball world is unrivaled.  Yet he is writing here about far more than just basketball. This is a story about a place in our society where power, money, and talent collide and sometimes corrupt, a place where both national obsessions and naked greed are exposed. It's about the influence of big media, the fans and the hype they subsist on, the clash of ethics, the terrible physical demands of modern sports (from drugs to body size), the unreal salaries, the conflicts of race and class, and the consequences of sport converted into mass entertainment and athletes transformed into superstars--all presented in a way that puts the reader in the room and on the court, and <i>The Breaks of the Game</i> in a league of its own.</p>
+    - "1401309720"
+    - http://www.amazon.com/Breaks-Game-David-Halberstam/dp/1401309720%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1401309720
+    - http://ecx.images-amazon.com/images/I/51ghu276tsL._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51ghu276tsL._SL160_.jpg
+    - "2009-02-17"
+    - 2009-07-15 21:24:50
+    - 2009-07-15 21:24:50
+  - - "169"
+    - "Live From New York: An Uncensored History of Saturday Night Live, as Told By Its Stars, Writers and Guests"
+    - Book
+    - James A. Miller
+    - "The New York Times bestselling oral history of Saturday Night Live that finally reveals what really went on backstage, on the set, in the writers' offices, and on the town, is now in paperback!    <P>In their own words, a galaxy of stars--including Mike Myers, Chris Rock, Bill Murray, Tom Hanks, Adam Sandler, Dan Aykroyd, Steve Martin, Dana Carvey, Tina Fey, Molly Shannon, Al Franken, and other members of Saturday Night Live's extended family--recall a quarter-century's worth of great backstage stories, behind-the-scenes gossip, feuds, foibles, drugs, sex, struggles, and calamities. The result: a page-turner that reveals how and why SNL has become the longest-running television comedy of all time."
+    - "0316735655"
+    - http://www.amazon.com/Live-New-York-Uncensored-Saturday/dp/0316735655%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0316735655
+    - http://ecx.images-amazon.com/images/I/51q3prT5F6L._SL75_.jpg
+    - http://ecx.images-amazon.com/images/I/51q3prT5F6L._SL160_.jpg
+    - "2003-10-01"
+    - 2009-07-15 21:25:06
+    - 2009-07-15 21:25:06
