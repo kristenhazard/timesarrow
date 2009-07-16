@@ -4,7 +4,7 @@ class TimelinesController < ApplicationController
   # GET /timelines
   # GET /timelines.xml
   def index
-    @timelines = Timeline.all
+    @timelines = Timeline.all(:order => 'subcategory')
 
     respond_to do |format|
       format.html # index.html.erb
