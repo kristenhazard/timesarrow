@@ -157,7 +157,7 @@ class TimelinesController < ApplicationController
   end
   
   def featured
-    @timelines = Timeline.find_all_by_featured(1)
+    @timelines = Timeline.find_all_by_featured(1, :order => 'subcategory')
     
     respond_to do |format|
       format.html # index.html.erb
