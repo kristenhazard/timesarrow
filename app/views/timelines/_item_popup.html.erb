@@ -5,7 +5,7 @@
   <p><%=h timelineitem.item.title %></p>
   <p>by <%=h timelineitem.item.author %></p>
   <p><%= markdown(truncate(timelineitem.item.description, :length => 750)) %></p>
-  <p><%= link_to 'buy from amazon.com', timelineitem.item.detailpageurl, :popup => true %></p>
+  <p class="buy"><%= link_to 'buy from amazon.com', timelineitem.item.detailpageurl, :popup => true %></p>
 </div>
 
 <%= javascript_tag "new Popup('item_popup_#{timelineitem.id}','item_popup_link_#{timelineitem.id}',{position:'auto', cursor_margin:1})" %>

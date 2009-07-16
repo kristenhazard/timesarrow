@@ -170,3 +170,8 @@ ul#navbar a:hover
 	border-bottom: none;
 }
 
+.buy a
+{
+	color: #202230;
+}
+
