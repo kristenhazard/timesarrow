@@ -1,8 +1,10 @@
 class TimelineItemsController < ApplicationController
+  in_place_edit_for :timeline_item, :position_desc
+  
   # GET /timeline_items
   # GET /timeline_items.xml
   def index
-    @timeline_items = TimelineItem.all #(:order => 'timeline_id')
+    @timeline_items = TimelineItem.all
 
     respond_to do |format|
       format.html # index.html.erb

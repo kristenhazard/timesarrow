@@ -23,7 +23,7 @@
               <%=h word_wrap(timelineitem.item.title, :line_width => 1) %>
             <% end %>
           </span><br/>
-          <%= link_to timelineitem.position_desc, edit_timeline_item_path(timelineitem) %><br/>
+          <%=h timelineitem.position_desc %><br/>
           <%= link_to 'buy', timelineitem.item.detailpageurl, :popup => true %>
       <% end %> <!-- end </li> -->
     <% end %> <!-- end timelineitem loop -->

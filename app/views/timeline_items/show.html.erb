@@ -11,17 +11,17 @@
 </p>
 
 <p>
-  <b>Timeline:</b>
+  <b>Timeline ID:</b>
   <%=h @timeline_item.timeline_id %>
 </p>
 
 <p>
-  <b>Timeline:</b>
+  <b>Timeline Name:</b>
   <%=h @timeline_item.timeline.name %>
 </p>
 
 <p>
-  <b>Item:</b>
+  <b>Item ID:</b>
   <%=h @timeline_item.item_id %>
 </p>
 
@@ -33,6 +33,7 @@
 <p>
   <b>Position Desc:</b>
   <%=h @timeline_item.position_desc %>
+  <%= in_place_editor_field :timeline_item, :position_desc %>
 </p>
 
 

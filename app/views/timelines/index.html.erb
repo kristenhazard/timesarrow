@@ -21,7 +21,11 @@
                   <%= image_tag timelineitem.item.smallimageurl %>
                 <% end %>
           </span><br/>
-          <span class="posdesc"><%=h timelineitem.position_desc %></span>
+          <span class="posdesc">
+            <% unless timelineitem.position_desc.eql? 'set' %>
+              <%=h timelineitem.position_desc %>
+            <% end %>
+          </span>
           <% end %>
         <% end %>
         </ul>

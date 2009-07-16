@@ -57,7 +57,9 @@
               <%=h word_wrap(timelineitem.item.title, :line_width => 1) %>
             <% end %>
           </span><br/>
-          <%= link_to timelineitem.position_desc, edit_timeline_item_path(timelineitem) %><br/>
+          <%= @timeline_item = timelineitem; in_place_editor_field :timeline_item, :position_desc, {}, 
+                                                                   :url => { :controller => 'timeline_items', :action => 'set_timeline_item_position_desc', :id => timelineitem.id }, 
+                                                                   :cols => 5  %>          
       <% end %> <!-- end </li> -->
     <% end %> <!-- end timelineitem loop -->
     </ul>
