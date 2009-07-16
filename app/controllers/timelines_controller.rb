@@ -108,6 +108,7 @@ class TimelinesController < ApplicationController
     redirect_to :action => "edit", :id => params[:id]
   end
   
+  # select item from amazon search and save into timeline
   def select_item
     asin = params[:asin]
     # get response from amazon 
@@ -153,5 +154,14 @@ class TimelinesController < ApplicationController
       TimelineItem.update_all(['position=?', index+1], ['id=?', id])
     end
     render :nothing => true
+  end
+  
+  def featured
+    @timelines = Timeline.find_all_by_featured(1)
+    
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @timelines }
+    end
   end
 end

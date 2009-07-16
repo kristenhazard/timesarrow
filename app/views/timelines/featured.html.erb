@@ -1,0 +1,51 @@
+<%= link_to 'All Timelines', timelines_path %>
+<table>
+<% @timelines.each do |timeline| %>
+  <tr>
+    <td>
+      <!--<%=h timeline.name %>-->
+      <%= link_to timeline.name, timeline %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <div id="horizontal_carousel_small_<%= timeline.id %>" class="horizontal_carousel_small">
+      <div class="previous_button"></div>  
+      <div class="container">
+        <ul>
+        <% timeline.timeline_items.each do |timelineitem| %>
+          <% content_tag_for :li, timelineitem do %>
+          <span id="item_popup_link_<%= timelineitem.id %>" class="popup_link">
+                <% if timelineitem.item.smallimageurl.nil? %>
+                  <%= word_wrap(timelineitem.item.title) %>
+                <% else %>
+                  <%= image_tag timelineitem.item.smallimageurl %>
+                <% end %>
+          </span><br/>
+          <span class="posdesc">
+            <% unless timelineitem.position_desc.eql? 'set' %>
+              <%=h timelineitem.position_desc %>
+            <% end %>
+          </span>
+          <% end %>
+        <% end %>
+        </ul>
+      </div>
+      <div class="next_button"></div>
+    </div>
+    </td>
+  </tr>
+<% end %>
+</table>
+<!-- hover popup -->
+<% @timelines.each do |timeline| %>
+  <% timeline.timeline_items.each do |timelineitem| %>
+    <%= render :partial => 'item_popup', :locals => {:timelineitem => timelineitem} %>
+  <% end %>
+<% end %>
+<!-- carousel -->
+<% @timelines.each do |timeline| %>
+  <script>
+    new UI.Carousel("horizontal_carousel_small_"+ <%= timeline.id %>);
+  </script>
+<% end %>
