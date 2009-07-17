@@ -4,7 +4,7 @@ class TimelinesController < ApplicationController
   # GET /timelines
   # GET /timelines.xml
   def index
-    @timelines = Timeline.all(:order => 'subcategory')
+    @timelines = Timeline.all(:order => 'category, subcategory, genre, featured desc')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -157,7 +157,7 @@ class TimelinesController < ApplicationController
   end
   
   def featured
-    @timelines = Timeline.find_all_by_featured(1, :order => 'subcategory')
+    @timelines = Timeline.find_all_by_featured(1, :order => 'subcategory, genre')
     
     respond_to do |format|
       format.html # index.html.erb

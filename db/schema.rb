@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090715191652) do
+ActiveRecord::Schema.define(:version => 20090717164447) do
 
   create_table "items", :force => true do |t|
     t.string   "title"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(:version => 20090715191652) do
     t.string   "category"
     t.string   "subcategory"
     t.integer  "featured"
+    t.string   "genre"
   end
 
 end

@@ -766,7 +766,7 @@ UI.Carousel = Class.create(UI.Options, {
       this.nextButton.removeClassName(nextClassName);
       this.fire('nextButton:enabled');
     }
-    if (!this.nextButton.hasClassName(nextClassName) && lastPosition == size) {
+    if (!this.nextButton.hasClassName(nextClassName) && lastPosition <= size) {
 	    this.nextButton.addClassName(nextClassName);
       this.fire('nextButton:disabled');
     }
@@ -1072,4 +1072,5 @@ UI.Ajax.Carousel = Class.create(UI.Carousel, {
       this.fire('nextButton:disabled');
     }
   }
+
 });

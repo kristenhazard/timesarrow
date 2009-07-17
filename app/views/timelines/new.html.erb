@@ -2,21 +2,16 @@
 
 <% form_for(@timeline) do |f| %>
   <%= f.error_messages %>
-
   <p>
-    <%= f.label :name %><br />
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :description %><br />
-    <%= f.text_area :description, :rows => 10 %>
+    <%= f.label :description %>
+    <%= f.text_area :description, :rows => 5 %>
   </p>
   <p>
-    <%= f.label :imageurl %><br />
-    <%= f.text_field :imageurl %>
-  </p>
-  <p>
-    <%= f.label :category %><br />
+    <%= f.label :category %>
     <%= f.select  :category,
                   Timeline::TIMELINE_CATEGORIES,
                   :prompt => "Select type"
@@ -30,12 +25,26 @@
     %>
   </p>
   <p>
+    <%= f.label :genre %><br />
+    <%= f.select  :genre,
+                  Timeline::TIMELINE_GENRE_BOOKS,
+                  :prompt => "Select type"
+    %>
+  </p>
+  <!-- featured is admin field -->
+  <p>
     <%= f.label :featured %><br />
     <%= f.select  :featured,
                   Timeline::TIMELINE_FEATURED,
                   :prompt => "Select type"
     %>
   </p>
+  <!-- wait on image url until i build image upload 
+    <p>
+      <%= f.label :imageurl %>
+      <%= f.text_field :imageurl %>
+    </p>
+  -->
   <p>
     <%= f.submit 'Create' %>
   </p>
