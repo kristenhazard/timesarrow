@@ -95,7 +95,7 @@ class ItemsController < ApplicationController
     end
   end
   
-  # search
+  # search results selected and saved into item
   def select_item
     asin = params[:asin]
     # get response from amazon 
