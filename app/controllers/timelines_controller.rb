@@ -53,6 +53,7 @@ class TimelinesController < ApplicationController
         @error = res.error
         flash[:error] = @error
         @itemarray = res.items
+        #logger.info @itemarray
         @item = Item.new
         flash[:item] = @item
       end
@@ -126,6 +127,9 @@ class TimelinesController < ApplicationController
     @item.title = item.get("title")
     @item.itemtype = item.get("productgroup")
     @item.author = item.get("author")
+    if @item.author.nil?
+      @item.author = item.get("creator")
+    end
     reviews = item/'editorialreview'
     if (!reviews.nil?)
       review = reviews[0]
@@ -141,14 +145,14 @@ class TimelinesController < ApplicationController
     @item.smallimageurl = item.get("smallimage/url")
     @item.mediumimageurl = item.get("mediumimage/url")
     @item.publicationdate = item.get("publicationdate")
-    @item.save
+    @item.save!
     
     # save timeline_item
     @timeline_item = TimelineItem.new
     @timeline_item.item_id = @item.id
     @timeline_item.timeline_id = params[:id]
     @timeline_item.position_desc = 'set'
-    @timeline_item.save
+    @timeline_item.save!
     @timeline_item.insert_at
     
     redirect_to :action => "edit", :id => params[:id]
