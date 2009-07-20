@@ -175,3 +175,15 @@ ul#navbar a:hover
 	color: #202230;
 }
 
+div#searchedit
+{
+	position:absolute;
+	left: 50px;
+	top: 550px;
+	margin: .5em;
+	padding: .5em;
+	width: 870px;
+	/*visibility: hidden;*/
+	background-color: #9DCAFF
+}
+
