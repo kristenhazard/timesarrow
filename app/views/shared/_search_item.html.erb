@@ -1,7 +1,7 @@
 
   <% form_tag({:action=>"edit"}, :method=>:get) do %>
     <p>Enter keywords:</p>
-    <%= text_field_tag(:keywords, params[:keywords]) %>
+    <%= text_field_tag(:keywords, params[:keywords], :size => 50) %>
     <%= submit_tag "Search", :name => nil %>
     <p>Results</p>
     <%= flash[:error] %>

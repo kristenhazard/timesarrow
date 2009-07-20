@@ -58,12 +58,11 @@
     <ul id="dtimeline">
     <% @timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
-          <span>
-            <% unless timelineitem.item.mediumimageurl.nil? %>
-              <%= link_to image_tag(timelineitem.item.mediumimageurl), edit_item_path(timelineitem.item), :popup => true %>
-            <% end %>
+          <span>--move--<br/>
             <% if timelineitem.item.mediumimageurl.nil? %>
               <%= link_to timelineitem.item.title, edit_item_path(timelineitem.item) %>
+            <% else %>
+              <%= link_to image_tag(timelineitem.item.mediumimageurl), edit_item_path(timelineitem.item), :popup => true %>
             <% end %>
           </span><br/>
           <%= @timeline_item = timelineitem; in_place_editor_field :timeline_item, :position_desc, {}, 

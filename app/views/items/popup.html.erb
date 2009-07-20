@@ -1,9 +1,0 @@
-  <div id="item_popup">
-    <% unless @item.mediumimageurl.nil? %>
-      <%= link_to image_tag(@item.mediumimageurl), @item.detailpageurl %>
-    <% end %>
-    <p><%=h @item.title %></p>
-    <p>by <%=h @item.author %></p>
-    <p><%= @item.description %></p>
-    <p><%= link_to 'buy from amazon.com', @item.detailpageurl, :popup => true %></p>
-  </div>

@@ -2,49 +2,40 @@
 
 <% form_for(@timeline) do |f| %>
   <%= f.error_messages %>
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :description %>
-    <%= f.text_area :description, :rows => 5 %>
-  </p>
-  <p>
-    <%= f.label :category %>
-    <%= f.select  :category,
-                  Timeline::TIMELINE_CATEGORIES,
-                  :prompt => "Select type"
-    %>
-  </p>
-  <p>
-    <%= f.label :subcategory %><br />
-    <%= f.select  :subcategory,
-                  Timeline::TIMELINE_SUBCATEGORIES,
-                  :prompt => "Select type"
-    %>
-  </p>
-  <p>
-    <%= f.label :genre %><br />
-    <%= f.select  :genre,
-                  Timeline::TIMELINE_GENRE_BOOKS,
-                  :prompt => "Select type"
-    %>
-  </p>
-  <!-- featured is admin field -->
-  <p>
-    <%= f.label :featured %><br />
-    <%= f.select  :featured,
-                  Timeline::TIMELINE_FEATURED,
-                  :prompt => "Select type"
-    %>
-  </p>
-  <!-- wait on image url until i build image upload 
-    <p>
-      <%= f.label :imageurl %>
-      <%= f.text_field :imageurl %>
-    </p>
-  -->
+  <table>
+    <tr>
+      <td><%= f.label :name %></td>
+      <td><%= f.text_field :name, :size => 40 %></td>
+      <td><%= f.label :category %></td>
+      <td><%= f.select  :category,
+                    Timeline::TIMELINE_CATEGORIES,
+                    :prompt => "Select type"
+          %>
+      </td>
+    </tr>
+    <tr>
+      <td><%= f.label :description %></td>
+      <td><%= f.text_area :description, :rows => 5, :cols => 38 %></td>
+      <td><%= f.label :subcategory %></td>
+      <td><%= f.select  :subcategory,
+                    Timeline::TIMELINE_SUBCATEGORIES,
+                    :prompt => "Select type"
+          %>
+      </td>
+    </tr>
+    <tr>
+      <!-- featured is admin field -->
+      <td><%= f.label :featured %></td>
+      <td><%= f.text_field :featured, :size => 5 %></td>
+      <td><%= f.label :genre %></td>
+      <td><%= f.select  :genre,
+                    Timeline::TIMELINE_GENRE_BOOKS,
+                    :prompt => "Select type"
+          %>
+      </td>
+    </tr>
+  </table>
+
   <p>
     <%= f.submit 'Create' %>
   </p>

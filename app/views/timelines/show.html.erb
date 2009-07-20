@@ -1,4 +1,4 @@
-<%= link_to 'Home', timelines_path %>
+<%= link_to 'Home', timelines_path %><% if admin? %> | <%= link_to 'Edit', edit_timeline_path %> | <% end %>
 
 <div>
   <h1>
@@ -16,11 +16,10 @@
     <% @timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
           <span id="item_popup_link_<%= timelineitem.id %>" class="popup_link">
-            <% unless timelineitem.item.mediumimageurl.nil? %>
-              <%= image_tag timelineitem.item.mediumimageurl %>
-            <% end %>
             <% if timelineitem.item.mediumimageurl.nil? %>
               <%=h word_wrap(timelineitem.item.title, :line_width => 1) %>
+            <% else %>
+              <%= image_tag timelineitem.item.mediumimageurl, :alt => timelineitem.item.title %>
             <% end %>
           </span><br/>
           <%=h timelineitem.position_desc %><br/>

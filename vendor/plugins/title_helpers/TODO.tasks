@@ -1,0 +1,3 @@
+- Customize delimiter?
+- Multi-level titles?
+- Perhaps _self.title = "Full title"_ for full and _self.title << "Prefix"_ for prefix? Ties in with multi-level.

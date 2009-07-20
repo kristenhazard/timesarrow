@@ -19,7 +19,7 @@
                 <% if timelineitem.item.smallimageurl.nil? %>
                   <%= word_wrap(timelineitem.item.title) %>
                 <% else %>
-                  <%= image_tag timelineitem.item.smallimageurl %>
+                  <%= image_tag timelineitem.item.smallimageurl, :alt => timelineitem.item.title %>
                 <% end %>
           </span><br/>
           <span class="posdesc">
