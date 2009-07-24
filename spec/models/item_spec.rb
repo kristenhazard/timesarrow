@@ -18,4 +18,7 @@ describe Item do
   it "should create a new instance given valid attributes" do
     Item.create!(@valid_attributes)
   end
+  
+  it "should deal with blank author" 
+  
 end
