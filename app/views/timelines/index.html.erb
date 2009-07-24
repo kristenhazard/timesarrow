@@ -36,12 +36,7 @@
   </tr>
 <% end %>
 </table>
-<!-- hover popup -->
-<% @timelines.each do |timeline| %>
-  <% timeline.timeline_items.each do |timelineitem| %>
-    <%= render :partial => 'item_popup', :locals => {:timelineitem => timelineitem} %>
-  <% end %>
-<% end %>
+
 <!-- carousel -->
 <% @timelines.each do |timeline| %>
   <script>
