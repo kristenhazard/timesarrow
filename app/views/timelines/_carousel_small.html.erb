@@ -1,0 +1,30 @@
+<div class="parent-container">
+<div id="horizontal_carousel_small_<%= timeline.id %>" class="horizontal_carousel_small">
+  <div class="previous_button"></div>  
+  <div class="container">
+    <ul>
+    <% timeline.timeline_items.each do |timelineitem| %>
+      <% content_tag_for :li, timelineitem do %>
+      <div id="timelineitem-name-<%= timelineitem.id %>" class='timelineitem-name'>
+            <% if timelineitem.item.smallimageurl.nil? %>
+              <%=h timelineitem.item.title %>
+            <% else %>
+              <%= image_tag timelineitem.item.smallimageurl, :alt => timelineitem.item.title %>
+            <% end %>
+            <%= link_to "", 
+                        :controller => 'timeline_items', 
+                        :id => timelineitem.id,
+                        :action => 'popup' %>
+      </div>
+      <span class="posdesc">
+        <% unless timelineitem.position_desc.eql? 'set' %>
+          <%=h timelineitem.position_desc %>
+        <% end %>
+      </span>
+      <% end %>
+    <% end %>
+    </ul>
+  </div>
+  <div class="next_button"></div>
+</div>
+</div>
