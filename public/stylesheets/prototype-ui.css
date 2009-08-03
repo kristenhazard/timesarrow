@@ -72,14 +72,14 @@
 
 .horizontal_carousel_small {
   float: left;
-  width: 960px;
+  width: 860px;
   height: 125px;
   position: relative;
 }
 
 .horizontal_carousel_small .container {
   float: left;
-  width: 895px;
+  width: 795px;
   height: 125px;
   position: relative;    
   overflow: hidden;
@@ -96,7 +96,7 @@
 }                      
 
 .horizontal_carousel_small ul li {
-  width: 50px;
+  width: 60px;
   height: 125px;
   text-align: center; 
   list-style:none;   

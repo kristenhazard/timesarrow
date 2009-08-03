@@ -8,19 +8,25 @@
   </tr>
   <tr>
     <td>
+    <div class="parent-container">
     <div id="horizontal_carousel_small_<%= timeline.id %>" class="horizontal_carousel_small">
       <div class="previous_button"></div>  
       <div class="container">
         <ul>
         <% timeline.timeline_items.each do |timelineitem| %>
           <% content_tag_for :li, timelineitem do %>
-          <span id="item_popup_link_<%= timelineitem.id %>" class="popup_link">
+          <div id="timelineitem-name-<%= timelineitem.id %>" class='timelineitem-name'>
                 <% if timelineitem.item.smallimageurl.nil? %>
-                  <%= word_wrap(timelineitem.item.title) %>
+                  <%= link_to timelineitem.item.title, :controller => 'timeline_items', 
+                                                       :id => timelineitem.id,
+                                                       :action => 'popup' %>
                 <% else %>
-                  <%= image_tag timelineitem.item.smallimageurl, :alt => timelineitem.item.title %>
+                  <%= link_to image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title), 
+                              :controller => 'timeline_items', 
+                              :id => timelineitem.id,
+                              :action => 'popup' %>
                 <% end %>
-          </span><br/>
+          </div>
           <span class="posdesc">
             <% unless timelineitem.position_desc.eql? 'set' %>
               <%=h timelineitem.position_desc %>
@@ -32,11 +38,11 @@
       </div>
       <div class="next_button"></div>
     </div>
+    </div>
     </td>
   </tr>
 <% end %>
 </table>
-
 <!-- carousel -->
 <% @timelines.each do |timeline| %>
   <script>

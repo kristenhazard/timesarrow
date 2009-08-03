@@ -16,7 +16,6 @@ class TimelineItemsController < ApplicationController
   # GET /timeline_items/1.xml
   def show
     @timeline_item = TimelineItem.find(params[:id])
-    #@item = @timeline_item.item
 
     respond_to do |format|
       format.html # show.html.erb
@@ -84,5 +83,10 @@ class TimelineItemsController < ApplicationController
       format.html { redirect_to(timeline_items_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  def popup
+    @timeline_item = TimelineItem.find(params[:id])
+    render :layout => false
   end
 end

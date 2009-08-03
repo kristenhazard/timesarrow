@@ -1,7 +1,4 @@
-/*
- popup.js
-*/
-div.popup {
+div.timelineitem {
   max-width: 300px;
   border: 3px solid #fff;
   padding: 5px;
@@ -9,8 +6,21 @@ div.popup {
 	color: #fff;
   /* The following properties should not be changed */
   position: absolute;
+	z-index: 1;
 }
 
+div.timelineitem-name {
+	/* added this padding so that mouseover and mouseout events would trigger consistently */
+	padding: .5em;  
+}
+
+div.timelineitem img
+{
+	float: left;
+	padding: 0em 1em .25em 0em;
+}
+
+/* not implemented yet but might still do it */
 #popup_overlay {
   background-color: #9DCAFF;
   /* The following properties should not be changed */
@@ -21,22 +31,5 @@ div.popup {
   height: 500px;
 }
 
-span.popup_link, a.popup_link {
-  cursor: pointer;
-  border-bottom: 0px;
-}
 
-.popup_draghandle {
-  cursor: move;
-}
 
-div.popup td, p
-{
-	font-size:   85%;
-}
-
-div.popup img
-{
-	float: left;
-	padding: 0em 1em .25em 0em;
-}

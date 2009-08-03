@@ -8,34 +8,33 @@
     <%= @timeline.description %>
   </p>
 </div>
-
+<div class="parent-container">
 <div id="horizontal_carousel">
   <div class="previous_button"></div>  
   <div class="container">
     <ul>
     <% @timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
-          <span id="item_popup_link_<%= timelineitem.id %>" class="popup_link">
+          <div id="timelineitem-name-<%= timelineitem.id %>" class='timelineitem-name'>
             <% if timelineitem.item.mediumimageurl.nil? %>
-              <%=h word_wrap(timelineitem.item.title, :line_width => 1) %>
+              <%= link_to timelineitem.item.title, :controller => 'timeline_items', 
+                                                   :id => timelineitem.id,
+                                                   :action => 'popup' %>
             <% else %>
-              <%= image_tag timelineitem.item.mediumimageurl, :alt => timelineitem.item.title %>
+              <%= link_to image_tag(timelineitem.item.mediumimageurl, :alt => timelineitem.item.title), 
+                          :controller => 'timeline_items', 
+                          :id => timelineitem.id,
+                          :action => 'popup' %>
             <% end %>
-          </span><br/>
+          </div><br/>
           <%=h timelineitem.position_desc %><br/>
-          <%= link_to 'buy', timelineitem.item.detailpageurl, :popup => true %>
       <% end %> <!-- end </li> -->
     <% end %> <!-- end timelineitem loop -->
     </ul>
   </div>
   <div class="next_button"></div>
 </div>
-
-<!-- hover pop up div -->
-<% @timeline.timeline_items.each do |timelineitem| %>
-  <%= render :partial => 'item_popup', :locals => {:timelineitem => timelineitem} %>
-<% end %>
-
+</div>
 <!-- carousel -->
 <script>
 new UI.Carousel("horizontal_carousel");

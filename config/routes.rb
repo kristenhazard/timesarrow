@@ -1,5 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :timeline_items
+  map.resources :timeline_items,
+                :member => { :popup => :get }
 
   map.resources :timelines, 
                 :member => { :select_item => :post, :add_item => :get }, 
