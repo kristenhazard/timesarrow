@@ -61,7 +61,7 @@ Event.addBehavior({
 				ho.style.top = posy + offy + "px";
 				ho.style.left = posx + offx + "px";
 				
-        new Effect.Appear("timelineitem-"+id, {queue: 'end', duration: 0.5})
+        new Effect.Appear("timelineitem-"+id, {queue: 'end', duration: .5})
       }
 			else
 			{
@@ -76,7 +76,9 @@ Event.addBehavior({
 							ho = document.getElementById("timelineitem-"+id);
 							ho.style.top = posy + offy + "px";
 							ho.style.left = posx + offx + "px";
+							ho.style.display = "none";
 							
+							new Effect.Appear("timelineitem-"+id, {queue: 'end', duration: .5})
             }});
         }
       }      
