@@ -11,6 +11,5 @@
 <%= render :partial => 'carousel_small', :locals => { :timeline => @timeline } %>
 <!-- carousel -->
 <script>
-new UI.Carousel("horizontal_carousel");
+  new UI.Carousel("horizontal_carousel_small_"+ <%= @timeline.id %>);
 </script>
-

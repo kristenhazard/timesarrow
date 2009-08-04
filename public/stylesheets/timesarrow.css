@@ -244,11 +244,11 @@ li.timeline_item
   position: relative;
   top: 0;
   left: 0;
-  height: 160px;
+  height: 150px;
 }                      
 
 .horizontal_carousel_small ul li {
-  width: 60px;
+  width: 75px;
   height: 125px;
   text-align: center; 
   list-style:none;   
