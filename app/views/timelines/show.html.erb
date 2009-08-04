@@ -1,4 +1,4 @@
-<%= link_to 'Home', timelines_path %><% if admin? %> | <%= link_to 'Edit', edit_timeline_path %> | <% end %>
+<% if admin? %> | <%= link_to 'Edit', edit_timeline_path %> | <% end %>
 
 <div>
   <h1>
@@ -8,33 +8,7 @@
     <%= @timeline.description %>
   </p>
 </div>
-<div class="parent-container">
-<div id="horizontal_carousel">
-  <div class="previous_button"></div>  
-  <div class="container">
-    <ul>
-    <% @timeline.timeline_items.each do |timelineitem| %>
-      <% content_tag_for :li, timelineitem do %>
-          <div id="timelineitem-name-<%= timelineitem.id %>" class='timelineitem-name'>
-            <% if timelineitem.item.mediumimageurl.nil? %>
-              <%= link_to timelineitem.item.title, :controller => 'timeline_items', 
-                                                   :id => timelineitem.id,
-                                                   :action => 'popup' %>
-            <% else %>
-              <%= link_to image_tag(timelineitem.item.mediumimageurl, :alt => timelineitem.item.title), 
-                          :controller => 'timeline_items', 
-                          :id => timelineitem.id,
-                          :action => 'popup' %>
-            <% end %>
-          </div><br/>
-          <%=h timelineitem.position_desc %><br/>
-      <% end %> <!-- end </li> -->
-    <% end %> <!-- end timelineitem loop -->
-    </ul>
-  </div>
-  <div class="next_button"></div>
-</div>
-</div>
+<%= render :partial => 'carousel_small', :locals => { :timeline => @timeline } %>
 <!-- carousel -->
 <script>
 new UI.Carousel("horizontal_carousel");

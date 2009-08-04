@@ -16,18 +16,23 @@
   <%= stylesheet_link_tag 'hover_popup.css' %>
 </head>
 <body>
-<img src="/images/timesarrowlogo2.png" alt="time's arrow"> --> book awards, clubs and series as timelines because books should be together
+  <div id="doc">
+    <div id="header">
+      <%= link_to image_tag("/images/timesarrow.png"), root_url %>
+    </div>
+    <div id="navigation">
+      <ul id="navbar">
+        <li class="navitem-first"><%= link_to_unless_current('ALL', timelines_path) %></li>
+        <li><%= link_to_unless_current('FEATURED', {:controller => 'timelines', :action => 'featured'}) %></li>
+        <li><%= link_to_unless_current('MAKE ONE!', new_timeline_path) %></li>
+      </ul>
+    </div>
+    <div id="content">
+      <p style="color: green"><%= flash[:notice] %></p>
 
-<ul id="navbar">
-  <li><%= link_to_unless_current('ALL', timelines_path) %></li>
-  <li><%= link_to_unless_current('FEATURED', {:controller => 'timelines', :action => 'featured'}) %></li>
-</ul>
-
-<p style="color: green"><%= flash[:notice] %></p>
-
-<%= yield %>
-
-
-
+      <%= yield %>
+      
+    </div>
+  </div>
 </body>
 </html>
