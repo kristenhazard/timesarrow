@@ -2,13 +2,43 @@
 
 <div>
   <h1>
-    <%=h @timeline.name %>
+    <%=h @timeline.name.upcase %>
   </h1>
-  <p class="tlinfo">
+  <div class="tlinfo">
     <%= @timeline.description %>
-  </p>
+  </div>
 </div>
-<%= render :partial => 'carousel_small', :locals => { :timeline => @timeline } %>
+<div id="horizontal_carousel_small_<%= @timeline.id %>" class="horizontal_carousel_small">
+  <div class="previous_button"></div>  
+  <div class="container">
+    <ul>
+    <% @timeline.timeline_items.each do |timelineitem| %>
+      <% content_tag_for :li, timelineitem do %>
+      <div id="timelineitem-name-<%= timelineitem.id %>">
+            <% if timelineitem.item.smallimageurl.nil? %>
+              <%=h timelineitem.item.title %>
+            <% else %>
+              <%= link_to_remote image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title),
+                                 :update => 'item_work_it',
+                                 :url => { :controller => 'timeline_items', :action => 'work_it', :id => timelineitem.id }
+              %>
+            <% end %>
+      </div>
+            <span class="posdesc">
+              <% unless timelineitem.position_desc.eql? 'set' %>
+                <%=h timelineitem.position_desc %>
+              <% end %>
+            </span>
+      <% end %>
+    <% end %>
+    </ul>
+  </div>
+  <div class="next_button"></div>
+</div>
+  
+<div id="item_work_it">
+    
+</div>
 <!-- carousel -->
 <script>
   new UI.Carousel("horizontal_carousel_small_"+ <%= @timeline.id %>);

@@ -127,4 +127,6 @@ class ItemsController < ApplicationController
     redirect_to :action => "edit", :id => params[:id]
     
   end
+  
+
 end

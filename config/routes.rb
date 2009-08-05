@@ -4,7 +4,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :timelines, 
                 :member => { :select_item => :post, :add_item => :get }, 
-                :collection => { :sort => :post, :featured => :get }
+                :collection => { :sort => :post, :featured => :get, :bookclubs => :get, :bookawards => :get, :makeone => :get }
 
   map.resources :items, 
                 :member => { :select_item => :post, :add_item => :get }

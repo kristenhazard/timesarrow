@@ -1,7 +1,7 @@
 class TimelinesController < ApplicationController
   require 'amazonecs'
   
-  before_filter :authorize, :except => [:index, :show, :featured]
+  before_filter :authorize, :except => [:index, :show, :featured, :bookclubs, :bookawards, :makeone]
   
   # GET /timelines
   # GET /timelines.xml
@@ -174,6 +174,30 @@ class TimelinesController < ApplicationController
       format.html # index.html.erb
       format.xml  { render :xml => @timelines }
     end
+  end
+  
+  def bookclubs
+    @timelines = Timeline.find_all_by_subcategory('Clubs', :order => 'genre')
+    self.title = "Time's Arrow - Book Clubs"
+    
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @timelines }
+    end
+  end
+  
+  def bookawards
+    @timelines = Timeline.find_all_by_subcategory('Awards', :order => 'genre')
+    self.title = "Time's Arrow - Book Awards"
+    
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @timelines }
+    end
+  end
+  
+  def makeone
+    
   end
   
 end

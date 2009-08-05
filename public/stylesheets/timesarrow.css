@@ -19,11 +19,15 @@ grey: #848484
 
 yellow: #cc9900
 
+yellow background: #f6cc5c
+
 */
 
 body 
 { 
 	background-color: #fff; 
+	margin: 0;
+	padding: 0;
 	
 }
 
@@ -32,12 +36,14 @@ body, p, ol, ul, td {
 	font-size: medium;
 }
 
-#doc
+div#doc
 {
-	width: 73.076em;
+	width: 900px;
+	
 }
 
-#doc
+/**/
+#doc, #content, #header
 {
 	margin:auto;
 	min-width:750px;
@@ -54,6 +60,11 @@ body, p, ol, ul, td {
 {
 	position: relative;
 	width: 100%;
+}
+
+div#header
+{
+	/*background: url(../images/banner.gif);*/
 }
 
 
@@ -73,7 +84,7 @@ ul#navbar
 	color: #fff;
 	list-style-type: none;
 	margin: 0;
-	padding: 0em 0em 0em 60em;
+	padding: 0em 0em 0em 0em;
 	font-size: 75%;
 	
 }
@@ -92,13 +103,8 @@ ul#navbar a:hover
 ul#navbar li
 {
 	float: left;
-	padding: .25em 2em 0em .5em;
+	padding: .15em 1em 0em .75em;
 	white-space: nowrap;
-}
-
-.navitem-first 
-{
-	padding-left: 0;
 }
 
 h1
@@ -187,7 +193,7 @@ div.container a, p
 
 div.tlinfo
 {
-	padding: 0em 0em 0.5em 3.75em;
+	padding: 0em 0em 0.5em 2.4em;
 }
 
 
@@ -209,7 +215,15 @@ div#searchedit
 	background-color: #9DCAFF
 }
 
+.move
+{
+	cursor: move;
+}
 
+div.timelineitem-name {
+	/* added this padding so that mouseover and mouseout events would trigger consistently */
+	padding: .05em;  
+}
 
 
 li.timeline_item
@@ -224,14 +238,14 @@ li.timeline_item
 
 .horizontal_carousel_small {
   float: left;
-  width: 73.076em;
+  width: 885px;
   height: 125px;
   position: relative;
 }
 
 .horizontal_carousel_small .container {
   float: left;
-  width: 75em;
+  width: 835px;
   height: 125px;
   position: relative;    
   overflow: hidden;
@@ -244,11 +258,11 @@ li.timeline_item
   position: relative;
   top: 0;
   left: 0;
-  height: 150px;
+  height: 125px;
 }                      
 
 .horizontal_carousel_small ul li {
-  width: 75px;
+  width: 60px;
   height: 125px;
   text-align: center; 
   list-style:none;   
@@ -289,5 +303,10 @@ li.timeline_item
 .horizontal_carousel_small .next_button_disabled {
   background: url(/images/disabled.png);
   cursor: default;
+}
+
+#item_work_it
+{
+	padding: 30px;
 }
 

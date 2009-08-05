@@ -9,11 +9,6 @@ div.timelineitem {
 	z-index: 1;
 }
 
-div.timelineitem-name {
-	/* added this padding so that mouseover and mouseout events would trigger consistently */
-	padding: .25em;  
-}
-
 div.timelineitem img
 {
 	float: left;

@@ -47,8 +47,8 @@ Event.addBehavior({
 			//divo = document.getElementById("timelineitem-name"+id);
 			posx = findPosX(this);
 			posy = findPosY(this);
-			offx = -10;
-			offy = -100;
+			offx = 0;
+			offy = 0;
 			
       $$(".timelineitem").each( function(e) {
         e.hide();

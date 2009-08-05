@@ -21,7 +21,8 @@ class Timeline < ActiveRecord::Base
     # Displayed   stored in db
     ["Books",     "Book"],
     ["Music",     "Music"],
-    ["Movies",    "Movie"]
+    ["Movies",    "Movie"],
+    ["Television", "Television"]
   ]
   
   TIMELINE_SUBCATEGORIES = [

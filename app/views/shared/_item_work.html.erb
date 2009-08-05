@@ -1,0 +1,7 @@
+<% unless @timeline_item.item.mediumimageurl.nil? %>
+  <%= link_to image_tag(@timeline_item.item.mediumimageurl), @timeline_item.item.detailpageurl, :popup => true %>
+<% end %>
+<p><%=h @timeline_item.item.title %></p>
+<p>by <%=h @timeline_item.item.author %></p>
+<p><%= @timeline_item.item.description %></p>
+<p><%= link_to 'buy from amazon.com', @timeline_item.item.detailpageurl, :popup => true %></p>

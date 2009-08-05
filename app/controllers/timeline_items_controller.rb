@@ -89,4 +89,10 @@ class TimelineItemsController < ApplicationController
     @timeline_item = TimelineItem.find(params[:id])
     render :layout => false
   end
+  
+  def work_it
+    @timeline_item = TimelineItem.find(params[:id])
+    render :partial => 'shared/item_work'
+  end
+
 end
