@@ -48,7 +48,7 @@ Event.addBehavior({
 			posx = findPosX(this);
 			posy = findPosY(this);
 			offx = 0;
-			offy = 0;
+			offy = -100;
 			
       $$(".timelineitem").each( function(e) {
         e.hide();
@@ -90,8 +90,8 @@ Event.addBehavior({
 		{
 			var id = $(this).readAttribute("id").match(/[0-9]+$/)[0];
       $$(".timelineitem").each( function(e) {
-        //e.hide();
-				new Effect.Fade("timelineitem-"+id, {duration: 0.5});
+        e.hide();
+				//new Effect.Fade("timelineitem-"+id, {duration: 0.5});
       });      
     }
   }
