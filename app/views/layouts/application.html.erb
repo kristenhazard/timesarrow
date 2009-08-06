@@ -19,15 +19,6 @@
   <div id="doc">
     <div id="header">
       <%= link_to image_tag("/images/timesarrow-withtagline.gif"), root_url %>
-      <div id="user_nav">
-        <% if current_user %>
-          <%= link_to "profile", edit_user_path(:current) %> |
-          <%= link_to "logout", logout_path %>
-        <% else %>
-          <%= link_to "sign up", new_user_path %> |
-          <%= link_to "sign in", login_path %>
-        <% end %>
-      </div>
     </div>
     <div id="navigation">
       <ul id="navbar">
@@ -36,6 +27,15 @@
         <li><%= link_to_unless_current('BOOK CLUBS', {:controller => 'timelines', :action => 'books', :sub => 'Clubs' }) %></li>
         <li><%= link_to_unless_current('BOOK AWARDS', {:controller => 'timelines', :action => 'books', :sub => 'Awards' }) %></li>
         <li><%= link_to_unless_current('MAKE ONE!', {:controller => 'timelines', :action => 'makeone'}) %></li>
+      </ul>
+      <ul id="user_nav">
+          <% if current_user %>
+            <li><%= link_to "PROFILE", edit_user_path(:current) %></li>
+            <li><%= link_to "LOGOUT", logout_path %></li>
+          <% else %>
+            <li><%= link_to "SIGN UP", new_user_path %></li>
+            <li><%= link_to "SIGN IN", login_path %></li>
+          <% end %>
       </ul>
     </div>
     <div id="content">
