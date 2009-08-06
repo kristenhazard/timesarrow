@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090717164447) do
+ActiveRecord::Schema.define(:version => 20090806200818) do
 
   create_table "items", :force => true do |t|
     t.string   "title"
@@ -54,6 +54,23 @@ ActiveRecord::Schema.define(:version => 20090717164447) do
     t.string   "subcategory"
     t.integer  "featured"
     t.string   "genre"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "crypted_password"
+    t.string   "password_salt"
+    t.string   "persistence_token"
+    t.integer  "login_count",        :default => 0, :null => false
+    t.integer  "failed_login_count", :default => 0, :null => false
+    t.datetime "last_request_at"
+    t.datetime "current_login_at"
+    t.datetime "last_login_at"
+    t.string   "current_login_ip"
+    t.string   "last_login_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

@@ -301,3 +301,6 @@ li.timeline_item
 	padding: 30px;
 }
 
+#user_nav {
+  float: right;
+}

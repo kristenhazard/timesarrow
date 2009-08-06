@@ -19,6 +19,15 @@
   <div id="doc">
     <div id="header">
       <%= link_to image_tag("/images/timesarrow-withtagline.gif"), root_url %>
+      <div id="user_nav">
+        <% if current_user %>
+          <%= link_to "profile", edit_user_path(:current) %> |
+          <%= link_to "logout", logout_path %>
+        <% else %>
+          <%= link_to "sign up", new_user_path %> |
+          <%= link_to "sign in", login_path %>
+        <% end %>
+      </div>
     </div>
     <div id="navigation">
       <ul id="navbar">
@@ -30,6 +39,7 @@
       </ul>
     </div>
     <div id="content">
+      <p style="color: green"><%= flash[:notice] %></p>
       <%= yield %>
     </div>
   </div>
