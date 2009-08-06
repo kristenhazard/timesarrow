@@ -24,8 +24,8 @@
       <ul id="navbar">
         <li class="navitem-first"><%= link_to_unless_current('ALL', timelines_path) %></li>
         <li><%= link_to_unless_current('FEATURED', {:controller => 'timelines', :action => 'featured'}) %></li>
-        <li><%= link_to_unless_current('BOOK CLUBS', {:controller => 'timelines', :action => 'bookclubs'}) %></li>
-        <li><%= link_to_unless_current('BOOK AWARDS', {:controller => 'timelines', :action => 'bookawards'}) %></li>
+        <li><%= link_to_unless_current('BOOK CLUBS', {:controller => 'timelines', :action => 'books', :sub => 'Clubs' }) %></li>
+        <li><%= link_to_unless_current('BOOK AWARDS', {:controller => 'timelines', :action => 'books', :sub => 'Awards' }) %></li>
         <li><%= link_to_unless_current('MAKE ONE!', {:controller => 'timelines', :action => 'makeone'}) %></li>
       </ul>
     </div>

@@ -1,13 +1,13 @@
 class TimelinesController < ApplicationController
   require 'amazonecs'
   
-  before_filter :authorize, :except => [:index, :show, :featured, :bookclubs, :bookawards, :makeone]
+  before_filter :authorize, :except => [:index, :show, :featured, :books, :makeone]
   
   # GET /timelines
   # GET /timelines.xml
   def index
     @timelines = Timeline.all(:order => 'category, subcategory, genre, featured desc')
-    self.title = "Time's Arrow - All Timelines"
+    self.title = "TIME'S ARROW - All Timelines"
 
     respond_to do |format|
       format.html # index.html.erb
@@ -19,7 +19,7 @@ class TimelinesController < ApplicationController
   # GET /timelines/1.xml
   def show
     @timeline = Timeline.find(params[:id])
-    self.title = "Time's Arrow: " + @timeline.name + " timeline"
+    self.title = "TIME'S ARROW: " + @timeline.name + " timeline"
 
     respond_to do |format|
       format.html # show.html.erb
@@ -31,7 +31,7 @@ class TimelinesController < ApplicationController
   # GET /timelines/new.xml
   def new
     @timeline = Timeline.new
-    self.title = "Time's Arrow - create new timeline"
+    self.title = "TIME'S ARROW - create new timeline"
 
     respond_to do |format|
       format.html # new.html.erb
@@ -42,7 +42,7 @@ class TimelinesController < ApplicationController
   # GET /timelines/1/edit
   def edit
     @timeline = Timeline.find(params[:id])
-    self.title = "Time's Arrow edit " + @timeline.name + " timeline"
+    self.title = "TIME'S ARROW edit " + @timeline.name + " timeline"
     keywords = params[:keywords]
     if !keywords.nil?
       if keywords == ""
@@ -168,27 +168,7 @@ class TimelinesController < ApplicationController
   
   def featured
     @timelines = Timeline.find_all_by_featured(1, :order => 'subcategory, genre')
-    self.title = "Time's Arrow - Featured Timelines"
-    
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @timelines }
-    end
-  end
-  
-  def bookclubs
-    @timelines = Timeline.find_all_by_subcategory('Clubs', :order => 'genre')
-    self.title = "Time's Arrow - Book Clubs"
-    
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @timelines }
-    end
-  end
-  
-  def bookawards
-    @timelines = Timeline.find_all_by_subcategory('Awards', :order => 'genre')
-    self.title = "Time's Arrow - Book Awards"
+    self.title = "TIME'S ARROW - Featured Timelines"
     
     respond_to do |format|
       format.html # index.html.erb
@@ -197,7 +177,18 @@ class TimelinesController < ApplicationController
   end
   
   def makeone
+    self.title = "TIME'S ARROW - Make a timeline"
+  end
+  
+  def books
+    @timelines = Timeline.find_all_by_category_and_subcategory('Book', params[:sub], :order => 'genre')
+    @headertitle = "TIME'S ARROW - Book " + params[:sub]
+    self.title = @headertitle
     
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @timelines }
+    end
   end
   
 end
