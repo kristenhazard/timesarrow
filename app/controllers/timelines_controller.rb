@@ -107,15 +107,6 @@ class TimelinesController < ApplicationController
     end
   end
   
-  # timelines/add_item
-  
-  def add_item
-    flash[:notice] = "add new item"
-    @item = Item.new
-    flash[:item] = @item
-    redirect_to :action => "edit", :id => params[:id]
-  end
-  
   # select item from amazon search and save into timeline
   def select_item
     asin = params[:asin]
@@ -158,13 +149,6 @@ class TimelinesController < ApplicationController
     
     redirect_to :action => "edit", :id => params[:id]
     
-  end
-  
-  def sort
-    params[:dtimeline].each_with_index do |id, index|
-      TimelineItem.update_all(['position=?', index+1], ['id=?', id])
-    end
-    render :nothing => true
   end
   
   def featured

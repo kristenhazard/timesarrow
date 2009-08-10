@@ -4,14 +4,15 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
 
   map.resources :timeline_items,
-                :member => { :popup => :get }
+                :member => { :popup => :get, :re_sort => :post },
+                :collection => { :sort => :post }
 
   map.resources :timelines, 
-                :member => { :select_item => :post, :add_item => :get }, 
-                :collection => { :sort => :post, :featured => :get, :makeone => :get, :books => :get }
+                :member => { :select_item => :post }, 
+                :collection => { :featured => :get, :makeone => :get, :books => :get }
 
   map.resources :items, 
-                :member => { :select_item => :post, :add_item => :get }
+                :member => { :select_item => :post }
                 
   map.resources :sessions
                 

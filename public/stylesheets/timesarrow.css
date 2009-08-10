@@ -10,7 +10,7 @@ yellow background: #f6cc5c
 
 red: #9c3946
 
-red: #724343
+red brown: #724343
 
 */
 
@@ -170,13 +170,19 @@ div#search
 
 div.container 
 {
-	
 	font-size: 75%;
 }
 
 div.container a, p
 {
 	font-size: 75%;
+	color: #676767;
+}
+
+div.container a:hover 
+{ 
+	color: #cc9900;
+	border-bottom: none;
 }
 
 .posdesc
@@ -227,18 +233,24 @@ div.tlinfo
 div#searchedit
 {
 	position:absolute;
-	left: 50px;
-	top: 550px;
+	left: 25px;
+	top: 400px;
 	margin: .5em;
 	padding: .5em;
-	width: 870px;
+	width: 815px;
 	/*visibility: hidden;*/
-	background-color: #9DCAFF
+	background-color: #724343
+}
+
+div#searchedit p
+{
+	color: #fff;
 }
 
 .move
 {
 	cursor: move;
+	font-size: 75%;
 }
 
 div.timelineitem-name {
@@ -323,6 +335,78 @@ li.timeline_item
 }
 
 .horizontal_carousel_small .next_button_disabled {
+  background: url(/images/disabled.png);
+  cursor: default;
+}
+
+
+/* edit */
+
+.horizontal_carousel_small_edit {
+  float: left;
+  width: 885px;
+  height: 200px;
+  position: relative;
+}
+
+.horizontal_carousel_small_edit .container {
+  float: left;
+  width: 835px;
+  height: 200px;
+  position: relative;    
+  overflow: hidden;
+}
+
+.horizontal_carousel_small_edit ul {
+  margin: 0;
+  padding:0;
+  width: 100000px;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 200px;
+}                      
+
+.horizontal_carousel_small_edit ul li {
+  width: 60px;
+  height: 200px;
+  text-align: center; 
+  list-style:none;   
+  float:left;
+}
+
+.horizontal_carousel_small_edit .previous_button {
+  float:left;  
+  width: 25px;
+  height: 90px;
+  background: url(/images/left.png);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.horizontal_carousel_small_edit .previous_button_over {
+  background: url(/images/left-over.png);
+}
+
+.horizontal_carousel_small_edit .previous_button_disabled {
+  background: url(/images/disabled.png);
+  cursor: default;
+}
+
+.horizontal_carousel_small_edit .next_button {
+  float:left;  
+  width: 25px;
+  height: 90px;
+  background: url(/images/right.png);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.horizontal_carousel_small_edit .next_button_over {
+  background: url(/images/right-over.png);
+}
+
+.horizontal_carousel_small_edit .next_button_disabled {
   background: url(/images/disabled.png);
   cursor: default;
 }

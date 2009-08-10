@@ -52,23 +52,35 @@
   </p>
 <% end %>
 
-<div id="horizontal_carousel">
+<p><%= link_to "re-sort", {:controller => "timeline_items", :action => "re_sort"}, :method => "post" %></p>
+
+<div id="horizontal_carousel_small_<%= @timeline.id %>" class="horizontal_carousel_small">
   <div class="previous_button"></div>  
   <div class="container">
     <ul id="dtimeline">
     <% @timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
-          <span class="move">--move--</span><br/>
-            <% if timelineitem.item.mediumimageurl.nil? %>
-              <%= link_to timelineitem.item.title, edit_item_path(timelineitem.item) %>
+          
+            <% if timelineitem.item.smallimageurl.nil? %>
+              <%=h timelineitem.item.title %>
             <% else %>
-              <%= link_to image_tag(timelineitem.item.mediumimageurl), edit_item_path(timelineitem.item), :popup => true %>
+              <%= image_tag(timelineitem.item.smallimageurl) %>
             <% end %>
           <br/>
-          <%= @timeline_item = timelineitem; in_place_editor_field :timeline_item, :position_desc, {}, 
-                                                                   :url => { :controller => 'timeline_items', :action => 'set_timeline_item_position_desc', :id => timelineitem.id }, 
-                                                                   :cols => 5  %><br/>
-          <%= link_to 'remove', { :controller => 'timeline_items', :action => 'destroy', :id => timelineitem.id }, :confirm => "Are you sure?", :method => :delete %>         
+          <span class="posdesc">
+          <%= @timeline_item = timelineitem; 
+              in_place_editor_field :timeline_item, :position_desc, {}, 
+                                    :url => { :controller => 'timeline_items', 
+                                              :action => 'set_timeline_item_position_desc', 
+                                              :id => timelineitem.id }, 
+                                    :cols => 5  %><br/>
+                                    <span class="move">[drag]</span><br/>
+                                      <%= link_to 'remove', { :controller => 'timeline_items', 
+                                                              :action => 'destroy', 
+                                                              :id => timelineitem.id }, 
+                                                            :confirm => "Are you sure?", 
+                                                            :method => :delete %><br/>
+          </span>
       <% end %> <!-- end </li> -->
     <% end %> <!-- end timelineitem loop -->
     </ul>
@@ -82,10 +94,10 @@
 </div>
 
 <!-- drag and drop -->
-<%= sortable_element("dtimeline", :url => sort_timelines_path, :constraint => :horizontal)  %>
+<%= sortable_element("dtimeline", :url => { :controller => 'timeline_items', :action => 'sort' }, :constraint => :horizontal)  %>
 
 <!-- carousel -->
 <script>
-new UI.Carousel("horizontal_carousel");
+new UI.Carousel("horizontal_carousel_small_"+ <%= @timeline.id %>);
 </script>
 

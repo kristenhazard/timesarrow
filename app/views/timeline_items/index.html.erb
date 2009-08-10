@@ -17,6 +17,7 @@
     <td><%=h timeline_item.position %></td>
     <td><%=h timeline_item.position_desc %></td>
     <td><%=h timeline_item.item_id %></td>
+    <td><%=h timeline_item.item.title %></td>
     <td><%= link_to 'Show', timeline_item %></td>
     <td><%= link_to 'Edit', edit_timeline_item_path(timeline_item) %></td>
     <td><%= link_to 'Destroy', timeline_item, :confirm => 'Are you sure?', :method => :delete %></td>

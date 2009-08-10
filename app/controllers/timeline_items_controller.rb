@@ -80,7 +80,7 @@ class TimelineItemsController < ApplicationController
     @timeline_item.destroy
 
     respond_to do |format|
-      format.html { redirect_to(timeline_items_url) }
+      format.html { redirect_to :back }
       format.xml  { head :ok }
     end
   end
@@ -93,6 +93,28 @@ class TimelineItemsController < ApplicationController
   def work_it
     @timeline_item = TimelineItem.find(params[:id])
     render :partial => 'shared/item_work'
+  end
+  
+  def sort
+    params[:dtimeline].each_with_index do |id, index|
+      TimelineItem.update_all(['position=?', index+1], ['id=?', id])
+    end
+    render :nothing => true
+  end
+  
+  def re_sort
+    # loop through timeline items and apply resort algorithm
+    @timeline = Timeline.find(params[:id])
+    max = @timeline.timeline_items.count
+    logger.info max
+    #min = @timeline.timeline_items.min
+    @timeline.timeline_items.each do |ti|
+      min = ti.position
+      logger.info min
+      ti.position = max + 1 - min
+      ti.save!
+    end
+    redirect_to :controller => "timelines", :action => "edit", :id => params[:id]
   end
 
 end
