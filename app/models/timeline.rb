@@ -22,7 +22,8 @@ class Timeline < ActiveRecord::Base
     ["Books",     "Book"],
     ["Music",     "Music"],
     ["Movies",    "Movie"],
-    ["Television", "Television"]
+    ["Television", "Television"],
+    ["Multimedia", "Multimedia"]
   ]
   
   TIMELINE_SUBCATEGORIES = [

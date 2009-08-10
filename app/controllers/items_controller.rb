@@ -42,7 +42,8 @@ class ItemsController < ApplicationController
         flash[:error] = "Please enter keywords"
       else
         # amazon-ecs
-        res = get_item_search_response(keywords)
+        item_type = @item.itemtype
+        res = get_item_search_response(keywords, item_type)
         @error = res.error
         flash[:error] = @error
         @itemarray = res.items

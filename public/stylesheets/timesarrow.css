@@ -94,7 +94,37 @@ ul#navbar a:hover
 ul#navbar li
 {
 	float: left;
-	padding: .15em 1em 0em .75em;
+	padding: .2em 1em 0em .75em;
+	white-space: nowrap;
+}
+
+
+ul#user_nav
+{
+	background-color: #848484;
+	color: #fff;
+	list-style-type: none;
+	margin: 0;
+	padding: 0em 0em 0em 0em;
+	font-size: 75%;
+	float: right;
+}
+
+ul#user_nav a
+{
+	color: #fff;
+}
+
+ul#user_nav a:hover
+{
+	color: #cc9900;
+	border-bottom: none;
+}
+
+ul#user_nav li
+{
+	float: left;
+	padding: .2em 1em 0em .75em;
 	white-space: nowrap;
 }
 
@@ -299,35 +329,4 @@ li.timeline_item
 #item_work_it
 {
 	padding: 30px;
-}
-
-
-ul#user_nav
-{
-	background-color: #848484;
-	color: #fff;
-	list-style-type: none;
-	margin: 0;
-	padding: 0em 0em 0em 0em;
-	font-size: 75%;
-	float: right;
-	
-}
-
-ul#user_nav a
-{
-	color: #fff;
-}
-
-ul#user_nav a:hover
-{
-	color: #cc9900;
-	border-bottom: none;
-}
-
-ul#user_nav li
-{
-	float: left;
-	padding: .15em 1em 0em .75em;
-	white-space: nowrap;
 }

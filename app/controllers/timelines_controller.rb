@@ -49,7 +49,8 @@ class TimelinesController < ApplicationController
         flash[:error] = "Please enter keywords"
       else
         # amazon-ecs
-        res = get_item_search_response(keywords)
+        category = @timeline.category
+        res = get_item_search_response(keywords, category)
         @error = res.error
         flash[:error] = @error
         @itemarray = res.items

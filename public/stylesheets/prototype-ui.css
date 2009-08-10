@@ -36,17 +36,17 @@
   float:left;  
   width: 35px;
   height: 175px;
-  background: url(/images/left-big.png);
+  background: url(/images/left.png);
   z-index: 100;
   cursor: pointer;
 }
 
 #horizontal_carousel .previous_button_over {
-  background: url(/images/left-big-over.png);
+  background: url(/images/left-over.png);
 }
 
 #horizontal_carousel .previous_button_disabled {
-  background: url(/images/left-disabled.png);
+  background: url(/images/disabled.png);
   cursor: default;
 }
 
@@ -54,17 +54,17 @@
   float:left;  
   width: 35px;
   height: 175px;
-  background: url(/images/right-big.png);
+  background: url(/images/right.png);
   z-index: 100;
   cursor: pointer;
 }
 
 #horizontal_carousel .next_button_over {
-  background: url(/images/right-big-over.png);
+  background: url(/images/right-over.png);
 }
 
 #horizontal_carousel .next_button_disabled {
-  background: url(/images/right-disabled.png);
+  background: url(/images/disabled.png);
   cursor: default;
 }
 
