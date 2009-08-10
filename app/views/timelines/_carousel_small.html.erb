@@ -16,7 +16,7 @@
                     :action => 'popup' %>
                     
             <% if timelineitem.item.smallimageurl.nil? %>
-              <%= link_to image_tag("images/nocover.png", :alt => timelineitem.item.title),
+              <%= link_to timelineitem.item.title,
                           :controller => 'timelines',
                           :action => 'show',
                           :id => timelineitem.timeline_id

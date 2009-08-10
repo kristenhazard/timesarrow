@@ -243,7 +243,8 @@ div#searchedit
 
 div.timelineitem-name {
 	/* added this padding so that mouseover and mouseout events would trigger consistently */
-	padding: .05em;  
+	padding: .5em;
+	font-size: 75%;
 }
 
 
