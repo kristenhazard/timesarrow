@@ -4,4 +4,4 @@
 <p><%=h @timeline_item.item.title %></p>
 <p>by <%=h @timeline_item.item.author %></p>
 <p><%= @timeline_item.item.description %></p>
-<p><%= link_to 'buy from amazon.com', @timeline_item.item.detailpageurl, :popup => true %></p>
+<p class="buy"><%= link_to 'buy from amazon.com', @timeline_item.item.detailpageurl, :popup => true %></p>

@@ -3,8 +3,8 @@
     <%= link_to image_tag(timelineitem.item.mediumimageurl), timelineitem.item.detailpageurl, :popup => true %>
   <% end %>
   <%=h timelineitem.item.title %><br/>
-  by <%=h timelineitem.item.author %><br/><br/>
-  <%= truncate(timelineitem.item.description, :length => 1000) %><br/>
+  <p>by <%=h timelineitem.item.author %></p>
+  <p><%= truncate(timelineitem.item.description, :length => 1000) %></p><br/>
   <span class="buy"><%= link_to 'buy from amazon.com', timelineitem.item.detailpageurl, :popup => true %></span>
 </div>
 

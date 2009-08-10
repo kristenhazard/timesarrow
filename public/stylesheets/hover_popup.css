@@ -7,6 +7,10 @@ div.timelineitem {
   /* The following properties should not be changed */
   position: absolute;
 	z-index: 1;
+}
+
+div.timelineitem p
+{
 	font-size: 75%;
 }
 

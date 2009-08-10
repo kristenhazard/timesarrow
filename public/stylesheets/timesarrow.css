@@ -173,7 +173,7 @@ div.container
 	font-size: 75%;
 }
 
-div.container a, p
+div.container a
 {
 	font-size: 75%;
 	color: #676767;
@@ -227,7 +227,7 @@ div.tlinfo
 
 .buy a
 {
-	color: #202230;
+	color: #f6cc5c;
 }
 
 div#searchedit
