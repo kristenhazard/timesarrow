@@ -18,7 +18,7 @@ Rails::Initializer.run do |config|
   config.gem "amazon-ecs", :lib => "amazon/ecs"
   config.gem "hpricot"
   config.gem 'BlueCloth', :lib => 'bluecloth'
-  #config.gem 'RedCloth'
+  # config.gem 'RedCloth'
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"

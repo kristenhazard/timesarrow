@@ -1,4 +1,5 @@
 class TimelineItemsController < ApplicationController
+  before_filter :authorize, :except => [:popup, :work_it]
   in_place_edit_for :timeline_item, :position_desc
   
   # GET /timeline_items
