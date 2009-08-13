@@ -415,3 +415,99 @@ li.timeline_item
 {
 	padding: 30px;
 }
+
+#item_work_it a img
+{
+	float: left;
+	margin: .85em 0em 0em 0em;
+}
+
+
+#top
+{
+	background-color: #f6cc5c;
+	margin: .5em;
+	position: absolute;
+	left: 185px;
+	top: -10px;
+	padding: 0.5em;
+	height: 50px;
+	width: 500px;
+}
+
+#top-parent
+{
+	position: absolute;
+	left: 5px;
+}
+.top-arrow
+{
+	margin: 2.75em 0em 0em 0em;
+}
+
+#middle
+{
+	background-color: #f6cc5c;
+	margin: .5em;
+	position: absolute;
+	left: 250px;
+	top: 20px;
+	padding: 0.5em;
+	width: 435px;
+}
+
+#middle-parent
+{
+	position: absolute;
+	left: 5px;
+	top: 50px;
+}
+
+.middle-arrow
+{
+	margin: 2.75em 0em 0em 0em;
+}
+
+#bottom
+{
+	background-color: #f6cc5c;
+	margin: .5em;
+	position: absolute;
+	left: 120px;
+	top: -15px;
+	padding: 0.5em;
+	width: 100px;
+	height: 100px;
+}
+
+#bottom a
+{
+	color: #9c3946;
+}
+
+#bottom-parent
+{
+	position: absolute;
+	left: 5px;
+	top: 135px;
+}
+
+.bottom-arrow
+{
+	margin: 0em 0em 0em 0em;
+}
+
+#work-it-container
+{
+	height: 150px;
+	position: absolute;
+	left: 145px;
+	top: 210px;
+	width: 725px;
+	font-size: 75%;
+}
+
+#work-it-container p
+{
+	font-size: 100%;
+}
