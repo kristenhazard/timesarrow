@@ -1,20 +1,5 @@
 class RatingsController < ApplicationController
   
-#  before_filter :get_class_by_name
-#  before_filter :authorize
-  
-#  def rate
-#    return unless logged_in?
-#    rateable = @rateable_class.find(params[:id])
-    # Delete the old ratings for current user
-#    Rating.delete_all(["rateable_type = ? AND rateable_id = ? AND user_id = ?", @rateable_class.base_class.to_s, params[:id], @current_user.id])
-#    rateable.add_rating Rating.new(:rating => params[:rating], :user_id => @current_user.id)
-#    render :update do |page|
-#      page.replace_html “star-ratings-block-#{rateable.id}”, :partial => “rate”, :locals => { :asset => rateable }
-#      page.visual_effect :highlight, “star-ratings-block-#{rateable.id}”
-#    end
-#  end
-  
   def rate
     @asset = Item.find(params[:id])
     Rating.delete_all(["rateable_type = 'Item' AND rateable_id = ? AND user_id = ?", @asset.id, current_user.id])
@@ -25,6 +10,21 @@ class RatingsController < ApplicationController
     end
   end
   
+  
+  #  before_filter :get_class_by_name
+  #  before_filter :authorize
+
+  #  def rate
+  #    return unless logged_in?
+  #    rateable = @rateable_class.find(params[:id])
+      # Delete the old ratings for current user
+  #    Rating.delete_all(["rateable_type = ? AND rateable_id = ? AND user_id = ?", @rateable_class.base_class.to_s, params[:id], @current_user.id])
+  #    rateable.add_rating Rating.new(:rating => params[:rating], :user_id => @current_user.id)
+  #    render :update do |page|
+  #      page.replace_html “star-ratings-block-#{rateable.id}”, :partial => “rate”, :locals => { :asset => rateable }
+  #      page.visual_effect :highlight, “star-ratings-block-#{rateable.id}”
+  #    end
+  #  end
 #protected
   # Gets the rateable class based on the params[:rateable_type]
 #  def get_class_by_name

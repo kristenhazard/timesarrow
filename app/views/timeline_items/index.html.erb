@@ -7,13 +7,16 @@
     <th>position</th>
     <th>position_desc</th>
     <th>item_id</th>
+    <th>title</th>
+    <th>show</th>
+    <th>edit</th>
+    <th>destroy</th>
   </tr>
 
 <% @timeline_items.each do |timeline_item| %>
   <tr>
     <td><%=h timeline_item.timeline_id %></td>
     <td><%=h timeline_item.timeline.name %></td>
-
     <td><%=h timeline_item.position %></td>
     <td><%=h timeline_item.position_desc %></td>
     <td><%=h timeline_item.item_id %></td>
