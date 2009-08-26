@@ -6,7 +6,9 @@
   <%= image_tag "/images/arrow-med.gif", :class => "top-arrow" %>
   <div id="top">
     RATE
-    <p>coming soon</p>
+    <div id="star-ratings-block">
+        <%= render :partial => "ratings/rating", :locals => { :asset => @timeline_item.item } %>
+    </div>
   </div>
 </div>
 <div id="middle-parent">

@@ -1,0 +1,33 @@
+<% if current_user %>
+<ul class='star-rating'>
+  <% unless asset.rating(current_user).nil? %>
+    <li class='current-rating' style='width:<%= (asset.rating(current_user) * 25).to_i -%>px;'>
+    </li>
+  <% end %>
+    <li>
+        <%= link_to_remote( "1", {:url => { :controller => "ratings", 
+            :action => "rate", :id => asset.id, :rating => 1}},
+            :class => 'one-star', :name => '1 star out of 5') %>
+    </li>
+    <li>
+        <%= link_to_remote( "2", {:url => { :controller => "ratings", 
+            :action => "rate", :id => asset.id, :rating => 2}},
+            :class => 'two-stars', :name => '2 stars out of 5') %>    
+    </li>
+    <li>
+        <%= link_to_remote( "3", {:url => { :controller => "ratings", 
+            :action => "rate", :id => asset.id, :rating => 3}},
+            :class => 'three-stars', :name => '3 stars out of 5') %>
+    </li>
+    <li>
+        <%= link_to_remote( "4", {:url => { :controller => "ratings", 
+            :action => "rate", :id => asset.id, :rating => 4}},
+            :class => 'four-stars', :name => '4 stars out of 5') %>    
+    </li>
+    <li>
+        <%= link_to_remote( "5", {:url => { :controller => "ratings", 
+            :action => "rate", :id => asset.id, :rating => 5}},
+            :class => 'five-stars', :name => '5 stars out of 5') %>
+    </li>
+</ul>
+<% end %>

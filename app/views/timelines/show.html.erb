@@ -1,8 +1,6 @@
-<% if admin? %> | <%= link_to 'Edit', edit_timeline_path %> | <% end %>
-
 <div>
   <h1>
-    <%=h @timeline.name.upcase %>
+    <%=h @timeline.name.upcase %> <% if admin? %> | <%= link_to 'Edit', edit_timeline_path %> <% end %>
   </h1>
   <div class="tlinfo">
     <%= @timeline.description %>

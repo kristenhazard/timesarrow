@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  imageurl: MyString
+  category: MyString
+  subcategory: MyString
+  featured: 1
+  genre: MyString
+
+two:
+  name: MyString
+  description: MyString
+  imageurl: MyString
+  category: MyString
+  subcategory: MyString
+  featured: 1
+  genre: MyString

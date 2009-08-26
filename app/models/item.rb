@@ -14,6 +14,8 @@
 
 class Item < ActiveRecord::Base
   
+  acts_as_rateable
+  
   has_many :timelines, :through => :timeline_items
   has_many :timeline_items, :dependent => :destroy
 
