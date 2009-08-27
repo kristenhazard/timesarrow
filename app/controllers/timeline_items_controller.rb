@@ -3,7 +3,8 @@ class TimelineItemsController < ApplicationController
   in_place_edit_for :timeline_item, :position_desc
   
   def index
-    @timeline_items = TimelineItem.all(:order => 'item_id')
+    #@timeline_items = TimelineItem.all
+    @timeline_items = TimelineItem.find(:all, :include => [ :item, :timeline ], :order => 'items.title')
   end
 
   def show

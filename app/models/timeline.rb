@@ -12,7 +12,7 @@
 
 class Timeline < ActiveRecord::Base
   
-  has_many :items, :through => :timeline_items
+  has_many :items, :through => :timeline_items,  :order => 'title'
   has_many :timeline_items, :order => 'position ASC', :dependent => :destroy
   
   validates_presence_of :name, :category
