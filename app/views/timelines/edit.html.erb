@@ -90,7 +90,7 @@
 
 <!-- search -->
 <div id="searchedit">
-  <%= render :partial => 'shared/search_item' %>
+  <%= render :partial => 'shared/search_item', :locals => { :featured_timline_item => @featured_timeline_item }  %>
 </div>
 
 <!-- drag and drop -->

@@ -3,23 +3,17 @@ class TimelinesController < ApplicationController
   
   before_filter :authorize, :except => [:index, :show, :featured, :books, :makeone]
   
-  # GET /timelines
-  # GET /timelines.xml
   def index
     @timelines = Timeline.all(:include => [ :items, :timeline_items ], :order => 'category, subcategory, genre, featured desc')
     self.title = "TIME'S ARROW - All Timelines"
   end
 
-  # GET /timelines/1
-  # GET /timelines/1.xml
+
   def show
     @timeline = Timeline.find(params[:id], :include => [ :items, :timeline_items ])
+    @featured_timeline_item = @timeline.timeline_items[0]
     self.title = "TIME'S ARROW: " + @timeline.name + " timeline"
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @timeline }
-    end
   end
 
   # GET /timelines/new

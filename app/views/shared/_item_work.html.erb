@@ -1,5 +1,5 @@
-<% unless @timeline_item.item.mediumimageurl.nil? %>
-  <%= link_to image_tag(@timeline_item.item.mediumimageurl), @timeline_item.item.detailpageurl, :popup => true, :class => "work-it-book" %>
+<% unless @featured_timeline_item.item.mediumimageurl.nil? %>
+  <%= link_to image_tag(@featured_timeline_item.item.mediumimageurl), @featured_timeline_item.item.detailpageurl, :popup => true, :class => "work-it-book" %>
 <% end %>
 <div id="work-it-container">
 <div id="top-parent">
@@ -7,7 +7,7 @@
   <div id="top">
     RATE
     <div id="star-ratings-block">
-        <%= render :partial => "ratings/rating", :locals => { :asset => @timeline_item.item } %>
+        <%= render :partial => "ratings/rating", :locals => { :asset => @featured_timeline_item.item } %>
     </div>
   </div>
 </div>
@@ -15,16 +15,16 @@
  <%= image_tag "/images/arrow-large.gif", :class => "middle-arrow" %> 
  <div id="middle">
    FOLLOW
-   <p><%=h @timeline_item.item.title %></p>
-   <p>by <%=h @timeline_item.item.author %></p>
-   <p><%= @timeline_item.item.description %></p>
+   <p><%=h @featured_timeline_item.item.title %></p>
+   <p>by <%=h @featured_timeline_item.item.author %></p>
+   <p><%= @featured_timeline_item.item.description %></p>
  </div>
 </div>
 <div id="bottom-parent">
   <%= image_tag "/images/arrow-small.gif" %> 
   <div id="bottom">
     BUY
-    <%= link_to 'amazon.com', @timeline_item.item.detailpageurl, :popup => true %>
+    <%= link_to 'amazon.com', @featured_timeline_item.item.detailpageurl, :popup => true %>
   </div>
 </div>
 </div>
