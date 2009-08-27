@@ -3,7 +3,7 @@
 <% @timelines.each do |timeline| %>
   <tr>
     <td>
-      <%= link_to timeline.name, timeline %>
+      <%= link_to timeline.name.upcase, timeline %>
     </td>
   </tr>
   <tr>

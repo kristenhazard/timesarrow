@@ -6,19 +6,14 @@ class TimelinesController < ApplicationController
   # GET /timelines
   # GET /timelines.xml
   def index
-    @timelines = Timeline.all(:order => 'category, subcategory, genre, featured desc')
+    @timelines = Timeline.all(:include => [ :items, :timeline_items ], :order => 'category, subcategory, genre, featured desc')
     self.title = "TIME'S ARROW - All Timelines"
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @timelines }
-    end
   end
 
   # GET /timelines/1
   # GET /timelines/1.xml
   def show
-    @timeline = Timeline.find(params[:id])
+    @timeline = Timeline.find(params[:id], :include => [ :items, :timeline_items ])
     self.title = "TIME'S ARROW: " + @timeline.name + " timeline"
 
     respond_to do |format|
@@ -154,7 +149,7 @@ class TimelinesController < ApplicationController
   end
   
   def featured
-    @timelines = Timeline.find_all_by_featured(1, :order => 'subcategory, genre')
+    @timelines = Timeline.find_all_by_featured(1, :order => 'subcategory, genre', :include => [ :items, :timeline_items ])
     self.title = "TIME'S ARROW - Featured Timelines"
     
     respond_to do |format|
@@ -168,7 +163,7 @@ class TimelinesController < ApplicationController
   end
   
   def books
-    @timelines = Timeline.find_all_by_category_and_subcategory('Book', params[:sub], :order => 'genre')
+    @timelines = Timeline.find_all_by_category_and_subcategory('Book', params[:sub], :order => 'genre, items.author', :include => [ :items, :timeline_items ] )
     @headertitle = "TIME'S ARROW - Book " + params[:sub]
     @contenttitle = 'Book ' + params[:sub]
     self.title = @headertitle

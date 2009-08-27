@@ -1,9 +1,9 @@
-<h1><%=h @contenttitle %></h1>
+<h1><%=h @contenttitle.upcase %></h1>
 <table>
 <% @timelines.each do |timeline| %>
   <tr>
     <td>
-      <%= link_to timeline.name, timeline %>
+      <%= link_to timeline.name.upcase, timeline %>
     </td>
   </tr>
   <tr>
