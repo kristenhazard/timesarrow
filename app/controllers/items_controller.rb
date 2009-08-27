@@ -15,6 +15,7 @@ class ItemsController < ApplicationController
   # GET /items/1.xml
   def show
     @item = Item.find(params[:id])
+    @timelines = @item.timelines
 
     respond_to do |format|
       format.html # show.html.erb

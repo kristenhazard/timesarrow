@@ -22,7 +22,7 @@
     <td><%=h item.title %></td>
     <td><%=h item.itemtype %></td>
     <td><%=h item.author %></td>
-    <td><%= item.description %></td>
+    <td><%=h truncate(item.description, :length => 50) %></td>
     <td><%=h item.asin %></td>
     <td><%=h item.publicationdate %></td>
     <td><%= link_to 'Show', item %></td>

@@ -1,7 +1,15 @@
 <p>
-  <%= image_tag @item.mediumimageurl %>
+  <%= image_tag @item.mediumimageurl %><%= image_tag @item.smallimageurl %>
+  
 </p>
-
+<p>TIMELINES
+<ul>
+<% @timelines.each do |timeline| %>
+<li>
+  <%= timeline.name %>
+</li>
+<% end %>
+</ul></p>
 <p>
   <b>ID:</b>
   <%=h @item.id %>
@@ -23,8 +31,12 @@
 </p>
 
 <p>
-  <b>Description:</b>
+  <b>Description h:</b>
   <%=h @item.description %>
+</p>
+<p>
+  <b>Description:</b>
+  <%= @item.description %>
 </p>
 
 <p>
@@ -50,10 +62,6 @@
 <p>
   <b>Publicationdate:</b>
   <%=h @item.publicationdate %>
-</p>
-
-<p>
-  <%= image_tag @item.smallimageurl %>
 </p>
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
