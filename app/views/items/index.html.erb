@@ -3,6 +3,8 @@
 <table border=5>
   <tr>
     <td></td>
+    <td></td>
+    <td></td>
     <td>id</td>
     <td>title</td>
     <td>item type</td>
@@ -13,11 +15,9 @@
   </tr>
 <% @items.each do |item| %>
   <tr valign="top">
-    <td>
-      <% if !item.smallimageurl.nil? %>
-        <%= image_tag item.smallimageurl %>
-      <% end %>
-    </td>
+    <td><%= link_to 'Show', item %></td>
+    <td><%= link_to 'Edit', edit_item_path(item) %></td>
+    <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
     <td><%=h item.id %></td>
     <td><%=h item.title %></td>
     <td><%=h item.itemtype %></td>
@@ -25,9 +25,6 @@
     <td><%=h truncate(item.description, :length => 50) %></td>
     <td><%=h item.asin %></td>
     <td><%=h item.publicationdate %></td>
-    <td><%= link_to 'Show', item %></td>
-    <td><%= link_to 'Edit', edit_item_path(item) %></td>
-    <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
