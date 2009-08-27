@@ -157,7 +157,7 @@ class TimelinesController < ApplicationController
   end
   
   def books
-    @timelines = Timeline.find_all_by_category_and_subcategory('Book', params[:sub], :order => 'genre, items.author', :include => [ :items, :timeline_items ] )
+    @timelines = Timeline.find_all_by_category_and_subcategory('Book', params[:sub], :order => 'genre', :include => [ :items, :timeline_items ] )
     @headertitle = "TIME'S ARROW - Book " + params[:sub]
     @contenttitle = 'Book ' + params[:sub]
     self.title = @headertitle
