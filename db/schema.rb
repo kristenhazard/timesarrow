@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(:version => 20090825204837) do
     t.string   "title"
     t.string   "itemtype"
     t.string   "author"
-    t.text     "description",     :limit => 2000
+    t.text     "description"
     t.string   "asin"
     t.string   "detailpageurl"
     t.string   "smallimageurl"
