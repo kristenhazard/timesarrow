@@ -14,10 +14,11 @@ class TimelinesControllerTest < ActionController::TestCase
 
   test "should create timeline" do
     assert_difference('Timeline.count') do
-      post :create, :timeline => { }
+      post :create, :timeline => { :name => 'Test',
+                                   :category => 'Book' }
     end
 
-    assert_redirected_to timeline_path(assigns(:timeline))
+    assert_redirected_to edit_timeline_path(assigns(:timeline))
   end
 
   test "should show timeline" do

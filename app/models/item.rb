@@ -20,5 +20,6 @@ class Item < ActiveRecord::Base
   has_many :timeline_items, :dependent => :destroy
 
   validates_presence_of :title, :asin, :detailpageurl
+  validates_uniqueness_of :asin, :on => :create, :message => "must be unique"
 
 end

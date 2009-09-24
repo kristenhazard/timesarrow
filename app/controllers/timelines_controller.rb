@@ -4,7 +4,8 @@ class TimelinesController < ApplicationController
   before_filter :authorize, :except => [:index, :show, :featured, :books, :makeone]
   
   def index
-    @timelines = Timeline.all(:include => [ :items, :timeline_items ], :order => 'category, subcategory, genre, featured desc')
+    @timelines = Timeline.all(:include => [ :items, :timeline_items ], 
+                              :order => 'category, subcategory, genre, featured desc')
     self.title = "TIME'S ARROW - All Timelines"
   end
 
@@ -58,7 +59,7 @@ class TimelinesController < ApplicationController
     respond_to do |format|
       if @timeline.save
         flash[:notice] = 'Timeline was successfully created.'
-        format.html { redirect_to(@timeline) }
+        format.html { redirect_to edit_timeline_path(@timeline) }
         format.xml  { render :xml => @timeline, :status => :created, :location => @timeline }
       else
         format.html { render :action => "new" }

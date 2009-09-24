@@ -35,7 +35,9 @@
 </div>
   
 <div id="item_work_it">
-    <%= render :partial => 'shared/item_work' %>
+    <% unless @featured_timeline_item.nil? %>
+      <%= render :partial => 'shared/item_work' %>
+    <% end %>
 </div>
 <!-- carousel -->
 <script>

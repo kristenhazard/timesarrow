@@ -5,7 +5,7 @@ one:
   itemtype: MyString
   author: MyString
   description: MyText
-  asin: MyString
+  asin: ASIN
   detailpageurl: MyString
   smallimageurl: MyString
   mediumimageurl: MyString
@@ -16,7 +16,7 @@ two:
   itemtype: MyString
   author: MyString
   description: MyText
-  asin: MyString
+  asin: ASIN2
   detailpageurl: MyString
   smallimageurl: MyString
   mediumimageurl: MyString

@@ -8,6 +8,18 @@ one:
 
 two:
   timeline_id: 1
+  item_id: 2
+  position: 2
+  position_desc: MyString
+
+three:
+  timeline_id: 2
   item_id: 1
   position: 1
+  position_desc: MyString
+  
+four:
+  timeline_id: 2
+  item_id: 2
+  position: 2
   position_desc: MyString

@@ -1,16 +1,16 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
+  name: Timeline 1
   description: MyString
   imageurl: MyString
   category: MyString
   subcategory: MyString
-  featured: 1
+  featured: 0
   genre: MyString
 
 two:
-  name: MyString
+  name: Timeline 2
   description: MyString
   imageurl: MyString
   category: MyString

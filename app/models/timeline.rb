@@ -15,7 +15,8 @@ class Timeline < ActiveRecord::Base
   has_many :items, :through => :timeline_items,  :order => 'title'
   has_many :timeline_items, :order => 'position ASC', :dependent => :destroy
   
-  validates_presence_of :name, :category
+  validates_presence_of :name, :category, :subcategory, :genre
+  validates_numericality_of :featured, :on => :create, :message => "is not a number"
   
   TIMELINE_CATEGORIES = [
     # Displayed   stored in db
