@@ -6,12 +6,7 @@
     <% timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
                   
-      <div id="timelineitem-name-<%= timelineitem.id %>" class='timelineitem-name'>
-        
-            <%= link_to "", 
-                    :controller => 'timeline_items', 
-                    :id => timelineitem.id,
-                    :action => 'popup' %>
+      
                     
             <% if timelineitem.item.smallimageurl.nil? %>
               <%= link_to timelineitem.item.title,
@@ -28,7 +23,7 @@
             <% end %>
             
                         
-      </div>
+      
       <span class="posdesc">
         <% unless timelineitem.position_desc.eql? 'set' %>
           <%=h timelineitem.position_desc %>
