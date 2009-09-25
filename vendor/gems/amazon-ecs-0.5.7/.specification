@@ -1,0 +1,78 @@
+--- !ruby/object:Gem::Specification 
+name: amazon-ecs
+version: !ruby/object:Gem::Version 
+  version: 0.5.7
+platform: ruby
+authors: 
+- Herryanto Siatono
+autorequire: name
+bindir: bin
+cert_chain: []
+
+date: 2009-08-27 00:00:00 -07:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: hpricot
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: "0.4"
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: ruby-hmac
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 0.3.2
+    version: 
+description: 
+email: herryanto@pluitsolutions.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- README
+- CHANGELOG
+files: 
+- lib/amazon/ecs.rb
+- README
+- CHANGELOG
+- test/amazon/ecs_test.rb
+has_rdoc: true
+homepage: http://amazon-ecs.rubyforge.net/
+licenses: []
+
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.5
+signing_key: 
+specification_version: 3
+summary: Generic Amazon E-commerce Service (ECS) REST API. Supports ECS 4.0.
+test_files: 
+- test/amazon/ecs_test.rb

@@ -1,42 +1,57 @@
-require 'test_helper'
+require File.dirname(__FILE__) + '/../test_helper'
 
 class TimelinesControllerTest < ActionController::TestCase
-  test "should get index" do
+  
+  setup :activate_authlogic
+  
+  def test_should_get_index
     get :index
     assert_response :success
     assert_not_nil assigns(:timelines)
   end
 
-  test "should get new" do
+  def test_should_get_new
+    UserSession.create(users(:admin)) # logs a user in
     get :new
     assert_response :success
   end
 
-  test "should create timeline" do
+
+  def test_should_create_timeline
+    UserSession.create(users(:admin)) # logs a user in
     assert_difference('Timeline.count') do
       post :create, :timeline => { :name => 'Test',
-                                   :category => 'Book' }
+                                   :category => 'Book',
+                                   :subcategory => 'Awards',
+                                   :featured => 0,
+                                   :genre => 'Adventure' }
     end
-
     assert_redirected_to edit_timeline_path(assigns(:timeline))
   end
 
-  test "should show timeline" do
+  def test_should_show_timeline
     get :show, :id => timelines(:one).to_param
     assert_response :success
   end
 
-  test "should get edit" do
+  def test_should_get_edit
+    UserSession.create(users(:admin)) # logs a user in
     get :edit, :id => timelines(:one).to_param
     assert_response :success
   end
 
-  test "should update timeline" do
-    put :update, :id => timelines(:one).to_param, :timeline => { }
+  def test_should_update_timeline
+    UserSession.create(users(:admin)) # logs a user in
+    put :update, :id => timelines(:one).to_param, :timeline => { :name => 'Test',
+                                                                 :category => 'Book',
+                                                                 :subcategory => 'Awards',
+                                                                 :featured => 0,
+                                                                 :genre => 'Adventure' }
     assert_redirected_to timeline_path(assigns(:timeline))
   end
 
-  test "should destroy timeline" do
+  def test_should_destroy_timeline
+    UserSession.create(users(:admin)) # logs a user in
     assert_difference('Timeline.count', -1) do
       delete :destroy, :id => timelines(:one).to_param
     end

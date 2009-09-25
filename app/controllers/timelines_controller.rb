@@ -14,19 +14,12 @@ class TimelinesController < ApplicationController
     @timeline = Timeline.find(params[:id], :include => [ :items, :timeline_items ])
     @featured_timeline_item = @timeline.timeline_items[0]
     self.title = "TIME'S ARROW: " + @timeline.name + " timeline"
-
   end
 
-  # GET /timelines/new
-  # GET /timelines/new.xml
+
   def new
     @timeline = Timeline.new
     self.title = "TIME'S ARROW - create new timeline"
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @timeline }
-    end
   end
 
   # GET /timelines/1/edit
@@ -55,17 +48,13 @@ class TimelinesController < ApplicationController
   # POST /timelines.xml
   def create
     @timeline = Timeline.new(params[:timeline])
-
-    respond_to do |format|
-      if @timeline.save
-        flash[:notice] = 'Timeline was successfully created.'
-        format.html { redirect_to edit_timeline_path(@timeline) }
-        format.xml  { render :xml => @timeline, :status => :created, :location => @timeline }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @timeline.errors, :status => :unprocessable_entity }
-      end
+    if @timeline.save
+      flash[:notice] = 'Timeline was successfully created.'
+      redirect_to edit_timeline_path(@timeline) 
+    else
+      render :action => "new" 
     end
+    
   end
 
   # PUT /timelines/1

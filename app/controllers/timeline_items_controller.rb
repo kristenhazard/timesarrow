@@ -47,7 +47,7 @@ class TimelineItemsController < ApplicationController
     @timeline_item = TimelineItem.find(params[:id])
     @timeline_item.destroy
     
-    redirect_to :back
+    redirect_to :action => "index"
   end
   
   def popup

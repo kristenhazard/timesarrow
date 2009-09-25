@@ -1,6 +1,12 @@
-require 'test_helper'
+require File.dirname(__FILE__) + '/../test_helper'
 
 class TimelineItemsControllerTest < ActionController::TestCase
+  
+  def setup
+    activate_authlogic
+    UserSession.create(users(:admin)) # logs a user in
+  end 
+  
   test "should get index" do
     get :index
     assert_response :success
@@ -14,7 +20,8 @@ class TimelineItemsControllerTest < ActionController::TestCase
 
   test "should create timeline_item" do
     assert_difference('TimelineItem.count') do
-      post :create, :timeline_item => { }
+      post :create, :timeline_item => { :item_id => 1,
+                                        :timeline_id => 1 }
     end
 
     assert_redirected_to timeline_item_path(assigns(:timeline_item))
