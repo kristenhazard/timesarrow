@@ -22,6 +22,16 @@ test:
   password:
   socket: /tmp/mysql.sock
   
+staging:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: timesarrow_staging
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+  
 production:
   adapter: mysql
   encoding: utf8
