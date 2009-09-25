@@ -1,23 +1,23 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  title: MyString
-  itemtype: MyString
-  author: MyString
-  description: MyText
-  asin: ASIN
-  detailpageurl: MyString
-  smallimageurl: MyString
-  mediumimageurl: MyString
-  publicationdate: 2009-08-25
+  title: March
+  itemtype: Book
+  author: Geraldine Brooks
+  description: "  From Louisa May Alcott\xE2\x80\x99s beloved classic <I>Little Women</I>, Geraldine Brooks has animated the   character of the absent father, March, and crafted a story \"filled with the ache of love and marriage and   with the power of war upon the mind and heart of one unforgettable man\" (Sue Monk Kidd). With  \"pitch-perfect writing\" (<I>USA Today</I>), Brooks follows March as he leaves behind his family to aid   the Union cause in the Civil War. His experiences will utterly change his marriage and challenge his most   ardently held beliefs. A lushly written, wholly original tale steeped in the details of another time,   <I>March</I> secures Geraldine Brooks\xE2\x80\x99s place as a renowned author of historical fiction."
+  asin: "0143036661"
+  detailpageurl: http://www.amazon.com/March-Geraldine-Brooks/dp/0143036661%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0143036661
+  smallimageurl: http://ecx.images-amazon.com/images/I/51K4CPKPJSL._SL75_.jpg
+  mediumimageurl: http://ecx.images-amazon.com/images/I/51K4CPKPJSL._SL160_.jpg
+  publicationdate: 2006-01-31
 
 two:
-  title: MyString
-  itemtype: MyString
-  author: MyString
-  description: MyText
-  asin: ASIN2
-  detailpageurl: MyString
-  smallimageurl: MyString
-  mediumimageurl: MyString
-  publicationdate: 2009-08-25
+  title: The Brief Wondrous Life of Oscar Wao
+  itemtype: Book
+  author: Junot D\xC3\xADaz
+  description: "The most talked about\xE2\x80\x94and praised\xE2\x80\x94first novel of 2007, and winner of the Pulitzer Prize.<BR><BR>Oscar is a sweet but disastrously overweight ghetto nerd who\xE2\x80\x94from the New Jersey home he shares with his old world mother and rebellious sister\xE2\x80\x94 dreams of becoming the Dominican J.R.R. Tolkien and, most of all, finding love. But Oscar may never get what he wants. Blame the fuk\xC3\xBA\xE2\x80\x94a curse that has haunted Oscar\xE2\x80\x99s family for generations, following them on their epic journey from Santo Domingo to the USA. Encapsulating Dominican-American history, <i>The Brief Wondrous Life of Oscar Wao</i> opens our eyes to an astonishing vision of the contemporary American experience and explores the endless human capacity to persevere\xE2\x80\x94and risk it all\xE2\x80\x94in the name of love."
+  asin: "1594483299"
+  detailpageurl: http://www.amazon.com/Brief-Wondrous-Life-Oscar-Wao/dp/1594483299%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1594483299
+  smallimageurl: http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL75_.jpg
+  mediumimageurl: http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL160_.jpg
+  publicationdate: 2008-09-02

@@ -16,11 +16,12 @@ class ItemTest < ActiveSupport::TestCase
     assert item.errors.invalid?(:detailpageurl)
   end
   
-  test "duplicate asin" do
-    item = Item.new(:title => 'Test Title',
-                    :asin => 'ASIN',
+  test "duplicate asin should not be valid" do
+    item = Item.new(:title => 'March',
+                    :asin => '0143036661',
                     :detailpageurl => 'http://amazon.com')
-    assert !item.valid?
-    assert item.errors.invalid?(:asin)
+    assert !item.save, "Item should not save with duplicate ASIN"
+    assert !item.valid?, "Item should not be valid with duplicate ASIN"
+    assert item.errors.invalid?(:asin), "Item invalid error should be due to ASIN"
   end
 end
