@@ -4,6 +4,7 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   helper_method :admin?, :current_user
+  include ExceptionNotifiable
   
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
   

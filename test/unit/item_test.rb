@@ -24,4 +24,12 @@ class ItemTest < ActiveSupport::TestCase
     assert !item.valid?, "Item should not be valid with duplicate ASIN"
     assert item.errors.invalid?(:asin), "Item invalid error should be due to ASIN"
   end
+  
+  should_have_many :timelines, :through => :timeline_items
+  
+  should_validate_presence_of :title, :asin, :detailpageurl
+  
+  should_validate_uniqueness_of :asin, :message => "must be unique"
+  
+
 end

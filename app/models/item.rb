@@ -21,5 +21,9 @@ class Item < ActiveRecord::Base
 
   validates_presence_of :title, :asin, :detailpageurl
   validates_uniqueness_of :asin, :on => :create, :message => "must be unique"
+  
+  def self.findduplicate(asin)
+    find_by_asin(asin)
+  end
 
 end
