@@ -1,19 +1,12 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: Timeline 1
-  description: MyString
-  imageurl: MyString
-  category: MyString
-  subcategory: MyString
-  featured: 0
-  genre: MyString
-
-two:
-  name: Timeline 2
+pulitzers:
+  name: Pulitzers
   description: MyString
   imageurl: MyString
   category: MyString
   subcategory: MyString
   featured: 1
   genre: MyString
+
+

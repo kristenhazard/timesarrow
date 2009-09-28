@@ -1,6 +1,6 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
+book_march:
   title: March
   itemtype: Book
   author: Geraldine Brooks
@@ -11,7 +11,7 @@ one:
   mediumimageurl: http://ecx.images-amazon.com/images/I/51K4CPKPJSL._SL160_.jpg
   publicationdate: 2006-01-31
 
-two:
+book_brief_wondrous:
   title: The Brief Wondrous Life of Oscar Wao
   itemtype: Book
   author: Junot D\xC3\xADaz

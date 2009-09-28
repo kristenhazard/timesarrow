@@ -30,19 +30,19 @@ class TimelinesControllerTest < ActionController::TestCase
   end
 
   def test_should_show_timeline
-    get :show, :id => timelines(:one).to_param
+    get :show, :id => timelines(:pulitzers).to_param
     assert_response :success
   end
 
   def test_should_get_edit
     UserSession.create(users(:admin)) # logs a user in
-    get :edit, :id => timelines(:one).to_param
+    get :edit, :id => timelines(:pulitzers).to_param
     assert_response :success
   end
 
   def test_should_update_timeline
     UserSession.create(users(:admin)) # logs a user in
-    put :update, :id => timelines(:one).to_param, :timeline => { :name => 'Test',
+    put :update, :id => timelines(:pulitzers).to_param, :timeline => { :name => 'Test',
                                                                  :category => 'Book',
                                                                  :subcategory => 'Awards',
                                                                  :featured => 0,
@@ -53,7 +53,7 @@ class TimelinesControllerTest < ActionController::TestCase
   def test_should_destroy_timeline
     UserSession.create(users(:admin)) # logs a user in
     assert_difference('Timeline.count', -1) do
-      delete :destroy, :id => timelines(:one).to_param
+      delete :destroy, :id => timelines(:pulitzers).to_param
     end
 
     assert_redirected_to timelines_path

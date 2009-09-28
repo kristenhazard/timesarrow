@@ -1,25 +1,14 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  timeline_id: 1
-  item_id: 1
+  timeline: pulitzers
+  item: book_march
   position: 1
   position_desc: '1900'
 
 two:
-  timeline_id: 1
-  item_id: 2
+  timeline: pulitzers
+  item: book_brief_wondrous
   position: 2
   position_desc: '1990'
 
-three:
-  timeline_id: 2
-  item_id: 1
-  position: 1
-  position_desc: 'MyString'
-  
-four:
-  timeline_id: 2
-  item_id: 2
-  position: 2
-  position_desc: 'MyString'

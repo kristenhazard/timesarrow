@@ -18,6 +18,46 @@ class Timeline < ActiveRecord::Base
   validates_presence_of :name, :category, :subcategory, :genre
   validates_numericality_of :featured, :on => :create, :message => "is not a number"
   
+  def self.save_item_from_search(searchitem)
+    # set item attributes based on response from amazon
+    asin = searchitem.get("asin")
+    @item = Item.find_by_asin(asin)
+    if @item.nil?
+      @item = Item.new
+      @item.title = searchitem.get("title")
+      @item.itemtype = searchitem.get("productgroup")
+      @item.author = searchitem.get("author")
+      if @item.author.nil?
+        @item.author = searchitem.get("creator")
+      end
+      reviews = searchitem/'editorialreview'
+      if (!reviews.nil?)
+        review = reviews[0]
+        Amazon::Element.get_hash(review) # [:source => ..., :content ==> ...]
+        @item.description = Amazon::Element.get_unescaped(review, 'content')
+      else
+        @item.description = ""
+      end
+      @item.asin = asin
+      @item.detailpageurl = searchitem.get("detailpageurl")
+      @item.smallimageurl = searchitem.get("smallimage/url")
+      @item.mediumimageurl = searchitem.get("mediumimage/url")
+      @item.publicationdate = searchitem.get("publicationdate")
+      @item.save!
+    end
+    @item
+  end
+  
+  def self.save_timeline_item_from_search(item, timelineid)
+    # save timeline_item
+    @timeline_item = TimelineItem.new
+    @timeline_item.item_id = @item.id
+    @timeline_item.timeline_id = timelineid
+    @timeline_item.position_desc = 'set'
+    @timeline_item.save!
+    @timeline_item.insert_at
+  end
+  
   TIMELINE_CATEGORIES = [
     # Displayed   stored in db
     ["Books",     "Book"],

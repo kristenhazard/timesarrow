@@ -17,8 +17,8 @@ class ItemTest < ActiveSupport::TestCase
   end
   
   test "duplicate asin should not be valid" do
-    item = Item.new(:title => 'March',
-                    :asin => '0143036661',
+    item = Item.new(:title => items(:book_march).title,
+                    :asin => items(:book_march).asin,
                     :detailpageurl => 'http://amazon.com')
     assert !item.save, "Item should not save with duplicate ASIN"
     assert !item.valid?, "Item should not be valid with duplicate ASIN"

@@ -90,43 +90,10 @@ class TimelinesController < ApplicationController
   def select_item
     asin = params[:asin]
     # get response from amazon 
-    res = get_item_lookup(asin)
-    item = res.items[0]
-    
-    # set item attributes based on response from amazon
-    asin = item.get("asin")
-    @item = Item.find_by_asin(asin)
-    if @item.nil?
-      @item = Item.new
-      @item.title = item.get("title")
-      @item.itemtype = item.get("productgroup")
-      @item.author = item.get("author")
-      if @item.author.nil?
-        @item.author = item.get("creator")
-      end
-      reviews = item/'editorialreview'
-      if (!reviews.nil?)
-        review = reviews[0]
-        Amazon::Element.get_hash(review) # [:source => ..., :content ==> ...]
-        @item.description = Amazon::Element.get_unescaped(review, 'content')
-      else
-        @item.description = ""
-      end
-      @item.asin = item.get("asin")
-      @item.detailpageurl = item.get("detailpageurl")
-      @item.smallimageurl = item.get("smallimage/url")
-      @item.mediumimageurl = item.get("mediumimage/url")
-      @item.publicationdate = item.get("publicationdate")
-      @item.save!
-    end
-    
-    # save timeline_item
-    @timeline_item = TimelineItem.new
-    @timeline_item.item_id = @item.id
-    @timeline_item.timeline_id = params[:id]
-    @timeline_item.position_desc = 'set'
-    @timeline_item.save!
-    @timeline_item.insert_at
+    #res = get_item_lookup(asin)
+    searchitem = get_item_lookup(asin).items[0]
+    @item = Timeline.save_item_from_search(searchitem)
+    Timeline.save_timeline_item_from_search(@item, params[:id])
     
     redirect_to :action => "edit", :id => params[:id]
     

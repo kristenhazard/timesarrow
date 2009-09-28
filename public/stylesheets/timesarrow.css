@@ -234,17 +234,23 @@ div#searchedit
 {
 	position:absolute;
 	left: 25px;
-	top: 400px;
+	top: 450px;
 	margin: .5em;
 	padding: .5em;
 	width: 815px;
 	/*visibility: hidden;*/
-	background-color: #724343
+	background-color: #848484
 }
 
 div#searchedit p
 {
 	color: #fff;
+}
+
+div.edit-timeline
+{
+	color: 848484;
+	font-size: 90%;
 }
 
 .move
