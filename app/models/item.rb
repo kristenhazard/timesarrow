@@ -22,6 +22,34 @@ class Item < ActiveRecord::Base
   validates_presence_of :title, :asin, :detailpageurl
   validates_uniqueness_of :asin, :on => :create, :message => "must be unique"
   
-
+  def self.save_item_from_search(searchitem)
+    # set item attributes based on response from amazon
+    asin = searchitem.get("asin")
+    @item = find_by_asin(asin)
+    if @item.nil?
+      @item = Item.new
+      @item.title = searchitem.get("title")
+      @item.itemtype = searchitem.get("productgroup")
+      @item.author = searchitem.get("author")
+      if @item.author.nil?
+        @item.author = searchitem.get("creator")
+      end
+      reviews = searchitem/'editorialreview'
+      if (!reviews.nil?)
+        review = reviews[0]
+        Amazon::Element.get_hash(review) # [:source => ..., :content ==> ...]
+        @item.description = Amazon::Element.get_unescaped(review, 'content')
+      else
+        @item.description = ""
+      end
+      @item.asin = asin
+      @item.detailpageurl = searchitem.get("detailpageurl")
+      @item.smallimageurl = searchitem.get("smallimage/url")
+      @item.mediumimageurl = searchitem.get("mediumimage/url")
+      @item.publicationdate = searchitem.get("publicationdate")
+      @item.save!
+    end
+    @item
+  end
 
 end

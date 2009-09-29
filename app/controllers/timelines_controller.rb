@@ -22,10 +22,11 @@ class TimelinesController < ApplicationController
     self.title = "TIME'S ARROW - create new timeline"
   end
 
-  # GET /timelines/1/edit
+
   def edit
     @timeline = Timeline.find(params[:id])
     self.title = "TIME'S ARROW edit " + @timeline.name + " timeline"
+    # search 
     keywords = params[:keywords]
     if !keywords.nil?
       if keywords == ""
@@ -33,19 +34,16 @@ class TimelinesController < ApplicationController
       else
         # amazon-ecs
         category = @timeline.category
-        res = get_item_search_response(keywords, category)
+        s = Search.new(keywords,category)
+        res = s.get_item_search_response
         @error = res.error
         flash[:error] = @error
         @itemarray = res.items
-        #logger.info @itemarray
-        @item = Item.new
-        flash[:item] = @item
       end
     end
   end
 
-  # POST /timelines
-  # POST /timelines.xml
+
   def create
     @timeline = Timeline.new(params[:timeline])
     if @timeline.save
@@ -57,33 +55,24 @@ class TimelinesController < ApplicationController
     
   end
 
-  # PUT /timelines/1
-  # PUT /timelines/1.xml
+
   def update
     @timeline = Timeline.find(params[:id])
-
-    respond_to do |format|
-      if @timeline.update_attributes(params[:timeline])
-        flash[:notice] = 'Timeline was successfully updated.'
-        format.html { redirect_to(@timeline) }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @timeline.errors, :status => :unprocessable_entity }
-      end
+    
+    if @timeline.update_attributes(params[:timeline])
+      flash[:notice] = 'Timeline was successfully updated.'
+      redirect_to(@timeline) 
+    else
+      render :action => "edit" 
     end
+    
   end
 
-  # DELETE /timelines/1
-  # DELETE /timelines/1.xml
+
   def destroy
     @timeline = Timeline.find(params[:id])
     @timeline.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(timelines_url) }
-      format.xml  { head :ok }
-    end
+    redirect_to(timelines_url) 
   end
   
   # select item from amazon search and save into timeline
@@ -92,8 +81,8 @@ class TimelinesController < ApplicationController
     # get response from amazon 
     #res = get_item_lookup(asin)
     searchitem = get_item_lookup(asin).items[0]
-    @item = Timeline.save_item_from_search(searchitem)
-    Timeline.save_timeline_item_from_search(@item, params[:id])
+    @item = Item.save_item_from_search(searchitem)
+    TimelineItem.save_timeline_item_from_search(@item, params[:id])
     
     redirect_to :action => "edit", :id => params[:id]
     
