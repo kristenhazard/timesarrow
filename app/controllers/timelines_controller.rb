@@ -27,6 +27,7 @@ class TimelinesController < ApplicationController
     @timeline = Timeline.find(params[:id])
     self.title = "TIME'S ARROW edit " + @timeline.name + " timeline"
     # search 
+    # change this to ajax search
     keywords = params[:keywords]
     if !keywords.nil?
       if keywords == ""
@@ -35,10 +36,9 @@ class TimelinesController < ApplicationController
         # amazon-ecs
         category = @timeline.category
         s = Search.new(keywords,category)
-        res = s.get_item_search_response
-        @error = res.error
-        flash[:error] = @error
-        @itemarray = res.items
+        s.search_amazon_item_search
+        flash[:error] = s.error
+        @itemarray = s.results
       end
     end
   end
@@ -79,7 +79,6 @@ class TimelinesController < ApplicationController
   def select_item
     asin = params[:asin]
     # get response from amazon 
-    #res = get_item_lookup(asin)
     searchitem = get_item_lookup(asin).items[0]
     @item = Item.save_item_from_search(searchitem)
     TimelineItem.save_timeline_item_from_search(@item, params[:id])
@@ -89,29 +88,22 @@ class TimelinesController < ApplicationController
   end
   
   def featured
-    @timelines = Timeline.find_all_by_featured(1, :order => 'subcategory, genre', :include => [ :items, :timeline_items ])
+    @timelines = Timeline.featured
     self.title = "TIME'S ARROW - Featured Timelines"
-    
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @timelines }
-    end
   end
   
   def makeone
     self.title = "TIME'S ARROW - Make a timeline"
   end
   
-  def books
-    @timelines = Timeline.find_all_by_category_and_subcategory('Book', params[:sub], :order => 'genre', :include => [ :items, :timeline_items ] )
-    @headertitle = "TIME'S ARROW - Book " + params[:sub]
-    @contenttitle = 'Book ' + params[:sub]
+  def filtered
+    category = params[:category]
+    subcategory = params[:subcategory]
+    genre = params[:genre]
+    @timelines = Timeline.filtered_cat(category).filtered_subcat(subcategory).filtered_genre(genre)
+    @headertitle = "TIME'S ARROW - Book " + subcategory
+    @contenttitle = 'Book ' + subcategory
     self.title = @headertitle
-    
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @timelines }
-    end
   end
   
 end

@@ -1,4 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
+  map.filtered_cat_sub 'timelines/:category/:subcategory', :controller => 'timelines', :action => 'filtered'
+  map.filtered_cat 'timelines/:category', :controller => 'timelines', :action => 'filtered'
+  map.filtered_cat_sub_genre 'timelines/:category/:subcategory/:genre', :controller => 'timelines', :action => 'filtered'
+  map.filtered_genre 'timelines/:genre', :controller => 'timelines', :action => 'filtered'
+  
   map.resources :user_sessions
 
   map.resources :users

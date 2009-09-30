@@ -22,8 +22,9 @@ class ItemsController < ApplicationController
         flash[:error] = "Please enter keywords"
       else
         # amazon-ecs
-        item_type = @item.itemtype
-        res = get_item_search_response(keywords, item_type)
+        category = @item.itemtype
+        s = Search.new(keywords,category)
+        res = s.get_item_search_response
         @error = res.error
         flash[:error] = @error
         @itemarray = res.items
@@ -62,30 +63,10 @@ class ItemsController < ApplicationController
   def select_item
     asin = params[:asin]
     # get response from amazon 
-    res = get_item_lookup(asin)
-    item = res.items[0]
-    
-    # set item attributes based on response from amazon
+    @searchitem = get_item_lookup(asin).items[0]
     @item = Item.find(params[:id])
-    @item.title = item.get("title")
-    @item.itemtype = item.get("productgroup")
-    @item.author = item.get("author")
-    reviews = item/'editorialreview'
-    if (!reviews.nil?)
-      review = reviews[0]
-      Amazon::Element.get_hash(review) # [:source => ..., :content ==> ...]
-      @item.description = Amazon::Element.get_unescaped(review, 'content')
-    else
-      @item.description = ""
-    end
-    
-    # save item
-    @item.asin = item.get("asin")
-    @item.detailpageurl = item.get("detailpageurl")
-    @item.smallimageurl = item.get("smallimage/url")
-    @item.mediumimageurl = item.get("mediumimage/url")
-    @item.publicationdate = item.get("publicationdate")
-    @item.save
+    # set item attributes based on response from amazon
+    Item.update_item_from_search(@searchitem,@item)
     
     redirect_to :action => "edit", :id => params[:id]
     

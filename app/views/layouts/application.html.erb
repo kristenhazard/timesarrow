@@ -24,11 +24,11 @@
     <div id="navigation">
       <ul id="navbar">
         <li class="navitem-first"><%= link_to_unless_current('ALL', timelines_path) %></li>
-        <li><%= link_to_unless_current('FEATURED', {:controller => 'timelines', :action => 'featured'}) %></li>
-        <li><%= link_to_unless_current('BOOK CLUBS', {:controller => 'timelines', :action => 'books', :sub => 'Clubs' }) %></li>
-        <li><%= link_to_unless_current('BOOK AWARDS', {:controller => 'timelines', :action => 'books', :sub => 'Awards' }) %></li>
-        <li><%= link_to_unless_current('BOOK SERIES', {:controller => 'timelines', :action => 'books', :sub => 'Series' }) %></li>
-        <li><%= link_to_unless_current('BOOK REVIEWS', {:controller => 'timelines', :action => 'books', :sub => 'Reviews' }) %></li>
+        <li><%= link_to_unless_current('FEATURED', home_path ) %></li>
+        <li><%= link_to_unless_current('BOOK AWARDS', filtered_cat_sub_path(:category => 'book', :subcategory => 'awards' )) %></li>
+        <li><%= link_to_unless_current('BOOK CLUBS', filtered_cat_sub_path(:category => 'book', :subcategory => 'clubs' )) %></li>
+        <li><%= link_to_unless_current('BOOK REVIEWS', filtered_cat_sub_path(:category => 'book', :subcategory => 'reviews' )) %></li>
+        <li><%= link_to_unless_current('BOOK SERIES', filtered_cat_sub_path(:category => 'book', :subcategory => 'series' )) %></li>
         <li><%= link_to_unless_current('MAKE ONE!', {:controller => 'timelines', :action => 'makeone'}) %></li>
       </ul>
       <ul id="user_nav">
