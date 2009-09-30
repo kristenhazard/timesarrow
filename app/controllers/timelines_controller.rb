@@ -1,7 +1,7 @@
 class TimelinesController < ApplicationController
   require 'amazonecs'
   
-  before_filter :authorize, :except => [:index, :show, :featured, :books, :makeone]
+  before_filter :authorize, :except => [:index, :show, :featured, :filtered, :makeone]
   
   def index
     @timelines = Timeline.all(:include => [ :items, :timeline_items ], 
