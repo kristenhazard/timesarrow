@@ -517,3 +517,10 @@ li.timeline_item
 {
 	font-size: 100%;
 }
+
+#followme
+{
+	float: right;
+	margin-top: 60px;
+	margin-left: 17px;
+}
