@@ -9,7 +9,7 @@
 
   <% if @itemarray %>
     <% @itemarray.each { |aitem| %>
-      <% form_tag(:action => :select_item) do %>
+      <% form_tag(:controller => 'search', :action => :select_item) do %>
       <table border="0" cellspacing="5" cellpadding="5">
       <tr valign="top">
         <td>
@@ -19,7 +19,7 @@
         </td>
         <td> <%= link_to(aitem.get("title"), aitem.get("detailpageurl")) %><br/>
              by <%=h aitem.get("author") %><br/>
-             <%= button_to 'Add to timeline', { :action => 'select_item', :id => aitem.get("asin") } %><br/>
+             <%= submit_tag 'Add to timeline', :name => nil %><br/>
              <%= markdown(aitem.get_unescaped("editorialreviews/editorialreview/content")) %>
              
         </td>
@@ -27,6 +27,7 @@
       <tr>
         <td>
           <%= hidden_field_tag(:asin, params[:asin], :value => aitem.get("asin")) %>
+          <%= hidden_field_tag(:id, params[:id], :value => params[:id]) %>
         </td>
       </tr>
       <tr>

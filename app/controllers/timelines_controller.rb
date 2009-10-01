@@ -26,7 +26,6 @@ class TimelinesController < ApplicationController
   def edit
     @timeline = Timeline.find(params[:id])
     self.title = "TIME'S ARROW edit " + @timeline.name + " timeline"
-    # search 
     # change this to ajax search
     keywords = params[:keywords]
     if !keywords.nil?
@@ -34,7 +33,7 @@ class TimelinesController < ApplicationController
         flash[:error] = "Please enter keywords"
       else
         # amazon-ecs
-        category = @timeline.category
+        category = 'Book'
         s = Search.new(keywords,category)
         s.search_amazon_item_search
         flash[:error] = s.error
@@ -58,7 +57,6 @@ class TimelinesController < ApplicationController
 
   def update
     @timeline = Timeline.find(params[:id])
-    
     if @timeline.update_attributes(params[:timeline])
       flash[:notice] = 'Timeline was successfully updated.'
       redirect_to(@timeline) 
@@ -74,27 +72,13 @@ class TimelinesController < ApplicationController
     @timeline.destroy
     redirect_to(timelines_url) 
   end
-  
-  # select item from amazon search and save into timeline
-  def select_item
-    asin = params[:asin]
-    # get response from amazon 
-    searchitem = get_item_lookup(asin).items[0]
-    @item = Item.save_item_from_search(searchitem)
-    TimelineItem.save_timeline_item_from_search(@item, params[:id])
-    
-    redirect_to :action => "edit", :id => params[:id]
-    
-  end
+
   
   def featured
     @timelines = Timeline.featured
     self.title = "TIME'S ARROW - Featured Timelines"
   end
   
-  def makeone
-    self.title = "TIME'S ARROW - Make a timeline"
-  end
   
   def filtered
     category = params[:category]
@@ -104,6 +88,12 @@ class TimelinesController < ApplicationController
     @headertitle = "TIME'S ARROW - Book " + subcategory
     @contenttitle = 'Book ' + subcategory
     self.title = @headertitle
+  end
+  
+  # to be removed once I actually allow users to make a timeline, 
+  #this is just a placeholder to check if users actually click this link
+  def makeone
+    self.title = "TIME'S ARROW - Make a timeline"
   end
   
 end

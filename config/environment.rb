@@ -45,3 +45,12 @@ Rails::Initializer.run do |config|
 end
 
 ExceptionNotifier.exception_recipients = %w(kristen@hazardbio.com)
+
+  if $0 == 'irb'
+    require 'hirb'
+    Hirb.enable
+  end
+  
+  if "irb" == $0
+    ActiveRecord::Base.logger = Logger.new(STDOUT)
+  end

@@ -22,21 +22,21 @@ class Item < ActiveRecord::Base
   validates_presence_of :title, :asin, :detailpageurl
   validates_uniqueness_of :asin, :on => :create, :message => "must be unique"
   
-  def self.save_item_from_search(searchitem)
+  def self.save_item_from_search(asin)
     # set item attributes based on response from amazon
-    asin = searchitem.get("asin")
-    @item = find_by_asin(asin)
-    if @item.nil?
-      @item = Item.new
-      @item = set_item_attributes_from_search(searchitem, @item)
-      @item.save!
+    item = find_by_asin(asin)
+    if item.nil?
+      item = Item.new
     end
-    @item
+    searchitem = get_item_lookup(asin).items[0]
+    item = set_item_attributes_from_search(searchitem, item)
+    item.save!
+    item
   end
   
   def self.update_item_from_search(searchitem, item)
-    @item = set_item_attributes_from_search(searchitem, item)
-    @item.save!
+    item = set_item_attributes_from_search(searchitem, item)
+    item.save!
   end
   
   def self.set_item_attributes_from_search(searchitem, item)

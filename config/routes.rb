@@ -1,6 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-
-  
   map.resources :user_sessions
 
   map.resources :users
@@ -17,6 +15,8 @@ ActionController::Routing::Routes.draw do |map|
                 :member => { :select_item => :post }
                 
   map.resources :sessions
+  
+  map.resources :search
                 
   map.home '', :controller => 'timelines', :action => 'featured'
   
