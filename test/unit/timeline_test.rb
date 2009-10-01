@@ -1,6 +1,10 @@
 require File.dirname(__FILE__) + '/../test_helper'
 
 class TimelineTest < ActiveSupport::TestCase
+  
+  should_have_many :items, :through => :timeline_items
+  should_have_many :timeline_items
+  
   def test_should_save_timeline_with_main_fields
     timeline = Timeline.new(
                               :name => 'Pulitzer Prize Winners',
@@ -62,5 +66,6 @@ class TimelineTest < ActiveSupport::TestCase
     assert !timeline.valid?
     assert timeline.errors.invalid?(:featured)
   end
+  
 
 end

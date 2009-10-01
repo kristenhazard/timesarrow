@@ -1,6 +1,14 @@
 require File.dirname(__FILE__) + '/../test_helper'
 
 class ItemTest < ActiveSupport::TestCase
+
+  should_have_many :timelines, :through => :timeline_items
+  should_have_many :timeline_items
+
+  should_validate_presence_of :title, :asin, :detailpageurl
+
+  should_validate_uniqueness_of :asin, :message => "must be unique"
+
   def test_should_save_item_with_required_fields
     item = Item.new(:title => 'Test Title',
                     :asin => 'ASIN3',
@@ -25,11 +33,33 @@ class ItemTest < ActiveSupport::TestCase
     assert item.errors.invalid?(:asin), "Item invalid error should be due to ASIN"
   end
   
-  should_have_many :timelines, :through => :timeline_items
+  def test_should_not_create_duplicate_asin_in_save_item_from_search
+    item = Item.new(:title => items(:book_march).title,
+                    :asin => items(:book_march).asin,
+                    :detailpageurl => 'http://www.amazon.com/Brief-Wondrous-Life-Oscar-Wao/dp/1594483299%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1594483299'
+                   )
+    item2 = Item.save_item_from_search(item.asin)
+    assert item2.id.eql? items(:book_march).id
+    
+  end
   
-  should_validate_presence_of :title, :asin, :detailpageurl
+  def test_should_create_new_item_from_search
+    assert Item.count.eql? 2
+    item = Item.save_item_from_search('0312427735')
+    assert item.valid?
+    assert Item.count.eql? 3
+  end
   
-  should_validate_uniqueness_of :asin, :message => "must be unique"
+  def test_should_set_item_attributes_from_search
+    searchitem = get_item_lookup(items(:book_march).asin).items[0]
+    item = Item.new
+    Item.set_item_attributes_from_search(searchitem,item)
+    assert item.title.eql? 'March'
+    assert item.author.eql? 'Geraldine Brooks'
+  end
   
+  def test_should_set_item_attributes_from_search_and_save
+    
+  end
 
 end

@@ -24,10 +24,7 @@ class Item < ActiveRecord::Base
   
   def self.save_item_from_search(asin)
     # set item attributes based on response from amazon
-    item = find_by_asin(asin)
-    if item.nil?
-      item = Item.new
-    end
+    item = find_or_create_by_asin(asin)
     searchitem = get_item_lookup(asin).items[0]
     item = set_item_attributes_from_search(searchitem, item)
     item.save!
@@ -62,6 +59,4 @@ class Item < ActiveRecord::Base
     item
   end
   
-
-
 end
