@@ -14,10 +14,15 @@
 <div id="middle-parent">
  <%= image_tag "/images/arrow-large.gif", :class => "middle-arrow" %> 
  <div id="middle">
-   FOLLOW
-   <p><%=h @featured_timeline_item.item.title %></p>
-   <p>by <%=h @featured_timeline_item.item.author %></p>
-   <p><%= @featured_timeline_item.item.description %></p>
+   INFO
+   <div id="amazon-info">
+     <p><%=h @featured_timeline_item.item.title %></p>
+     <p>by <%=h @featured_timeline_item.item.author %></p>
+     <p><%= @featured_timeline_item.item.description %></p>
+   </div>
+   <div id="other-timelines">
+    
+   </div>
  </div>
 </div>
 <div id="bottom-parent">

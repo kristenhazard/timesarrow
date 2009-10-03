@@ -84,7 +84,7 @@ class TimelinesController < ApplicationController
     category = params[:category]
     subcategory = params[:subcategory]
     genre = params[:genre]
-    @timelines = Timeline.filtered_cat(category).filtered_subcat(subcategory).filtered_genre(genre)
+    @timelines = Timeline.filtered_cat(category).filtered_subcat(subcategory).filtered_genre(genre).all(:order => 'genre')
     @headertitle = "TIME'S ARROW - Book " + subcategory
     @contenttitle = 'Book ' + subcategory
     self.title = @headertitle

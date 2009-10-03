@@ -44,10 +44,9 @@ class ItemTest < ActiveSupport::TestCase
   end
   
   def test_should_create_new_item_from_search
-    assert Item.count.eql? 2
-    item = Item.save_item_from_search('0312427735')
-    assert item.valid?
-    assert Item.count.eql? 3
+    assert_difference('Item.count') do
+      item = Item.save_item_from_search('0312427735')
+    end
   end
   
   def test_should_set_item_attributes_from_search
