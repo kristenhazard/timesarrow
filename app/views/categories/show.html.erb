@@ -4,6 +4,14 @@
   <strong>Name:</strong>
   <%=h @category.name %>
 </p>
+<p>
+  <strong>Amazon Search Index:</strong>
+  <%=h @category.amazon_index %>
+</p>
+<p>
+  <strong>Amazon Product Group:</strong>
+  <%=h @category.amazon_product_group %>
+</p>
 
 <p>
   <%= link_to "Edit", edit_category_path(@category) %> |

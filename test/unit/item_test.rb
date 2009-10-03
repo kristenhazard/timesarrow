@@ -5,14 +5,17 @@ class ItemTest < ActiveSupport::TestCase
   should_have_many :timelines, :through => :timeline_items
   should_have_many :timeline_items
 
-  should_validate_presence_of :title, :asin, :detailpageurl
+  should_validate_presence_of :title, :asin, :detailpageurl,:category_id
 
   should_validate_uniqueness_of :asin, :message => "must be unique"
+  
+  should_belong_to :category
 
   def test_should_save_item_with_required_fields
     item = Item.new(:title => 'Test Title',
                     :asin => 'ASIN3',
-                    :detailpageurl => 'http://amazon.com')
+                    :detailpageurl => 'http://amazon.com',
+                    :category_id => categories(:book))
     assert item.save, "Item saved with required fields"
   end
   
@@ -22,12 +25,14 @@ class ItemTest < ActiveSupport::TestCase
     assert item.errors.invalid?(:title)
     assert item.errors.invalid?(:asin)
     assert item.errors.invalid?(:detailpageurl)
+    assert item.errors.invalid?(:category_id)
   end
   
   test "duplicate asin should not be valid" do
     item = Item.new(:title => items(:book_march).title,
                     :asin => items(:book_march).asin,
-                    :detailpageurl => 'http://amazon.com')
+                    :detailpageurl => 'http://amazon.com',
+                    :category_id => categories(:book))
     assert !item.save, "Item should not save with duplicate ASIN"
     assert !item.valid?, "Item should not be valid with duplicate ASIN"
     assert item.errors.invalid?(:asin), "Item invalid error should be due to ASIN"
@@ -36,7 +41,8 @@ class ItemTest < ActiveSupport::TestCase
   def test_should_not_create_duplicate_asin_in_save_item_from_search
     item = Item.new(:title => items(:book_march).title,
                     :asin => items(:book_march).asin,
-                    :detailpageurl => 'http://www.amazon.com/Brief-Wondrous-Life-Oscar-Wao/dp/1594483299%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1594483299'
+                    :detailpageurl => 'http://www.amazon.com/Brief-Wondrous-Life-Oscar-Wao/dp/1594483299%3FSubscriptionId%3D1FZFQX4TKGCZNDQ44P02%26tag%3Dtimesarrow-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1594483299',
+                    :category_id => categories(:book)
                    )
     item2 = Item.save_item_from_search(item.asin)
     assert item2.id.eql? items(:book_march).id

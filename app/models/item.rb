@@ -18,8 +18,10 @@ class Item < ActiveRecord::Base
   
   has_many :timelines, :through => :timeline_items
   has_many :timeline_items, :dependent => :destroy
+  
+  belongs_to :category
 
-  validates_presence_of :title, :asin, :detailpageurl
+  validates_presence_of :title, :asin, :detailpageurl, :category_id
   validates_uniqueness_of :asin, :on => :create, :message => "must be unique"
   
   def self.save_item_from_search(asin)
@@ -56,6 +58,9 @@ class Item < ActiveRecord::Base
     item.smallimageurl = searchitem.get("smallimage/url")
     item.mediumimageurl = searchitem.get("mediumimage/url")
     item.publicationdate = searchitem.get("publicationdate")
+    #item.category_id = 1
+    pg = searchitem.get("productgroup")
+    item.category_id = Category.find_by_amazon_product_group(pg).id
     item
   end
   

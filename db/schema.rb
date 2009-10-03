@@ -9,12 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091002232320) do
+ActiveRecord::Schema.define(:version => 20091003015602) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "amazon_index"
+    t.string   "amazon_product_group"
   end
 
   create_table "items", :force => true do |t|

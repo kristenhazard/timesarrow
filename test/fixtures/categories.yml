@@ -1,5 +1,9 @@
-one:
-  name: MyString
+book:
+  name: Book
+  amazon_index: Books
+  amazon_product_group: Book
 
-two:
-  name: MyString
+movie:
+  name: Movie
+  amazon_index: DVD
+  amazon_product_group: DVD

@@ -10,6 +10,7 @@ book_march:
   smallimageurl: http://ecx.images-amazon.com/images/I/51K4CPKPJSL._SL75_.jpg
   mediumimageurl: http://ecx.images-amazon.com/images/I/51K4CPKPJSL._SL160_.jpg
   publicationdate: 2006-01-31
+  category: book
 
 book_brief_wondrous:
   title: The Brief Wondrous Life of Oscar Wao
@@ -21,3 +22,4 @@ book_brief_wondrous:
   smallimageurl: http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL75_.jpg
   mediumimageurl: http://ecx.images-amazon.com/images/I/51gMlxY5-mL._SL160_.jpg
   publicationdate: 2008-09-02
+  category: book

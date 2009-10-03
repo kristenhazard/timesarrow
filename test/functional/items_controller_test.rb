@@ -16,7 +16,8 @@ class ItemsControllerTest < ActionController::TestCase
     assert_difference('Item.count') do
       post :create, :item => { :title => 'March', 
                                :asin => '1111111111', 
-                               :detailpageurl => 'http://amazon.com' }
+                               :detailpageurl => 'http://amazon.com',
+                               :category_id => categories(:book) }
     end
 
     assert_redirected_to item_path(assigns(:item))
