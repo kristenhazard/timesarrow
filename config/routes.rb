@@ -1,12 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :item_statuses
 
-  map.resources :item_statuses
-
-  map.resources :item_statuses
-
-  map.resources :statuses
-
   map.resources :statuses
 
   map.resources :categories
@@ -20,11 +14,9 @@ ActionController::Routing::Routes.draw do |map|
                 :collection => { :sort => :post }
 
   map.resources :timelines, 
-                :member => { :select_item => :post }, 
-                :collection => { :featured => :get, :makeone => :get, :books => :get }
+                :collection => { :featured => :get, :makeone => :get }
 
-  map.resources :items, 
-                :member => { :select_item => :post }
+  map.resources :items
                 
   map.resources :sessions
   
