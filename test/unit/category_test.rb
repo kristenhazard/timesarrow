@@ -6,4 +6,5 @@ class CategoryTest < ActiveSupport::TestCase
   end
   
   should_have_many :items
+  should_have_many :statuses
 end

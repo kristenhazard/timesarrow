@@ -1,0 +1,7 @@
+one:
+  description: MyString
+  category_id: 1
+
+two:
+  description: MyString
+  category_id: 1

@@ -1,0 +1,16 @@
+<% form_for @item_status do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :item_id %><br />
+    <%= f.text_field :item_id %>
+  </p>
+  <p>
+    <%= f.label :status_id %><br />
+    <%= f.text_field :status_id %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

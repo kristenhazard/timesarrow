@@ -56,7 +56,7 @@ class TimelineItemsController < ApplicationController
   end
   
   def work_it
-    @featured_timeline_item = TimelineItem.find(params[:id])
+    @item = TimelineItem.find(params[:id]).item
     render :partial => 'shared/item_work'
   end
   

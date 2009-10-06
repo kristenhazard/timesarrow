@@ -1,0 +1,20 @@
+<% title "Item Status" %>
+
+<p>
+  <strong>User:</strong>
+  <%=h @item_status.user_id %>
+</p>
+<p>
+  <strong>Item:</strong>
+  <%=h @item_status.item_id %>
+</p>
+<p>
+  <strong>Status:</strong>
+  <%=h @item_status.status_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_item_status_path(@item_status) %> |
+  <%= link_to "Destroy", @item_status, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", item_statuses_path %>
+</p>

@@ -1,0 +1,12 @@
+<% form_for @status do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :category_id %><br />
+    <%= f.text_field :category_id %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

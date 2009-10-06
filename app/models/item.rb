@@ -18,11 +18,19 @@ class Item < ActiveRecord::Base
   
   has_many :timelines, :through => :timeline_items
   has_many :timeline_items, :dependent => :destroy
+  has_one :item_status
+  has_one :status, :through => :item_status
   
   belongs_to :category
 
   validates_presence_of :title, :asin, :detailpageurl, :category_id
   validates_uniqueness_of :asin, :on => :create, :message => "must be unique"
+  
+  def current_statusid
+    if !self.status.nil?
+      self.status.id
+    end
+  end
   
   def self.save_item_from_search(asin)
     # set item attributes based on response from amazon

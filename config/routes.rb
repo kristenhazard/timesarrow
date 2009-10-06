@@ -1,4 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :item_statuses
+
+  map.resources :item_statuses
+
+  map.resources :item_statuses
+
+  map.resources :statuses
+
+  map.resources :statuses
+
   map.resources :categories
 
   map.resources :user_sessions

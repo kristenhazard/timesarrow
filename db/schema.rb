@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091003015602) do
+ActiveRecord::Schema.define(:version => 20091005174519) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -17,6 +17,14 @@ ActiveRecord::Schema.define(:version => 20091003015602) do
     t.datetime "updated_at"
     t.string   "amazon_index"
     t.string   "amazon_product_group"
+  end
+
+  create_table "item_statuses", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "item_id"
+    t.integer  "status_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "items", :force => true do |t|
@@ -62,6 +70,13 @@ ActiveRecord::Schema.define(:version => 20091003015602) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "statuses", :force => true do |t|
+    t.string   "description"
+    t.integer  "category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "timeline_items", :force => true do |t|
     t.integer  "timeline_id"

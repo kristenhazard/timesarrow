@@ -1,39 +1,13 @@
-
-  <% form_tag({:action=>"edit"}, :method=>:get) do %>
-    <p>Enter keywords to search amazon.com:</p>
-    <%= text_field_tag(:keywords, params[:keywords], :size => 50) %>
-    <%= submit_tag "Search", :name => nil %>
-    <p>Results</p>
-    <%= flash[:error] %>
-  <% end %>
-
-  <% if @itemarray %>
-    <% @itemarray.each { |aitem| %>
-      <% form_tag(:controller => 'search', :action => :select_item) do %>
-      <table border="0" cellspacing="5" cellpadding="5">
-      <tr valign="top">
-        <td>
-          <% if aitem.get("mediumimage/url") %> 
-            <%= image_tag aitem.get("mediumimage/url") %>
-          <% end%>
-        </td>
-        <td> <%= link_to(aitem.get("title"), aitem.get("detailpageurl")) %><br/>
-             by <%=h aitem.get("author") %><br/>
-             <%= submit_tag 'Add to timeline', :name => nil %><br/>
-             <%= markdown(aitem.get_unescaped("editorialreviews/editorialreview/content")) %>
-             
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <%= hidden_field_tag(:asin, params[:asin], :value => aitem.get("asin")) %>
-          <%= hidden_field_tag(:id, params[:id], :value => params[:id]) %>
-        </td>
-      </tr>
-      <tr>
-        <td></td>
-      </tr>
-      </table>
-      <% end %>
-    <% } %>
-  <% end %>
+<p>Enter keywords to search amazon.com:</p>
+<%= text_field_tag(:keywords, '', :size => 50) %>
+<%= button_to_remote "Search", :update => "search-results", 
+    :url => { :controller => "search", 
+              :action => "search", 
+              :timelineid => @timeline.id, 
+              :category => @timeline.category },
+    :with => "'keywords='+$F('keywords')"
+%>
+<p></p>
+<div id="search-results">
+  
+</div>

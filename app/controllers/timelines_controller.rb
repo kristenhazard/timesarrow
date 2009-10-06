@@ -12,7 +12,7 @@ class TimelinesController < ApplicationController
 
   def show
     @timeline = Timeline.find(params[:id], :include => [ :items, :timeline_items ])
-    @featured_timeline_item = @timeline.timeline_items[0]
+    @item = @timeline.timeline_items[0].item
     self.title = "TIME'S ARROW: " + @timeline.name + " timeline"
   end
 
@@ -27,19 +27,7 @@ class TimelinesController < ApplicationController
     @timeline = Timeline.find(params[:id])
     self.title = "TIME'S ARROW edit " + @timeline.name + " timeline"
     # change this to ajax search
-    keywords = params[:keywords]
-    if !keywords.nil?
-      if keywords == ""
-        flash[:error] = "Please enter keywords"
-      else
-        # amazon-ecs
-        category = 'Book'
-        s = Search.new(keywords,category)
-        s.search_amazon_item_search
-        flash[:error] = s.error
-        @itemarray = s.results
-      end
-    end
+    
   end
 
 

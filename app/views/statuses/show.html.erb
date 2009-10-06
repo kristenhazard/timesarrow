@@ -1,0 +1,16 @@
+<% title "Status" %>
+
+<p>
+  <strong>Description:</strong>
+  <%=h @status.description %>
+</p>
+<p>
+  <strong>Category:</strong>
+  <%=h @status.category_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_status_path(@status) %> |
+  <%= link_to "Destroy", @status, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", statuses_path %>
+</p>

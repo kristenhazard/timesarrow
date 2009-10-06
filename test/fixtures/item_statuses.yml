@@ -1,0 +1,9 @@
+one:
+  user_id: 1
+  item_id: 1
+  status_id: 1
+
+two:
+  user_id: 1
+  item_id: 1
+  status_id: 1

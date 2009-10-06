@@ -1,0 +1,21 @@
+<% title "Item Statuses" %>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Item</th>
+    <th>Status</th>
+  </tr>
+  <% for item_status in @item_statuses %>
+    <tr>
+      <td><%=h item_status.user_id %></td>
+      <td><%=h item_status.item_id %></td>
+      <td><%=h item_status.status_id %></td>
+      <td><%= link_to "Show", item_status %></td>
+      <td><%= link_to "Edit", edit_item_status_path(item_status) %></td>
+      <td><%= link_to "Destroy", item_status, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Item Status", new_item_status_path %></p>
