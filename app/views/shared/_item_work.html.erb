@@ -5,33 +5,12 @@
 <div id="top-parent">
   <%= image_tag "/images/arrow-med.gif", :class => "top-arrow" %>
   <div id="top">
-    
-    <% if current_user %>
-    <div id="star-ratings-block">
-      Rate: <%= render :partial => "ratings/rating", :locals => { :asset => @item } %>
-    </div>
-    <div id="status">
-      Status: <%= collection_select(:item, :current_statusid, Status.all, :id, :description, 
-                  { :prompt => true }) %>
-              <div id="update-status"></div>
-              <%= observe_field :item_current_statusid,
-                                :frequency => 0.5,
-                                :update => "update-status",
-                                :url => {:controller => 'item_statuses', :action => 'create_or_update' },
-                                :with => "'item_id='+#{@item.id}+'&status_id='+encodeURIComponent(value)+'&user_id=1'" %>
-    </div>
-    <div>
-      Review:
-    </div>
-    <% else %>
-    sign in to rate books!
-    <% end %>
+    Buy: <%= link_to 'amazon.com', @item.detailpageurl, :popup => true %>
   </div>
 </div>
 <div id="middle-parent">
  <%= image_tag "/images/arrow-large.gif", :class => "middle-arrow" %> 
  <div id="middle">
-   INFO
    <div id="amazon-info">
      <p><%=h @item.title %></p>
      <p>by <%=h @item.author %></p>
@@ -45,8 +24,28 @@
 <div id="bottom-parent">
   <%= image_tag "/images/arrow-small.gif" %> 
   <div id="bottom">
-    BUY
-    <%= link_to 'amazon.com', @item.detailpageurl, :popup => true %>
+    <% if current_user %>
+      <div id="star-ratings-block">
+        Rate: <%= render :partial => "ratings/rating", :locals => { :asset => @item } %>
+      </div>
+      <div id="status">
+        Status: <br/><%= collection_select(:item, :current_statusid, Status.all, :id, :description, 
+                    { :prompt => true }) %>
+                <div id="update-status"></div>
+                <%= observe_field :item_current_statusid,
+                                  :frequency => 0.5,
+                                  :update => "update-status",
+                                  :url => {:controller => 'item_statuses', :action => 'create_or_update' },
+                                  :with => "'item_id='+#{@item.id}+'&status_id='+encodeURIComponent(value)+'&user_id=1'" %>
+      </div>
+      <div id="review">
+        Review: 
+        <textarea rows="10" cols="21"></textarea>
+        
+      </div>
+    <% else %>
+    sign in to rate books!
+    <% end %>
   </div>
 </div>
 </div>

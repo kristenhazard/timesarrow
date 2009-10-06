@@ -435,9 +435,9 @@ li.timeline_item
 	margin: .5em;
 	position: absolute;
 	left: 185px;
-	top: -10px;
+	top: 10px;
 	padding: 0.5em;
-	height: 50px;
+	height: 30px;
 	width: 500px;
 }
 
@@ -479,11 +479,11 @@ li.timeline_item
 	background-color: #f6cc5c;
 	margin: .5em;
 	position: absolute;
-	left: 120px;
+	left: 45px;
 	top: -15px;
 	padding: 0.5em;
-	width: 100px;
-	height: 100px;
+	width: 175px;
+	height: 300px;
 }
 
 #bottom a
@@ -523,4 +523,21 @@ li.timeline_item
 	float: right;
 	margin-top: 60px;
 	margin-left: 17px;
+}
+
+#status
+{
+	position: relative;
+	margin-top: 5px;
+}
+
+#review
+{
+	position: relative;
+	margin-top: 5px;
+}
+
+#star-ratings-block
+{
+	position: relative;
 }
