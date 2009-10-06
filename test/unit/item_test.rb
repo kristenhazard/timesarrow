@@ -4,8 +4,8 @@ class ItemTest < ActiveSupport::TestCase
 
   should_have_many :timeline_items
   should_have_many :timelines, :through => :timeline_items
-  should_have_many :item_statuses
-  should_have_many :statuses, :through => :item_statuses
+  should_have_one :item_status
+  should_have_one :status, :through => :item_status
   
 
   should_validate_presence_of :title, :asin, :detailpageurl,:category_id

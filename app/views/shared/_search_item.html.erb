@@ -1,13 +1,20 @@
-<p>Enter keywords to search amazon.com:</p>
-<%= text_field_tag(:keywords, '', :size => 50) %>
-<%= button_to_remote "Search", :update => "search-results", 
-    :url => { :controller => "search", 
-              :action => "search", 
-              :timelineid => @timeline.id, 
-              :category => @timeline.category },
-    :with => "'keywords='+$F('keywords')"
-%>
+<% form_remote_tag :url => {:controller => 'search', :action => 'search'}, 
+                   :html => { :action => url_for(:controller => "search", :action => "search") },
+                   :update => "search-results" do %>
+  <p>Enter keywords to search amazon.com:</p>
+  <%= text_field_tag(:keywords, params[:keywords], :size => 50) %>
+  <%= submit_tag "Search", :name => nil %>
+  <% if @timeline %>
+    <%= hidden_field_tag(:timelineid, params[:timelineid], :value => @timeline.id) %>
+    <%= hidden_field_tag(:category, params[:category], :value => @timeline.category) %>
+  <% else %>
+    <%= hidden_field_tag(:itemid, params[:itemid], :value => @item.id) %>
+    <%= hidden_field_tag(:category, params[:category], :value => @item.category.name) %>
+  <% end %>
+<% end %>
+
 <p></p>
+
 <div id="search-results">
   
 </div>

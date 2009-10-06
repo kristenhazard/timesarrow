@@ -59,18 +59,5 @@ class ItemsController < ApplicationController
     redirect_to(items_url) 
   end
   
-  # search results selected and saved into item
-  def select_item
-    asin = params[:asin]
-    # get response from amazon 
-    @searchitem = get_item_lookup(asin).items[0]
-    @item = Item.find(params[:id])
-    # set item attributes based on response from amazon
-    Item.update_item_from_search(@searchitem,@item)
-    
-    redirect_to :action => "edit", :id => params[:id]
-    
-  end
-  
 
 end
