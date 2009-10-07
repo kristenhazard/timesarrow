@@ -1,7 +1,11 @@
-one:
-  description: MyString
-  category_id: 1
+read:
+  description: Read
+  category: Book
+  
+plan_to_read:
+  description: Plan to Read
+  category: Book
 
-two:
-  description: MyString
-  category_id: 1
+watched:
+  description: Watched
+  category: Movie

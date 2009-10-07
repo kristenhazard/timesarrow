@@ -13,6 +13,7 @@ class TimelinesController < ApplicationController
   def show
     @timeline = Timeline.find(params[:id], :include => [ :items, :timeline_items ])
     @item = @timeline.timeline_items[0].item
+    @userid = current_user_id
     self.title = "TIME'S ARROW: " + @timeline.name + " timeline"
   end
 

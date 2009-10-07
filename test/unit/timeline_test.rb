@@ -14,6 +14,7 @@ class TimelineTest < ActiveSupport::TestCase
                               :genre => 'Adventure'
                            )
     assert timeline.save, "Saved with all required fields"
+    assert Timeline.filtered_genre('Adventure').count.eql? 1
   end
   
   def test_should_not_save_timeline_without_name
@@ -65,6 +66,20 @@ class TimelineTest < ActiveSupport::TestCase
                            )
     assert !timeline.valid?
     assert timeline.errors.invalid?(:featured)
+  end
+  
+  def test_should_return_featured_with_named_scope
+    @timelines = Timeline.featured
+    assert @timelines.count.eql? 1
+  end
+  
+  def test_should_return_filtered_with_name_scope
+    @timelines = Timeline.filtered_cat('Book')
+    assert @timelines.count.eql? 2
+    @timelines = Timeline.filtered_cat('Book').filtered_subcat('Awards')
+    assert @timelines.count.eql? 2
+    @timelines = Timeline.filtered_cat('Book').filtered_subcat('Awards').filtered_genre('Fiction')
+    assert @timelines.count.eql? 1
   end
   
 

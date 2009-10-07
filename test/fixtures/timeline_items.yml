@@ -1,13 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  timeline: pulitzers
+  timeline: awards_fiction_featured
   item: book_march
   position: 1
   position_desc: '1900'
 
 two:
-  timeline: pulitzers
+  timeline: awards_fiction_featured
   item: book_brief_wondrous
   position: 2
   position_desc: '1990'

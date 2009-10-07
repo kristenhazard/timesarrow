@@ -1,9 +1,9 @@
 one:
-  user_id: 1
-  item_id: 1
-  status_id: 1
+  user: admin
+  item: book_march
+  status: read
 
 two:
-  user_id: 1
-  item_id: 1
-  status_id: 1
+  user_id: user
+  item: book_march
+  status: plan to read

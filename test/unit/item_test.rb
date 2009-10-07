@@ -1,11 +1,13 @@
 require File.dirname(__FILE__) + '/../test_helper'
 
 class ItemTest < ActiveSupport::TestCase
+  
+  setup :activate_authlogic
 
   should_have_many :timeline_items
   should_have_many :timelines, :through => :timeline_items
-  should_have_one :item_status
-  should_have_one :status, :through => :item_status
+  should_have_many :item_statuses
+  should_have_many :statuses, :through => :item_statuses
   
 
   should_validate_presence_of :title, :asin, :detailpageurl,:category_id
@@ -69,5 +71,13 @@ class ItemTest < ActiveSupport::TestCase
   def test_should_set_item_attributes_from_search_and_save
     
   end
+  
+  def test_get_current_statusid
+    UserSession.create(users(:admin))
+    item = items(:book_march)
+    #debugger
+    assert item.current_statusid.eql? statuses(:read).id
+  end
+
 
 end

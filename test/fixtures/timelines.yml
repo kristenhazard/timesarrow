@@ -1,12 +1,20 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-pulitzers:
-  name: Pulitzers
+awards_fiction_featured:
+  name: Fiction Featured
+  description: Fiction Pulitzers
+  imageurl: MyString
+  category: Book
+  subcategory: Awards
+  featured: 1
+  genre: Fiction
+
+awards_nonfiction_not_featured:
+  name: Not Featured
   description: MyString
   imageurl: MyString
-  category: MyString
-  subcategory: MyString
-  featured: 1
-  genre: MyString
-
+  category: Book
+  subcategory: Awards
+  featured: 0
+  genre: Non Fiction
 

@@ -18,17 +18,22 @@ class Item < ActiveRecord::Base
   
   has_many :timelines, :through => :timeline_items
   has_many :timeline_items, :dependent => :destroy
-  has_one :item_status
-  has_one :status, :through => :item_status
+  has_many :item_statuses
+  has_many :statuses, :through => :item_statuses
   
   belongs_to :category
 
   validates_presence_of :title, :asin, :detailpageurl, :category_id
   validates_uniqueness_of :asin, :on => :create, :message => "must be unique"
   
+  # used in collection_select
   def current_statusid
-    if !self.status.nil?
-      self.status.id
+    current_user_session = UserSession.find
+    if current_user_session
+      is = self.item_statuses.find_by_user_id(current_user_session.user.id)
+      if is
+        statusid = is.status_id
+      end
     end
   end
   
