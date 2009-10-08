@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   include ExceptionNotifiable
   
   helper :all # include all helpers, all the time
-  helper_method :admin?, :current_user
+  helper_method :admin?, :current_user, :logged_in?
   
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
   
@@ -28,9 +28,9 @@ class ApplicationController < ActionController::Base
     end
   end
   
-  def current_user_id
+  def logged_in?
     if current_user
-      current_user.id
+      current_user
     end
   end
   

@@ -18,7 +18,7 @@
             <% else %>
               <%= link_to_remote image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title),
                                  :update => 'item_work_it',
-                                 :url => { :controller => 'timeline_items', :action => 'work_it', :id => timelineitem.id }
+                                 :url => { :controller => 'items', :action => 'work_it', :id => timelineitem.item.id }
               %>
             <% end %>
       </div>

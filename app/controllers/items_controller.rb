@@ -59,5 +59,17 @@ class ItemsController < ApplicationController
     redirect_to(items_url) 
   end
   
+  def work_it
+    @item = Item.find(params[:id])
+    if logged_in?
+      userid = current_user.id
+      @review = @item.reviews.find_by_user_id(userid)
+      if @review.nil?
+        @item.reviews.build(:user_id => userid)
+      end
+    end
+    render :partial => 'shared/item_work'
+  end
+  
 
 end

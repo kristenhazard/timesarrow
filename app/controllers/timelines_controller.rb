@@ -13,7 +13,16 @@ class TimelinesController < ApplicationController
   def show
     @timeline = Timeline.find(params[:id], :include => [ :items, :timeline_items ])
     @item = @timeline.timeline_items[0].item
-    @userid = current_user_id
+    
+    # duplicate code alert, need to get rid of this, code is also in items_controller, work_it
+    if logged_in?
+      userid = current_user.id
+      @review = @item.reviews.find_by_user_id(userid)
+      if @review.nil?
+        @item.reviews.build(:user_id => userid)
+      end
+    end
+    
     self.title = "TIME'S ARROW: " + @timeline.name + " timeline"
   end
 

@@ -55,11 +55,6 @@ class TimelineItemsController < ApplicationController
     render :layout => false
   end
   
-  def work_it
-    @item = TimelineItem.find(params[:id]).item
-    render :partial => 'shared/item_work'
-  end
-  
   def sort
     params[:dtimeline].each_with_index do |id, index|
       TimelineItem.update_all(['position=?', index+1], ['id=?', id])

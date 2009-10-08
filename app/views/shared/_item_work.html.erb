@@ -29,24 +29,33 @@
         Rate: <%= render :partial => "ratings/rating", :locals => { :asset => @item } %>
       </div>
       <div id="status">
-        Status: <br/><%= collection_select(:item, :current_statusid, Status.all, :id, :description, 
-                    { :prompt => true }) %>
+        Status: <br/>
+        <%= collection_select(:item, :current_statusid, Status.all, :id, :description, { :prompt => true }) %>
                 <div id="update-status"></div>
                 <%= observe_field :item_current_statusid,
                                   :frequency => 0.5,
                                   :update => "update-status",
                                   :url => {:controller => 'item_statuses', :action => 'create_or_update' },
-                                  :with => "'item_id='+#{@item.id}+'&status_id='+encodeURIComponent(value)+'&user_id=1'" %>
+                                  :with => "'item_id='+#{@item.id}+'&status_id='+encodeURIComponent(value)" %>
       </div>
       <div id="review">
-        Review: 
-        <textarea rows="15" cols="28"></textarea>
-        <button type="button">Post Review</button>
-        <%= image_tag "/images/twitter_32.png" %>
-        <%= image_tag "/images/facebook_32.png" %>
+        <% remote_form_for @item do |i| %>
+          <% @item.reviews.each do |r| %>
+            <% if r.user_id == current_user.id %>
+              <% i.fields_for :reviews, r do |r_fields| %>
+                <%= r_fields.hidden_field :user_id  %>
+                <%= r_fields.label :content, "Review:" %>
+                <%= r_fields.text_area :content, :rows => 15, :cols => 28 %>
+              <% end %>
+            <% end %>  
+          <% end %>
+          <%= submit_tag "Post Review" %>
+          <%= image_tag "/images/twitter_32.png" %>
+          <%= image_tag "/images/facebook_32.png" %>
+        <% end %>
       </div>
     <% else %>
-    sign in to rate books!
+    sign in to rate and review books!
     <% end %>
   </div>
 </div>

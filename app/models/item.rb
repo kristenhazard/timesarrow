@@ -20,11 +20,14 @@ class Item < ActiveRecord::Base
   has_many :timeline_items, :dependent => :destroy
   has_many :item_statuses
   has_many :statuses, :through => :item_statuses
+  has_many :reviews
   
   belongs_to :category
 
   validates_presence_of :title, :asin, :detailpageurl, :category_id
   validates_uniqueness_of :asin, :on => :create, :message => "must be unique"
+  
+  accepts_nested_attributes_for :reviews
   
   # used in collection_select
   def current_statusid
@@ -35,6 +38,11 @@ class Item < ActiveRecord::Base
         statusid = is.status_id
       end
     end
+  end
+  
+  def current_review
+    current_user_session = UserSession.find
+    review = self.reviews.find_by_user_id(current_user_session.user.id)
   end
   
   def self.save_item_from_search(asin)
