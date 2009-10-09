@@ -25,21 +25,21 @@
     <%= image_tag "/images/arrow-small-right.gif" %> 
     <div id="bottom">
       <% if current_user %>
+        Rate:
         <div id="star-ratings-block">
-          Rate: <%= render :partial => "ratings/rating", :locals => { :asset => @item } %>
+          <%= render :partial => "ratings/rating", :locals => { :asset => @item } %>
         </div>
+        Status:
         <div id="status">
-          Status: <br/>
           <%= collection_select(:item, :current_statusid, Status.all, :id, :description, { :prompt => true }) %>
-                  <div id="update-status"></div>
-                  <%= observe_field :item_current_statusid,
-                                    :frequency => 0.5,
-                                    :update => "update-status",
-                                    :url => {:controller => 'item_statuses', :action => 'create_or_update' },
-                                    :with => "'item_id='+#{@item.id}+'&status_id='+encodeURIComponent(value)" %>
+          <%= observe_field :item_current_statusid,
+                            :frequency => 0.5,
+                            :url => {:controller => 'item_statuses', :action => 'create_or_update' },
+                            :with => "'item_id='+#{@item.id}+'&status_id='+encodeURIComponent(value)",
+                            :complete => visual_effect(:highlight, "status") %>
         </div>
         <div id="review">
-          <% remote_form_for @item do |i| %>
+          <% remote_form_for @item, :complete => visual_effect(:highlight, "review") do |i| %>
             <% @item.reviews.each do |r| %>
               <% if r.user_id == current_user.id %>
                 <% i.fields_for :reviews, r do |r_fields| %>
@@ -50,7 +50,7 @@
               <% end %>  
             <% end %>
             <%= submit_tag "Post Review" %>
-            <!-->
+            <!-- 
             <%= image_tag "/images/twitter_32.png" %>
             <%= image_tag "/images/facebook_32.png" %>
             -->

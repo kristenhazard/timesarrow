@@ -36,6 +36,7 @@ class Timeline < ActiveRecord::Base
     ["Beyond Genre",    "Beyond Genre"],
     ["Biography",    "Biography"],
     ["Children",    "Children"],
+    ["Comedy",    "Comedy"],
     ["Cooking",    "Cooking"],
     ["Crime",    "Crime"],
     ["Criticism",    "Criticism"],
