@@ -54,3 +54,15 @@ ExceptionNotifier.exception_recipients = %w(kristen@hazardbio.com)
   if "irb" == $0
     ActiveRecord::Base.logger = Logger.new(STDOUT)
   end
+  
+  ActionMailer::Base.smtp_settings = {
+      :enable_starttls_auto => false,
+      :address        => 'mail.hazardbio.com',
+      :port           => 25,
+      :domain         => 'hazardbio.com',
+      :authentication => :login,
+      :user_name      => 'kristen@hazardbio.com',
+      :password       => 'lovers55'
+    }
+    
+    ActionMailer::Base.raise_delivery_errors = true

@@ -1,4 +1,4 @@
-require "active_support"
+require "active_record"
 
 require File.dirname(__FILE__) + "/authlogic/i18n"
 require File.dirname(__FILE__) + "/authlogic/random"
@@ -7,6 +7,7 @@ require File.dirname(__FILE__) + "/authlogic/regex"
 require File.dirname(__FILE__) + "/authlogic/controller_adapters/abstract_adapter"
 require File.dirname(__FILE__) + "/authlogic/controller_adapters/rails_adapter" if defined?(Rails)
 require File.dirname(__FILE__) + "/authlogic/controller_adapters/merb_adapter" if defined?(Merb)
+require File.dirname(__FILE__) + "/authlogic/controller_adapters/sinatra_adapter" if defined?(Sinatra)
 
 require File.dirname(__FILE__) + "/authlogic/crypto_providers/md5"
 require File.dirname(__FILE__) + "/authlogic/crypto_providers/sha1"

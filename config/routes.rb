@@ -1,4 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
+  
+  map.resources :password_resets
+  
   map.resources :reviews
 
   map.resources :item_statuses
