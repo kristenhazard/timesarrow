@@ -33,13 +33,13 @@
   </div>
   <div class="next_button"></div>
 </div>
-  
 <div id="item_work_it">
     <% unless @item.nil? %>
-      <%= render :partial => 'shared/item_work' %>
+      <%= render :partial => 'shared/item_work', :locals => { :item => @item } %>
     <% end %>
 </div>
 <!-- carousel -->
 <script>
-  new UI.Carousel("horizontal_carousel_small_"+ <%= @timeline.id %>);
+  c = new UI.Carousel("horizontal_carousel_small_"+ <%= @timeline.id %>);
+  c.scrollTo(<%= @carousel_position %>);
 </script>

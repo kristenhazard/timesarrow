@@ -12,7 +12,14 @@ class TimelinesController < ApplicationController
 
   def show
     @timeline = Timeline.find(params[:id], :include => [ :items, :timeline_items ])
-    @item = @timeline.timeline_items[0].item
+    timeline_item_id = params[:tid]
+    if timeline_item_id 
+      @item = @timeline.timeline_items.find(timeline_item_id).item
+      @carousel_position = @timeline.timeline_items.find(timeline_item_id).position - 1
+    else
+      @item = @timeline.timeline_items[0].item
+      @carousel_position = @timeline.timeline_items[0].position - 1
+    end
     
     # duplicate code alert, need to get rid of this, code is also in items_controller, work_it
     if logged_in?

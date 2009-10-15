@@ -15,15 +15,13 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
 
   map.resources :timeline_items,
-                :member => { :popup => :get, :re_sort => :post },
+                :member => { :re_sort => :post },
                 :collection => { :sort => :post }
 
   map.resources :timelines, 
                 :collection => { :featured => :get, :makeone => :get }
 
   map.resources :items
-                
-  map.resources :sessions
   
   map.resources :search
                 

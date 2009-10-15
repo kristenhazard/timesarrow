@@ -3,7 +3,6 @@ class TimelineItemsController < ApplicationController
   in_place_edit_for :timeline_item, :position_desc
   
   def index
-    #@timeline_items = TimelineItem.all
     @timeline_items = TimelineItem.find(:all, :include => [ :item, :timeline ], :order => 'items.title')
   end
 
@@ -21,7 +20,6 @@ class TimelineItemsController < ApplicationController
 
   def create
     @timeline_item = TimelineItem.new(params[:timeline_item])
-
     if @timeline_item.save
       flash[:notice] = 'TimelineItem was successfully created.'
       redirect_to(@timeline_item) 
@@ -33,7 +31,6 @@ class TimelineItemsController < ApplicationController
 
   def update
     @timeline_item = TimelineItem.find(params[:id])
-    
     if @timeline_item.update_attributes(params[:timeline_item])
       flash[:notice] = 'TimelineItem was successfully updated.'
       redirect_to(@timeline_item) 
@@ -50,11 +47,13 @@ class TimelineItemsController < ApplicationController
     redirect_to :action => "index"
   end
   
+=begin
   def popup
     @timeline_item = TimelineItem.find(params[:id])
     render :layout => false
   end
-  
+=end
+
   def sort
     params[:dtimeline].each_with_index do |id, index|
       TimelineItem.update_all(['position=?', index+1], ['id=?', id])
