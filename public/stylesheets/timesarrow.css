@@ -541,3 +541,39 @@ li.timeline_item
 {
 	position: relative;
 }
+
+.flash
+{
+	color: #cc9900;
+	font-weight: bold; 
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid #724343;
+  padding: 7px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #724343;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+	padding-left: 7px;
+  font-size: 12px;
+}
+
+#errorExplanation li {
+  font-weight: bold;
+  font-size: 12px;
+}
+
