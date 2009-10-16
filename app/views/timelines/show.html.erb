@@ -18,7 +18,10 @@
             <% else %>
               <%= link_to_remote image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title),
                                  :update => 'item_work_it',
-                                 :url => { :controller => 'items', :action => 'work_it', :id => timelineitem.item.id }
+                                 :url => { :controller => 'items', 
+                                           :action => 'work_it', 
+                                           :id => timelineitem.item.id,
+                                           :timeline_id => @timeline.id }
               %>
             <% end %>
       </div>
@@ -35,7 +38,7 @@
 </div>
 <div id="item_work_it">
     <% unless @item.nil? %>
-      <%= render :partial => 'shared/item_work', :locals => { :item => @item } %>
+      <%= render :partial => 'shared/item_work' %>
     <% end %>
 </div>
 <!-- carousel -->

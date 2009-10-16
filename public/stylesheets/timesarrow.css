@@ -583,3 +583,19 @@ li.timeline_item
 	font-size: 12px;
 }
 
+.item-title
+{
+	font-weight: bold;
+}
+
+#other-timelines ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#other-timelines li
+{
+  font-size: 12px;
+}

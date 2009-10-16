@@ -12,10 +12,11 @@ class TimelinesController < ApplicationController
 
   def show
     @timeline = Timeline.find(params[:id], :include => [ :items, :timeline_items ])
-    timeline_item_id = params[:tid]
-    if timeline_item_id 
-      @item = @timeline.timeline_items.find(timeline_item_id).item
-      @carousel_position = @timeline.timeline_items.find(timeline_item_id).position - 1
+    item_id = params[:item_id]
+    if item_id 
+      @item = Item.find(item_id)
+      @timeline_item = TimelineItem.find_by_timeline_id_and_item_id(@timeline.id,item_id)
+      @carousel_position = @timeline_item.position - 1
     else
       @item = @timeline.timeline_items[0].item
       @carousel_position = @timeline.timeline_items[0].position - 1

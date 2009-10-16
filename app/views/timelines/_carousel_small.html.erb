@@ -13,14 +13,14 @@
                           :controller => 'timelines',
                           :action => 'show',
                           :id => timelineitem.timeline_id,
-                          :tid => timelineitem.id
+                          :item_id => timelineitem.item_id
               %>
             <% else %>
               <%= link_to image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title),
                           :controller => 'timelines',
                           :action => 'show',
                           :id => timelineitem.timeline_id,
-                          :tid => timelineitem.id
+                          :item_id => timelineitem.item_id
               %>
             <% end %>
             

@@ -5,19 +5,29 @@
   <div id="top-parent">
     <%= image_tag "/images/arrow-med.gif", :class => "top-arrow" %>
     <div id="top">
-      Buy: <%= link_to 'amazon.com', @item.detailpageurl, :popup => true %>
+      Buy: <%= link_to '@amazon.com', @item.detailpageurl, :popup => true %>
     </div>
   </div>
   <div id="middle-parent">
    <%= image_tag "/images/arrow-large.gif", :class => "middle-arrow" %> 
    <div id="middle">
      <div id="amazon-info">
-       <p><%=h @item.title %></p>
+       <p class="item-title"><%=h @item.title %></p>
        <p>by <%=h @item.author %></p>
-       <p><%= @item.description %></p>
+       <p><%= truncate(@item.description, 1000, link_to('. . . [more @amazon.com] ', @item.detailpageurl, :popup => true)) %></p>
      </div>
      <div id="other-timelines">
-    
+       <b>All Timelines<b>
+       <ul>
+        <% @item.timelines.each do |t| %>
+          <li>
+            <%= link_to t.name, :controller => 'timelines',
+                                :action => 'show',
+                                :id => t.id,
+                                :item_id => @item.id%>
+          </li>
+        <% end %>
+        </ul>
      </div>
    </div>
   </div>

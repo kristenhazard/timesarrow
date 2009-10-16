@@ -70,6 +70,7 @@ class ItemsController < ApplicationController
   
   def work_it
     @item = Item.find(params[:id])
+    @timeline = Timeline.find(params[:timeline_id])
     if logged_in?
       userid = current_user.id
       @review = @item.reviews.find_by_user_id(userid)
