@@ -71,7 +71,7 @@ class TimelinesControllerTest < ActionController::TestCase
   end
 
   def test_admin_should_get_new
-    UserSession.create(users(:admin)) # logs a user in
+    UserSession.create(users(:admin))
     get :new
     assert_response :success
   end
@@ -119,10 +119,13 @@ class TimelinesControllerTest < ActionController::TestCase
     assert_redirected_to root_url
   end
 
+
   def test_not_logged_in_should_show_timeline
     get :show, :id => timelines(:awards_fiction_featured).to_param
     assert_response :success
     assert_no_tag :tag => "ul", :attributes => { :class => "star-rating" }
+    assert_no_tag :tag => "select", :attributes => { :id => "item_current_statusid" }
+    assert_no_tag :tag => "textarea", :attributes => { :id => "item_reviews_attributes_0_content" }
   end
   
   def test_user_should_show_timeline_with_interactions
@@ -131,6 +134,8 @@ class TimelinesControllerTest < ActionController::TestCase
     assert_response :success
     # check for rateable functionality here
     assert_tag :tag => "ul", :attributes => { :class => "star-rating" }
+    assert_tag :tag => "select", :attributes => { :id => "item_current_statusid" }
+    assert_tag :tag => "textarea", :attributes => { :id => "item_reviews_attributes_0_content" }
   end
   
   def test_admin_should_show_timeline

@@ -20,9 +20,9 @@ class ApplicationController < ActionController::Base
    end
   end
   
-  def authorize
+  def require_admin
     unless admin?
-      flash[:error] = "unauthorized access"
+      flash[:error] = "Unauthorized access"
       redirect_to home_path
       false
     end

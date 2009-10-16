@@ -1,5 +1,8 @@
 class ItemsController < ApplicationController
   
+  before_filter :require_admin, :only => [ :index, :show, :new, :edit, :create ]
+  before_filter :require_user, :only => [ :update ]
+  
   def index
     @items = Item.all
   end
@@ -47,8 +50,10 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     respond_to do |format|
       if @item.update_attributes(params[:item])
-        flash[:notice] = 'Item was successfully updated.'
-        format.html { redirect_to(@item)  }
+        format.html { 
+          flash[:notice] = 'Item was successfully updated.'
+          redirect_to(@item)  
+        }
         format.js   # renders update.js.rjs
       else
         format.html { render :action => "edit" }

@@ -1,5 +1,7 @@
 class RatingsController < ApplicationController
   
+  before_filter :require_user
+  
   def rate
     @asset = Item.find(params[:id])
     Rating.delete_all(["rateable_type = 'Item' AND rateable_id = ? AND user_id = ?", @asset.id, current_user.id])

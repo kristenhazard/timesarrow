@@ -1,5 +1,5 @@
 class TimelineItemsController < ApplicationController
-  before_filter :authorize, :except => [:popup, :work_it]
+  before_filter :require_admin
   in_place_edit_for :timeline_item, :position_desc
   
   def index

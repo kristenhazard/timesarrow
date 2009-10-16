@@ -1,4 +1,7 @@
 class StatusesController < ApplicationController
+  
+  before_filter :require_admin
+  
   def index
     @statuses = Status.all
   end

@@ -4,6 +4,6 @@ one:
   status: read
 
 two:
-  user_id: user
+  user: user
   item: book_march
   status: plan to read

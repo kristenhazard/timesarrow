@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :authorize, :except => [:new, :show, :edit, :create]
+  before_filter :require_admin, :except => [:new, :show, :edit, :create]
   # GET /users
   # GET /users.xml
   def index
