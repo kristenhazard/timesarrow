@@ -14,7 +14,7 @@
      <div id="amazon-info">
        <p class="item-title"><%=h @item.title %></p>
        <p>by <%=h @item.author %></p>
-       <p><%= truncate(@item.description, 1000, link_to('. . . [more @amazon.com] ', @item.detailpageurl, :popup => true)) %></p>
+       <p><%= truncate(@item.description, 1000, :omission => link_to('. . . [more @amazon.com] ', @item.detailpageurl, :popup => true)) %></p>
      </div>
      <div id="other-timelines">
        <b>All Timelines<b>
@@ -24,7 +24,7 @@
             <%= link_to t.name, :controller => 'timelines',
                                 :action => 'show',
                                 :id => t.id,
-                                :item_id => @item.id%>
+                                :item_id => @item.id %>
           </li>
         <% end %>
         </ul>

@@ -545,7 +545,7 @@ li.timeline_item
 .flash
 {
 	color: #cc9900;
-	font-weight: bold; 
+	float: right;
 }
 
 #errorExplanation {

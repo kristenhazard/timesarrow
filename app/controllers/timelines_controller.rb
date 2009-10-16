@@ -7,6 +7,7 @@ class TimelinesController < ApplicationController
     @timelines = Timeline.all(:include => [ :items, :timeline_items ], 
                               :order => 'category, subcategory, genre, featured desc')
     self.title = "TIME'S ARROW - All Timelines"
+    store_location #in case user is not logged in I want to store this location for them to go back to
   end
 
 
@@ -32,6 +33,7 @@ class TimelinesController < ApplicationController
     end
     
     self.title = "TIME'S ARROW: " + @timeline.name + " timeline"
+    store_location #in case user is not logged in I want to store this location for them to go back to
   end
 
 
@@ -83,6 +85,7 @@ class TimelinesController < ApplicationController
   def featured
     @timelines = Timeline.featured
     self.title = "TIME'S ARROW - Featured Timelines"
+    store_location #in case user is not logged in I want to store this location for them to go back to
   end
   
   
@@ -94,12 +97,14 @@ class TimelinesController < ApplicationController
     @headertitle = "TIME'S ARROW - Book " + subcategory
     @contenttitle = 'Book ' + subcategory
     self.title = @headertitle
+    store_location #in case user is not logged in I want to store this location for them to go back to
   end
   
   # to be removed once I actually allow users to make a timeline, 
   #this is just a placeholder to check if users actually click this link
   def makeone
     self.title = "TIME'S ARROW - Make a timeline"
+    store_location #in case user is not logged in I want to store this location for them to go back to
   end
   
 end
