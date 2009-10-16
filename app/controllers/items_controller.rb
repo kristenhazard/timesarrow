@@ -45,11 +45,15 @@ class ItemsController < ApplicationController
 
   def update
     @item = Item.find(params[:id])
-    if @item.update_attributes(params[:item])
-      flash[:notice] = 'Item was successfully updated.'
-      redirect_to(@item) 
-    else
-      render :action => "edit" 
+    respond_to do |format|
+      if @item.update_attributes(params[:item])
+        flash[:notice] = 'Item was successfully updated.'
+        format.html { redirect_to(@item)  }
+        format.js   # renders update.js.rjs
+      else
+        format.html { render :action => "edit" }
+        format.js   # renders update.js.rjs
+      end
     end
   end
 

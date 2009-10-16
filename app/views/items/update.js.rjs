@@ -1,0 +1,2 @@
+page[:item_work_it].replace_html :partial => 'shared/item_work',
+                                 :object => @item
