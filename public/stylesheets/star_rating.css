@@ -3,7 +3,7 @@
 .star-rating a:active,
 .star-rating a:focus,
 .star-rating .current-rating{
-	background: url(/images/star.gif) left -1000px repeat-x;
+	background: url(/images/star-yellow.gif) left -1000px repeat-x;
 }
 .star-rating{
 	position:relative;
@@ -14,6 +14,9 @@
 	margin:0;
 	padding:0;
 	background-position: left top;
+	float: right;
+	margin-bottom: 0;
+	margin-right: 57px;
 }
 .star-rating li{
 	display: inline;

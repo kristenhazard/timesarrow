@@ -483,7 +483,7 @@ li.timeline_item
 	top: 50px;
 	padding: 0.5em;
 	width: 225px;
-	height: 350px;
+	height: 300px;
 }
 
 #bottom a
@@ -598,4 +598,14 @@ li.timeline_item
 #other-timelines li
 {
   font-size: 12px;
+}
+
+#rate {
+	font-weight: bold;
+	height: 25px;
+}
+#rate-header
+{
+	padding-top: 5px;
+	float: left;
 }

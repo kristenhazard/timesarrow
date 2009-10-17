@@ -14,10 +14,10 @@
      <div id="amazon-info">
        <p class="item-title"><%=h @item.title %></p>
        <p>by <%=h @item.author %></p>
-       <p><%= truncate(@item.description, 1000, :omission => link_to('. . . [more @amazon.com] ', @item.detailpageurl, :popup => true)) %></p>
+       <p><%= truncate(@item.description, 1000, link_to('. . . [more @amazon.com] ', @item.detailpageurl, :popup => true)) %></p>
      </div>
      <div id="other-timelines">
-       <b>All Timelines<b>
+       <b>All Timelines</b>
        <ul>
         <% @item.timelines.each do |t| %>
           <li>
@@ -35,12 +35,14 @@
     <%= image_tag "/images/arrow-small-right.gif" %> 
     <div id="bottom">
       <% if current_user %>
-        Rate:
-        <div id="star-ratings-block">
-          <%= render :partial => "ratings/rating", :locals => { :asset => @item } %>
+        <div id="rate">
+          <div id="rate-header">Rate:</div>
+          <div id="star-ratings-block">
+            <%= render :partial => "ratings/rating", :locals => { :asset => @item } %>
+          </div>
         </div>
-        Status:
         <div id="status">
+          <b>Status:</b>
           <%= collection_select(:item, :current_statusid, Status.all, :id, :description, { :prompt => true }) %>
           <%= observe_field :item_current_statusid,
                             :frequency => 0.5,
@@ -54,7 +56,7 @@
               <% if r.user_id == current_user.id %>
                 <% i.fields_for :reviews, r do |r_fields| %>
                   <%= r_fields.hidden_field :user_id  %>
-                  <%= r_fields.label :content, "Review:" %>
+                  <b><%= r_fields.label :content, "Review:" %></b>
                   <%= r_fields.text_area :content, :rows => 15, :cols => 28 %>
                 <% end %>
               <% end %>  
