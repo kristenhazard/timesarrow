@@ -22,7 +22,7 @@
        <%= render :partial => "ratings/avg_rating", :locals => { :asset => @item } %>
      </div>
      <div id="other-timelines">
-       <b>All Timelines</b>
+       <b>All Timelines</b> (<%= @item.timelines.count %>)
        <ul>
         <% @item.timelines.each do |t| %>
           <li>
@@ -40,7 +40,7 @@
          <% if current_user %>
            <% if ior.user_id != current_user.id %>
             <p>
-              <b><%= h ior.user.username %></b><br/>
+              <%= h ior.user.username %><br/>
               <%= h ior.content %>
             </p>
             <% end %>
