@@ -584,6 +584,22 @@ li.timeline_item
 	font-weight: bold;
 }
 
+#other-timelines
+{
+	float: left;
+	position: relative;
+	width: 100%;
+	margin-top: 15px;
+}
+
+#reviews
+{
+	float: left;
+	position: relative;
+	width: 100%;
+	margin-top: 15px;
+}
+
 #other-timelines ul
 {
 	list-style-type: none;
@@ -617,4 +633,16 @@ li.timeline_item
 {
 	float: left;
 	margin-top: 35px;
+}
+
+#avg-rating
+{
+	float: left;
+	position: relative;
+	width: 100%;
+}
+.num-ratings
+{
+	margin-top: 4px;
+	padding-left: 25px;
 }

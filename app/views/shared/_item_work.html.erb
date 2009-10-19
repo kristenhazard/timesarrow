@@ -14,9 +14,12 @@
    <%= image_tag "/images/arrow-large.gif", :class => "middle-arrow" %> 
    <div id="middle">
      <div id="amazon-info">
-       <p class="item-title"><%=h @item.title %></p>
-       <p>by <%=h @item.author %></p>
+       <span class="item-title"><%=h @item.title %></span>
+       by <%=h @item.author %>
        <p><%= truncate(@item.description, 1000, link_to('. . . [more @amazon.com] ', @item.detailpageurl, :popup => true)) %></p>
+     </div>
+     <div id="avg-rating">
+       <%= render :partial => "ratings/avg_rating", :locals => { :asset => @item } %>
      </div>
      <div id="other-timelines">
        <b>All Timelines</b>
@@ -30,6 +33,16 @@
           </li>
         <% end %>
         </ul>
+     </div>
+     <div id="reviews">
+       <b>Reviews</b>
+       <% @item.reviews.each do |r| %>
+         <p>
+           <%=h r.content %>
+           by
+           <%=h r.user.username %>
+         </p>
+       <% end %>
      </div>
    </div>
   </div>
