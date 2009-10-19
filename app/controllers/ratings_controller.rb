@@ -8,7 +8,7 @@ class RatingsController < ApplicationController
     @asset.rate_it(params[:rating], current_user.id)
     render :update do |page|
       page.replace_html 'star-ratings-block', :partial => 'ratings/rating', :locals => { :asset => @asset }
-      page.visual_effect :highlight, 'star-ratings-block'
+      page.visual_effect :highlight, 'rate'
     end
   end
   

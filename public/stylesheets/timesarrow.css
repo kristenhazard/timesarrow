@@ -486,11 +486,6 @@ li.timeline_item
 	height: 300px;
 }
 
-#bottom a
-{
-	color: #9c3946;
-}
-
 #bottom-parent
 {
 	position: absolute;
@@ -545,6 +540,7 @@ li.timeline_item
 .flash
 {
 	color: #cc9900;
+	margin-top: 10px;
 	float: right;
 }
 
@@ -604,8 +600,21 @@ li.timeline_item
 	font-weight: bold;
 	height: 25px;
 }
+
 #rate-header
 {
 	padding-top: 5px;
 	float: left;
+}
+
+#book-cover
+{
+	float: left;
+	padding: 5px;
+}
+
+#tl-name
+{
+	float: left;
+	margin-top: 35px;
 }

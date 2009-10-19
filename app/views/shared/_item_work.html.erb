@@ -1,6 +1,8 @@
+
 <% unless @item.mediumimageurl.nil? %>
-  <%= link_to image_tag(@item.mediumimageurl), @item.detailpageurl, :popup => true, :class => "work-it-book" %>
+  <div id="book-cover"><%= link_to image_tag(@item.mediumimageurl), @item.detailpageurl, :popup => true, :class => "work-it-book" %></div>
 <% end %>
+
 <div id="work-it-container">
   <div id="top-parent">
     <%= image_tag "/images/arrow-med.gif", :class => "top-arrow" %>
@@ -69,7 +71,7 @@
           <% end %>
         </div>
       <% else %>
-      sign in to rate and review books!
+      <%= link_to "SIGN IN", login_path %> or <%= link_to "SIGN UP", new_user_path %> to rate and review books!
       <% end %>
     </div>
   </div>
