@@ -35,14 +35,22 @@
         </ul>
      </div>
      <div id="reviews">
-       <b>Reviews</b>
-       <% @item.reviews.each do |r| %>
-         <p>
-           <%=h r.content %>
-           by
-           <%=h r.user.username %>
-         </p>
-       <% end %>
+       <b>Reviews</b> (<%= @item.reviews.count %>)
+       <% @item.reviews.each do |ior| %>
+         <% if current_user %>
+           <% if ior.user_id != current_user.id %>
+            <p>
+              <b><%= h ior.user.username %></b><br/>
+              <%= h ior.content %>
+            </p>
+            <% end %>
+          <% else %>
+            <p>
+              <b><%= h ior.user.username %></b><br/>
+              <%= h ior.content %>
+            </p>
+          <% end %>  
+        <% end %>
      </div>
    </div>
   </div>
