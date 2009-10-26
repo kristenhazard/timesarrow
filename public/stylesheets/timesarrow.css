@@ -483,7 +483,6 @@ li.timeline_item
 	top: 50px;
 	padding: 0.5em;
 	width: 225px;
-	height: 300px;
 }
 
 #bottom-parent
@@ -645,4 +644,12 @@ li.timeline_item
 {
 	margin-top: 4px;
 	padding-left: 25px;
+}
+
+#review textarea
+{
+	width: 98%;
+	margin:5px 0;
+	padding:1%;
+	height: 200px;
 }

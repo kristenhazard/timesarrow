@@ -80,7 +80,7 @@
                 <% i.fields_for :reviews, r do |r_fields| %>
                   <%= r_fields.hidden_field :user_id  %>
                   <b><%= r_fields.label :content, "Review:" %></b>
-                  <%= r_fields.text_area :content, :rows => 15, :cols => 28 %>
+                  <%= r_fields.text_area :content %>
                 <% end %>
               <% end %>  
             <% end %>
