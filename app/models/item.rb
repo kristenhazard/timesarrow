@@ -78,7 +78,10 @@ class Item < ActiveRecord::Base
     item.detailpageurl = searchitem.get("detailpageurl")
     item.smallimageurl = searchitem.get("smallimage/url")
     item.mediumimageurl = searchitem.get("mediumimage/url")
+    item.largeimageurl = searchitem.get("largeimage/url")
+    item.swatchimageurl = searchitem.get("swatchimage/url")
     item.publicationdate = searchitem.get("publicationdate")
+    item.isbn = searchitem.get("isbn")
     #item.category_id = 1
     pg = searchitem.get("productgroup")
     item.category_id = Category.find_by_amazon_product_group(pg).id

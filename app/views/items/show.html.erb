@@ -1,5 +1,8 @@
 <p>
-  <%= image_tag @item.mediumimageurl %><%= image_tag @item.smallimageurl %>
+  <%= image_tag @item.largeimageurl unless @item.largeimageurl.nil? %>
+  <%= image_tag @item.mediumimageurl unless @item.mediumimageurl.nil? %>
+  <%= image_tag @item.smallimageurl unless @item.smallimageurl.nil? %>
+  <%= image_tag @item.swatchimageurl unless @item.swatchimageurl.nil? %>
   
 </p>
 <p>TIMELINES

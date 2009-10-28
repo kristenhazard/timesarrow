@@ -28,20 +28,26 @@
     <%= f.text_field :detailpageurl %>
   </p>
   <p>
-    <%= f.label :smallimageurl %><br />
-    <%= f.text_field :smallimageurl %>
-    
-    <% if !@item.smallimageurl.nil? %>
-      <%= image_tag @item.smallimageurl %>
-    <% end %>
+    <%= f.label :largeimageurl %><br />
+    <%= f.text_field :largeimageurl %>
   </p>
   <p>
     <%= f.label :mediumimageurl %><br />
     <%= f.text_field :mediumimageurl %>
-    <% if !@item.mediumimageurl.nil? %>
-      <%= image_tag @item.mediumimageurl %>
-    <% end %>
-    
+  </p>
+  <p>
+    <%= f.label :smallimageurl %><br />
+    <%= f.text_field :smallimageurl %>
+  </p>
+  <p>
+    <%= f.label :swatchimageurl %><br />
+    <%= f.text_field :swatchimageurl %>
+  </p>
+  <p>
+    <%= image_tag @item.largeimageurl unless @item.largeimageurl.nil? %>
+    <%= image_tag @item.mediumimageurl unless @item.mediumimageurl.nil? %>
+    <%= image_tag @item.smallimageurl unless @item.smallimageurl.nil? %>
+    <%= image_tag @item.swatchimageurl unless @item.swatchimageurl.nil? %>
   </p>
   <p>
     <%= f.label :publicationdate %><br />

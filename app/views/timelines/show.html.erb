@@ -10,23 +10,23 @@
     <% @timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
       <div id="timelineitem-name-<%= timelineitem.id %>">
-            <% if timelineitem.item.smallimageurl.nil? %>
-              <%=h timelineitem.item.title %>
-            <% else %>
-              <%= link_to_remote image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title),
-                                 :update => 'item_work_it',
-                                 :url => { :controller => 'items', 
-                                           :action => 'work_it', 
-                                           :id => timelineitem.item.id,
-                                           :timeline_id => @timeline.id }
-              %>
-            <% end %>
+        <% if timelineitem.item.smallimageurl.nil? %>
+          <%=h timelineitem.item.title %>
+        <% else %>
+          <%= link_to_remote image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title),
+                             :update => 'item_work_it',
+                             :url => { :controller => 'items', 
+                                       :action => 'work_it', 
+                                       :id => timelineitem.item.id,
+                                       :timeline_id => @timeline.id }
+          %>
+        <% end %>
       </div>
-            <span class="posdesc">
-              <% unless timelineitem.position_desc.eql? 'set' %>
-                <%=h timelineitem.position_desc %>
-              <% end %>
-            </span>
+      <span class="posdesc">
+        <% unless timelineitem.position_desc.eql? 'set' %>
+          <%=h timelineitem.position_desc %>
+        <% end %>
+      </span>
       <% end %>
     <% end %>
     </ul>

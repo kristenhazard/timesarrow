@@ -16,6 +16,7 @@
 	background-position: left top;
 	float: left;
 	margin-bottom: 0;
+	margin-left: 5px;
 }
 .star-rating li{
 	display: inline;

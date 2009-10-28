@@ -1,99 +1,21 @@
-
-<% unless @item.mediumimageurl.nil? %>
-  <div id="book-cover"><%= link_to image_tag(@item.mediumimageurl), @item.detailpageurl, :popup => true, :class => "work-it-book" %></div>
+<% unless @item.largeimageurl.nil? %>
+  <div id="book-cover">
+    <%= link_to image_tag(@item.largeimageurl, :alt => @item.title), @item.detailpageurl, 
+                :popup => true, 
+                :class => "work-it-book" %>
+  </div>
 <% end %>
-
 <div id="work-it-container">
   <div id="top-parent">
-    <%= image_tag "/images/arrow-med.gif", :class => "top-arrow" %>
-    <div id="top">
-      <b>Buy:</b> <%= link_to '@amazon.com', @item.detailpageurl, :popup => true %>
-    </div>
+    <%= image_tag "/images/arrow-med-right-up.gif", :class => "top-arrow" %>
+    <%= render :partial => 'shared/item_work_buy' %>
   </div>
   <div id="middle-parent">
-   <%= image_tag "/images/arrow-large.gif", :class => "middle-arrow" %> 
-   <div id="middle">
-     <div id="amazon-info">
-       <span class="item-title"><%=h @item.title %></span>
-       by <%=h @item.author %>
-       <p><%= truncate(@item.description, 1000, link_to('. . . [more @amazon.com] ', @item.detailpageurl, :popup => true)) %></p>
-     </div>
-     <div id="avg-rating">
-       <%= render :partial => "ratings/avg_rating", :locals => { :asset => @item } %>
-     </div>
-     <div id="other-timelines">
-       <b>All Timelines</b> (<%= @item.timelines.count %>)
-       <ul>
-        <% @item.timelines.each do |t| %>
-          <li>
-            <%= link_to t.name, :controller => 'timelines',
-                                :action => 'show',
-                                :id => t.id,
-                                :item_id => @item.id %>
-          </li>
-        <% end %>
-        </ul>
-     </div>
-     <div id="reviews">
-       <b>Reviews</b> (<%= @item.reviews.count %>)
-       <% @item.reviews.each do |ior| %>
-         <% if current_user %>
-           <% if ior.user_id != current_user.id %>
-            <p>
-              <%= h ior.user.username %><br/>
-              <%= h ior.content %>
-            </p>
-            <% end %>
-          <% else %>
-            <p>
-              <b><%= h ior.user.username %></b><br/>
-              <%= h ior.content %>
-            </p>
-          <% end %>  
-        <% end %>
-     </div>
-   </div>
+   <%= image_tag "/images/arrow-large.gif", :class => "middle-arrow" %>  
+    <%= render :partial => 'shared/item_work_info' %>
   </div>
   <div id="bottom-parent">
-    <%= image_tag "/images/arrow-small-right.gif" %> 
-    <div id="bottom">
-      <% if current_user %>
-        <div id="rate">
-          <div id="rate-header">Rate:</div>
-          <div id="star-ratings-block">
-            <%= render :partial => "ratings/rating", :locals => { :asset => @item } %>
-          </div>
-        </div>
-        <div id="status">
-          <b>Status:</b>
-          <%= collection_select(:item, :current_statusid, Status.all, :id, :description, { :prompt => true }) %>
-          <%= observe_field :item_current_statusid,
-                            :frequency => 0.5,
-                            :url => {:controller => 'item_statuses', :action => 'create_or_update' },
-                            :with => "'item_id='+#{@item.id}+'&status_id='+encodeURIComponent(value)",
-                            :complete => visual_effect(:highlight, "status") %>
-        </div>
-        <div id="review">
-          <% remote_form_for @item, :complete => visual_effect(:highlight, "review") do |i| %>
-            <% @item.reviews.each do |r| %>
-              <% if r.user_id == current_user.id %>
-                <% i.fields_for :reviews, r do |r_fields| %>
-                  <%= r_fields.hidden_field :user_id  %>
-                  <b><%= r_fields.label :content, "Review:" %></b>
-                  <%= r_fields.text_area :content %>
-                <% end %>
-              <% end %>  
-            <% end %>
-            <%= submit_tag "Post Review" %>
-            <!-- 
-            <%= image_tag "/images/twitter_32.png" %>
-            <%= image_tag "/images/facebook_32.png" %>
-            -->
-          <% end %>
-        </div>
-      <% else %>
-      <%= link_to "SIGN IN", login_path %> or <%= link_to "SIGN UP", new_user_path %> to rate and review books!
-      <% end %>
-    </div>
+    <%= image_tag "/images/arrow-small-right.gif", :class => "bottom-arrow"  %> 
+    <%= render :partial => 'shared/item_work_rate' %>
   </div>
 </div>

@@ -1,3 +1,16 @@
+/* @override 
+	http://localhost:3000/stylesheets/timesarrow.css?1256756728
+	http://localhost:3000/stylesheets/timesarrow.css?1256757748
+	http://localhost:3000/stylesheets/timesarrow.css?1256764873
+	http://localhost:3000/stylesheets/timesarrow.css?1256765519
+	http://localhost:3000/stylesheets/timesarrow.css?1256765975
+	http://localhost:3000/stylesheets/timesarrow.css?1256766962
+	http://localhost:3000/stylesheets/timesarrow.css?1256767609
+	http://localhost:3000/stylesheets/timesarrow.css?1256768404
+	http://localhost:3000/stylesheets/timesarrow.css?1256768785
+	http://localhost:3000/stylesheets/timesarrow.css?1256770931
+*/
+
 /*
 
 grey: #676767
@@ -130,7 +143,7 @@ ul#user_nav li
 
 h1
 {
-	font-size: 110%;
+	font-size: 100%;
 }
 
 a 
@@ -278,14 +291,15 @@ li.timeline_item
 
 .horizontal_carousel_small {
   float: left;
-  width: 885px;
+  width: 875px;
   height: 125px;
   position: relative;
+  margin-left: 25px;
 }
 
 .horizontal_carousel_small .container {
   float: left;
-  width: 835px;
+  width: 775px;
   height: 125px;
   position: relative;    
   overflow: hidden;
@@ -419,91 +433,108 @@ li.timeline_item
 
 #item_work_it
 {
-	padding: 30px;
+	margin-left: 5px;
+	margin-top: 0px;
+	position: relative;
+	float: left;
+	width: 100%;
 }
 
 #item_work_it a img
 {
 	float: left;
 	margin: .85em 0em 0em 0em;
+	border: 10px solid #f6cc5c;
+	width: 225px;
+}
+
+#book-cover
+{
+	float: left;
+	width: 245px;
 }
 
 
-#top
+
+#buy-box
 {
 	background-color: #f6cc5c;
-	margin-top: 0.5em;
-	position: absolute;
-	left: 185px;
-	top: 10px;
-	padding: 1.5em 1em 0em 0.5em;
 	height: 30px;
-	width: 500px;
+	position: relative;
+	float: left;
+	margin-top: 20px;
+	margin-left: -35px;
+	width: 410px;
+	padding-top: 16px;
+	padding-left: 12px;
 }
 
 #top-parent
 {
-	position: absolute;
-	left: 5px;
+	height: 90px;
 }
 .top-arrow
 {
-	margin: 2.75em 0em 0em 0em;
+	margin-left: 10px;
+	position: relative;
+	float: left;
+	margin-top: 75px;
 }
 
-#middle
+#info-box
 {
 	background-color: #f6cc5c;
-	margin: .5em;
-	position: absolute;
-	left: 250px;
-	top: 20px;
+	position: relative;
+	float: left;
 	padding: 0.5em;
-	width: 435px;
+	margin-left: 22px;
+	margin-top: -10px;
+	width: 365px;
 }
 
 #middle-parent
 {
 	position: absolute;
-	left: 5px;
-	top: 50px;
+	left: 255px;
 }
 
 .middle-arrow
 {
-	margin: 2.75em 0em 0em 0em;
+	position: relative;
+	float: left;
+	margin-top: 90px;
+	margin-left: 10px;
 }
 
-#bottom
+#rate-box
 {
 	background-color: #f6cc5c;
-	margin: .5em;
-	position: absolute;
-	left: -5px;
-	top: 50px;
+	margin-left: 10px;
+	margin-top: 10px;
 	padding: 0.5em;
 	width: 225px;
+	position: relative;
+	float: left;
 }
 
 #bottom-parent
 {
 	position: absolute;
-	left: 5px;
-	top: 135px;
+	top: 250px;
+	left: 255px;
 }
 
 .bottom-arrow
 {
-	margin: 0em 0em 0em 0em;
+	position: relative;
+	float: left;
+	margin-right: 300px;
+	margin-left: 10px;
 }
 
 #work-it-container
 {
-	height: 150px;
-	position: absolute;
-	left: 145px;
-	top: 210px;
-	width: 725px;
+	width: 100%;
 	font-size: 75%;
 }
 
@@ -622,16 +653,12 @@ li.timeline_item
 	float: left;
 }
 
-#book-cover
-{
-	float: left;
-	padding: 5px;
-}
-
 #tl-name
 {
 	float: left;
-	margin-top: 35px;
+	margin-top: 10px;
+	margin-left: 8px;
+	margin-bottom: 10px;
 }
 
 #avg-rating

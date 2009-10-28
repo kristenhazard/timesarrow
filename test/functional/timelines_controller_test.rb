@@ -123,7 +123,7 @@ class TimelinesControllerTest < ActionController::TestCase
   def test_not_logged_in_should_show_timeline
     get :show, :id => timelines(:awards_fiction_featured).to_param
     assert_response :success
-    assert_no_tag :tag => "ul", :attributes => { :class => "star-rating" }
+    assert_no_tag :tag => "ul", :attributes => { :id => "star-ratings-block" }
     assert_no_tag :tag => "select", :attributes => { :id => "item_current_statusid" }
     assert_no_tag :tag => "textarea", :attributes => { :id => "item_reviews_attributes_0_content" }
   end
