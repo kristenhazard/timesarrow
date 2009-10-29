@@ -1,3 +1,12 @@
+<% if @item.largeimageurl.nil? %>
+<% unless @item.mediumimageurl.nil? %>
+  <div id="book-cover">
+    <%= link_to image_tag(@item.mediumimageurl, :alt => @item.title), @item.detailpageurl, 
+                :popup => true, 
+                :class => "work-it-book" %>
+  </div>
+<% end %>
+<% end %>
 <% unless @item.largeimageurl.nil? %>
   <div id="book-cover">
     <%= link_to image_tag(@item.largeimageurl, :alt => @item.title), @item.detailpageurl, 

@@ -49,8 +49,10 @@ class Item < ActiveRecord::Base
     # set item attributes based on response from amazon
     item = find_or_create_by_asin(asin)
     searchitem = get_item_lookup(asin).items[0]
-    item = set_item_attributes_from_search(searchitem, item)
-    item.save!
+    unless searchitem.nil?
+      item = set_item_attributes_from_search(searchitem, item)
+      item.save!
+    end
     item
   end
   
@@ -70,10 +72,12 @@ class Item < ActiveRecord::Base
     if (!reviews.nil?)
       review = reviews[0]
       Amazon::Element.get_hash(review) # [:source => ..., :content ==> ...]
-      item.description = Amazon::Element.get_unescaped(review, 'content')
+      review_content = Amazon::Element.get_unescaped(review, 'content')
     else
-      item.description = ""
+      review_content = ""
     end
+    # strip out divs as they break my layout
+    item.description = review_content.gsub(/<DIV>|<\/DIV>|&lt;DIV&gt;|&lt;\/DIV&gt;/,'')
     item.asin = searchitem.get("asin")
     item.detailpageurl = searchitem.get("detailpageurl")
     item.smallimageurl = searchitem.get("smallimage/url")
@@ -82,7 +86,6 @@ class Item < ActiveRecord::Base
     item.swatchimageurl = searchitem.get("swatchimage/url")
     item.publicationdate = searchitem.get("publicationdate")
     item.isbn = searchitem.get("isbn")
-    #item.category_id = 1
     pg = searchitem.get("productgroup")
     item.category_id = Category.find_by_amazon_product_group(pg).id
     item
