@@ -9,9 +9,15 @@
     <ul>
     <% @timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
-      <div id="timelineitem-name-<%= timelineitem.id %>">
+      <div id="timelineitem-name-<%= timelineitem.id %>" class="timelineitem-image">
         <% if timelineitem.item.smallimageurl.nil? %>
-          <%=h timelineitem.item.title %>
+          <%= link_to_remote timelineitem.item.title,
+                             :update => 'item_work_it',
+                             :url => { :controller => 'items', 
+                                       :action => 'work_it', 
+                                       :id => timelineitem.item.id,
+                                       :timeline_id => @timeline.id }
+          %>
         <% else %>
           <%= link_to_remote image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title),
                              :update => 'item_work_it',

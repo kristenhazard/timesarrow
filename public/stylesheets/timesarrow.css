@@ -1,16 +1,3 @@
-/* @override 
-	http://localhost:3000/stylesheets/timesarrow.css?1256756728
-	http://localhost:3000/stylesheets/timesarrow.css?1256757748
-	http://localhost:3000/stylesheets/timesarrow.css?1256764873
-	http://localhost:3000/stylesheets/timesarrow.css?1256765519
-	http://localhost:3000/stylesheets/timesarrow.css?1256765975
-	http://localhost:3000/stylesheets/timesarrow.css?1256766962
-	http://localhost:3000/stylesheets/timesarrow.css?1256767609
-	http://localhost:3000/stylesheets/timesarrow.css?1256768404
-	http://localhost:3000/stylesheets/timesarrow.css?1256768785
-	http://localhost:3000/stylesheets/timesarrow.css?1256770931
-*/
-
 /*
 
 grey: #676767
@@ -284,6 +271,11 @@ li.timeline_item
 	float: left;
 	/*padding: .25em;
 	white-space: nowrap;*/
+}
+
+.timelineitem-image
+{
+	height: 80px;
 }
 
 

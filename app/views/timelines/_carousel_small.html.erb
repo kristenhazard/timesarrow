@@ -5,32 +5,28 @@
     <ul>
     <% timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
-                  
-      
-                    
-            <% if timelineitem.item.smallimageurl.nil? %>
-              <%= link_to timelineitem.item.title,
-                          :controller => 'timelines',
-                          :action => 'show',
-                          :id => timelineitem.timeline_id,
-                          :item_id => timelineitem.item_id
-              %>
-            <% else %>
-              <%= link_to image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title),
-                          :controller => 'timelines',
-                          :action => 'show',
-                          :id => timelineitem.timeline_id,
-                          :item_id => timelineitem.item_id
-              %>
-            <% end %>
-            
-                        
-      
-      <span class="posdesc">
-        <% unless timelineitem.position_desc.eql? 'set' %>
-          <%=h timelineitem.position_desc %>
+        <div id="timelineitem-name-<%= timelineitem.id %>" class="timelineitem-image">
+        <% if timelineitem.item.smallimageurl.nil? %>
+          <%= link_to timelineitem.item.title,
+                      :controller => 'timelines',
+                      :action => 'show',
+                      :id => timelineitem.timeline_id,
+                      :item_id => timelineitem.item_id
+          %>
+        <% else %>
+          <%= link_to image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title),
+                      :controller => 'timelines',
+                      :action => 'show',
+                      :id => timelineitem.timeline_id,
+                      :item_id => timelineitem.item_id
+          %>
         <% end %>
-      </span>
+        </div>
+        <span class="posdesc">
+          <% unless timelineitem.position_desc.eql? 'set' %>
+            <%=h timelineitem.position_desc %>
+          <% end %>
+        </span>
       <% end %>
     <% end %>
     </ul>
