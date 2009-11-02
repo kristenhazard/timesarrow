@@ -1,0 +1,32 @@
+<% if @timeline_items_finalists.count > 0 %>
+<div class="finalists-header">
+  Finalists 
+</div>
+<div class="finalists-header-arrow">
+  <%= image_tag "/images/arrow-right-finalists.png" %>
+</div>
+<ul>
+  <% @timeline_items_finalists.each do |timelineitem| %>
+    <% content_tag_for :li, timelineitem do %>
+     <% if timelineitem.item.smallimageurl.nil? %>
+       <%= link_to_remote timelineitem.item.title,
+                          :update => 't_item_work',
+                          :url => { :controller => 'items', 
+                                    :action => 'work_it', 
+                                    :id => timelineitem.item.id,
+                                    :timeline_id => @timeline.id }
+       %>
+     <% else %>
+       <%= link_to_remote image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title),
+                          :update => 't_item_work',
+                          :url => { :controller => 'items', 
+                                    :action => 'work_it', 
+                                    :id => timelineitem.item.id,
+                                    :timeline_id => @timeline.id }
+       %>
+     <% end %>
+     <%= h timelineitem.position_desc %>
+    <% end %>
+  <% end %>
+</ul>
+<% end %>

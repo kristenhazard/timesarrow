@@ -77,7 +77,7 @@ class Item < ActiveRecord::Base
       review_content = ""
     end
     # strip out divs as they break my layout
-    item.description = review_content.gsub(/<DIV>|<\/DIV>|&lt;DIV&gt;|&lt;\/DIV&gt;/,'')
+    item.description = review_content.gsub(/<DIV>|<\/DIV>|&lt;DIV&gt;|&lt;\/DIV&gt;/i,'')
     item.asin = searchitem.get("asin")
     item.detailpageurl = searchitem.get("detailpageurl")
     item.smallimageurl = searchitem.get("smallimage/url")

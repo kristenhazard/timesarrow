@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091013224751) do
+ActiveRecord::Schema.define(:version => 20091030203345) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -93,6 +93,7 @@ ActiveRecord::Schema.define(:version => 20091013224751) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "position_desc"
+    t.integer  "position_type", :default => 1
   end
 
   add_index "timeline_items", ["item_id"], :name => "fk_item_id"

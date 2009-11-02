@@ -7,12 +7,12 @@
   <div class="previous_button"></div>  
   <div class="container">
     <ul>
-    <% @timeline.timeline_items.each do |timelineitem| %>
+    <% @timeline.winners.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
       <div id="timelineitem-name-<%= timelineitem.id %>" class="timelineitem-image">
         <% if timelineitem.item.smallimageurl.nil? %>
           <%= link_to_remote timelineitem.item.title,
-                             :update => 'item_work_it',
+                             :update => 't_item_work',
                              :url => { :controller => 'items', 
                                        :action => 'work_it', 
                                        :id => timelineitem.item.id,
@@ -20,7 +20,7 @@
           %>
         <% else %>
           <%= link_to_remote image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title),
-                             :update => 'item_work_it',
+                             :update => 't_item_work',
                              :url => { :controller => 'items', 
                                        :action => 'work_it', 
                                        :id => timelineitem.item.id,
@@ -39,10 +39,8 @@
   </div>
   <div class="next_button"></div>
 </div>
-<div id="item_work_it">
-    <% unless @item.nil? %>
-      <%= render :partial => 'shared/item_work' %>
-    <% end %>
+<div id="t_item_work">
+  <%= render :partial => 'shared/t_item_work', :locals => { :item => @item, :timeline_items_finalists => @timeline_items_finalists } %>
 </div>
 <!-- carousel -->
 <script>

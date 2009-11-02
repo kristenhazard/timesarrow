@@ -64,7 +64,19 @@ class Timeline < ActiveRecord::Base
   ]
   
   has_many :items, :through => :timeline_items,  :order => 'title'
-  has_many :timeline_items, :order => 'position ASC', :dependent => :destroy
+  has_many :timeline_items, :order => 'position ASC', :dependent => :destroy do
+    # method used to interface with carousel positioning
+    # count all finalists in position earlier than current position
+    def count_of_finalists(position)
+      find(:all, :conditions => ['position < ? and position_type = 2', position ]).count
+    end
+    # get list of finalists by year
+    def finalists_by_year(position_desc)
+      find_all_by_position_type_and_position_desc(2,position_desc)
+    end
+  end
+  has_many :winners, :class_name => 'TimelineItem', :conditions => [ 'position_type = 1' ], 
+           :order => 'position ASC', :dependent => :destroy
   
   validates_presence_of :name, :category, :subcategory, :genre
   validates_numericality_of :featured, :on => :create, :message => "is not a number"
@@ -73,18 +85,27 @@ class Timeline < ActiveRecord::Base
   validates_inclusion_of :genre, :in => TIMELINE_GENRE_BOOKS.map {|disp, value| value}
   
   named_scope :featured, :include => [ :items, :timeline_items ], 
-                         :conditions => { :featured => 1 }, 
+                         :conditions => { :timelines => {:featured => 1 }}, 
                          :order => 'subcategory, genre'
                          
   named_scope :filtered_cat, lambda { |category| {:conditions => { :category => category }, 
                                                   :include => [ :items, :timeline_items ]} }
+                                                  
   named_scope :filtered_subcat, lambda { |subcategory| {:conditions => [ "subcategory = ?", subcategory ], 
                                                         :include => [ :items, :timeline_items ]} }
+                                                        
   named_scope :filtered_genre, lambda { |genre| 
                                         if genre.nil?
-                                          {:conditions => {}, :include => [ :items, :timeline_items ]} 
+                                          { :conditions => {}, 
+                                            :include => [ :items, :timeline_items ]} 
                                         else
-                                          { :conditions => { :genre => genre }, :include => [ :items, :timeline_items ]} 
+                                          { :conditions => { :genre => genre }, 
+                                            :include => [ :items, :timeline_items ]} 
                                         end
                                         }
+
+
+                          
+  
+                          
 end

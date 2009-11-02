@@ -65,12 +65,16 @@ class ItemsController < ApplicationController
   def destroy
     @item = Item.find(params[:id])
     @item.destroy
-    redirect_to(items_url) 
+    redirect_to(items_url)
   end
   
   def work_it
     @item = Item.find(params[:id])
     @timeline = Timeline.find(params[:timeline_id])
+    ti = @timeline.timeline_items.find_by_item_id(@item.id)
+    @timeline_items_finalists = @timeline.timeline_items.finalists_by_year(ti.position_desc)
+    
+    # duplicate code alert, need to get rid of this, code is also in timelines_controller, show
     if logged_in?
       userid = current_user.id
       @review = @item.reviews.find_by_user_id(userid)
@@ -78,7 +82,7 @@ class ItemsController < ApplicationController
         @item.reviews.build(:user_id => userid)
       end
     end
-    render :partial => 'shared/item_work'
+    render :partial => 'shared/t_item_work'
   end
   
 

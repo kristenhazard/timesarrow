@@ -3,7 +3,9 @@
      <span class="item-title"><%=h @item.title %></span>
      by <%=h @item.author %>
      <p><%= truncate(@item.description, :length => 1000, 
-                                        :omission => link_to('. . . [more] ', @item.detailpageurl, :popup => true)) %></p>
+                                        :omission => link_to('. . . [more] ', @item.detailpageurl, :popup => true)
+                                        ) %>
+    </p>
    </div>
    <div id="avg-rating">
      <%= render :partial => "ratings/avg_rating", :locals => { :asset => @item } %>

@@ -3,7 +3,7 @@
   <div class="previous_button"></div>  
   <div class="container">
     <ul>
-    <% timeline.timeline_items.each do |timelineitem| %>
+    <% timeline.winners.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
         <div id="timelineitem-name-<%= timelineitem.id %>" class="timelineitem-image">
         <% if timelineitem.item.smallimageurl.nil? %>
@@ -27,7 +27,7 @@
             <%=h timelineitem.position_desc %>
           <% end %>
         </span>
-      <% end %>
+      <% end %>  
     <% end %>
     </ul>
   </div>

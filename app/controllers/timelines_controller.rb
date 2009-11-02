@@ -1,26 +1,29 @@
 class TimelinesController < ApplicationController
-  require 'amazonecs'
   
   before_filter :require_admin, :except => [:index, :show, :featured, :filtered, :makeone]
+  before_filter :store_location #in case user is not logged in I want to store this location for them to go back to
   
   def index
-    @timelines = Timeline.all(:include => [ :items, :timeline_items ], 
-                              :order => 'category, subcategory, genre, featured desc')
+    @timelines = Timeline.all(:order => 'category, subcategory, genre, featured desc', 
+                              :include => [ :items, :timeline_items ])
     self.title = "TIME'S ARROW - All Timelines"
-    store_location #in case user is not logged in I want to store this location for them to go back to
   end
 
 
   def show
     @timeline = Timeline.find(params[:id], :include => [ :items, :timeline_items ])
     item_id = params[:item_id]
+    
     if item_id 
       @item = Item.find(item_id)
-      @timeline_item = TimelineItem.find_by_timeline_id_and_item_id(@timeline.id,item_id)
-      @carousel_position = @timeline_item.position - 1
+      ti = @timeline.timeline_items.find_by_item_id(item_id)
+      @carousel_position = ti.position - 1 - @timeline.timeline_items.count_of_finalists(ti.position)
+      @timeline_items_finalists = @timeline.timeline_items.finalists_by_year(ti.position_desc)
     else
-      @item = @timeline.timeline_items[0].item
-      @carousel_position = @timeline.timeline_items[0].position - 1
+      ti = @timeline.timeline_items[0]
+      @item = ti.item
+      @carousel_position = ti.position - 1
+      @timeline_items_finalists = @timeline.timeline_items.finalists_by_year(ti.position_desc)
     end
     
     # duplicate code alert, need to get rid of this, code is also in items_controller, work_it
@@ -33,7 +36,6 @@ class TimelinesController < ApplicationController
     end
     
     self.title = "TIME'S ARROW: " + @timeline.name + " timeline"
-    store_location #in case user is not logged in I want to store this location for them to go back to
   end
 
 
@@ -46,8 +48,6 @@ class TimelinesController < ApplicationController
   def edit
     @timeline = Timeline.find(params[:id])
     self.title = "TIME'S ARROW edit " + @timeline.name + " timeline"
-    # change this to ajax search
-    
   end
 
 
@@ -85,7 +85,6 @@ class TimelinesController < ApplicationController
   def featured
     @timelines = Timeline.featured
     self.title = "TIME'S ARROW - Featured Timelines"
-    store_location #in case user is not logged in I want to store this location for them to go back to
   end
   
   
@@ -97,14 +96,12 @@ class TimelinesController < ApplicationController
     @headertitle = "TIME'S ARROW - Book " + subcategory
     @contenttitle = 'Book ' + subcategory
     self.title = @headertitle
-    store_location #in case user is not logged in I want to store this location for them to go back to
   end
   
   # to be removed once I actually allow users to make a timeline, 
   #this is just a placeholder to check if users actually click this link
   def makeone
     self.title = "TIME'S ARROW - Make a timeline"
-    store_location #in case user is not logged in I want to store this location for them to go back to
   end
   
 end

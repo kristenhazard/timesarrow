@@ -1,0 +1,8 @@
+<div id="finalists">
+  <%= render :partial => 'shared/finalists', :locals => { :timeline_items_finalists => @timeline_items_finalists } %>
+</div>
+<div id="item_work_it">
+    <% unless @item.nil? %>
+      <%= render :partial => 'shared/item_work', :locals => { :item => @item } %>
+    <% end %>
+</div>

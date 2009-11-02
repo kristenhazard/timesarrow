@@ -1,6 +1,7 @@
 class TimelineItemsController < ApplicationController
   before_filter :require_admin
   in_place_edit_for :timeline_item, :position_desc
+  in_place_edit_for :timeline_item, :position_type
   
   def index
     @timeline_items = TimelineItem.find(:all, :include => [ :item, :timeline ], :order => 'items.title')

@@ -67,18 +67,24 @@
             <% end %>
           <br/>
           <div class="edit-timeline">
+          <span class="move">[drag]</span><br/>
           <%= @timeline_item = timelineitem; 
               in_place_editor_field :timeline_item, :position_desc, {}, 
                                     :url => { :controller => 'timeline_items', 
                                               :action => 'set_timeline_item_position_desc', 
                                               :id => timelineitem.id }, 
                                     :cols => 5  %><br/>
-          <span class="move">[drag]</span><br/>
           <%= link_to 'remove', { :controller => 'timeline_items', 
                                   :action => 'destroy', 
                                   :id => timelineitem.id }, 
                                   :confirm => "Are you sure?", 
                                   :method => :delete %><br/>
+          <%= @timeline_item = timelineitem; 
+              in_place_editor_field :timeline_item, :position_type, {}, 
+                                    :url => { :controller => 'timeline_items', 
+                                              :action => 'set_timeline_item_position_type', 
+                                              :id => timelineitem.id }, 
+                                    :cols => 5  %>
           </div>
       <% end %> <!-- end </li> -->
     <% end %> <!-- end timelineitem loop -->
@@ -97,6 +103,6 @@
 
 <!-- carousel -->
 <script>
-new UI.Carousel("horizontal_carousel_small_"+ <%= @timeline.id %>);
+  new UI.Carousel("horizontal_carousel_small_"+ <%= @timeline.id %>);
 </script>
 
