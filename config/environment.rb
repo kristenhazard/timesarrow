@@ -44,7 +44,8 @@ Rails::Initializer.run do |config|
   
 end
 
-ExceptionNotifier.exception_recipients = %w(kristen@hazardbio.com)
+  ExceptionNotifier.exception_recipients = %w(kristen@hazardbio.com)
+  ExceptionNotifier.sender_address = %("Application Error" <app.error@timesarrow.com>)
 
   if $0 == 'irb'
     require 'hirb'
