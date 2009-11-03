@@ -10,6 +10,7 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1257201242
 	http://localhost:3000/stylesheets/timesarrow.css?1257201588
 	http://localhost:3000/stylesheets/timesarrow.css?1257202042
+	http://localhost:3000/stylesheets/timesarrow.css?1257204380
 */
 
 /*
@@ -246,9 +247,8 @@ div.tlinfo
 
 div#searchedit
 {
-	position:absolute;
-	left: 25px;
-	top: 450px;
+	position: relative;
+	float: left;
 	margin: .5em;
 	padding: .5em;
 	width: 815px;
