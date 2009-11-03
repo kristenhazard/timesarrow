@@ -49,7 +49,7 @@ class ItemStatusesController < ApplicationController
   def create_or_update
     userid = current_user_session.user.id
     statisid = params[:status_id]
-    unless statisid.eql? ""
+    unless statisid.eql? "null" #ie hack
       @item_status = ItemStatus.find_or_create_by_user_id_and_item_id(:user_id => userid, 
                                                                     :item_id => params[:item_id])
       @item_status.status_id = params[:status_id]
