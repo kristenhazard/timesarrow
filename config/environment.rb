@@ -45,16 +45,7 @@ Rails::Initializer.run do |config|
 end
 
   ExceptionNotifier.exception_recipients = %w(kristen@hazardbio.com)
-  ExceptionNotifier.sender_address = %("Application Error" <app.error@timesarrow.com>)
-
-  if $0 == 'irb'
-    require 'hirb'
-    Hirb.enable
-  end
-
-  if "irb" == $0
-    ActiveRecord::Base.logger = Logger.new(STDOUT)
-  end
+  ExceptionNotifier.sender_address = %("ApplicationError" <app.error@timesarrow.com>)
   
   ActionMailer::Base.smtp_settings = {
       :enable_starttls_auto => false,
@@ -67,3 +58,12 @@ end
     }
     
     ActionMailer::Base.raise_delivery_errors = true
+    
+    if $0 == 'irb'
+      require 'hirb'
+      Hirb.enable
+    end
+
+    if "irb" == $0
+      ActiveRecord::Base.logger = Logger.new(STDOUT)
+    end
