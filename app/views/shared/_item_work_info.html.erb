@@ -13,12 +13,22 @@
    <div id="other-timelines">
      <b>All Timelines</b> (<%= @item.timelines.count %>)
      <ul>
-      <% @item.timelines.each do |t| %>
+      <% @item.timeline_items.each do |ti| %>
         <li>
-          <%= link_to t.name, :controller => 'timelines',
-                              :action => 'show',
-                              :id => t.id,
-                              :item_id => @item.id %>
+          <% if ti.position_type.eql? 1 %>
+            <%= link_to ti.timeline.name, 
+                                  :controller => 'timelines',
+                                  :action => 'show',
+                                  :id => ti.timeline.id,
+                                  :item_id => @item.id %>
+          <% else %>
+            <% link_to(ti.timeline) do %>
+              <%= ti.timeline.name %>
+                <% if ti.position_type.eql? 2 %>
+                  - Finalist
+                <% end %>
+            <% end %>
+          <% end %>
         </li>
       <% end %>
       </ul>
