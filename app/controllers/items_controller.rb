@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
   before_filter :require_user, :only => [ :update ]
   
   def index
-    @items = Item.all
+    @items = Item.search(params[:search], params[:page])
   end
 
   def show

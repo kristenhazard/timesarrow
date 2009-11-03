@@ -60,13 +60,13 @@
     <ul id="dtimeline">
     <% @timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
-            <% if timelineitem.item.smallimageurl.nil? %>
-              <%=h timelineitem.item.title %>
-            <% else %>
-              <%= image_tag(timelineitem.item.smallimageurl) %>
-            <% end %>
-          <br/>
-          <div class="edit-timeline">
+        <% if timelineitem.item.smallimageurl.nil? %>
+          <%=h timelineitem.item.title %>
+        <% else %>
+          <%= image_tag(timelineitem.item.smallimageurl) %>
+        <% end %>
+        <br/>
+        <div class="edit-timeline">
           <span class="move">[drag]</span><br/>
           <%= @timeline_item = timelineitem; 
               in_place_editor_field :timeline_item, :position_desc, {}, 
@@ -74,18 +74,18 @@
                                               :action => 'set_timeline_item_position_desc', 
                                               :id => timelineitem.id }, 
                                     :cols => 5  %><br/>
-          <%= link_to 'remove', { :controller => 'timeline_items', 
-                                  :action => 'destroy', 
-                                  :id => timelineitem.id }, 
-                                  :confirm => "Are you sure?", 
-                                  :method => :delete %><br/>
           <%= @timeline_item = timelineitem; 
               in_place_editor_field :timeline_item, :position_type, {}, 
                                     :url => { :controller => 'timeline_items', 
                                               :action => 'set_timeline_item_position_type', 
                                               :id => timelineitem.id }, 
-                                    :cols => 5  %>
-          </div>
+                                    :cols => 5  %><br/>
+          <%= link_to 'remove', { :controller => 'timeline_items', 
+                                  :action => 'destroy', 
+                                  :id => timelineitem.id }, 
+                                  :confirm => "Are you sure?", 
+                                  :method => :delete %><br/>
+        </div>
       <% end %> <!-- end </li> -->
     <% end %> <!-- end timelineitem loop -->
     </ul>

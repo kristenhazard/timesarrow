@@ -45,6 +45,12 @@ class Item < ActiveRecord::Base
     review = self.reviews.find_by_user_id(current_user_session.user.id)
   end
   
+  def self.search(search, page)
+    paginate :per_page => 30, :page => page,
+             :conditions => ['title like ?', "%#{search}%"],
+             :order => 'title'
+  end
+  
   def self.save_item_from_search(asin)
     # set item attributes based on response from amazon
     item = find_or_create_by_asin(asin)
