@@ -68,7 +68,7 @@ class Timeline < ActiveRecord::Base
     # method used to interface with carousel positioning
     # count all finalists in position earlier than current position
     def count_of_finalists(position)
-      find(:all, :conditions => ['position < ? and position_type = 2', position ]).count
+      find(:all, :conditions => ['position < ? and position_type = 2', position ]).size
     end
     # get list of finalists by year
     def finalists_by_year(position_desc)
