@@ -4,7 +4,6 @@ class CategoriesController < ApplicationController
   
   def index
     @categories = Category.all
-    raise RuntimeError, "Generating an error"
   end
   
   def show
