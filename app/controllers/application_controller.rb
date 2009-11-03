@@ -3,6 +3,7 @@
 
 class ApplicationController < ActionController::Base
   include ExceptionNotifiable
+  local_addresses.clear
   
   helper :all # include all helpers, all the time
   helper_method :admin?, :current_user, :current_user_session, :logged_in?
