@@ -1,21 +1,4 @@
-/* @override 
-	http://localhost:3000/stylesheets/timesarrow.css?1256848212
-	http://localhost:3000/stylesheets/timesarrow.css?1256945373
-	http://localhost:3000/stylesheets/timesarrow.css?1256945631
-	http://localhost:3000/stylesheets/timesarrow.css?1257196500
-	http://localhost:3000/stylesheets/timesarrow.css?1257198802
-	http://localhost:3000/stylesheets/timesarrow.css?1257198985
-	http://localhost:3000/stylesheets/timesarrow.css?1257200466
-	http://localhost:3000/stylesheets/timesarrow.css?1257200829
-	http://localhost:3000/stylesheets/timesarrow.css?1257201242
-	http://localhost:3000/stylesheets/timesarrow.css?1257201588
-	http://localhost:3000/stylesheets/timesarrow.css?1257202042
-	http://localhost:3000/stylesheets/timesarrow.css?1257204380
-	http://localhost:3000/stylesheets/timesarrow.css?1257290673
-	http://localhost:3000/stylesheets/timesarrow.css?1257361647
-	http://localhost:3000/stylesheets/timesarrow.css?1257362231
-	http://localhost:3000/stylesheets/timesarrow.css?1257362421
-*/
+
 
 /*
 
@@ -376,14 +359,14 @@ li.timeline_item
 
 .horizontal_carousel_small_edit {
   float: left;
-  width: 1300px;
+  width: 835px;
   height: 200px;
   position: relative;
 }
 
 .horizontal_carousel_small_edit .container {
   float: left;
-  width: 1250px;
+  width: 775px;
   height: 200px;
   position: relative;    
   overflow: hidden;
