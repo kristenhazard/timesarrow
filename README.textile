@@ -1,16 +1,19 @@
-timesarrow
+*timesarrow*
 
-"timesarrow":http://times-arrow.com
+"timesarrow":http://times-arrow.com is a Ruby on Rails web application to show books in a timeline.  
+The book information is retrieved from Amazon Product Advertising API utilizing the amazon-ecs gem.
 
 runs on:
 Rails 2.3.4
 MySQL
 
 required gems:
-amazon-ecs
-bluecloth
-hpricot
-RedCloth
+*amazon-ecs
+*bluecloth
+*hpricot
+*RedCloth
+
+all other gems are installed as plugins under vendor
 
 license:
 MIT License
