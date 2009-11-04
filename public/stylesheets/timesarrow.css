@@ -11,6 +11,7 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1257201588
 	http://localhost:3000/stylesheets/timesarrow.css?1257202042
 	http://localhost:3000/stylesheets/timesarrow.css?1257204380
+	http://localhost:3000/stylesheets/timesarrow.css?1257290673
 */
 
 /*
@@ -80,7 +81,7 @@ div#header
 {
 	position:relative;
 	background-color: #848484;
-	width: 100%;
+	width: 99%;
 	height: 20px;
 }
 
@@ -555,7 +556,7 @@ li.timeline_item
 {
 	float: right;
 	margin-top: 60px;
-	margin-left: 17px;
+	margin-right: 10px;
 }
 
 #status
@@ -577,8 +578,9 @@ li.timeline_item
 
 .flash
 {
-	color: #cc9900;
+	color: #724343;
 	margin-top: 10px;
+	margin-right: 10px;
 	float: right;
 }
 
