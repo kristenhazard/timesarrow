@@ -101,7 +101,7 @@ ActiveRecord::Schema.define(:version => 20091104200620) do
 
   create_table "timelines", :force => true do |t|
     t.string   "name"
-    t.string   "description"
+    t.text     "description"
     t.string   "imageurl"
     t.datetime "created_at"
     t.datetime "updated_at"
