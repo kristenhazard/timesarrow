@@ -20,9 +20,9 @@
   <div id="doc">
     <div id="header">
       <%= link_to image_tag("/images/timesarrow-withtagline.gif"), root_url %>
-      <span id="followme">
+      <div id="followme">
         <%= link_to image_tag("/images/twit2.png"), "http://bit.ly/4bPqmS", :title => 'Follow me on twitter for updates to this site' %>
-      </span>
+      </div>
     </div>
     <div id="navigation">
       <ul id="navbar">
@@ -49,20 +49,30 @@
       <%= yield %>
     </div>
   </div>
-  <!-- google analytics -->
-  <script type="text/javascript">
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-  try {
-  var pageTracker = _gat._getTracker("UA-9553779-1");
-  pageTracker._trackPageview();
-  } catch(err) {}</script>
-
-
-
-
-
+  <% if current_user %>
+    <% unless current_user.username.eql? "kristen" %>
+      <!-- google analytics -->
+      <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-9553779-1");
+      pageTracker._trackPageview();
+      } catch(err) {}</script>
+      <% end %>
+  <% else %>
+    <!-- google analytics -->
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-9553779-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+  <% end %>
 </body>
 </html>
