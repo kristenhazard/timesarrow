@@ -1,5 +1,7 @@
 timesarrow
 
+"timesarrow":http://times-arrow.com
+
 runs on:
 Rails 2.3.4
 MySQL
@@ -10,4 +12,6 @@ bluecloth
 hpricot
 RedCloth
 
+license:
+MIT License
 
