@@ -1,6 +1,13 @@
-== timesarrow
+timesarrow
 
-initial commit, not worth a look at this point
+runs on:
+Rails 2.3.4
+MySQL
 
-required plugins:
+required gems:
 amazon-ecs
+bluecloth
+hpricot
+RedCloth
+
+
