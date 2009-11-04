@@ -14,6 +14,7 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1257290673
 	http://localhost:3000/stylesheets/timesarrow.css?1257361647
 	http://localhost:3000/stylesheets/timesarrow.css?1257362231
+	http://localhost:3000/stylesheets/timesarrow.css?1257362421
 */
 
 /*
@@ -375,14 +376,14 @@ li.timeline_item
 
 .horizontal_carousel_small_edit {
   float: left;
-  width: 885px;
+  width: 1300px;
   height: 200px;
   position: relative;
 }
 
 .horizontal_carousel_small_edit .container {
   float: left;
-  width: 835px;
+  width: 1250px;
   height: 200px;
   position: relative;    
   overflow: hidden;
