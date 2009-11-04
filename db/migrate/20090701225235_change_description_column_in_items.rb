@@ -1,6 +1,6 @@
 class ChangeDescriptionColumnInItems < ActiveRecord::Migration
   def self.up
-    change_column :items, :description, :text
+    change_column :items, :description, :text, :limit => 1000
   end
 
   def self.down
