@@ -4,7 +4,7 @@
   </h1>
 </div>
 <div id="tl-desc">
-  <%=h @timeline.description %>
+  <%= textilize_without_paragraph(@timeline.description) %>
 </div>
 <div id="horizontal_carousel_small_<%= @timeline.id %>" class="horizontal_carousel_small">
   <div class="previous_button"></div>  
