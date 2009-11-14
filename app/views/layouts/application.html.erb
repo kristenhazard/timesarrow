@@ -19,16 +19,16 @@
 <body>
   <div id="doc">
     <div id="header">
-      <%= link_to image_tag("/images/timesarrow-withtagline.gif"), root_url %>
-      <div id="followme">
-        <%= link_to image_tag("/images/twit2.png"), "http://bit.ly/4bPqmS", :title => 'Follow me on twitter for updates to this site' %>
-      </div>
     </div>
     <div id="navigation">
       <ul id="navbar">
         <li class="navitem-first"><%= link_to_unless_current('ALL', timelines_path) %></li>
         <li><%= link_to_unless_current('FEATURED', home_path ) %></li>
-        <li><%= link_to_unless_current('BOOK AWARDS', filtered_cat_sub_path(:category => 'book', :subcategory => 'awards' )) %></li>
+        <li>
+          <%= link_to_unless_current('BOOK AWARDS', 
+                                      filtered_cat_sub_path(:category => 'book', 
+                                                            :subcategory => 'awards' )) %>
+        </li>
         <li><%= link_to_unless_current('BOOK CLUBS', filtered_cat_sub_path(:category => 'book', :subcategory => 'clubs' )) %></li>
         <li><%= link_to_unless_current('BOOK REVIEWS', filtered_cat_sub_path(:category => 'book', :subcategory => 'reviews' )) %></li>
         <li><%= link_to_unless_current('BOOK SERIES', filtered_cat_sub_path(:category => 'book', :subcategory => 'series' )) %></li>
@@ -74,5 +74,28 @@
     pageTracker._trackPageview();
     } catch(err) {}</script>
   <% end %>
+  <script type="text/javascript" charset="utf-8">
+    var is_ssl = ("https:" == document.location.protocol);
+    var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+    document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <script type="text/javascript" charset="utf-8">
+    var is_ssl = ("https:" == document.location.protocol);
+    var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+    document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <script type="text/javascript" charset="utf-8">
+    var feedback_widget_options = {};
+
+    feedback_widget_options.display = "overlay";  
+    feedback_widget_options.company = "times-arrow";
+    feedback_widget_options.placement = "right";
+    feedback_widget_options.color = "#848484";
+    feedback_widget_options.style = "idea";
+
+    var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+  </script>
 </body>
 </html>
