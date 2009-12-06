@@ -38,6 +38,11 @@
           <%=h timelineitem.position_desc %>
         <% end %>
       </span>
+      <div class="sf">
+        <% if timelineitem.item.id == @item.id %>
+          <a href="#" onclick="Element.toggle('finalists')">show finalists</a>
+        <% end %>
+      </div>
       <% end %>
     <% end %>
     </ul>
