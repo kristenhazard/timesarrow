@@ -1,6 +1,7 @@
 <% if @timeline_items_finalists.size > 0 %>
 <div class="finalists-header">
-  finalists
+  finalists<br/>
+  <%= h @timeline_items_finalists.first.position_desc %>
 </div>
 <ul>
   <% @timeline_items_finalists.each do |timelineitem| %>
@@ -22,7 +23,6 @@
                                     :timeline_id => @timeline.id }
        %>
      <% end %>
-     <%= h timelineitem.position_desc %>
     <% end %>
   <% end %>
 </ul>

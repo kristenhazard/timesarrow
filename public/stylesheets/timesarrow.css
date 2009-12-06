@@ -7,6 +7,7 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1260130075
 	http://localhost:3000/stylesheets/timesarrow.css?1260131263
 	http://localhost:3000/stylesheets/timesarrow.css?1260131832
+	http://localhost:3000/stylesheets/timesarrow.css?1260132830
 */
 
 /*
@@ -682,7 +683,7 @@ li.timeline_item
 	position: relative;
 	margin-top: 5px;
 	margin-left: 55px;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	width: 86%;
 	font-size: 75%;
 }
@@ -739,9 +740,11 @@ li.timeline_item
 	float: left;
 	position: relative;
 	margin-top: 1px;
-	margin-right: 7px;
-	margin-left: 8px;
-	top: 20px;
+	margin-right: 8px;
+	margin-left: 7px;
+	top: 0px;
+	color: #724343;
+	text-align: center;
 }
 
 
@@ -751,3 +754,9 @@ div.sf
 	color: gray;
 }
 
+div#tl-name h1 a
+{
+	color: #724343;
+	font-weight: normal;
+	font-style: normal;
+}

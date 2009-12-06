@@ -1,8 +1,12 @@
 <div id="tl-name">
   <h1>
     <%=h @timeline.name.upcase %> 
-    <% if admin? %> | <%= link_to 'Edit', edit_timeline_path %> <% end %>
-    <% if @timeline_items_finalists.size > 0 %> | <a href="#" onclick="Element.toggle('finalists')">show finalists</a> <% end %>
+    <% if admin? %> 
+      | <%= link_to 'edit', edit_timeline_path %> 
+    <% end %>
+    <% if @timeline_items_finalists.size > 0 %> 
+      | <a href="#" onclick="Element.toggle('finalists')">show finalists</a> 
+    <% end %>
   </h1>
 </div>
 <div id="tl-desc">
