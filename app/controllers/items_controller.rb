@@ -82,7 +82,9 @@ class ItemsController < ApplicationController
         @item.reviews.build(:user_id => userid)
       end
     end
+    
     render :partial => 'shared/t_item_work'
+    
   end
   
 

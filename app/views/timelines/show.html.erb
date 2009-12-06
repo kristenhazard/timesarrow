@@ -2,10 +2,12 @@
   <h1>
     <%=h @timeline.name.upcase %> 
     <% if admin? %> 
-      | <%= link_to 'edit', edit_timeline_path %> 
+      <%= link_to ' | edit', edit_timeline_path %> 
     <% end %>
     <% if @timeline_items_finalists.size > 0 %> 
-      | <a href="#" onclick="Element.toggle('finalists')">show finalists</a> 
+      <a href="#" onclick="toggle_finalists()">
+        | <span id="toggle_finalists">show</span> finalists
+      </a>
     <% end %>
   </h1>
 </div>
@@ -25,7 +27,8 @@
                              :url => { :controller => 'items', 
                                        :action => 'work_it', 
                                        :id => timelineitem.item.id,
-                                       :timeline_id => @timeline.id }
+                                       :timeline_id => @timeline.id },
+                             :complete => "set_finalists()" 
           %>
         <% else %>
           <%= link_to_remote image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title),
@@ -33,7 +36,8 @@
                              :url => { :controller => 'items', 
                                        :action => 'work_it', 
                                        :id => timelineitem.item.id,
-                                       :timeline_id => @timeline.id }
+                                       :timeline_id => @timeline.id },
+                              :complete => "set_finalists()"
           %>
         <% end %>
       </div>
