@@ -11,7 +11,6 @@
   <%= stylesheet_link_tag 'timesarrow' %>
   <%= stylesheet_link_tag 'prototype-ui.css' %>
   <%= javascript_include_tag "carousel" %>
-  <%= javascript_include_tag 'lowpro.js' %>
   <%= javascript_include_tag 'hover_content.js' %>
   <%= stylesheet_link_tag 'hover_popup.css' %>
   <%= stylesheet_link_tag 'star_rating.css' %>
@@ -19,6 +18,7 @@
 <body>
   <div id="doc">
     <div id="header">
+      <%= link_to image_tag ("/images/timesarrow-logo.png", :alt => "logo"), home_path  %>
     </div>
     <div id="navigation">
       <ul id="navbar">
