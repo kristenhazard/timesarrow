@@ -6,10 +6,9 @@
     <% end %>
     <% if @timeline_items_finalists.size > 0 %> 
       <a href="#" onclick="toggle_finalists()">
-        | <span id="toggle_finalists">show</span> finalists
+        | <span id="toggle_finalists" flag="show">show</span> finalists
       </a>
     <% end %>
-    <%= hidden_field_tag 'toggle_finalist_flag', 'show' %>
   </h1>
 </div>
 <div id="tl-desc">
