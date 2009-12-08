@@ -1,4 +1,9 @@
-/* @override http://localhost:3000/stylesheets/timesarrow.css?1260148407 */
+/* @override 
+	http://localhost:3000/stylesheets/timesarrow.css?1260148407
+	http://localhost:3000/stylesheets/timesarrow.css?1260148617
+	http://localhost:3000/stylesheets/timesarrow.css?1260148776
+	http://localhost:3000/stylesheets/timesarrow.css?1260242151
+*/
 
 /*
 
@@ -186,7 +191,6 @@ div.container
 
 div.container a
 {
-	font-size: 75%;
 	color: #676767;
 }
 
@@ -200,7 +204,6 @@ div.container a:hover
 
 .posdesc
 {
-	font-size: 75%;
 }
 
 .tldesc
@@ -268,7 +271,6 @@ div.edit-timeline
 .move
 {
 	cursor: move;
-	font-size: 75%;
 }
 
 div.timelineitem-name {
@@ -281,6 +283,7 @@ div.timelineitem-name {
 li.timeline_item
 {
 	float: left;
+	font-size: 75%;
 	/*padding: .25em;
 	white-space: nowrap;*/
 }
@@ -754,4 +757,9 @@ div#tl-name h1 a
 	color: #724343;
 	font-weight: normal;
 	font-style: normal;
+}
+
+div.container img
+{
+	width: 50px;
 }

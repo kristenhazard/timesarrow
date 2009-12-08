@@ -22,7 +22,7 @@
       <% content_tag_for :li, timelineitem do %>
       <div id="timelineitem-name-<%= timelineitem.id %>" class="timelineitem-image">
         <% if timelineitem.item.smallimageurl.nil? %>
-          <%= link_to_remote timelineitem.item.title,
+          <%= link_to_remote truncate(timelineitem.item.title, :length => 35),
                              :update => 't_item_work',
                              :url => { :controller => 'items', 
                                        :action => 'work_it', 

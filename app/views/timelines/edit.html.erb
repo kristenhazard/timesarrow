@@ -1,9 +1,11 @@
-<%= link_to 'Show', @timeline %> |
-<%= link_to 'Home', timelines_path %> |
-<%= link_to 'Make New Timeline', new_timeline_path %> |
-<%= link_to 'Destroy', @timeline, :confirm => 'Are you sure?', :method => :delete %>
 
-<h1>Editing timeline</h1>
+
+<h1>Editing timeline |
+  <%= link_to 'Show', @timeline %> |
+  <%= link_to 'Home', timelines_path %> |
+  <%= link_to 'Make New Timeline', new_timeline_path %> |
+  <%= link_to 'Destroy', @timeline, :confirm => 'Are you sure?', :method => :delete %>
+</h1>
 
 <% form_for(@timeline) do |f| %>
   <%= f.error_messages %>
@@ -60,11 +62,21 @@
     <ul id="dtimeline">
     <% @timeline.timeline_items.each do |timelineitem| %>
       <% content_tag_for :li, timelineitem do %>
+        <div id="timelineitem-name-<%= timelineitem.id %>" class="timelineitem-image">
         <% if timelineitem.item.smallimageurl.nil? %>
-          <%=h timelineitem.item.title %>
+          <%= link_to truncate(timelineitem.item.title, :length => 35),
+                      :controller => 'items',
+                      :action => 'edit',
+                      :id => timelineitem.item_id
+          %>
         <% else %>
-          <%= image_tag(timelineitem.item.smallimageurl) %>
+          <%= link_to image_tag(timelineitem.item.smallimageurl, :alt => timelineitem.item.title),
+                      :controller => 'items',
+                      :action => 'edit',
+                      :id => timelineitem.item_id
+          %>
         <% end %>
+        </div>
         <br/>
         <div class="edit-timeline">
           <span class="move">[drag]</span><br/>
