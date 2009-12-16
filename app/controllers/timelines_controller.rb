@@ -4,8 +4,7 @@ class TimelinesController < ApplicationController
   before_filter :store_location #in case user is not logged in I want to store this location for them to go back to
   
   def index
-    @timelines = Timeline.all(:order => 'category, subcategory, genre, featured desc', 
-                              :include => [ :items, :timeline_items ])
+    @timelines = Timeline.search(params[:search], params[:page])
     self.title = "TIME'S ARROW - All Timelines"
   end
 
