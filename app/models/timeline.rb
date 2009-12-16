@@ -117,7 +117,9 @@ class Timeline < ActiveRecord::Base
                 :order => 'category, subcategory, genre, featured desc', 
                 :include => [ :items, :timeline_items ])
        else
-         find(:all)
+         find(:all,
+              :order => 'category, subcategory, genre, featured desc', 
+              :include => [ :items, :timeline_items ])
        end
     end
                           
