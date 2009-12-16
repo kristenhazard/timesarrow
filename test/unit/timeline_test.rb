@@ -82,5 +82,22 @@ class TimelineTest < ActiveSupport::TestCase
     assert @timelines.count.eql? 1
   end
   
+  def test_search_timeline_with_timeline_name
+    @timelines = Timeline.search('Featured', nil)
+    assert @timelines.count.eql? 2
+  end
+  
+  def test_search_timeline_with_item_name
+    @timelines = Timeline.search('March', nil)
+    assert @timelines.count.eql? 1
+    assert @timelines.first.name.eql? 'Fiction Featured'
+  end
+  
+  def test_search_timeline_with_item_author
+    @timelines = Timeline.search('Brooks', nil)
+    assert @timelines.count.eql? 1
+    assert @timelines.first.name.eql? 'Fiction Featured'
+  end
+  
 
 end

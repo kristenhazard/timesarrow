@@ -10,6 +10,12 @@ class TimelinesControllerTest < ActionController::TestCase
     assert_not_nil assigns(:timelines)
   end
   
+  def test_should_get_index_with_search_parameters
+    get :index, {:search => 'Pulitzer', :page => nil}
+    assert_response :success
+    assert_not_nil assigns(:timelines)
+  end
+  
   def test_user_should_get_index
     UserSession.create(users(:user))
     get :index
