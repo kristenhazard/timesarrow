@@ -106,20 +106,17 @@ class Timeline < ActiveRecord::Base
 
 
     def self.search(search, page)
-      # paginate :per_page => 5, :page => page,
-      #          :conditions => ,
-      #          #:order => 'name',
-      #          :order => 'category, subcategory, genre, featured desc', 
-      #          :include => [ :items, :timeline_items ]
        if search
-           find(:all, 
-                :conditions => ['name like ?', "%#{search}%"],
-                :order => 'name', 
-                :include => [ :winners ]
-                )
+          search = search.upcase
+          paginate :per_page => 5, :page => page,
+                   :conditions => ['UPPER(name) like ?', "%#{search}%"],
+                   :order => 'name', 
+                   :include => [ :winners ]
+                
        else
-         find(:all,
-              :order => 'category, subcategory, name')
+         paginate :per_page => 5, :page => page,
+                  :order => 'name',
+                  :include => :winners
        end
     end
                           

@@ -3,6 +3,7 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1260148617
 	http://localhost:3000/stylesheets/timesarrow.css?1260148776
 	http://localhost:3000/stylesheets/timesarrow.css?1260242151
+	http://localhost:3000/stylesheets/timesarrow.css?1260251485
 */
 
 /*
@@ -20,6 +21,12 @@ red: #9c3946
 red brown: #724343
 
 */
+
+div.pagination {
+	float: right;
+	margin-right: 10px;
+	font-size: 80%;
+}
 
 body 
 { 
