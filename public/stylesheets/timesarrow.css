@@ -25,7 +25,9 @@ red brown: #724343
 div.pagination {
 	float: right;
 	margin-right: 10px;
+	margin-top: 4px;
 	font-size: 80%;
+	position: relative;
 }
 
 body 
