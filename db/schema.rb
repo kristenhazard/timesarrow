@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091104200620) do
+ActiveRecord::Schema.define(:version => 20091217200650) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -26,6 +26,10 @@ ActiveRecord::Schema.define(:version => 20091104200620) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "item_statuses", ["item_id"], :name => "index_item_statuses_on_item_id"
+  add_index "item_statuses", ["status_id"], :name => "index_item_statuses_on_status_id"
+  add_index "item_statuses", ["user_id"], :name => "index_item_statuses_on_user_id"
 
   create_table "items", :force => true do |t|
     t.string   "title"
@@ -44,6 +48,10 @@ ActiveRecord::Schema.define(:version => 20091104200620) do
     t.string   "largeimageurl"
     t.integer  "category_id"
   end
+
+  add_index "items", ["author"], :name => "index_items_on_author"
+  add_index "items", ["category_id"], :name => "index_items_on_category_id"
+  add_index "items", ["title"], :name => "index_items_on_title"
 
   create_table "rates", :force => true do |t|
     t.integer "score"
@@ -69,6 +77,9 @@ ActiveRecord::Schema.define(:version => 20091104200620) do
     t.datetime "updated_at"
   end
 
+  add_index "reviews", ["item_id"], :name => "index_reviews_on_item_id"
+  add_index "reviews", ["user_id"], :name => "index_reviews_on_user_id"
+
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
     t.text     "data"
@@ -85,6 +96,8 @@ ActiveRecord::Schema.define(:version => 20091104200620) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "statuses", ["category_id"], :name => "index_statuses_on_category_id"
 
   create_table "timeline_items", :force => true do |t|
     t.integer  "timeline_id"

@@ -84,23 +84,23 @@ class Timeline < ActiveRecord::Base
   validates_inclusion_of :subcategory, :in => TIMELINE_SUBCATEGORIES.map {|disp, value| value}
   validates_inclusion_of :genre, :in => TIMELINE_GENRE_BOOKS.map {|disp, value| value}
   
-  named_scope :featured, :include => [ :items, :timeline_items ], 
+  named_scope :featured, :include => [ :winners ], 
                          :conditions => { :timelines => {:featured => 1 }}, 
                          :order => 'subcategory, genre'
                          
-  named_scope :filtered_cat, lambda { |category| {:conditions => { :category => category }, 
-                                                  :include => [ :items, :timeline_items ]} }
+  named_scope :filtered_cat, lambda { |category| {:conditions => { :category => category.capitalize }, 
+                                                  :include => [ :winners ]} }
                                                   
-  named_scope :filtered_subcat, lambda { |subcategory| {:conditions => [ "subcategory = ?", subcategory ], 
-                                                        :include => [ :items, :timeline_items ]} }
+  named_scope :filtered_subcat, lambda { |subcategory| {:conditions => [ "subcategory = ?", subcategory.capitalize ], 
+                                                        :include => [ :winners ]} }
                                                         
   named_scope :filtered_genre, lambda { |genre| 
                                         if genre.nil?
                                           { :conditions => {}, 
-                                            :include => [ :items, :timeline_items ]} 
+                                            :include => [ :winners ]} 
                                         else
-                                          { :conditions => { :genre => genre }, 
-                                            :include => [ :items, :timeline_items ]} 
+                                          { :conditions => { :genre => genre.capitalize }, 
+                                            :include => [ :winners ]} 
                                         end
                                         }
 
@@ -113,13 +113,13 @@ class Timeline < ActiveRecord::Base
       #          :include => [ :items, :timeline_items ]
        if search
            find(:all, 
-                :conditions => ['name like ? OR items.title like ? OR items.author like ?', "%#{search}%", "%#{search}%", "%#{search}%"],
-                :order => 'category, subcategory, genre, featured desc', 
-                :include => [ :items, :timeline_items ])
+                :conditions => ['name like ?', "%#{search}%"],
+                :order => 'name', 
+                :include => [ :winners ]
+                )
        else
          find(:all,
-              :order => 'category, subcategory, name', 
-              :include => [ :items, :timeline_items ])
+              :order => 'category, subcategory, name')
        end
     end
                           
