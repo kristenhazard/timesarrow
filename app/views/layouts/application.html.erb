@@ -12,6 +12,7 @@
   <%= stylesheet_link_tag 'prototype-ui.css' %>
   <%= javascript_include_tag "carousel" %>
   <%= stylesheet_link_tag 'star_rating.css' %>
+  <link rel="shortcut icon" href="/images/favicon.ico">
 </head>
 <body>
   <div id="doc">
@@ -26,10 +27,57 @@
           <%= link_to_unless_current('BOOK AWARDS', 
                                       filtered_cat_sub_path(:category => 'book', 
                                                             :subcategory => 'awards' )) %>
+          <ul class="sub-navbar">
+            <% @genres.each do |genre| %>
+            <% if genre.subcategory.eql? 'Awards' %>
+            <li>
+              <%= link_to(genre.genre, filtered_cat_sub_genre_path(:category => 'book', 
+                                                                 :subcategory => 'awards',
+                                                                 :genre => genre.genre.downcase )) %>
+            </li>
+            <% end %>
+            <% end %>
+          </ul>
         </li>
-        <li><%= link_to_unless_current('BOOK CLUBS', filtered_cat_sub_path(:category => 'book', :subcategory => 'clubs' )) %></li>
-        <li><%= link_to_unless_current('BOOK REVIEWS', filtered_cat_sub_path(:category => 'book', :subcategory => 'reviews' )) %></li>
-        <li><%= link_to_unless_current('BOOK SERIES', filtered_cat_sub_path(:category => 'book', :subcategory => 'series' )) %></li>
+        <li><%= link_to_unless_current('BOOK CLUBS', filtered_cat_sub_path(:category => 'book', :subcategory => 'clubs' )) %>
+          <ul class="sub-navbar">
+            <% @genres.each do |genre| %>
+            <% if genre.subcategory.eql? 'Clubs' %>
+            <li>
+              <%= link_to(genre.genre, filtered_cat_sub_genre_path(:category => 'book', 
+                                                                 :subcategory => 'clubs',
+                                                                 :genre => genre.genre.downcase )) %>
+            </li>
+            <% end %>
+            <% end %>
+          </ul>
+        </li>
+        <li><%= link_to_unless_current('BOOK REVIEWS', filtered_cat_sub_path(:category => 'book', :subcategory => 'reviews' )) %>
+          <ul class="sub-navbar">
+            <% @genres.each do |genre| %>
+            <% if genre.subcategory.eql? 'Reviews' %>
+            <li>
+              <%= link_to(genre.genre, filtered_cat_sub_genre_path(:category => 'book', 
+                                                                 :subcategory => 'reviews',
+                                                                 :genre => genre.genre.downcase )) %>
+            </li>
+            <% end %>
+            <% end %>
+          </ul>
+        </li>
+        <li><%= link_to_unless_current('BOOK SERIES', filtered_cat_sub_path(:category => 'book', :subcategory => 'series' )) %>
+          <ul class="sub-navbar">
+            <% @genres.each do |genre| %>
+            <% if genre.subcategory.eql? 'Series' %>
+            <li>
+              <%= link_to(genre.genre, filtered_cat_sub_genre_path(:category => 'book', 
+                                                                 :subcategory => 'series',
+                                                                 :genre => genre.genre.downcase )) %>
+            </li>
+            <% end %>
+            <% end %>
+          </ul>
+        </li>
         <li><%= link_to_unless_current('MAKE ONE!', {:controller => 'timelines', :action => 'makeone'}) %></li>
       </ul>
       <ul id="user_nav">

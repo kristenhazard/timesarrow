@@ -4,6 +4,8 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1260148776
 	http://localhost:3000/stylesheets/timesarrow.css?1260242151
 	http://localhost:3000/stylesheets/timesarrow.css?1260251485
+	http://localhost:3000/stylesheets/timesarrow.css?1261263475
+	http://localhost:3000/stylesheets/timesarrow.css?1262472874
 */
 
 /*
@@ -103,6 +105,13 @@ ul#navbar
 	
 }
 
+#navbar li ul.sub-navbar a {
+	background-color: #848484;
+	color: #d4d4d4;
+	padding: 0;
+	margin: 0;
+}
+
 ul#navbar a
 {
 	color: #fff;
@@ -119,6 +128,31 @@ ul#navbar li
 	float: left;
 	white-space: nowrap;
 	padding: .2em 1em 0em 18px;
+}
+
+#navbar li ul.sub-navbar li {
+	margin-left: -52px;
+}
+
+ul.sub-navbar li {
+	background-color: #848484;
+	list-style-type: none;
+	position: relative;
+	float: left;
+	font-size: 75%;
+	display: block;
+	width: 87px;
+	overflow: auto; /*force hasLayout in IE7 */
+}
+
+ul.sub-navbar {
+	position: absolute;
+	top: 20px;
+	display: block;
+	float: left;
+	width: 50px;
+	z-index: 5;
+	visibility: hidden;
 }
 
 

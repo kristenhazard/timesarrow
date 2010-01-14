@@ -1,3 +1,26 @@
+# == Schema Information
+# Schema version: 20091217200650
+#
+# Table name: items
+#
+#  id              :integer(4)      not null, primary key
+#  title           :string(255)
+#  itemtype        :string(255)
+#  author          :string(255)
+#  description     :text
+#  asin            :string(255)
+#  detailpageurl   :string(255)
+#  smallimageurl   :string(255)
+#  mediumimageurl  :string(255)
+#  publicationdate :date
+#  created_at      :datetime
+#  updated_at      :datetime
+#  isbn            :string(255)
+#  swatchimageurl  :string(255)
+#  largeimageurl   :string(255)
+#  category_id     :integer(4)
+#
+
 #create_table "items", :force => true do |t|
 #  t.string   "title"
 #  t.string   "itemtype"

@@ -1,3 +1,20 @@
+# == Schema Information
+# Schema version: 20091217200650
+#
+# Table name: timelines
+#
+#  id          :integer(4)      not null, primary key
+#  name        :string(255)
+#  description :text
+#  imageurl    :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#  category    :string(255)
+#  subcategory :string(255)
+#  featured    :integer(4)
+#  genre       :string(255)
+#
+
 #create_table "timelines", :force => true do |t|
 #  t.string   "name"
 #  t.string   "description"
@@ -35,6 +52,7 @@ class Timeline < ActiveRecord::Base
     ["Autobiography",    "Autobiography"],
     ["Beyond Genre",    "Beyond Genre"],
     ["Biography",    "Biography"],
+    ["Business",    "Business"],
     ["Children",    "Children"],
     ["Comedy",    "Comedy"],
     ["Cooking",    "Cooking"],
@@ -86,7 +104,7 @@ class Timeline < ActiveRecord::Base
   
   named_scope :featured, :include => [ :winners ], 
                          :conditions => { :timelines => {:featured => 1 }}, 
-                         :order => 'subcategory, genre'
+                         :order => 'name'
                          
   named_scope :filtered_cat, lambda { |category| {:conditions => { :category => category.capitalize }, 
                                                   :include => [ :winners ]} }
@@ -105,21 +123,23 @@ class Timeline < ActiveRecord::Base
                                         }
 
 
-    def self.search(search, page)
-       if search
-          search = search.upcase
-          paginate :per_page => 5, :page => page,
-                   :conditions => ['UPPER(name) like ?', "%#{search}%"],
-                   :order => 'name', 
-                   :include => [ :winners ]
-                
-       else
-         paginate :per_page => 5, :page => page,
-                  :order => 'name',
-                  :include => :winners
-       end
-    end
+  def self.search(search, page)
+     if search
+        search = search.upcase
+        paginate :per_page => 5, :page => page,
+                 :conditions => ['UPPER(name) like ?', "%#{search}%"],
+                 :order => 'name', 
+                 :include => [ :winners ]
+              
+     else
+       paginate :per_page => 5, :page => page,
+                :order => 'name',
+                :include => :winners
+     end
+  end
                           
-  
+  def self.genre_distinct_by_subcat
+    find(:all, :group => "genre,subcategory", :select => "genre,subcategory", :order => "subcategory,genre")
+  end
                           
 end

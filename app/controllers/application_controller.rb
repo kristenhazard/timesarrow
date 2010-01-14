@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
   include ExceptionNotifiable
   local_addresses.clear
   
+  before_filter :find_genres_by_subcat
+  
   helper :all # include all helpers, all the time
   helper_method :admin?, :current_user, :current_user_session, :logged_in?
   
@@ -12,6 +14,10 @@ class ApplicationController < ActionController::Base
   
   # Scrub sensitive parameters from your log
   filter_parameter_logging :password, :password_confirmation
+
+  def find_genres_by_subcat
+    @genres = Timeline.genre_distinct_by_subcat
+  end
   
   protected
   

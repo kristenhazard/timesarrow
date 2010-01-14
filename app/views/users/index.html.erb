@@ -5,6 +5,9 @@
     <th>Username</th>
     <th>Email</th>
     <th>Password</th>
+    <th>Login Count</th>
+    <th>Last Login At</th>
+    <th>Created At</th>
   </tr>
 
 <% @users.each do |user| %>
@@ -12,6 +15,9 @@
     <td><%=h user.username %></td>
     <td><%=h user.email %></td>
     <td><%=h user.password %></td>
+    <td><%=h user.login_count %></td>
+    <td><%=h user.last_login_at %></td>
+    <td><%=h user.created_at %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>

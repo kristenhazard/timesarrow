@@ -1,3 +1,18 @@
+# == Schema Information
+# Schema version: 20091217200650
+#
+# Table name: timeline_items
+#
+#  id            :integer(4)      not null, primary key
+#  timeline_id   :integer(4)
+#  item_id       :integer(4)
+#  position      :integer(4)
+#  created_at    :datetime
+#  updated_at    :datetime
+#  position_desc :string(255)
+#  position_type :integer(4)      default(1)
+#
+
 class TimelineItem < ActiveRecord::Base
   
   acts_as_list :scope => :timeline

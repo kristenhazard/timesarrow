@@ -1,3 +1,20 @@
+# == Schema Information
+# Schema version: 20091217200650
+#
+# Table name: timelines
+#
+#  id          :integer(4)      not null, primary key
+#  name        :string(255)
+#  description :text
+#  imageurl    :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#  category    :string(255)
+#  subcategory :string(255)
+#  featured    :integer(4)
+#  genre       :string(255)
+#
+
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 awards_fiction_featured:
