@@ -24,7 +24,7 @@
         <li class="navitem-first"><%= link_to_unless_current('ALL', timelines_path) %></li>
         <li><%= link_to_unless_current('FEATURED', home_path ) %></li>
         <li>
-          <%= link_to_unless_current('BOOK AWARDS', 
+          <%= link_to_unless_current('AWARDS', 
                                       filtered_cat_sub_path(:category => 'book', 
                                                             :subcategory => 'awards' )) %>
           <ul class="sub-navbar">
@@ -39,7 +39,7 @@
             <% end %>
           </ul>
         </li>
-        <li><%= link_to_unless_current('BOOK CLUBS', filtered_cat_sub_path(:category => 'book', :subcategory => 'clubs' )) %>
+        <li><%= link_to_unless_current('CLUBS', filtered_cat_sub_path(:category => 'book', :subcategory => 'clubs' )) %>
           <ul class="sub-navbar">
             <% @genres.each do |genre| %>
             <% if genre.subcategory.eql? 'Clubs' %>
@@ -52,7 +52,7 @@
             <% end %>
           </ul>
         </li>
-        <li><%= link_to_unless_current('BOOK REVIEWS', filtered_cat_sub_path(:category => 'book', :subcategory => 'reviews' )) %>
+        <li><%= link_to_unless_current('REVIEWS', filtered_cat_sub_path(:category => 'book', :subcategory => 'reviews' )) %>
           <ul class="sub-navbar">
             <% @genres.each do |genre| %>
             <% if genre.subcategory.eql? 'Reviews' %>
@@ -65,7 +65,7 @@
             <% end %>
           </ul>
         </li>
-        <li><%= link_to_unless_current('BOOK SERIES', filtered_cat_sub_path(:category => 'book', :subcategory => 'series' )) %>
+        <li><%= link_to_unless_current('SERIES', filtered_cat_sub_path(:category => 'book', :subcategory => 'series' )) %>
           <ul class="sub-navbar">
             <% @genres.each do |genre| %>
             <% if genre.subcategory.eql? 'Series' %>
@@ -93,6 +93,17 @@
     <div id="content">
       <div class="flash"><%= flash[:notice] %><%= flash[:error] %></div>
       <%= yield %>
+    </div>
+    <div id="footer">
+      <ul id="copyright">
+        <li><%= link_to "Suntoucher", "http://suntouchersoftware.com" %> ©2010</li>
+      </ul>
+      <ul id="about">
+        <li><%= link_to "About", "http://blog.times-arrow.com/post/346167375/timesarrow" %></li>
+        <li><%= link_to "Blog", "http://blog.times-arrow.com" %></li>
+        <li><%= link_to "Follow", "http://twitter.com/timesarrow" %></li>
+        <li><%= link_to "Privacy", "http://blog.times-arrow.com/post/346208955/privacy" %></li>
+      </ul>
     </div>
   </div>
   <% if current_user %>

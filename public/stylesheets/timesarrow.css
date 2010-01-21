@@ -6,6 +6,10 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1260251485
 	http://localhost:3000/stylesheets/timesarrow.css?1261263475
 	http://localhost:3000/stylesheets/timesarrow.css?1262472874
+	http://localhost:3000/stylesheets/timesarrow.css?1262474416
+	http://localhost:3000/stylesheets/timesarrow.css?1264094376
+	http://localhost:3000/stylesheets/timesarrow.css?1264094846
+	http://localhost:3000/stylesheets/timesarrow.css?1264095441
 */
 
 /*
@@ -23,6 +27,8 @@ red: #9c3946
 red brown: #724343
 
 */
+
+
 
 div.pagination {
 	float: right;
@@ -59,15 +65,16 @@ div#doc
 	text-align:left;
 }
 
-#timelinestable
+div#content
 {
+	float: left;
+	position: relative;
 	width: 100%;
+	height: inherit;
 }
 
-/* content */
-#content
+#timelinestable
 {
-	position: relative;
 	width: 100%;
 }
 
@@ -184,6 +191,48 @@ ul#user_nav li
 	float: left;
 	padding: .2em 1em 0em .75em;
 	white-space: nowrap;
+}
+
+#footer {
+	position: relative;
+	float: left;
+	background-color: #848484;
+	width: 100%;
+	height: 20px;
+	margin-top: 20px;
+}
+
+#footer ul
+{
+	background-color: #848484;
+	color: #fff;
+	list-style-type: none;
+	margin: 0;
+	padding: 0em 0em 0em 0em;
+	font-size: 75%;
+}
+
+#footer ul li
+{
+	float: left;
+	white-space: nowrap;
+	padding: .2em 1em 0em 18px;
+}
+
+#footer ul li a
+{
+	color: white;
+}
+
+#footer ul li a:hover
+{
+	color: #cc9900;
+	border-bottom: none;
+}
+
+ul#about 
+{
+	float: right;	
 }
 
 h1
