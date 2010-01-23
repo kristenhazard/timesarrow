@@ -35,6 +35,11 @@ class TimelinesController < ApplicationController
     end
     
     self.title = "TIME'S ARROW: " + @timeline.name + " timeline"
+    
+    rescue NoMethodError
+      logger.error("Attempt to access invalide item_id for timeline")
+      flash[:notice] = "Invalid book for this timeline"
+      redirect_to(@timeline)
   end
 
 

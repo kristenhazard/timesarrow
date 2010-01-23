@@ -150,6 +150,16 @@ class TimelinesControllerTest < ActionController::TestCase
     assert_response :success
   end
   
+  def test_show_timeline_with_valid_item_id_parameter
+    get :show, :id => timelines(:awards_fiction_featured).to_param, :item_id => items(:book_march).to_param
+    assert_response :success
+  end
+  
+  def test_show_timeline_with_invalid_item_id_parameter
+    get :show, :id => timelines(:awards_fiction_featured).to_param, :item_id => items(:book_not_in_timeline).to_param
+    assert_response :redirect
+  end
+  
   
 
 
