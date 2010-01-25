@@ -97,9 +97,12 @@ class TimelinesController < ApplicationController
     subcategory = params[:subcategory]
     genre = params[:genre]
     @timelines = Timeline.filtered_cat(category).filtered_subcat(subcategory).filtered_genre(genre).all(:order => 'name')
-    @headertitle = "TIME'S ARROW - Book " + subcategory
-    @contenttitle = 'Book ' + subcategory
-    self.title = @headertitle
+    
+    if genre.nil? 
+      genre = ""
+    end
+    @contenttitle = 'Book ' + subcategory + " " + genre
+    self.title = "TIME'S ARROW - Book " + subcategory + " " + genre
   end
   
   # to be removed once I actually allow users to make a timeline, 

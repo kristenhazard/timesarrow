@@ -19,7 +19,8 @@ ActionController::Routing::Routes.draw do |map|
                 :collection => { :sort => :post }
 
   map.resources :timelines, 
-                :collection => { :featured => :get, :makeone => :get }
+                :collection => { :featured => :get },
+                :member => { :makeone => :get }
 
   map.resources :items
   

@@ -856,3 +856,9 @@ div.container img
 	width: 50px;
 	height: 75px;
 }
+
+#privacy
+{
+	height: 600px;
+	margin: 20px;
+}
