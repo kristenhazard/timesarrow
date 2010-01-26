@@ -78,7 +78,7 @@
             <% end %>
           </ul>
         </li>
-        <li><%= link_to_unless_current('MAKE ONE!', {:controller => 'timelines', :action => 'makeone'}) %></li>
+        <li><%= link_to_unless_current('MAKE ONE!', :controller => 'timelines', :action => 'makeone') %></li>
       </ul>
       <ul id="user_nav">
           <% if current_user %>
