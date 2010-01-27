@@ -5,3 +5,4 @@ config/database.yml
 db/*.sqlite3
 timesarrow.tmproj
 coverage/*
+public/images/*.psd
