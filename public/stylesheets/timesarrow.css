@@ -7,6 +7,8 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1264625238
 	http://localhost:3000/stylesheets/timesarrow.css?1264625475
 	http://localhost:3000/stylesheets/timesarrow.css?1264627015
+	http://localhost:3000/stylesheets/timesarrow.css?1264628068
+	http://localhost:3000/stylesheets/timesarrow.css?1264628475
 */
 
 /*
@@ -605,6 +607,9 @@ li.timeline_item
 	margin-top: -12px;
 	width: 345px;
 	border: 1px solid gray;
+	height: auto;
+	max-height: 550px;
+	overflow: auto;
 }
 
 #middle-parent
@@ -653,7 +658,7 @@ li.timeline_item
 {
 	width: 100%;
 	font-size: 75%;
-	height: 650px;
+	min-height: 630px;
 }
 
 #work-it-container p
