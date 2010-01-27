@@ -3,6 +3,10 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1264620321
 	http://localhost:3000/stylesheets/timesarrow.css?1264620868
 	http://localhost:3000/stylesheets/timesarrow.css?1264621096
+	http://localhost:3000/stylesheets/timesarrow.css?1264621400
+	http://localhost:3000/stylesheets/timesarrow.css?1264625238
+	http://localhost:3000/stylesheets/timesarrow.css?1264625475
+	http://localhost:3000/stylesheets/timesarrow.css?1264627015
 */
 
 /*
@@ -25,10 +29,10 @@ red brown: #724343
 
 div.pagination {
 	float: right;
-	margin-right: 10px;
+	margin-right: 18px;
 	margin-top: 4px;
-	font-size: 80%;
 	position: relative;
+	font: 80% "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
 body 
@@ -62,8 +66,11 @@ div#content
 {
 	float: left;
 	position: relative;
-	width: 100%;
+	width: 96.75%;
 	height: inherit;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
 }
 
 #timelinestable
@@ -196,7 +203,6 @@ ul#user_nav li
 	background-color: #848484;
 	width: 100%;
 	height: 20px;
-	margin-top: 20px;
 }
 
 #footer ul
@@ -235,23 +241,20 @@ ul#about
 h1
 {
 	font-size: 100%;
-	margin-left: 15px;
 }
 
 #timeline-tables {
-	margin-left: 15px;
 	margin-top: 5px;
 }
 
 p#search-form {
-	margin-left: 15px;;
 }
 
 a 
 { 
 	color: #676767; 
 	border-bottom: none;
-  text-decoration: none;
+  	text-decoration: none;
 }
 
 a:visited 
@@ -286,6 +289,8 @@ div.container
 {
 	font-size: 75%;
 	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
 }
 
 div.container a
@@ -397,10 +402,9 @@ li.timeline_item
 
 .horizontal_carousel_small {
   float: left;
-  width: 835px;
+  width: 855px;
   height: 100px;
   position: relative;
-  margin-left: 25px;
   padding-top: 10px;
   padding-bottom: 5px;
   background-color: white;
@@ -439,6 +443,7 @@ li.timeline_item
   background: url(/images/left.png);
   z-index: 100;
   cursor: pointer;
+  margin-right: 2px;
 }
 
 .horizontal_carousel_small .previous_button_over {
@@ -542,26 +547,24 @@ li.timeline_item
 
 #item_work_it
 {
-	margin-left: 5px;
-	margin-top: 0px;
+	margin-top: 25px;
 	position: relative;
 	float: left;
-	width: 100%;
-	height: 650px;
+	width: 98.3%;
+	height: inherit;
 }
 
 #item_work_it a img
 {
 	float: left;
-	margin: .85em 0em 0em 0em;
-	border: 10px solid #f6cc5c;
 	width: 225px;
 }
 
 #book-cover
 {
 	float: left;
-	width: 245px;
+	width: 225px;
+	border: 1px solid gray;
 }
 
 
@@ -572,11 +575,12 @@ li.timeline_item
 	height: 30px;
 	position: relative;
 	float: left;
-	margin-top: 20px;
-	margin-left: -35px;
-	width: 410px;
+	margin-top: 15px;
+	margin-left: -75px;
+	width: 225px;
 	padding-top: 16px;
 	padding-left: 12px;
+	border: 1px solid gray;
 }
 
 #top-parent
@@ -585,7 +589,7 @@ li.timeline_item
 }
 .top-arrow
 {
-	margin-left: 10px;
+	margin-left: 5px;
 	position: relative;
 	float: left;
 	margin-top: 75px;
@@ -597,15 +601,16 @@ li.timeline_item
 	position: relative;
 	float: left;
 	padding: 0.5em;
-	margin-left: 22px;
-	margin-top: -10px;
-	width: 355px;
+	margin-left: 25px;
+	margin-top: -12px;
+	width: 345px;
+	border: 1px solid gray;
 }
 
 #middle-parent
 {
 	position: absolute;
-	left: 255px;
+	left: 230px;
 }
 
 .middle-arrow
@@ -613,18 +618,19 @@ li.timeline_item
 	position: relative;
 	float: left;
 	margin-top: 90px;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 #rate-box
 {
 	background-color: #f6cc5c;
-	margin-left: 10px;
-	margin-top: 10px;
+	margin-left: -15px;
+	margin-top: 5px;
 	padding: 0.5em;
 	width: 225px;
 	position: relative;
 	float: left;
+	border: 1px solid gray;
 }
 
 #bottom-parent
@@ -640,13 +646,14 @@ li.timeline_item
 	position: relative;
 	float: left;
 	margin-right: 300px;
-	margin-left: 10px;
+	margin-left: -20px;
 }
 
 #work-it-container
 {
 	width: 100%;
 	font-size: 75%;
+	height: 650px;
 }
 
 #work-it-container p
@@ -768,7 +775,6 @@ li.timeline_item
 #tl-name
 {
 	float: left;
-	margin-left: 18px;
 	margin-bottom: 5px;
 	height: 30px;
 	width: 100%;
@@ -779,9 +785,8 @@ li.timeline_item
 	float: left;
 	position: relative;
 	margin-top: 5px;
-	margin-left: 18px;
-	margin-bottom: 5px;
-	width: 86%;
+	margin-bottom: 15px;
+	width: 100%;
 	font-size: 75%;
 }
 
@@ -867,5 +872,4 @@ div.container img
 #privacy
 {
 	height: 600px;
-	margin: 20px;
 }
