@@ -1,15 +1,8 @@
 /* @override 
-	http://localhost:3000/stylesheets/timesarrow.css?1260148407
-	http://localhost:3000/stylesheets/timesarrow.css?1260148617
-	http://localhost:3000/stylesheets/timesarrow.css?1260148776
-	http://localhost:3000/stylesheets/timesarrow.css?1260242151
-	http://localhost:3000/stylesheets/timesarrow.css?1260251485
-	http://localhost:3000/stylesheets/timesarrow.css?1261263475
-	http://localhost:3000/stylesheets/timesarrow.css?1262472874
-	http://localhost:3000/stylesheets/timesarrow.css?1262474416
-	http://localhost:3000/stylesheets/timesarrow.css?1264094376
-	http://localhost:3000/stylesheets/timesarrow.css?1264094846
-	http://localhost:3000/stylesheets/timesarrow.css?1264095441
+	http://localhost:3000/stylesheets/timesarrow.css?1264549759
+	http://localhost:3000/stylesheets/timesarrow.css?1264620321
+	http://localhost:3000/stylesheets/timesarrow.css?1264620868
+	http://localhost:3000/stylesheets/timesarrow.css?1264621096
 */
 
 /*
@@ -58,7 +51,7 @@ div#doc
 }
 
 /**/
-#doc, #content, #header
+#doc, #header
 {
 	margin:auto;
 	min-width:750px;
@@ -81,8 +74,8 @@ div#content
 div#header
 {
 	width: 100%;
-	background-image: url(../images/banner.gif);
-	height: 110px;
+	background-image: url(/images/1ccTimesArrowBanner.jpg);
+	height: 95px;
 }
 
 div#header a img
@@ -122,12 +115,14 @@ ul#navbar
 ul#navbar a
 {
 	color: #fff;
+	font-weight: normal;
 }
 
 ul#navbar a:hover
 {
 	color: #cc9900;
 	border-bottom: none;
+	font-weight: normal;;
 }
 
 ul#navbar li
@@ -135,6 +130,8 @@ ul#navbar li
 	float: left;
 	white-space: nowrap;
 	padding: .2em 1em 0em 18px;
+	color: #724343;
+	font-weight: bold;
 }
 
 #navbar li ul.sub-navbar li {
@@ -238,6 +235,16 @@ ul#about
 h1
 {
 	font-size: 100%;
+	margin-left: 15px;
+}
+
+#timeline-tables {
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+p#search-form {
+	margin-left: 15px;;
 }
 
 a 

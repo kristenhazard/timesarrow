@@ -1,11 +1,11 @@
 <% form_tag timelines_path, :method => 'get' do %>
-  <p>
+  <p id="search-form">
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search", :name => nil %>
   </p>
 <% end %>
 <div id="pagination"><%= will_paginate @timelines %></div>
-<table id="timelinestable">
+<table id="timeline-tables">
 <% @timelines.each do |timeline| %>
   <tr>
     <td>
