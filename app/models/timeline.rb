@@ -34,7 +34,7 @@ class Timeline < ActiveRecord::Base
     ["Clubs",     "Clubs"],
     ["Reviews",    "Reviews"],
     ["Series",    "Series"],
-    ["TOB",    "TOB"]
+    ["TOB",    "Tob"]
   ]
   
   TIMELINE_GENRE_BOOKS = [
