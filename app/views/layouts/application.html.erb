@@ -75,6 +75,8 @@
             <% end %>
           </ul>
         </li>
+        <li><%= link_to_unless_current('TOB', filtered_cat_sub_path(:category => 'book', :subcategory => 'tob' )) %>
+        </li>
         <li><%= link_to_unless_current('MAKE ONE!', :controller => 'timelines', :action => 'makeone') %></li>
       </ul>
       <ul id="user_nav">
