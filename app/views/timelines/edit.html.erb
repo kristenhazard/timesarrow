@@ -33,7 +33,9 @@
     <tr>
       <!-- featured is admin field -->
       <td><%= f.label :featured %></td>
-      <td><%= f.text_field :featured, :size => 5 %></td>
+      <td><%= f.select  :featured,
+                    Timeline::TIMELINE_FEATURED
+          %></td>
       <td><%= f.label :genre %></td>
       <td><%= f.select  :genre,
                     Timeline::TIMELINE_GENRE_BOOKS,

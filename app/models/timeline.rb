@@ -15,17 +15,6 @@
 #  genre       :string(255)
 #
 
-#create_table "timelines", :force => true do |t|
-#  t.string   "name"
-#  t.string   "description"
-#  t.string   "imageurl"
-#  t.datetime "created_at"
-#  t.datetime "updated_at"
-#  t.string   "category"
-#  t.string   "subcategory"
-#  t.integer  "featured"
-#  t.string   "genre"
-#end
 
 class Timeline < ActiveRecord::Base
   
@@ -40,10 +29,12 @@ class Timeline < ActiveRecord::Base
   
   TIMELINE_SUBCATEGORIES = [
     # Displayed   stored in db
+    ["Authors",     "Authors"],
     ["Awards",     "Awards"],
     ["Clubs",     "Clubs"],
     ["Reviews",    "Reviews"],
-    ["Series",    "Series"]
+    ["Series",    "Series"],
+    ["TOB",    "TOB"]
   ]
   
   TIMELINE_GENRE_BOOKS = [
@@ -77,8 +68,8 @@ class Timeline < ActiveRecord::Base
   
   TIMELINE_FEATURED = [
     # Displayed   stored in db
-    ["Yes",     "1"],
-    ["No",     "0"]
+    ["No",     "0"],
+    ["Yes",     "1"]
   ]
   
   has_many :items, :through => :timeline_items,  :order => 'title'

@@ -9,6 +9,10 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1264627015
 	http://localhost:3000/stylesheets/timesarrow.css?1264628068
 	http://localhost:3000/stylesheets/timesarrow.css?1264628475
+	http://localhost:3000/stylesheets/timesarrow.css?1264640660
+	http://localhost:3000/stylesheets/timesarrow.css?1264641704
+	http://localhost:3000/stylesheets/timesarrow.css?1264642153
+	http://localhost:3000/stylesheets/timesarrow.css?1265579600
 */
 
 /*
@@ -143,6 +147,11 @@ ul#navbar li
 	font-weight: bold;
 }
 
+ul#navbar li:hover ul.sub-navbar 
+{ 
+	display: block 
+}
+
 #navbar li ul.sub-navbar li {
 	margin-left: -52px;
 }
@@ -155,7 +164,7 @@ ul.sub-navbar li {
 	font-size: 75%;
 	display: block;
 	width: 87px;
-	overflow: auto; /*force hasLayout in IE7 */
+	overflow: auto;
 }
 
 ul.sub-navbar {
