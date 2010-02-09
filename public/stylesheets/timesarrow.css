@@ -1,19 +1,4 @@
-/* @override 
-	http://localhost:3000/stylesheets/timesarrow.css?1264549759
-	http://localhost:3000/stylesheets/timesarrow.css?1264620321
-	http://localhost:3000/stylesheets/timesarrow.css?1264620868
-	http://localhost:3000/stylesheets/timesarrow.css?1264621096
-	http://localhost:3000/stylesheets/timesarrow.css?1264621400
-	http://localhost:3000/stylesheets/timesarrow.css?1264625238
-	http://localhost:3000/stylesheets/timesarrow.css?1264625475
-	http://localhost:3000/stylesheets/timesarrow.css?1264627015
-	http://localhost:3000/stylesheets/timesarrow.css?1264628068
-	http://localhost:3000/stylesheets/timesarrow.css?1264628475
-	http://localhost:3000/stylesheets/timesarrow.css?1264640660
-	http://localhost:3000/stylesheets/timesarrow.css?1264641704
-	http://localhost:3000/stylesheets/timesarrow.css?1264642153
-	http://localhost:3000/stylesheets/timesarrow.css?1265579600
-*/
+/* @override http://localhost:3000/stylesheets/timesarrow.css?1265579876 */
 
 /*
 
@@ -600,7 +585,7 @@ li.timeline_item
 }
 .top-arrow
 {
-	margin-left: 5px;
+	margin-left: px;
 	position: relative;
 	float: left;
 	margin-top: 75px;
@@ -614,7 +599,7 @@ li.timeline_item
 	padding: 0.5em;
 	margin-left: 25px;
 	margin-top: -12px;
-	width: 345px;
+	width: 330px;
 	border: 1px solid gray;
 	height: auto;
 	max-height: 550px;
