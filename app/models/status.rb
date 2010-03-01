@@ -3,9 +3,9 @@
 #
 # Table name: statuses
 #
-#  id          :integer(4)      not null, primary key
+#  id          :integer         not null, primary key
 #  description :string(255)
-#  category_id :integer(4)
+#  category_id :integer
 #  created_at  :datetime
 #  updated_at  :datetime
 #

@@ -27,7 +27,8 @@
       <!-- featured is admin field -->
       <td><%= f.label :featured %></td>
       <td><%= f.select  :featured,
-                    Timeline::TIMELINE_FEATURED
+                    Timeline::TIMELINE_FEATURED,
+                    :prompt => "Select"
           %></td>
       <td><%= f.label :genre %></td>
       <td><%= f.select  :genre,

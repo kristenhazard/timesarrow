@@ -3,10 +3,10 @@
 #
 # Table name: item_statuses
 #
-#  id         :integer(4)      not null, primary key
-#  user_id    :integer(4)
-#  item_id    :integer(4)
-#  status_id  :integer(4)
+#  id         :integer         not null, primary key
+#  user_id    :integer
+#  item_id    :integer
+#  status_id  :integer
 #  created_at :datetime
 #  updated_at :datetime
 #

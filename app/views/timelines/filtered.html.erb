@@ -1,4 +1,7 @@
 <h1><%=h @contenttitle.upcase %></h1>
+<% if @contenttitle == 'Book tob' %>
+  <p>Tournament of Books is AWESOME!</p>
+<% end %>
 <table id="timeline-tables">
 <% @timelines.each do |timeline| %>
   <tr>

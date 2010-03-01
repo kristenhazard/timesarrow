@@ -18,7 +18,3 @@ function set_finalists() {
 	}
 }
 
-function submenu_show()
-{
-	Effect.SlideDown('awards-sub-nav');
-}

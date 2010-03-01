@@ -3,7 +3,7 @@
 #
 # Table name: timelines
 #
-#  id          :integer(4)      not null, primary key
+#  id          :integer         not null, primary key
 #  name        :string(255)
 #  description :text
 #  imageurl    :string(255)
@@ -11,7 +11,7 @@
 #  updated_at  :datetime
 #  category    :string(255)
 #  subcategory :string(255)
-#  featured    :integer(4)
+#  featured    :integer
 #  genre       :string(255)
 #
 
@@ -60,6 +60,7 @@ class Timeline < ActiveRecord::Base
     ["Romance",    "Romance"],
     ["Science",    "Science"],
     ["Science Fiction",    "Science Fiction"],
+    ["Spiritual",    "Spiritual"],
     ["Sports",    "Sports"],
     ["Thriller",    "Thriller"],
     ["Western",    "Western"],
@@ -108,7 +109,7 @@ class Timeline < ActiveRecord::Base
                                           { :conditions => {}, 
                                             :include => [ :winners ]} 
                                         else
-                                          { :conditions => { :genre => genre.capitalize }, 
+                                          { :conditions => { :genre => genre.titleize }, 
                                             :include => [ :winners ]} 
                                         end
                                         }

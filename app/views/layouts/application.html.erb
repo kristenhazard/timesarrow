@@ -7,7 +7,7 @@
   <!-- google site verification -->
   <meta name="verify-v1" content="nKj9JvDgSK+EYKM+L5imdU3S/GfX/aD7YYGeSwJCXaQ=" />
   <title><%= title %></title>
-  <%= javascript_include_tag :defaults, 'carousel' %>
+  <%= javascript_include_tag :defaults, 'carousel', 'menu' %>
   <%= stylesheet_link_tag 'timesarrow', 'star_rating.css', 'prototype-ui.css'  %>
   <link rel="shortcut icon" href="/images/favicon.ico">
 </head>
@@ -17,14 +17,14 @@
       <%= link_to image_tag("/images/timesarrow-logo2.png", :alt => "logo"), home_path  %>
     </div>
     <div id="navigation">
-      <ul id="navbar">
+      <ul id="navbar" class="level1">
         <li class="navitem-first"><%= link_to_unless_current('ALL', timelines_path) %></li>
         <li><%= link_to_unless_current('FEATURED', home_path ) %></li>
         <li>
           <%= link_to_unless_current('AWARDS', 
                                       filtered_cat_sub_path(:category => 'book', 
                                                             :subcategory => 'awards' )) %>
-          <ul class="sub-navbar" id="awards-sub-nav">
+          <ul class="level2" id="awards-sub-nav">
             <% @genres.each do |genre| %>
             <% if genre.subcategory.eql? 'Awards' %>
             <li>
@@ -37,7 +37,7 @@
           </ul>
         </li>
         <li><%= link_to_unless_current('CLUBS', filtered_cat_sub_path(:category => 'book', :subcategory => 'clubs' )) %>
-          <ul class="sub-navbar" id="clubs-sub-nav">
+          <ul class="level2" id="clubs-sub-nav">
             <% @genres.each do |genre| %>
             <% if genre.subcategory.eql? 'Clubs' %>
             <li>
@@ -50,7 +50,7 @@
           </ul>
         </li>
         <li><%= link_to_unless_current('REVIEWS', filtered_cat_sub_path(:category => 'book', :subcategory => 'reviews' )) %>
-          <ul class="sub-navbar" id="reviews-sub-nav">
+          <ul class="level2" id="reviews-sub-nav">
             <% @genres.each do |genre| %>
             <% if genre.subcategory.eql? 'Reviews' %>
             <li>
@@ -63,7 +63,7 @@
           </ul>
         </li>
         <li><%= link_to_unless_current('SERIES', filtered_cat_sub_path(:category => 'book', :subcategory => 'series' )) %>
-          <ul class="sub-navbar" id="series-sub-nav">
+          <ul class="level2" id="series-sub-nav">
             <% @genres.each do |genre| %>
             <% if genre.subcategory.eql? 'Series' %>
             <li>

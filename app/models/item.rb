@@ -3,7 +3,7 @@
 #
 # Table name: items
 #
-#  id              :integer(4)      not null, primary key
+#  id              :integer         not null, primary key
 #  title           :string(255)
 #  itemtype        :string(255)
 #  author          :string(255)
@@ -18,7 +18,7 @@
 #  isbn            :string(255)
 #  swatchimageurl  :string(255)
 #  largeimageurl   :string(255)
-#  category_id     :integer(4)
+#  category_id     :integer
 #
 
 
