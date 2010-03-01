@@ -1,4 +1,12 @@
-/* @override http://localhost:3000/stylesheets/timesarrow.css?1267470553 */
+/* @override 
+	http://localhost:3000/stylesheets/timesarrow.css?1267470553
+	http://localhost:3000/stylesheets/timesarrow.css?1267473744
+	http://localhost:3000/stylesheets/timesarrow.css?1267480818
+	http://localhost:3000/stylesheets/timesarrow.css?1267481080
+	http://localhost:3000/stylesheets/timesarrow.css?1267481500
+	http://localhost:3000/stylesheets/timesarrow.css?1267481689
+	http://localhost:3000/stylesheets/timesarrow.css?1267482985
+*/
 
 /*
 
@@ -877,4 +885,45 @@ div.container img
 #privacy
 {
 	height: 600px;
+}
+
+div#facebook-fan
+{
+	position: relative;
+	margin-left: 800px;
+	margin-right: 12px;
+	margin-top: -40px;
+	z-index: 1;
+	font-size: 50%;
+}
+
+div#facebook-fan-text {
+	position: relative;
+	margin-left: 45px;
+	margin-top: -28px;
+}
+
+#facebook-fan a:hover
+{
+	color: #724343;
+}
+
+#twitter-follow a:hover {
+	color: #724343;
+}
+
+div#twitter-follow
+{
+	position: relative;
+	margin-left: 800px;
+	margin-right: 12px;
+	margin-top: -65px;
+	z-index: 1;
+	font-size: 50%;
+}
+
+div#twitter-follow-text {
+	position: relative;
+	margin-left: 45px;
+	margin-top: -28px;
 }
