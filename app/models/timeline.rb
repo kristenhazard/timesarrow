@@ -53,6 +53,7 @@ class Timeline < ActiveRecord::Base
     ["Graphic Novel",    "Graphic Novel"],
     ["History",    "History"],
     ["Horror",    "Horror"],
+    ["Investment",    "Investment"],
     ["Mixed",    "Mixed"],
     ["Mystery",    "Mystery"],
     ["Non Fiction",     "Non Fiction"],
