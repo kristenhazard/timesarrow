@@ -28,6 +28,8 @@
       <ul id="navbar" class="level1">
         <li class="navitem-first"><%= link_to_unless_current('ALL', timelines_path) %></li>
         <li><%= link_to_unless_current('FEATURED', home_path ) %></li>
+        <li><%= link_to_unless_current('AUTHORS', filtered_cat_sub_path(:category => 'book', :subcategory => 'authors' )) %>
+        </li>
         <li>
           <%= link_to_unless_current('AWARDS', 
                                       filtered_cat_sub_path(:category => 'book', 
@@ -89,7 +91,7 @@
       </ul>
       <ul id="user_nav">
           <% if current_user %>
-            <li><%= link_to "PROFILE: #{current_user.username}", edit_user_path(:current) %></li>
+            <li><%= link_to current_user.username, edit_user_path(:current) %></li>
             <li><%= link_to "LOGOUT", logout_path %></li>
           <% else %>
             <li><%= link_to "SIGN UP", new_user_path %></li>
