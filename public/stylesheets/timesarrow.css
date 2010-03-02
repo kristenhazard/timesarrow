@@ -8,6 +8,8 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1267482985
 	http://localhost:3000/stylesheets/timesarrow.css?1267483978
 	http://localhost:3000/stylesheets/timesarrow.css?1267488731
+	http://localhost:3000/stylesheets/timesarrow.css?1267493941
+	http://localhost:3000/stylesheets/timesarrow.css?1267510955
 */
 
 /*
@@ -255,18 +257,8 @@ h1
 	font-size: 100%;
 }
 
-div.addthis_toolbox.addthis_default_style {
-	position: relative;
-	float: right;
-	margin-top: -30px;
-	font-size: 75%;
-}
-
 #timeline-tables {
 	margin-top: 5px;
-}
-
-p#search-form {
 }
 
 a 
@@ -275,6 +267,10 @@ a
 	border-bottom: none;
   	text-decoration: none;
 }
+
+
+
+
 
 a:visited 
 { 
@@ -321,12 +317,6 @@ div.container a:hover
 { 
 	color: #cc9900;
 	border-bottom: none;
-}
-
-
-
-.posdesc
-{
 }
 
 .tldesc
@@ -935,4 +925,17 @@ div#twitter-follow-text {
 	position: relative;
 	margin-left: 45px;
 	margin-top: -28px;
+}
+
+div#share {
+	position: relative;
+	float: right;
+	font-size: 75%;
+	margin-top: -30px;
+	width: 135px;
+}
+
+#share div.addthis_toolbox.addthis_default_style {
+	position: relative;
+	float: right;
 }

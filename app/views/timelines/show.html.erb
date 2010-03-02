@@ -9,16 +9,17 @@
         | <span id="toggle_finalists" flag="show">show</span> finalists
       </a>
     <% end %>
-    | 
-    <a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php">Share</a>
-    <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
   </h1>
+  <div id="share">
+  <a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php">Share</a>
   <!-- AddThis Button BEGIN -->
   <div class="addthis_toolbox addthis_default_style">
-  <a href="http://www.addthis.com/bookmark.php?v=250&amp;username=kristenhazard" class="addthis_button_compact">share</a>
+    <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+    <a href="http://www.addthis.com/bookmark.php?v=250&amp;username=kristenhazard" class="addthis_button_compact">share</a>
   </div>
   <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=kristenhazard"></script>
   <!-- AddThis Button END -->
+  </div>
 </div>
 <div id="tl-desc">
   <%= textilize_without_paragraph(@timeline.description) %>
