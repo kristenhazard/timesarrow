@@ -10,6 +10,10 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1267488731
 	http://localhost:3000/stylesheets/timesarrow.css?1267493941
 	http://localhost:3000/stylesheets/timesarrow.css?1267510955
+	http://localhost:3000/stylesheets/timesarrow.css?1267511595
+	http://localhost:3000/stylesheets/timesarrow.css?1267547575
+	http://localhost:3000/stylesheets/timesarrow.css?1267547903
+	http://localhost:3000/stylesheets/timesarrow.css?1267548201
 */
 
 /*
@@ -932,10 +936,18 @@ div#share {
 	float: right;
 	font-size: 75%;
 	margin-top: -30px;
-	width: 145px;
+	width: 175px;
+	height: 25px;
 }
 
-#share div.addthis_toolbox.addthis_default_style {
-	position: relative;
-	float: right;
+div#twitter-share {
+	position: absolute;
+	margin-top: -17px;
+	margin-left: 80px;
+}
+
+div#add-this-share {
+	position: absolute;
+	margin-top: -17px;
+	margin-left: 160px;
 }
