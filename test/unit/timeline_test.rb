@@ -2,6 +2,8 @@ require File.dirname(__FILE__) + '/../test_helper'
 
 class TimelineTest < ActiveSupport::TestCase
   
+  setup :activate_authlogic
+  
   should_have_many :items, :through => :timeline_items
   should_have_many :timeline_items
   
@@ -85,6 +87,12 @@ class TimelineTest < ActiveSupport::TestCase
   def test_search_timeline_with_timeline_name
     @timelines = Timeline.search('Featured', nil)
     assert @timelines.count.eql? 2
+  end
+  
+  def test_current_user_is_owner
+    UserSession.create(users(:user))
+    timeline = timelines(:awards_fiction_featured)
+    assert timeline.current_user_is_owner? 
   end
   
   # def test_search_timeline_with_item_name

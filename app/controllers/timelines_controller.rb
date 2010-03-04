@@ -1,6 +1,6 @@
 class TimelinesController < ApplicationController
   
-  before_filter :require_admin, :except => [:index, :show, :featured, :filtered, :makeone]
+  before_filter :require_logged_in, :except => [:index, :show, :featured, :filtered ]
   before_filter :store_location #in case user is not logged in I want to store this location for them to go back to
   
   def index
@@ -38,8 +38,8 @@ class TimelinesController < ApplicationController
     
     rescue NoMethodError
       logger.error("Attempt to access invalide item_id for timeline")
-      flash[:notice] = "Invalid book for this timeline"
-      redirect_to(@timeline)
+      flash[:notice] = "Please add books to your timeline"
+      redirect_to edit_timeline_path(@timeline) 
   end
 
 
@@ -51,12 +51,23 @@ class TimelinesController < ApplicationController
 
   def edit
     @timeline = Timeline.find(params[:id])
-    self.title = "TIME'S ARROW edit " + @timeline.name + " timeline"
+    if @timeline.current_user_is_owner? or admin?
+      self.title = "TIME'S ARROW edit " + @timeline.name + " timeline"
+      @featured_string_value = @timeline.featured.to_s
+    else
+      flash[:notice] = "You can only edit timelines you have created."
+      redirect_to(@timeline)
+    end
   end
 
 
   def create
     @timeline = Timeline.new(params[:timeline])
+    @timeline.user_id = current_user.id
+    unless admin?
+      @timeline.category = "Book"
+      @timeline.featured = 0
+    end
     if @timeline.save
       flash[:notice] = 'Timeline was successfully created.'
       redirect_to edit_timeline_path(@timeline) 
@@ -82,6 +93,7 @@ class TimelinesController < ApplicationController
   def destroy
     @timeline = Timeline.find(params[:id])
     @timeline.destroy
+    flash[:notice] = 'Timeline was successfully deleted.'
     redirect_to(timelines_url) 
   end
 

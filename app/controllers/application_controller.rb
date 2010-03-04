@@ -41,6 +41,14 @@ class ApplicationController < ActionController::Base
     end
   end
   
+  def require_logged_in
+    unless logged_in?
+      flash[:error] = "You need to be logged in to access this page"
+      redirect_to :login
+      false
+    end
+  end
+  
   private
 
   def current_user_session

@@ -1,8 +1,10 @@
 <div id="tl-name">
   <h1>
     <%=h @timeline.name.upcase %> 
-    <% if admin? %> 
-      <%= link_to ' | edit', edit_timeline_path %> 
+    <% if logged_in? %>
+      <% if admin? or @timeline.current_user_is_owner? %> 
+        <%= link_to ' | edit', edit_timeline_path %> 
+      <% end %>
     <% end %>
     <% if @timeline_items_finalists.size > 0 %> 
       <a href="#" onclick="toggle_finalists()">
@@ -56,6 +58,7 @@
 <div id="t_item_work">
   <%= render :partial => 'shared/t_item_work', :locals => { :item => @item, :timeline_items_finalists => @timeline_items_finalists } %>
 </div>
+<%= render :partial => 'shared/advertising' %>
 <!-- carousel -->
 <script>
   c = new UI.Carousel("horizontal_carousel_small_"+ <%= @timeline.id %>);

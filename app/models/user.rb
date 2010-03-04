@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20091217200650
+# Schema version: 20100302232227
 #
 # Table name: users
 #
@@ -26,9 +26,14 @@ class User < ActiveRecord::Base
   has_many :item_statuses
   has_many :statuses, :through => :item_statuses
   has_many :reviews
+  has_many :timelines
   
   def deliver_password_reset_instructions!  
     reset_perishable_token!  
     Notifier.deliver_password_reset_instructions(self)  
+  end
+  
+  def self.find_by_username_or_email(login)
+    User.find_by_username(login) || User.find_by_email(login)
   end
 end

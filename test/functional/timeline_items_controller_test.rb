@@ -43,10 +43,9 @@ class TimelineItemsControllerTest < ActionController::TestCase
   end
 
   test "should destroy timeline_item" do
+    @request.env['HTTP_REFERER'] = 'http://localhost:3000/timelines/1/edit'
     assert_difference('TimelineItem.count', -1) do
       delete :destroy, :id => timeline_items(:one).to_param
     end
-
-    assert_redirected_to timeline_items_path
   end
 end

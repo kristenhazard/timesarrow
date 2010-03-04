@@ -1,47 +1,35 @@
-<h1>New timeline</h1>
+<h1>Create a new timeline</h1>
+<h1>Step 1 - Create timeline</h1>
 
 <% form_for(@timeline) do |f| %>
-  <%= f.error_messages %>
-  <table>
-    <tr>
-      <td><%= f.label :name %></td>
-      <td><%= f.text_field :name, :size => 40 %></td>
-      <td><%= f.label :category %></td>
-      <td><%= f.select  :category,
-                    Timeline::TIMELINE_CATEGORIES,
-                    :prompt => "Select type"
-          %>
-      </td>
-    </tr>
-    <tr>
-      <td><%= f.label :description %></td>
-      <td><%= f.text_area :description, :rows => 5, :cols => 38 %></td>
-      <td><%= f.label :subcategory %></td>
-      <td><%= f.select  :subcategory,
-                    Timeline::TIMELINE_SUBCATEGORIES,
-                    :prompt => "Select type"
-          %>
-      </td>
-    </tr>
-    <tr>
-      <!-- featured is admin field -->
-      <td><%= f.label :featured %></td>
-      <td><%= f.select  :featured,
-                    Timeline::TIMELINE_FEATURED,
-                    :prompt => "Select"
-          %></td>
-      <td><%= f.label :genre %></td>
-      <td><%= f.select  :genre,
-                    Timeline::TIMELINE_GENRE_BOOKS,
-                    :prompt => "Select type"
-          %>
-      </td>
-    </tr>
-  </table>
+  <p><%= f.error_messages %>
+  <p><%= f.label :name %><br />
+    <%= f.text_field :name, :size => 40 %></p>
+
+  <p><%= f.label :description %><br />
+  <%= f.text_area :description, :rows => 5, :cols => 38 %></p>
+
+  <p><%= f.label :subcategory, "Type" %><br />
+    <%= f.select  :subcategory,
+                Timeline::TIMELINE_SUBCATEGORIES,
+                :prompt => "Select type" %></p>
+  <p><%= f.label :genre %><br />
+    <%= f.select  :genre,
+                Timeline::TIMELINE_GENRE_BOOKS,
+                :prompt => "Select genre" %></p>
+  <% if admin? %>
+  <p><%= f.label :category %><br />
+    <%= f.select  :category,
+                Timeline::TIMELINE_CATEGORIES %></p>
+  <p><%= f.label :featured %><br />
+    <%= f.select  :featured, Timeline::TIMELINE_FEATURED %></p>
+  <% end %>
 
   <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Create' %> 
   </p>
+  <p><%= link_to 'Cancel', home_path %></p>
 <% end %>
 
-<%= link_to 'Back', timelines_path %>
+<h1>Step 2 - Add books</h1>
+

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091217200650) do
+ActiveRecord::Schema.define(:version => 20100302232227) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -122,7 +122,10 @@ ActiveRecord::Schema.define(:version => 20091217200650) do
     t.string   "subcategory"
     t.integer  "featured"
     t.string   "genre"
+    t.integer  "user_id",     :default => 2, :null => false
   end
+
+  add_index "timelines", ["user_id"], :name => "index_timelines_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "username"

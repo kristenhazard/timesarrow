@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20091217200650
+# Schema version: 20100302232227
 #
 # Table name: timelines
 #
@@ -13,6 +13,7 @@
 #  subcategory :string(255)
 #  featured    :integer
 #  genre       :string(255)
+#  user_id     :integer         default(2), not null
 #
 
 
@@ -73,7 +74,6 @@ class Timeline < ActiveRecord::Base
     ["No",     "0"],
     ["Yes",     "1"]
   ]
-  
   has_many :items, :through => :timeline_items,  :order => 'title'
   has_many :timeline_items, :order => 'position ASC', :dependent => :destroy do
     # method used to interface with carousel positioning
@@ -88,6 +88,8 @@ class Timeline < ActiveRecord::Base
   end
   has_many :winners, :class_name => 'TimelineItem', :conditions => [ 'position_type = 1' ], 
            :order => 'position ASC', :dependent => :destroy
+           
+  belongs_to :user
   
   validates_presence_of :name, :category, :subcategory, :genre
   validates_numericality_of :featured, :on => :create, :message => "is not a number"
@@ -134,5 +136,10 @@ class Timeline < ActiveRecord::Base
   def self.genre_distinct_by_subcat
     find(:all, :group => "genre,subcategory", :select => "genre,subcategory", :order => "subcategory,genre")
   end
-                          
+  
+  def current_user_is_owner?
+    current_user_session = UserSession.find
+    current_user_session.user.id == user_id
+  end
+  
 end

@@ -1,4 +1,4 @@
-<h1>New user</h1>
+<h1>SIGN UP</h1>
 
 <% form_for @user do |f| %>
   <%= f.error_messages %>
@@ -18,5 +18,6 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation %>
   </p>
-  <p><%= f.submit "Submit" %></p>
+  <p><%= link_to "Privacy Policy", page_path("privacy"), :popup => true %></p>
+  <p><%= f.submit "Create" %></p>
 <% end %>

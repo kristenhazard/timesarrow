@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20091217200650
+# Schema version: 20100302232227
 #
 # Table name: timelines
 #
@@ -13,6 +13,7 @@
 #  subcategory :string(255)
 #  featured    :integer
 #  genre       :string(255)
+#  user_id     :integer         default(2), not null
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
@@ -25,6 +26,7 @@ awards_fiction_featured:
   subcategory: Awards
   featured: 1
   genre: Fiction
+  user: user
 
 awards_nonfiction_not_featured:
   name: Not Featured
@@ -34,4 +36,5 @@ awards_nonfiction_not_featured:
   subcategory: Awards
   featured: 0
   genre: Non Fiction
+  user: admin
 

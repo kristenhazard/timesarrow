@@ -82,15 +82,15 @@ class TimelinesControllerTest < ActionController::TestCase
     assert_response :success
   end
   
-  def test_user_should_not_get_new
+  def test_user_should_get_new
     UserSession.create(users(:user))
     get :new
-    assert_redirected_to root_url
+    assert_response :success
   end
   
   def test_not_logged_in_should_not_get_new
     get :new
-    assert_redirected_to root_url
+    assert_redirected_to :login
   end
 
 
@@ -106,14 +106,16 @@ class TimelinesControllerTest < ActionController::TestCase
     assert_redirected_to edit_timeline_path(assigns(:timeline))
   end
   
-  def test_user_should_not_create_timeline
-    UserSession.create(users(:user))
-    post :create, :timeline => { :name => 'Test',
-                                 :category => 'Book',
-                                 :subcategory => 'Awards',
-                                 :featured => 0,
-                                 :genre => 'Adventure' }
-    assert_redirected_to root_url
+  def test_user_should_create_timeline
+    UserSession.create(users(:user)) # logs a user in
+    assert_difference('Timeline.count') do
+      post :create, :timeline => { :name => 'Test',
+                                   :category => 'Book',
+                                   :subcategory => 'Awards',
+                                   :featured => 0,
+                                   :genre => 'Adventure' }
+    end
+    assert_redirected_to edit_timeline_path(assigns(:timeline))
   end
   
   def test_not_logged_in_should_not_create_timeline
@@ -122,7 +124,7 @@ class TimelinesControllerTest < ActionController::TestCase
                                  :subcategory => 'Awards',
                                  :featured => 0,
                                  :genre => 'Adventure' }
-    assert_redirected_to root_url
+    assert_redirected_to :login
   end
 
 
@@ -169,15 +171,22 @@ class TimelinesControllerTest < ActionController::TestCase
     assert_response :success
   end
   
-  def test_user_should_not_get_edit
+  def test_user_should_get_edit_only_if_owner_of_timeline
     UserSession.create(users(:user))
     get :edit, :id => timelines(:awards_fiction_featured).to_param
-    assert_redirected_to root_url
+    assert_response :success
+  end
+  
+  def test_user_should_not_get_edit_if_not_owner_of_timeline
+    UserSession.create(users(:user))
+    get :edit, :id => timelines(:awards_nonfiction_not_featured).to_param
+    #assert_redirected_to timeline_path(assigns(timelines(:awards_nonfiction_not_featured)))
+    assert_equal 'You can only edit timelines you have created.', flash[:notice]
   end
   
   def test_not_logged_in_should_not_get_edit
     get :edit, :id => timelines(:awards_fiction_featured).to_param
-    assert_redirected_to root_url
+    assert_redirected_to :login
   end
 
   def test_admin_should_update_timeline

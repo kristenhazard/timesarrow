@@ -18,3 +18,12 @@ function set_finalists() {
 	}
 }
 
+document.observe("dom:loaded", function() {
+  setTimeout(hideFlashMessages, 10000);
+});
+
+function hideFlashMessages() {
+  $$('p#notice, p#warning, p#error').each(function(e) { 
+    if (e) Effect.Fade(e, { duration: 5.0 });
+  });
+}

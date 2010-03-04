@@ -45,7 +45,7 @@ class TimelineItemsController < ApplicationController
     @timeline_item = TimelineItem.find(params[:id])
     @timeline_item.destroy
     
-    redirect_to :action => "index"
+    redirect_to :back
   end
   
 =begin

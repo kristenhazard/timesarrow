@@ -89,7 +89,7 @@
         </li>
         <li><%= link_to_unless_current('TOB', filtered_cat_sub_path(:category => 'book', :subcategory => 'tob' )) %>
         </li>
-        <li><%= link_to_unless_current('MAKE ONE!', :controller => 'timelines', :action => 'makeone') %></li>
+        <li><%= link_to_unless_current('MAKE ONE!', :controller => 'timelines', :action => 'new') %></li>
       </ul>
       <ul id="user_nav">
           <% if current_user %>
@@ -101,8 +101,10 @@
           <% end %>
       </ul>
     </div>
+    <% flash.each do |key, msg| -%>
+      <%= content_tag :p, msg, :id => key -%>
+    <% end -%>
     <div id="content">
-      <div class="flash"><%= flash[:notice] %><%= flash[:error] %></div>
       <%= yield %>
     </div>
     <div id="footer">

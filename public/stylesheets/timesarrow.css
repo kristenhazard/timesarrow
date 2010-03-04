@@ -1,19 +1,11 @@
 /* @override 
-	http://localhost:3000/stylesheets/timesarrow.css?1267470553
-	http://localhost:3000/stylesheets/timesarrow.css?1267473744
-	http://localhost:3000/stylesheets/timesarrow.css?1267480818
-	http://localhost:3000/stylesheets/timesarrow.css?1267481080
-	http://localhost:3000/stylesheets/timesarrow.css?1267481500
-	http://localhost:3000/stylesheets/timesarrow.css?1267481689
-	http://localhost:3000/stylesheets/timesarrow.css?1267482985
-	http://localhost:3000/stylesheets/timesarrow.css?1267483978
-	http://localhost:3000/stylesheets/timesarrow.css?1267488731
-	http://localhost:3000/stylesheets/timesarrow.css?1267493941
-	http://localhost:3000/stylesheets/timesarrow.css?1267510955
-	http://localhost:3000/stylesheets/timesarrow.css?1267511595
-	http://localhost:3000/stylesheets/timesarrow.css?1267547575
-	http://localhost:3000/stylesheets/timesarrow.css?1267547903
-	http://localhost:3000/stylesheets/timesarrow.css?1267548201
+	http://localhost:3000/stylesheets/timesarrow.css?1267637730
+	http://localhost:3000/stylesheets/timesarrow.css?1267638131
+	http://localhost:3000/stylesheets/timesarrow.css?1267638422
+	http://localhost:3000/stylesheets/timesarrow.css?1267643596
+	http://localhost:3000/stylesheets/timesarrow.css?1267649663
+	http://localhost:3000/stylesheets/timesarrow.css?1267651358
+	http://localhost:3000/stylesheets/timesarrow.css?1267652513
 */
 
 /*
@@ -31,7 +23,6 @@ red: #9c3946
 red brown: #724343
 
 */
-
 
 
 div.pagination {
@@ -259,10 +250,13 @@ ul#about
 h1
 {
 	font-size: 100%;
+	width: 80%;
+	text-transform: uppercase;
 }
 
 #timeline-tables {
 	margin-top: 5px;
+	margin-left: -3px;
 }
 
 a 
@@ -309,7 +303,7 @@ div.container
 	font-size: 75%;
 	padding-bottom: 10px;
 	padding-left: 2px;
-	padding-right: 2px;
+	padding-right: 4px;
 }
 
 div.container a
@@ -367,21 +361,26 @@ div#searchedit
 {
 	position: relative;
 	float: left;
-	margin: .5em;
-	padding: .5em;
-	width: 815px;
+	width: 100%;
 	/*visibility: hidden;*/
-	background-color: #848484
+	background-color: #848484;
+}
+
+div#resort {
+	position: relative;
+	float: left;
+	font-size: 70%;
 }
 
 div#searchedit p
 {
 	color: #fff;
+	margin: 10px;
 }
 
 div.edit-timeline
 {
-	color: 848484;
+	color: #848484;
 	font-size: 90%;
 }
 
@@ -492,14 +491,14 @@ li.timeline_item
 .horizontal_carousel_small_edit {
   float: left;
   width: 835px;
-  height: 200px;
+  height: 170px;
   position: relative;
 }
 
 .horizontal_carousel_small_edit .container {
   float: left;
   width: 775px;
-  height: 200px;
+  height: 160px;
   position: relative;    
   overflow: hidden;
 }
@@ -511,12 +510,12 @@ li.timeline_item
   position: relative;
   top: 0;
   left: 0;
-  height: 200px;
+  height: 180px;
 }                      
 
 .horizontal_carousel_small_edit ul li {
   width: 60px;
-  height: 200px;
+  height: 180px;
   text-align: center; 
   list-style:none;   
   float:left;
@@ -602,7 +601,7 @@ li.timeline_item
 }
 .top-arrow
 {
-	margin-left: px;
+	margin-left: 0px;
 	position: relative;
 	float: left;
 	margin-top: 75px;
@@ -669,7 +668,7 @@ li.timeline_item
 {
 	width: 100%;
 	font-size: 75%;
-	min-height: 630px;
+	min-height: 525px;
 }
 
 #work-it-container p
@@ -701,36 +700,28 @@ li.timeline_item
 	position: relative;
 }
 
-.flash
-{
-	color: #724343;
-	margin-top: 10px;
-	margin-right: 10px;
-	float: right;
-}
-
 #errorExplanation {
-  width: 400px;
-  border: 2px solid #724343;
-  padding: 7px;
-  background-color: #f0f0f0;
+	margin-top: 10px;
+  	border: 2px solid #724343;
+  	padding: 7px;
+ 	background-color: #848484;
 }
 
 #errorExplanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  background-color: #724343;
-  color: #fff;
+  	text-align: left;
+  	font-weight: bold;
+  	padding: 5px 5px 5px 15px;
+  	font-size: 14px;
+  	margin: -7px;
+  	background-color: #724343;
+  	color: #fff;
 }
 
 #errorExplanation p {
-  color: #333;
-  margin-bottom: 0;
+  	color: #333;
+  	margin-bottom: 0;
 	padding-left: 7px;
-  font-size: 12px;
+  	font-size: 12px;
 }
 
 #errorExplanation li {
@@ -740,7 +731,7 @@ li.timeline_item
 
 #forgot-pw
 {
-	margin-left: 65px;
+	margin-left: 5px;
 	font-size: 12px;
 }
 
@@ -879,6 +870,19 @@ div#tl-name h1 a
 	font-style: normal;
 }
 
+div#edit-sub {
+	position: relative;
+	margin-top: -20px;
+	margin-left: 150px;
+	font-weight: normal;
+	
+}
+
+div.destroy-inline {
+	margin-top: -38px;
+	margin-left: 490px;
+}
+
 div.container img
 {
 	width: 50px;
@@ -936,7 +940,7 @@ div#share {
 	float: right;
 	font-size: 75%;
 	margin-top: -30px;
-	width: 175px;
+	width: 185px;
 	height: 25px;
 }
 
@@ -949,5 +953,36 @@ div#twitter-share {
 div#add-this-share {
 	position: absolute;
 	margin-top: -17px;
-	margin-left: 160px;
+	margin-left: 157px;
+}
+
+div#facebook-share {
+	margin-top: 1px;
+	margin-right: 29px;
+}
+
+div#ad {
+	padding: 120px 50px 10px;
+	position: relative;
+	float: left;
+}
+
+p#error {
+	color: white;
+	background: #724343;
+	margin-top: 0px;
+	text-align: center;
+	text-transform: none;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+p#notice {
+	color: white;
+	background: #724343;
+	margin-top: 0px;
+	text-align: center;
+	text-transform: none;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
