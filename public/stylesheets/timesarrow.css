@@ -6,6 +6,7 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1267649663
 	http://localhost:3000/stylesheets/timesarrow.css?1267651358
 	http://localhost:3000/stylesheets/timesarrow.css?1267652513
+	http://localhost:3000/stylesheets/timesarrow.css?1267660282
 */
 
 /*
@@ -940,25 +941,26 @@ div#share {
 	float: right;
 	font-size: 75%;
 	margin-top: -30px;
-	width: 185px;
+	width: 285px;
 	height: 25px;
 }
 
 div#twitter-share {
 	position: absolute;
 	margin-top: -17px;
-	margin-left: 80px;
+	margin-left: 185px;
 }
 
 div#add-this-share {
-	position: absolute;
+	position: relative;
+	float: left;
 	margin-top: -17px;
-	margin-left: 157px;
+	margin-left: 270px;
 }
 
 div#facebook-share {
 	margin-top: 1px;
-	margin-right: 29px;
+	margin-left: 80px;
 }
 
 div#ad {
