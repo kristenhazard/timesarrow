@@ -3,7 +3,7 @@
     <%=h @timeline.name.upcase %> 
     <% if logged_in? %>
       <% if admin? or @timeline.current_user_is_owner? %> 
-        <%= link_to ' | edit', edit_timeline_path %> 
+        | <%= link_to 'edit', edit_timeline_path %> 
       <% end %>
     <% end %>
     <% if @timeline_items_finalists.size > 0 %> 
