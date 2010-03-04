@@ -3,18 +3,22 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
+    self.title = "TIME'S ARROW - Users"
   end
 
   def show
     @user = User.find(params[:id])
+    self.title = "TIME'S ARROW - Show User"
   end
 
   def new
     @user = User.new
+    self.title = "TIME'S ARROW - Sign Up"
   end
 
   def edit
     @user = current_user
+    self.title = "TIME'S ARROW - Edit User"
   end
 
   def create

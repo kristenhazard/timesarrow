@@ -1,6 +1,7 @@
 class UserSessionsController < ApplicationController
   def new
     @user_session = UserSession.new
+    self.title = "TIME'S ARROW - Sign In"
   end
   
   def create
