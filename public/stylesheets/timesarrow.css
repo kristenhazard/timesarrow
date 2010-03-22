@@ -8,6 +8,7 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1267652513
 	http://localhost:3000/stylesheets/timesarrow.css?1267660282
 	http://localhost:3000/stylesheets/timesarrow.css?1267664475
+	http://localhost:3000/stylesheets/timesarrow.css?1267665108
 */
 
 /*
@@ -964,7 +965,8 @@ div#facebook-share {
 }
 
 div#ad {
-	padding: 120px 50px 10px;
+	margin-top: 120px;
+	padding-left: 65px;
 	position: relative;
 	float: left;
 }
