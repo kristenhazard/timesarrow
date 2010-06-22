@@ -269,10 +269,6 @@ a
   	text-decoration: none;
 }
 
-
-
-
-
 a:visited 
 { 
 	color: #676767; 
@@ -288,6 +284,21 @@ a img
 {
   border-style: none;
 	border-width: 0px;
+}
+
+table#admin
+{
+	width: 100%;
+}
+
+table#admin th
+{
+	font-size: 70%;
+}
+
+table#admin td
+{
+	font-size: 70%;
 }
 
 div#search
