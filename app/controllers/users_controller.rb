@@ -2,7 +2,8 @@ class UsersController < ApplicationController
   before_filter :require_admin, :except => [:new, :show, :edit, :create]
 
   def index
-    @users = User.all
+    @users = User.paginate :page => params[:page], :per_page => 25, :order => params[:sort]
+    @users_count = User.count
     self.title = "TIME'S ARROW - Users"
   end
 
@@ -17,7 +18,7 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = current_user
+    @user = User.find(params[:id])
     self.title = "TIME'S ARROW - Edit User"
   end
 
@@ -32,7 +33,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = current_user
+    @user = User.find(params[:id])
 
     if @user.update_attributes(params[:user])
       flash[:notice] = 'User was successfully updated.'
