@@ -87,7 +87,12 @@ class Timeline < ActiveRecord::Base
     end
   end
   has_many :winners, :class_name => 'TimelineItem', :conditions => [ 'position_type = 1' ], 
-           :order => 'position ASC', :dependent => :destroy
+           :order => 'position ASC', :dependent => :destroy do
+    def partial_results(begin_pos, end_pos)
+      find(:all, :conditions => ['position >= ? and position <= ?', begin_pos, end_pos])
+    end
+  end
+           
            
   belongs_to :user
   

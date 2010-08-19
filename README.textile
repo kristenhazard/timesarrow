@@ -5,7 +5,7 @@ The book information is retrieved from Amazon Product Advertising API utilizing 
 
 runs on:
 Rails 2.3.4
-MySQL
+Running on sglite3 on my dev box and Postgresql on deployed heroku
 
 required gems:
 *amazon-ecs
