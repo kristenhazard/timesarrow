@@ -9,6 +9,7 @@
 #   password:
 #   socket: /tmp/mysql.sock
   
+# heroku issues
 development:
  adapter: sqlite3
  database: db/development.sqlite3

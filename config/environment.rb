@@ -19,10 +19,8 @@ Rails::Initializer.run do |config|
   config.gem 'bluecloth', :lib => 'bluecloth'
   config.gem "thoughtbot-shoulda", :lib => "shoulda", :source => "http://gems.github.com"
   config.gem 'RedCloth'
-  # config.gem 'bullet', :source => 'http://gemcutter.org'
-  # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   config.gem "sqlite3-ruby", :lib => "sqlite3"
-  # config.gem "aws-s3", :lib => "aws/s3"
+#  config.gem "hirb"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
