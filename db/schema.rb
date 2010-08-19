@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(:version => 20100302232227) do
     t.string   "title"
     t.string   "itemtype"
     t.string   "author"
-    t.text     "description"
+    t.text     "description",     :limit => 2000
     t.string   "asin"
     t.string   "detailpageurl"
     t.string   "smallimageurl"
@@ -109,12 +109,9 @@ ActiveRecord::Schema.define(:version => 20100302232227) do
     t.integer  "position_type", :default => 1
   end
 
-  add_index "timeline_items", ["item_id"], :name => "fk_item_id"
-  add_index "timeline_items", ["timeline_id"], :name => "fk_timeline_id"
-
   create_table "timelines", :force => true do |t|
     t.string   "name"
-    t.text     "description"
+    t.text     "description", :limit => 255
     t.string   "imageurl"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -122,7 +119,7 @@ ActiveRecord::Schema.define(:version => 20100302232227) do
     t.string   "subcategory"
     t.integer  "featured"
     t.string   "genre"
-    t.integer  "user_id",     :default => 2, :null => false
+    t.integer  "user_id",                    :default => 2, :null => false
   end
 
   add_index "timelines", ["user_id"], :name => "index_timelines_on_user_id"
