@@ -6,7 +6,7 @@ class AddForeignKeyContraints < ActiveRecord::Migration
   end
 
   def self.down
-    execute "ALTER TABLE timeline_items DROP FOREIGN KEY fk_timeline_id"
-    execute "ALTER TABLE timeline_items DROP FOREIGN KEY fk_item_id"
+    # execute "ALTER TABLE timeline_items DROP FOREIGN KEY fk_timeline_id"
+    # execute "ALTER TABLE timeline_items DROP FOREIGN KEY fk_item_id"
   end
 end

@@ -7,7 +7,7 @@ class AddCreatedByToTimelines < ActiveRecord::Migration
 
   def self.down
     remove_column :timelines, :user_id
-    execute "ALTER TABLE timelines DROP FOREIGN KEY fk_timeline_user_id"  
+    # execute "ALTER TABLE timelines DROP FOREIGN KEY fk_timeline_user_id"  
     remove_index :timelines, :user_id
   end
 end
