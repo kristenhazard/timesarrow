@@ -2,8 +2,11 @@ require 'test_helper'
 
 class ItemStatusTest < ActiveSupport::TestCase
   
-  should_belong_to :item, :status, :user
+  should belong_to :item
+  should belong_to :status
+  should belong_to :user
   
-  should_validate_presence_of :status_id, :user_id, :item_id
-  
+  should validate_presence_of :status_id
+  should validate_presence_of :item_id
+  should validate_presence_of :user_id
 end

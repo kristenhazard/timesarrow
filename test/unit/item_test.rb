@@ -4,13 +4,16 @@ class ItemTest < ActiveSupport::TestCase
   
   setup :activate_authlogic
 
-  should_have_many :timeline_items
-  should_have_many :timelines, :through => :timeline_items
-  should_have_many :item_statuses
-  should_have_many :statuses, :through => :item_statuses
+  should have_many :timeline_items
+  should have_many :timelines
+  should have_many :item_statuses
+  should have_many :statuses
   
 
-  should_validate_presence_of :title, :asin, :detailpageurl,:category_id
+  should_validate_presence_of :title
+  should_validate_presence_of :asin
+  should_validate_presence_of :detailpageurl
+  should_validate_presence_of :category_id
 
   should_validate_uniqueness_of :asin, :message => "must be unique"
   

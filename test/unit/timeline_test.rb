@@ -4,8 +4,8 @@ class TimelineTest < ActiveSupport::TestCase
   
   setup :activate_authlogic
   
-  should_have_many :items, :through => :timeline_items
-  should_have_many :timeline_items
+  should have_many :items
+  should have_many :timeline_items
   
   def test_should_save_timeline_with_main_fields
     timeline = Timeline.new(

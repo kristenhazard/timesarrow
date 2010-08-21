@@ -5,6 +5,6 @@ class CategoryTest < ActiveSupport::TestCase
     assert Category.new.valid?
   end
   
-  should_have_many :items
-  should_have_many :statuses
+  should have_many :items
+  should have_many :statuses
 end
