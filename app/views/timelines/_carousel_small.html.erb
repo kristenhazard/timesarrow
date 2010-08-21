@@ -23,8 +23,16 @@
         <% end %>
         </div>
         <span class="posdesc">
-          <% unless timelineitem.position_desc.eql? 'set' %>
-            <%=h timelineitem.position_desc %>
+          <% if admin? %>
+            <%= link_to timelineitem.position_desc,
+                          :controller => 'items',
+                          :action => 'edit',
+                          :id => timelineitem.item_id
+            %>
+          <% else %>
+            <% unless timelineitem.position_desc.eql? 'set' %>
+              <%=h timelineitem.position_desc %>
+            <% end %>
           <% end %>
         </span>
       <% end %>  

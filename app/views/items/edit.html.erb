@@ -20,6 +20,12 @@
     <%= f.text_area :description %>
   </p>
   <p>
+    <%= image_tag @item.mediumimageurl unless @item.mediumimageurl.nil? %>
+    <%= image_tag @item.smallimageurl unless @item.smallimageurl.nil? %>
+    <%= image_tag @item.swatchimageurl unless @item.swatchimageurl.nil? %>
+    <%= image_tag @item.largeimageurl unless @item.largeimageurl.nil? %>
+  </p>
+  <p>
     <%= f.label :asin %><br />
     <%= f.text_field :asin %>
   </p>
@@ -42,12 +48,6 @@
   <p>
     <%= f.label :swatchimageurl %><br />
     <%= f.text_field :swatchimageurl %>
-  </p>
-  <p>
-    <%= image_tag @item.largeimageurl unless @item.largeimageurl.nil? %>
-    <%= image_tag @item.mediumimageurl unless @item.mediumimageurl.nil? %>
-    <%= image_tag @item.smallimageurl unless @item.smallimageurl.nil? %>
-    <%= image_tag @item.swatchimageurl unless @item.swatchimageurl.nil? %>
   </p>
   <p>
     <%= f.label :publicationdate %><br />
