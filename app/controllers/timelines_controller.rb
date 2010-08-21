@@ -115,6 +115,7 @@ class TimelinesController < ApplicationController
     end
     @contenttitle = 'Book ' + subcategory + " " + genre
     self.title = "TIME'S ARROW - Book " + subcategory + " " + genre
+    
   end
   
   # to be removed once I actually allow users to make a timeline, 

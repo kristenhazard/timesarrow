@@ -2,7 +2,11 @@
                    :html => { :action => url_for(:controller => "search", :action => "search") },
                    :update => "search-results" do %>
   <p>To ADD books to timeline enter keywords and click search:</p>
-  <p><%= text_field_tag(:keywords, params[:keywords], :size => 75) %></p>
+  <% if @item %>
+    <p><%= text_field_tag(:keywords, params[:keywords], :size => 75, :value => @item.title) %></p>
+  <% else %>
+    <p><%= text_field_tag(:keywords, params[:keywords], :size => 75) %></p>
+  <% end %>
   <p><%= submit_tag "Search", :name => nil %></p>
   <% if @timeline %>
     <%= hidden_field_tag(:timelineid, params[:timelineid], :value => @timeline.id) %>

@@ -9,6 +9,7 @@
 	http://localhost:3000/stylesheets/timesarrow.css?1267660282
 	http://localhost:3000/stylesheets/timesarrow.css?1267664475
 	http://localhost:3000/stylesheets/timesarrow.css?1267665108
+	http://localhost:3000/stylesheets/timesarrow.css?1277170766
 */
 
 /*
@@ -26,7 +27,6 @@ red: #9c3946
 red brown: #724343
 
 */
-
 
 div.pagination {
 	float: right;
@@ -1001,3 +1001,18 @@ p#notice {
 	padding-top: 3px;
 	padding-bottom: 3px;
 }
+
+#edit-seach {
+	position: relative;
+	float: right;
+	width: 460px;
+}
+
+#edit-item {
+	position: relative;
+	float: left;
+	width: 400px;
+	
+}
+
+
