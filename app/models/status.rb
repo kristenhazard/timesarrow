@@ -1,13 +1,13 @@
 # == Schema Information
-# Schema version: 20100302232227
+# Schema version: 20100821203842
 #
 # Table name: statuses
 #
-#  id          :integer         not null, primary key
+#  id          :integer         primary key
 #  description :string(255)
 #  category_id :integer
-#  created_at  :datetime
-#  updated_at  :datetime
+#  created_at  :timestamp
+#  updated_at  :timestamp
 #
 
 class Status < ActiveRecord::Base

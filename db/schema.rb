@@ -9,22 +9,35 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100302232227) do
+ActiveRecord::Schema.define(:version => 20100821203842) do
 
-  create_table "categories", :force => true do |t|
+  create_table "authors", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "amazon_index"
-    t.string   "amazon_product_group"
+  end
+
+  create_table "categories", :force => true do |t|
+    t.string    "name"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.string    "amazon_index"
+    t.string    "amazon_product_group"
+  end
+
+  create_table "item_authors", :force => true do |t|
+    t.integer  "item_id"
+    t.integer  "author_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "item_statuses", :force => true do |t|
-    t.integer  "user_id"
-    t.integer  "item_id"
-    t.integer  "status_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer   "user_id"
+    t.integer   "item_id"
+    t.integer   "status_id"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   add_index "item_statuses", ["item_id"], :name => "index_item_statuses_on_item_id"
@@ -35,7 +48,7 @@ ActiveRecord::Schema.define(:version => 20100302232227) do
     t.string   "title"
     t.string   "itemtype"
     t.string   "author"
-    t.text     "description",     :limit => 2000
+    t.text     "description"
     t.string   "asin"
     t.string   "detailpageurl"
     t.string   "smallimageurl"
@@ -58,88 +71,89 @@ ActiveRecord::Schema.define(:version => 20100302232227) do
   end
 
   create_table "ratings", :force => true do |t|
-    t.integer  "user_id"
-    t.integer  "rate_id"
-    t.integer  "rateable_id"
-    t.string   "rateable_type", :limit => 32
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer   "user_id"
+    t.integer   "rate_id"
+    t.integer   "rateable_id"
+    t.string    "rateable_type", :limit => 32
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   add_index "ratings", ["rate_id"], :name => "index_ratings_on_rate_id"
   add_index "ratings", ["rateable_id", "rateable_type"], :name => "index_ratings_on_rateable_id_and_rateable_type"
 
   create_table "reviews", :force => true do |t|
-    t.integer  "item_id"
-    t.integer  "user_id"
-    t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer   "item_id"
+    t.integer   "user_id"
+    t.text      "content"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   add_index "reviews", ["item_id"], :name => "index_reviews_on_item_id"
   add_index "reviews", ["user_id"], :name => "index_reviews_on_user_id"
 
   create_table "sessions", :force => true do |t|
-    t.string   "session_id", :null => false
-    t.text     "data"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "session_id", :null => false
+    t.text      "data"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
   create_table "statuses", :force => true do |t|
-    t.string   "description"
-    t.integer  "category_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "description"
+    t.integer   "category_id"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   add_index "statuses", ["category_id"], :name => "index_statuses_on_category_id"
 
   create_table "timeline_items", :force => true do |t|
-    t.integer  "timeline_id"
-    t.integer  "item_id"
-    t.integer  "position"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "position_desc"
-    t.integer  "position_type", :default => 1
+    t.integer   "timeline_id"
+    t.integer   "item_id"
+    t.integer   "position"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.string    "position_desc"
+    t.integer   "position_type", :default => 1
   end
+
+  add_index "timeline_items", ["item_id"], :name => "fk_item_id"
+  add_index "timeline_items", ["timeline_id"], :name => "fk_timeline_id"
 
   create_table "timelines", :force => true do |t|
-    t.string   "name"
-    t.text     "description", :limit => 255
-    t.string   "imageurl"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "category"
-    t.string   "subcategory"
-    t.integer  "featured"
-    t.string   "genre"
-    t.integer  "user_id",                    :default => 2, :null => false
+    t.string    "name"
+    t.text      "description"
+    t.string    "imageurl"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.string    "category"
+    t.string    "subcategory"
+    t.integer   "featured"
+    t.string    "genre"
+    t.integer   "user_id",     :default => 2, :null => false
   end
 
-  add_index "timelines", ["user_id"], :name => "index_timelines_on_user_id"
-
   create_table "users", :force => true do |t|
-    t.string   "username"
-    t.string   "email"
-    t.string   "crypted_password"
-    t.string   "password_salt"
-    t.string   "persistence_token"
-    t.integer  "login_count",        :default => 0,  :null => false
-    t.integer  "failed_login_count", :default => 0,  :null => false
-    t.datetime "last_request_at"
-    t.datetime "current_login_at"
-    t.datetime "last_login_at"
-    t.string   "current_login_ip"
-    t.string   "last_login_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "perishable_token",   :default => "", :null => false
+    t.string    "username"
+    t.string    "email"
+    t.string    "crypted_password"
+    t.string    "password_salt"
+    t.string    "persistence_token"
+    t.integer   "login_count",        :default => 0,  :null => false
+    t.integer   "failed_login_count", :default => 0,  :null => false
+    t.timestamp "last_request_at"
+    t.timestamp "current_login_at"
+    t.timestamp "last_login_at"
+    t.string    "current_login_ip"
+    t.string    "last_login_ip"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.string    "perishable_token",   :default => "", :null => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email"

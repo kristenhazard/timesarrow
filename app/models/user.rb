@@ -1,9 +1,9 @@
 # == Schema Information
-# Schema version: 20100302232227
+# Schema version: 20100821203842
 #
 # Table name: users
 #
-#  id                 :integer         not null, primary key
+#  id                 :integer         primary key
 #  username           :string(255)
 #  email              :string(255)
 #  crypted_password   :string(255)
@@ -11,13 +11,13 @@
 #  persistence_token  :string(255)
 #  login_count        :integer         default(0), not null
 #  failed_login_count :integer         default(0), not null
-#  last_request_at    :datetime
-#  current_login_at   :datetime
-#  last_login_at      :datetime
+#  last_request_at    :timestamp
+#  current_login_at   :timestamp
+#  last_login_at      :timestamp
 #  current_login_ip   :string(255)
 #  last_login_ip      :string(255)
-#  created_at         :datetime
-#  updated_at         :datetime
+#  created_at         :timestamp
+#  updated_at         :timestamp
 #  perishable_token   :string(255)     default(""), not null
 #
 

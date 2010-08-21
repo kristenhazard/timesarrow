@@ -1,14 +1,14 @@
 # == Schema Information
-# Schema version: 20100302232227
+# Schema version: 20100821203842
 #
 # Table name: reviews
 #
-#  id         :integer         not null, primary key
+#  id         :integer         primary key
 #  item_id    :integer
 #  user_id    :integer
 #  content    :text
-#  created_at :datetime
-#  updated_at :datetime
+#  created_at :timestamp
+#  updated_at :timestamp
 #
 
 class Review < ActiveRecord::Base

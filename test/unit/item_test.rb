@@ -10,14 +10,14 @@ class ItemTest < ActiveSupport::TestCase
   should have_many :statuses
   
 
-  should_validate_presence_of :title
-  should_validate_presence_of :asin
-  should_validate_presence_of :detailpageurl
-  should_validate_presence_of :category_id
+  should validate_presence_of :title
+  should validate_presence_of :asin
+  should validate_presence_of :detailpageurl
+  should validate_presence_of :category_id
 
-  should_validate_uniqueness_of :asin, :message => "must be unique"
+  should validate_uniqueness_of(:asin).with_message("must be unique")
   
-  should_belong_to :category
+  should belong_to :category
 
   def test_should_save_item_with_required_fields
     item = Item.new(:title => 'Test Title',

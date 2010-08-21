@@ -1,12 +1,12 @@
 # == Schema Information
-# Schema version: 20100302232227
+# Schema version: 20100821203842
 #
 # Table name: categories
 #
-#  id                   :integer         not null, primary key
+#  id                   :integer         primary key
 #  name                 :string(255)
-#  created_at           :datetime
-#  updated_at           :datetime
+#  created_at           :timestamp
+#  updated_at           :timestamp
 #  amazon_index         :string(255)
 #  amazon_product_group :string(255)
 #

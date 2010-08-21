@@ -1,14 +1,14 @@
 # == Schema Information
-# Schema version: 20100302232227
+# Schema version: 20100821203842
 #
 # Table name: timeline_items
 #
-#  id            :integer         not null, primary key
+#  id            :integer         primary key
 #  timeline_id   :integer
 #  item_id       :integer
 #  position      :integer
-#  created_at    :datetime
-#  updated_at    :datetime
+#  created_at    :timestamp
+#  updated_at    :timestamp
 #  position_desc :string(255)
 #  position_type :integer         default(1)
 #

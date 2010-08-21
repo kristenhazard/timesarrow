@@ -1,0 +1,18 @@
+# == Schema Information
+# Schema version: 20100821203842
+#
+# Table name: authors
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: Elizabeth Gilbert
+
+two:
+  name: Alice Walker

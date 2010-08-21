@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20100302232227
+# Schema version: 20100821203842
 #
 # Table name: items
 #
@@ -31,6 +31,8 @@ class Item < ActiveRecord::Base
   has_many :item_statuses
   has_many :statuses, :through => :item_statuses
   has_many :reviews
+  has_many :authors, :through => :item_authors
+  has_many :item_authors
   
   belongs_to :category
 

@@ -1,0 +1,21 @@
+# == Schema Information
+# Schema version: 20100821203842
+#
+# Table name: item_authors
+#
+#  id         :integer         not null, primary key
+#  item_id    :integer
+#  author_id  :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  item_id: 1
+  author_id: 1
+
+two:
+  item_id: 1
+  author_id: 1
