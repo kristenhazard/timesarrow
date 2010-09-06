@@ -5,14 +5,14 @@
 <table id="admin">
   <tr>
     <!--<th><%= link_to 'User ID', users_path, :sort => :id %></th>-->
-	<th><%= link_to 'User ID', :url => { :action => "index", :sort => "id" } %></th>
+	  <th><%= link_to 'User ID', :url => { :action => "index", :sort => "id" } %></th>
     <th><%= link_to 'Username', users_path, :sort => :username %></th>
     <th>Email</th>
     <th>Login Count</th>
     <th>Last Login At</th>
-	<th>Last Request At</th>
+	  <th>Last Request At</th>
     <th>Created At</th>
-	<th colspan="3"><%=h @users_count %> Total Users</th>
+	  <th colspan="3"><%=h @users_count %> Total Users</th>
   </tr>
 
 <% @users.each do |user| %>
@@ -22,7 +22,7 @@
     <td><%=h user.email %></td>
     <td><%=h user.login_count %></td>
     <td><%=h format_date(user.last_login_at) %></td>
-	<td><%=h format_date(user.last_request_at) %></td>
+	  <td><%=h format_date(user.last_request_at) %></td>
     <td><%=h format_date(user.created_at) %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
