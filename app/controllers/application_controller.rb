@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
   
   def admin?
     if current_user
-     current_user.username == "timesarrow"
+     current_user.username == "kristen1"
    end
   end
   
