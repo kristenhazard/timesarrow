@@ -5,3 +5,5 @@ RedCloth
 bullet
 shoulda
 hoptoad_notifier
+sqlite3-ruby
+mocha
