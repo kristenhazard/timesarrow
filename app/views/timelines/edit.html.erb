@@ -45,7 +45,7 @@
                         :id => timelineitem.item_id
             %>
           <% else %>
-            <%= truncate(timeline.item.title, :length => 35) %>
+            <%= truncate(timelineitem.item.title, :length => 35) %>
           <% end %>
         <% else %>
           <% if admin? %>
