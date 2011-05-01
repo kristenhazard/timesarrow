@@ -2,8 +2,8 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
-  include ExceptionNotifiable
-  local_addresses.clear
+  # include ExceptionNotifiable
+  # local_addresses.clear
   
   before_filter :find_genres_by_subcat
   
