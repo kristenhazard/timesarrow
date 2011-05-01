@@ -93,7 +93,7 @@
       </ul>
       <ul id="user_nav">
           <% if current_user %>
-            <li><%= link_to current_user.username, edit_user_path(:current) %></li>
+            <li><%= link_to current_user.username, edit_user_path(current_user.id) %></li>
             <li><%= link_to "LOGOUT", logout_path %></li>
           <% else %>
             <li><%= link_to "SIGN UP", new_user_path %></li>
