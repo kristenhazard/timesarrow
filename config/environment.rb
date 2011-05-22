@@ -47,8 +47,8 @@ Rails::Initializer.run do |config|
   
 end
 
-  ExceptionNotifier.exception_recipients = %w(kristen@hazardbio.com)
-  ExceptionNotifier.sender_address = %w(kristen@hazardbio.com)
+  # ExceptionNotifier.exception_recipients = %w(kristen@hazardbio.com)
+  # ExceptionNotifier.sender_address = %w(kristen@hazardbio.com)
   
   ActionMailer::Base.smtp_settings = {
       :enable_starttls_auto => false,
